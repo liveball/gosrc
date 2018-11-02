@@ -1,5 +1,0 @@
-./input.go
-./lex.go
-./slice.go
-./stack.go
-./tokenizer.go

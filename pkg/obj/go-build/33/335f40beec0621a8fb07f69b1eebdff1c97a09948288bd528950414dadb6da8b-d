@@ -1,5 +1,0 @@
-./example_test.go
-./example_unix_test.go
-./example_unix_walk_test.go
-./match_test.go
-./path_test.go

@@ -1,3 +1,0 @@
-./cpu.go
-./cpu_mips.go
-./cpu_no_init.go

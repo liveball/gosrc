@@ -1,5 +1,0 @@
-./poly1305.go
-./sum_amd64.go
-./sum_ref.go
-./poly1305_test.go
-./vectors_test.go

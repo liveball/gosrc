@@ -1,5 +1,0 @@
-./asn1.go
-./common.go
-./marshal.go
-./asn1_test.go
-./marshal_test.go

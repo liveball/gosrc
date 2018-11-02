@@ -1,5 +1,0 @@
-./asn1.go
-./builder.go
-./string.go
-./asn1_test.go
-./cryptobyte_test.go

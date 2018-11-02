@@ -1,5 +1,0 @@
-./chacha_generic.go
-./chacha_noasm.go
-./xor.go
-./chacha_test.go
-./vectors_test.go

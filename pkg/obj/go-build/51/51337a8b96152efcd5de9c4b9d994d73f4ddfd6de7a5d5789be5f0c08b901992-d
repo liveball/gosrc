@@ -1,5 +1,0 @@
-./exec_unix_test.go
-./mmap_unix_test.go
-./syscall_bsd_test.go
-./syscall_test.go
-./syscall_unix_test.go

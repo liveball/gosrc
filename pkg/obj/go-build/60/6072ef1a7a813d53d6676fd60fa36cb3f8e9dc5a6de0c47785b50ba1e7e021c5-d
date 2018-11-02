@@ -1,4 +1,0 @@
-# test log
-stat /dev/zero
-getenv ZONEINFO
-getenv ZONEINFO

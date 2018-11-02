@@ -1,5 +1,0 @@
-./goroutines.go
-./order.go
-./parser.go
-./writer.go
-./parser_test.go

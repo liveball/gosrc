@@ -1,7 +1,0 @@
-./etype_string.go
-./pkg.go
-./scope.go
-./sym.go
-./type.go
-./utils.go
-./sizeof_test.go

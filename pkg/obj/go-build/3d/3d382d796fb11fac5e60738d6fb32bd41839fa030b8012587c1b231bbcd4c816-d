@@ -1,6 +1,0 @@
-./elliptic.go
-./p224.go
-./p256_asm.go
-./elliptic_test.go
-./fuzz_test.go
-./p224_test.go

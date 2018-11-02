@@ -1,6 +1,0 @@
-./annotations.go
-./doc.go
-./goroutines.go
-./main.go
-./pprof.go
-./trace.go

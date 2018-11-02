@@ -1,5 +1,0 @@
-./ast.go
-./demangle.go
-./ast_test.go
-./demangle_test.go
-./expected_test.go

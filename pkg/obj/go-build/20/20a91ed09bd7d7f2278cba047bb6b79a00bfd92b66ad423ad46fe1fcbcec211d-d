@@ -1,3 +1,0 @@
-# test log
-open testdata/issue6550.gz
-getenv GO_BUILDER_NAME

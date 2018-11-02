@@ -1,6 +1,0 @@
-./convert.go
-./ctxutil.go
-./sql.go
-./convert_test.go
-./fakedb_test.go
-./sql_test.go

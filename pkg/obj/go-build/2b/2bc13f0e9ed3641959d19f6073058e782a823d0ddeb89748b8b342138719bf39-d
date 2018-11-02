@@ -1,7 +1,0 @@
-# test log
-open testdata/re2-search.txt
-stat testdata
-open testdata
-open testdata/basic.dat
-open testdata/nullsubexpr.dat
-open testdata/repetition.dat

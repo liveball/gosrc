@@ -1,3 +1,0 @@
-# test log
-open /dev/urandom
-open testdata/pss-vect.txt.bz2

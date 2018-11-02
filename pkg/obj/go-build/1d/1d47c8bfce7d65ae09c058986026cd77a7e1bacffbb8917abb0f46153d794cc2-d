@@ -1,7 +1,0 @@
-./header.go
-./pipeline.go
-./reader.go
-./textproto.go
-./writer.go
-./reader_test.go
-./writer_test.go

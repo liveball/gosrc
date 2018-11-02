@@ -1,6 +1,0 @@
-./formdata.go
-./multipart.go
-./writer.go
-./formdata_test.go
-./multipart_test.go
-./writer_test.go

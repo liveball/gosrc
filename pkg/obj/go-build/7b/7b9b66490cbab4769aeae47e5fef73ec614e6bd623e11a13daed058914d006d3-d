@@ -1,7 +1,0 @@
-./decode.go
-./doc.go
-./field.go
-./gnu.go
-./inst.go
-./plan9.go
-./tables.go

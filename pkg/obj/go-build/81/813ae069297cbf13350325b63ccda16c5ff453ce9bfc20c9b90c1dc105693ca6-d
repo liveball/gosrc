@@ -1,5 +1,0 @@
-./client.go
-./debug.go
-./server.go
-./client_test.go
-./server_test.go

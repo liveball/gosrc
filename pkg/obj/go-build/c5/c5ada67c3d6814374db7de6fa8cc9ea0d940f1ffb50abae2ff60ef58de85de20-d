@@ -1,4 +1,0 @@
-./output_test.go
-./race_test.go
-./race_unix_test.go
-./sched_test.go

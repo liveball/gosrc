@@ -1,5 +1,0 @@
-./gunzip.go
-./gzip.go
-./gunzip_test.go
-./gzip_test.go
-./issue14937_test.go

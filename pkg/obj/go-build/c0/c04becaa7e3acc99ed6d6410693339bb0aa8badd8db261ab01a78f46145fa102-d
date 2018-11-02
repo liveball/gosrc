@@ -1,5 +1,0 @@
-./eagain.go
-./rand.go
-./rand_unix.go
-./util.go
-./rand_test.go

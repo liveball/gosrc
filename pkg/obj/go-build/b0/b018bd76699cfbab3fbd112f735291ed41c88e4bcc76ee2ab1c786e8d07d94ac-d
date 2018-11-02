@@ -1,6 +1,0 @@
-./child.go
-./host.go
-./child_test.go
-./host_test.go
-./matryoshka_test.go
-./posix_test.go
