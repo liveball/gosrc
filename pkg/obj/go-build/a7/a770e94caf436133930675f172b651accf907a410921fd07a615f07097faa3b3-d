@@ -1,0 +1,93 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "image/draw"
+
+
+	_ "image/draw_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestClip", _test.TestClip},
+
+	{"TestDraw", _test.TestDraw},
+
+	{"TestDrawOverlap", _test.TestDrawOverlap},
+
+	{"TestNonZeroSrcPt", _test.TestNonZeroSrcPt},
+
+	{"TestFill", _test.TestFill},
+
+	{"TestFloydSteinbergCheckerboard", _test.TestFloydSteinbergCheckerboard},
+
+	{"TestPaletted", _test.TestPaletted},
+
+	{"TestSqDiff", _test.TestSqDiff},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkFillOver", _test.BenchmarkFillOver},
+
+	{"BenchmarkFillSrc", _test.BenchmarkFillSrc},
+
+	{"BenchmarkCopyOver", _test.BenchmarkCopyOver},
+
+	{"BenchmarkCopySrc", _test.BenchmarkCopySrc},
+
+	{"BenchmarkNRGBAOver", _test.BenchmarkNRGBAOver},
+
+	{"BenchmarkNRGBASrc", _test.BenchmarkNRGBASrc},
+
+	{"BenchmarkYCbCr", _test.BenchmarkYCbCr},
+
+	{"BenchmarkGray", _test.BenchmarkGray},
+
+	{"BenchmarkCMYK", _test.BenchmarkCMYK},
+
+	{"BenchmarkGlyphOver", _test.BenchmarkGlyphOver},
+
+	{"BenchmarkRGBA", _test.BenchmarkRGBA},
+
+	{"BenchmarkPaletted", _test.BenchmarkPaletted},
+
+	{"BenchmarkGenericOver", _test.BenchmarkGenericOver},
+
+	{"BenchmarkGenericMaskOver", _test.BenchmarkGenericMaskOver},
+
+	{"BenchmarkGenericSrc", _test.BenchmarkGenericSrc},
+
+	{"BenchmarkGenericMaskSrc", _test.BenchmarkGenericMaskSrc},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "image/draw"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

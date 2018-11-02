@@ -1,0 +1,5 @@
+package cgosotest
+//go:cgo_import_dynamic sofunc sofunc ""
+//go:cgo_import_dynamic dyld_stub_binder dyld_stub_binder ""
+//go:cgo_import_dynamic _ _ "libcgosotest.dylib"
+//go:cgo_import_dynamic _ _ "/usr/lib/libSystem.B.dylib"

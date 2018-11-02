@@ -1,0 +1,69 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "unicode/utf16"
+
+
+	_xtest "unicode/utf16_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestConstants", _xtest.TestConstants},
+
+	{"TestEncode", _xtest.TestEncode},
+
+	{"TestEncodeRune", _xtest.TestEncodeRune},
+
+	{"TestDecode", _xtest.TestDecode},
+
+	{"TestDecodeRune", _xtest.TestDecodeRune},
+
+	{"TestIsSurrogate", _xtest.TestIsSurrogate},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkDecodeValidASCII", _xtest.BenchmarkDecodeValidASCII},
+
+	{"BenchmarkDecodeValidJapaneseChars", _xtest.BenchmarkDecodeValidJapaneseChars},
+
+	{"BenchmarkDecodeRune", _xtest.BenchmarkDecodeRune},
+
+	{"BenchmarkEncodeValidASCII", _xtest.BenchmarkEncodeValidASCII},
+
+	{"BenchmarkEncodeValidJapaneseChars", _xtest.BenchmarkEncodeValidJapaneseChars},
+
+	{"BenchmarkEncodeRune", _xtest.BenchmarkEncodeRune},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "unicode/utf16"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

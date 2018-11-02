@@ -1,0 +1,1323 @@
+# command-line-arguments
+"".extr1 STEXT size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:12)	TEXT	"".extr1(SB), LEAF|NOFRAME, $-8-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:12)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:12)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:12)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:13)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:13)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:13)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:13)	MOVD	"".x2+8(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:13)	EXTR	$57, R1, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:13)	MOVD	R0, "".~r2+16(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:13)	RET	(R30)
+	0x0000 e0 07 40 f9 e1 0b 40 f9 00 e4 c1 93 e0 0f 00 f9  ..@...@.........
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".extr2 STEXT size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:16)	TEXT	"".extr2(SB), LEAF|NOFRAME, $-8-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:16)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:16)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:16)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:17)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:17)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:17)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:17)	MOVD	"".x2+8(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:17)	EXTR	$57, R1, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:17)	MOVD	R0, "".~r2+16(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:17)	RET	(R30)
+	0x0000 e0 07 40 f9 e1 0b 40 f9 00 e4 c1 93 e0 0f 00 f9  ..@...@.........
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".extr3 STEXT size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:20)	TEXT	"".extr3(SB), LEAF|NOFRAME, $-8-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:20)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:20)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:20)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:21)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:21)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:21)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:21)	MOVD	"".x2+8(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:21)	EXTR	$57, R1, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:21)	MOVD	R0, "".~r2+16(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:21)	RET	(R30)
+	0x0000 e0 07 40 f9 e1 0b 40 f9 00 e4 c1 93 e0 0f 00 f9  ..@...@.........
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".extr4 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:24)	TEXT	"".extr4(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:24)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:24)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:24)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:25)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:25)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:25)	MOVWU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:25)	MOVWU	"".x2+4(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:25)	EXTRW	$25, R1, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:25)	MOVW	R0, "".~r2+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:25)	RET	(R30)
+	0x0000 e0 0b 40 b9 e1 0f 40 b9 00 64 81 13 e0 13 00 b9  ..@...@..d......
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".extr5 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:28)	TEXT	"".extr5(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:28)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:28)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:28)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:29)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:29)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:29)	MOVWU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:29)	MOVWU	"".x2+4(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:29)	EXTRW	$25, R1, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:29)	MOVW	R0, "".~r2+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:29)	RET	(R30)
+	0x0000 e0 0b 40 b9 e1 0f 40 b9 00 64 81 13 e0 13 00 b9  ..@...@..d......
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".extr6 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:32)	TEXT	"".extr6(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:32)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:32)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:32)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:33)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:33)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:33)	MOVWU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:33)	MOVWU	"".x2+4(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:33)	EXTRW	$25, R1, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:33)	MOVW	R0, "".~r2+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:33)	RET	(R30)
+	0x0000 e0 0b 40 b9 e1 0f 40 b9 00 64 81 13 e0 13 00 b9  ..@...@..d......
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".mask32 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:37)	TEXT	"".mask32(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:37)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:37)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:37)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:38)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:38)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:38)	MOVWU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:38)	AND	$7, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:38)	MOVW	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:38)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 08 40 92 e0 13 00 b9 c0 03 5f d6  ..@...@......._.
+	rel 12+0 t=11 +0
+"".mask16 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:42)	TEXT	"".mask16(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:42)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:42)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:42)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:43)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:43)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:43)	MOVHU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:43)	AND	$3, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:43)	MOVH	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:43)	RET	(R30)
+	0x0000 e0 13 40 79 00 04 40 92 e0 23 00 79 c0 03 5f d6  ..@y..@..#.y.._.
+	rel 12+0 t=11 +0
+"".mask8 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:47)	TEXT	"".mask8(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:47)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:47)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:47)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:48)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:48)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:48)	MOVBU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:48)	AND	$1, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:48)	MOVB	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:48)	RET	(R30)
+	0x0000 e0 23 40 39 00 00 40 92 e0 43 00 39 c0 03 5f d6  .#@9..@..C.9.._.
+	rel 12+0 t=11 +0
+"".maskshift STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:51)	TEXT	"".maskshift(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:51)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:51)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:51)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:53)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:53)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:53)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:53)	AND	$4095, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:53)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:53)	RET	(R30)
+	0x0000 e0 07 40 f9 00 2c 40 92 e0 0b 00 f9 c0 03 5f d6  ..@..,@......._.
+	rel 12+0 t=11 +0
+"".bfi1 STEXT size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:58)	TEXT	"".bfi1(SB), LEAF|NOFRAME, $-8-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:58)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:58)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:58)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:60)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:60)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:60)	MOVD	"".y+8(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:60)	MOVD	"".x(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:60)	BFI	$4, R1, $12, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:60)	MOVD	R0, "".~r2+16(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:60)	RET	(R30)
+	0x0000 e0 0b 40 f9 e1 07 40 f9 20 2c 7c b3 e0 0f 00 f9  ..@...@. ,|.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".bfi2 STEXT size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:63)	TEXT	"".bfi2(SB), LEAF|NOFRAME, $-8-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:63)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:63)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:63)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:65)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:65)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:65)	MOVD	"".y+8(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:65)	MOVD	"".x(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:65)	BFI	$12, R1, $40, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:65)	MOVD	R0, "".~r2+16(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:65)	RET	(R30)
+	0x0000 e0 0b 40 f9 e1 07 40 f9 20 9c 74 b3 e0 0f 00 f9  ..@...@. .t.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".bfxil1 STEXT size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:69)	TEXT	"".bfxil1(SB), LEAF|NOFRAME, $-8-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:69)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:69)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:69)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:71)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:71)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:71)	MOVD	"".y+8(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:71)	MOVD	"".x(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:71)	BFXIL	$5, R1, $12, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:71)	MOVD	R0, "".~r2+16(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:71)	RET	(R30)
+	0x0000 e0 0b 40 f9 e1 07 40 f9 20 40 45 b3 e0 0f 00 f9  ..@...@. @E.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".bfxil2 STEXT size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:74)	TEXT	"".bfxil2(SB), LEAF|NOFRAME, $-8-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:74)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:74)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:74)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:76)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:76)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:76)	MOVD	"".y+8(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:76)	MOVD	"".x(FP), R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:76)	BFXIL	$12, R1, $40, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:76)	MOVD	R0, "".~r2+16(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:76)	RET	(R30)
+	0x0000 e0 0b 40 f9 e1 07 40 f9 20 cc 4c b3 e0 0f 00 f9  ..@...@. .L.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".sbfiz1 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:80)	TEXT	"".sbfiz1(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:80)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:80)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:80)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:82)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:82)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:82)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:82)	SBFIZ	$1, R0, $60, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:82)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:82)	RET	(R30)
+	0x0000 e0 07 40 f9 00 ec 7f 93 e0 0b 00 f9 c0 03 5f d6  ..@..........._.
+	rel 12+0 t=11 +0
+"".sbfiz2 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:85)	TEXT	"".sbfiz2(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:85)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:85)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:85)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:86)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:86)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:86)	MOVW	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:86)	SBFIZ	$3, R0, $29, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:86)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:86)	RET	(R30)
+	0x0000 e0 0b 80 b9 00 70 7d 93 e0 0b 00 f9 c0 03 5f d6  .....p}......._.
+	rel 12+0 t=11 +0
+"".sbfiz3 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:89)	TEXT	"".sbfiz3(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:89)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:89)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:89)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:90)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:90)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:90)	MOVH	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:90)	SBFIZ	$3, R0, $13, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:90)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:90)	RET	(R30)
+	0x0000 e0 13 80 79 00 30 7d 93 e0 0b 00 f9 c0 03 5f d6  ...y.0}......._.
+	rel 12+0 t=11 +0
+"".sbfiz4 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:93)	TEXT	"".sbfiz4(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:93)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:93)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:93)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:94)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:94)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:94)	MOVB	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:94)	SBFIZ	$3, R0, $5, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:94)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:94)	RET	(R30)
+	0x0000 e0 23 80 39 00 10 7d 93 e0 0b 00 f9 c0 03 5f d6  .#.9..}......._.
+	rel 12+0 t=11 +0
+"".sbfiz5 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:97)	TEXT	"".sbfiz5(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:97)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:97)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:97)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:99)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:99)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:99)	MOVW	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:99)	SBFIZ	$1, R0, $28, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:99)	MOVW	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:99)	RET	(R30)
+	0x0000 e0 0b 80 b9 00 6c 7f 93 e0 13 00 b9 c0 03 5f d6  .....l........_.
+	rel 12+0 t=11 +0
+"".sbfx1 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:103)	TEXT	"".sbfx1(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:103)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:103)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:103)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:104)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:104)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:104)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:104)	SBFX	$1, R0, $60, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:104)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:104)	RET	(R30)
+	0x0000 e0 07 40 f9 00 f0 41 93 e0 0b 00 f9 c0 03 5f d6  ..@...A......._.
+	rel 12+0 t=11 +0
+"".sbfx2 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:107)	TEXT	"".sbfx2(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:107)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:107)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:107)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:108)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:108)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:108)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:108)	SBFX	ZR, R0, $4, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:108)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:108)	RET	(R30)
+	0x0000 e0 07 40 f9 00 0c 40 93 e0 0b 00 f9 c0 03 5f d6  ..@...@......._.
+	rel 12+0 t=11 +0
+"".sbfx3 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:111)	TEXT	"".sbfx3(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:111)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:111)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:111)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:112)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:112)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:112)	MOVW	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:112)	SBFX	$3, R0, $29, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:112)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:112)	RET	(R30)
+	0x0000 e0 0b 80 b9 00 7c 43 93 e0 0b 00 f9 c0 03 5f d6  .....|C......._.
+	rel 12+0 t=11 +0
+"".sbfx4 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:115)	TEXT	"".sbfx4(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:115)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:115)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:115)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:116)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:116)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:116)	MOVH	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:116)	SBFX	$3, R0, $13, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:116)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:116)	RET	(R30)
+	0x0000 e0 13 80 79 00 3c 43 93 e0 0b 00 f9 c0 03 5f d6  ...y.<C......._.
+	rel 12+0 t=11 +0
+"".sbfx5 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:119)	TEXT	"".sbfx5(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:119)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:119)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:119)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:120)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:120)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:120)	MOVB	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:120)	SBFX	$3, R0, $5, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:120)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:120)	RET	(R30)
+	0x0000 e0 23 80 39 00 1c 43 93 e0 0b 00 f9 c0 03 5f d6  .#.9..C......._.
+	rel 12+0 t=11 +0
+"".sbfx6 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:123)	TEXT	"".sbfx6(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:123)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:123)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:123)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:124)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:124)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:124)	MOVW	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:124)	SBFX	$1, R0, $28, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:124)	MOVW	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:124)	RET	(R30)
+	0x0000 e0 0b 80 b9 00 70 41 93 e0 13 00 b9 c0 03 5f d6  .....pA......._.
+	rel 12+0 t=11 +0
+"".ubfiz1 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:128)	TEXT	"".ubfiz1(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:128)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:128)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:128)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:130)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:130)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:130)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:130)	UBFIZ	$3, R0, $12, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:130)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:130)	RET	(R30)
+	0x0000 e0 07 40 f9 00 2c 7d d3 e0 0b 00 f9 c0 03 5f d6  ..@..,}......._.
+	rel 12+0 t=11 +0
+"".ubfiz2 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:133)	TEXT	"".ubfiz2(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:133)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:133)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:133)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:135)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:135)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:135)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:135)	UBFIZ	$4, R0, $12, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:135)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:135)	RET	(R30)
+	0x0000 e0 07 40 f9 00 2c 7c d3 e0 0b 00 f9 c0 03 5f d6  ..@..,|......._.
+	rel 12+0 t=11 +0
+"".ubfiz3 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:138)	TEXT	"".ubfiz3(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:138)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:138)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:138)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:139)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:139)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:139)	MOVWU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:139)	ADD	$1, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:139)	UBFIZ	$3, R0, $32, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:139)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:139)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 04 00 91 00 7c 7d d3 e0 0b 00 f9  ..@......|}.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".ubfiz4 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:142)	TEXT	"".ubfiz4(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:142)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:142)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:142)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:143)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:143)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:143)	MOVHU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:143)	ADD	$1, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:143)	UBFIZ	$3, R0, $16, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:143)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:143)	RET	(R30)
+	0x0000 e0 13 40 79 00 04 00 91 00 3c 7d d3 e0 0b 00 f9  ..@y.....<}.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".ubfiz5 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:146)	TEXT	"".ubfiz5(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:146)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:146)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:146)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:147)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:147)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:147)	MOVBU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:147)	ADD	$1, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:147)	UBFIZ	$3, R0, $8, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:147)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:147)	RET	(R30)
+	0x0000 e0 23 40 39 00 04 00 91 00 1c 7d d3 e0 0b 00 f9  .#@9......}.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".ubfiz6 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:150)	TEXT	"".ubfiz6(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:150)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:150)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:150)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:152)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:152)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:152)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:152)	UBFIZ	$1, R0, $60, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:152)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:152)	RET	(R30)
+	0x0000 e0 07 40 f9 00 ec 7f d3 e0 0b 00 f9 c0 03 5f d6  ..@..........._.
+	rel 12+0 t=11 +0
+"".ubfiz7 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:155)	TEXT	"".ubfiz7(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:155)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:155)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:155)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:157)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:157)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:157)	MOVWU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:157)	UBFIZ	$1, R0, $28, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:157)	MOVW	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:157)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 6c 7f d3 e0 13 00 b9 c0 03 5f d6  ..@..l........_.
+	rel 12+0 t=11 +0
+"".ubfiz8 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:160)	TEXT	"".ubfiz8(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:160)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:160)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:160)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:162)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:162)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:162)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:162)	UBFIZ	$1, R0, $20, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:162)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:162)	RET	(R30)
+	0x0000 e0 07 40 f9 00 4c 7f d3 e0 0b 00 f9 c0 03 5f d6  ..@..L........_.
+	rel 12+0 t=11 +0
+"".ubfiz9 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:165)	TEXT	"".ubfiz9(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:165)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:165)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:165)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:167)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:167)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:167)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:167)	UBFIZ	$5, R0, $13, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:167)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:167)	RET	(R30)
+	0x0000 e0 07 40 f9 00 30 7b d3 e0 0b 00 f9 c0 03 5f d6  ..@..0{......._.
+	rel 12+0 t=11 +0
+"".ubfiz10 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:170)	TEXT	"".ubfiz10(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:170)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:170)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:170)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:172)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:172)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:172)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:172)	UBFIZ	$7, R0, $12, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:172)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:172)	RET	(R30)
+	0x0000 e0 07 40 f9 00 2c 79 d3 e0 0b 00 f9 c0 03 5f d6  ..@..,y......._.
+	rel 12+0 t=11 +0
+"".ubfx1 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:176)	TEXT	"".ubfx1(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:176)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:176)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:176)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:178)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:178)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:178)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:178)	UBFX	$25, R0, $10, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:178)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:178)	RET	(R30)
+	0x0000 e0 07 40 f9 00 88 59 d3 e0 0b 00 f9 c0 03 5f d6  ..@...Y......._.
+	rel 12+0 t=11 +0
+"".ubfx2 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:181)	TEXT	"".ubfx2(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:181)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:181)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:181)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:183)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:183)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:183)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:183)	UBFX	$4, R0, $8, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:183)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:183)	RET	(R30)
+	0x0000 e0 07 40 f9 00 2c 44 d3 e0 0b 00 f9 c0 03 5f d6  ..@..,D......._.
+	rel 12+0 t=11 +0
+"".ubfx3 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:186)	TEXT	"".ubfx3(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:186)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:186)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:186)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:187)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:187)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:187)	MOVWU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:187)	UBFX	$15, R0, $17, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:187)	MOVWU	R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:187)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:187)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 7c 4f d3 e0 03 00 2a e0 0b 00 f9  ..@..|O....*....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".ubfx4 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:190)	TEXT	"".ubfx4(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:190)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:190)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:190)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:191)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:191)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:191)	MOVHU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:191)	UBFX	$9, R0, $7, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:191)	MOVHU	R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:191)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:191)	RET	(R30)
+	0x0000 e0 13 40 79 00 3c 49 d3 00 3c 40 d3 e0 0b 00 f9  ..@y.<I..<@.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".ubfx5 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:194)	TEXT	"".ubfx5(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:194)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:194)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:194)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:195)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:195)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:195)	MOVBU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:195)	UBFX	$3, R0, $5, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:195)	MOVBU	R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:195)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:195)	RET	(R30)
+	0x0000 e0 23 40 39 00 1c 43 d3 00 1c 40 d3 e0 0b 00 f9  .#@9..C...@.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".ubfx6 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:198)	TEXT	"".ubfx6(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:198)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:198)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:198)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:199)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:199)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:199)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:199)	UBFX	$1, R0, $62, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:199)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:199)	RET	(R30)
+	0x0000 e0 07 40 f9 00 f8 41 d3 e0 0b 00 f9 c0 03 5f d6  ..@...A......._.
+	rel 12+0 t=11 +0
+"".ubfx7 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:202)	TEXT	"".ubfx7(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:202)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:202)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:202)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:203)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:203)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:203)	MOVWU	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:203)	UBFX	$1, R0, $30, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:203)	MOVW	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:203)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 78 41 d3 e0 13 00 b9 c0 03 5f d6  ..@..xA......._.
+	rel 12+0 t=11 +0
+"".ubfx8 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:206)	TEXT	"".ubfx8(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:206)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:206)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:206)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:208)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:208)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:208)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:208)	UBFX	$1, R0, $12, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:208)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:208)	RET	(R30)
+	0x0000 e0 07 40 f9 00 30 41 d3 e0 0b 00 f9 c0 03 5f d6  ..@..0A......._.
+	rel 12+0 t=11 +0
+"".ubfx9 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:211)	TEXT	"".ubfx9(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:211)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:211)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:211)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:213)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:213)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:213)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:213)	UBFX	$4, R0, $11, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:213)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:213)	RET	(R30)
+	0x0000 e0 07 40 f9 00 38 44 d3 e0 0b 00 f9 c0 03 5f d6  ..@..8D......._.
+	rel 12+0 t=11 +0
+"".ubfx10 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:216)	TEXT	"".ubfx10(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:216)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:216)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:216)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:218)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:218)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:218)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:218)	UBFX	$5, R0, $56, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:218)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:218)	RET	(R30)
+	0x0000 e0 07 40 f9 00 f0 45 d3 e0 0b 00 f9 c0 03 5f d6  ..@...E......._.
+	rel 12+0 t=11 +0
+"".ubfx11 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:221)	TEXT	"".ubfx11(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:221)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:221)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:221)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:223)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:223)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:223)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:223)	UBFX	$1, R0, $19, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:223)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:223)	RET	(R30)
+	0x0000 e0 07 40 f9 00 4c 41 d3 e0 0b 00 f9 c0 03 5f d6  ..@..LA......._.
+	rel 12+0 t=11 +0
+"".shift_no_cmp STEXT nosplit size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:228)	TEXT	"".shift_no_cmp(SB), NOSPLIT|LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:228)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:228)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:228)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:231)	MOVD	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:231)	LSL	$17, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:231)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/bitfield.go:231)	RET	(R30)
+	0x0000 e0 07 40 f9 00 b8 6f d3 e0 0b 00 f9 c0 03 5f d6  ..@...o......._.
+	rel 12+0 t=11 +0
+go.loc."".extr1 SDWARFLOC size=0
+go.info."".extr1 SDWARFINFO size=67
+	0x0000 02 22 22 2e 65 78 74 72 31 00 00 00 00 00 00 00  ."".extr1.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 0c 00 00 00 00 00 0e 78 32 00 00  ..x.........x2..
+	0x0030 0c 00 00 00 00 00 0e 7e 72 32 00 01 0c 00 00 00  .......~r2......
+	0x0040 00 00 00                                         ...
+	rel 10+8 t=1 "".extr1+0
+	rel 18+8 t=1 "".extr1+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.uint64+0
+	rel 49+4 t=28 go.info.uint64+0
+	rel 61+4 t=28 go.info.uint64+0
+go.range."".extr1 SDWARFRANGE size=0
+go.isstmt."".extr1 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".extr2 SDWARFLOC size=0
+go.info."".extr2 SDWARFINFO size=67
+	0x0000 02 22 22 2e 65 78 74 72 32 00 00 00 00 00 00 00  ."".extr2.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 10 00 00 00 00 00 0e 78 32 00 00  ..x.........x2..
+	0x0030 10 00 00 00 00 00 0e 7e 72 32 00 01 10 00 00 00  .......~r2......
+	0x0040 00 00 00                                         ...
+	rel 10+8 t=1 "".extr2+0
+	rel 18+8 t=1 "".extr2+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.uint64+0
+	rel 49+4 t=28 go.info.uint64+0
+	rel 61+4 t=28 go.info.uint64+0
+go.range."".extr2 SDWARFRANGE size=0
+go.isstmt."".extr2 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".extr3 SDWARFLOC size=0
+go.info."".extr3 SDWARFINFO size=67
+	0x0000 02 22 22 2e 65 78 74 72 33 00 00 00 00 00 00 00  ."".extr3.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 14 00 00 00 00 00 0e 78 32 00 00  ..x.........x2..
+	0x0030 14 00 00 00 00 00 0e 7e 72 32 00 01 14 00 00 00  .......~r2......
+	0x0040 00 00 00                                         ...
+	rel 10+8 t=1 "".extr3+0
+	rel 18+8 t=1 "".extr3+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.uint64+0
+	rel 49+4 t=28 go.info.uint64+0
+	rel 61+4 t=28 go.info.uint64+0
+go.range."".extr3 SDWARFRANGE size=0
+go.isstmt."".extr3 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".extr4 SDWARFLOC size=0
+go.info."".extr4 SDWARFINFO size=67
+	0x0000 02 22 22 2e 65 78 74 72 34 00 00 00 00 00 00 00  ."".extr4.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 18 00 00 00 00 00 0e 78 32 00 00  ..x.........x2..
+	0x0030 18 00 00 00 00 00 0e 7e 72 32 00 01 18 00 00 00  .......~r2......
+	0x0040 00 00 00                                         ...
+	rel 10+8 t=1 "".extr4+0
+	rel 18+8 t=1 "".extr4+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.uint32+0
+	rel 49+4 t=28 go.info.uint32+0
+	rel 61+4 t=28 go.info.uint32+0
+go.range."".extr4 SDWARFRANGE size=0
+go.isstmt."".extr4 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".extr5 SDWARFLOC size=0
+go.info."".extr5 SDWARFINFO size=67
+	0x0000 02 22 22 2e 65 78 74 72 35 00 00 00 00 00 00 00  ."".extr5.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 1c 00 00 00 00 00 0e 78 32 00 00  ..x.........x2..
+	0x0030 1c 00 00 00 00 00 0e 7e 72 32 00 01 1c 00 00 00  .......~r2......
+	0x0040 00 00 00                                         ...
+	rel 10+8 t=1 "".extr5+0
+	rel 18+8 t=1 "".extr5+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.uint32+0
+	rel 49+4 t=28 go.info.uint32+0
+	rel 61+4 t=28 go.info.uint32+0
+go.range."".extr5 SDWARFRANGE size=0
+go.isstmt."".extr5 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".extr6 SDWARFLOC size=0
+go.info."".extr6 SDWARFINFO size=67
+	0x0000 02 22 22 2e 65 78 74 72 36 00 00 00 00 00 00 00  ."".extr6.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 20 00 00 00 00 00 0e 78 32 00 00  ..x.. ......x2..
+	0x0030 20 00 00 00 00 00 0e 7e 72 32 00 01 20 00 00 00   ......~r2.. ...
+	0x0040 00 00 00                                         ...
+	rel 10+8 t=1 "".extr6+0
+	rel 18+8 t=1 "".extr6+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.uint32+0
+	rel 49+4 t=28 go.info.uint32+0
+	rel 61+4 t=28 go.info.uint32+0
+go.range."".extr6 SDWARFRANGE size=0
+go.isstmt."".extr6 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".mask32 SDWARFLOC size=0
+go.info."".mask32 SDWARFINFO size=57
+	0x0000 02 22 22 2e 6d 61 73 6b 33 32 00 00 00 00 00 00  ."".mask32......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 25 00 00 00 00 00 0e 7e 72 31  ...x..%......~r1
+	0x0030 00 01 25 00 00 00 00 00 00                       ..%......
+	rel 11+8 t=1 "".mask32+0
+	rel 19+8 t=1 "".mask32+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint32+0
+	rel 51+4 t=28 go.info.uint32+0
+go.range."".mask32 SDWARFRANGE size=0
+go.isstmt."".mask32 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".mask16 SDWARFLOC size=0
+go.info."".mask16 SDWARFINFO size=57
+	0x0000 02 22 22 2e 6d 61 73 6b 31 36 00 00 00 00 00 00  ."".mask16......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 2a 00 00 00 00 00 0e 7e 72 31  ...x..*......~r1
+	0x0030 00 01 2a 00 00 00 00 00 00                       ..*......
+	rel 11+8 t=1 "".mask16+0
+	rel 19+8 t=1 "".mask16+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint16+0
+	rel 51+4 t=28 go.info.uint16+0
+go.range."".mask16 SDWARFRANGE size=0
+go.isstmt."".mask16 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".mask8 SDWARFLOC size=0
+go.info."".mask8 SDWARFINFO size=56
+	0x0000 02 22 22 2e 6d 61 73 6b 38 00 00 00 00 00 00 00  ."".mask8.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 2f 00 00 00 00 00 0e 7e 72 31 00  ..x../......~r1.
+	0x0030 01 2f 00 00 00 00 00 00                          ./......
+	rel 10+8 t=1 "".mask8+0
+	rel 18+8 t=1 "".mask8+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.uint8+0
+	rel 50+4 t=28 go.info.uint8+0
+go.range."".mask8 SDWARFRANGE size=0
+go.isstmt."".mask8 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".maskshift SDWARFLOC size=0
+go.info."".maskshift SDWARFINFO size=60
+	0x0000 02 22 22 2e 6d 61 73 6b 73 68 69 66 74 00 00 00  ."".maskshift...
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c  ................
+	0x0020 00 00 00 00 01 0e 78 00 00 33 00 00 00 00 00 0e  ......x..3......
+	0x0030 7e 72 31 00 01 33 00 00 00 00 00 00              ~r1..3......
+	rel 14+8 t=1 "".maskshift+0
+	rel 22+8 t=1 "".maskshift+16
+	rel 32+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 42+4 t=28 go.info.uint64+0
+	rel 54+4 t=28 go.info.uint64+0
+go.range."".maskshift SDWARFRANGE size=0
+go.isstmt."".maskshift SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".bfi1 SDWARFLOC size=0
+go.info."".bfi1 SDWARFINFO size=65
+	0x0000 02 22 22 2e 62 66 69 31 00 00 00 00 00 00 00 00  ."".bfi1........
+	0x0010 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01  ................
+	0x0020 0e 78 00 00 3a 00 00 00 00 00 0e 79 00 00 3a 00  .x..:......y..:.
+	0x0030 00 00 00 00 0e 7e 72 32 00 01 3a 00 00 00 00 00  .....~r2..:.....
+	0x0040 00                                               .
+	rel 9+8 t=1 "".bfi1+0
+	rel 17+8 t=1 "".bfi1+32
+	rel 27+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 37+4 t=28 go.info.uint64+0
+	rel 47+4 t=28 go.info.uint64+0
+	rel 59+4 t=28 go.info.uint64+0
+go.range."".bfi1 SDWARFRANGE size=0
+go.isstmt."".bfi1 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".bfi2 SDWARFLOC size=0
+go.info."".bfi2 SDWARFINFO size=65
+	0x0000 02 22 22 2e 62 66 69 32 00 00 00 00 00 00 00 00  ."".bfi2........
+	0x0010 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01  ................
+	0x0020 0e 78 00 00 3f 00 00 00 00 00 0e 79 00 00 3f 00  .x..?......y..?.
+	0x0030 00 00 00 00 0e 7e 72 32 00 01 3f 00 00 00 00 00  .....~r2..?.....
+	0x0040 00                                               .
+	rel 9+8 t=1 "".bfi2+0
+	rel 17+8 t=1 "".bfi2+32
+	rel 27+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 37+4 t=28 go.info.uint64+0
+	rel 47+4 t=28 go.info.uint64+0
+	rel 59+4 t=28 go.info.uint64+0
+go.range."".bfi2 SDWARFRANGE size=0
+go.isstmt."".bfi2 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".bfxil1 SDWARFLOC size=0
+go.info."".bfxil1 SDWARFINFO size=67
+	0x0000 02 22 22 2e 62 66 78 69 6c 31 00 00 00 00 00 00  ."".bfxil1......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 45 00 00 00 00 00 0e 79 00 00  ...x..E......y..
+	0x0030 45 00 00 00 00 00 0e 7e 72 32 00 01 45 00 00 00  E......~r2..E...
+	0x0040 00 00 00                                         ...
+	rel 11+8 t=1 "".bfxil1+0
+	rel 19+8 t=1 "".bfxil1+32
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint64+0
+	rel 49+4 t=28 go.info.uint64+0
+	rel 61+4 t=28 go.info.uint64+0
+go.range."".bfxil1 SDWARFRANGE size=0
+go.isstmt."".bfxil1 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".bfxil2 SDWARFLOC size=0
+go.info."".bfxil2 SDWARFINFO size=67
+	0x0000 02 22 22 2e 62 66 78 69 6c 32 00 00 00 00 00 00  ."".bfxil2......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 4a 00 00 00 00 00 0e 79 00 00  ...x..J......y..
+	0x0030 4a 00 00 00 00 00 0e 7e 72 32 00 01 4a 00 00 00  J......~r2..J...
+	0x0040 00 00 00                                         ...
+	rel 11+8 t=1 "".bfxil2+0
+	rel 19+8 t=1 "".bfxil2+32
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint64+0
+	rel 49+4 t=28 go.info.uint64+0
+	rel 61+4 t=28 go.info.uint64+0
+go.range."".bfxil2 SDWARFRANGE size=0
+go.isstmt."".bfxil2 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".sbfiz1 SDWARFLOC size=0
+go.info."".sbfiz1 SDWARFINFO size=57
+	0x0000 02 22 22 2e 73 62 66 69 7a 31 00 00 00 00 00 00  ."".sbfiz1......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 50 00 00 00 00 00 0e 7e 72 31  ...x..P......~r1
+	0x0030 00 01 50 00 00 00 00 00 00                       ..P......
+	rel 11+8 t=1 "".sbfiz1+0
+	rel 19+8 t=1 "".sbfiz1+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.int64+0
+	rel 51+4 t=28 go.info.int64+0
+go.range."".sbfiz1 SDWARFRANGE size=0
+go.isstmt."".sbfiz1 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfiz2 SDWARFLOC size=0
+go.info."".sbfiz2 SDWARFINFO size=57
+	0x0000 02 22 22 2e 73 62 66 69 7a 32 00 00 00 00 00 00  ."".sbfiz2......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 55 00 00 00 00 00 0e 7e 72 31  ...x..U......~r1
+	0x0030 00 01 55 00 00 00 00 00 00                       ..U......
+	rel 11+8 t=1 "".sbfiz2+0
+	rel 19+8 t=1 "".sbfiz2+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.int32+0
+	rel 51+4 t=28 go.info.int64+0
+go.range."".sbfiz2 SDWARFRANGE size=0
+go.isstmt."".sbfiz2 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfiz3 SDWARFLOC size=0
+go.info."".sbfiz3 SDWARFINFO size=57
+	0x0000 02 22 22 2e 73 62 66 69 7a 33 00 00 00 00 00 00  ."".sbfiz3......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 59 00 00 00 00 00 0e 7e 72 31  ...x..Y......~r1
+	0x0030 00 01 59 00 00 00 00 00 00                       ..Y......
+	rel 11+8 t=1 "".sbfiz3+0
+	rel 19+8 t=1 "".sbfiz3+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.int16+0
+	rel 51+4 t=28 go.info.int64+0
+go.range."".sbfiz3 SDWARFRANGE size=0
+go.isstmt."".sbfiz3 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfiz4 SDWARFLOC size=0
+go.info."".sbfiz4 SDWARFINFO size=57
+	0x0000 02 22 22 2e 73 62 66 69 7a 34 00 00 00 00 00 00  ."".sbfiz4......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 5d 00 00 00 00 00 0e 7e 72 31  ...x..]......~r1
+	0x0030 00 01 5d 00 00 00 00 00 00                       ..]......
+	rel 11+8 t=1 "".sbfiz4+0
+	rel 19+8 t=1 "".sbfiz4+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.int8+0
+	rel 51+4 t=28 go.info.int64+0
+go.range."".sbfiz4 SDWARFRANGE size=0
+go.isstmt."".sbfiz4 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfiz5 SDWARFLOC size=0
+go.info."".sbfiz5 SDWARFINFO size=57
+	0x0000 02 22 22 2e 73 62 66 69 7a 35 00 00 00 00 00 00  ."".sbfiz5......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 61 00 00 00 00 00 0e 7e 72 31  ...x..a......~r1
+	0x0030 00 01 61 00 00 00 00 00 00                       ..a......
+	rel 11+8 t=1 "".sbfiz5+0
+	rel 19+8 t=1 "".sbfiz5+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.int32+0
+	rel 51+4 t=28 go.info.int32+0
+go.range."".sbfiz5 SDWARFRANGE size=0
+go.isstmt."".sbfiz5 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfx1 SDWARFLOC size=0
+go.info."".sbfx1 SDWARFINFO size=56
+	0x0000 02 22 22 2e 73 62 66 78 31 00 00 00 00 00 00 00  ."".sbfx1.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 67 00 00 00 00 00 0e 7e 72 31 00  ..x..g......~r1.
+	0x0030 01 67 00 00 00 00 00 00                          .g......
+	rel 10+8 t=1 "".sbfx1+0
+	rel 18+8 t=1 "".sbfx1+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.int64+0
+	rel 50+4 t=28 go.info.int64+0
+go.range."".sbfx1 SDWARFRANGE size=0
+go.isstmt."".sbfx1 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfx2 SDWARFLOC size=0
+go.info."".sbfx2 SDWARFINFO size=56
+	0x0000 02 22 22 2e 73 62 66 78 32 00 00 00 00 00 00 00  ."".sbfx2.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 6b 00 00 00 00 00 0e 7e 72 31 00  ..x..k......~r1.
+	0x0030 01 6b 00 00 00 00 00 00                          .k......
+	rel 10+8 t=1 "".sbfx2+0
+	rel 18+8 t=1 "".sbfx2+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.int64+0
+	rel 50+4 t=28 go.info.int64+0
+go.range."".sbfx2 SDWARFRANGE size=0
+go.isstmt."".sbfx2 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfx3 SDWARFLOC size=0
+go.info."".sbfx3 SDWARFINFO size=56
+	0x0000 02 22 22 2e 73 62 66 78 33 00 00 00 00 00 00 00  ."".sbfx3.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 6f 00 00 00 00 00 0e 7e 72 31 00  ..x..o......~r1.
+	0x0030 01 6f 00 00 00 00 00 00                          .o......
+	rel 10+8 t=1 "".sbfx3+0
+	rel 18+8 t=1 "".sbfx3+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.int32+0
+	rel 50+4 t=28 go.info.int64+0
+go.range."".sbfx3 SDWARFRANGE size=0
+go.isstmt."".sbfx3 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfx4 SDWARFLOC size=0
+go.info."".sbfx4 SDWARFINFO size=56
+	0x0000 02 22 22 2e 73 62 66 78 34 00 00 00 00 00 00 00  ."".sbfx4.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 73 00 00 00 00 00 0e 7e 72 31 00  ..x..s......~r1.
+	0x0030 01 73 00 00 00 00 00 00                          .s......
+	rel 10+8 t=1 "".sbfx4+0
+	rel 18+8 t=1 "".sbfx4+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.int16+0
+	rel 50+4 t=28 go.info.int64+0
+go.range."".sbfx4 SDWARFRANGE size=0
+go.isstmt."".sbfx4 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfx5 SDWARFLOC size=0
+go.info."".sbfx5 SDWARFINFO size=56
+	0x0000 02 22 22 2e 73 62 66 78 35 00 00 00 00 00 00 00  ."".sbfx5.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 77 00 00 00 00 00 0e 7e 72 31 00  ..x..w......~r1.
+	0x0030 01 77 00 00 00 00 00 00                          .w......
+	rel 10+8 t=1 "".sbfx5+0
+	rel 18+8 t=1 "".sbfx5+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.int8+0
+	rel 50+4 t=28 go.info.int64+0
+go.range."".sbfx5 SDWARFRANGE size=0
+go.isstmt."".sbfx5 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".sbfx6 SDWARFLOC size=0
+go.info."".sbfx6 SDWARFINFO size=56
+	0x0000 02 22 22 2e 73 62 66 78 36 00 00 00 00 00 00 00  ."".sbfx6.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 7b 00 00 00 00 00 0e 7e 72 31 00  ..x..{......~r1.
+	0x0030 01 7b 00 00 00 00 00 00                          .{......
+	rel 10+8 t=1 "".sbfx6+0
+	rel 18+8 t=1 "".sbfx6+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 38+4 t=28 go.info.int32+0
+	rel 50+4 t=28 go.info.int32+0
+go.range."".sbfx6 SDWARFRANGE size=0
+go.isstmt."".sbfx6 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfiz1 SDWARFLOC size=0
+go.info."".ubfiz1 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 31 00 00 00 00 00 00  ."".ubfiz1......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 80 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 80 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz1+0
+	rel 19+8 t=1 "".ubfiz1+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint64+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfiz1 SDWARFRANGE size=0
+go.isstmt."".ubfiz1 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfiz2 SDWARFLOC size=0
+go.info."".ubfiz2 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 32 00 00 00 00 00 00  ."".ubfiz2......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 85 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 85 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz2+0
+	rel 19+8 t=1 "".ubfiz2+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint64+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfiz2 SDWARFRANGE size=0
+go.isstmt."".ubfiz2 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfiz3 SDWARFLOC size=0
+go.info."".ubfiz3 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 33 00 00 00 00 00 00  ."".ubfiz3......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 8a 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 8a 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz3+0
+	rel 19+8 t=1 "".ubfiz3+32
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint32+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfiz3 SDWARFRANGE size=0
+go.isstmt."".ubfiz3 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".ubfiz4 SDWARFLOC size=0
+go.info."".ubfiz4 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 34 00 00 00 00 00 00  ."".ubfiz4......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 8e 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 8e 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz4+0
+	rel 19+8 t=1 "".ubfiz4+32
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint16+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfiz4 SDWARFRANGE size=0
+go.isstmt."".ubfiz4 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".ubfiz5 SDWARFLOC size=0
+go.info."".ubfiz5 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 35 00 00 00 00 00 00  ."".ubfiz5......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 92 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 92 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz5+0
+	rel 19+8 t=1 "".ubfiz5+32
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint8+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfiz5 SDWARFRANGE size=0
+go.isstmt."".ubfiz5 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".ubfiz6 SDWARFLOC size=0
+go.info."".ubfiz6 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 36 00 00 00 00 00 00  ."".ubfiz6......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 96 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 96 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz6+0
+	rel 19+8 t=1 "".ubfiz6+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint64+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfiz6 SDWARFRANGE size=0
+go.isstmt."".ubfiz6 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfiz7 SDWARFLOC size=0
+go.info."".ubfiz7 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 37 00 00 00 00 00 00  ."".ubfiz7......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 9b 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 9b 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz7+0
+	rel 19+8 t=1 "".ubfiz7+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint32+0
+	rel 53+4 t=28 go.info.uint32+0
+go.range."".ubfiz7 SDWARFRANGE size=0
+go.isstmt."".ubfiz7 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfiz8 SDWARFLOC size=0
+go.info."".ubfiz8 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 38 00 00 00 00 00 00  ."".ubfiz8......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 a0 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 a0 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz8+0
+	rel 19+8 t=1 "".ubfiz8+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint64+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfiz8 SDWARFRANGE size=0
+go.isstmt."".ubfiz8 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfiz9 SDWARFLOC size=0
+go.info."".ubfiz9 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 69 7a 39 00 00 00 00 00 00  ."".ubfiz9......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 a5 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 a5 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfiz9+0
+	rel 19+8 t=1 "".ubfiz9+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint64+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfiz9 SDWARFRANGE size=0
+go.isstmt."".ubfiz9 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfiz10 SDWARFLOC size=0
+go.info."".ubfiz10 SDWARFINFO size=60
+	0x0000 02 22 22 2e 75 62 66 69 7a 31 30 00 00 00 00 00  ."".ubfiz10.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0e 78 00 00 aa 01 00 00 00 00 00 0e 7e  ....x..........~
+	0x0030 72 31 00 01 aa 01 00 00 00 00 00 00              r1..........
+	rel 12+8 t=1 "".ubfiz10+0
+	rel 20+8 t=1 "".ubfiz10+16
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 41+4 t=28 go.info.uint64+0
+	rel 54+4 t=28 go.info.uint64+0
+go.range."".ubfiz10 SDWARFRANGE size=0
+go.isstmt."".ubfiz10 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfx1 SDWARFLOC size=0
+go.info."".ubfx1 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 31 00 00 00 00 00 00 00  ."".ubfx1.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 b0 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 b0 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx1+0
+	rel 18+8 t=1 "".ubfx1+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint64+0
+	rel 52+4 t=28 go.info.uint64+0
+go.range."".ubfx1 SDWARFRANGE size=0
+go.isstmt."".ubfx1 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfx2 SDWARFLOC size=0
+go.info."".ubfx2 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 32 00 00 00 00 00 00 00  ."".ubfx2.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 b5 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 b5 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx2+0
+	rel 18+8 t=1 "".ubfx2+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint64+0
+	rel 52+4 t=28 go.info.uint64+0
+go.range."".ubfx2 SDWARFRANGE size=0
+go.isstmt."".ubfx2 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfx3 SDWARFLOC size=0
+go.info."".ubfx3 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 33 00 00 00 00 00 00 00  ."".ubfx3.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 ba 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 ba 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx3+0
+	rel 18+8 t=1 "".ubfx3+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint32+0
+	rel 52+4 t=28 go.info.uint64+0
+go.range."".ubfx3 SDWARFRANGE size=0
+go.isstmt."".ubfx3 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".ubfx4 SDWARFLOC size=0
+go.info."".ubfx4 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 34 00 00 00 00 00 00 00  ."".ubfx4.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 be 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 be 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx4+0
+	rel 18+8 t=1 "".ubfx4+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint16+0
+	rel 52+4 t=28 go.info.uint64+0
+go.range."".ubfx4 SDWARFRANGE size=0
+go.isstmt."".ubfx4 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".ubfx5 SDWARFLOC size=0
+go.info."".ubfx5 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 35 00 00 00 00 00 00 00  ."".ubfx5.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 c2 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 c2 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx5+0
+	rel 18+8 t=1 "".ubfx5+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint8+0
+	rel 52+4 t=28 go.info.uint64+0
+go.range."".ubfx5 SDWARFRANGE size=0
+go.isstmt."".ubfx5 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".ubfx6 SDWARFLOC size=0
+go.info."".ubfx6 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 36 00 00 00 00 00 00 00  ."".ubfx6.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 c6 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 c6 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx6+0
+	rel 18+8 t=1 "".ubfx6+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint64+0
+	rel 52+4 t=28 go.info.uint64+0
+go.range."".ubfx6 SDWARFRANGE size=0
+go.isstmt."".ubfx6 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfx7 SDWARFLOC size=0
+go.info."".ubfx7 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 37 00 00 00 00 00 00 00  ."".ubfx7.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 ca 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 ca 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx7+0
+	rel 18+8 t=1 "".ubfx7+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint32+0
+	rel 52+4 t=28 go.info.uint32+0
+go.range."".ubfx7 SDWARFRANGE size=0
+go.isstmt."".ubfx7 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfx8 SDWARFLOC size=0
+go.info."".ubfx8 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 38 00 00 00 00 00 00 00  ."".ubfx8.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 ce 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 ce 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx8+0
+	rel 18+8 t=1 "".ubfx8+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint64+0
+	rel 52+4 t=28 go.info.uint64+0
+go.range."".ubfx8 SDWARFRANGE size=0
+go.isstmt."".ubfx8 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfx9 SDWARFLOC size=0
+go.info."".ubfx9 SDWARFINFO size=58
+	0x0000 02 22 22 2e 75 62 66 78 39 00 00 00 00 00 00 00  ."".ubfx9.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 78 00 00 d3 01 00 00 00 00 00 0e 7e 72 31  ..x..........~r1
+	0x0030 00 01 d3 01 00 00 00 00 00 00                    ..........
+	rel 10+8 t=1 "".ubfx9+0
+	rel 18+8 t=1 "".ubfx9+16
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 39+4 t=28 go.info.uint64+0
+	rel 52+4 t=28 go.info.uint64+0
+go.range."".ubfx9 SDWARFRANGE size=0
+go.isstmt."".ubfx9 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfx10 SDWARFLOC size=0
+go.info."".ubfx10 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 78 31 30 00 00 00 00 00 00  ."".ubfx10......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 d8 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 d8 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfx10+0
+	rel 19+8 t=1 "".ubfx10+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint64+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfx10 SDWARFRANGE size=0
+go.isstmt."".ubfx10 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ubfx11 SDWARFLOC size=0
+go.info."".ubfx11 SDWARFINFO size=59
+	0x0000 02 22 22 2e 75 62 66 78 31 31 00 00 00 00 00 00  ."".ubfx11......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0e 78 00 00 dd 01 00 00 00 00 00 0e 7e 72  ...x..........~r
+	0x0030 31 00 01 dd 01 00 00 00 00 00 00                 1..........
+	rel 11+8 t=1 "".ubfx11+0
+	rel 19+8 t=1 "".ubfx11+16
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 40+4 t=28 go.info.uint64+0
+	rel 53+4 t=28 go.info.uint64+0
+go.range."".ubfx11 SDWARFRANGE size=0
+go.isstmt."".ubfx11 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".shift_no_cmp SDWARFLOC size=0
+go.info."".shift_no_cmp SDWARFINFO size=65
+	0x0000 02 22 22 2e 73 68 69 66 74 5f 6e 6f 5f 63 6d 70  ."".shift_no_cmp
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 78 00 00 e4 01 00 00  .........x......
+	0x0030 00 00 00 0e 7e 72 31 00 01 e4 01 00 00 00 00 00  ....~r1.........
+	0x0040 00                                               .
+	rel 17+8 t=1 "".shift_no_cmp+0
+	rel 25+8 t=1 "".shift_no_cmp+16
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/bitfield.go+0
+	rel 46+4 t=28 go.info.int+0
+	rel 59+4 t=28 go.info.int+0
+go.range."".shift_no_cmp SDWARFRANGE size=0
+go.isstmt."".shift_no_cmp SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........

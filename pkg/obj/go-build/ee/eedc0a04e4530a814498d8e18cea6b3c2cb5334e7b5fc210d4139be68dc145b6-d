@@ -1,0 +1,105 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "golang_org/x/net/dns/dnsmessage"
+
+
+	_xtest "golang_org/x/net/dns/dnsmessage_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestNameString", _test.TestNameString},
+
+	{"TestQuestionPackUnpack", _test.TestQuestionPackUnpack},
+
+	{"TestName", _test.TestName},
+
+	{"TestNamePackUnpack", _test.TestNamePackUnpack},
+
+	{"TestIncompressibleName", _test.TestIncompressibleName},
+
+	{"TestHeaderUnpackError", _test.TestHeaderUnpackError},
+
+	{"TestParserStart", _test.TestParserStart},
+
+	{"TestResourceNotStarted", _test.TestResourceNotStarted},
+
+	{"TestDNSPackUnpack", _test.TestDNSPackUnpack},
+
+	{"TestDNSAppendPackUnpack", _test.TestDNSAppendPackUnpack},
+
+	{"TestSkipAll", _test.TestSkipAll},
+
+	{"TestSkipEach", _test.TestSkipEach},
+
+	{"TestSkipAfterRead", _test.TestSkipAfterRead},
+
+	{"TestSkipNotStarted", _test.TestSkipNotStarted},
+
+	{"TestTooManyRecords", _test.TestTooManyRecords},
+
+	{"TestVeryLongTxt", _test.TestVeryLongTxt},
+
+	{"TestTooLongTxt", _test.TestTooLongTxt},
+
+	{"TestStartAppends", _test.TestStartAppends},
+
+	{"TestStartError", _test.TestStartError},
+
+	{"TestBuilderResourceError", _test.TestBuilderResourceError},
+
+	{"TestFinishError", _test.TestFinishError},
+
+	{"TestBuilder", _test.TestBuilder},
+
+	{"TestResourcePack", _test.TestResourcePack},
+
+	{"TestParsingAllocs", _test.TestParsingAllocs},
+
+	{"TestBuildingAllocs", _test.TestBuildingAllocs},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkParsing", _test.BenchmarkParsing},
+
+	{"BenchmarkBuilding", _test.BenchmarkBuilding},
+
+	{"BenchmarkPack", _test.BenchmarkPack},
+
+	{"BenchmarkAppendPack", _test.BenchmarkAppendPack},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleParser", _xtest.ExampleParser, "Found question for name bar.example.com.\nFound A/AAAA records for name bar.example.com.: [127.0.0.2]\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "golang_org/x/net/dns/dnsmessage"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

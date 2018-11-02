@@ -1,0 +1,8 @@
+./arch.go
+./arch_s390x.go
+./intrinsics.go
+./stubs.go
+./sys.go
+./zgoarch_s390x.go
+./zgoos_linux.go
+./zversion.go

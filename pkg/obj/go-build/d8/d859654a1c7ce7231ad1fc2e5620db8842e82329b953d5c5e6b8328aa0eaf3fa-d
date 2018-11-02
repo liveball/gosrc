@@ -1,0 +1,2 @@
+./example_test.go
+./signal_cgo_test.go

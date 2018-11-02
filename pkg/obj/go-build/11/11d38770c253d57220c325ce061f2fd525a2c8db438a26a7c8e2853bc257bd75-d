@@ -1,0 +1,10 @@
+./build.go
+./help.go
+./import.go
+./init.go
+./list.go
+./load.go
+./query.go
+./search.go
+./import_test.go
+./query_test.go

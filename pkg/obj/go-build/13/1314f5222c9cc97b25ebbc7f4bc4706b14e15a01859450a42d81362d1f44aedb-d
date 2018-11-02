@@ -1,0 +1,3 @@
+./builtin_test.go
+./reproduciblebuilds_test.go
+./scope_test.go

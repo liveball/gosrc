@@ -1,0 +1,4 @@
+package main
+//go:cgo_import_dynamic strerror strerror ""
+//go:cgo_import_dynamic dyld_stub_binder dyld_stub_binder ""
+//go:cgo_import_dynamic _ _ "/usr/lib/libSystem.B.dylib"

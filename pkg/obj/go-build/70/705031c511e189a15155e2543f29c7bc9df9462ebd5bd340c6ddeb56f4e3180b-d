@@ -1,0 +1,713 @@
+# command-line-arguments
+"".movesmall4 STEXT size=108 args=0x0 locals=0x4 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	TEXT	"".movesmall4(SB), LEAF, $4-0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	BLS	96
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	MOVW.W	R14, -8(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVW	$0, R0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVB	R0, "".x-4(SP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVB	R0, "".x-3(SP)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVB	R0, "".x-2(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVB	R0, "".x-1(SP)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVW	$1, R0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVB	R0, "".x-4(SP)
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVW	$2, R0
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVB	R0, "".x-3(SP)
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVW	$3, R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVB	R0, "".x-2(SP)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVW	$4, R0
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:14)	MOVB	R0, "".x-1(SP)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:19)	MOVBU	"".x-4(SP), R0
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:19)	MOVBU	"".x-3(SP), R1
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:19)	MOVBU	"".x-2(SP), R2
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:19)	MOVB	R0, "".x-3(SP)
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:19)	MOVB	R1, "".x-2(SP)
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:19)	MOVB	R2, "".x-1(SP)
+	0x005c 00092 (<unknown line number>)	MOVW.P	8(R13), R15
+	0x0060 00096 (<unknown line number>)	NOP
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	PCDATA	$0, $-1
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	PCDATA	$2, $-1
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	MOVW	R14, R3
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	CALL	runtime.morestack_noctxt(SB)
+	0x0068 00104 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:13)	JMP	0
+	0x0000 08 10 9a e5 01 00 5d e1 14 00 00 9a 08 e0 2d e5  ......].......-.
+	0x0010 00 00 a0 e3 04 00 cd e5 05 00 cd e5 06 00 cd e5  ................
+	0x0020 07 00 cd e5 01 00 a0 e3 04 00 cd e5 02 00 a0 e3  ................
+	0x0030 05 00 cd e5 03 00 a0 e3 06 00 cd e5 04 00 a0 e3  ................
+	0x0040 07 00 cd e5 04 00 dd e5 05 10 dd e5 06 20 dd e5  ............. ..
+	0x0050 05 00 cd e5 06 10 cd e5 07 20 cd e5 08 f0 9d e4  ......... ......
+	0x0060 0e 30 a0 e1 00 00 00 eb e4 ff ff ea              .0..........
+	rel 100+4 t=9 runtime.morestack_noctxt+ebfffffe
+"".movesmall7 STEXT size=100 args=0x0 locals=0x14
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	TEXT	"".movesmall7(SB), $20-0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	BLS	76
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	MOVW.W	R14, -24(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	FUNCDATA	$3, gclocals·cc59d532c958d8cf509b4dbfbfec9ea5(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	PCDATA	$2, $1
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	MOVW	$"".x-8(SP), R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	PCDATA	$2, $2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	MOVW	$"".statictmp_0(SB), R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	PCDATA	$2, $3
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	MOVW	$"".statictmp_0+6(SB), R0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	PCDATA	$2, $0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	MOVB.P	1(R1), R11
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	MOVB.P	R11, 1(R2)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	CMP	R0, R1
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:23)	BLE	28
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	PCDATA	$2, $4
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	MOVW	$"".x-7(SP), R0
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	PCDATA	$2, $0
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	MOVW	R0, 4(R13)
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	PCDATA	$2, $4
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	MOVW	$"".x-8(SP), R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	PCDATA	$2, $0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	MOVW	R0, 8(R13)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	MOVW	$6, R0
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	MOVW	R0, 12(R13)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:27)	CALL	runtime.memmove(SB)
+	0x0048 00072 (<unknown line number>)	MOVW.P	24(R13), R15
+	0x004c 00076 (<unknown line number>)	NOP
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	PCDATA	$0, $-1
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	PCDATA	$2, $-1
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	MOVW	R14, R3
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	CALL	runtime.morestack_noctxt(SB)
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	JMP	0
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	JMP	0(PC)
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	WORD	$"".statictmp_0(SB)
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:22)	WORD	$"".statictmp_0+6(SB)
+	0x0000 08 10 9a e5 01 00 5d e1 0f 00 00 9a 18 e0 2d e5  ......].......-.
+	0x0010 10 20 8d e2 40 10 9f e5 40 00 9f e5 d1 b0 d1 e0  . ..@...@.......
+	0x0020 01 b0 c2 e4 00 00 51 e1 fb ff ff da 11 00 8d e2  ......Q.........
+	0x0030 04 00 8d e5 10 00 8d e2 08 00 8d e5 06 00 a0 e3  ................
+	0x0040 0c 00 8d e5 00 00 00 eb 18 f0 9d e4 0e 30 a0 e1  .............0..
+	0x0050 00 00 00 eb e9 ff ff ea fe ff ff ea 00 00 00 00  ................
+	0x0060 00 00 00 00                                      ....
+	rel 68+4 t=9 runtime.memmove+ebfffffe
+	rel 80+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 92+4 t=1 "".statictmp_0+0
+	rel 96+4 t=1 "".statictmp_0+6
+"".movesmall16 STEXT size=100 args=0x0 locals=0x1c
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	TEXT	"".movesmall16(SB), $28-0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	BLS	76
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	MOVW.W	R14, -32(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	FUNCDATA	$3, gclocals·cc59d532c958d8cf509b4dbfbfec9ea5(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	PCDATA	$2, $1
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	MOVW	$"".x-16(SP), R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	PCDATA	$2, $2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	MOVW	$"".statictmp_1(SB), R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	PCDATA	$2, $3
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	MOVW	$"".statictmp_1+15(SB), R0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	PCDATA	$2, $0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	MOVB.P	1(R1), R11
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	MOVB.P	R11, 1(R2)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	CMP	R0, R1
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:31)	BLE	28
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	PCDATA	$2, $4
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	MOVW	$"".x-15(SP), R0
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	PCDATA	$2, $0
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	MOVW	R0, 4(R13)
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	PCDATA	$2, $4
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	MOVW	$"".x-16(SP), R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	PCDATA	$2, $0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	MOVW	R0, 8(R13)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	MOVW	$15, R0
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	MOVW	R0, 12(R13)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:33)	CALL	runtime.memmove(SB)
+	0x0048 00072 (<unknown line number>)	MOVW.P	32(R13), R15
+	0x004c 00076 (<unknown line number>)	NOP
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	PCDATA	$0, $-1
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	PCDATA	$2, $-1
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	MOVW	R14, R3
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	CALL	runtime.morestack_noctxt(SB)
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	JMP	0
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	JMP	0(PC)
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	WORD	$"".statictmp_1(SB)
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:30)	WORD	$"".statictmp_1+15(SB)
+	0x0000 08 10 9a e5 01 00 5d e1 0f 00 00 9a 20 e0 2d e5  ......]..... .-.
+	0x0010 10 20 8d e2 40 10 9f e5 40 00 9f e5 d1 b0 d1 e0  . ..@...@.......
+	0x0020 01 b0 c2 e4 00 00 51 e1 fb ff ff da 11 00 8d e2  ......Q.........
+	0x0030 04 00 8d e5 10 00 8d e2 08 00 8d e5 0f 00 a0 e3  ................
+	0x0040 0c 00 8d e5 00 00 00 eb 20 f0 9d e4 0e 30 a0 e1  ........ ....0..
+	0x0050 00 00 00 eb e9 ff ff ea fe ff ff ea 00 00 00 00  ................
+	0x0060 00 00 00 00                                      ....
+	rel 68+4 t=9 runtime.memmove+ebfffffe
+	rel 80+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 92+4 t=1 "".statictmp_1+0
+	rel 96+4 t=1 "".statictmp_1+f
+"".moveDisjointStack STEXT size=104 args=0x0 locals=0x10c
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	TEXT	"".moveDisjointStack(SB), $268-0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	MOVW	$-144(R13), R2
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	CMP	R1, R2
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	BLS	80
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	MOVW.W	R14, -272(R13)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	FUNCDATA	$3, gclocals·862dfd13d7f7d6745eea32fea20c2ab1(SB)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	PCDATA	$2, $1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	PCDATA	$0, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	MOVW	$"".s-256(SP), R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	PCDATA	$2, $2
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	MOVW	$"".s-1(SP), R0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	MOVW	$0, R2
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	PCDATA	$2, $0
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	MOVB.P	R2, 1(R1)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	CMP	R0, R1
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:41)	BLE	36
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	PCDATA	$2, $3
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	MOVW	$"".s-256(SP), R0
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	PCDATA	$2, $0
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	MOVW	R0, 4(R13)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	PCDATA	$2, $4
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	MOVW	$"".x(SB), R2
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	PCDATA	$2, $0
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	MOVW	R2, 8(R13)
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	MOVW	$256, R2
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	MOVW	R2, 12(R13)
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:43)	CALL	runtime.memmove(SB)
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:45)	MOVW.P	272(R13), R15
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:45)	NOP
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	PCDATA	$0, $-1
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	PCDATA	$2, $-1
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	MOVW	R14, R3
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	CALL	runtime.morestack_noctxt(SB)
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	JMP	0
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	JMP	0(PC)
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	WORD	$271
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:40)	WORD	$"".x(SB)
+	0x0000 08 10 9a e5 90 20 4d e2 01 00 52 e1 0f 00 00 9a  ..... M...R.....
+	0x0010 10 e1 2d e5 10 10 8d e2 40 b0 9f e5 0b 00 8d e0  ..-.....@.......
+	0x0020 00 20 a0 e3 01 20 c1 e4 00 00 51 e1 fc ff ff da  . ... ....Q.....
+	0x0030 10 00 8d e2 04 00 8d e5 24 20 9f e5 08 20 8d e5  ........$ ... ..
+	0x0040 01 2c a0 e3 0c 20 8d e5 00 00 00 eb 10 f1 9d e4  .,... ..........
+	0x0050 0e 30 a0 e1 00 00 00 eb e8 ff ff ea fe ff ff ea  .0..............
+	0x0060 0f 01 00 00 00 00 00 00                          ........
+	rel 72+4 t=9 runtime.memmove+ebfffffe
+	rel 84+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 100+4 t=1 "".x+0
+"".moveDisjointArg STEXT size=112 args=0x4 locals=0x10c
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	TEXT	"".moveDisjointArg(SB), $268-4
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	MOVW	$-144(R13), R2
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	CMP	R1, R2
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	BLS	92
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	MOVW.W	R14, -272(R13)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	FUNCDATA	$3, gclocals·f80eb1c2a873fadd70dab7b6154cc909(SB)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	PCDATA	$2, $1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	PCDATA	$0, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	MOVW	$"".s-256(SP), R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	PCDATA	$2, $2
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	MOVW	$"".s-1(SP), R0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	MOVW	$0, R2
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	PCDATA	$2, $0
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	MOVB.P	R2, 1(R1)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	CMP	R0, R1
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:48)	BLE	36
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	PCDATA	$2, $3
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	PCDATA	$0, $1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	MOVW	"".b(FP), R0
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	MOVB	(R0), R11
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	PCDATA	$2, $4
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	MOVW	$"".s-256(SP), R2
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	CMP	R0, R2
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	BEQ	88
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	PCDATA	$2, $3
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	MOVW	R2, 4(R13)
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	PCDATA	$2, $0
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	MOVW	R0, 8(R13)
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	MOVW	$256, R0
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	MOVW	R0, 12(R13)
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:50)	CALL	runtime.memmove(SB)
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:52)	MOVW.P	272(R13), R15
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:52)	NOP
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	PCDATA	$0, $-1
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	PCDATA	$2, $-1
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	MOVW	R14, R3
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	CALL	runtime.morestack_noctxt(SB)
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	JMP	0
+	0x0068 00104 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	JMP	0(PC)
+	0x006c 00108 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:47)	WORD	$271
+	0x0000 08 10 9a e5 90 20 4d e2 01 00 52 e1 12 00 00 9a  ..... M...R.....
+	0x0010 10 e1 2d e5 10 10 8d e2 4c b0 9f e5 0b 00 8d e0  ..-.....L.......
+	0x0020 00 20 a0 e3 01 20 c1 e4 00 00 51 e1 fc ff ff da  . ... ....Q.....
+	0x0030 14 01 9d e5 d0 b0 d0 e1 10 20 8d e2 00 00 52 e1  ......... ....R.
+	0x0040 04 00 00 0a 04 20 8d e5 08 00 8d e5 01 0c a0 e3  ..... ..........
+	0x0050 0c 00 8d e5 00 00 00 eb 10 f1 9d e4 0e 30 a0 e1  .............0..
+	0x0060 00 00 00 eb e5 ff ff ea fe ff ff ea 0f 01 00 00  ................
+	rel 84+4 t=9 runtime.memmove+ebfffffe
+	rel 96+4 t=9 runtime.morestack_noctxt+ebfffffe
+"".moveDisjointNoOverlap STEXT size=64 args=0x4 locals=0xc
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	TEXT	"".moveDisjointNoOverlap(SB), $12-4
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	BLS	52
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	MOVW.W	R14, -16(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	FUNCDATA	$3, gclocals·9fb7f0986f647f17cb53dda1484e0f7a(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	PCDATA	$2, $1
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	PCDATA	$0, $1
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	MOVW	"".a(FP), R0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	MOVB	(R0), R11
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	MOVW	R0, 4(R13)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	ADD	$128, R0, R0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	PCDATA	$2, $0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	MOVW	R0, 8(R13)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	MOVW	$128, R0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	MOVW	R0, 12(R13)
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:56)	CALL	runtime.memmove(SB)
+	0x0030 00048 (<unknown line number>)	MOVW.P	16(R13), R15
+	0x0034 00052 (<unknown line number>)	NOP
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	PCDATA	$0, $-1
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	PCDATA	$2, $-1
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	MOVW	R14, R3
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	CALL	runtime.morestack_noctxt(SB)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:54)	JMP	0
+	0x0000 08 10 9a e5 01 00 5d e1 09 00 00 9a 10 e0 2d e5  ......].......-.
+	0x0010 14 00 9d e5 d0 b0 d0 e1 04 00 8d e5 80 00 80 e2  ................
+	0x0020 08 00 8d e5 80 00 a0 e3 0c 00 8d e5 00 00 00 eb  ................
+	0x0030 10 f0 9d e4 0e 30 a0 e1 00 00 00 eb ef ff ff ea  .....0..........
+	rel 44+4 t=9 runtime.memmove+ebfffffe
+	rel 56+4 t=9 runtime.morestack_noctxt+ebfffffe
+"".ptrEqual STEXT size=4 args=0x0 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:61)	TEXT	"".ptrEqual(SB), LEAF|NOFRAME, $-4-0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:61)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:61)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:61)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (<unknown line number>)	JMP	(R14)
+	0x0000 00 f0 8e e2                                      ....
+"".ptrOneOffset STEXT size=72 args=0x0 locals=0xc
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	TEXT	"".ptrOneOffset(SB), $12-0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	BLS	48
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	MOVW.W	R14, -16(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	FUNCDATA	$3, gclocals·9fb7f0986f647f17cb53dda1484e0f7a(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	PCDATA	$2, $1
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	MOVW	$"".x+1(SB), R0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	MOVW	R0, 4(R13)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	PCDATA	$2, $1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	MOVW	$"".x(SB), R0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	PCDATA	$2, $0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	MOVW	R0, 8(R13)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	MOVW	$255, R0
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	MOVW	R0, 12(R13)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:72)	CALL	runtime.memmove(SB)
+	0x002c 00044 (<unknown line number>)	MOVW.P	16(R13), R15
+	0x0030 00048 (<unknown line number>)	NOP
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	PCDATA	$0, $-1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	PCDATA	$2, $-1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	MOVW	R14, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	CALL	runtime.morestack_noctxt(SB)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	JMP	0
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	JMP	0(PC)
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	WORD	$"".x+1(SB)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:68)	WORD	$"".x(SB)
+	0x0000 08 10 9a e5 01 00 5d e1 08 00 00 9a 10 e0 2d e5  ......].......-.
+	0x0010 28 00 9f e5 04 00 8d e5 24 00 9f e5 08 00 8d e5  (.......$.......
+	0x0020 ff 00 a0 e3 0c 00 8d e5 00 00 00 eb 10 f0 9d e4  ................
+	0x0030 0e 30 a0 e1 00 00 00 eb f0 ff ff ea fe ff ff ea  .0..............
+	0x0040 00 00 00 00 00 00 00 00                          ........
+	rel 40+4 t=9 runtime.memmove+ebfffffe
+	rel 52+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 64+4 t=1 "".x+1
+	rel 68+4 t=1 "".x+0
+"".ptrBothOffset STEXT size=72 args=0x0 locals=0xc
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	TEXT	"".ptrBothOffset(SB), $12-0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	BLS	48
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	MOVW.W	R14, -16(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	FUNCDATA	$3, gclocals·9fb7f0986f647f17cb53dda1484e0f7a(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	PCDATA	$2, $1
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	MOVW	$"".x+1(SB), R0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	MOVW	R0, 4(R13)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	PCDATA	$2, $1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	MOVW	$"".x+2(SB), R0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	PCDATA	$2, $0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	MOVW	R0, 8(R13)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	MOVW	$254, R0
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	MOVW	R0, 12(R13)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:79)	CALL	runtime.memmove(SB)
+	0x002c 00044 (<unknown line number>)	MOVW.P	16(R13), R15
+	0x0030 00048 (<unknown line number>)	NOP
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	PCDATA	$0, $-1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	PCDATA	$2, $-1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	MOVW	R14, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	CALL	runtime.morestack_noctxt(SB)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	JMP	0
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	JMP	0(PC)
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	WORD	$"".x+1(SB)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/copy.go:75)	WORD	$"".x+2(SB)
+	0x0000 08 10 9a e5 01 00 5d e1 08 00 00 9a 10 e0 2d e5  ......].......-.
+	0x0010 28 00 9f e5 04 00 8d e5 24 00 9f e5 08 00 8d e5  (.......$.......
+	0x0020 fe 00 a0 e3 0c 00 8d e5 00 00 00 eb 10 f0 9d e4  ................
+	0x0030 0e 30 a0 e1 00 00 00 eb f0 ff ff ea fe ff ff ea  .0..............
+	0x0040 00 00 00 00 00 00 00 00                          ........
+	rel 40+4 t=9 runtime.memmove+ebfffffe
+	rel 52+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 64+4 t=1 "".x+1
+	rel 68+4 t=1 "".x+2
+"".init STEXT size=100 args=0x0 locals=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	"".init(SB), $0-0
+	0x0000 00000 (<autogenerated>:1)	MOVW	8(g), R1
+	0x0004 00004 (<autogenerated>:1)	CMP	R1, R13
+	0x0008 00008 (<autogenerated>:1)	BLS	80
+	0x000c 00012 (<autogenerated>:1)	MOVW.W	R14, -4(R13)
+	0x0010 00016 (<autogenerated>:1)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (<autogenerated>:1)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (<autogenerated>:1)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (<autogenerated>:1)	PCDATA	$2, $0
+	0x0010 00016 (<autogenerated>:1)	PCDATA	$0, $0
+	0x0010 00016 (<autogenerated>:1)	MOVBU	"".initdone·(SB), R0
+	0x0018 00024 (<autogenerated>:1)	CMP	$1, R0
+	0x001c 00028 (<autogenerated>:1)	BLS	36
+	0x0020 00032 (<autogenerated>:1)	PCDATA	$2, $-2
+	0x0020 00032 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0020 00032 (<autogenerated>:1)	MOVW.P	4(R13), R15
+	0x0024 00036 (<autogenerated>:1)	BNE	48
+	0x0028 00040 (<autogenerated>:1)	PCDATA	$2, $0
+	0x0028 00040 (<autogenerated>:1)	PCDATA	$0, $0
+	0x0028 00040 (<autogenerated>:1)	CALL	runtime.throwinit(SB)
+	0x002c 00044 (<autogenerated>:1)	UNDEF
+	0x0030 00048 (<autogenerated>:1)	MOVW	$1, R0
+	0x0034 00052 (<autogenerated>:1)	MOVB	R0, "".initdone·(SB)
+	0x003c 00060 (<autogenerated>:1)	CALL	runtime.init(SB)
+	0x0040 00064 (<autogenerated>:1)	MOVW	$2, R0
+	0x0044 00068 (<autogenerated>:1)	MOVB	R0, "".initdone·(SB)
+	0x004c 00076 (<autogenerated>:1)	MOVW.P	4(R13), R15
+	0x0050 00080 (<autogenerated>:1)	NOP
+	0x0050 00080 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x0050 00080 (<autogenerated>:1)	PCDATA	$2, $-1
+	0x0050 00080 (<autogenerated>:1)	MOVW	R14, R3
+	0x0054 00084 (<autogenerated>:1)	CALL	runtime.morestack_noctxt(SB)
+	0x0058 00088 (<autogenerated>:1)	JMP	0
+	0x005c 00092 (<autogenerated>:1)	JMP	0(PC)
+	0x0060 00096 (<autogenerated>:1)	WORD	"".initdone·(SB)
+	0x0000 08 10 9a e5 01 00 5d e1 10 00 00 9a 04 e0 2d e5  ......].......-.
+	0x0010 48 b0 9f e5 00 00 db e5 01 00 50 e3 00 00 00 9a  H.........P.....
+	0x0020 04 f0 9d e4 01 00 00 1a 00 00 00 eb fd bc fa f7  ................
+	0x0030 01 00 a0 e3 24 b0 9f e5 00 00 cb e5 00 00 00 eb  ....$...........
+	0x0040 02 00 a0 e3 14 b0 9f e5 00 00 cb e5 04 f0 9d e4  ................
+	0x0050 0e 30 a0 e1 00 00 00 eb e8 ff ff ea fe ff ff ea  .0..............
+	0x0060 00 00 00 00                                      ....
+	rel 40+4 t=9 runtime.throwinit+ebfffffe
+	rel 60+4 t=9 runtime.init+ebfffffe
+	rel 84+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 96+4 t=1 "".initdone·+0
+go.loc."".movesmall4 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 6c 00 00 00  ............l...
+	0x0010 02 00 91 7c 00 00 00 00 00 00 00 00              ...|........
+	rel 4+4 t=1 "".movesmall4+0
+go.info."".movesmall4 SDWARFINFO size=43
+	0x0000 02 22 22 2e 6d 6f 76 65 73 6d 61 6c 6c 34 00 00  ."".movesmall4..
+	0x0010 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0a 78  ...............x
+	0x0020 00 0e 00 00 00 00 00 00 00 00 00                 ...........
+	rel 15+4 t=1 "".movesmall4+0
+	rel 19+4 t=1 "".movesmall4+6c
+	rel 25+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+	rel 34+4 t=28 go.info.[4]uint8+0
+	rel 38+4 t=28 go.loc."".movesmall4+0
+go.range."".movesmall4 SDWARFRANGE size=0
+go.isstmt."".movesmall4 SDWARFMISC size=0
+	0x0000 04 05 01 0c 02 01 01 06 02 03 00                 ...........
+go.loc."".movesmall7 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 64 00 00 00  ............d...
+	0x0010 02 00 91 78 00 00 00 00 00 00 00 00              ...x........
+	rel 4+4 t=1 "".movesmall7+0
+go.info."".movesmall7 SDWARFINFO size=43
+	0x0000 02 22 22 2e 6d 6f 76 65 73 6d 61 6c 6c 37 00 00  ."".movesmall7..
+	0x0010 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0a 78  ...............x
+	0x0020 00 17 00 00 00 00 00 00 00 00 00                 ...........
+	rel 15+4 t=1 "".movesmall7+0
+	rel 19+4 t=1 "".movesmall7+64
+	rel 25+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+	rel 34+4 t=28 go.info.[7]uint8+0
+	rel 38+4 t=28 go.loc."".movesmall7+0
+go.range."".movesmall7 SDWARFRANGE size=0
+go.isstmt."".movesmall7 SDWARFMISC size=0
+	0x0000 04 05 01 06 02 01 01 07 02 06 00                 ...........
+go.loc."".movesmall16 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 64 00 00 00  ............d...
+	0x0010 02 00 91 70 00 00 00 00 00 00 00 00              ...p........
+	rel 4+4 t=1 "".movesmall16+0
+go.info."".movesmall16 SDWARFINFO size=44
+	0x0000 02 22 22 2e 6d 6f 76 65 73 6d 61 6c 6c 31 36 00  ."".movesmall16.
+	0x0010 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0a  ................
+	0x0020 78 00 1f 00 00 00 00 00 00 00 00 00              x...........
+	rel 16+4 t=1 "".movesmall16+0
+	rel 20+4 t=1 "".movesmall16+64
+	rel 26+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+	rel 35+4 t=28 go.info.[16]uint8+0
+	rel 39+4 t=28 go.loc."".movesmall16+0
+go.range."".movesmall16 SDWARFRANGE size=0
+go.isstmt."".movesmall16 SDWARFMISC size=0
+	0x0000 04 05 01 06 02 01 01 07 02 06 00                 ...........
+go.loc."".moveDisjointStack SDWARFLOC size=29
+	0x0000 ff ff ff ff 00 00 00 00 18 00 00 00 68 00 00 00  ............h...
+	0x0010 03 00 91 80 7e 00 00 00 00 00 00 00 00           ....~........
+	rel 4+4 t=1 "".moveDisjointStack+0
+go.info."".moveDisjointStack SDWARFINFO size=50
+	0x0000 02 22 22 2e 6d 6f 76 65 44 69 73 6a 6f 69 6e 74  ."".moveDisjoint
+	0x0010 53 74 61 63 6b 00 00 00 00 00 00 00 00 00 01 9c  Stack...........
+	0x0020 00 00 00 00 01 0a 73 00 29 00 00 00 00 00 00 00  ......s.).......
+	0x0030 00 00                                            ..
+	rel 22+4 t=1 "".moveDisjointStack+0
+	rel 26+4 t=1 "".moveDisjointStack+68
+	rel 32+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+	rel 41+4 t=28 go.info.[256]uint8+0
+	rel 45+4 t=28 go.loc."".moveDisjointStack+0
+go.range."".moveDisjointStack SDWARFRANGE size=0
+go.isstmt."".moveDisjointStack SDWARFMISC size=0
+	0x0000 04 06 01 06 02 01 01 06 02 07 00                 ...........
+go.loc."".moveDisjointArg SDWARFLOC size=57
+	0x0000 ff ff ff ff 00 00 00 00 34 00 00 00 70 00 00 00  ........4...p...
+	0x0010 02 00 91 04 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x0020 00 00 00 00 18 00 00 00 70 00 00 00 03 00 91 80  ........p.......
+	0x0030 7e 00 00 00 00 00 00 00 00                       ~........
+	rel 4+4 t=1 "".moveDisjointArg+0
+	rel 32+4 t=1 "".moveDisjointArg+0
+go.info."".moveDisjointArg SDWARFINFO size=61
+	0x0000 02 22 22 2e 6d 6f 76 65 44 69 73 6a 6f 69 6e 74  ."".moveDisjoint
+	0x0010 41 72 67 00 00 00 00 00 00 00 00 00 01 9c 00 00  Arg.............
+	0x0020 00 00 01 0f 62 00 00 2f 00 00 00 00 00 00 00 00  ....b../........
+	0x0030 0a 73 00 30 00 00 00 00 00 00 00 00 00           .s.0.........
+	rel 20+4 t=1 "".moveDisjointArg+0
+	rel 24+4 t=1 "".moveDisjointArg+70
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+	rel 40+4 t=28 go.info.*[256]uint8+0
+	rel 44+4 t=28 go.loc."".moveDisjointArg+0
+	rel 52+4 t=28 go.info.[256]uint8+0
+	rel 56+4 t=28 go.loc."".moveDisjointArg+1c
+go.range."".moveDisjointArg SDWARFRANGE size=0
+go.isstmt."".moveDisjointArg SDWARFMISC size=0
+	0x0000 04 06 01 06 02 01 01 09 02 06 00                 ...........
+go.loc."".moveDisjointNoOverlap SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 40 00 00 00  ............@...
+	0x0010 02 00 91 04 00 00 00 00 00 00 00 00              ............
+	rel 4+4 t=1 "".moveDisjointNoOverlap+0
+go.info."".moveDisjointNoOverlap SDWARFINFO size=55
+	0x0000 02 22 22 2e 6d 6f 76 65 44 69 73 6a 6f 69 6e 74  ."".moveDisjoint
+	0x0010 4e 6f 4f 76 65 72 6c 61 70 00 00 00 00 00 00 00  NoOverlap.......
+	0x0020 00 00 01 9c 00 00 00 00 01 0f 61 00 00 36 00 00  ..........a..6..
+	0x0030 00 00 00 00 00 00 00                             .......
+	rel 26+4 t=1 "".moveDisjointNoOverlap+0
+	rel 30+4 t=1 "".moveDisjointNoOverlap+40
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+	rel 46+4 t=28 go.info.*[256]uint8+0
+	rel 50+4 t=28 go.loc."".moveDisjointNoOverlap+0
+go.range."".moveDisjointNoOverlap SDWARFRANGE size=0
+go.isstmt."".moveDisjointNoOverlap SDWARFMISC size=0
+	0x0000 04 05 01 08 02 03 00                             .......
+go.loc."".ptrEqual SDWARFLOC size=0
+go.info."".ptrEqual SDWARFINFO size=29
+	0x0000 02 22 22 2e 70 74 72 45 71 75 61 6c 00 00 00 00  ."".ptrEqual....
+	0x0010 00 00 00 00 00 01 9c 00 00 00 00 01 00           .............
+	rel 13+4 t=1 "".ptrEqual+0
+	rel 17+4 t=1 "".ptrEqual+4
+	rel 23+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+go.range."".ptrEqual SDWARFRANGE size=0
+go.isstmt."".ptrEqual SDWARFMISC size=0
+	0x0000 02 01 00                                         ...
+go.loc."".ptrOneOffset SDWARFLOC size=0
+go.info."".ptrOneOffset SDWARFINFO size=33
+	0x0000 02 22 22 2e 70 74 72 4f 6e 65 4f 66 66 73 65 74  ."".ptrOneOffset
+	0x0010 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01  ................
+	0x0020 00                                               .
+	rel 17+4 t=1 "".ptrOneOffset+0
+	rel 21+4 t=1 "".ptrOneOffset+48
+	rel 27+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+go.range."".ptrOneOffset SDWARFRANGE size=0
+go.isstmt."".ptrOneOffset SDWARFMISC size=0
+	0x0000 04 05 01 07 02 06 00                             .......
+go.loc."".ptrBothOffset SDWARFLOC size=0
+go.info."".ptrBothOffset SDWARFINFO size=34
+	0x0000 02 22 22 2e 70 74 72 42 6f 74 68 4f 66 66 73 65  ."".ptrBothOffse
+	0x0010 74 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  t...............
+	0x0020 01 00                                            ..
+	rel 18+4 t=1 "".ptrBothOffset+0
+	rel 22+4 t=1 "".ptrBothOffset+48
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/copy.go+0
+go.range."".ptrBothOffset SDWARFRANGE size=0
+go.isstmt."".ptrBothOffset SDWARFMISC size=0
+	0x0000 04 05 01 07 02 06 00                             .......
+go.loc."".init SDWARFLOC size=0
+go.info."".init SDWARFINFO size=25
+	0x0000 02 22 22 2e 69 6e 69 74 00 00 00 00 00 00 00 00  ."".init........
+	0x0010 00 01 9c 00 00 00 00 01 00                       .........
+	rel 9+4 t=1 "".init+0
+	rel 13+4 t=1 "".init+64
+	rel 19+4 t=29 gofile..<autogenerated>+0
+go.range."".init SDWARFRANGE size=0
+go.isstmt."".init SDWARFMISC size=0
+	0x0000 04 06 01 02 02 01 01 02 02 02 01 07 02 05 00     ...............
+"".x SNOPTRBSS size=256
+"".statictmp_0 SRODATA size=7
+	0x0000 01 02 03 04 05 06 07                             .......
+"".statictmp_1 SRODATA size=16
+	0x0000 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10  ................
+"".initdone· SNOPTRBSS size=1
+runtime.gcbits.01 SRODATA dupok size=1
+	0x0000 01                                               .
+type..namedata.*[]uint8- SRODATA dupok size=11
+	0x0000 00 00 08 2a 5b 5d 75 69 6e 74 38                 ...*[]uint8
+type.*[]uint8 SRODATA dupok size=36
+	0x0000 04 00 00 00 04 00 00 00 a5 8e d0 69 00 04 04 36  ...........i...6
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+20
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[]uint8-+0
+	rel 32+4 t=1 type.[]uint8+0
+type.[]uint8 SRODATA dupok size=36
+	0x0000 0c 00 00 00 04 00 00 00 df 7e 2e 38 02 04 04 17  .........~.8....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+0
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[]uint8-+0
+	rel 28+4 t=6 type.*[]uint8+0
+	rel 32+4 t=1 type.uint8+0
+type..hashfunc256 SRODATA dupok size=8
+	0x0000 00 00 00 00 00 01 00 00                          ........
+	rel 0+4 t=1 runtime.memhash_varlen+0
+type..eqfunc256 SRODATA dupok size=8
+	0x0000 00 00 00 00 00 01 00 00                          ........
+	rel 0+4 t=1 runtime.memequal_varlen+0
+type..alg256 SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+4 t=1 type..hashfunc256+0
+	rel 4+4 t=1 type..eqfunc256+0
+runtime.gcbits. SRODATA dupok size=0
+type..namedata.*[256]uint8- SRODATA dupok size=14
+	0x0000 00 00 0b 2a 5b 32 35 36 5d 75 69 6e 74 38        ...*[256]uint8
+type.[256]uint8 SRODATA dupok size=44
+	0x0000 00 01 00 00 00 00 00 00 9e 9d b0 ff 02 01 01 91  ................
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 01 00 00              ............
+	rel 16+4 t=1 type..alg256+0
+	rel 20+4 t=1 runtime.gcbits.+0
+	rel 24+4 t=5 type..namedata.*[256]uint8-+0
+	rel 28+4 t=6 type.*[256]uint8+0
+	rel 32+4 t=1 type.uint8+0
+	rel 36+4 t=1 type.[]uint8+0
+type.*[256]uint8 SRODATA dupok size=36
+	0x0000 04 00 00 00 04 00 00 00 9f 33 f5 ec 00 04 04 36  .........3.....6
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+20
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[256]uint8-+0
+	rel 32+4 t=1 type.[256]uint8+0
+type..namedata.*[16]uint8- SRODATA dupok size=13
+	0x0000 00 00 0a 2a 5b 31 36 5d 75 69 6e 74 38           ...*[16]uint8
+type.*[16]uint8 SRODATA dupok size=36
+	0x0000 04 00 00 00 04 00 00 00 b4 2f 0d 51 00 04 04 36  ........./.Q...6
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+20
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[16]uint8-+0
+	rel 32+4 t=1 type.[16]uint8+0
+type.[16]uint8 SRODATA dupok size=44
+	0x0000 10 00 00 00 00 00 00 00 b7 7d 35 47 02 01 01 91  .........}5G....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 10 00 00 00              ............
+	rel 16+4 t=1 runtime.algarray+30
+	rel 20+4 t=1 runtime.gcbits.+0
+	rel 24+4 t=5 type..namedata.*[16]uint8-+0
+	rel 28+4 t=6 type.*[16]uint8+0
+	rel 32+4 t=1 type.uint8+0
+	rel 36+4 t=1 type.[]uint8+0
+type..namedata.*[4]uint8- SRODATA dupok size=12
+	0x0000 00 00 09 2a 5b 34 5d 75 69 6e 74 38              ...*[4]uint8
+type.*[4]uint8 SRODATA dupok size=36
+	0x0000 04 00 00 00 04 00 00 00 47 b3 e3 a1 00 04 04 36  ........G......6
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+20
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[4]uint8-+0
+	rel 32+4 t=1 type.[4]uint8+0
+type.[4]uint8 SRODATA dupok size=44
+	0x0000 04 00 00 00 00 00 00 00 84 42 18 1c 02 01 01 91  .........B......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 04 00 00 00              ............
+	rel 16+4 t=1 runtime.algarray+20
+	rel 20+4 t=1 runtime.gcbits.+0
+	rel 24+4 t=5 type..namedata.*[4]uint8-+0
+	rel 28+4 t=6 type.*[4]uint8+0
+	rel 32+4 t=1 type.uint8+0
+	rel 36+4 t=1 type.[]uint8+0
+type..hashfunc7 SRODATA dupok size=8
+	0x0000 00 00 00 00 07 00 00 00                          ........
+	rel 0+4 t=1 runtime.memhash_varlen+0
+type..eqfunc7 SRODATA dupok size=8
+	0x0000 00 00 00 00 07 00 00 00                          ........
+	rel 0+4 t=1 runtime.memequal_varlen+0
+type..alg7 SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+4 t=1 type..hashfunc7+0
+	rel 4+4 t=1 type..eqfunc7+0
+type..namedata.*[7]uint8- SRODATA dupok size=12
+	0x0000 00 00 09 2a 5b 37 5d 75 69 6e 74 38              ...*[7]uint8
+type.*[7]uint8 SRODATA dupok size=36
+	0x0000 04 00 00 00 04 00 00 00 23 a4 d1 0f 00 04 04 36  ........#......6
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+20
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[7]uint8-+0
+	rel 32+4 t=1 type.[7]uint8+0
+type.[7]uint8 SRODATA dupok size=44
+	0x0000 07 00 00 00 00 00 00 00 d5 cf d5 ff 02 01 01 91  ................
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 07 00 00 00              ............
+	rel 16+4 t=1 type..alg7+0
+	rel 20+4 t=1 runtime.gcbits.+0
+	rel 24+4 t=5 type..namedata.*[7]uint8-+0
+	rel 28+4 t=6 type.*[7]uint8+0
+	rel 32+4 t=1 type.uint8+0
+	rel 36+4 t=1 type.[]uint8+0
+type..importpath.runtime. SRODATA dupok size=10
+	0x0000 00 00 07 72 75 6e 74 69 6d 65                    ...runtime
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+gclocals·cc59d532c958d8cf509b4dbfbfec9ea5 SRODATA dupok size=13
+	0x0000 05 00 00 00 03 00 00 00 00 04 06 07 01           .............
+gclocals·862dfd13d7f7d6745eea32fea20c2ab1 SRODATA dupok size=13
+	0x0000 05 00 00 00 03 00 00 00 00 02 03 01 04           .............
+gclocals·1a65e721a2ccc325b382662e7ffee780 SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·69c1753bd5f81501d95132d08af04464 SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+gclocals·f80eb1c2a873fadd70dab7b6154cc909 SRODATA dupok size=13
+	0x0000 05 00 00 00 03 00 00 00 00 02 03 01 05           .............
+gclocals·9fb7f0986f647f17cb53dda1484e0f7a SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 00 01                    ..........

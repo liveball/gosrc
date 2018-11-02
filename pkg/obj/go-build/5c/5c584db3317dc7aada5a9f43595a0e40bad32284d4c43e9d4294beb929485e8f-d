@@ -1,0 +1,3 @@
+./qsufsort.go
+./suffixarray.go
+./suffixarray_test.go

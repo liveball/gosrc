@@ -1,0 +1,1140 @@
+# command-line-arguments
+"".CompareString1 STEXT nosplit size=64 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:20)	TEXT	"".CompareString1(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:20)	FUNCDATA	$0, gclocals·de48d210b7ddc49c6e546e3d9e5b0241(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:20)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:20)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVD	"".s+8(FP), R0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	CMP	R0, $2
+	0x000a 00010 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	BNE	54
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	PCDATA	$2, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	PCDATA	$0, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVD	"".s(FP), R1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVHBR	(R1), R0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVH	R0, R0
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	CMPW	R0, $30840
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVD	$0, R0
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVD	$1, R1
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVDEQ	R1, R0
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVB	R0, "".~r1+16(FP)
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	JMP	R14
+	0x0036 00054 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	MOVD	$0, R0
+	0x003a 00058 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:25)	JMP	46
+	0x0000 e3 00 f0 10 00 04 a7 0f 00 02 a7 74 00 16 e3 10  ...........t....
+	0x0010 f0 08 00 04 e3 00 10 00 00 1f b9 07 00 00 a7 0e  ................
+	0x0020 78 78 a7 09 00 00 a7 19 00 01 b9 e2 80 01 e3 00  xx..............
+	0x0030 f0 18 00 72 07 fe a7 09 00 00 a7 f4 ff fa 00 00  ...r............
+"".CompareString2 STEXT nosplit size=64 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:28)	TEXT	"".CompareString2(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:28)	FUNCDATA	$0, gclocals·de48d210b7ddc49c6e546e3d9e5b0241(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:28)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:28)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	MOVD	"".s+8(FP), R0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	CMP	R0, $4
+	0x000a 00010 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	BNE	52
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	PCDATA	$2, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	PCDATA	$0, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	MOVD	"".s(FP), R1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	MOVWBR	(R1), R0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	CMPW	R0, $2021161080
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	MOVD	$0, R0
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	MOVD	$1, R1
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	MOVDEQ	R1, R0
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	MOVB	R0, "".~r1+16(FP)
+	0x0032 00050 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	JMP	R14
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	MOVD	$0, R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:33)	JMP	44
+	0x0000 e3 00 f0 10 00 04 a7 0f 00 04 a7 74 00 15 e3 10  ...........t....
+	0x0010 f0 08 00 04 e3 00 10 00 00 1e c2 0d 78 78 78 78  ............xxxx
+	0x0020 a7 09 00 00 a7 19 00 01 b9 e2 80 01 e3 00 f0 18  ................
+	0x0030 00 72 07 fe a7 09 00 00 a7 f4 ff fa 00 00 00 00  .r..............
+"".CompareString3 STEXT nosplit size=64 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:36)	TEXT	"".CompareString3(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:36)	FUNCDATA	$0, gclocals·de48d210b7ddc49c6e546e3d9e5b0241(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:36)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:36)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVD	"".s+8(FP), R0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	CMP	R0, $8
+	0x000a 00010 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	BNE	56
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	PCDATA	$2, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	PCDATA	$0, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVD	"".s(FP), R1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVDBR	(R1), R0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVD	$i64.7878787878787878(SB), R1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	CMP	R0, R1
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVD	$0, R0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVD	$1, R1
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVDEQ	R1, R0
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVB	R0, "".~r1+16(FP)
+	0x0036 00054 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	JMP	R14
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	MOVD	$0, R0
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:41)	JMP	48
+	0x0000 e3 00 f0 10 00 04 a7 0f 00 08 a7 74 00 17 e3 10  ...........t....
+	0x0010 f0 08 00 04 e3 00 10 00 00 0f c4 18 00 00 00 00  ................
+	0x0020 b9 20 00 01 a7 09 00 00 a7 19 00 01 b9 e2 80 01  . ..............
+	0x0030 e3 00 f0 18 00 72 07 fe a7 09 00 00 a7 f4 ff fa  .....r..........
+	rel 28+4 t=41 $i64.7878787878787878+6
+"".CompareArray1 STEXT nosplit size=96 args=0x10 locals=0x10 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:46)	TEXT	"".CompareArray1(SB), NOSPLIT|LEAF, $24-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:46)	MOVD	R14, -24(R15)
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:46)	MOVD	$-24(R15), R15
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:46)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:46)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:46)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	PCDATA	$2, $0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	PCDATA	$0, $0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVHZ	"".a(FP), R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVH	R0, ""..autotmp_3-8(SP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVHZ	"".b+2(FP), R0
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVH	R0, ""..autotmp_4-16(SP)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVHBR	""..autotmp_3-8(SP), R0
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVHBR	""..autotmp_4-16(SP), R1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVH	R0, R0
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVH	R1, R1
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	CMPW	R0, R1
+	0x003a 00058 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVD	$0, R0
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVD	$1, R1
+	0x0042 00066 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVDEQ	R1, R0
+	0x0046 00070 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	MOVB	R0, "".~r2+8(FP)
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	ADD	$24, R15
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:51)	JMP	R14
+	0x0000 e3 e0 ff e8 ff 24 e3 ff 0f e8 ff 71 e3 00 f0 20  .....$.....q... 
+	0x0010 00 91 e3 00 f0 10 00 70 e3 00 f0 22 00 91 e3 00  .......p..."....
+	0x0020 f0 08 00 70 e3 00 f0 10 00 1f e3 10 f0 08 00 1f  ...p............
+	0x0030 b9 07 00 00 b9 07 00 11 19 01 a7 09 00 00 a7 19  ................
+	0x0040 00 01 b9 e2 80 01 e3 00 f0 28 00 72 a7 fb 00 18  .........(.r....
+	0x0050 07 fe 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+"".CompareArray2 STEXT nosplit size=160 args=0x18 locals=0x10 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:54)	TEXT	"".CompareArray2(SB), NOSPLIT|LEAF, $24-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:54)	MOVD	R14, -24(R15)
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:54)	MOVD	$-24(R15), R15
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:54)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:54)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:54)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	PCDATA	$2, $0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	PCDATA	$0, $0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVHZ	"".a+4(FP), R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVWZ	"".a(FP), R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVW	R1, ""..autotmp_3-8(SP)
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVH	R0, ""..autotmp_3-4(SP)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVWZ	"".b+6(FP), R0
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVHZ	"".b+10(FP), R1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVW	R0, ""..autotmp_4-16(SP)
+	0x0036 00054 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVH	R1, ""..autotmp_4-12(SP)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVHZ	""..autotmp_3-8(SP), R0
+	0x0042 00066 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVHZ	""..autotmp_3-6(SP), R2
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	SLW	$16, R2
+	0x004e 00078 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	ORW	R2, R0
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVHZ	""..autotmp_4-16(SP), R2
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVHZ	""..autotmp_4-14(SP), R3
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	SLW	$16, R3
+	0x0062 00098 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	ORW	R3, R2
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	CMPW	R0, R2
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	BNE	142
+	0x006a 00106 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVH	""..autotmp_3-4(SP), R0
+	0x0070 00112 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVH	R1, R1
+	0x0074 00116 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	CMPW	R0, R1
+	0x0076 00118 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVD	$0, R0
+	0x007a 00122 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVD	$1, R1
+	0x007e 00126 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVDEQ	R1, R0
+	0x0082 00130 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVB	R0, "".~r2+16(FP)
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	ADD	$24, R15
+	0x008c 00140 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	JMP	R14
+	0x008e 00142 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	MOVD	$0, R0
+	0x0092 00146 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:57)	JMP	130
+	0x0000 e3 e0 ff e8 ff 24 e3 ff 0f e8 ff 71 e3 00 f0 24  .....$.....q...$
+	0x0010 00 91 e3 10 f0 20 00 16 e3 10 f0 10 00 50 e3 00  ..... .......P..
+	0x0020 f0 14 00 70 e3 00 f0 26 00 16 e3 10 f0 2a 00 91  ...p...&.....*..
+	0x0030 e3 00 f0 08 00 50 e3 10 f0 0c 00 70 e3 00 f0 10  .....P.....p....
+	0x0040 00 91 e3 20 f0 12 00 91 eb 22 00 10 00 df 16 02  ... ....."......
+	0x0050 e3 20 f0 08 00 91 e3 30 f0 0a 00 91 eb 33 00 10  . .....0.....3..
+	0x0060 00 df 16 23 19 02 a7 74 00 14 e3 00 f0 14 00 15  ...#...t........
+	0x0070 b9 07 00 11 19 01 a7 09 00 00 a7 19 00 01 b9 e2  ................
+	0x0080 80 01 e3 00 f0 30 00 72 a7 fb 00 18 07 fe a7 09  .....0.r........
+	0x0090 00 00 a7 f4 ff f8 00 00 00 00 00 00 00 00 00 00  ................
+"".CompareArray3 STEXT nosplit size=160 args=0x18 locals=0x10 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:60)	TEXT	"".CompareArray3(SB), NOSPLIT|LEAF, $24-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:60)	MOVD	R14, -24(R15)
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:60)	MOVD	$-24(R15), R15
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:60)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:60)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:60)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	PCDATA	$2, $0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	PCDATA	$0, $0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVHZ	"".a+4(FP), R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVWZ	"".a(FP), R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVW	R1, ""..autotmp_3-8(SP)
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVH	R0, ""..autotmp_3-4(SP)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVWZ	"".b+6(FP), R0
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVHZ	"".b+10(FP), R1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVW	R0, ""..autotmp_4-16(SP)
+	0x0036 00054 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVH	R1, ""..autotmp_4-12(SP)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVHZ	""..autotmp_3-8(SP), R0
+	0x0042 00066 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVHZ	""..autotmp_3-6(SP), R2
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	SLW	$16, R2
+	0x004e 00078 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	ORW	R2, R0
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVHZ	""..autotmp_4-16(SP), R2
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVHZ	""..autotmp_4-14(SP), R3
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	SLW	$16, R3
+	0x0062 00098 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	ORW	R3, R2
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	CMPW	R0, R2
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	BNE	142
+	0x006a 00106 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVH	""..autotmp_3-4(SP), R0
+	0x0070 00112 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVH	R1, R1
+	0x0074 00116 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	CMPW	R0, R1
+	0x0076 00118 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVD	$0, R0
+	0x007a 00122 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVD	$1, R1
+	0x007e 00126 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVDEQ	R1, R0
+	0x0082 00130 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVB	R0, "".~r2+16(FP)
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	ADD	$24, R15
+	0x008c 00140 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	JMP	R14
+	0x008e 00142 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	MOVD	$0, R0
+	0x0092 00146 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:63)	JMP	130
+	0x0000 e3 e0 ff e8 ff 24 e3 ff 0f e8 ff 71 e3 00 f0 24  .....$.....q...$
+	0x0010 00 91 e3 10 f0 20 00 16 e3 10 f0 10 00 50 e3 00  ..... .......P..
+	0x0020 f0 14 00 70 e3 00 f0 26 00 16 e3 10 f0 2a 00 91  ...p...&.....*..
+	0x0030 e3 00 f0 08 00 50 e3 10 f0 0c 00 70 e3 00 f0 10  .....P.....p....
+	0x0040 00 91 e3 20 f0 12 00 91 eb 22 00 10 00 df 16 02  ... ....."......
+	0x0050 e3 20 f0 08 00 91 e3 30 f0 0a 00 91 eb 33 00 10  . .....0.....3..
+	0x0060 00 df 16 23 19 02 a7 74 00 14 e3 00 f0 14 00 15  ...#...t........
+	0x0070 b9 07 00 11 19 01 a7 09 00 00 a7 19 00 01 b9 e2  ................
+	0x0080 80 01 e3 00 f0 30 00 72 a7 fb 00 18 07 fe a7 09  .....0.r........
+	0x0090 00 00 a7 f4 ff f8 00 00 00 00 00 00 00 00 00 00  ................
+"".CompareArray4 STEXT nosplit size=112 args=0x20 locals=0x20 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:66)	TEXT	"".CompareArray4(SB), NOSPLIT|LEAF, $40-32
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:66)	MOVD	R14, -40(R15)
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:66)	MOVD	$-40(R15), R15
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:66)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:66)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:66)	FUNCDATA	$3, gclocals·7cdfb5b821b3883f5778dba09a606653(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	PCDATA	$2, $1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	PCDATA	$0, $0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVD	$""..autotmp_3-16(SP), R1
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	PCDATA	$2, $2
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVD	$"".a(FP), R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MVC	$12, (R2), (R1)
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	PCDATA	$2, $1
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVD	$""..autotmp_4-32(SP), R1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	PCDATA	$2, $2
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVD	$"".b+12(FP), R2
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	PCDATA	$2, $0
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MVC	$12, (R2), (R1)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVDBR	""..autotmp_3-16(SP), R0
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVDBR	""..autotmp_4-32(SP), R1
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	CMP	R0, R1
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	BNE	98
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVWBR	""..autotmp_3-8(SP), R0
+	0x0042 00066 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVWBR	""..autotmp_4-24(SP), R1
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	CMPW	R0, R1
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVD	$0, R0
+	0x004e 00078 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVD	$1, R1
+	0x0052 00082 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVDEQ	R1, R0
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVB	R0, "".~r2+24(FP)
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	ADD	$40, R15
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	JMP	R14
+	0x0062 00098 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	MOVD	$0, R0
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:69)	JMP	86
+	0x0000 e3 e0 ff d8 ff 24 e3 ff 0f d8 ff 71 41 1f 00 18  .....$.....qA...
+	0x0010 41 2f 00 30 d2 0b 10 00 20 00 41 1f 00 08 41 2f  A/.0.... .A...A/
+	0x0020 00 3c d2 0b 10 00 20 00 e3 00 f0 18 00 0f e3 10  .<.... .........
+	0x0030 f0 08 00 0f b9 20 00 01 a7 74 00 15 e3 00 f0 20  ..... ...t..... 
+	0x0040 00 1e e3 10 f0 10 00 1e 19 01 a7 09 00 00 a7 19  ................
+	0x0050 00 01 b9 e2 80 01 e3 00 f0 48 00 72 a7 fb 00 28  .........H.r...(
+	0x0060 07 fe a7 09 00 00 a7 f4 ff f8 00 00 00 00 00 00  ................
+"".CompareArray5 STEXT nosplit size=176 args=0x28 locals=0x20 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:72)	TEXT	"".CompareArray5(SB), NOSPLIT|LEAF, $40-40
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:72)	MOVD	R14, -40(R15)
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:72)	MOVD	$-40(R15), R15
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:72)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:72)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:72)	FUNCDATA	$3, gclocals·7cdfb5b821b3883f5778dba09a606653(SB)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	PCDATA	$2, $1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	PCDATA	$0, $0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$""..autotmp_3-16(SP), R1
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	PCDATA	$2, $2
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$"".a(FP), R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MVC	$15, (R2), (R1)
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	PCDATA	$2, $1
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$""..autotmp_4-32(SP), R1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	PCDATA	$2, $2
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$"".b+15(FP), R2
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	PCDATA	$2, $0
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MVC	$15, (R2), (R1)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVDBR	""..autotmp_3-16(SP), R0
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVDBR	""..autotmp_4-32(SP), R1
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	CMP	R0, R1
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	BNE	158
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVWBR	""..autotmp_3-8(SP), R0
+	0x0042 00066 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVWBR	""..autotmp_4-24(SP), R1
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	CMPW	R0, R1
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	BNE	150
+	0x004e 00078 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVHBR	""..autotmp_3-4(SP), R0
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVHBR	""..autotmp_4-20(SP), R1
+	0x005a 00090 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVH	R1, R1
+	0x005e 00094 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVH	R0, R0
+	0x0062 00098 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	CMPW	R0, R1
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	BNE	142
+	0x0068 00104 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVB	""..autotmp_3-2(SP), R0
+	0x006e 00110 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVB	""..autotmp_4-18(SP), R1
+	0x0074 00116 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	CMPW	R0, R1
+	0x0076 00118 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$0, R0
+	0x007a 00122 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$1, R1
+	0x007e 00126 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVDEQ	R1, R0
+	0x0082 00130 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVB	R0, "".~r2+32(FP)
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	ADD	$40, R15
+	0x008c 00140 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	JMP	R14
+	0x008e 00142 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$0, R0
+	0x0092 00146 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	JMP	130
+	0x0096 00150 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$0, R0
+	0x009a 00154 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	JMP	130
+	0x009e 00158 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	MOVD	$0, R0
+	0x00a2 00162 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:74)	JMP	130
+	0x0000 e3 e0 ff d8 ff 24 e3 ff 0f d8 ff 71 41 1f 00 18  .....$.....qA...
+	0x0010 41 2f 00 30 d2 0e 10 00 20 00 41 1f 00 08 41 2f  A/.0.... .A...A/
+	0x0020 00 3f d2 0e 10 00 20 00 e3 00 f0 18 00 0f e3 10  .?.... .........
+	0x0030 f0 08 00 0f b9 20 00 01 a7 74 00 33 e3 00 f0 20  ..... ...t.3... 
+	0x0040 00 1e e3 10 f0 10 00 1e 19 01 a7 74 00 26 e3 00  ...........t.&..
+	0x0050 f0 24 00 1f e3 10 f0 14 00 1f b9 07 00 11 b9 07  .$..............
+	0x0060 00 00 19 01 a7 74 00 15 e3 00 f0 26 00 77 e3 10  .....t.....&.w..
+	0x0070 f0 16 00 77 19 01 a7 09 00 00 a7 19 00 01 b9 e2  ...w............
+	0x0080 80 01 e3 00 f0 50 00 72 a7 fb 00 28 07 fe a7 09  .....P.r...(....
+	0x0090 00 00 a7 f4 ff f8 a7 09 00 00 a7 f4 ff f4 a7 09  ................
+	0x00a0 00 00 a7 f4 ff f0 00 00 00 00 00 00 00 00 00 00  ................
+"".CompareArray6 STEXT nosplit size=48 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:78)	TEXT	"".CompareArray6(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:78)	FUNCDATA	$0, gclocals·2cd2818971107a35184433ecc5b7ee05(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:78)	FUNCDATA	$1, gclocals·620d97ec6a973339b0251c29b0e87144(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:78)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	PCDATA	$2, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	PCDATA	$0, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	MOVD	"".a(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	PCDATA	$2, $0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	MOVWBR	(R1), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	PCDATA	$2, $1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	PCDATA	$0, $2
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	MOVD	"".b+8(FP), R1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	MOVWBR	(R1), R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	CMPW	R0, R1
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	MOVD	$0, R0
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	MOVD	$1, R1
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	MOVDNE	R1, R0
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	MOVB	R0, "".~r2+16(FP)
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:83)	JMP	R14
+	0x0000 e3 10 f0 08 00 04 e3 00 10 00 00 1e e3 10 f0 10  ................
+	0x0010 00 04 e3 10 10 00 00 1e 19 01 a7 09 00 00 a7 19  ................
+	0x0020 00 01 b9 e2 70 01 e3 00 f0 18 00 72 07 fe 00 00  ....p......r....
+"".CmpFold STEXT nosplit size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:92)	TEXT	"".CmpFold(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:92)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:92)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:92)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	MOVWZ	"".x(FP), R0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	CMPWU	R0, $4
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	MOVD	$0, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	MOVD	$1, R1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	MOVDGT	R1, R0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	MOVB	R0, "".~r1+8(FP)
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:94)	JMP	R14
+	0x0000 e3 00 f0 08 00 16 c2 0f 00 00 00 04 a7 09 00 00  ................
+	0x0010 a7 19 00 01 b9 e2 20 01 e3 00 f0 10 00 72 07 fe  ...... ......r..
+"".CmpMem1 STEXT nosplit size=48 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:100)	TEXT	"".CmpMem1(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:100)	FUNCDATA	$0, gclocals·b3a19c266fcea0d76889e08e0a12a37f(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:100)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:100)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	PCDATA	$2, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	PCDATA	$0, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	MOVD	"".q+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	PCDATA	$2, $0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	MOVD	(R1), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	MOVD	"".p(FP), R1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	CMP	R1, R0
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	MOVD	$0, R0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	MOVD	$1, R1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	MOVDLT	R1, R0
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	MOVB	R0, "".~r2+16(FP)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:102)	JMP	R14
+	0x0000 e3 10 f0 10 00 04 e3 00 10 00 00 04 e3 10 f0 08  ................
+	0x0010 00 04 b9 20 00 10 a7 09 00 00 a7 19 00 01 b9 e2  ... ............
+	0x0020 40 01 e3 00 f0 18 00 72 07 fe 00 00 00 00 00 00  @......r........
+"".CmpMem2 STEXT nosplit size=48 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:105)	TEXT	"".CmpMem2(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:105)	FUNCDATA	$0, gclocals·de48d210b7ddc49c6e546e3d9e5b0241(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:105)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:105)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	PCDATA	$2, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	PCDATA	$0, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	MOVD	"".p(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	PCDATA	$2, $0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	MOVD	(R1), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	MOVD	"".q+8(FP), R1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	CMP	R0, R1
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	MOVD	$0, R0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	MOVD	$1, R1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	MOVDLT	R1, R0
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	MOVB	R0, "".~r2+16(FP)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:107)	JMP	R14
+	0x0000 e3 10 f0 08 00 04 e3 00 10 00 00 04 e3 10 f0 10  ................
+	0x0010 00 04 b9 20 00 01 a7 09 00 00 a7 19 00 01 b9 e2  ... ............
+	0x0020 40 01 e3 00 f0 18 00 72 07 fe 00 00 00 00 00 00  @......r........
+"".CmpMem3 STEXT nosplit size=48 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:110)	TEXT	"".CmpMem3(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:110)	FUNCDATA	$0, gclocals·de48d210b7ddc49c6e546e3d9e5b0241(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:110)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:110)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	PCDATA	$2, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	PCDATA	$0, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	MOVD	"".p(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	PCDATA	$2, $0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	MOVD	(R1), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	CMP	R0, $7
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	MOVD	$0, R0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	MOVD	$1, R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	MOVDLT	R1, R0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	MOVB	R0, "".~r1+8(FP)
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:112)	JMP	R14
+	0x0000 e3 10 f0 08 00 04 e3 00 10 00 00 04 a7 0f 00 07  ................
+	0x0010 a7 09 00 00 a7 19 00 01 b9 e2 40 01 e3 00 f0 10  ..........@.....
+	0x0020 00 72 07 fe 00 00 00 00 00 00 00 00 00 00 00 00  .r..............
+"".CmpMem4 STEXT nosplit size=48 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:115)	TEXT	"".CmpMem4(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:115)	FUNCDATA	$0, gclocals·de48d210b7ddc49c6e546e3d9e5b0241(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:115)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:115)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	PCDATA	$2, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	PCDATA	$0, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	MOVD	"".p(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	PCDATA	$2, $0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	MOVD	(R1), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	CMP	R0, $7
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	MOVD	$0, R0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	MOVD	$1, R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	MOVDGT	R1, R0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	MOVB	R0, "".~r1+8(FP)
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:117)	JMP	R14
+	0x0000 e3 10 f0 08 00 04 e3 00 10 00 00 04 a7 0f 00 07  ................
+	0x0010 a7 09 00 00 a7 19 00 01 b9 e2 20 01 e3 00 f0 10  .......... .....
+	0x0020 00 72 07 fe 00 00 00 00 00 00 00 00 00 00 00 00  .r..............
+"".CmpMem5 STEXT size=96 args=0x8 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	TEXT	"".CmpMem5(SB), $8-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	MOVD	16(g), R3
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	CMPUBGE	R3, R15, 82
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	MOVD	R14, -8(R15)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	MOVD	$-8(R15), R15
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	FUNCDATA	$0, gclocals·de48d210b7ddc49c6e546e3d9e5b0241(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	FUNCDATA	$3, gclocals·7f944783af62d04d0d51304b18a2ecc9(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	PCDATA	$2, $1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	PCDATA	$0, $1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	MOVD	"".p(FP), R2
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	MOVBZ	(R2), R10
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	PCDATA	$2, $-2
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	PCDATA	$0, $-2
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	MOVWZ	runtime.writeBarrier(SB), R0
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	CMPW	R0, $0
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	BNE	68
+	0x0032 00050 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	MOVD	$0, (R2)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:123)	MOVD	(R15), R14
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:123)	ADD	$8, R15
+	0x0042 00066 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:123)	JMP	R14
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	MOVD	$0, R3
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	CALL	runtime.gcWriteBarrier(SB)
+	0x004e 00078 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	JMP	56
+	0x0052 00082 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:122)	NOP
+	0x0052 00082 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	PCDATA	$0, $-1
+	0x0052 00082 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	PCDATA	$2, $-1
+	0x0052 00082 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	MOVD	R14, R5
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	CALL	runtime.morestack_noctxt(SB)
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:120)	JMP	0
+	0x0000 e3 30 d0 10 00 04 ec 3f 00 26 a0 65 e3 e0 ff f8  .0.....?.&.e....
+	0x0010 ff 24 e3 ff 0f f8 ff 71 e3 20 f0 10 00 04 e3 a0  .$.....q. ......
+	0x0020 20 00 00 90 c4 0e 00 00 00 00 a7 0e 00 00 a7 74   ..............t
+	0x0030 00 0b e5 48 20 00 00 00 e3 e0 f0 00 00 04 a7 fb  ...H ...........
+	0x0040 00 08 07 fe a7 39 00 00 c0 e5 00 00 00 00 a7 f4  .....9..........
+	0x0050 ff f5 b9 04 00 5e c0 e5 00 00 00 00 a7 f4 ff d2  .....^..........
+	rel 38+4 t=41 runtime.writeBarrier+6
+	rel 74+4 t=8 runtime.gcWriteBarrier+6
+	rel 88+4 t=8 runtime.morestack_noctxt+6
+"".CmpZero1 STEXT nosplit size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:127)	TEXT	"".CmpZero1(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:127)	FUNCDATA	$0, gclocals·b3a19c266fcea0d76889e08e0a12a37f(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:127)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:127)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:128)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:128)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:128)	MOVW	"".a(FP), R0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:128)	CMPW	R0, $0
+	0x000a 00010 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:128)	BGE	26
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:129)	PCDATA	$2, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:129)	PCDATA	$0, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:129)	MOVD	"".ptr+8(FP), R1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:129)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:129)	MOVD	$0, (R1)
+	0x001a 00026 (<unknown line number>)	PCDATA	$2, $-2
+	0x001a 00026 (<unknown line number>)	PCDATA	$0, $-2
+	0x001a 00026 (<unknown line number>)	JMP	R14
+	0x0000 e3 00 f0 08 00 14 a7 0e 00 00 a7 a4 00 08 e3 10  ................
+	0x0010 f0 10 00 04 e5 48 10 00 00 00 07 fe 00 00 00 00  .....H..........
+"".CmpZero2 STEXT nosplit size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:133)	TEXT	"".CmpZero2(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:133)	FUNCDATA	$0, gclocals·b3a19c266fcea0d76889e08e0a12a37f(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:133)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:133)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:134)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:134)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:134)	MOVD	"".a(FP), R0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:134)	CMP	R0, $0
+	0x000a 00010 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:134)	BGE	26
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:135)	PCDATA	$2, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:135)	PCDATA	$0, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:135)	MOVD	"".ptr+8(FP), R1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:135)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:135)	MOVD	$0, (R1)
+	0x001a 00026 (<unknown line number>)	PCDATA	$2, $-2
+	0x001a 00026 (<unknown line number>)	PCDATA	$0, $-2
+	0x001a 00026 (<unknown line number>)	JMP	R14
+	0x0000 e3 00 f0 08 00 04 a7 0f 00 00 a7 a4 00 08 e3 10  ................
+	0x0010 f0 10 00 04 e5 48 10 00 00 00 07 fe 00 00 00 00  .....H..........
+"".CmpZero3 STEXT nosplit size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:139)	TEXT	"".CmpZero3(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:139)	FUNCDATA	$0, gclocals·b3a19c266fcea0d76889e08e0a12a37f(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:139)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:139)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:140)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:140)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:140)	MOVW	"".a(FP), R0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:140)	CMPW	R0, $0
+	0x000a 00010 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:140)	BLT	26
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:141)	PCDATA	$2, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:141)	PCDATA	$0, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:141)	MOVD	"".ptr+8(FP), R1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:141)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:141)	MOVD	$0, (R1)
+	0x001a 00026 (<unknown line number>)	PCDATA	$2, $-2
+	0x001a 00026 (<unknown line number>)	PCDATA	$0, $-2
+	0x001a 00026 (<unknown line number>)	JMP	R14
+	0x0000 e3 00 f0 08 00 14 a7 0e 00 00 a7 44 00 08 e3 10  ...........D....
+	0x0010 f0 10 00 04 e5 48 10 00 00 00 07 fe 00 00 00 00  .....H..........
+"".CmpZero4 STEXT nosplit size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:145)	TEXT	"".CmpZero4(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:145)	FUNCDATA	$0, gclocals·b3a19c266fcea0d76889e08e0a12a37f(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:145)	FUNCDATA	$1, gclocals·7434ac78ed715a61a5258eadde9d1323(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:145)	FUNCDATA	$3, gclocals·bb14019aeea8ddfc71b9e937137f815c(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:146)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:146)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:146)	MOVD	"".a(FP), R0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:146)	CMP	R0, $0
+	0x000a 00010 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:146)	BLT	26
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:147)	PCDATA	$2, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:147)	PCDATA	$0, $1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:147)	MOVD	"".ptr+8(FP), R1
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:147)	PCDATA	$2, $0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/comparisons.go:147)	MOVD	$0, (R1)
+	0x001a 00026 (<unknown line number>)	PCDATA	$2, $-2
+	0x001a 00026 (<unknown line number>)	PCDATA	$0, $-2
+	0x001a 00026 (<unknown line number>)	JMP	R14
+	0x0000 e3 00 f0 08 00 04 a7 0f 00 00 a7 44 00 08 e3 10  ...........D....
+	0x0010 f0 10 00 04 e5 48 10 00 00 00 07 fe 00 00 00 00  .....H..........
+go.loc."".CompareString1 SDWARFLOC size=58
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 40  ...............@
+	0x0020 00 08 91 08 93 08 91 10 93 08 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00                    ..........
+	rel 8+8 t=1 "".CompareString1+0
+go.info."".CompareString1 SDWARFINFO size=68
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 53 74 72 69 6e  ."".CompareStrin
+	0x0010 67 31 00 00 00 00 00 00 00 00 00 00 00 00 00 00  g1..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0f 73 00 00 14 00  ...........s....
+	0x0030 00 00 00 00 00 00 00 0e 7e 72 31 00 01 14 00 00  ........~r1.....
+	0x0040 00 00 00 00                                      ....
+	rel 19+8 t=1 "".CompareString1+0
+	rel 27+8 t=1 "".CompareString1+64
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 47+4 t=28 go.info.string+0
+	rel 51+4 t=28 go.loc."".CompareString1+0
+	rel 62+4 t=28 go.info.bool+0
+go.range."".CompareString1 SDWARFRANGE size=0
+go.isstmt."".CompareString1 SDWARFMISC size=0
+	0x0000 04 03 01 14 02 03 01 06 00                       .........
+go.loc."".CompareString2 SDWARFLOC size=58
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 40  ...............@
+	0x0020 00 08 91 08 93 08 91 10 93 08 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00                    ..........
+	rel 8+8 t=1 "".CompareString2+0
+go.info."".CompareString2 SDWARFINFO size=68
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 53 74 72 69 6e  ."".CompareStrin
+	0x0010 67 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00  g2..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0f 73 00 00 1c 00  ...........s....
+	0x0030 00 00 00 00 00 00 00 0e 7e 72 31 00 01 1c 00 00  ........~r1.....
+	0x0040 00 00 00 00                                      ....
+	rel 19+8 t=1 "".CompareString2+0
+	rel 27+8 t=1 "".CompareString2+64
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 47+4 t=28 go.info.string+0
+	rel 51+4 t=28 go.loc."".CompareString2+0
+	rel 62+4 t=28 go.info.bool+0
+go.range."".CompareString2 SDWARFRANGE size=0
+go.isstmt."".CompareString2 SDWARFMISC size=0
+	0x0000 04 03 01 13 02 03 01 07 00                       .........
+go.loc."".CompareString3 SDWARFLOC size=58
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 40  ...............@
+	0x0020 00 08 91 08 93 08 91 10 93 08 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00                    ..........
+	rel 8+8 t=1 "".CompareString3+0
+go.info."".CompareString3 SDWARFINFO size=68
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 53 74 72 69 6e  ."".CompareStrin
+	0x0010 67 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00  g3..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0f 73 00 00 24 00  ...........s..$.
+	0x0030 00 00 00 00 00 00 00 0e 7e 72 31 00 01 24 00 00  ........~r1..$..
+	0x0040 00 00 00 00                                      ....
+	rel 19+8 t=1 "".CompareString3+0
+	rel 27+8 t=1 "".CompareString3+64
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 47+4 t=28 go.info.string+0
+	rel 51+4 t=28 go.loc."".CompareString3+0
+	rel 62+4 t=28 go.info.bool+0
+go.range."".CompareString3 SDWARFRANGE size=0
+go.isstmt."".CompareString3 SDWARFMISC size=0
+	0x0000 04 03 01 15 02 03 01 05 00                       .........
+go.loc."".CompareArray1 SDWARFLOC size=0
+go.info."".CompareArray1 SDWARFINFO size=74
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 41 72 72 61 79  ."".CompareArray
+	0x0010 31 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  1...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 61 00 00 2e 00 00  ..........a.....
+	0x0030 00 00 00 0e 62 00 00 2e 00 00 00 00 00 0e 7e 72  ....b.........~r
+	0x0040 32 00 01 2e 00 00 00 00 00 00                    2.........
+	rel 18+8 t=1 "".CompareArray1+0
+	rel 26+8 t=1 "".CompareArray1+96
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 46+4 t=28 go.info.[2]uint8+0
+	rel 56+4 t=28 go.info.[2]uint8+0
+	rel 68+4 t=28 go.info.bool+0
+go.range."".CompareArray1 SDWARFRANGE size=0
+go.isstmt."".CompareArray1 SDWARFMISC size=0
+	0x0000 04 09 01 27 00                                   ...'.
+go.loc."".CompareArray2 SDWARFLOC size=0
+go.info."".CompareArray2 SDWARFINFO size=74
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 41 72 72 61 79  ."".CompareArray
+	0x0010 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  2...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 61 00 00 36 00 00  ..........a..6..
+	0x0030 00 00 00 0e 62 00 00 36 00 00 00 00 00 0e 7e 72  ....b..6......~r
+	0x0040 32 00 01 36 00 00 00 00 00 00                    2..6......
+	rel 18+8 t=1 "".CompareArray2+0
+	rel 26+8 t=1 "".CompareArray2+160
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 46+4 t=28 go.info.[3]uint16+0
+	rel 56+4 t=28 go.info.[3]uint16+0
+	rel 68+4 t=28 go.info.bool+0
+go.range."".CompareArray2 SDWARFRANGE size=0
+go.isstmt."".CompareArray2 SDWARFMISC size=0
+	0x0000 04 09 01 38 02 03 01 0c 00                       ...8.....
+go.loc."".CompareArray3 SDWARFLOC size=0
+go.info."".CompareArray3 SDWARFINFO size=74
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 41 72 72 61 79  ."".CompareArray
+	0x0010 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  3...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 61 00 00 3c 00 00  ..........a..<..
+	0x0030 00 00 00 0e 62 00 00 3c 00 00 00 00 00 0e 7e 72  ....b..<......~r
+	0x0040 32 00 01 3c 00 00 00 00 00 00                    2..<......
+	rel 18+8 t=1 "".CompareArray3+0
+	rel 26+8 t=1 "".CompareArray3+160
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 46+4 t=28 go.info.[3]int16+0
+	rel 56+4 t=28 go.info.[3]int16+0
+	rel 68+4 t=28 go.info.bool+0
+go.range."".CompareArray3 SDWARFRANGE size=0
+go.isstmt."".CompareArray3 SDWARFMISC size=0
+	0x0000 04 09 01 38 02 03 01 0c 00                       ...8.....
+go.loc."".CompareArray4 SDWARFLOC size=0
+go.info."".CompareArray4 SDWARFINFO size=74
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 41 72 72 61 79  ."".CompareArray
+	0x0010 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  4...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 61 00 00 42 00 00  ..........a..B..
+	0x0030 00 00 00 0e 62 00 00 42 00 00 00 00 00 0e 7e 72  ....b..B......~r
+	0x0040 32 00 01 42 00 00 00 00 00 00                    2..B......
+	rel 18+8 t=1 "".CompareArray4+0
+	rel 26+8 t=1 "".CompareArray4+112
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 46+4 t=28 go.info.[12]int8+0
+	rel 56+4 t=28 go.info.[12]int8+0
+	rel 68+4 t=28 go.info.bool+0
+go.range."".CompareArray4 SDWARFRANGE size=0
+go.isstmt."".CompareArray4 SDWARFMISC size=0
+	0x0000 04 08 01 23 02 03 01 0a 00                       ...#.....
+go.loc."".CompareArray5 SDWARFLOC size=0
+go.info."".CompareArray5 SDWARFINFO size=74
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 41 72 72 61 79  ."".CompareArray
+	0x0010 35 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  5...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 61 00 00 48 00 00  ..........a..H..
+	0x0030 00 00 00 0e 62 00 00 48 00 00 00 00 00 0e 7e 72  ....b..H......~r
+	0x0040 32 00 01 48 00 00 00 00 00 00                    2..H......
+	rel 18+8 t=1 "".CompareArray5+0
+	rel 26+8 t=1 "".CompareArray5+176
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 46+4 t=28 go.info.[15]uint8+0
+	rel 56+4 t=28 go.info.[15]uint8+0
+	rel 68+4 t=28 go.info.bool+0
+go.range."".CompareArray5 SDWARFRANGE size=0
+go.isstmt."".CompareArray5 SDWARFMISC size=0
+	0x0000 04 08 01 16 02 03 01 06 02 03 01 0a 02 03 01 0a  ................
+	0x0010 02 03 01 03 02 02 01 02 02 02 01 0b 00           .............
+go.loc."".CompareArray6 SDWARFLOC size=0
+go.info."".CompareArray6 SDWARFINFO size=74
+	0x0000 02 22 22 2e 43 6f 6d 70 61 72 65 41 72 72 61 79  ."".CompareArray
+	0x0010 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  6...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 61 00 00 4e 00 00  ..........a..N..
+	0x0030 00 00 00 0e 62 00 00 4e 00 00 00 00 00 0e 7e 72  ....b..N......~r
+	0x0040 32 00 01 4e 00 00 00 00 00 00                    2..N......
+	rel 18+8 t=1 "".CompareArray6+0
+	rel 26+8 t=1 "".CompareArray6+48
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 46+4 t=28 go.info.unsafe.Pointer+0
+	rel 56+4 t=28 go.info.unsafe.Pointer+0
+	rel 68+4 t=28 go.info.bool+0
+go.range."".CompareArray6 SDWARFRANGE size=0
+go.isstmt."".CompareArray6 SDWARFMISC size=0
+	0x0000 04 03 01 15 00                                   .....
+go.loc."".CmpFold SDWARFLOC size=0
+go.info."".CmpFold SDWARFINFO size=58
+	0x0000 02 22 22 2e 43 6d 70 46 6f 6c 64 00 00 00 00 00  ."".CmpFold.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0e 78 00 00 5c 00 00 00 00 00 0e 7e 72  ....x..\......~r
+	0x0030 31 00 01 5c 00 00 00 00 00 00                    1..\......
+	rel 12+8 t=1 "".CmpFold+0
+	rel 20+8 t=1 "".CmpFold+32
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 40+4 t=28 go.info.uint32+0
+	rel 52+4 t=28 go.info.bool+0
+go.range."".CmpFold SDWARFRANGE size=0
+go.isstmt."".CmpFold SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".CmpMem1 SDWARFLOC size=0
+go.info."".CmpMem1 SDWARFINFO size=68
+	0x0000 02 22 22 2e 43 6d 70 4d 65 6d 31 00 00 00 00 00  ."".CmpMem1.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0e 70 00 00 64 00 00 00 00 00 0e 71 00  ....p..d......q.
+	0x0030 00 64 00 00 00 00 00 0e 7e 72 32 00 01 64 00 00  .d......~r2..d..
+	0x0040 00 00 00 00                                      ....
+	rel 12+8 t=1 "".CmpMem1+0
+	rel 20+8 t=1 "".CmpMem1+48
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 40+4 t=28 go.info.int+0
+	rel 50+4 t=28 go.info.*int+0
+	rel 62+4 t=28 go.info.bool+0
+go.range."".CmpMem1 SDWARFRANGE size=0
+go.isstmt."".CmpMem1 SDWARFMISC size=0
+	0x0000 04 03 01 15 00                                   .....
+go.loc."".CmpMem2 SDWARFLOC size=0
+go.info."".CmpMem2 SDWARFINFO size=68
+	0x0000 02 22 22 2e 43 6d 70 4d 65 6d 32 00 00 00 00 00  ."".CmpMem2.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0e 70 00 00 69 00 00 00 00 00 0e 71 00  ....p..i......q.
+	0x0030 00 69 00 00 00 00 00 0e 7e 72 32 00 01 69 00 00  .i......~r2..i..
+	0x0040 00 00 00 00                                      ....
+	rel 12+8 t=1 "".CmpMem2+0
+	rel 20+8 t=1 "".CmpMem2+48
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 40+4 t=28 go.info.*int+0
+	rel 50+4 t=28 go.info.int+0
+	rel 62+4 t=28 go.info.bool+0
+go.range."".CmpMem2 SDWARFRANGE size=0
+go.isstmt."".CmpMem2 SDWARFMISC size=0
+	0x0000 04 03 01 15 00                                   .....
+go.loc."".CmpMem3 SDWARFLOC size=0
+go.info."".CmpMem3 SDWARFINFO size=58
+	0x0000 02 22 22 2e 43 6d 70 4d 65 6d 33 00 00 00 00 00  ."".CmpMem3.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0e 70 00 00 6e 00 00 00 00 00 0e 7e 72  ....p..n......~r
+	0x0030 31 00 01 6e 00 00 00 00 00 00                    1..n......
+	rel 12+8 t=1 "".CmpMem3+0
+	rel 20+8 t=1 "".CmpMem3+48
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 40+4 t=28 go.info.*int+0
+	rel 52+4 t=28 go.info.bool+0
+go.range."".CmpMem3 SDWARFRANGE size=0
+go.isstmt."".CmpMem3 SDWARFMISC size=0
+	0x0000 04 03 01 15 00                                   .....
+go.loc."".CmpMem4 SDWARFLOC size=0
+go.info."".CmpMem4 SDWARFINFO size=58
+	0x0000 02 22 22 2e 43 6d 70 4d 65 6d 34 00 00 00 00 00  ."".CmpMem4.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0e 70 00 00 73 00 00 00 00 00 0e 7e 72  ....p..s......~r
+	0x0030 31 00 01 73 00 00 00 00 00 00                    1..s......
+	rel 12+8 t=1 "".CmpMem4+0
+	rel 20+8 t=1 "".CmpMem4+48
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 40+4 t=28 go.info.*int+0
+	rel 52+4 t=28 go.info.bool+0
+go.range."".CmpMem4 SDWARFRANGE size=0
+go.isstmt."".CmpMem4 SDWARFMISC size=0
+	0x0000 04 03 01 15 00                                   .....
+go.loc."".CmpMem5 SDWARFLOC size=0
+go.info."".CmpMem5 SDWARFINFO size=46
+	0x0000 02 22 22 2e 43 6d 70 4d 65 6d 35 00 00 00 00 00  ."".CmpMem5.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0e 70 00 00 78 00 00 00 00 00 00        ....p..x......
+	rel 12+8 t=1 "".CmpMem5+0
+	rel 20+8 t=1 "".CmpMem5+96
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 40+4 t=28 go.info.**int+0
+go.range."".CmpMem5 SDWARFRANGE size=0
+go.isstmt."".CmpMem5 SDWARFMISC size=0
+	0x0000 04 0f 01 0d 02 06 01 07 02 07 00                 ...........
+go.loc."".CmpZero1 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 20  ............... 
+	0x0020 00 02 91 10 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".CmpZero1+0
+go.info."".CmpZero1 SDWARFINFO size=62
+	0x0000 02 22 22 2e 43 6d 70 5a 65 72 6f 31 00 00 00 00  ."".CmpZero1....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00  ................
+	0x0020 00 00 00 01 0e 61 00 00 7f 00 00 00 00 00 0f 70  .....a.........p
+	0x0030 74 72 00 00 7f 00 00 00 00 00 00 00 00 00        tr............
+	rel 13+8 t=1 "".CmpZero1+0
+	rel 21+8 t=1 "".CmpZero1+32
+	rel 31+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 41+4 t=28 go.info.int32+0
+	rel 53+4 t=28 go.info.*int+0
+	rel 57+4 t=28 go.loc."".CmpZero1+0
+go.range."".CmpZero1 SDWARFRANGE size=0
+go.isstmt."".CmpZero1 SDWARFMISC size=0
+	0x0000 04 03 01 04 02 03 01 06 00                       .........
+go.loc."".CmpZero2 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 20  ............... 
+	0x0020 00 02 91 10 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".CmpZero2+0
+go.info."".CmpZero2 SDWARFINFO size=64
+	0x0000 02 22 22 2e 43 6d 70 5a 65 72 6f 32 00 00 00 00  ."".CmpZero2....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00  ................
+	0x0020 00 00 00 01 0e 61 00 00 85 01 00 00 00 00 00 0f  .....a..........
+	0x0030 70 74 72 00 00 85 01 00 00 00 00 00 00 00 00 00  ptr.............
+	rel 13+8 t=1 "".CmpZero2+0
+	rel 21+8 t=1 "".CmpZero2+32
+	rel 31+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 42+4 t=28 go.info.int64+0
+	rel 55+4 t=28 go.info.*int+0
+	rel 59+4 t=28 go.loc."".CmpZero2+0
+go.range."".CmpZero2 SDWARFRANGE size=0
+go.isstmt."".CmpZero2 SDWARFMISC size=0
+	0x0000 04 03 01 04 02 03 01 06 00                       .........
+go.loc."".CmpZero3 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 20  ............... 
+	0x0020 00 02 91 10 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".CmpZero3+0
+go.info."".CmpZero3 SDWARFINFO size=64
+	0x0000 02 22 22 2e 43 6d 70 5a 65 72 6f 33 00 00 00 00  ."".CmpZero3....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00  ................
+	0x0020 00 00 00 01 0e 61 00 00 8b 01 00 00 00 00 00 0f  .....a..........
+	0x0030 70 74 72 00 00 8b 01 00 00 00 00 00 00 00 00 00  ptr.............
+	rel 13+8 t=1 "".CmpZero3+0
+	rel 21+8 t=1 "".CmpZero3+32
+	rel 31+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 42+4 t=28 go.info.int32+0
+	rel 55+4 t=28 go.info.*int+0
+	rel 59+4 t=28 go.loc."".CmpZero3+0
+go.range."".CmpZero3 SDWARFRANGE size=0
+go.isstmt."".CmpZero3 SDWARFMISC size=0
+	0x0000 04 03 01 04 02 03 01 06 00                       .........
+go.loc."".CmpZero4 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 20  ............... 
+	0x0020 00 02 91 10 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".CmpZero4+0
+go.info."".CmpZero4 SDWARFINFO size=64
+	0x0000 02 22 22 2e 43 6d 70 5a 65 72 6f 34 00 00 00 00  ."".CmpZero4....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00  ................
+	0x0020 00 00 00 01 0e 61 00 00 91 01 00 00 00 00 00 0f  .....a..........
+	0x0030 70 74 72 00 00 91 01 00 00 00 00 00 00 00 00 00  ptr.............
+	rel 13+8 t=1 "".CmpZero4+0
+	rel 21+8 t=1 "".CmpZero4+32
+	rel 31+4 t=29 gofile..$GOROOT/test/codegen/comparisons.go+0
+	rel 42+4 t=28 go.info.int64+0
+	rel 55+4 t=28 go.info.*int+0
+	rel 59+4 t=28 go.loc."".CmpZero4+0
+go.range."".CmpZero4 SDWARFRANGE size=0
+go.isstmt."".CmpZero4 SDWARFMISC size=0
+	0x0000 04 03 01 04 02 03 01 06 00                       .........
+runtime.gcbits.01 SRODATA dupok size=1
+	0x0000 01                                               .
+type..namedata.**int- SRODATA dupok size=8
+	0x0000 00 00 05 2a 2a 69 6e 74                          ...**int
+type.**int SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 05 95 9c 75 00 08 08 36 00 00 00 00 00 00 00 00  ...u...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.**int-+0
+	rel 48+8 t=1 type.*int+0
+type..namedata.*[]int8- SRODATA dupok size=10
+	0x0000 00 00 07 2a 5b 5d 69 6e 74 38                    ...*[]int8
+type.*[]int8 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 25 cb 41 79 00 08 08 36 00 00 00 00 00 00 00 00  %.Ay...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]int8-+0
+	rel 48+8 t=1 type.[]int8+0
+type.[]int8 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00 08  ................
+	0x0010 30 c3 1d 62 02 08 08 17 00 00 00 00 00 00 00 00  0..b............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]int8-+0
+	rel 44+4 t=6 type.*[]int8+0
+	rel 48+8 t=1 type.int8+0
+type..hashfunc12 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0c  ................
+	rel 0+8 t=1 runtime.memhash_varlen+0
+type..eqfunc12 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0c  ................
+	rel 0+8 t=1 runtime.memequal_varlen+0
+type..alg12 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 0+8 t=1 type..hashfunc12+0
+	rel 8+8 t=1 type..eqfunc12+0
+type..namedata.*[12]int8- SRODATA dupok size=12
+	0x0000 00 00 09 2a 5b 31 32 5d 69 6e 74 38              ...*[12]int8
+type.*[12]int8 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 5b 93 cb 1b 00 08 08 36 00 00 00 00 00 00 00 00  [......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[12]int8-+0
+	rel 48+8 t=1 type.[12]int8+0
+runtime.gcbits. SRODATA dupok size=0
+type.[12]int8 SRODATA dupok size=72
+	0x0000 00 00 00 00 00 00 00 0c 00 00 00 00 00 00 00 00  ................
+	0x0010 77 33 ab a7 02 01 01 91 00 00 00 00 00 00 00 00  w3..............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 0c                          ........
+	rel 24+8 t=1 type..alg12+0
+	rel 32+8 t=1 runtime.gcbits.+0
+	rel 40+4 t=5 type..namedata.*[12]int8-+0
+	rel 44+4 t=6 type.*[12]int8+0
+	rel 48+8 t=1 type.int8+0
+	rel 56+8 t=1 type.[]int8+0
+type..namedata.*[]uint8- SRODATA dupok size=11
+	0x0000 00 00 08 2a 5b 5d 75 69 6e 74 38                 ...*[]uint8
+type.*[]uint8 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 69 d0 8e a5 00 08 08 36 00 00 00 00 00 00 00 00  i......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]uint8-+0
+	rel 48+8 t=1 type.[]uint8+0
+type.[]uint8 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00 08  ................
+	0x0010 38 2e 7e df 02 08 08 17 00 00 00 00 00 00 00 00  8.~.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]uint8-+0
+	rel 44+4 t=6 type.*[]uint8+0
+	rel 48+8 t=1 type.uint8+0
+type..hashfunc15 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0f  ................
+	rel 0+8 t=1 runtime.memhash_varlen+0
+type..eqfunc15 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0f  ................
+	rel 0+8 t=1 runtime.memequal_varlen+0
+type..alg15 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 0+8 t=1 type..hashfunc15+0
+	rel 8+8 t=1 type..eqfunc15+0
+type..namedata.*[15]uint8- SRODATA dupok size=13
+	0x0000 00 00 0a 2a 5b 31 35 5d 75 69 6e 74 38           ...*[15]uint8
+type.*[15]uint8 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 e5 a5 84 3f 00 08 08 36 00 00 00 00 00 00 00 00  ...?...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[15]uint8-+0
+	rel 48+8 t=1 type.[15]uint8+0
+type.[15]uint8 SRODATA dupok size=72
+	0x0000 00 00 00 00 00 00 00 0f 00 00 00 00 00 00 00 00  ................
+	0x0010 28 b5 0b d1 02 01 01 91 00 00 00 00 00 00 00 00  (...............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 0f                          ........
+	rel 24+8 t=1 type..alg15+0
+	rel 32+8 t=1 runtime.gcbits.+0
+	rel 40+4 t=5 type..namedata.*[15]uint8-+0
+	rel 44+4 t=6 type.*[15]uint8+0
+	rel 48+8 t=1 type.uint8+0
+	rel 56+8 t=1 type.[]uint8+0
+type..namedata.*[2]uint8- SRODATA dupok size=12
+	0x0000 00 00 09 2a 5b 32 5d 75 69 6e 74 38              ...*[2]uint8
+type.*[2]uint8 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 b0 fe 9e 02 00 08 08 36 00 00 00 00 00 00 00 00  .......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[2]uint8-+0
+	rel 48+8 t=1 type.[2]uint8+0
+type.[2]uint8 SRODATA dupok size=72
+	0x0000 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 00  ................
+	0x0010 46 fb 81 a2 02 01 01 91 00 00 00 00 00 00 00 00  F...............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 02                          ........
+	rel 24+8 t=1 runtime.algarray+48
+	rel 32+8 t=1 runtime.gcbits.+0
+	rel 40+4 t=5 type..namedata.*[2]uint8-+0
+	rel 44+4 t=6 type.*[2]uint8+0
+	rel 48+8 t=1 type.uint8+0
+	rel 56+8 t=1 type.[]uint8+0
+type..namedata.*[]int16- SRODATA dupok size=11
+	0x0000 00 00 08 2a 5b 5d 69 6e 74 31 36                 ...*[]int16
+type.*[]int16 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 62 62 59 23 00 08 08 36 00 00 00 00 00 00 00 00  bbY#...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]int16-+0
+	rel 48+8 t=1 type.[]int16+0
+type.[]int16 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00 08  ................
+	0x0010 82 37 d0 0c 02 08 08 17 00 00 00 00 00 00 00 00  .7..............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]int16-+0
+	rel 44+4 t=6 type.*[]int16+0
+	rel 48+8 t=1 type.int16+0
+type..hashfunc6 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06  ................
+	rel 0+8 t=1 runtime.memhash_varlen+0
+type..eqfunc6 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06  ................
+	rel 0+8 t=1 runtime.memequal_varlen+0
+type..alg6 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 0+8 t=1 type..hashfunc6+0
+	rel 8+8 t=1 type..eqfunc6+0
+type..namedata.*[3]int16- SRODATA dupok size=12
+	0x0000 00 00 09 2a 5b 33 5d 69 6e 74 31 36              ...*[3]int16
+type.*[3]int16 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 e6 d3 f6 8f 00 08 08 36 00 00 00 00 00 00 00 00  .......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[3]int16-+0
+	rel 48+8 t=1 type.[3]int16+0
+type.[3]int16 SRODATA dupok size=72
+	0x0000 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00  ................
+	0x0010 d9 18 0b a6 02 02 02 91 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 03                          ........
+	rel 24+8 t=1 type..alg6+0
+	rel 32+8 t=1 runtime.gcbits.+0
+	rel 40+4 t=5 type..namedata.*[3]int16-+0
+	rel 44+4 t=6 type.*[3]int16+0
+	rel 48+8 t=1 type.int16+0
+	rel 56+8 t=1 type.[]int16+0
+type..namedata.*[]uint16- SRODATA dupok size=12
+	0x0000 00 00 09 2a 5b 5d 75 69 6e 74 31 36              ...*[]uint16
+type.*[]uint16 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 4c a0 18 5f 00 08 08 36 00 00 00 00 00 00 00 00  L.._...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]uint16-+0
+	rel 48+8 t=1 type.[]uint16+0
+type.[]uint16 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00 08  ................
+	0x0010 20 e3 8e e7 02 08 08 17 00 00 00 00 00 00 00 00   ...............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]uint16-+0
+	rel 44+4 t=6 type.*[]uint16+0
+	rel 48+8 t=1 type.uint16+0
+type..namedata.*[3]uint16- SRODATA dupok size=13
+	0x0000 00 00 0a 2a 5b 33 5d 75 69 6e 74 31 36           ...*[3]uint16
+type.*[3]uint16 SRODATA dupok size=56
+	0x0000 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00 08  ................
+	0x0010 6a 01 9d 43 00 08 08 36 00 00 00 00 00 00 00 00  j..C...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[3]uint16-+0
+	rel 48+8 t=1 type.[3]uint16+0
+type.[3]uint16 SRODATA dupok size=72
+	0x0000 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00  ................
+	0x0010 2e 7c 71 df 02 02 02 91 00 00 00 00 00 00 00 00  .|q.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 03                          ........
+	rel 24+8 t=1 type..alg6+0
+	rel 32+8 t=1 runtime.gcbits.+0
+	rel 40+4 t=5 type..namedata.*[3]uint16-+0
+	rel 44+4 t=6 type.*[3]uint16+0
+	rel 48+8 t=1 type.uint16+0
+	rel 56+8 t=1 type.[]uint16+0
+type..importpath.unsafe. SRODATA dupok size=9
+	0x0000 00 00 06 75 6e 73 61 66 65                       ...unsafe
+gclocals·de48d210b7ddc49c6e546e3d9e5b0241 SRODATA dupok size=10
+	0x0000 00 00 00 02 00 00 00 01 01 00                    ..........
+gclocals·7434ac78ed715a61a5258eadde9d1323 SRODATA dupok size=8
+	0x0000 00 00 00 02 00 00 00 00                          ........
+gclocals·bb14019aeea8ddfc71b9e937137f815c SRODATA dupok size=10
+	0x0000 00 00 00 02 00 00 00 02 00 02                    ..........
+gclocals·2002e13acf59079a1a5782c918894579 SRODATA dupok size=8
+	0x0000 00 00 00 01 00 00 00 00                          ........
+gclocals·7cdfb5b821b3883f5778dba09a606653 SRODATA dupok size=11
+	0x0000 00 00 00 03 00 00 00 03 00 02 06                 ...........
+gclocals·2cd2818971107a35184433ecc5b7ee05 SRODATA dupok size=11
+	0x0000 00 00 00 03 00 00 00 02 03 02 00                 ...........
+gclocals·620d97ec6a973339b0251c29b0e87144 SRODATA dupok size=8
+	0x0000 00 00 00 03 00 00 00 00                          ........
+gclocals·b3a19c266fcea0d76889e08e0a12a37f SRODATA dupok size=10
+	0x0000 00 00 00 02 00 00 00 02 02 00                    ..........
+gclocals·7f944783af62d04d0d51304b18a2ecc9 SRODATA dupok size=10
+	0x0000 00 00 00 02 00 00 00 03 00 04                    ..........

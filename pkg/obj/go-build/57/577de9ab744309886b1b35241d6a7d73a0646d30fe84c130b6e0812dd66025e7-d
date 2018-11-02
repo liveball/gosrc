@@ -1,0 +1,6 @@
+./discovery.go
+./get.go
+./vcs.go
+./pkg_test.go
+./tag_test.go
+./vcs_test.go

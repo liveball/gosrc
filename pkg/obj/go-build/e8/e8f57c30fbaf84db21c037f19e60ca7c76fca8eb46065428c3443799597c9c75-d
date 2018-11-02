@@ -1,0 +1,3 @@
+./garbage_test.go
+./heapdump_test.go
+./stack_test.go

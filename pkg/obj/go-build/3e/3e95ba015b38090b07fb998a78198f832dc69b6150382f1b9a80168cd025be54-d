@@ -1,0 +1,57 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "golang_org/x/crypto/internal/chacha20"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestCore", _test.TestCore},
+
+	{"TestNoOverlap", _test.TestNoOverlap},
+
+	{"TestOverlap", _test.TestOverlap},
+
+	{"TestUnaligned", _test.TestUnaligned},
+
+	{"TestStep", _test.TestStep},
+
+	{"TestAdvance", _test.TestAdvance},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkChaCha20", _test.BenchmarkChaCha20},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "golang_org/x/crypto/internal/chacha20"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

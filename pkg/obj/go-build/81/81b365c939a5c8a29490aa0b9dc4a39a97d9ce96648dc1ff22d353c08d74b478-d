@@ -1,0 +1,357 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "reflect"
+
+
+	_xtest "reflect_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestBool", _xtest.TestBool},
+
+	{"TestTypes", _xtest.TestTypes},
+
+	{"TestSet", _xtest.TestSet},
+
+	{"TestSetValue", _xtest.TestSetValue},
+
+	{"TestCanSetField", _xtest.TestCanSetField},
+
+	{"TestValueToString", _xtest.TestValueToString},
+
+	{"TestArrayElemSet", _xtest.TestArrayElemSet},
+
+	{"TestPtrPointTo", _xtest.TestPtrPointTo},
+
+	{"TestPtrSetNil", _xtest.TestPtrSetNil},
+
+	{"TestMapSetNil", _xtest.TestMapSetNil},
+
+	{"TestAll", _xtest.TestAll},
+
+	{"TestInterfaceGet", _xtest.TestInterfaceGet},
+
+	{"TestInterfaceValue", _xtest.TestInterfaceValue},
+
+	{"TestFunctionValue", _xtest.TestFunctionValue},
+
+	{"TestAppend", _xtest.TestAppend},
+
+	{"TestCopy", _xtest.TestCopy},
+
+	{"TestCopyString", _xtest.TestCopyString},
+
+	{"TestCopyArray", _xtest.TestCopyArray},
+
+	{"TestBigUnnamedStruct", _xtest.TestBigUnnamedStruct},
+
+	{"TestBigStruct", _xtest.TestBigStruct},
+
+	{"TestDeepEqual", _xtest.TestDeepEqual},
+
+	{"TestTypeOf", _xtest.TestTypeOf},
+
+	{"TestDeepEqualRecursiveStruct", _xtest.TestDeepEqualRecursiveStruct},
+
+	{"TestDeepEqualComplexStruct", _xtest.TestDeepEqualComplexStruct},
+
+	{"TestDeepEqualComplexStructInequality", _xtest.TestDeepEqualComplexStructInequality},
+
+	{"TestDeepEqualUnexportedMap", _xtest.TestDeepEqualUnexportedMap},
+
+	{"TestAlignment", _xtest.TestAlignment},
+
+	{"TestIsNil", _xtest.TestIsNil},
+
+	{"TestInterfaceExtraction", _xtest.TestInterfaceExtraction},
+
+	{"TestNilPtrValueSub", _xtest.TestNilPtrValueSub},
+
+	{"TestMap", _xtest.TestMap},
+
+	{"TestNilMap", _xtest.TestNilMap},
+
+	{"TestChan", _xtest.TestChan},
+
+	{"TestSelect", _xtest.TestSelect},
+
+	{"TestFunc", _xtest.TestFunc},
+
+	{"TestCallConvert", _xtest.TestCallConvert},
+
+	{"TestCallWithStruct", _xtest.TestCallWithStruct},
+
+	{"TestCallReturnsEmpty", _xtest.TestCallReturnsEmpty},
+
+	{"TestMakeFunc", _xtest.TestMakeFunc},
+
+	{"TestMakeFuncInterface", _xtest.TestMakeFuncInterface},
+
+	{"TestMakeFuncVariadic", _xtest.TestMakeFuncVariadic},
+
+	{"TestMethod", _xtest.TestMethod},
+
+	{"TestMethodValue", _xtest.TestMethodValue},
+
+	{"TestVariadicMethodValue", _xtest.TestVariadicMethodValue},
+
+	{"TestMethod5", _xtest.TestMethod5},
+
+	{"TestInterfaceSet", _xtest.TestInterfaceSet},
+
+	{"TestAnonymousFields", _xtest.TestAnonymousFields},
+
+	{"TestFieldByIndex", _xtest.TestFieldByIndex},
+
+	{"TestFieldByName", _xtest.TestFieldByName},
+
+	{"TestImportPath", _xtest.TestImportPath},
+
+	{"TestFieldPkgPath", _xtest.TestFieldPkgPath},
+
+	{"TestVariadicType", _xtest.TestVariadicType},
+
+	{"TestNestedMethods", _xtest.TestNestedMethods},
+
+	{"TestUnexportedMethods", _xtest.TestUnexportedMethods},
+
+	{"TestEmbeddedMethods", _xtest.TestEmbeddedMethods},
+
+	{"TestNumMethodOnDDD", _xtest.TestNumMethodOnDDD},
+
+	{"TestPtrTo", _xtest.TestPtrTo},
+
+	{"TestPtrToGC", _xtest.TestPtrToGC},
+
+	{"TestAddr", _xtest.TestAddr},
+
+	{"TestAllocations", _xtest.TestAllocations},
+
+	{"TestSmallNegativeInt", _xtest.TestSmallNegativeInt},
+
+	{"TestIndex", _xtest.TestIndex},
+
+	{"TestSlice", _xtest.TestSlice},
+
+	{"TestSlice3", _xtest.TestSlice3},
+
+	{"TestSetLenCap", _xtest.TestSetLenCap},
+
+	{"TestVariadic", _xtest.TestVariadic},
+
+	{"TestFuncArg", _xtest.TestFuncArg},
+
+	{"TestStructArg", _xtest.TestStructArg},
+
+	{"TestTagGet", _xtest.TestTagGet},
+
+	{"TestBytes", _xtest.TestBytes},
+
+	{"TestSetBytes", _xtest.TestSetBytes},
+
+	{"TestUnexported", _xtest.TestUnexported},
+
+	{"TestSetPanic", _xtest.TestSetPanic},
+
+	{"TestCallPanic", _xtest.TestCallPanic},
+
+	{"TestAlias", _xtest.TestAlias},
+
+	{"TestConvert", _xtest.TestConvert},
+
+	{"TestComparable", _xtest.TestComparable},
+
+	{"TestOverflow", _xtest.TestOverflow},
+
+	{"TestArrayOf", _xtest.TestArrayOf},
+
+	{"TestArrayOfGC", _xtest.TestArrayOfGC},
+
+	{"TestArrayOfAlg", _xtest.TestArrayOfAlg},
+
+	{"TestArrayOfGenericAlg", _xtest.TestArrayOfGenericAlg},
+
+	{"TestArrayOfDirectIface", _xtest.TestArrayOfDirectIface},
+
+	{"TestSliceOf", _xtest.TestSliceOf},
+
+	{"TestSliceOverflow", _xtest.TestSliceOverflow},
+
+	{"TestSliceOfGC", _xtest.TestSliceOfGC},
+
+	{"TestStructOfFieldName", _xtest.TestStructOfFieldName},
+
+	{"TestStructOf", _xtest.TestStructOf},
+
+	{"TestStructOfExportRules", _xtest.TestStructOfExportRules},
+
+	{"TestStructOfGC", _xtest.TestStructOfGC},
+
+	{"TestStructOfAlg", _xtest.TestStructOfAlg},
+
+	{"TestStructOfGenericAlg", _xtest.TestStructOfGenericAlg},
+
+	{"TestStructOfDirectIface", _xtest.TestStructOfDirectIface},
+
+	{"TestStructOfWithInterface", _xtest.TestStructOfWithInterface},
+
+	{"TestChanOf", _xtest.TestChanOf},
+
+	{"TestChanOfDir", _xtest.TestChanOfDir},
+
+	{"TestChanOfGC", _xtest.TestChanOfGC},
+
+	{"TestMapOf", _xtest.TestMapOf},
+
+	{"TestMapOfGCKeys", _xtest.TestMapOfGCKeys},
+
+	{"TestMapOfGCValues", _xtest.TestMapOfGCValues},
+
+	{"TestTypelinksSorted", _xtest.TestTypelinksSorted},
+
+	{"TestFuncOf", _xtest.TestFuncOf},
+
+	{"TestEmbed", _xtest.TestEmbed},
+
+	{"TestAllocsInterfaceBig", _xtest.TestAllocsInterfaceBig},
+
+	{"TestAllocsInterfaceSmall", _xtest.TestAllocsInterfaceSmall},
+
+	{"TestReflectFuncTraceback", _xtest.TestReflectFuncTraceback},
+
+	{"TestReflectMethodTraceback", _xtest.TestReflectMethodTraceback},
+
+	{"TestBigZero", _xtest.TestBigZero},
+
+	{"TestFieldByIndexNil", _xtest.TestFieldByIndexNil},
+
+	{"TestCallMethodJump", _xtest.TestCallMethodJump},
+
+	{"TestMakeFuncStackCopy", _xtest.TestMakeFuncStackCopy},
+
+	{"TestValueString", _xtest.TestValueString},
+
+	{"TestInvalid", _xtest.TestInvalid},
+
+	{"TestLargeGCProg", _xtest.TestLargeGCProg},
+
+	{"TestTypeFieldOutOfRangePanic", _xtest.TestTypeFieldOutOfRangePanic},
+
+	{"TestCallGC", _xtest.TestCallGC},
+
+	{"TestKeepFuncLive", _xtest.TestKeepFuncLive},
+
+	{"TestMethodByNameUnExportedFirst", _xtest.TestMethodByNameUnExportedFirst},
+
+	{"TestKeepMethodLive", _xtest.TestKeepMethodLive},
+
+	{"TestFuncLayout", _xtest.TestFuncLayout},
+
+	{"TestGCBits", _xtest.TestGCBits},
+
+	{"TestTypeOfTypeOf", _xtest.TestTypeOfTypeOf},
+
+	{"TestPtrToMethods", _xtest.TestPtrToMethods},
+
+	{"TestMapAlloc", _xtest.TestMapAlloc},
+
+	{"TestChanAlloc", _xtest.TestChanAlloc},
+
+	{"TestNames", _xtest.TestNames},
+
+	{"TestExported", _xtest.TestExported},
+
+	{"TestNameBytesAreAligned", _xtest.TestNameBytesAreAligned},
+
+	{"TestTypeStrings", _xtest.TestTypeStrings},
+
+	{"TestOffsetLock", _xtest.TestOffsetLock},
+
+	{"TestSwapper", _xtest.TestSwapper},
+
+	{"TestUnaddressableField", _xtest.TestUnaddressableField},
+
+	{"TestAliasNames", _xtest.TestAliasNames},
+
+	{"TestIssue22031", _xtest.TestIssue22031},
+
+	{"TestIssue22073", _xtest.TestIssue22073},
+
+	{"TestImplicitMapConversion", _xtest.TestImplicitMapConversion},
+
+	{"TestImplicitSetConversion", _xtest.TestImplicitSetConversion},
+
+	{"TestImplicitSendConversion", _xtest.TestImplicitSendConversion},
+
+	{"TestImplicitCallConversion", _xtest.TestImplicitCallConversion},
+
+	{"TestImplicitAppendConversion", _xtest.TestImplicitAppendConversion},
+
+	{"TestImplements", _xtest.TestImplements},
+
+	{"TestAssignableTo", _xtest.TestAssignableTo},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkCall", _xtest.BenchmarkCall},
+
+	{"BenchmarkCallArgCopy", _xtest.BenchmarkCallArgCopy},
+
+	{"BenchmarkPtrTo", _xtest.BenchmarkPtrTo},
+
+	{"BenchmarkFieldByName1", _xtest.BenchmarkFieldByName1},
+
+	{"BenchmarkFieldByName2", _xtest.BenchmarkFieldByName2},
+
+	{"BenchmarkFieldByName3", _xtest.BenchmarkFieldByName3},
+
+	{"BenchmarkInterfaceBig", _xtest.BenchmarkInterfaceBig},
+
+	{"BenchmarkInterfaceSmall", _xtest.BenchmarkInterfaceSmall},
+
+	{"BenchmarkNew", _xtest.BenchmarkNew},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleMakeFunc", _xtest.ExampleMakeFunc, "1 0\n3.14 2.72\n", false},
+
+	{"ExampleStructTag", _xtest.ExampleStructTag, "blue gopher\n", false},
+
+	{"ExampleStructTag_Lookup", _xtest.ExampleStructTag_Lookup, "field_0\n(blank)\n(not specified)\n", false},
+
+	{"ExampleTypeOf", _xtest.ExampleTypeOf, "true\n", false},
+
+	{"ExampleStructOf", _xtest.ExampleStructOf, "value: &{Height:0.4 Age:2}\njson:  {\"height\":0.4,\"age\":2}\nvalue: &{Height:1.5 Age:10}\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "reflect"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

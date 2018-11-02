@@ -1,0 +1,61 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "internal/poll"
+
+
+	_xtest "internal/poll_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestMutexLock", _xtest.TestMutexLock},
+
+	{"TestMutexClose", _xtest.TestMutexClose},
+
+	{"TestMutexCloseUnblock", _xtest.TestMutexCloseUnblock},
+
+	{"TestMutexPanic", _xtest.TestMutexPanic},
+
+	{"TestMutexOverflowPanic", _xtest.TestMutexOverflowPanic},
+
+	{"TestMutexStress", _xtest.TestMutexStress},
+
+	{"TestEOFError", _xtest.TestEOFError},
+
+	{"TestConsume", _xtest.TestConsume},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "internal/poll"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

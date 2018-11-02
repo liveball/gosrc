@@ -1,0 +1,121 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "compress/flate"
+
+
+	_xtest "compress/flate_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestBulkHash4", _test.TestBulkHash4},
+
+	{"TestDeflate", _test.TestDeflate},
+
+	{"TestVeryLongSparseChunk", _test.TestVeryLongSparseChunk},
+
+	{"TestDeflateInflate", _test.TestDeflateInflate},
+
+	{"TestReverseBits", _test.TestReverseBits},
+
+	{"TestDeflateInflateString", _test.TestDeflateInflateString},
+
+	{"TestReaderDict", _test.TestReaderDict},
+
+	{"TestWriterDict", _test.TestWriterDict},
+
+	{"TestRegression2508", _test.TestRegression2508},
+
+	{"TestWriterReset", _test.TestWriterReset},
+
+	{"TestBestSpeed", _test.TestBestSpeed},
+
+	{"TestWriterPersistentError", _test.TestWriterPersistentError},
+
+	{"TestBestSpeedMatch", _test.TestBestSpeedMatch},
+
+	{"TestBestSpeedMaxMatchOffset", _test.TestBestSpeedMaxMatchOffset},
+
+	{"TestMaxStackSize", _test.TestMaxStackSize},
+
+	{"TestDictDecoder", _test.TestDictDecoder},
+
+	{"TestIssue5915", _test.TestIssue5915},
+
+	{"TestIssue5962", _test.TestIssue5962},
+
+	{"TestIssue6255", _test.TestIssue6255},
+
+	{"TestInvalidEncoding", _test.TestInvalidEncoding},
+
+	{"TestInvalidBits", _test.TestInvalidBits},
+
+	{"TestStreams", _test.TestStreams},
+
+	{"TestTruncatedStreams", _test.TestTruncatedStreams},
+
+	{"TestReaderEarlyEOF", _test.TestReaderEarlyEOF},
+
+	{"TestBlockHuff", _test.TestBlockHuff},
+
+	{"TestWriteBlock", _test.TestWriteBlock},
+
+	{"TestWriteBlockDynamic", _test.TestWriteBlockDynamic},
+
+	{"TestReset", _test.TestReset},
+
+	{"TestReaderTruncated", _test.TestReaderTruncated},
+
+	{"TestResetDict", _test.TestResetDict},
+
+	{"TestNlitOutOfRange", _test.TestNlitOutOfRange},
+
+	{"TestWriteError", _test.TestWriteError},
+
+	{"TestDeterministic", _test.TestDeterministic},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkDecode", _test.BenchmarkDecode},
+
+	{"BenchmarkEncode", _test.BenchmarkEncode},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"Example_reset", _xtest.Example_reset, "Don't communicate by sharing memory, share memory by communicating.\nConcurrency is not parallelism.\nThe bigger the interface, the weaker the abstraction.\nDocumentation is for users.\n", false},
+
+	{"Example_dictionary", _xtest.Example_dictionary, "Decompressed output using the dictionary:\n<?xml version=\"1.0\"?>\n<book>\n\t<meta name=\"title\" content=\"The Go Programming Language\"/>\n\t<meta name=\"authors\" content=\"Alan Donovan and Brian Kernighan\"/>\n\t<meta name=\"published\" content=\"2015-10-26\"/>\n\t<meta name=\"isbn\" content=\"978-0134190440\"/>\n\t<data>...</data>\n</book>\n\nSubstrings matched by the dictionary are marked with #:\n#####################\n######\n\t############title###########The Go Programming Language\"/#\n\t############authors###########Alan Donovan and Brian Kernighan\"/#\n\t############published###########2015-10-26\"/#\n\t############isbn###########978-0134190440\"/#\n\t######...</#####\n</#####\n", false},
+
+	{"Example_synchronization", _xtest.Example_synchronization, "Received 1 bytes: A\nReceived 4 bytes: long\nReceived 4 bytes: time\nReceived 3 bytes: ago\nReceived 2 bytes: in\nReceived 1 bytes: a\nReceived 6 bytes: galaxy\nReceived 4 bytes: far,\nReceived 3 bytes: far\nReceived 7 bytes: away...\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "compress/flate"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

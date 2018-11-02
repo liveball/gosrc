@@ -1,0 +1,278 @@
+# command-line-arguments
+"".Zero1 STEXT nosplit size=20 args=0x8 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:20)	TEXT	"".Zero1(SB), NOSPLIT, $0-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:20)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:20)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:20)	FUNCDATA	$3, gclocals·9fb7f0986f647f17cb53dda1484e0f7a(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	XORPS	X0, X0
+	0x0003 00003 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	PCDATA	$2, $1
+	0x0003 00003 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	PCDATA	$0, $1
+	0x0003 00003 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	MOVQ	"".t+8(SP), AX
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	MOVUPS	X0, (AX)
+	0x000b 00011 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	PCDATA	$2, $0
+	0x000b 00011 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:22)	MOVQ	$0, 16(AX)
+	0x0013 00019 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:23)	RET
+	0x0000 0f 57 c0 48 8b 44 24 08 0f 11 00 48 c7 40 10 00  .W.H.D$....H.@..
+	0x0010 00 00 00 c3                                      ....
+"".Zero2 STEXT size=106 args=0x8 locals=0x8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	TEXT	"".Zero2(SB), $8-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	MOVQ	(TLS), CX
+	0x0009 00009 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	CMPQ	SP, 16(CX)
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	JLS	99
+	0x000f 00015 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	SUBQ	$8, SP
+	0x0013 00019 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	MOVQ	BP, (SP)
+	0x0017 00023 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	LEAQ	(SP), BP
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	FUNCDATA	$3, gclocals·39825eea4be6e41a70480a53a624f97b(SB)
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	PCDATA	$2, $1
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	PCDATA	$0, $1
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	MOVQ	"".t+16(SP), DI
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	TESTB	AL, (DI)
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	PCDATA	$2, $-2
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	PCDATA	$0, $-2
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	CMPL	runtime.writeBarrier(SB), $0
+	0x0029 00041 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	JNE	66
+	0x002b 00043 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	XORPS	X0, X0
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	MOVUPS	X0, (DI)
+	0x0031 00049 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	MOVQ	$0, 16(DI)
+	0x0039 00057 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:33)	MOVQ	(SP), BP
+	0x003d 00061 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:33)	ADDQ	$8, SP
+	0x0041 00065 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:33)	RET
+	0x0042 00066 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	XORL	AX, AX
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	CALL	runtime.gcWriteBarrier(SB)
+	0x0049 00073 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	LEAQ	8(DI), CX
+	0x004d 00077 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	MOVQ	DI, DX
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	MOVQ	CX, DI
+	0x0053 00083 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	CALL	runtime.gcWriteBarrier(SB)
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	LEAQ	16(DX), DI
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	CALL	runtime.gcWriteBarrier(SB)
+	0x0061 00097 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	JMP	57
+	0x0063 00099 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:32)	NOP
+	0x0063 00099 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	PCDATA	$0, $-1
+	0x0063 00099 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	PCDATA	$2, $-1
+	0x0063 00099 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	CALL	runtime.morestack_noctxt(SB)
+	0x0068 00104 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:29)	JMP	0
+	0x0000 64 48 8b 0c 25 00 00 00 00 48 3b 61 10 76 54 48  dH..%....H;a.vTH
+	0x0010 83 ec 08 48 89 2c 24 48 8d 2c 24 48 8b 7c 24 10  ...H.,$H.,$H.|$.
+	0x0020 84 07 83 3d 00 00 00 00 00 75 17 0f 57 c0 0f 11  ...=.....u..W...
+	0x0030 07 48 c7 47 10 00 00 00 00 48 8b 2c 24 48 83 c4  .H.G.....H.,$H..
+	0x0040 08 c3 31 c0 e8 00 00 00 00 48 8d 4f 08 48 89 fa  ..1......H.O.H..
+	0x0050 48 89 cf e8 00 00 00 00 48 8d 7a 10 e8 00 00 00  H.......H.z.....
+	0x0060 00 eb d6 e8 00 00 00 00 eb 96                    ..........
+	rel 5+4 t=16 TLS+0
+	rel 36+4 t=15 runtime.writeBarrier+-1
+	rel 69+4 t=8 runtime.gcWriteBarrier+0
+	rel 84+4 t=8 runtime.gcWriteBarrier+0
+	rel 93+4 t=8 runtime.gcWriteBarrier+0
+	rel 100+4 t=8 runtime.morestack_noctxt+0
+"".Init1 STEXT nosplit size=37 args=0x8 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:43)	TEXT	"".Init1(SB), NOSPLIT, $0-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:43)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:43)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:43)	FUNCDATA	$3, gclocals·9fb7f0986f647f17cb53dda1484e0f7a(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:45)	PCDATA	$2, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:45)	PCDATA	$0, $1
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:45)	MOVQ	"".p+8(SP), AX
+	0x0005 00005 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:45)	MOVQ	$1, (AX)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:45)	MOVQ	$2, 8(AX)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:45)	MOVQ	$3, 16(AX)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:45)	PCDATA	$2, $0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:45)	MOVQ	$4, 24(AX)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/structs.go:46)	RET
+	0x0000 48 8b 44 24 08 48 c7 00 01 00 00 00 48 c7 40 08  H.D$.H......H.@.
+	0x0010 02 00 00 00 48 c7 40 10 03 00 00 00 48 c7 40 18  ....H.@.....H.@.
+	0x0020 04 00 00 00 c3                                   .....
+go.loc."".Zero1 SDWARFLOC size=0
+go.info."".Zero1 SDWARFINFO size=44
+	0x0000 02 22 22 2e 5a 65 72 6f 31 00 00 00 00 00 00 00  ."".Zero1.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 74 00 00 14 00 00 00 00 00 00              ..t.........
+	rel 10+8 t=1 "".Zero1+0
+	rel 18+8 t=1 "".Zero1+20
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/structs.go+0
+	rel 38+4 t=28 go.info.*"".Z1+0
+go.range."".Zero1 SDWARFRANGE size=0
+go.isstmt."".Zero1 SDWARFMISC size=0
+	0x0000 02 13 02 01 00                                   .....
+go.loc."".Zero2 SDWARFLOC size=0
+go.info."".Zero2 SDWARFINFO size=44
+	0x0000 02 22 22 2e 5a 65 72 6f 32 00 00 00 00 00 00 00  ."".Zero2.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 74 00 00 1d 00 00 00 00 00 00              ..t.........
+	rel 10+8 t=1 "".Zero2+0
+	rel 18+8 t=1 "".Zero2+106
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/structs.go+0
+	rel 38+4 t=28 go.info.*"".Z2+0
+go.range."".Zero2 SDWARFRANGE size=0
+go.isstmt."".Zero2 SDWARFMISC size=0
+	0x0000 04 0f 04 0c 03 05 01 19 02 09 01 21 02 07 00     ...........!...
+go.loc."".Init1 SDWARFLOC size=0
+go.info."".Init1 SDWARFINFO size=44
+	0x0000 02 22 22 2e 49 6e 69 74 31 00 00 00 00 00 00 00  ."".Init1.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 70 00 00 2b 00 00 00 00 00 00              ..p..+......
+	rel 10+8 t=1 "".Init1+0
+	rel 18+8 t=1 "".Init1+37
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/structs.go+0
+	rel 38+4 t=28 go.info.*"".I1+0
+go.range."".Init1 SDWARFRANGE size=0
+go.isstmt."".Init1 SDWARFMISC size=0
+	0x0000 04 05 01 1f 02 01 00                             .......
+type..hashfunc32 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	rel 0+8 t=1 runtime.memhash_varlen+0
+type..eqfunc32 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	rel 0+8 t=1 runtime.memequal_varlen+0
+type..alg32 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 0+8 t=1 type..hashfunc32+0
+	rel 8+8 t=1 type..eqfunc32+0
+runtime.gcbits.01 SRODATA dupok size=1
+	0x0000 01                                               .
+type..namedata.*codegen.I1. SRODATA dupok size=14
+	0x0000 01 00 0b 2a 63 6f 64 65 67 65 6e 2e 49 31        ...*codegen.I1
+type.*"".I1 SRODATA size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 0e 5b c2 5e 00 08 08 36 00 00 00 00 00 00 00 00  .[.^...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*codegen.I1.+0
+	rel 48+8 t=1 type."".I1+0
+runtime.gcbits. SRODATA dupok size=0
+type..importpath."". SRODATA dupok size=25
+	0x0000 00 00 16 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d  ...command-line-
+	0x0010 61 72 67 75 6d 65 6e 74 73                       arguments
+type..namedata.a- SRODATA dupok size=4
+	0x0000 00 00 01 61                                      ...a
+type..namedata.b- SRODATA dupok size=4
+	0x0000 00 00 01 62                                      ...b
+type..namedata.c- SRODATA dupok size=4
+	0x0000 00 00 01 63                                      ...c
+type..namedata.d- SRODATA dupok size=4
+	0x0000 00 00 01 64                                      ...d
+type."".I1 SRODATA size=192
+	0x0000 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ...............
+	0x0010 ed bb 38 97 07 08 08 99 00 00 00 00 00 00 00 00  ..8.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 04 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 70 00 00 00 00 00 00 00  ........p.......
+	0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0090 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ...............
+	0x00b0 00 00 00 00 00 00 00 00 30 00 00 00 00 00 00 00  ........0.......
+	rel 24+8 t=1 type..alg32+0
+	rel 32+8 t=1 runtime.gcbits.+0
+	rel 40+4 t=5 type..namedata.*codegen.I1.+0
+	rel 44+4 t=5 type.*"".I1+0
+	rel 48+8 t=1 type..importpath."".+0
+	rel 56+8 t=1 type."".I1+96
+	rel 80+4 t=5 type..importpath."".+0
+	rel 96+8 t=1 type..namedata.a-+0
+	rel 104+8 t=1 type.int+0
+	rel 120+8 t=1 type..namedata.b-+0
+	rel 128+8 t=1 type.int+0
+	rel 144+8 t=1 type..namedata.c-+0
+	rel 152+8 t=1 type.int+0
+	rel 168+8 t=1 type..namedata.d-+0
+	rel 176+8 t=1 type.int+0
+type..hashfunc24 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00  ................
+	rel 0+8 t=1 runtime.memhash_varlen+0
+type..eqfunc24 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00  ................
+	rel 0+8 t=1 runtime.memequal_varlen+0
+type..alg24 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 0+8 t=1 type..hashfunc24+0
+	rel 8+8 t=1 type..eqfunc24+0
+type..namedata.*codegen.Z1. SRODATA dupok size=14
+	0x0000 01 00 0b 2a 63 6f 64 65 67 65 6e 2e 5a 31        ...*codegen.Z1
+type.*"".Z1 SRODATA size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 f3 51 24 b3 00 08 08 36 00 00 00 00 00 00 00 00  .Q$....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*codegen.Z1.+0
+	rel 48+8 t=1 type."".Z1+0
+type."".Z1 SRODATA size=168
+	0x0000 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 45 70 85 8e 07 08 08 99 00 00 00 00 00 00 00 00  Ep..............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 03 00 00 00 00 00 00 00 03 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 58 00 00 00 00 00 00 00  ........X.......
+	0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0090 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 20 00 00 00 00 00 00 00                           .......
+	rel 24+8 t=1 type..alg24+0
+	rel 32+8 t=1 runtime.gcbits.+0
+	rel 40+4 t=5 type..namedata.*codegen.Z1.+0
+	rel 44+4 t=5 type.*"".Z1+0
+	rel 48+8 t=1 type..importpath."".+0
+	rel 56+8 t=1 type."".Z1+96
+	rel 80+4 t=5 type..importpath."".+0
+	rel 96+8 t=1 type..namedata.a-+0
+	rel 104+8 t=1 type.int+0
+	rel 120+8 t=1 type..namedata.b-+0
+	rel 128+8 t=1 type.int+0
+	rel 144+8 t=1 type..namedata.c-+0
+	rel 152+8 t=1 type.int+0
+type..namedata.*codegen.Z2. SRODATA dupok size=14
+	0x0000 01 00 0b 2a 63 6f 64 65 67 65 6e 2e 5a 32        ...*codegen.Z2
+type.*"".Z2 SRODATA size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 72 87 a0 85 00 08 08 36 00 00 00 00 00 00 00 00  r......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*codegen.Z2.+0
+	rel 48+8 t=1 type."".Z2+0
+runtime.gcbits.07 SRODATA dupok size=1
+	0x0000 07                                               .
+type."".Z2 SRODATA size=168
+	0x0000 18 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00  ................
+	0x0010 43 9f fc 2c 07 08 08 19 00 00 00 00 00 00 00 00  C..,............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 03 00 00 00 00 00 00 00 03 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 58 00 00 00 00 00 00 00  ........X.......
+	0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0090 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 20 00 00 00 00 00 00 00                           .......
+	rel 24+8 t=1 type..alg24+0
+	rel 32+8 t=1 runtime.gcbits.07+0
+	rel 40+4 t=5 type..namedata.*codegen.Z2.+0
+	rel 44+4 t=5 type.*"".Z2+0
+	rel 48+8 t=1 type..importpath."".+0
+	rel 56+8 t=1 type."".Z2+96
+	rel 80+4 t=5 type..importpath."".+0
+	rel 96+8 t=1 type..namedata.a-+0
+	rel 104+8 t=1 type.*int+0
+	rel 120+8 t=1 type..namedata.b-+0
+	rel 128+8 t=1 type.*int+0
+	rel 144+8 t=1 type..namedata.c-+0
+	rel 152+8 t=1 type.*int+0
+gclocals·1a65e721a2ccc325b382662e7ffee780 SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·69c1753bd5f81501d95132d08af04464 SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+gclocals·9fb7f0986f647f17cb53dda1484e0f7a SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 00 01                    ..........
+gclocals·39825eea4be6e41a70480a53a624f97b SRODATA dupok size=10
+	0x0000 02 00 00 00 07 00 00 00 00 40                    .........@

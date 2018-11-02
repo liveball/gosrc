@@ -1,0 +1,51 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "hash/crc64"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestGolden", _test.TestGolden},
+
+	{"TestGoldenMarshal", _test.TestGoldenMarshal},
+
+	{"TestMarshalTableMismatch", _test.TestMarshalTableMismatch},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkCrc64", _test.BenchmarkCrc64},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "hash/crc64"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

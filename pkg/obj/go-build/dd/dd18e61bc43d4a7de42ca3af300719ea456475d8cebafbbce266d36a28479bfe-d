@@ -1,0 +1,151 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "sort"
+
+
+	_xtest "sort_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestSearch", _xtest.TestSearch},
+
+	{"TestSearchEfficiency", _xtest.TestSearchEfficiency},
+
+	{"TestSearchWrappers", _xtest.TestSearchWrappers},
+
+	{"TestSearchWrappersDontAlloc", _xtest.TestSearchWrappersDontAlloc},
+
+	{"TestSearchExhaustive", _xtest.TestSearchExhaustive},
+
+	{"TestSortIntSlice", _xtest.TestSortIntSlice},
+
+	{"TestSortFloat64Slice", _xtest.TestSortFloat64Slice},
+
+	{"TestSortStringSlice", _xtest.TestSortStringSlice},
+
+	{"TestInts", _xtest.TestInts},
+
+	{"TestFloat64s", _xtest.TestFloat64s},
+
+	{"TestStrings", _xtest.TestStrings},
+
+	{"TestSlice", _xtest.TestSlice},
+
+	{"TestSortLarge_Random", _xtest.TestSortLarge_Random},
+
+	{"TestReverseSortIntSlice", _xtest.TestReverseSortIntSlice},
+
+	{"TestNonDeterministicComparison", _xtest.TestNonDeterministicComparison},
+
+	{"TestSortBM", _xtest.TestSortBM},
+
+	{"TestHeapsortBM", _xtest.TestHeapsortBM},
+
+	{"TestStableBM", _xtest.TestStableBM},
+
+	{"TestAdversary", _xtest.TestAdversary},
+
+	{"TestStableInts", _xtest.TestStableInts},
+
+	{"TestStability", _xtest.TestStability},
+
+	{"TestCountStableOps", _xtest.TestCountStableOps},
+
+	{"TestCountSortOps", _xtest.TestCountSortOps},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkSearchWrappers", _xtest.BenchmarkSearchWrappers},
+
+	{"BenchmarkSortString1K", _xtest.BenchmarkSortString1K},
+
+	{"BenchmarkSortString1K_Slice", _xtest.BenchmarkSortString1K_Slice},
+
+	{"BenchmarkStableString1K", _xtest.BenchmarkStableString1K},
+
+	{"BenchmarkSortInt1K", _xtest.BenchmarkSortInt1K},
+
+	{"BenchmarkStableInt1K", _xtest.BenchmarkStableInt1K},
+
+	{"BenchmarkStableInt1K_Slice", _xtest.BenchmarkStableInt1K_Slice},
+
+	{"BenchmarkSortInt64K", _xtest.BenchmarkSortInt64K},
+
+	{"BenchmarkSortInt64K_Slice", _xtest.BenchmarkSortInt64K_Slice},
+
+	{"BenchmarkStableInt64K", _xtest.BenchmarkStableInt64K},
+
+	{"BenchmarkSort1e2", _xtest.BenchmarkSort1e2},
+
+	{"BenchmarkStable1e2", _xtest.BenchmarkStable1e2},
+
+	{"BenchmarkSort1e4", _xtest.BenchmarkSort1e4},
+
+	{"BenchmarkStable1e4", _xtest.BenchmarkStable1e4},
+
+	{"BenchmarkSort1e6", _xtest.BenchmarkSort1e6},
+
+	{"BenchmarkStable1e6", _xtest.BenchmarkStable1e6},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"Example", _xtest.Example, "[Bob: 31 John: 42 Michael: 17 Jenny: 26]\n[Michael: 17 Jenny: 26 Bob: 31 John: 42]\n[John: 42 Bob: 31 Jenny: 26 Michael: 17]\n", false},
+
+	{"Example_sortKeys", _xtest.Example_sortKeys, "By name: [{Earth 1 1} {Mars 0.107 1.5} {Mercury 0.055 0.4} {Venus 0.815 0.7}]\nBy mass: [{Mercury 0.055 0.4} {Mars 0.107 1.5} {Venus 0.815 0.7} {Earth 1 1}]\nBy distance: [{Mercury 0.055 0.4} {Venus 0.815 0.7} {Earth 1 1} {Mars 0.107 1.5}]\nBy decreasing distance: [{Mars 0.107 1.5} {Earth 1 1} {Venus 0.815 0.7} {Mercury 0.055 0.4}]\n", false},
+
+	{"Example_sortMultiKeys", _xtest.Example_sortMultiKeys, "By user: [{dmr C 100} {glenda Go 200} {gri Go 100} {gri Smalltalk 80} {ken C 150} {ken Go 200} {r Go 100} {r C 150} {rsc Go 200}]\nBy user,<lines: [{dmr C 100} {glenda Go 200} {gri Smalltalk 80} {gri Go 100} {ken C 150} {ken Go 200} {r Go 100} {r C 150} {rsc Go 200}]\nBy user,>lines: [{dmr C 100} {glenda Go 200} {gri Go 100} {gri Smalltalk 80} {ken Go 200} {ken C 150} {r C 150} {r Go 100} {rsc Go 200}]\nBy language,<lines: [{dmr C 100} {ken C 150} {r C 150} {r Go 100} {gri Go 100} {ken Go 200} {glenda Go 200} {rsc Go 200} {gri Smalltalk 80}]\nBy language,<lines,user: [{dmr C 100} {ken C 150} {r C 150} {gri Go 100} {r Go 100} {glenda Go 200} {ken Go 200} {rsc Go 200} {gri Smalltalk 80}]\n", false},
+
+	{"ExampleSearch", _xtest.ExampleSearch, "found 6 at index 2 in [1 3 6 10 15 21 28 36 45 55]\n", false},
+
+	{"ExampleSearch_descendingOrder", _xtest.ExampleSearch_descendingOrder, "found 6 at index 7 in [55 45 36 28 21 15 10 6 3 1]\n", false},
+
+	{"ExampleInts", _xtest.ExampleInts, "[1 2 3 4 5 6]\n", false},
+
+	{"ExampleIntsAreSorted", _xtest.ExampleIntsAreSorted, "true\nfalse\nfalse\n", false},
+
+	{"ExampleFloat64s", _xtest.ExampleFloat64s, "[-3.8 -1.3 0.7 2.6 5.2]\n[NaN -Inf 0 +Inf]\n", false},
+
+	{"ExampleFloat64sAreSorted", _xtest.ExampleFloat64sAreSorted, "true\nfalse\nfalse\n", false},
+
+	{"ExampleReverse", _xtest.ExampleReverse, "[6 5 4 3 2 1]\n", false},
+
+	{"ExampleSlice", _xtest.ExampleSlice, "By name: [{Alice 55} {Bob 75} {Gopher 7} {Vera 24}]\nBy age: [{Gopher 7} {Vera 24} {Alice 55} {Bob 75}]\n", false},
+
+	{"ExampleSliceStable", _xtest.ExampleSliceStable, "By name: [{Alice 25} {Alice 75} {Alice 75} {Bob 75} {Bob 25} {Colin 25} {Elizabeth 75} {Elizabeth 25}]\nBy age,name: [{Alice 25} {Bob 25} {Colin 25} {Elizabeth 25} {Alice 75} {Alice 75} {Bob 75} {Elizabeth 75}]\n", false},
+
+	{"ExampleStrings", _xtest.ExampleStrings, "[Alpha Bravo Delta Go Gopher Grin]\n", false},
+
+	{"Example_sortWrapper", _xtest.Example_sortWrapper, "Organs by weight:\nprostate (62g)\npancreas (131g)\nspleen   (162g)\nheart    (290g)\nbrain    (1340g)\nliver    (1494g)\nOrgans by name:\nbrain    (1340g)\nheart    (290g)\nliver    (1494g)\npancreas (131g)\nprostate (62g)\nspleen   (162g)\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "sort"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

@@ -1,0 +1,2 @@
+./cpu.go
+./cpu_ppc64x.go

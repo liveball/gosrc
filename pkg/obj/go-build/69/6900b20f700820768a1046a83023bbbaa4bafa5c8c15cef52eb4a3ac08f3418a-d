@@ -1,0 +1,77 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "compress/gzip"
+
+
+	_xtest "compress/gzip_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestDecompressor", _test.TestDecompressor},
+
+	{"TestIssue6550", _test.TestIssue6550},
+
+	{"TestMultistreamFalse", _test.TestMultistreamFalse},
+
+	{"TestNilStream", _test.TestNilStream},
+
+	{"TestTruncatedStreams", _test.TestTruncatedStreams},
+
+	{"TestEmpty", _test.TestEmpty},
+
+	{"TestRoundTrip", _test.TestRoundTrip},
+
+	{"TestLatin1", _test.TestLatin1},
+
+	{"TestLatin1RoundTrip", _test.TestLatin1RoundTrip},
+
+	{"TestWriterFlush", _test.TestWriterFlush},
+
+	{"TestConcat", _test.TestConcat},
+
+	{"TestWriterReset", _test.TestWriterReset},
+
+	{"TestLimitedWrite", _test.TestLimitedWrite},
+
+	{"TestGZIPFilesHaveZeroMTimes", _test.TestGZIPFilesHaveZeroMTimes},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"Example_writerReader", _xtest.Example_writerReader, "Name: a-new-hope.txt\nComment: an epic space opera by George Lucas\nModTime: 1977-05-25 00:00:00 +0000 UTC\n\nA long time ago in a galaxy far, far away...\n", false},
+
+	{"ExampleReader_Multistream", _xtest.ExampleReader_Multistream, "Name: file-1.txt\nComment: file-header-1\nModTime: 2006-02-01 03:04:05 +0000 UTC\n\nHello Gophers - 1\n\nName: file-2.txt\nComment: file-header-2\nModTime: 2007-03-02 04:05:06 +0000 UTC\n\nHello Gophers - 2\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "compress/gzip"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

@@ -1,0 +1,67 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "go/token"
+
+
+	_xtest "go/token_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestNoPos", _test.TestNoPos},
+
+	{"TestPositions", _test.TestPositions},
+
+	{"TestLineInfo", _test.TestLineInfo},
+
+	{"TestFiles", _test.TestFiles},
+
+	{"TestFileSetPastEnd", _test.TestFileSetPastEnd},
+
+	{"TestFileSetCacheUnlikely", _test.TestFileSetCacheUnlikely},
+
+	{"TestFileSetRace", _test.TestFileSetRace},
+
+	{"TestFileSetRace2", _test.TestFileSetRace2},
+
+	{"TestPositionFor", _test.TestPositionFor},
+
+	{"TestSerialization", _test.TestSerialization},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"Example_retrievePositionInfo", _xtest.Example_retrievePositionInfo, "\nmain.go:3:1: import\nmain.go:5:1: import\nmain.go:1:5[main.go:8:1]: type\nmain.go:3:1[main.go:10:1]: const\nfake.go:42:11[main.go:13:1]: func\nfake.go:7:9[main.go:17:14]: func\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "go/token"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

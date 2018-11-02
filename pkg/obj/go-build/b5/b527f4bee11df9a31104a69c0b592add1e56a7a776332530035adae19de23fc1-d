@@ -1,0 +1,598 @@
+# command-line-arguments
+"".lshMask64x64 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:13)	TEXT	"".lshMask64x64(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:13)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:13)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:13)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:15)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:15)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:15)	MOVD	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:15)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:15)	SLD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:15)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:15)	JMP	R14
+	0x0000 e3 10 f0 10 00 04 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0d e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".rshMask64Ux64 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:18)	TEXT	"".rshMask64Ux64(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:18)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:18)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:18)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:20)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:20)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:20)	MOVD	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:20)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:20)	SRD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:20)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:20)	JMP	R14
+	0x0000 e3 10 f0 10 00 04 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0c e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".rshMask64x64 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:23)	TEXT	"".rshMask64x64(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:23)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:23)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:23)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:25)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:25)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:25)	MOVD	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:25)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:25)	SRAD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:25)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:25)	JMP	R14
+	0x0000 e3 10 f0 10 00 04 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0a e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".lshMask32x64 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:28)	TEXT	"".lshMask32x64(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:28)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:28)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:28)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:30)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:30)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:30)	MOVD	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:30)	MOVW	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:30)	SLW	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:30)	MOVW	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:30)	JMP	R14
+	0x0000 e3 10 f0 10 00 04 e3 00 f0 08 00 14 eb 00 10 00  ................
+	0x0010 00 df e3 00 f0 18 00 50 07 fe 00 00 00 00 00 00  .......P........
+"".rshMask32Ux64 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:33)	TEXT	"".rshMask32Ux64(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:33)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:33)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:33)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:35)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:35)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:35)	MOVD	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:35)	MOVWZ	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:35)	SRW	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:35)	MOVW	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:35)	JMP	R14
+	0x0000 e3 10 f0 10 00 04 e3 00 f0 08 00 16 eb 00 10 00  ................
+	0x0010 00 de e3 00 f0 18 00 50 07 fe 00 00 00 00 00 00  .......P........
+"".rshMask32x64 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:38)	TEXT	"".rshMask32x64(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:38)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:38)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:38)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:40)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:40)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:40)	MOVD	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:40)	MOVW	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:40)	SRAW	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:40)	MOVW	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:40)	JMP	R14
+	0x0000 e3 10 f0 10 00 04 e3 00 f0 08 00 14 eb 00 10 00  ................
+	0x0010 00 dc e3 00 f0 18 00 50 07 fe 00 00 00 00 00 00  .......P........
+"".lshMask64x32 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:43)	TEXT	"".lshMask64x32(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:43)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:43)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:43)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:45)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:45)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:45)	MOVWZ	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:45)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:45)	SLD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:45)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:45)	JMP	R14
+	0x0000 e3 10 f0 10 00 16 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0d e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".rshMask64Ux32 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:48)	TEXT	"".rshMask64Ux32(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:48)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:48)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:48)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:50)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:50)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:50)	MOVWZ	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:50)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:50)	SRD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:50)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:50)	JMP	R14
+	0x0000 e3 10 f0 10 00 16 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0c e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".rshMask64x32 STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:53)	TEXT	"".rshMask64x32(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:53)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:53)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:53)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:55)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:55)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:55)	MOVWZ	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:55)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:55)	SRAD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:55)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:55)	JMP	R14
+	0x0000 e3 10 f0 10 00 16 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0a e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".lshMask64x32Ext STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:58)	TEXT	"".lshMask64x32Ext(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:58)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:58)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:58)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:60)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:60)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:60)	MOVW	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:60)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:60)	SLD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:60)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:60)	JMP	R14
+	0x0000 e3 10 f0 10 00 14 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0d e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".rshMask64Ux32Ext STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:63)	TEXT	"".rshMask64Ux32Ext(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:63)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:63)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:63)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:65)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:65)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:65)	MOVW	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:65)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:65)	SRD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:65)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:65)	JMP	R14
+	0x0000 e3 10 f0 10 00 14 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0c e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".rshMask64x32Ext STEXT nosplit size=32 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:68)	TEXT	"".rshMask64x32Ext(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:68)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:68)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:68)	FUNCDATA	$3, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:70)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:70)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:70)	MOVW	"".s+8(FP), R1
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:70)	MOVD	"".v(FP), R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:70)	SRAD	R1, R0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:70)	MOVD	R0, "".~r2+16(FP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:70)	JMP	R14
+	0x0000 e3 10 f0 10 00 14 e3 00 f0 08 00 04 eb 00 10 00  ................
+	0x0010 00 0a e3 00 f0 18 00 24 07 fe 00 00 00 00 00 00  .......$........
+"".lshGuarded64 STEXT size=128 args=0x18 locals=0x10
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	TEXT	"".lshGuarded64(SB), $24-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	MOVD	16(g), R3
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	CMPUBGE	R3, R15, 102
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	MOVD	R14, -24(R15)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	MOVD	$-24(R15), R15
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	FUNCDATA	$3, gclocals·7cdfb5b821b3883f5778dba09a606653(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:78)	PCDATA	$2, $0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:78)	PCDATA	$0, $0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:78)	MOVD	"".s+8(FP), R0
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:78)	CMPU	R0, $64
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:78)	BGE	74
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:80)	MOVD	R0, R1
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:80)	MOVD	"".v(FP), R2
+	0x0032 00050 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:80)	SRAD	R1, R2, R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:80)	MOVD	R0, "".~r2+16(FP)
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:80)	MOVD	(R15), R14
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:80)	ADD	$24, R15
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:80)	JMP	R14
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	PCDATA	$2, $1
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	MOVD	$type.string(SB), R1
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	PCDATA	$2, $2
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	MOVD	$"".statictmp_0(SB), R2
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	PCDATA	$2, $0
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	STMG	R1, R2, 8(R15)
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	CALL	runtime.gopanic(SB)
+	0x0062 00098 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	UNDEF
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:82)	NOP
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	PCDATA	$0, $-1
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	PCDATA	$2, $-1
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	MOVD	R14, R5
+	0x006a 00106 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	CALL	runtime.morestack_noctxt(SB)
+	0x0070 00112 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:77)	JMP	0
+	0x0000 e3 30 d0 10 00 04 ec 3f 00 30 a0 65 e3 e0 ff e8  .0.....?.0.e....
+	0x0010 ff 24 e3 ff 0f e8 ff 71 e3 00 f0 28 00 04 c2 0e  .$.....q...(....
+	0x0020 00 00 00 40 a7 a4 00 13 b9 04 00 10 e3 20 f0 20  ...@......... . 
+	0x0030 00 04 eb 02 10 00 00 0a e3 00 f0 30 00 24 e3 e0  ...........0.$..
+	0x0040 f0 00 00 04 a7 fb 00 18 07 fe c0 10 00 00 00 00  ................
+	0x0050 c0 20 00 00 00 00 eb 12 f0 08 00 24 c0 e5 00 00  . .........$....
+	0x0060 00 00 00 00 00 00 b9 04 00 5e c0 e5 00 00 00 00  .........^......
+	0x0070 a7 f4 ff c8 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 76+4 t=41 type.string+6
+	rel 82+4 t=41 "".statictmp_0+6
+	rel 94+4 t=8 runtime.gopanic+6
+	rel 108+4 t=8 runtime.morestack_noctxt+6
+"".rshGuarded64U STEXT size=128 args=0x18 locals=0x10
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	TEXT	"".rshGuarded64U(SB), $24-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	MOVD	16(g), R3
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	CMPUBGE	R3, R15, 102
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	MOVD	R14, -24(R15)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	MOVD	$-24(R15), R15
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	FUNCDATA	$3, gclocals·7cdfb5b821b3883f5778dba09a606653(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:86)	PCDATA	$2, $0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:86)	PCDATA	$0, $0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:86)	MOVD	"".s+8(FP), R0
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:86)	CMPU	R0, $64
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:86)	BGE	74
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:88)	MOVD	R0, R1
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:88)	MOVD	"".v(FP), R2
+	0x0032 00050 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:88)	SRD	R1, R2, R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:88)	MOVD	R0, "".~r2+16(FP)
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:88)	MOVD	(R15), R14
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:88)	ADD	$24, R15
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:88)	JMP	R14
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	PCDATA	$2, $1
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	MOVD	$type.string(SB), R1
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	PCDATA	$2, $2
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	MOVD	$"".statictmp_1(SB), R2
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	PCDATA	$2, $0
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	STMG	R1, R2, 8(R15)
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	CALL	runtime.gopanic(SB)
+	0x0062 00098 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	UNDEF
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:90)	NOP
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	PCDATA	$0, $-1
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	PCDATA	$2, $-1
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	MOVD	R14, R5
+	0x006a 00106 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	CALL	runtime.morestack_noctxt(SB)
+	0x0070 00112 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:85)	JMP	0
+	0x0000 e3 30 d0 10 00 04 ec 3f 00 30 a0 65 e3 e0 ff e8  .0.....?.0.e....
+	0x0010 ff 24 e3 ff 0f e8 ff 71 e3 00 f0 28 00 04 c2 0e  .$.....q...(....
+	0x0020 00 00 00 40 a7 a4 00 13 b9 04 00 10 e3 20 f0 20  ...@......... . 
+	0x0030 00 04 eb 02 10 00 00 0c e3 00 f0 30 00 24 e3 e0  ...........0.$..
+	0x0040 f0 00 00 04 a7 fb 00 18 07 fe c0 10 00 00 00 00  ................
+	0x0050 c0 20 00 00 00 00 eb 12 f0 08 00 24 c0 e5 00 00  . .........$....
+	0x0060 00 00 00 00 00 00 b9 04 00 5e c0 e5 00 00 00 00  .........^......
+	0x0070 a7 f4 ff c8 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 76+4 t=41 type.string+6
+	rel 82+4 t=41 "".statictmp_1+6
+	rel 94+4 t=8 runtime.gopanic+6
+	rel 108+4 t=8 runtime.morestack_noctxt+6
+"".rshGuarded64 STEXT size=128 args=0x18 locals=0x10
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	TEXT	"".rshGuarded64(SB), $24-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	MOVD	16(g), R3
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	CMPUBGE	R3, R15, 102
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	MOVD	R14, -24(R15)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	MOVD	$-24(R15), R15
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	FUNCDATA	$0, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	FUNCDATA	$1, gclocals·2002e13acf59079a1a5782c918894579(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	FUNCDATA	$3, gclocals·7cdfb5b821b3883f5778dba09a606653(SB)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:94)	PCDATA	$2, $0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:94)	PCDATA	$0, $0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:94)	MOVD	"".s+8(FP), R0
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:94)	CMPU	R0, $64
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:94)	BGE	74
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:96)	MOVD	R0, R1
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:96)	MOVD	"".v(FP), R2
+	0x0032 00050 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:96)	SLD	R1, R2, R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:96)	MOVD	R0, "".~r2+16(FP)
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:96)	MOVD	(R15), R14
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:96)	ADD	$24, R15
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:96)	JMP	R14
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	PCDATA	$2, $1
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	MOVD	$type.string(SB), R1
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	PCDATA	$2, $2
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	MOVD	$"".statictmp_2(SB), R2
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	PCDATA	$2, $0
+	0x0056 00086 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	STMG	R1, R2, 8(R15)
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	CALL	runtime.gopanic(SB)
+	0x0062 00098 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	UNDEF
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:98)	NOP
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	PCDATA	$0, $-1
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	PCDATA	$2, $-1
+	0x0066 00102 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	MOVD	R14, R5
+	0x006a 00106 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	CALL	runtime.morestack_noctxt(SB)
+	0x0070 00112 (/Users/fpf/Downloads/go1.11.1/test/codegen/shift.go:93)	JMP	0
+	0x0000 e3 30 d0 10 00 04 ec 3f 00 30 a0 65 e3 e0 ff e8  .0.....?.0.e....
+	0x0010 ff 24 e3 ff 0f e8 ff 71 e3 00 f0 28 00 04 c2 0e  .$.....q...(....
+	0x0020 00 00 00 40 a7 a4 00 13 b9 04 00 10 e3 20 f0 20  ...@......... . 
+	0x0030 00 04 eb 02 10 00 00 0d e3 00 f0 30 00 24 e3 e0  ...........0.$..
+	0x0040 f0 00 00 04 a7 fb 00 18 07 fe c0 10 00 00 00 00  ................
+	0x0050 c0 20 00 00 00 00 eb 12 f0 08 00 24 c0 e5 00 00  . .........$....
+	0x0060 00 00 00 00 00 00 b9 04 00 5e c0 e5 00 00 00 00  .........^......
+	0x0070 a7 f4 ff c8 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 76+4 t=41 type.string+6
+	rel 82+4 t=41 "".statictmp_2+6
+	rel 94+4 t=8 runtime.gopanic+6
+	rel 108+4 t=8 runtime.morestack_noctxt+6
+go.loc."".lshMask64x64 SDWARFLOC size=0
+go.info."".lshMask64x64 SDWARFINFO size=73
+	0x0000 02 22 22 2e 6c 73 68 4d 61 73 6b 36 34 78 36 34  ."".lshMask64x64
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 73 00 00 0d 00 00 00  .........s......
+	0x0030 00 00 0e 76 00 00 0d 00 00 00 00 00 0e 7e 72 32  ...v.........~r2
+	0x0040 00 01 0d 00 00 00 00 00 00                       .........
+	rel 17+8 t=1 "".lshMask64x64+0
+	rel 25+8 t=1 "".lshMask64x64+32
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 45+4 t=28 go.info.uint64+0
+	rel 55+4 t=28 go.info.int64+0
+	rel 67+4 t=28 go.info.int64+0
+go.range."".lshMask64x64 SDWARFRANGE size=0
+go.isstmt."".lshMask64x64 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".rshMask64Ux64 SDWARFLOC size=0
+go.info."".rshMask64Ux64 SDWARFINFO size=74
+	0x0000 02 22 22 2e 72 73 68 4d 61 73 6b 36 34 55 78 36  ."".rshMask64Ux6
+	0x0010 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  4...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 73 00 00 12 00 00  ..........s.....
+	0x0030 00 00 00 0e 76 00 00 12 00 00 00 00 00 0e 7e 72  ....v.........~r
+	0x0040 32 00 01 12 00 00 00 00 00 00                    2.........
+	rel 18+8 t=1 "".rshMask64Ux64+0
+	rel 26+8 t=1 "".rshMask64Ux64+32
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 46+4 t=28 go.info.uint64+0
+	rel 56+4 t=28 go.info.uint64+0
+	rel 68+4 t=28 go.info.uint64+0
+go.range."".rshMask64Ux64 SDWARFRANGE size=0
+go.isstmt."".rshMask64Ux64 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".rshMask64x64 SDWARFLOC size=0
+go.info."".rshMask64x64 SDWARFINFO size=73
+	0x0000 02 22 22 2e 72 73 68 4d 61 73 6b 36 34 78 36 34  ."".rshMask64x64
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 73 00 00 17 00 00 00  .........s......
+	0x0030 00 00 0e 76 00 00 17 00 00 00 00 00 0e 7e 72 32  ...v.........~r2
+	0x0040 00 01 17 00 00 00 00 00 00                       .........
+	rel 17+8 t=1 "".rshMask64x64+0
+	rel 25+8 t=1 "".rshMask64x64+32
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 45+4 t=28 go.info.uint64+0
+	rel 55+4 t=28 go.info.int64+0
+	rel 67+4 t=28 go.info.int64+0
+go.range."".rshMask64x64 SDWARFRANGE size=0
+go.isstmt."".rshMask64x64 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".lshMask32x64 SDWARFLOC size=0
+go.info."".lshMask32x64 SDWARFINFO size=73
+	0x0000 02 22 22 2e 6c 73 68 4d 61 73 6b 33 32 78 36 34  ."".lshMask32x64
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 73 00 00 1c 00 00 00  .........s......
+	0x0030 00 00 0e 76 00 00 1c 00 00 00 00 00 0e 7e 72 32  ...v.........~r2
+	0x0040 00 01 1c 00 00 00 00 00 00                       .........
+	rel 17+8 t=1 "".lshMask32x64+0
+	rel 25+8 t=1 "".lshMask32x64+32
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 45+4 t=28 go.info.uint64+0
+	rel 55+4 t=28 go.info.int32+0
+	rel 67+4 t=28 go.info.int32+0
+go.range."".lshMask32x64 SDWARFRANGE size=0
+go.isstmt."".lshMask32x64 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".rshMask32Ux64 SDWARFLOC size=0
+go.info."".rshMask32Ux64 SDWARFINFO size=74
+	0x0000 02 22 22 2e 72 73 68 4d 61 73 6b 33 32 55 78 36  ."".rshMask32Ux6
+	0x0010 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  4...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 73 00 00 21 00 00  ..........s..!..
+	0x0030 00 00 00 0e 76 00 00 21 00 00 00 00 00 0e 7e 72  ....v..!......~r
+	0x0040 32 00 01 21 00 00 00 00 00 00                    2..!......
+	rel 18+8 t=1 "".rshMask32Ux64+0
+	rel 26+8 t=1 "".rshMask32Ux64+32
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 46+4 t=28 go.info.uint64+0
+	rel 56+4 t=28 go.info.uint32+0
+	rel 68+4 t=28 go.info.uint32+0
+go.range."".rshMask32Ux64 SDWARFRANGE size=0
+go.isstmt."".rshMask32Ux64 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".rshMask32x64 SDWARFLOC size=0
+go.info."".rshMask32x64 SDWARFINFO size=73
+	0x0000 02 22 22 2e 72 73 68 4d 61 73 6b 33 32 78 36 34  ."".rshMask32x64
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 73 00 00 26 00 00 00  .........s..&...
+	0x0030 00 00 0e 76 00 00 26 00 00 00 00 00 0e 7e 72 32  ...v..&......~r2
+	0x0040 00 01 26 00 00 00 00 00 00                       ..&......
+	rel 17+8 t=1 "".rshMask32x64+0
+	rel 25+8 t=1 "".rshMask32x64+32
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 45+4 t=28 go.info.uint64+0
+	rel 55+4 t=28 go.info.int32+0
+	rel 67+4 t=28 go.info.int32+0
+go.range."".rshMask32x64 SDWARFRANGE size=0
+go.isstmt."".rshMask32x64 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".lshMask64x32 SDWARFLOC size=0
+go.info."".lshMask64x32 SDWARFINFO size=73
+	0x0000 02 22 22 2e 6c 73 68 4d 61 73 6b 36 34 78 33 32  ."".lshMask64x32
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 73 00 00 2b 00 00 00  .........s..+...
+	0x0030 00 00 0e 76 00 00 2b 00 00 00 00 00 0e 7e 72 32  ...v..+......~r2
+	0x0040 00 01 2b 00 00 00 00 00 00                       ..+......
+	rel 17+8 t=1 "".lshMask64x32+0
+	rel 25+8 t=1 "".lshMask64x32+32
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 45+4 t=28 go.info.uint32+0
+	rel 55+4 t=28 go.info.int64+0
+	rel 67+4 t=28 go.info.int64+0
+go.range."".lshMask64x32 SDWARFRANGE size=0
+go.isstmt."".lshMask64x32 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".rshMask64Ux32 SDWARFLOC size=0
+go.info."".rshMask64Ux32 SDWARFINFO size=74
+	0x0000 02 22 22 2e 72 73 68 4d 61 73 6b 36 34 55 78 33  ."".rshMask64Ux3
+	0x0010 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  2...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 73 00 00 30 00 00  ..........s..0..
+	0x0030 00 00 00 0e 76 00 00 30 00 00 00 00 00 0e 7e 72  ....v..0......~r
+	0x0040 32 00 01 30 00 00 00 00 00 00                    2..0......
+	rel 18+8 t=1 "".rshMask64Ux32+0
+	rel 26+8 t=1 "".rshMask64Ux32+32
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 46+4 t=28 go.info.uint32+0
+	rel 56+4 t=28 go.info.uint64+0
+	rel 68+4 t=28 go.info.uint64+0
+go.range."".rshMask64Ux32 SDWARFRANGE size=0
+go.isstmt."".rshMask64Ux32 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".rshMask64x32 SDWARFLOC size=0
+go.info."".rshMask64x32 SDWARFINFO size=73
+	0x0000 02 22 22 2e 72 73 68 4d 61 73 6b 36 34 78 33 32  ."".rshMask64x32
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 73 00 00 35 00 00 00  .........s..5...
+	0x0030 00 00 0e 76 00 00 35 00 00 00 00 00 0e 7e 72 32  ...v..5......~r2
+	0x0040 00 01 35 00 00 00 00 00 00                       ..5......
+	rel 17+8 t=1 "".rshMask64x32+0
+	rel 25+8 t=1 "".rshMask64x32+32
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 45+4 t=28 go.info.uint32+0
+	rel 55+4 t=28 go.info.int64+0
+	rel 67+4 t=28 go.info.int64+0
+go.range."".rshMask64x32 SDWARFRANGE size=0
+go.isstmt."".rshMask64x32 SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".lshMask64x32Ext SDWARFLOC size=0
+go.info."".lshMask64x32Ext SDWARFINFO size=76
+	0x0000 02 22 22 2e 6c 73 68 4d 61 73 6b 36 34 78 33 32  ."".lshMask64x32
+	0x0010 45 78 74 00 00 00 00 00 00 00 00 00 00 00 00 00  Ext.............
+	0x0020 00 00 00 00 01 9c 00 00 00 00 01 0e 73 00 00 3a  ............s..:
+	0x0030 00 00 00 00 00 0e 76 00 00 3a 00 00 00 00 00 0e  ......v..:......
+	0x0040 7e 72 32 00 01 3a 00 00 00 00 00 00              ~r2..:......
+	rel 20+8 t=1 "".lshMask64x32Ext+0
+	rel 28+8 t=1 "".lshMask64x32Ext+32
+	rel 38+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 48+4 t=28 go.info.int32+0
+	rel 58+4 t=28 go.info.int64+0
+	rel 70+4 t=28 go.info.int64+0
+go.range."".lshMask64x32Ext SDWARFRANGE size=0
+go.isstmt."".lshMask64x32Ext SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".rshMask64Ux32Ext SDWARFLOC size=0
+go.info."".rshMask64Ux32Ext SDWARFINFO size=77
+	0x0000 02 22 22 2e 72 73 68 4d 61 73 6b 36 34 55 78 33  ."".rshMask64Ux3
+	0x0010 32 45 78 74 00 00 00 00 00 00 00 00 00 00 00 00  2Ext............
+	0x0020 00 00 00 00 00 01 9c 00 00 00 00 01 0e 73 00 00  .............s..
+	0x0030 3f 00 00 00 00 00 0e 76 00 00 3f 00 00 00 00 00  ?......v..?.....
+	0x0040 0e 7e 72 32 00 01 3f 00 00 00 00 00 00           .~r2..?......
+	rel 21+8 t=1 "".rshMask64Ux32Ext+0
+	rel 29+8 t=1 "".rshMask64Ux32Ext+32
+	rel 39+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 49+4 t=28 go.info.int32+0
+	rel 59+4 t=28 go.info.uint64+0
+	rel 71+4 t=28 go.info.uint64+0
+go.range."".rshMask64Ux32Ext SDWARFRANGE size=0
+go.isstmt."".rshMask64Ux32Ext SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.loc."".rshMask64x32Ext SDWARFLOC size=0
+go.info."".rshMask64x32Ext SDWARFINFO size=76
+	0x0000 02 22 22 2e 72 73 68 4d 61 73 6b 36 34 78 33 32  ."".rshMask64x32
+	0x0010 45 78 74 00 00 00 00 00 00 00 00 00 00 00 00 00  Ext.............
+	0x0020 00 00 00 00 01 9c 00 00 00 00 01 0e 73 00 00 44  ............s..D
+	0x0030 00 00 00 00 00 0e 76 00 00 44 00 00 00 00 00 0e  ......v..D......
+	0x0040 7e 72 32 00 01 44 00 00 00 00 00 00              ~r2..D......
+	rel 20+8 t=1 "".rshMask64x32Ext+0
+	rel 28+8 t=1 "".rshMask64x32Ext+32
+	rel 38+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 48+4 t=28 go.info.int32+0
+	rel 58+4 t=28 go.info.int64+0
+	rel 70+4 t=28 go.info.int64+0
+go.range."".rshMask64x32Ext SDWARFRANGE size=0
+go.isstmt."".rshMask64x32Ext SDWARFMISC size=0
+	0x0000 04 03 01 0d 00                                   .....
+go.string."shift too large" SRODATA dupok size=15
+	0x0000 73 68 69 66 74 20 74 6f 6f 20 6c 61 72 67 65     shift too large
+go.loc."".lshGuarded64 SDWARFLOC size=104
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 1e 00 00 00 00 00 00 00 80  ................
+	0x0020 00 02 91 10 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 1e 00 00 00 00  ................
+	0x0050 00 00 00 80 00 02 91 08 00 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00                          ........
+	rel 8+8 t=1 "".lshGuarded64+0
+	rel 60+8 t=1 "".lshGuarded64+0
+go.info."".lshGuarded64 SDWARFINFO size=79
+	0x0000 02 22 22 2e 6c 73 68 47 75 61 72 64 65 64 36 34  ."".lshGuarded64
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0f 73 00 00 4d 00 00 00  .........s..M...
+	0x0030 00 00 00 00 00 0f 76 00 00 4d 00 00 00 00 00 00  ......v..M......
+	0x0040 00 00 0e 7e 72 32 00 01 4d 00 00 00 00 00 00     ...~r2..M......
+	rel 17+8 t=1 "".lshGuarded64+0
+	rel 25+8 t=1 "".lshGuarded64+128
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 45+4 t=28 go.info.uint+0
+	rel 49+4 t=28 go.loc."".lshGuarded64+0
+	rel 58+4 t=28 go.info.int64+0
+	rel 62+4 t=28 go.loc."".lshGuarded64+52
+	rel 73+4 t=28 go.info.int64+0
+go.range."".lshGuarded64 SDWARFRANGE size=0
+go.isstmt."".lshGuarded64 SDWARFMISC size=0
+	0x0000 04 0f 01 05 02 02 01 0f 02 03 01 0b 02 0d 00     ...............
+go.loc."".rshGuarded64U SDWARFLOC size=104
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 1e 00 00 00 00 00 00 00 80  ................
+	0x0020 00 02 91 10 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 1e 00 00 00 00  ................
+	0x0050 00 00 00 80 00 02 91 08 00 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00                          ........
+	rel 8+8 t=1 "".rshGuarded64U+0
+	rel 60+8 t=1 "".rshGuarded64U+0
+go.info."".rshGuarded64U SDWARFINFO size=80
+	0x0000 02 22 22 2e 72 73 68 47 75 61 72 64 65 64 36 34  ."".rshGuarded64
+	0x0010 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  U...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0f 73 00 00 55 00 00  ..........s..U..
+	0x0030 00 00 00 00 00 00 0f 76 00 00 55 00 00 00 00 00  .......v..U.....
+	0x0040 00 00 00 0e 7e 72 32 00 01 55 00 00 00 00 00 00  ....~r2..U......
+	rel 18+8 t=1 "".rshGuarded64U+0
+	rel 26+8 t=1 "".rshGuarded64U+128
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 46+4 t=28 go.info.uint+0
+	rel 50+4 t=28 go.loc."".rshGuarded64U+0
+	rel 59+4 t=28 go.info.uint64+0
+	rel 63+4 t=28 go.loc."".rshGuarded64U+52
+	rel 74+4 t=28 go.info.uint64+0
+go.range."".rshGuarded64U SDWARFRANGE size=0
+go.isstmt."".rshGuarded64U SDWARFMISC size=0
+	0x0000 04 0f 01 05 02 02 01 0f 02 03 01 0b 02 0d 00     ...............
+go.loc."".rshGuarded64 SDWARFLOC size=104
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 1e 00 00 00 00 00 00 00 80  ................
+	0x0020 00 02 91 10 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 1e 00 00 00 00  ................
+	0x0050 00 00 00 80 00 02 91 08 00 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00                          ........
+	rel 8+8 t=1 "".rshGuarded64+0
+	rel 60+8 t=1 "".rshGuarded64+0
+go.info."".rshGuarded64 SDWARFINFO size=79
+	0x0000 02 22 22 2e 72 73 68 47 75 61 72 64 65 64 36 34  ."".rshGuarded64
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0f 73 00 00 5d 00 00 00  .........s..]...
+	0x0030 00 00 00 00 00 0f 76 00 00 5d 00 00 00 00 00 00  ......v..]......
+	0x0040 00 00 0e 7e 72 32 00 01 5d 00 00 00 00 00 00     ...~r2..]......
+	rel 17+8 t=1 "".rshGuarded64+0
+	rel 25+8 t=1 "".rshGuarded64+128
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/shift.go+0
+	rel 45+4 t=28 go.info.uint+0
+	rel 49+4 t=28 go.loc."".rshGuarded64+0
+	rel 58+4 t=28 go.info.int64+0
+	rel 62+4 t=28 go.loc."".rshGuarded64+52
+	rel 73+4 t=28 go.info.int64+0
+go.range."".rshGuarded64 SDWARFRANGE size=0
+go.isstmt."".rshGuarded64 SDWARFMISC size=0
+	0x0000 04 0f 01 05 02 02 01 0f 02 03 01 0b 02 0d 00     ...............
+"".statictmp_0 SRODATA size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0f  ................
+	rel 0+8 t=1 go.string."shift too large"+0
+"".statictmp_1 SRODATA size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0f  ................
+	rel 0+8 t=1 go.string."shift too large"+0
+"".statictmp_2 SRODATA size=16
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0f  ................
+	rel 0+8 t=1 go.string."shift too large"+0
+gclocals·2002e13acf59079a1a5782c918894579 SRODATA dupok size=8
+	0x0000 00 00 00 01 00 00 00 00                          ........
+gclocals·7cdfb5b821b3883f5778dba09a606653 SRODATA dupok size=11
+	0x0000 00 00 00 03 00 00 00 03 00 02 06                 ...........

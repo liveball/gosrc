@@ -1,0 +1,3 @@
+./conntest.go
+./conntest_go17.go
+./conntest_test.go

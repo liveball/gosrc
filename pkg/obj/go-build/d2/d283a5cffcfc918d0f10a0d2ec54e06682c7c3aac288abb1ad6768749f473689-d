@@ -1,0 +1,71 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "image/color"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestSqDiff", _test.TestSqDiff},
+
+	{"TestYCbCrRoundtrip", _test.TestYCbCrRoundtrip},
+
+	{"TestYCbCrToRGBConsistency", _test.TestYCbCrToRGBConsistency},
+
+	{"TestYCbCrGray", _test.TestYCbCrGray},
+
+	{"TestNYCbCrAAlpha", _test.TestNYCbCrAAlpha},
+
+	{"TestNYCbCrAYCbCr", _test.TestNYCbCrAYCbCr},
+
+	{"TestCMYKRoundtrip", _test.TestCMYKRoundtrip},
+
+	{"TestCMYKToRGBConsistency", _test.TestCMYKToRGBConsistency},
+
+	{"TestCMYKGray", _test.TestCMYKGray},
+
+	{"TestPalette", _test.TestPalette},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkYCbCrToRGB", _test.BenchmarkYCbCrToRGB},
+
+	{"BenchmarkRGBToYCbCr", _test.BenchmarkRGBToYCbCr},
+
+	{"BenchmarkYCbCrToRGBA", _test.BenchmarkYCbCrToRGBA},
+
+	{"BenchmarkNYCbCrAToRGBA", _test.BenchmarkNYCbCrAToRGBA},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "image/color"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

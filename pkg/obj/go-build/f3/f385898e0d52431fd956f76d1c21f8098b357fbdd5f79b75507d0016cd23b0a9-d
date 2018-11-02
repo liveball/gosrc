@@ -1,0 +1,27 @@
+# test log
+getenv TMPDIR
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open testdata/p.a
+open testdata/p.a
+open testdata/p.a
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open testdata/a.elf
+open testdata/a.elf
+open testdata/a.elf
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open testdata/a.macho
+open testdata/a.macho
+open testdata/a.macho
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open testdata/a.pe
+open testdata/a.pe
+open testdata/a.pe
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/buildid-test-683394750

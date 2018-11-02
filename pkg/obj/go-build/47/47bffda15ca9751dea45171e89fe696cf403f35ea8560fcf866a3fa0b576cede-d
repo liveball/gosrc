@@ -1,0 +1,127 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "unicode/utf8"
+
+
+	_xtest "unicode/utf8_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestConstants", _xtest.TestConstants},
+
+	{"TestFullRune", _xtest.TestFullRune},
+
+	{"TestEncodeRune", _xtest.TestEncodeRune},
+
+	{"TestDecodeRune", _xtest.TestDecodeRune},
+
+	{"TestDecodeSurrogateRune", _xtest.TestDecodeSurrogateRune},
+
+	{"TestSequencing", _xtest.TestSequencing},
+
+	{"TestRuntimeConversion", _xtest.TestRuntimeConversion},
+
+	{"TestDecodeInvalidSequence", _xtest.TestDecodeInvalidSequence},
+
+	{"TestNegativeRune", _xtest.TestNegativeRune},
+
+	{"TestRuneCount", _xtest.TestRuneCount},
+
+	{"TestRuneLen", _xtest.TestRuneLen},
+
+	{"TestValid", _xtest.TestValid},
+
+	{"TestValidRune", _xtest.TestValidRune},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkRuneCountTenASCIIChars", _xtest.BenchmarkRuneCountTenASCIIChars},
+
+	{"BenchmarkRuneCountTenJapaneseChars", _xtest.BenchmarkRuneCountTenJapaneseChars},
+
+	{"BenchmarkRuneCountInStringTenASCIIChars", _xtest.BenchmarkRuneCountInStringTenASCIIChars},
+
+	{"BenchmarkRuneCountInStringTenJapaneseChars", _xtest.BenchmarkRuneCountInStringTenJapaneseChars},
+
+	{"BenchmarkValidTenASCIIChars", _xtest.BenchmarkValidTenASCIIChars},
+
+	{"BenchmarkValidTenJapaneseChars", _xtest.BenchmarkValidTenJapaneseChars},
+
+	{"BenchmarkValidStringTenASCIIChars", _xtest.BenchmarkValidStringTenASCIIChars},
+
+	{"BenchmarkValidStringTenJapaneseChars", _xtest.BenchmarkValidStringTenJapaneseChars},
+
+	{"BenchmarkEncodeASCIIRune", _xtest.BenchmarkEncodeASCIIRune},
+
+	{"BenchmarkEncodeJapaneseRune", _xtest.BenchmarkEncodeJapaneseRune},
+
+	{"BenchmarkDecodeASCIIRune", _xtest.BenchmarkDecodeASCIIRune},
+
+	{"BenchmarkDecodeJapaneseRune", _xtest.BenchmarkDecodeJapaneseRune},
+
+	{"BenchmarkFullASCIIRune", _xtest.BenchmarkFullASCIIRune},
+
+	{"BenchmarkFullJapaneseRune", _xtest.BenchmarkFullJapaneseRune},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleDecodeLastRune", _xtest.ExampleDecodeLastRune, "界 3\n世 3\n  1\n, 1\no 1\nl 1\nl 1\ne 1\nH 1\n", false},
+
+	{"ExampleDecodeLastRuneInString", _xtest.ExampleDecodeLastRuneInString, "界 3\n世 3\n  1\n, 1\no 1\nl 1\nl 1\ne 1\nH 1\n", false},
+
+	{"ExampleDecodeRune", _xtest.ExampleDecodeRune, "H 1\ne 1\nl 1\nl 1\no 1\n, 1\n  1\n世 3\n界 3\n", false},
+
+	{"ExampleDecodeRuneInString", _xtest.ExampleDecodeRuneInString, "H 1\ne 1\nl 1\nl 1\no 1\n, 1\n  1\n世 3\n界 3\n", false},
+
+	{"ExampleEncodeRune", _xtest.ExampleEncodeRune, "[228 184 150]\n3\n", false},
+
+	{"ExampleFullRune", _xtest.ExampleFullRune, "true\nfalse\n", false},
+
+	{"ExampleFullRuneInString", _xtest.ExampleFullRuneInString, "true\nfalse\n", false},
+
+	{"ExampleRuneCount", _xtest.ExampleRuneCount, "bytes = 13\nrunes = 9\n", false},
+
+	{"ExampleRuneCountInString", _xtest.ExampleRuneCountInString, "bytes = 13\nrunes = 9\n", false},
+
+	{"ExampleRuneLen", _xtest.ExampleRuneLen, "1\n3\n", false},
+
+	{"ExampleRuneStart", _xtest.ExampleRuneStart, "true\ntrue\nfalse\n", false},
+
+	{"ExampleValid", _xtest.ExampleValid, "true\nfalse\n", false},
+
+	{"ExampleValidRune", _xtest.ExampleValidRune, "true\nfalse\n", false},
+
+	{"ExampleValidString", _xtest.ExampleValidString, "true\nfalse\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "unicode/utf8"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

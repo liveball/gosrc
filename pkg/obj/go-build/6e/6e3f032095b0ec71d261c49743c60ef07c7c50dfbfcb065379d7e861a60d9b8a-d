@@ -1,0 +1,47 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "golang_org/x/text/transform"
+
+
+	_xtest "golang_org/x/text/transform_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleRemoveFunc", _xtest.ExampleRemoveFunc, "tschüß;досвидания\ntschüß\ntschuß\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "golang_org/x/text/transform"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

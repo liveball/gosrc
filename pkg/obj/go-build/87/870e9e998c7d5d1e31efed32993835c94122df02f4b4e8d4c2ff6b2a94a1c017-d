@@ -1,0 +1,7 @@
+./encode.go
+./hpack.go
+./huffman.go
+./tables.go
+./encode_test.go
+./hpack_test.go
+./tables_test.go

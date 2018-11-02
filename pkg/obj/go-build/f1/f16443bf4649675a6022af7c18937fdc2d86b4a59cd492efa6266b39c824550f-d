@@ -1,0 +1,11 @@
+# test log
+open ../testdata/video-001.png
+open ../testdata/video-001.gif
+open ../testdata/video-001.interlaced.gif
+open ../testdata/video-001.gif
+open ../testdata/video-001.gif
+open ../testdata/video-005.gray.gif
+open ../testdata/video-001.gif
+open ../testdata/video-005.gray.gif
+open ../testdata/video-001.gif
+open ../testdata/video-005.gray.gif

@@ -1,0 +1,95 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "image/gif"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestDecode", _test.TestDecode},
+
+	{"TestTransparentIndex", _test.TestTransparentIndex},
+
+	{"TestBounds", _test.TestBounds},
+
+	{"TestNoPalette", _test.TestNoPalette},
+
+	{"TestPixelOutsidePaletteRange", _test.TestPixelOutsidePaletteRange},
+
+	{"TestTransparentPixelOutsidePaletteRange", _test.TestTransparentPixelOutsidePaletteRange},
+
+	{"TestLoopCount", _test.TestLoopCount},
+
+	{"TestUnexpectedEOF", _test.TestUnexpectedEOF},
+
+	{"TestDecodeMemoryConsumption", _test.TestDecodeMemoryConsumption},
+
+	{"TestWriter", _test.TestWriter},
+
+	{"TestSubImage", _test.TestSubImage},
+
+	{"TestEncodeAllGo1Dot4", _test.TestEncodeAllGo1Dot4},
+
+	{"TestEncodeAllGo1Dot5", _test.TestEncodeAllGo1Dot5},
+
+	{"TestEncodeAllGo1Dot5GlobalColorModel", _test.TestEncodeAllGo1Dot5GlobalColorModel},
+
+	{"TestEncodeMismatchDelay", _test.TestEncodeMismatchDelay},
+
+	{"TestEncodeZeroGIF", _test.TestEncodeZeroGIF},
+
+	{"TestEncodeAllFramesOutOfBounds", _test.TestEncodeAllFramesOutOfBounds},
+
+	{"TestEncodeNonZeroMinPoint", _test.TestEncodeNonZeroMinPoint},
+
+	{"TestEncodeImplicitConfigSize", _test.TestEncodeImplicitConfigSize},
+
+	{"TestEncodePalettes", _test.TestEncodePalettes},
+
+	{"TestEncodeBadPalettes", _test.TestEncodeBadPalettes},
+
+	{"TestColorTablesMatch", _test.TestColorTablesMatch},
+
+	{"TestEncodeCroppedSubImages", _test.TestEncodeCroppedSubImages},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkDecode", _test.BenchmarkDecode},
+
+	{"BenchmarkEncode", _test.BenchmarkEncode},
+
+	{"BenchmarkQuantizedEncode", _test.BenchmarkQuantizedEncode},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "image/gif"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

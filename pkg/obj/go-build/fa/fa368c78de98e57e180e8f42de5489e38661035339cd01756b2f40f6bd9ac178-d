@@ -1,0 +1,217 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "regexp"
+
+
+	_xtest "regexp_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestGoodCompile", _test.TestGoodCompile},
+
+	{"TestBadCompile", _test.TestBadCompile},
+
+	{"TestMatch", _test.TestMatch},
+
+	{"TestMatchFunction", _test.TestMatchFunction},
+
+	{"TestCopyMatch", _test.TestCopyMatch},
+
+	{"TestReplaceAll", _test.TestReplaceAll},
+
+	{"TestReplaceAllLiteral", _test.TestReplaceAllLiteral},
+
+	{"TestReplaceAllFunc", _test.TestReplaceAllFunc},
+
+	{"TestQuoteMeta", _test.TestQuoteMeta},
+
+	{"TestLiteralPrefix", _test.TestLiteralPrefix},
+
+	{"TestSubexp", _test.TestSubexp},
+
+	{"TestSplit", _test.TestSplit},
+
+	{"TestParseAndCompile", _test.TestParseAndCompile},
+
+	{"TestOnePassCutoff", _test.TestOnePassCutoff},
+
+	{"TestSwitchBacktrack", _test.TestSwitchBacktrack},
+
+	{"TestRE2Exhaustive", _test.TestRE2Exhaustive},
+
+	{"TestRE2Search", _test.TestRE2Search},
+
+	{"TestFowler", _test.TestFowler},
+
+	{"TestLongest", _test.TestLongest},
+
+	{"TestProgramTooLongForBacktrack", _test.TestProgramTooLongForBacktrack},
+
+	{"TestFind", _test.TestFind},
+
+	{"TestFindString", _test.TestFindString},
+
+	{"TestFindIndex", _test.TestFindIndex},
+
+	{"TestFindStringIndex", _test.TestFindStringIndex},
+
+	{"TestFindReaderIndex", _test.TestFindReaderIndex},
+
+	{"TestFindAll", _test.TestFindAll},
+
+	{"TestFindAllString", _test.TestFindAllString},
+
+	{"TestFindAllIndex", _test.TestFindAllIndex},
+
+	{"TestFindAllStringIndex", _test.TestFindAllStringIndex},
+
+	{"TestFindSubmatch", _test.TestFindSubmatch},
+
+	{"TestFindStringSubmatch", _test.TestFindStringSubmatch},
+
+	{"TestFindSubmatchIndex", _test.TestFindSubmatchIndex},
+
+	{"TestFindStringSubmatchIndex", _test.TestFindStringSubmatchIndex},
+
+	{"TestFindReaderSubmatchIndex", _test.TestFindReaderSubmatchIndex},
+
+	{"TestFindAllSubmatch", _test.TestFindAllSubmatch},
+
+	{"TestFindAllStringSubmatch", _test.TestFindAllStringSubmatch},
+
+	{"TestFindAllSubmatchIndex", _test.TestFindAllSubmatchIndex},
+
+	{"TestFindAllStringSubmatchIndex", _test.TestFindAllStringSubmatchIndex},
+
+	{"TestMergeRuneSet", _test.TestMergeRuneSet},
+
+	{"TestCompileOnePass", _test.TestCompileOnePass},
+
+	{"TestRunOnePass", _test.TestRunOnePass},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkFind", _test.BenchmarkFind},
+
+	{"BenchmarkFindAllNoMatches", _test.BenchmarkFindAllNoMatches},
+
+	{"BenchmarkFindString", _test.BenchmarkFindString},
+
+	{"BenchmarkFindSubmatch", _test.BenchmarkFindSubmatch},
+
+	{"BenchmarkFindStringSubmatch", _test.BenchmarkFindStringSubmatch},
+
+	{"BenchmarkLiteral", _test.BenchmarkLiteral},
+
+	{"BenchmarkNotLiteral", _test.BenchmarkNotLiteral},
+
+	{"BenchmarkMatchClass", _test.BenchmarkMatchClass},
+
+	{"BenchmarkMatchClass_InRange", _test.BenchmarkMatchClass_InRange},
+
+	{"BenchmarkReplaceAll", _test.BenchmarkReplaceAll},
+
+	{"BenchmarkAnchoredLiteralShortNonMatch", _test.BenchmarkAnchoredLiteralShortNonMatch},
+
+	{"BenchmarkAnchoredLiteralLongNonMatch", _test.BenchmarkAnchoredLiteralLongNonMatch},
+
+	{"BenchmarkAnchoredShortMatch", _test.BenchmarkAnchoredShortMatch},
+
+	{"BenchmarkAnchoredLongMatch", _test.BenchmarkAnchoredLongMatch},
+
+	{"BenchmarkOnePassShortA", _test.BenchmarkOnePassShortA},
+
+	{"BenchmarkNotOnePassShortA", _test.BenchmarkNotOnePassShortA},
+
+	{"BenchmarkOnePassShortB", _test.BenchmarkOnePassShortB},
+
+	{"BenchmarkNotOnePassShortB", _test.BenchmarkNotOnePassShortB},
+
+	{"BenchmarkOnePassLongPrefix", _test.BenchmarkOnePassLongPrefix},
+
+	{"BenchmarkOnePassLongNotPrefix", _test.BenchmarkOnePassLongNotPrefix},
+
+	{"BenchmarkMatchParallelShared", _test.BenchmarkMatchParallelShared},
+
+	{"BenchmarkMatchParallelCopied", _test.BenchmarkMatchParallelCopied},
+
+	{"BenchmarkQuoteMetaAll", _test.BenchmarkQuoteMetaAll},
+
+	{"BenchmarkQuoteMetaNone", _test.BenchmarkQuoteMetaNone},
+
+	{"BenchmarkMatch", _test.BenchmarkMatch},
+
+	{"BenchmarkMatch_onepass_regex", _test.BenchmarkMatch_onepass_regex},
+
+	{"BenchmarkCompileOnepass", _test.BenchmarkCompileOnepass},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"Example", _xtest.Example, "true\ntrue\nfalse\nfalse\n", false},
+
+	{"ExampleMatchString", _xtest.ExampleMatchString, "true <nil>\nfalse <nil>\nfalse error parsing regexp: missing closing ): `a(b`\n", false},
+
+	{"ExampleQuoteMeta", _xtest.ExampleQuoteMeta, "Escaping symbols like: \\.\\+\\*\\?\\(\\)\\|\\[\\]\\{\\}\\^\\$\n", false},
+
+	{"ExampleRegexp_FindString", _xtest.ExampleRegexp_FindString, "\"food\"\n\"\"\n", false},
+
+	{"ExampleRegexp_FindStringIndex", _xtest.ExampleRegexp_FindStringIndex, "[1 3]\ntrue\n", false},
+
+	{"ExampleRegexp_FindStringSubmatch", _xtest.ExampleRegexp_FindStringSubmatch, "[\"axxxbyc\" \"xxx\" \"y\"]\n[\"abzc\" \"\" \"z\"]\n", false},
+
+	{"ExampleRegexp_FindAllString", _xtest.ExampleRegexp_FindAllString, "[ar an al]\n[ar an]\n[aa]\n[]\n", false},
+
+	{"ExampleRegexp_FindAllStringSubmatch", _xtest.ExampleRegexp_FindAllStringSubmatch, "[[\"ab\" \"\"]]\n[[\"axxb\" \"xx\"]]\n[[\"ab\" \"\"] [\"axb\" \"x\"]]\n[[\"axxb\" \"xx\"] [\"ab\" \"\"]]\n", false},
+
+	{"ExampleRegexp_FindAllStringSubmatchIndex", _xtest.ExampleRegexp_FindAllStringSubmatchIndex, "[[1 3 2 2]]\n[[1 5 2 4]]\n[[1 3 2 2] [4 7 5 6]]\n[[1 5 2 4] [6 8 7 7]]\n[]\n", false},
+
+	{"ExampleRegexp_MatchString", _xtest.ExampleRegexp_MatchString, "false\ntrue\ntrue\n", false},
+
+	{"ExampleRegexp_ReplaceAllLiteralString", _xtest.ExampleRegexp_ReplaceAllLiteralString, "-T-T-\n-$1-$1-\n-${1}-${1}-\n", false},
+
+	{"ExampleRegexp_ReplaceAllString", _xtest.ExampleRegexp_ReplaceAllString, "-T-T-\n--xx-\n---\n-W-xxW-\n", false},
+
+	{"ExampleRegexp_SubexpNames", _xtest.ExampleRegexp_SubexpNames, "true\n[\"\" \"first\" \"last\"]\n${last} ${first}\nTuring Alan\n", false},
+
+	{"ExampleRegexp_Split", _xtest.ExampleRegexp_Split, "[b n n ]\n[]\n[banana]\n[b nana]\n[pi a]\n[]\n[pizza]\n[pi a]\n", false},
+
+	{"ExampleRegexp_Expand", _xtest.ExampleRegexp_Expand, "option1=value1\noption2=value2\noption3=value3\n", false},
+
+	{"ExampleRegexp_ExpandString", _xtest.ExampleRegexp_ExpandString, "option1=value1\noption2=value2\noption3=value3\n", false},
+
+	{"ExampleRegexp_FindIndex", _xtest.ExampleRegexp_FindIndex, "[18 33]\noption1: value1\n", false},
+
+	{"ExampleRegexp_FindAllSubmatchIndex", _xtest.ExampleRegexp_FindAllSubmatchIndex, "[18 33 18 25 27 33]\noption1: value1\noption1\nvalue1\n[35 50 35 42 44 50]\noption2: value2\noption2\nvalue2\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "regexp"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

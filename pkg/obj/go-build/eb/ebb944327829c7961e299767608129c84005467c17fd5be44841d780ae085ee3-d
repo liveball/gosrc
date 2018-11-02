@@ -1,0 +1,67 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "log"
+
+
+	_xtest "log_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestAll", _test.TestAll},
+
+	{"TestOutput", _test.TestOutput},
+
+	{"TestOutputRace", _test.TestOutputRace},
+
+	{"TestFlagAndPrefixSetting", _test.TestFlagAndPrefixSetting},
+
+	{"TestUTCFlag", _test.TestUTCFlag},
+
+	{"TestEmptyPrintCreatesLine", _test.TestEmptyPrintCreatesLine},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkItoa", _test.BenchmarkItoa},
+
+	{"BenchmarkPrintln", _test.BenchmarkPrintln},
+
+	{"BenchmarkPrintlnNoFlags", _test.BenchmarkPrintlnNoFlags},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleLogger", _xtest.ExampleLogger, "logger: example_test.go:19: Hello, log file!\n", false},
+
+	{"ExampleLogger_Output", _xtest.ExampleLogger_Output, "INFO: example_test.go:36: Hello world\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "log"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

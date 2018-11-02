@@ -1,0 +1,107 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "crypto/cipher"
+
+
+	_xtest "crypto/cipher_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestXOR", _test.TestXOR},
+
+	{"TestCBCEncrypterAES", _xtest.TestCBCEncrypterAES},
+
+	{"TestCBCDecrypterAES", _xtest.TestCBCDecrypterAES},
+
+	{"TestCFBVectors", _xtest.TestCFBVectors},
+
+	{"TestCFBInverse", _xtest.TestCFBInverse},
+
+	{"TestCryptBlocks", _xtest.TestCryptBlocks},
+
+	{"TestEmptyPlaintext", _xtest.TestEmptyPlaintext},
+
+	{"TestCTR_AES", _xtest.TestCTR_AES},
+
+	{"TestCTR", _xtest.TestCTR},
+
+	{"TestAESGCM", _xtest.TestAESGCM},
+
+	{"TestGCMInvalidTagSize", _xtest.TestGCMInvalidTagSize},
+
+	{"TestTagFailureOverwrite", _xtest.TestTagFailureOverwrite},
+
+	{"TestGCMCounterWrap", _xtest.TestGCMCounterWrap},
+
+	{"TestGCMAsm", _xtest.TestGCMAsm},
+
+	{"TestOFB", _xtest.TestOFB},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkAESGCMSeal1K", _xtest.BenchmarkAESGCMSeal1K},
+
+	{"BenchmarkAESGCMOpen1K", _xtest.BenchmarkAESGCMOpen1K},
+
+	{"BenchmarkAESGCMSign8K", _xtest.BenchmarkAESGCMSign8K},
+
+	{"BenchmarkAESGCMSeal8K", _xtest.BenchmarkAESGCMSeal8K},
+
+	{"BenchmarkAESGCMOpen8K", _xtest.BenchmarkAESGCMOpen8K},
+
+	{"BenchmarkAESCFBEncrypt1K", _xtest.BenchmarkAESCFBEncrypt1K},
+
+	{"BenchmarkAESCFBDecrypt1K", _xtest.BenchmarkAESCFBDecrypt1K},
+
+	{"BenchmarkAESOFB1K", _xtest.BenchmarkAESOFB1K},
+
+	{"BenchmarkAESCTR1K", _xtest.BenchmarkAESCTR1K},
+
+	{"BenchmarkAESCBCEncrypt1K", _xtest.BenchmarkAESCBCEncrypt1K},
+
+	{"BenchmarkAESCBCDecrypt1K", _xtest.BenchmarkAESCBCDecrypt1K},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleNewGCM_decrypt", _xtest.ExampleNewGCM_decrypt, "exampleplaintext\n", false},
+
+	{"ExampleNewCBCDecrypter", _xtest.ExampleNewCBCDecrypter, "exampleplaintext\n", false},
+
+	{"ExampleNewCFBDecrypter", _xtest.ExampleNewCFBDecrypter, "some plaintext\n", false},
+
+	{"ExampleNewCTR", _xtest.ExampleNewCTR, "some plaintext\n", false},
+
+	{"ExampleNewOFB", _xtest.ExampleNewOFB, "some plaintext\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "crypto/cipher"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

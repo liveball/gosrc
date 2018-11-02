@@ -1,0 +1,1003 @@
+
+package main
+
+import (
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "runtime"
+
+
+	_xtest "runtime_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestCallers", _xtest.TestCallers},
+
+	{"TestCallersPanic", _xtest.TestCallersPanic},
+
+	{"TestChan", _xtest.TestChan},
+
+	{"TestNonblockRecvRace", _xtest.TestNonblockRecvRace},
+
+	{"TestNonblockSelectRace", _xtest.TestNonblockSelectRace},
+
+	{"TestNonblockSelectRace2", _xtest.TestNonblockSelectRace2},
+
+	{"TestSelfSelect", _xtest.TestSelfSelect},
+
+	{"TestSelectStress", _xtest.TestSelectStress},
+
+	{"TestSelectFairness", _xtest.TestSelectFairness},
+
+	{"TestChanSendInterface", _xtest.TestChanSendInterface},
+
+	{"TestPseudoRandomSend", _xtest.TestPseudoRandomSend},
+
+	{"TestMultiConsumer", _xtest.TestMultiConsumer},
+
+	{"TestShrinkStackDuringBlockedSend", _xtest.TestShrinkStackDuringBlockedSend},
+
+	{"TestSelectDuplicateChannel", _xtest.TestSelectDuplicateChannel},
+
+	{"TestSelectStackAdjust", _xtest.TestSelectStackAdjust},
+
+	{"TestChanSendSelectBarrier", _xtest.TestChanSendSelectBarrier},
+
+	{"TestChanSendBarrier", _xtest.TestChanSendBarrier},
+
+	{"TestCgoCrashHandler", _xtest.TestCgoCrashHandler},
+
+	{"TestCgoSignalDeadlock", _xtest.TestCgoSignalDeadlock},
+
+	{"TestCgoTraceback", _xtest.TestCgoTraceback},
+
+	{"TestCgoCallbackGC", _xtest.TestCgoCallbackGC},
+
+	{"TestCgoExternalThreadPanic", _xtest.TestCgoExternalThreadPanic},
+
+	{"TestCgoExternalThreadSIGPROF", _xtest.TestCgoExternalThreadSIGPROF},
+
+	{"TestCgoExternalThreadSignal", _xtest.TestCgoExternalThreadSignal},
+
+	{"TestCgoDLLImports", _xtest.TestCgoDLLImports},
+
+	{"TestCgoExecSignalMask", _xtest.TestCgoExecSignalMask},
+
+	{"TestEnsureDropM", _xtest.TestEnsureDropM},
+
+	{"TestCgoCheckBytes", _xtest.TestCgoCheckBytes},
+
+	{"TestCgoPanicDeadlock", _xtest.TestCgoPanicDeadlock},
+
+	{"TestCgoCCodeSIGPROF", _xtest.TestCgoCCodeSIGPROF},
+
+	{"TestCgoCrashTraceback", _xtest.TestCgoCrashTraceback},
+
+	{"TestCgoTracebackContext", _xtest.TestCgoTracebackContext},
+
+	{"TestCgoPprof", _xtest.TestCgoPprof},
+
+	{"TestCgoPprofPIE", _xtest.TestCgoPprofPIE},
+
+	{"TestCgoPprofThread", _xtest.TestCgoPprofThread},
+
+	{"TestCgoPprofThreadNoTraceback", _xtest.TestCgoPprofThreadNoTraceback},
+
+	{"TestRaceProf", _xtest.TestRaceProf},
+
+	{"TestRaceSignal", _xtest.TestRaceSignal},
+
+	{"TestCgoNumGoroutine", _xtest.TestCgoNumGoroutine},
+
+	{"TestCatchPanic", _xtest.TestCatchPanic},
+
+	{"TestCgoLockOSThreadExit", _xtest.TestCgoLockOSThreadExit},
+
+	{"TestWindowsStackMemoryCgo", _xtest.TestWindowsStackMemoryCgo},
+
+	{"TestSigStackSwapping", _xtest.TestSigStackSwapping},
+
+	{"TestCgoTracebackSigpanic", _xtest.TestCgoTracebackSigpanic},
+
+	{"TestBigStackCallbackCgo", _xtest.TestBigStackCallbackCgo},
+
+	{"TestCrashHandler", _xtest.TestCrashHandler},
+
+	{"TestSimpleDeadlock", _xtest.TestSimpleDeadlock},
+
+	{"TestInitDeadlock", _xtest.TestInitDeadlock},
+
+	{"TestLockedDeadlock", _xtest.TestLockedDeadlock},
+
+	{"TestLockedDeadlock2", _xtest.TestLockedDeadlock2},
+
+	{"TestGoexitDeadlock", _xtest.TestGoexitDeadlock},
+
+	{"TestStackOverflow", _xtest.TestStackOverflow},
+
+	{"TestThreadExhaustion", _xtest.TestThreadExhaustion},
+
+	{"TestRecursivePanic", _xtest.TestRecursivePanic},
+
+	{"TestGoexitCrash", _xtest.TestGoexitCrash},
+
+	{"TestGoexitDefer", _xtest.TestGoexitDefer},
+
+	{"TestGoNil", _xtest.TestGoNil},
+
+	{"TestMainGoroutineID", _xtest.TestMainGoroutineID},
+
+	{"TestNoHelperGoroutines", _xtest.TestNoHelperGoroutines},
+
+	{"TestBreakpoint", _xtest.TestBreakpoint},
+
+	{"TestGoexitInPanic", _xtest.TestGoexitInPanic},
+
+	{"TestRuntimePanicWithRuntimeError", _xtest.TestRuntimePanicWithRuntimeError},
+
+	{"TestPanicAfterGoexit", _xtest.TestPanicAfterGoexit},
+
+	{"TestRecoveredPanicAfterGoexit", _xtest.TestRecoveredPanicAfterGoexit},
+
+	{"TestRecoverBeforePanicAfterGoexit", _xtest.TestRecoverBeforePanicAfterGoexit},
+
+	{"TestNetpollDeadlock", _xtest.TestNetpollDeadlock},
+
+	{"TestPanicTraceback", _xtest.TestPanicTraceback},
+
+	{"TestPanicDeadlockGosched", _xtest.TestPanicDeadlockGosched},
+
+	{"TestPanicDeadlockSyscall", _xtest.TestPanicDeadlockSyscall},
+
+	{"TestPanicLoop", _xtest.TestPanicLoop},
+
+	{"TestMemPprof", _xtest.TestMemPprof},
+
+	{"TestConcurrentMapWrites", _xtest.TestConcurrentMapWrites},
+
+	{"TestConcurrentMapReadWrite", _xtest.TestConcurrentMapReadWrite},
+
+	{"TestConcurrentMapIterateWrite", _xtest.TestConcurrentMapIterateWrite},
+
+	{"TestPanicInlined", _xtest.TestPanicInlined},
+
+	{"TestPanicRace", _xtest.TestPanicRace},
+
+	{"TestBadTraceback", _xtest.TestBadTraceback},
+
+	{"TestTimePprof", _xtest.TestTimePprof},
+
+	{"TestAbort", _xtest.TestAbort},
+
+	{"TestRuntimePanic", _xtest.TestRuntimePanic},
+
+	{"TestG0StackOverflow", _xtest.TestG0StackOverflow},
+
+	{"TestCrashDumpsAllThreads", _xtest.TestCrashDumpsAllThreads},
+
+	{"TestPanicSystemstack", _xtest.TestPanicSystemstack},
+
+	{"TestSignalExitStatus", _xtest.TestSignalExitStatus},
+
+	{"TestSignalIgnoreSIGTRAP", _xtest.TestSignalIgnoreSIGTRAP},
+
+	{"TestSignalDuringExec", _xtest.TestSignalDuringExec},
+
+	{"TestFixedGOROOT", _xtest.TestFixedGOROOT},
+
+	{"TestFastLog2", _xtest.TestFastLog2},
+
+	{"TestGcSys", _xtest.TestGcSys},
+
+	{"TestGcDeepNesting", _xtest.TestGcDeepNesting},
+
+	{"TestGcMapIndirection", _xtest.TestGcMapIndirection},
+
+	{"TestGcArraySlice", _xtest.TestGcArraySlice},
+
+	{"TestGcRescan", _xtest.TestGcRescan},
+
+	{"TestGcLastTime", _xtest.TestGcLastTime},
+
+	{"TestHugeGCInfo", _xtest.TestHugeGCInfo},
+
+	{"TestPeriodicGC", _xtest.TestPeriodicGC},
+
+	{"TestPrintGC", _xtest.TestPrintGC},
+
+	{"TestPageAccounting", _xtest.TestPageAccounting},
+
+	{"TestReadMemStats", _xtest.TestReadMemStats},
+
+	{"TestUserForcedGC", _xtest.TestUserForcedGC},
+
+	{"TestGCInfo", _xtest.TestGCInfo},
+
+	{"TestMemHash32Equality", _xtest.TestMemHash32Equality},
+
+	{"TestMemHash64Equality", _xtest.TestMemHash64Equality},
+
+	{"TestSmhasherSanity", _xtest.TestSmhasherSanity},
+
+	{"TestSmhasherAppendedZeros", _xtest.TestSmhasherAppendedZeros},
+
+	{"TestSmhasherSmallKeys", _xtest.TestSmhasherSmallKeys},
+
+	{"TestSmhasherZeros", _xtest.TestSmhasherZeros},
+
+	{"TestSmhasherTwoNonzero", _xtest.TestSmhasherTwoNonzero},
+
+	{"TestSmhasherCyclic", _xtest.TestSmhasherCyclic},
+
+	{"TestSmhasherSparse", _xtest.TestSmhasherSparse},
+
+	{"TestSmhasherPermutation", _xtest.TestSmhasherPermutation},
+
+	{"TestSmhasherAvalanche", _xtest.TestSmhasherAvalanche},
+
+	{"TestSmhasherWindowed", _xtest.TestSmhasherWindowed},
+
+	{"TestSmhasherText", _xtest.TestSmhasherText},
+
+	{"TestSmhasherSeed", _xtest.TestSmhasherSeed},
+
+	{"TestArrayHash", _xtest.TestArrayHash},
+
+	{"TestStructHash", _xtest.TestStructHash},
+
+	{"TestCollisions", _xtest.TestCollisions},
+
+	{"TestCmpIfaceConcreteAlloc", _xtest.TestCmpIfaceConcreteAlloc},
+
+	{"TestNonEscapingConvT2E", _xtest.TestNonEscapingConvT2E},
+
+	{"TestNonEscapingConvT2I", _xtest.TestNonEscapingConvT2I},
+
+	{"TestZeroConvT2x", _xtest.TestZeroConvT2x},
+
+	{"TestLFStack", _xtest.TestLFStack},
+
+	{"TestLFStackStress", _xtest.TestLFStackStress},
+
+	{"TestMemStats", _xtest.TestMemStats},
+
+	{"TestStringConcatenationAllocs", _xtest.TestStringConcatenationAllocs},
+
+	{"TestTinyAlloc", _xtest.TestTinyAlloc},
+
+	{"TestArenaCollision", _xtest.TestArenaCollision},
+
+	{"TestHmapSize", _xtest.TestHmapSize},
+
+	{"TestNegativeZero", _xtest.TestNegativeZero},
+
+	{"TestMapAssignmentNan", _xtest.TestMapAssignmentNan},
+
+	{"TestMapOperatorAssignmentNan", _xtest.TestMapOperatorAssignmentNan},
+
+	{"TestMapOperatorAssignment", _xtest.TestMapOperatorAssignment},
+
+	{"TestMapAppendAssignment", _xtest.TestMapAppendAssignment},
+
+	{"TestAlias", _xtest.TestAlias},
+
+	{"TestGrowWithNaN", _xtest.TestGrowWithNaN},
+
+	{"TestGrowWithNegativeZero", _xtest.TestGrowWithNegativeZero},
+
+	{"TestIterGrowAndDelete", _xtest.TestIterGrowAndDelete},
+
+	{"TestIterGrowWithGC", _xtest.TestIterGrowWithGC},
+
+	{"TestConcurrentReadsAfterGrowth", _xtest.TestConcurrentReadsAfterGrowth},
+
+	{"TestConcurrentReadsAfterGrowthReflect", _xtest.TestConcurrentReadsAfterGrowthReflect},
+
+	{"TestBigItems", _xtest.TestBigItems},
+
+	{"TestMapHugeZero", _xtest.TestMapHugeZero},
+
+	{"TestEmptyKeyAndValue", _xtest.TestEmptyKeyAndValue},
+
+	{"TestSingleBucketMapStringKeys_DupLen", _xtest.TestSingleBucketMapStringKeys_DupLen},
+
+	{"TestSingleBucketMapStringKeys_NoDupLen", _xtest.TestSingleBucketMapStringKeys_NoDupLen},
+
+	{"TestMapNanGrowIterator", _xtest.TestMapNanGrowIterator},
+
+	{"TestMapIterOrder", _xtest.TestMapIterOrder},
+
+	{"TestMapSparseIterOrder", _xtest.TestMapSparseIterOrder},
+
+	{"TestMapStringBytesLookup", _xtest.TestMapStringBytesLookup},
+
+	{"TestMapLargeKeyNoPointer", _xtest.TestMapLargeKeyNoPointer},
+
+	{"TestMapLargeValNoPointer", _xtest.TestMapLargeValNoPointer},
+
+	{"TestIgnoreBogusMapHint", _xtest.TestIgnoreBogusMapHint},
+
+	{"TestMapBuckets", _xtest.TestMapBuckets},
+
+	{"TestNonEscapingMap", _xtest.TestNonEscapingMap},
+
+	{"TestDeferDeleteSlow", _xtest.TestDeferDeleteSlow},
+
+	{"TestIncrementAfterDeleteValueInt", _xtest.TestIncrementAfterDeleteValueInt},
+
+	{"TestIncrementAfterDeleteValueInt32", _xtest.TestIncrementAfterDeleteValueInt32},
+
+	{"TestIncrementAfterDeleteValueInt64", _xtest.TestIncrementAfterDeleteValueInt64},
+
+	{"TestIncrementAfterDeleteKeyStringValueInt", _xtest.TestIncrementAfterDeleteKeyStringValueInt},
+
+	{"TestIncrementAfterDeleteKeyValueString", _xtest.TestIncrementAfterDeleteKeyValueString},
+
+	{"TestIncrementAfterBulkClearKeyStringValueInt", _xtest.TestIncrementAfterBulkClearKeyStringValueInt},
+
+	{"TestMemmove", _xtest.TestMemmove},
+
+	{"TestMemmoveAlias", _xtest.TestMemmoveAlias},
+
+	{"TestMemmoveLarge0x180000", _xtest.TestMemmoveLarge0x180000},
+
+	{"TestMemmoveOverlapLarge0x120000", _xtest.TestMemmoveOverlapLarge0x120000},
+
+	{"TestMemclr", _xtest.TestMemclr},
+
+	{"TestFinalizerType", _xtest.TestFinalizerType},
+
+	{"TestFinalizerInterfaceBig", _xtest.TestFinalizerInterfaceBig},
+
+	{"TestFinalizerZeroSizedStruct", _xtest.TestFinalizerZeroSizedStruct},
+
+	{"TestEmptySlice", _xtest.TestEmptySlice},
+
+	{"TestEmptyString", _xtest.TestEmptyString},
+
+	{"TestFinalizerOnGlobal", _xtest.TestFinalizerOnGlobal},
+
+	{"TestDeferKeepAlive", _xtest.TestDeferKeepAlive},
+
+	{"TestStopTheWorldDeadlock", _xtest.TestStopTheWorldDeadlock},
+
+	{"TestYieldProgress", _xtest.TestYieldProgress},
+
+	{"TestYieldLockedProgress", _xtest.TestYieldLockedProgress},
+
+	{"TestYieldLocked", _xtest.TestYieldLocked},
+
+	{"TestGoroutineParallelism", _xtest.TestGoroutineParallelism},
+
+	{"TestGoroutineParallelism2", _xtest.TestGoroutineParallelism2},
+
+	{"TestBlockLocked", _xtest.TestBlockLocked},
+
+	{"TestTimerFairness", _xtest.TestTimerFairness},
+
+	{"TestTimerFairness2", _xtest.TestTimerFairness2},
+
+	{"TestPreemption", _xtest.TestPreemption},
+
+	{"TestPreemptionGC", _xtest.TestPreemptionGC},
+
+	{"TestGCFairness", _xtest.TestGCFairness},
+
+	{"TestGCFairness2", _xtest.TestGCFairness2},
+
+	{"TestNumGoroutine", _xtest.TestNumGoroutine},
+
+	{"TestPingPongHog", _xtest.TestPingPongHog},
+
+	{"TestPreemptSplitBig", _xtest.TestPreemptSplitBig},
+
+	{"TestSchedLocalQueue", _xtest.TestSchedLocalQueue},
+
+	{"TestSchedLocalQueueSteal", _xtest.TestSchedLocalQueueSteal},
+
+	{"TestSchedLocalQueueEmpty", _xtest.TestSchedLocalQueueEmpty},
+
+	{"TestStealOrder", _xtest.TestStealOrder},
+
+	{"TestLockOSThreadNesting", _xtest.TestLockOSThreadNesting},
+
+	{"TestLockOSThreadExit", _xtest.TestLockOSThreadExit},
+
+	{"TestProfBuf", _xtest.TestProfBuf},
+
+	{"TestGdbPython", _xtest.TestGdbPython},
+
+	{"TestGdbPythonCgo", _xtest.TestGdbPythonCgo},
+
+	{"TestGdbBacktrace", _xtest.TestGdbBacktrace},
+
+	{"TestGdbAutotmpTypes", _xtest.TestGdbAutotmpTypes},
+
+	{"TestGdbConst", _xtest.TestGdbConst},
+
+	{"TestGdbPanic", _xtest.TestGdbPanic},
+
+	{"TestLldbPython", _xtest.TestLldbPython},
+
+	{"TestMmapErrorSign", _xtest.TestMmapErrorSign},
+
+	{"TestPhysPageSize", _xtest.TestPhysPageSize},
+
+	{"TestStopCPUProfilingWithProfilerOff", _xtest.TestStopCPUProfilingWithProfilerOff},
+
+	{"TestSetPanicOnFault", _xtest.TestSetPanicOnFault},
+
+	{"TestEqString", _xtest.TestEqString},
+
+	{"TestTrailingZero", _xtest.TestTrailingZero},
+
+	{"TestBadOpen", _xtest.TestBadOpen},
+
+	{"TestAppendGrowth", _xtest.TestAppendGrowth},
+
+	{"TestAppendSliceGrowth", _xtest.TestAppendSliceGrowth},
+
+	{"TestGoroutineProfileTrivial", _xtest.TestGoroutineProfileTrivial},
+
+	{"TestVersion", _xtest.TestVersion},
+
+	{"TestGoroutineProfile", _xtest.TestGoroutineProfile},
+
+	{"TestParallelRWMutexReaders", _xtest.TestParallelRWMutexReaders},
+
+	{"TestRWMutex", _xtest.TestRWMutex},
+
+	{"TestSizeof", _xtest.TestSizeof},
+
+	{"TestSideEffectOrder", _xtest.TestSideEffectOrder},
+
+	{"TestAppendOverlap", _xtest.TestAppendOverlap},
+
+	{"TestFloat64", _xtest.TestFloat64},
+
+	{"TestStackMem", _xtest.TestStackMem},
+
+	{"TestStackGrowth", _xtest.TestStackGrowth},
+
+	{"TestStackGrowthCallback", _xtest.TestStackGrowthCallback},
+
+	{"TestDeferPtrs", _xtest.TestDeferPtrs},
+
+	{"TestDeferPtrsGoexit", _xtest.TestDeferPtrsGoexit},
+
+	{"TestDeferPtrsPanic", _xtest.TestDeferPtrsPanic},
+
+	{"TestDeferLeafSigpanic", _xtest.TestDeferLeafSigpanic},
+
+	{"TestPanicUseStack", _xtest.TestPanicUseStack},
+
+	{"TestPanicFar", _xtest.TestPanicFar},
+
+	{"TestStackCache", _xtest.TestStackCache},
+
+	{"TestStackOutput", _xtest.TestStackOutput},
+
+	{"TestStackAllOutput", _xtest.TestStackAllOutput},
+
+	{"TestStackPanic", _xtest.TestStackPanic},
+
+	{"TestStackWrapperCaller", _xtest.TestStackWrapperCaller},
+
+	{"TestStackWrapperCallers", _xtest.TestStackWrapperCallers},
+
+	{"TestStackWrapperStack", _xtest.TestStackWrapperStack},
+
+	{"TestStackWrapperStackPanic", _xtest.TestStackWrapperStackPanic},
+
+	{"TestCallersFromWrapper", _xtest.TestCallersFromWrapper},
+
+	{"TestTracebackSystemstack", _xtest.TestTracebackSystemstack},
+
+	{"TestTracebackAncestors", _xtest.TestTracebackAncestors},
+
+	{"TestStringW", _xtest.TestStringW},
+
+	{"TestLargeStringConcat", _xtest.TestLargeStringConcat},
+
+	{"TestCompareTempString", _xtest.TestCompareTempString},
+
+	{"TestStringOnStack", _xtest.TestStringOnStack},
+
+	{"TestIntString", _xtest.TestIntString},
+
+	{"TestIntStringAllocs", _xtest.TestIntStringAllocs},
+
+	{"TestRangeStringCast", _xtest.TestRangeStringCast},
+
+	{"TestString2Slice", _xtest.TestString2Slice},
+
+	{"TestAtoi", _xtest.TestAtoi},
+
+	{"TestAtoi32", _xtest.TestAtoi32},
+
+	{"TestCaller", _xtest.TestCaller},
+
+	{"TestLineNumber", _xtest.TestLineNumber},
+
+	{"TestNilName", _xtest.TestNilName},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkMakeChan", _xtest.BenchmarkMakeChan},
+
+	{"BenchmarkChanNonblocking", _xtest.BenchmarkChanNonblocking},
+
+	{"BenchmarkSelectUncontended", _xtest.BenchmarkSelectUncontended},
+
+	{"BenchmarkSelectSyncContended", _xtest.BenchmarkSelectSyncContended},
+
+	{"BenchmarkSelectAsyncContended", _xtest.BenchmarkSelectAsyncContended},
+
+	{"BenchmarkSelectNonblock", _xtest.BenchmarkSelectNonblock},
+
+	{"BenchmarkChanUncontended", _xtest.BenchmarkChanUncontended},
+
+	{"BenchmarkChanContended", _xtest.BenchmarkChanContended},
+
+	{"BenchmarkChanSync", _xtest.BenchmarkChanSync},
+
+	{"BenchmarkChanSyncWork", _xtest.BenchmarkChanSyncWork},
+
+	{"BenchmarkChanProdCons0", _xtest.BenchmarkChanProdCons0},
+
+	{"BenchmarkChanProdCons10", _xtest.BenchmarkChanProdCons10},
+
+	{"BenchmarkChanProdCons100", _xtest.BenchmarkChanProdCons100},
+
+	{"BenchmarkChanProdConsWork0", _xtest.BenchmarkChanProdConsWork0},
+
+	{"BenchmarkChanProdConsWork10", _xtest.BenchmarkChanProdConsWork10},
+
+	{"BenchmarkChanProdConsWork100", _xtest.BenchmarkChanProdConsWork100},
+
+	{"BenchmarkSelectProdCons", _xtest.BenchmarkSelectProdCons},
+
+	{"BenchmarkChanCreation", _xtest.BenchmarkChanCreation},
+
+	{"BenchmarkChanSem", _xtest.BenchmarkChanSem},
+
+	{"BenchmarkChanPopular", _xtest.BenchmarkChanPopular},
+
+	{"BenchmarkCallClosure", _xtest.BenchmarkCallClosure},
+
+	{"BenchmarkCallClosure1", _xtest.BenchmarkCallClosure1},
+
+	{"BenchmarkCallClosure2", _xtest.BenchmarkCallClosure2},
+
+	{"BenchmarkCallClosure3", _xtest.BenchmarkCallClosure3},
+
+	{"BenchmarkCallClosure4", _xtest.BenchmarkCallClosure4},
+
+	{"BenchmarkComplex128DivNormal", _xtest.BenchmarkComplex128DivNormal},
+
+	{"BenchmarkComplex128DivNisNaN", _xtest.BenchmarkComplex128DivNisNaN},
+
+	{"BenchmarkComplex128DivDisNaN", _xtest.BenchmarkComplex128DivDisNaN},
+
+	{"BenchmarkComplex128DivNisInf", _xtest.BenchmarkComplex128DivNisInf},
+
+	{"BenchmarkComplex128DivDisInf", _xtest.BenchmarkComplex128DivDisInf},
+
+	{"BenchmarkSetTypePtr", _xtest.BenchmarkSetTypePtr},
+
+	{"BenchmarkSetTypePtr8", _xtest.BenchmarkSetTypePtr8},
+
+	{"BenchmarkSetTypePtr16", _xtest.BenchmarkSetTypePtr16},
+
+	{"BenchmarkSetTypePtr32", _xtest.BenchmarkSetTypePtr32},
+
+	{"BenchmarkSetTypePtr64", _xtest.BenchmarkSetTypePtr64},
+
+	{"BenchmarkSetTypePtr126", _xtest.BenchmarkSetTypePtr126},
+
+	{"BenchmarkSetTypePtr128", _xtest.BenchmarkSetTypePtr128},
+
+	{"BenchmarkSetTypePtrSlice", _xtest.BenchmarkSetTypePtrSlice},
+
+	{"BenchmarkSetTypeNode1", _xtest.BenchmarkSetTypeNode1},
+
+	{"BenchmarkSetTypeNode1Slice", _xtest.BenchmarkSetTypeNode1Slice},
+
+	{"BenchmarkSetTypeNode8", _xtest.BenchmarkSetTypeNode8},
+
+	{"BenchmarkSetTypeNode8Slice", _xtest.BenchmarkSetTypeNode8Slice},
+
+	{"BenchmarkSetTypeNode64", _xtest.BenchmarkSetTypeNode64},
+
+	{"BenchmarkSetTypeNode64Slice", _xtest.BenchmarkSetTypeNode64Slice},
+
+	{"BenchmarkSetTypeNode64Dead", _xtest.BenchmarkSetTypeNode64Dead},
+
+	{"BenchmarkSetTypeNode64DeadSlice", _xtest.BenchmarkSetTypeNode64DeadSlice},
+
+	{"BenchmarkSetTypeNode124", _xtest.BenchmarkSetTypeNode124},
+
+	{"BenchmarkSetTypeNode124Slice", _xtest.BenchmarkSetTypeNode124Slice},
+
+	{"BenchmarkSetTypeNode126", _xtest.BenchmarkSetTypeNode126},
+
+	{"BenchmarkSetTypeNode126Slice", _xtest.BenchmarkSetTypeNode126Slice},
+
+	{"BenchmarkSetTypeNode128", _xtest.BenchmarkSetTypeNode128},
+
+	{"BenchmarkSetTypeNode128Slice", _xtest.BenchmarkSetTypeNode128Slice},
+
+	{"BenchmarkSetTypeNode130", _xtest.BenchmarkSetTypeNode130},
+
+	{"BenchmarkSetTypeNode130Slice", _xtest.BenchmarkSetTypeNode130Slice},
+
+	{"BenchmarkSetTypeNode1024", _xtest.BenchmarkSetTypeNode1024},
+
+	{"BenchmarkSetTypeNode1024Slice", _xtest.BenchmarkSetTypeNode1024Slice},
+
+	{"BenchmarkAllocation", _xtest.BenchmarkAllocation},
+
+	{"BenchmarkReadMemStats", _xtest.BenchmarkReadMemStats},
+
+	{"BenchmarkWriteBarrier", _xtest.BenchmarkWriteBarrier},
+
+	{"BenchmarkBulkWriteBarrier", _xtest.BenchmarkBulkWriteBarrier},
+
+	{"BenchmarkScanStackNoLocals", _xtest.BenchmarkScanStackNoLocals},
+
+	{"BenchmarkHash5", _xtest.BenchmarkHash5},
+
+	{"BenchmarkHash16", _xtest.BenchmarkHash16},
+
+	{"BenchmarkHash64", _xtest.BenchmarkHash64},
+
+	{"BenchmarkHash1024", _xtest.BenchmarkHash1024},
+
+	{"BenchmarkHash65536", _xtest.BenchmarkHash65536},
+
+	{"BenchmarkAlignedLoad", _xtest.BenchmarkAlignedLoad},
+
+	{"BenchmarkUnalignedLoad", _xtest.BenchmarkUnalignedLoad},
+
+	{"BenchmarkEqEfaceConcrete", _xtest.BenchmarkEqEfaceConcrete},
+
+	{"BenchmarkEqIfaceConcrete", _xtest.BenchmarkEqIfaceConcrete},
+
+	{"BenchmarkNeEfaceConcrete", _xtest.BenchmarkNeEfaceConcrete},
+
+	{"BenchmarkNeIfaceConcrete", _xtest.BenchmarkNeIfaceConcrete},
+
+	{"BenchmarkConvT2ESmall", _xtest.BenchmarkConvT2ESmall},
+
+	{"BenchmarkConvT2EUintptr", _xtest.BenchmarkConvT2EUintptr},
+
+	{"BenchmarkConvT2ELarge", _xtest.BenchmarkConvT2ELarge},
+
+	{"BenchmarkConvT2ISmall", _xtest.BenchmarkConvT2ISmall},
+
+	{"BenchmarkConvT2IUintptr", _xtest.BenchmarkConvT2IUintptr},
+
+	{"BenchmarkConvT2ILarge", _xtest.BenchmarkConvT2ILarge},
+
+	{"BenchmarkConvI2E", _xtest.BenchmarkConvI2E},
+
+	{"BenchmarkConvI2I", _xtest.BenchmarkConvI2I},
+
+	{"BenchmarkAssertE2T", _xtest.BenchmarkAssertE2T},
+
+	{"BenchmarkAssertE2TLarge", _xtest.BenchmarkAssertE2TLarge},
+
+	{"BenchmarkAssertE2I", _xtest.BenchmarkAssertE2I},
+
+	{"BenchmarkAssertI2T", _xtest.BenchmarkAssertI2T},
+
+	{"BenchmarkAssertI2I", _xtest.BenchmarkAssertI2I},
+
+	{"BenchmarkAssertI2E", _xtest.BenchmarkAssertI2E},
+
+	{"BenchmarkAssertE2E", _xtest.BenchmarkAssertE2E},
+
+	{"BenchmarkAssertE2T2", _xtest.BenchmarkAssertE2T2},
+
+	{"BenchmarkAssertE2T2Blank", _xtest.BenchmarkAssertE2T2Blank},
+
+	{"BenchmarkAssertI2E2", _xtest.BenchmarkAssertI2E2},
+
+	{"BenchmarkAssertI2E2Blank", _xtest.BenchmarkAssertI2E2Blank},
+
+	{"BenchmarkAssertE2E2", _xtest.BenchmarkAssertE2E2},
+
+	{"BenchmarkAssertE2E2Blank", _xtest.BenchmarkAssertE2E2Blank},
+
+	{"BenchmarkConvT2Ezero", _xtest.BenchmarkConvT2Ezero},
+
+	{"BenchmarkMalloc8", _xtest.BenchmarkMalloc8},
+
+	{"BenchmarkMalloc16", _xtest.BenchmarkMalloc16},
+
+	{"BenchmarkMallocTypeInfo8", _xtest.BenchmarkMallocTypeInfo8},
+
+	{"BenchmarkMallocTypeInfo16", _xtest.BenchmarkMallocTypeInfo16},
+
+	{"BenchmarkMallocLargeStruct", _xtest.BenchmarkMallocLargeStruct},
+
+	{"BenchmarkGoroutineSelect", _xtest.BenchmarkGoroutineSelect},
+
+	{"BenchmarkGoroutineBlocking", _xtest.BenchmarkGoroutineBlocking},
+
+	{"BenchmarkGoroutineForRange", _xtest.BenchmarkGoroutineForRange},
+
+	{"BenchmarkGoroutineIdle", _xtest.BenchmarkGoroutineIdle},
+
+	{"BenchmarkHashStringSpeed", _xtest.BenchmarkHashStringSpeed},
+
+	{"BenchmarkHashBytesSpeed", _xtest.BenchmarkHashBytesSpeed},
+
+	{"BenchmarkHashInt32Speed", _xtest.BenchmarkHashInt32Speed},
+
+	{"BenchmarkHashInt64Speed", _xtest.BenchmarkHashInt64Speed},
+
+	{"BenchmarkHashStringArraySpeed", _xtest.BenchmarkHashStringArraySpeed},
+
+	{"BenchmarkMegMap", _xtest.BenchmarkMegMap},
+
+	{"BenchmarkMegOneMap", _xtest.BenchmarkMegOneMap},
+
+	{"BenchmarkMegEqMap", _xtest.BenchmarkMegEqMap},
+
+	{"BenchmarkMegEmptyMap", _xtest.BenchmarkMegEmptyMap},
+
+	{"BenchmarkSmallStrMap", _xtest.BenchmarkSmallStrMap},
+
+	{"BenchmarkMapStringKeysEight_16", _xtest.BenchmarkMapStringKeysEight_16},
+
+	{"BenchmarkMapStringKeysEight_32", _xtest.BenchmarkMapStringKeysEight_32},
+
+	{"BenchmarkMapStringKeysEight_64", _xtest.BenchmarkMapStringKeysEight_64},
+
+	{"BenchmarkMapStringKeysEight_1M", _xtest.BenchmarkMapStringKeysEight_1M},
+
+	{"BenchmarkIntMap", _xtest.BenchmarkIntMap},
+
+	{"BenchmarkRepeatedLookupStrMapKey32", _xtest.BenchmarkRepeatedLookupStrMapKey32},
+
+	{"BenchmarkRepeatedLookupStrMapKey1M", _xtest.BenchmarkRepeatedLookupStrMapKey1M},
+
+	{"BenchmarkNewEmptyMap", _xtest.BenchmarkNewEmptyMap},
+
+	{"BenchmarkNewSmallMap", _xtest.BenchmarkNewSmallMap},
+
+	{"BenchmarkMapIter", _xtest.BenchmarkMapIter},
+
+	{"BenchmarkMapIterEmpty", _xtest.BenchmarkMapIterEmpty},
+
+	{"BenchmarkSameLengthMap", _xtest.BenchmarkSameLengthMap},
+
+	{"BenchmarkBigKeyMap", _xtest.BenchmarkBigKeyMap},
+
+	{"BenchmarkBigValMap", _xtest.BenchmarkBigValMap},
+
+	{"BenchmarkSmallKeyMap", _xtest.BenchmarkSmallKeyMap},
+
+	{"BenchmarkMapPopulate", _xtest.BenchmarkMapPopulate},
+
+	{"BenchmarkComplexAlgMap", _xtest.BenchmarkComplexAlgMap},
+
+	{"BenchmarkGoMapClear", _xtest.BenchmarkGoMapClear},
+
+	{"BenchmarkMapPop100", _xtest.BenchmarkMapPop100},
+
+	{"BenchmarkMapPop1000", _xtest.BenchmarkMapPop1000},
+
+	{"BenchmarkMapPop10000", _xtest.BenchmarkMapPop10000},
+
+	{"BenchmarkMapAssign", _xtest.BenchmarkMapAssign},
+
+	{"BenchmarkMapOperatorAssign", _xtest.BenchmarkMapOperatorAssign},
+
+	{"BenchmarkMapAppendAssign", _xtest.BenchmarkMapAppendAssign},
+
+	{"BenchmarkMapDelete", _xtest.BenchmarkMapDelete},
+
+	{"BenchmarkMemmove", _xtest.BenchmarkMemmove},
+
+	{"BenchmarkMemmoveUnalignedDst", _xtest.BenchmarkMemmoveUnalignedDst},
+
+	{"BenchmarkMemmoveUnalignedSrc", _xtest.BenchmarkMemmoveUnalignedSrc},
+
+	{"BenchmarkMemclr", _xtest.BenchmarkMemclr},
+
+	{"BenchmarkGoMemclr", _xtest.BenchmarkGoMemclr},
+
+	{"BenchmarkClearFat8", _xtest.BenchmarkClearFat8},
+
+	{"BenchmarkClearFat12", _xtest.BenchmarkClearFat12},
+
+	{"BenchmarkClearFat16", _xtest.BenchmarkClearFat16},
+
+	{"BenchmarkClearFat24", _xtest.BenchmarkClearFat24},
+
+	{"BenchmarkClearFat32", _xtest.BenchmarkClearFat32},
+
+	{"BenchmarkClearFat40", _xtest.BenchmarkClearFat40},
+
+	{"BenchmarkClearFat48", _xtest.BenchmarkClearFat48},
+
+	{"BenchmarkClearFat56", _xtest.BenchmarkClearFat56},
+
+	{"BenchmarkClearFat64", _xtest.BenchmarkClearFat64},
+
+	{"BenchmarkClearFat128", _xtest.BenchmarkClearFat128},
+
+	{"BenchmarkClearFat256", _xtest.BenchmarkClearFat256},
+
+	{"BenchmarkClearFat512", _xtest.BenchmarkClearFat512},
+
+	{"BenchmarkClearFat1024", _xtest.BenchmarkClearFat1024},
+
+	{"BenchmarkCopyFat8", _xtest.BenchmarkCopyFat8},
+
+	{"BenchmarkCopyFat12", _xtest.BenchmarkCopyFat12},
+
+	{"BenchmarkCopyFat16", _xtest.BenchmarkCopyFat16},
+
+	{"BenchmarkCopyFat24", _xtest.BenchmarkCopyFat24},
+
+	{"BenchmarkCopyFat32", _xtest.BenchmarkCopyFat32},
+
+	{"BenchmarkCopyFat64", _xtest.BenchmarkCopyFat64},
+
+	{"BenchmarkCopyFat128", _xtest.BenchmarkCopyFat128},
+
+	{"BenchmarkCopyFat256", _xtest.BenchmarkCopyFat256},
+
+	{"BenchmarkCopyFat512", _xtest.BenchmarkCopyFat512},
+
+	{"BenchmarkCopyFat520", _xtest.BenchmarkCopyFat520},
+
+	{"BenchmarkCopyFat1024", _xtest.BenchmarkCopyFat1024},
+
+	{"BenchmarkIssue18740", _xtest.BenchmarkIssue18740},
+
+	{"BenchmarkFinalizer", _xtest.BenchmarkFinalizer},
+
+	{"BenchmarkFinalizerRun", _xtest.BenchmarkFinalizerRun},
+
+	{"BenchmarkSyscall", _xtest.BenchmarkSyscall},
+
+	{"BenchmarkSyscallWork", _xtest.BenchmarkSyscallWork},
+
+	{"BenchmarkSyscallExcess", _xtest.BenchmarkSyscallExcess},
+
+	{"BenchmarkSyscallExcessWork", _xtest.BenchmarkSyscallExcessWork},
+
+	{"BenchmarkPingPongHog", _xtest.BenchmarkPingPongHog},
+
+	{"BenchmarkStackGrowth", _xtest.BenchmarkStackGrowth},
+
+	{"BenchmarkStackGrowthDeep", _xtest.BenchmarkStackGrowthDeep},
+
+	{"BenchmarkCreateGoroutines", _xtest.BenchmarkCreateGoroutines},
+
+	{"BenchmarkCreateGoroutinesParallel", _xtest.BenchmarkCreateGoroutinesParallel},
+
+	{"BenchmarkCreateGoroutinesCapture", _xtest.BenchmarkCreateGoroutinesCapture},
+
+	{"BenchmarkClosureCall", _xtest.BenchmarkClosureCall},
+
+	{"BenchmarkWakeupParallelSpinning", _xtest.BenchmarkWakeupParallelSpinning},
+
+	{"BenchmarkWakeupParallelSyscall", _xtest.BenchmarkWakeupParallelSyscall},
+
+	{"BenchmarkMatmult", _xtest.BenchmarkMatmult},
+
+	{"BenchmarkFastrand", _xtest.BenchmarkFastrand},
+
+	{"BenchmarkFastrandHashiter", _xtest.BenchmarkFastrandHashiter},
+
+	{"BenchmarkFastrandn", _xtest.BenchmarkFastrandn},
+
+	{"BenchmarkIfaceCmp100", _xtest.BenchmarkIfaceCmp100},
+
+	{"BenchmarkIfaceCmpNil100", _xtest.BenchmarkIfaceCmpNil100},
+
+	{"BenchmarkEfaceCmpDiff", _xtest.BenchmarkEfaceCmpDiff},
+
+	{"BenchmarkDefer", _xtest.BenchmarkDefer},
+
+	{"BenchmarkDefer10", _xtest.BenchmarkDefer10},
+
+	{"BenchmarkDeferMany", _xtest.BenchmarkDeferMany},
+
+	{"BenchmarkRWMutexUncontended", _xtest.BenchmarkRWMutexUncontended},
+
+	{"BenchmarkRWMutexWrite100", _xtest.BenchmarkRWMutexWrite100},
+
+	{"BenchmarkRWMutexWrite10", _xtest.BenchmarkRWMutexWrite10},
+
+	{"BenchmarkRWMutexWorkWrite100", _xtest.BenchmarkRWMutexWorkWrite100},
+
+	{"BenchmarkRWMutexWorkWrite10", _xtest.BenchmarkRWMutexWorkWrite10},
+
+	{"BenchmarkMakeSlice", _xtest.BenchmarkMakeSlice},
+
+	{"BenchmarkGrowSlice", _xtest.BenchmarkGrowSlice},
+
+	{"BenchmarkExtendSlice", _xtest.BenchmarkExtendSlice},
+
+	{"BenchmarkAppend", _xtest.BenchmarkAppend},
+
+	{"BenchmarkAppendGrowByte", _xtest.BenchmarkAppendGrowByte},
+
+	{"BenchmarkAppendGrowString", _xtest.BenchmarkAppendGrowString},
+
+	{"BenchmarkAppendSlice", _xtest.BenchmarkAppendSlice},
+
+	{"BenchmarkAppendSliceLarge", _xtest.BenchmarkAppendSliceLarge},
+
+	{"BenchmarkAppendStr", _xtest.BenchmarkAppendStr},
+
+	{"BenchmarkAppendSpecialCase", _xtest.BenchmarkAppendSpecialCase},
+
+	{"BenchmarkCopy", _xtest.BenchmarkCopy},
+
+	{"BenchmarkAppendInPlace", _xtest.BenchmarkAppendInPlace},
+
+	{"BenchmarkStackCopyPtr", _xtest.BenchmarkStackCopyPtr},
+
+	{"BenchmarkStackCopy", _xtest.BenchmarkStackCopy},
+
+	{"BenchmarkStackCopyNoCache", _xtest.BenchmarkStackCopyNoCache},
+
+	{"BenchmarkCompareStringEqual", _xtest.BenchmarkCompareStringEqual},
+
+	{"BenchmarkCompareStringIdentical", _xtest.BenchmarkCompareStringIdentical},
+
+	{"BenchmarkCompareStringSameLength", _xtest.BenchmarkCompareStringSameLength},
+
+	{"BenchmarkCompareStringDifferentLength", _xtest.BenchmarkCompareStringDifferentLength},
+
+	{"BenchmarkCompareStringBigUnaligned", _xtest.BenchmarkCompareStringBigUnaligned},
+
+	{"BenchmarkCompareStringBig", _xtest.BenchmarkCompareStringBig},
+
+	{"BenchmarkConcatStringAndBytes", _xtest.BenchmarkConcatStringAndBytes},
+
+	{"BenchmarkSliceByteToString", _xtest.BenchmarkSliceByteToString},
+
+	{"BenchmarkRuneCount", _xtest.BenchmarkRuneCount},
+
+	{"BenchmarkRuneIterate", _xtest.BenchmarkRuneIterate},
+
+	{"BenchmarkArrayEqual", _xtest.BenchmarkArrayEqual},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleFrames", _xtest.ExampleFrames, "- more:true | runtime.Callers\n- more:true | runtime_test.ExampleFrames.func1\n- more:true | runtime_test.ExampleFrames.func2\n- more:true | runtime_test.ExampleFrames.func3\n- more:true | runtime_test.ExampleFrames\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "runtime"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	_xtest.TestMain(m)
+
+}
+

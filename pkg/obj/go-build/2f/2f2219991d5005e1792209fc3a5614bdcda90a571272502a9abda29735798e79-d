@@ -1,0 +1,7 @@
+# test log
+open testdata/pass-random1.bz2
+open testdata/pass-random1.bin
+open testdata/pass-random2.bz2
+open testdata/pass-random2.bin
+open testdata/pass-sawtooth.bz2
+open testdata/fail-issue5747.bz2

@@ -1,0 +1,99 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "context"
+
+
+	_xtest "context_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestDeadlineExceededIsNetError", _xtest.TestDeadlineExceededIsNetError},
+
+	{"TestBackground", _xtest.TestBackground},
+
+	{"TestTODO", _xtest.TestTODO},
+
+	{"TestWithCancel", _xtest.TestWithCancel},
+
+	{"TestParentFinishesChild", _xtest.TestParentFinishesChild},
+
+	{"TestChildFinishesFirst", _xtest.TestChildFinishesFirst},
+
+	{"TestDeadline", _xtest.TestDeadline},
+
+	{"TestTimeout", _xtest.TestTimeout},
+
+	{"TestCanceledTimeout", _xtest.TestCanceledTimeout},
+
+	{"TestValues", _xtest.TestValues},
+
+	{"TestAllocs", _xtest.TestAllocs},
+
+	{"TestSimultaneousCancels", _xtest.TestSimultaneousCancels},
+
+	{"TestInterlockedCancels", _xtest.TestInterlockedCancels},
+
+	{"TestLayersCancel", _xtest.TestLayersCancel},
+
+	{"TestLayersTimeout", _xtest.TestLayersTimeout},
+
+	{"TestCancelRemoves", _xtest.TestCancelRemoves},
+
+	{"TestWithCancelCanceledParent", _xtest.TestWithCancelCanceledParent},
+
+	{"TestWithValueChecksKey", _xtest.TestWithValueChecksKey},
+
+	{"TestDeadlineExceededSupportsTimeout", _xtest.TestDeadlineExceededSupportsTimeout},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkCommonParentCancel", _xtest.BenchmarkCommonParentCancel},
+
+	{"BenchmarkWithTimeout", _xtest.BenchmarkWithTimeout},
+
+	{"BenchmarkCancelTree", _xtest.BenchmarkCancelTree},
+
+	{"BenchmarkCheckCanceled", _xtest.BenchmarkCheckCanceled},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleWithCancel", _xtest.ExampleWithCancel, "1\n2\n3\n4\n5\n", false},
+
+	{"ExampleWithDeadline", _xtest.ExampleWithDeadline, "context deadline exceeded\n", false},
+
+	{"ExampleWithTimeout", _xtest.ExampleWithTimeout, "context deadline exceeded\n", false},
+
+	{"ExampleWithValue", _xtest.ExampleWithValue, "found value: Go\nkey not found: color\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "context"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

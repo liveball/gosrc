@@ -1,0 +1,49 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "golang_org/x/text/unicode/norm"
+
+
+	_xtest "golang_org/x/text/unicode/norm_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleIter", _xtest.ExampleIter, "0: true true\n1: false false\n2: true true\n3: true true\n4: true true\n5: true true\n", false},
+
+	{"ExampleForm_NextBoundary", _xtest.ExampleForm_NextBoundary, "M: \"M\"\nê: \"e\\u0302\"\nl: \"l\"\né: \"e\\u0301\"\ne: \"e\"\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "golang_org/x/text/unicode/norm"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

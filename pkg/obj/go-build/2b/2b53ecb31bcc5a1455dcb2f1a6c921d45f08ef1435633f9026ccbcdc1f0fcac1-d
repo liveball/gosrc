@@ -1,0 +1,321 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "time"
+
+
+	_xtest "time_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestRFC3339Conversion", _xtest.TestRFC3339Conversion},
+
+	{"TestFormat", _xtest.TestFormat},
+
+	{"TestFormatSingleDigits", _xtest.TestFormatSingleDigits},
+
+	{"TestFormatShortYear", _xtest.TestFormatShortYear},
+
+	{"TestParse", _xtest.TestParse},
+
+	{"TestParseDayOutOfRange", _xtest.TestParseDayOutOfRange},
+
+	{"TestParseInLocation", _xtest.TestParseInLocation},
+
+	{"TestLoadLocationZipFile", _xtest.TestLoadLocationZipFile},
+
+	{"TestRubyParse", _xtest.TestRubyParse},
+
+	{"TestFormatAndParse", _xtest.TestFormatAndParse},
+
+	{"TestParseTimeZone", _xtest.TestParseTimeZone},
+
+	{"TestParseErrors", _xtest.TestParseErrors},
+
+	{"TestNoonIs12PM", _xtest.TestNoonIs12PM},
+
+	{"TestMidnightIs12AM", _xtest.TestMidnightIs12AM},
+
+	{"Test12PMIsNoon", _xtest.Test12PMIsNoon},
+
+	{"Test12AMIsMidnight", _xtest.Test12AMIsMidnight},
+
+	{"TestMissingZone", _xtest.TestMissingZone},
+
+	{"TestMinutesInTimeZone", _xtest.TestMinutesInTimeZone},
+
+	{"TestParseSecondsInTimeZone", _xtest.TestParseSecondsInTimeZone},
+
+	{"TestFormatSecondsInTimeZone", _xtest.TestFormatSecondsInTimeZone},
+
+	{"TestUnderscoreTwoThousand", _xtest.TestUnderscoreTwoThousand},
+
+	{"TestHasMonotonicClock", _xtest.TestHasMonotonicClock},
+
+	{"TestMonotonicAdd", _xtest.TestMonotonicAdd},
+
+	{"TestMonotonicSub", _xtest.TestMonotonicSub},
+
+	{"TestMonotonicOverflow", _xtest.TestMonotonicOverflow},
+
+	{"TestMonotonicString", _xtest.TestMonotonicString},
+
+	{"TestSleep", _xtest.TestSleep},
+
+	{"TestAfterFunc", _xtest.TestAfterFunc},
+
+	{"TestAfterStress", _xtest.TestAfterStress},
+
+	{"TestAfter", _xtest.TestAfter},
+
+	{"TestAfterTick", _xtest.TestAfterTick},
+
+	{"TestAfterStop", _xtest.TestAfterStop},
+
+	{"TestAfterQueuing", _xtest.TestAfterQueuing},
+
+	{"TestTimerStopStress", _xtest.TestTimerStopStress},
+
+	{"TestSleepZeroDeadlock", _xtest.TestSleepZeroDeadlock},
+
+	{"TestReset", _xtest.TestReset},
+
+	{"TestOverflowSleep", _xtest.TestOverflowSleep},
+
+	{"TestIssue5745", _xtest.TestIssue5745},
+
+	{"TestOverflowRuntimeTimer", _xtest.TestOverflowRuntimeTimer},
+
+	{"TestZeroTimerResetPanics", _xtest.TestZeroTimerResetPanics},
+
+	{"TestZeroTimerStopPanics", _xtest.TestZeroTimerStopPanics},
+
+	{"TestTicker", _xtest.TestTicker},
+
+	{"TestTickerStopWithDirectInitialization", _xtest.TestTickerStopWithDirectInitialization},
+
+	{"TestTeardown", _xtest.TestTeardown},
+
+	{"TestTick", _xtest.TestTick},
+
+	{"TestNewTickerLtZeroDuration", _xtest.TestNewTickerLtZeroDuration},
+
+	{"TestZoneData", _xtest.TestZoneData},
+
+	{"TestSecondsToUTC", _xtest.TestSecondsToUTC},
+
+	{"TestNanosecondsToUTC", _xtest.TestNanosecondsToUTC},
+
+	{"TestSecondsToLocalTime", _xtest.TestSecondsToLocalTime},
+
+	{"TestNanosecondsToLocalTime", _xtest.TestNanosecondsToLocalTime},
+
+	{"TestSecondsToUTCAndBack", _xtest.TestSecondsToUTCAndBack},
+
+	{"TestNanosecondsToUTCAndBack", _xtest.TestNanosecondsToUTCAndBack},
+
+	{"TestTruncateRound", _xtest.TestTruncateRound},
+
+	{"TestISOWeek", _xtest.TestISOWeek},
+
+	{"TestYearDay", _xtest.TestYearDay},
+
+	{"TestDurationString", _xtest.TestDurationString},
+
+	{"TestDate", _xtest.TestDate},
+
+	{"TestAddDate", _xtest.TestAddDate},
+
+	{"TestDaysIn", _xtest.TestDaysIn},
+
+	{"TestAddToExactSecond", _xtest.TestAddToExactSecond},
+
+	{"TestTimeGob", _xtest.TestTimeGob},
+
+	{"TestInvalidTimeGob", _xtest.TestInvalidTimeGob},
+
+	{"TestNotGobEncodableTime", _xtest.TestNotGobEncodableTime},
+
+	{"TestTimeJSON", _xtest.TestTimeJSON},
+
+	{"TestInvalidTimeJSON", _xtest.TestInvalidTimeJSON},
+
+	{"TestNotJSONEncodableTime", _xtest.TestNotJSONEncodableTime},
+
+	{"TestParseDuration", _xtest.TestParseDuration},
+
+	{"TestParseDurationRoundTrip", _xtest.TestParseDurationRoundTrip},
+
+	{"TestLocationRace", _xtest.TestLocationRace},
+
+	{"TestCountMallocs", _xtest.TestCountMallocs},
+
+	{"TestLoadFixed", _xtest.TestLoadFixed},
+
+	{"TestSub", _xtest.TestSub},
+
+	{"TestDurationNanoseconds", _xtest.TestDurationNanoseconds},
+
+	{"TestDurationSeconds", _xtest.TestDurationSeconds},
+
+	{"TestDurationMinutes", _xtest.TestDurationMinutes},
+
+	{"TestDurationHours", _xtest.TestDurationHours},
+
+	{"TestDurationTruncate", _xtest.TestDurationTruncate},
+
+	{"TestDurationRound", _xtest.TestDurationRound},
+
+	{"TestDefaultLoc", _xtest.TestDefaultLoc},
+
+	{"TestMarshalBinaryZeroTime", _xtest.TestMarshalBinaryZeroTime},
+
+	{"TestZeroMonthString", _xtest.TestZeroMonthString},
+
+	{"TestWeekdayString", _xtest.TestWeekdayString},
+
+	{"TestReadFileLimit", _xtest.TestReadFileLimit},
+
+	{"TestConcurrentTimerReset", _xtest.TestConcurrentTimerReset},
+
+	{"TestEnvVarUsage", _xtest.TestEnvVarUsage},
+
+	{"TestLoadLocationValidatesNames", _xtest.TestLoadLocationValidatesNames},
+
+	{"TestVersion3", _xtest.TestVersion3},
+
+	{"TestFirstZone", _xtest.TestFirstZone},
+
+	{"TestLocationNames", _xtest.TestLocationNames},
+
+	{"TestLoadLocationFromTZData", _xtest.TestLoadLocationFromTZData},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkAfterFunc", _xtest.BenchmarkAfterFunc},
+
+	{"BenchmarkAfter", _xtest.BenchmarkAfter},
+
+	{"BenchmarkStop", _xtest.BenchmarkStop},
+
+	{"BenchmarkSimultaneousAfterFunc", _xtest.BenchmarkSimultaneousAfterFunc},
+
+	{"BenchmarkStartStop", _xtest.BenchmarkStartStop},
+
+	{"BenchmarkReset", _xtest.BenchmarkReset},
+
+	{"BenchmarkSleep", _xtest.BenchmarkSleep},
+
+	{"BenchmarkTicker", _xtest.BenchmarkTicker},
+
+	{"BenchmarkNow", _xtest.BenchmarkNow},
+
+	{"BenchmarkNowUnixNano", _xtest.BenchmarkNowUnixNano},
+
+	{"BenchmarkFormat", _xtest.BenchmarkFormat},
+
+	{"BenchmarkFormatNow", _xtest.BenchmarkFormatNow},
+
+	{"BenchmarkMarshalJSON", _xtest.BenchmarkMarshalJSON},
+
+	{"BenchmarkMarshalText", _xtest.BenchmarkMarshalText},
+
+	{"BenchmarkParse", _xtest.BenchmarkParse},
+
+	{"BenchmarkParseDuration", _xtest.BenchmarkParseDuration},
+
+	{"BenchmarkHour", _xtest.BenchmarkHour},
+
+	{"BenchmarkSecond", _xtest.BenchmarkSecond},
+
+	{"BenchmarkYear", _xtest.BenchmarkYear},
+
+	{"BenchmarkDay", _xtest.BenchmarkDay},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleDuration_Round", _xtest.ExampleDuration_Round, "d.Round(   1ns) = 1h15m30.918273645s\nd.Round(   1µs) = 1h15m30.918274s\nd.Round(   1ms) = 1h15m30.918s\nd.Round(    1s) = 1h15m31s\nd.Round(    2s) = 1h15m30s\nd.Round(  1m0s) = 1h16m0s\nd.Round( 10m0s) = 1h20m0s\nd.Round(1h0m0s) = 1h0m0s\n", false},
+
+	{"ExampleDuration_String", _xtest.ExampleDuration_String, "4440h0m0s\n", false},
+
+	{"ExampleDuration_Truncate", _xtest.ExampleDuration_Truncate, "d.Truncate(   1ns) = 1h15m30.918273645s\nd.Truncate(   1µs) = 1h15m30.918273s\nd.Truncate(   1ms) = 1h15m30.918s\nd.Truncate(    1s) = 1h15m30s\nd.Truncate(    2s) = 1h15m30s\nd.Truncate(  1m0s) = 1h15m0s\nd.Truncate( 10m0s) = 1h10m0s\nd.Truncate(1h0m0s) = 1h0m0s\n", false},
+
+	{"ExampleParseDuration", _xtest.ExampleParseDuration, "10h0m0s\n1h10m10s\nthere are 4210 seconds in 1h10m10s\n", false},
+
+	{"ExampleDuration_Hours", _xtest.ExampleDuration_Hours, "I've got 4.5 hours of work left.\n", false},
+
+	{"ExampleDuration_Minutes", _xtest.ExampleDuration_Minutes, "The movie is 90 minutes long.\n", false},
+
+	{"ExampleDuration_Nanoseconds", _xtest.ExampleDuration_Nanoseconds, "one microsecond has 1000 nanoseconds.\n", false},
+
+	{"ExampleDuration_Seconds", _xtest.ExampleDuration_Seconds, "take off in t-90 seconds.\n", false},
+
+	{"ExampleDate", _xtest.ExampleDate, "Go launched at 2009-11-10 15:00:00 -0800 PST\n", false},
+
+	{"ExampleTime_Format", _xtest.ExampleTime_Format, "default format: 2015-03-07 11:06:39 -0800 PST\nUnix format: Sat Mar  7 11:06:39 PST 2015\nSame, in UTC: Sat Mar  7 19:06:39 UTC 2015\n\nFormats:\n\nBasic           \"Mon Jan 2 15:04:05 MST 2006\" gives \"Sat Mar 7 11:06:39 PST 2015\"\nNo pad          \"<2>\" gives \"<7>\"\nSpaces          \"<_2>\" gives \"< 7>\"\nZeros           \"<02>\" gives \"<07>\"\nSuppressed pad  \"04:05\" gives \"06:39\"\nUnix            \"Mon Jan _2 15:04:05 MST 2006\" gives \"Sat Mar  7 11:06:39 PST 2015\"\nAM/PM           \"3PM==3pm==15h\" gives \"11AM==11am==11h\"\nNo fraction     \"Mon Jan _2 15:04:05 MST 2006\" gives \"Sat Mar  7 11:06:39 PST 2015\"\n0s for fraction \"15:04:05.00000\" gives \"11:06:39.12340\"\n9s for fraction \"15:04:05.99999999\" gives \"11:06:39.1234\"\n", false},
+
+	{"ExampleParse", _xtest.ExampleParse, "2013-02-03 19:54:00 -0800 PST\n2013-02-03 00:00:00 +0000 UTC\n2006-01-02 15:04:05 +0000 UTC\n2006-01-02 15:04:05 +0700 +0700\nerror parsing time \"2006-01-02T15:04:05Z07:00\": extra text: 07:00\n", false},
+
+	{"ExampleParseInLocation", _xtest.ExampleParseInLocation, "2012-07-09 05:02:00 +0200 CEST\n2012-07-09 00:00:00 +0200 CEST\n", false},
+
+	{"ExampleTime_Unix", _xtest.ExampleTime_Unix, "2001-09-09 01:46:40 +0000 UTC\n2001-09-09 01:46:40 +0000 UTC\n2001-09-09 01:46:40 +0000 UTC\n1000000000\n1000000000000000000\n", false},
+
+	{"ExampleTime_Round", _xtest.ExampleTime_Round, "t.Round(   1ns) = 12:15:30.918273645\nt.Round(   1µs) = 12:15:30.918274\nt.Round(   1ms) = 12:15:30.918\nt.Round(    1s) = 12:15:31\nt.Round(    2s) = 12:15:30\nt.Round(  1m0s) = 12:16:00\nt.Round( 10m0s) = 12:20:00\nt.Round(1h0m0s) = 12:00:00\n", false},
+
+	{"ExampleTime_Truncate", _xtest.ExampleTime_Truncate, "t.Truncate(  1ns) = 12:15:30.918273645\nt.Truncate(  1µs) = 12:15:30.918273\nt.Truncate(  1ms) = 12:15:30.918\nt.Truncate(   1s) = 12:15:30\nt.Truncate(   2s) = 12:15:30\nt.Truncate( 1m0s) = 12:15:00\nt.Truncate(10m0s) = 12:10:00\n", false},
+
+	{"ExampleLocation", _xtest.ExampleLocation, "true\n", false},
+
+	{"ExampleTime_Add", _xtest.ExampleTime_Add, "start = 2009-01-01 12:00:00 +0000 UTC\nstart.Add(time.Second * 10) = 2009-01-01 12:00:10 +0000 UTC\nstart.Add(time.Minute * 10) = 2009-01-01 12:10:00 +0000 UTC\nstart.Add(time.Hour * 10) = 2009-01-01 22:00:00 +0000 UTC\nstart.Add(time.Hour * 24 * 10) = 2009-01-11 12:00:00 +0000 UTC\n", false},
+
+	{"ExampleTime_AddDate", _xtest.ExampleTime_AddDate, "oneDayLater: start.AddDate(0, 0, 1) = 2009-01-02 00:00:00 +0000 UTC\noneMonthLater: start.AddDate(0, 1, 0) = 2009-02-01 00:00:00 +0000 UTC\noneYearLater: start.AddDate(1, 0, 0) = 2010-01-01 00:00:00 +0000 UTC\n", false},
+
+	{"ExampleTime_After", _xtest.ExampleTime_After, "year3000.After(year2000) = true\nyear2000.After(year3000) = false\n", false},
+
+	{"ExampleTime_Before", _xtest.ExampleTime_Before, "year2000.Before(year3000) = true\nyear3000.Before(year2000) = false\n", false},
+
+	{"ExampleTime_Date", _xtest.ExampleTime_Date, "year = 2000\nmonth = February\nday = 1\n", false},
+
+	{"ExampleTime_Day", _xtest.ExampleTime_Day, "day = 1\n", false},
+
+	{"ExampleTime_Equal", _xtest.ExampleTime_Equal, "datesEqualUsingEqualOperator = false\ndatesEqualUsingFunction = true\n", false},
+
+	{"ExampleTime_String", _xtest.ExampleTime_String, "withNanoseconds = 2000-02-01 12:13:14.000000015 +0000 UTC\nwithoutNanoseconds = 2000-02-01 12:13:14 +0000 UTC\n", false},
+
+	{"ExampleTime_Sub", _xtest.ExampleTime_Sub, "difference = 12h0m0s\n", false},
+
+	{"ExampleTime_AppendFormat", _xtest.ExampleTime_AppendFormat, "Time: 11:00AM\n", false},
+
+	{"ExampleFixedZone", _xtest.ExampleFixedZone, "The time is: 10 Nov 09 23:00 UTC-8\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "time"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

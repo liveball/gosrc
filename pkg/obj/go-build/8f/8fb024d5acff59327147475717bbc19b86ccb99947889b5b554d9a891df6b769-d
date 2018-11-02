@@ -1,0 +1,8 @@
+./arch.go
+./arch_mips.go
+./intrinsics.go
+./stubs.go
+./sys.go
+./zgoarch_mips.go
+./zgoos_linux.go
+./zversion.go

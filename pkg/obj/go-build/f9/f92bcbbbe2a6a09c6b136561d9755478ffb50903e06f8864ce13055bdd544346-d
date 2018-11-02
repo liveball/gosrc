@@ -1,0 +1,69 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "crypto/sha1"
+
+
+	_xtest "crypto/sha1_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestGolden", _test.TestGolden},
+
+	{"TestGoldenMarshal", _test.TestGoldenMarshal},
+
+	{"TestSize", _test.TestSize},
+
+	{"TestBlockSize", _test.TestBlockSize},
+
+	{"TestBlockGeneric", _test.TestBlockGeneric},
+
+	{"TestOutOfBoundsRead", _xtest.TestOutOfBoundsRead},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkHash8Bytes", _test.BenchmarkHash8Bytes},
+
+	{"BenchmarkHash320Bytes", _test.BenchmarkHash320Bytes},
+
+	{"BenchmarkHash1K", _test.BenchmarkHash1K},
+
+	{"BenchmarkHash8K", _test.BenchmarkHash8K},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleNew", _xtest.ExampleNew, "59 7f 6a 54 00 10 f9 4c 15 d7 18 06 a9 9a 2c 87 10 e7 47 bd\n", false},
+
+	{"ExampleSum", _xtest.ExampleSum, "af 06 49 23 bb f2 30 15 96 aa c4 c2 73 ba 32 17 8e bc 4a 96\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "crypto/sha1"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

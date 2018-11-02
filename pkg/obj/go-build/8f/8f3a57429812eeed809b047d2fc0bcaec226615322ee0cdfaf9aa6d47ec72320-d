@@ -1,0 +1,95 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "mime"
+
+
+	_xtest "mime_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestEncodeWord", _test.TestEncodeWord},
+
+	{"TestEncodedWordLength", _test.TestEncodedWordLength},
+
+	{"TestDecodeWord", _test.TestDecodeWord},
+
+	{"TestDecodeHeader", _test.TestDecodeHeader},
+
+	{"TestCharsetDecoder", _test.TestCharsetDecoder},
+
+	{"TestCharsetDecoderError", _test.TestCharsetDecoderError},
+
+	{"TestConsumeToken", _test.TestConsumeToken},
+
+	{"TestConsumeValue", _test.TestConsumeValue},
+
+	{"TestConsumeMediaParam", _test.TestConsumeMediaParam},
+
+	{"TestParseMediaType", _test.TestParseMediaType},
+
+	{"TestParseMediaTypeBogus", _test.TestParseMediaTypeBogus},
+
+	{"TestFormatMediaType", _test.TestFormatMediaType},
+
+	{"TestTypeByExtension", _test.TestTypeByExtension},
+
+	{"TestTypeByExtension_LocalData", _test.TestTypeByExtension_LocalData},
+
+	{"TestTypeByExtensionCase", _test.TestTypeByExtensionCase},
+
+	{"TestExtensionsByType", _test.TestExtensionsByType},
+
+	{"TestLookupMallocs", _test.TestLookupMallocs},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkQEncodeWord", _test.BenchmarkQEncodeWord},
+
+	{"BenchmarkQDecodeWord", _test.BenchmarkQDecodeWord},
+
+	{"BenchmarkQDecodeHeader", _test.BenchmarkQDecodeHeader},
+
+	{"BenchmarkTypeByExtension", _test.BenchmarkTypeByExtension},
+
+	{"BenchmarkExtensionsByType", _test.BenchmarkExtensionsByType},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleWordEncoder_Encode", _xtest.ExampleWordEncoder_Encode, "=?utf-8?q?=C2=A1Hola,_se=C3=B1or!?=\nHello!\n=?UTF-8?b?wqFIb2xhLCBzZcOxb3Ih?=\n=?ISO-8859-1?q?Caf=E9?=\n", false},
+
+	{"ExampleWordDecoder_Decode", _xtest.ExampleWordDecoder_Decode, "¡Hola, señor!\nHELLO!\n", false},
+
+	{"ExampleWordDecoder_DecodeHeader", _xtest.ExampleWordDecoder_DecodeHeader, "Éric <eric@example.org>, Anaïs <anais@example.org>\n¡Hola, señor!\nHELLO WORLD!\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "mime"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

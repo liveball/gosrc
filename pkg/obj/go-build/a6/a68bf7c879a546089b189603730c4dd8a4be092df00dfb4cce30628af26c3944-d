@@ -1,0 +1,7 @@
+./example_test.go
+./format_test.go
+./mono_test.go
+./sleep_test.go
+./tick_test.go
+./time_test.go
+./zoneinfo_test.go

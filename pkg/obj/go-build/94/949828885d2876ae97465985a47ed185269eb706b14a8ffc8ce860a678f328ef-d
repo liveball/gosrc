@@ -1,0 +1,347 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "math"
+
+
+	_xtest "math_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestNaN", _xtest.TestNaN},
+
+	{"TestAcos", _xtest.TestAcos},
+
+	{"TestAcosh", _xtest.TestAcosh},
+
+	{"TestAsin", _xtest.TestAsin},
+
+	{"TestAsinh", _xtest.TestAsinh},
+
+	{"TestAtan", _xtest.TestAtan},
+
+	{"TestAtanh", _xtest.TestAtanh},
+
+	{"TestAtan2", _xtest.TestAtan2},
+
+	{"TestCbrt", _xtest.TestCbrt},
+
+	{"TestCeil", _xtest.TestCeil},
+
+	{"TestCopysign", _xtest.TestCopysign},
+
+	{"TestCos", _xtest.TestCos},
+
+	{"TestCosh", _xtest.TestCosh},
+
+	{"TestErf", _xtest.TestErf},
+
+	{"TestErfc", _xtest.TestErfc},
+
+	{"TestErfinv", _xtest.TestErfinv},
+
+	{"TestErfcinv", _xtest.TestErfcinv},
+
+	{"TestExp", _xtest.TestExp},
+
+	{"TestExpm1", _xtest.TestExpm1},
+
+	{"TestExp2", _xtest.TestExp2},
+
+	{"TestAbs", _xtest.TestAbs},
+
+	{"TestDim", _xtest.TestDim},
+
+	{"TestFloor", _xtest.TestFloor},
+
+	{"TestMax", _xtest.TestMax},
+
+	{"TestMin", _xtest.TestMin},
+
+	{"TestMod", _xtest.TestMod},
+
+	{"TestFrexp", _xtest.TestFrexp},
+
+	{"TestGamma", _xtest.TestGamma},
+
+	{"TestHypot", _xtest.TestHypot},
+
+	{"TestHypotGo", _xtest.TestHypotGo},
+
+	{"TestIlogb", _xtest.TestIlogb},
+
+	{"TestJ0", _xtest.TestJ0},
+
+	{"TestJ1", _xtest.TestJ1},
+
+	{"TestJn", _xtest.TestJn},
+
+	{"TestLdexp", _xtest.TestLdexp},
+
+	{"TestLgamma", _xtest.TestLgamma},
+
+	{"TestLog", _xtest.TestLog},
+
+	{"TestLogb", _xtest.TestLogb},
+
+	{"TestLog10", _xtest.TestLog10},
+
+	{"TestLog1p", _xtest.TestLog1p},
+
+	{"TestLog2", _xtest.TestLog2},
+
+	{"TestModf", _xtest.TestModf},
+
+	{"TestNextafter32", _xtest.TestNextafter32},
+
+	{"TestNextafter64", _xtest.TestNextafter64},
+
+	{"TestPow", _xtest.TestPow},
+
+	{"TestPow10", _xtest.TestPow10},
+
+	{"TestRemainder", _xtest.TestRemainder},
+
+	{"TestRound", _xtest.TestRound},
+
+	{"TestRoundToEven", _xtest.TestRoundToEven},
+
+	{"TestSignbit", _xtest.TestSignbit},
+
+	{"TestSin", _xtest.TestSin},
+
+	{"TestSincos", _xtest.TestSincos},
+
+	{"TestSinh", _xtest.TestSinh},
+
+	{"TestSqrt", _xtest.TestSqrt},
+
+	{"TestTan", _xtest.TestTan},
+
+	{"TestTanh", _xtest.TestTanh},
+
+	{"TestTrunc", _xtest.TestTrunc},
+
+	{"TestY0", _xtest.TestY0},
+
+	{"TestY1", _xtest.TestY1},
+
+	{"TestYn", _xtest.TestYn},
+
+	{"TestLargeCos", _xtest.TestLargeCos},
+
+	{"TestLargeSin", _xtest.TestLargeSin},
+
+	{"TestLargeSincos", _xtest.TestLargeSincos},
+
+	{"TestLargeTan", _xtest.TestLargeTan},
+
+	{"TestFloatMinMax", _xtest.TestFloatMinMax},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkAcos", _xtest.BenchmarkAcos},
+
+	{"BenchmarkAcosh", _xtest.BenchmarkAcosh},
+
+	{"BenchmarkAsin", _xtest.BenchmarkAsin},
+
+	{"BenchmarkAsinh", _xtest.BenchmarkAsinh},
+
+	{"BenchmarkAtan", _xtest.BenchmarkAtan},
+
+	{"BenchmarkAtanh", _xtest.BenchmarkAtanh},
+
+	{"BenchmarkAtan2", _xtest.BenchmarkAtan2},
+
+	{"BenchmarkCbrt", _xtest.BenchmarkCbrt},
+
+	{"BenchmarkCeil", _xtest.BenchmarkCeil},
+
+	{"BenchmarkCopysign", _xtest.BenchmarkCopysign},
+
+	{"BenchmarkCos", _xtest.BenchmarkCos},
+
+	{"BenchmarkCosh", _xtest.BenchmarkCosh},
+
+	{"BenchmarkErf", _xtest.BenchmarkErf},
+
+	{"BenchmarkErfc", _xtest.BenchmarkErfc},
+
+	{"BenchmarkErfinv", _xtest.BenchmarkErfinv},
+
+	{"BenchmarkErfcinv", _xtest.BenchmarkErfcinv},
+
+	{"BenchmarkExp", _xtest.BenchmarkExp},
+
+	{"BenchmarkExpGo", _xtest.BenchmarkExpGo},
+
+	{"BenchmarkExpm1", _xtest.BenchmarkExpm1},
+
+	{"BenchmarkExp2", _xtest.BenchmarkExp2},
+
+	{"BenchmarkExp2Go", _xtest.BenchmarkExp2Go},
+
+	{"BenchmarkAbs", _xtest.BenchmarkAbs},
+
+	{"BenchmarkDim", _xtest.BenchmarkDim},
+
+	{"BenchmarkFloor", _xtest.BenchmarkFloor},
+
+	{"BenchmarkMax", _xtest.BenchmarkMax},
+
+	{"BenchmarkMin", _xtest.BenchmarkMin},
+
+	{"BenchmarkMod", _xtest.BenchmarkMod},
+
+	{"BenchmarkFrexp", _xtest.BenchmarkFrexp},
+
+	{"BenchmarkGamma", _xtest.BenchmarkGamma},
+
+	{"BenchmarkHypot", _xtest.BenchmarkHypot},
+
+	{"BenchmarkHypotGo", _xtest.BenchmarkHypotGo},
+
+	{"BenchmarkIlogb", _xtest.BenchmarkIlogb},
+
+	{"BenchmarkJ0", _xtest.BenchmarkJ0},
+
+	{"BenchmarkJ1", _xtest.BenchmarkJ1},
+
+	{"BenchmarkJn", _xtest.BenchmarkJn},
+
+	{"BenchmarkLdexp", _xtest.BenchmarkLdexp},
+
+	{"BenchmarkLgamma", _xtest.BenchmarkLgamma},
+
+	{"BenchmarkLog", _xtest.BenchmarkLog},
+
+	{"BenchmarkLogb", _xtest.BenchmarkLogb},
+
+	{"BenchmarkLog1p", _xtest.BenchmarkLog1p},
+
+	{"BenchmarkLog10", _xtest.BenchmarkLog10},
+
+	{"BenchmarkLog2", _xtest.BenchmarkLog2},
+
+	{"BenchmarkModf", _xtest.BenchmarkModf},
+
+	{"BenchmarkNextafter32", _xtest.BenchmarkNextafter32},
+
+	{"BenchmarkNextafter64", _xtest.BenchmarkNextafter64},
+
+	{"BenchmarkPowInt", _xtest.BenchmarkPowInt},
+
+	{"BenchmarkPowFrac", _xtest.BenchmarkPowFrac},
+
+	{"BenchmarkPow10Pos", _xtest.BenchmarkPow10Pos},
+
+	{"BenchmarkPow10Neg", _xtest.BenchmarkPow10Neg},
+
+	{"BenchmarkRound", _xtest.BenchmarkRound},
+
+	{"BenchmarkRoundToEven", _xtest.BenchmarkRoundToEven},
+
+	{"BenchmarkRemainder", _xtest.BenchmarkRemainder},
+
+	{"BenchmarkSignbit", _xtest.BenchmarkSignbit},
+
+	{"BenchmarkSin", _xtest.BenchmarkSin},
+
+	{"BenchmarkSincos", _xtest.BenchmarkSincos},
+
+	{"BenchmarkSinh", _xtest.BenchmarkSinh},
+
+	{"BenchmarkSqrtIndirect", _xtest.BenchmarkSqrtIndirect},
+
+	{"BenchmarkSqrtLatency", _xtest.BenchmarkSqrtLatency},
+
+	{"BenchmarkSqrtIndirectLatency", _xtest.BenchmarkSqrtIndirectLatency},
+
+	{"BenchmarkSqrtGoLatency", _xtest.BenchmarkSqrtGoLatency},
+
+	{"BenchmarkSqrtPrime", _xtest.BenchmarkSqrtPrime},
+
+	{"BenchmarkTan", _xtest.BenchmarkTan},
+
+	{"BenchmarkTanh", _xtest.BenchmarkTanh},
+
+	{"BenchmarkTrunc", _xtest.BenchmarkTrunc},
+
+	{"BenchmarkY0", _xtest.BenchmarkY0},
+
+	{"BenchmarkY1", _xtest.BenchmarkY1},
+
+	{"BenchmarkYn", _xtest.BenchmarkYn},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleAcos", _xtest.ExampleAcos, "0.00\n", false},
+
+	{"ExampleAcosh", _xtest.ExampleAcosh, "0.00\n", false},
+
+	{"ExampleAsin", _xtest.ExampleAsin, "0.00\n", false},
+
+	{"ExampleAsinh", _xtest.ExampleAsinh, "0.00\n", false},
+
+	{"ExampleAtan", _xtest.ExampleAtan, "0.00\n", false},
+
+	{"ExampleAtan2", _xtest.ExampleAtan2, "0.00\n", false},
+
+	{"ExampleAtanh", _xtest.ExampleAtanh, "0.00\n", false},
+
+	{"ExampleCos", _xtest.ExampleCos, "0.00\n", false},
+
+	{"ExampleCosh", _xtest.ExampleCosh, "1.00\n", false},
+
+	{"ExampleSin", _xtest.ExampleSin, "0.00\n", false},
+
+	{"ExampleSincos", _xtest.ExampleSincos, "0.00, 1.00\n", false},
+
+	{"ExampleSinh", _xtest.ExampleSinh, "0.00\n", false},
+
+	{"ExampleTan", _xtest.ExampleTan, "0.00\n", false},
+
+	{"ExampleTanh", _xtest.ExampleTanh, "0.00\n", false},
+
+	{"ExampleSqrt", _xtest.ExampleSqrt, "5.0\n", false},
+
+	{"ExampleCeil", _xtest.ExampleCeil, "2.0\n", false},
+
+	{"ExampleFloor", _xtest.ExampleFloor, "1.0\n", false},
+
+	{"ExamplePow", _xtest.ExamplePow, "8.0\n", false},
+
+	{"ExamplePow10", _xtest.ExamplePow10, "100.0\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "math"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

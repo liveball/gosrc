@@ -1,0 +1,16 @@
+./abort.go
+./badtraceback.go
+./crash.go
+./deadlock.go
+./gc.go
+./gettid_none.go
+./lockosthread.go
+./main.go
+./map.go
+./memprof.go
+./misc.go
+./panicrace.go
+./signal.go
+./stringconcat.go
+./timeprof.go
+./traceback_ancestors.go

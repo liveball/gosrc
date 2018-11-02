@@ -1,0 +1,63 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "hash/crc32"
+
+
+	_xtest "hash/crc32_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestSimple", _test.TestSimple},
+
+	{"TestGoldenMarshal", _test.TestGoldenMarshal},
+
+	{"TestMarshalTableMismatch", _test.TestMarshalTableMismatch},
+
+	{"TestSlicing", _test.TestSlicing},
+
+	{"TestArchIEEE", _test.TestArchIEEE},
+
+	{"TestArchCastagnoli", _test.TestArchCastagnoli},
+
+	{"TestGolden", _test.TestGolden},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkCRC32", _test.BenchmarkCRC32},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleMakeTable", _xtest.ExampleMakeTable, "2964d064\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "hash/crc32"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

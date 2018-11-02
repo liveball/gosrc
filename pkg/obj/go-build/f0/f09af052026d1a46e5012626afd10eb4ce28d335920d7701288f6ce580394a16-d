@@ -1,0 +1,63 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "golang_org/x/crypto/poly1305"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestBurnin", _test.TestBurnin},
+
+	{"TestSum", _test.TestSum},
+
+	{"TestSumUnaligned", _test.TestSumUnaligned},
+
+	{"TestSumGeneric", _test.TestSumGeneric},
+
+	{"TestSumGenericUnaligned", _test.TestSumGenericUnaligned},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"Benchmark64", _test.Benchmark64},
+
+	{"Benchmark1K", _test.Benchmark1K},
+
+	{"Benchmark64Unaligned", _test.Benchmark64Unaligned},
+
+	{"Benchmark1KUnaligned", _test.Benchmark1KUnaligned},
+
+	{"Benchmark2M", _test.Benchmark2M},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "golang_org/x/crypto/poly1305"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

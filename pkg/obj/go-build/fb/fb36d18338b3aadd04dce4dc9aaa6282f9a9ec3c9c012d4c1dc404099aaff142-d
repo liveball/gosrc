@@ -1,0 +1,51 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "internal/trace"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestCorruptedInputs", _test.TestCorruptedInputs},
+
+	{"TestParseCanned", _test.TestParseCanned},
+
+	{"TestParseVersion", _test.TestParseVersion},
+
+	{"TestTimestampOverflow", _test.TestTimestampOverflow},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "internal/trace"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

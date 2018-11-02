@@ -1,0 +1,263 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "encoding/gob"
+
+
+	_xtest "encoding/gob_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestUintCodec", _test.TestUintCodec},
+
+	{"TestIntCodec", _test.TestIntCodec},
+
+	{"TestScalarEncInstructions", _test.TestScalarEncInstructions},
+
+	{"TestScalarDecInstructions", _test.TestScalarDecInstructions},
+
+	{"TestEndToEnd", _test.TestEndToEnd},
+
+	{"TestOverflow", _test.TestOverflow},
+
+	{"TestNesting", _test.TestNesting},
+
+	{"TestAutoIndirection", _test.TestAutoIndirection},
+
+	{"TestReorderedFields", _test.TestReorderedFields},
+
+	{"TestIgnoredFields", _test.TestIgnoredFields},
+
+	{"TestBadRecursiveType", _test.TestBadRecursiveType},
+
+	{"TestIndirectSliceMapArray", _test.TestIndirectSliceMapArray},
+
+	{"TestInterface", _test.TestInterface},
+
+	{"TestInterfaceBasic", _test.TestInterfaceBasic},
+
+	{"TestInterfacePointer", _test.TestInterfacePointer},
+
+	{"TestIgnoreInterface", _test.TestIgnoreInterface},
+
+	{"TestUnexportedFields", _test.TestUnexportedFields},
+
+	{"TestDebugSingleton", _test.TestDebugSingleton},
+
+	{"TestDebugStruct", _test.TestDebugStruct},
+
+	{"TestFuzz", _test.TestFuzz},
+
+	{"TestFuzzRegressions", _test.TestFuzzRegressions},
+
+	{"TestFuzzOneByte", _test.TestFuzzOneByte},
+
+	{"TestErrorInvalidTypeId", _test.TestErrorInvalidTypeId},
+
+	{"TestBasicEncoderDecoder", _test.TestBasicEncoderDecoder},
+
+	{"TestEncodeIntSlice", _test.TestEncodeIntSlice},
+
+	{"TestEncoderDecoder", _test.TestEncoderDecoder},
+
+	{"TestWrongTypeDecoder", _test.TestWrongTypeDecoder},
+
+	{"TestUnsupported", _test.TestUnsupported},
+
+	{"TestTypeToPtrType", _test.TestTypeToPtrType},
+
+	{"TestPtrTypeToType", _test.TestPtrTypeToType},
+
+	{"TestTypeToPtrPtrPtrPtrType", _test.TestTypeToPtrPtrPtrPtrType},
+
+	{"TestSlice", _test.TestSlice},
+
+	{"TestValueError", _test.TestValueError},
+
+	{"TestArray", _test.TestArray},
+
+	{"TestRecursiveMapType", _test.TestRecursiveMapType},
+
+	{"TestRecursiveSliceType", _test.TestRecursiveSliceType},
+
+	{"TestDefaultsInArray", _test.TestDefaultsInArray},
+
+	{"TestSingletons", _test.TestSingletons},
+
+	{"TestStructNonStruct", _test.TestStructNonStruct},
+
+	{"TestInterfaceIndirect", _test.TestInterfaceIndirect},
+
+	{"TestDecodeIntoNothing", _test.TestDecodeIntoNothing},
+
+	{"TestIgnoreRecursiveType", _test.TestIgnoreRecursiveType},
+
+	{"TestNestedInterfaces", _test.TestNestedInterfaces},
+
+	{"TestMapBug1", _test.TestMapBug1},
+
+	{"TestGobMapInterfaceEncode", _test.TestGobMapInterfaceEncode},
+
+	{"TestSliceReusesMemory", _test.TestSliceReusesMemory},
+
+	{"TestBadCount", _test.TestBadCount},
+
+	{"TestSequentialDecoder", _test.TestSequentialDecoder},
+
+	{"TestChanFuncIgnored", _test.TestChanFuncIgnored},
+
+	{"TestSliceIncompatibility", _test.TestSliceIncompatibility},
+
+	{"TestGobPtrSlices", _test.TestGobPtrSlices},
+
+	{"TestPtrToMapOfMap", _test.TestPtrToMapOfMap},
+
+	{"TestCatchInvalidNilValue", _test.TestCatchInvalidNilValue},
+
+	{"TestTopLevelNilPointer", _test.TestTopLevelNilPointer},
+
+	{"TestNilPointerPanics", _test.TestNilPointerPanics},
+
+	{"TestNilPointerInsideInterface", _test.TestNilPointerInsideInterface},
+
+	{"TestMutipleEncodingsOfBadType", _test.TestMutipleEncodingsOfBadType},
+
+	{"Test29ElementSlice", _test.Test29ElementSlice},
+
+	{"TestErrorForHugeSlice", _test.TestErrorForHugeSlice},
+
+	{"TestBadData", _test.TestBadData},
+
+	{"TestHugeWriteFails", _test.TestHugeWriteFails},
+
+	{"TestGobEncoderField", _test.TestGobEncoderField},
+
+	{"TestGobEncoderValueField", _test.TestGobEncoderValueField},
+
+	{"TestGobEncoderIndirectField", _test.TestGobEncoderIndirectField},
+
+	{"TestGobEncoderArrayField", _test.TestGobEncoderArrayField},
+
+	{"TestGobEncoderIndirectArrayField", _test.TestGobEncoderIndirectArrayField},
+
+	{"TestGobEncoderFieldsOfDifferentType", _test.TestGobEncoderFieldsOfDifferentType},
+
+	{"TestGobEncoderValueEncoder", _test.TestGobEncoderValueEncoder},
+
+	{"TestGobEncoderValueThenPointer", _test.TestGobEncoderValueThenPointer},
+
+	{"TestGobEncoderPointerThenValue", _test.TestGobEncoderPointerThenValue},
+
+	{"TestGobEncoderFieldTypeError", _test.TestGobEncoderFieldTypeError},
+
+	{"TestGobEncoderStructSingleton", _test.TestGobEncoderStructSingleton},
+
+	{"TestGobEncoderNonStructSingleton", _test.TestGobEncoderNonStructSingleton},
+
+	{"TestGobEncoderIgnoreStructField", _test.TestGobEncoderIgnoreStructField},
+
+	{"TestGobEncoderIgnoreNonStructField", _test.TestGobEncoderIgnoreNonStructField},
+
+	{"TestGobEncoderIgnoreNilEncoder", _test.TestGobEncoderIgnoreNilEncoder},
+
+	{"TestGobEncoderExtraIndirect", _test.TestGobEncoderExtraIndirect},
+
+	{"TestGobEncodeIsZero", _test.TestGobEncodeIsZero},
+
+	{"TestGobEncodePtrError", _test.TestGobEncodePtrError},
+
+	{"TestNetIP", _test.TestNetIP},
+
+	{"TestCountEncodeMallocs", _test.TestCountEncodeMallocs},
+
+	{"TestCountDecodeMallocs", _test.TestCountDecodeMallocs},
+
+	{"TestBasic", _test.TestBasic},
+
+	{"TestReregistration", _test.TestReregistration},
+
+	{"TestArrayType", _test.TestArrayType},
+
+	{"TestSliceType", _test.TestSliceType},
+
+	{"TestMapType", _test.TestMapType},
+
+	{"TestStructType", _test.TestStructType},
+
+	{"TestRegistration", _test.TestRegistration},
+
+	{"TestRegistrationNaming", _test.TestRegistrationNaming},
+
+	{"TestStressParallel", _test.TestStressParallel},
+
+	{"TestTypeRace", _test.TestTypeRace},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkEndToEndPipe", _test.BenchmarkEndToEndPipe},
+
+	{"BenchmarkEndToEndByteBuffer", _test.BenchmarkEndToEndByteBuffer},
+
+	{"BenchmarkEndToEndSliceByteBuffer", _test.BenchmarkEndToEndSliceByteBuffer},
+
+	{"BenchmarkEncodeComplex128Slice", _test.BenchmarkEncodeComplex128Slice},
+
+	{"BenchmarkEncodeFloat64Slice", _test.BenchmarkEncodeFloat64Slice},
+
+	{"BenchmarkEncodeInt32Slice", _test.BenchmarkEncodeInt32Slice},
+
+	{"BenchmarkEncodeStringSlice", _test.BenchmarkEncodeStringSlice},
+
+	{"BenchmarkEncodeInterfaceSlice", _test.BenchmarkEncodeInterfaceSlice},
+
+	{"BenchmarkDecodeComplex128Slice", _test.BenchmarkDecodeComplex128Slice},
+
+	{"BenchmarkDecodeFloat64Slice", _test.BenchmarkDecodeFloat64Slice},
+
+	{"BenchmarkDecodeInt32Slice", _test.BenchmarkDecodeInt32Slice},
+
+	{"BenchmarkDecodeStringSlice", _test.BenchmarkDecodeStringSlice},
+
+	{"BenchmarkDecodeInterfaceSlice", _test.BenchmarkDecodeInterfaceSlice},
+
+	{"BenchmarkDecodeMap", _test.BenchmarkDecodeMap},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"Example_encodeDecode", _xtest.Example_encodeDecode, "{3 4 5}\n", false},
+
+	{"Example_interface", _xtest.Example_interface, "5\n10\n15\n", false},
+
+	{"Example_basic", _xtest.Example_basic, "\"Pythagoras\": {3, 4}\n\"Treehouse\": {1782, 1841}\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "encoding/gob"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

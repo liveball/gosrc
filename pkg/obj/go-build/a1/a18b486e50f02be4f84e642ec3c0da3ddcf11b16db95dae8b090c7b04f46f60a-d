@@ -1,0 +1,69 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "crypto/md5"
+
+
+	_xtest "crypto/md5_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestGolden", _test.TestGolden},
+
+	{"TestGoldenMarshal", _test.TestGoldenMarshal},
+
+	{"TestLarge", _test.TestLarge},
+
+	{"TestBlockGeneric", _test.TestBlockGeneric},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkHash8Bytes", _test.BenchmarkHash8Bytes},
+
+	{"BenchmarkHash1K", _test.BenchmarkHash1K},
+
+	{"BenchmarkHash8K", _test.BenchmarkHash8K},
+
+	{"BenchmarkHash8BytesUnaligned", _test.BenchmarkHash8BytesUnaligned},
+
+	{"BenchmarkHash1KUnaligned", _test.BenchmarkHash1KUnaligned},
+
+	{"BenchmarkHash8KUnaligned", _test.BenchmarkHash8KUnaligned},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleNew", _xtest.ExampleNew, "e2c569be17396eca2a2e3c11578123ed\n", false},
+
+	{"ExampleSum", _xtest.ExampleSum, "b0804ec967f48520697662a204f5fe72\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "crypto/md5"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

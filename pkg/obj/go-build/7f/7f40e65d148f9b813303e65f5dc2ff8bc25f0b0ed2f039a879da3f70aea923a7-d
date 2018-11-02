@@ -1,0 +1,12 @@
+./decode.go
+./doc.go
+./field.go
+./gnu.go
+./inst.go
+./plan9.go
+./tables.go
+./decode_test.go
+./ext_test.go
+./field_test.go
+./objdump_test.go
+./objdumpext_test.go

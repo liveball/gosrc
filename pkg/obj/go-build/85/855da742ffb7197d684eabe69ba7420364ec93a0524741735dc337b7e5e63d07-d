@@ -1,0 +1,7 @@
+# test log
+getenv TMPDIR
+stat /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/go-writeCache-test-621717922
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/go-writeCache-test-621717922/file.tmp-257984665
+stat /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/go-writeCache-test-621717922/file
+stat /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/go-writeCache-test-621717922
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/go-writeCache-test-621717922

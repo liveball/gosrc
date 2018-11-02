@@ -1,0 +1,4 @@
+# test log
+open testdata/386-plan9-exec
+open testdata/amd64-plan9-exec
+open file.go

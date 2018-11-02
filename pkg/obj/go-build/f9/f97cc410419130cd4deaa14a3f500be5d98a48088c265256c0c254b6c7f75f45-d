@@ -1,0 +1,20 @@
+//line /Users/fpf/Downloads/go1.11.1/src/cmd/go/testdata/src/coverdep/p.go:1
+package p
+
+import _ "coverdep/p1"
+
+func F() {GoCover_0_346236323730373738356538.Count[0] = 1;
+}
+
+var GoCover_0_346236323730373738356538 = struct {
+	Count     [1]uint32
+	Pos       [3 * 1]uint32
+	NumStmt   [1]uint16
+} {
+	Pos: [3 * 1]uint32{
+		5, 6, 0x2000b, // [0]
+	},
+	NumStmt: [1]uint16{
+		0, // 0
+	},
+}

@@ -1,0 +1,113 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "math/rand"
+
+
+	_xtest "math/rand_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestConcurrent", _test.TestConcurrent},
+
+	{"TestStandardNormalValues", _test.TestStandardNormalValues},
+
+	{"TestNonStandardNormalValues", _test.TestNonStandardNormalValues},
+
+	{"TestStandardExponentialValues", _test.TestStandardExponentialValues},
+
+	{"TestNonStandardExponentialValues", _test.TestNonStandardExponentialValues},
+
+	{"TestNormTables", _test.TestNormTables},
+
+	{"TestExpTables", _test.TestExpTables},
+
+	{"TestFloat32", _test.TestFloat32},
+
+	{"TestReadUniformity", _test.TestReadUniformity},
+
+	{"TestReadEmpty", _test.TestReadEmpty},
+
+	{"TestReadByOneByte", _test.TestReadByOneByte},
+
+	{"TestReadSeedReset", _test.TestReadSeedReset},
+
+	{"TestShuffleSmall", _test.TestShuffleSmall},
+
+	{"TestUniformFactorial", _test.TestUniformFactorial},
+
+	{"TestRegress", _xtest.TestRegress},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkInt63Threadsafe", _test.BenchmarkInt63Threadsafe},
+
+	{"BenchmarkInt63Unthreadsafe", _test.BenchmarkInt63Unthreadsafe},
+
+	{"BenchmarkIntn1000", _test.BenchmarkIntn1000},
+
+	{"BenchmarkInt63n1000", _test.BenchmarkInt63n1000},
+
+	{"BenchmarkInt31n1000", _test.BenchmarkInt31n1000},
+
+	{"BenchmarkFloat32", _test.BenchmarkFloat32},
+
+	{"BenchmarkFloat64", _test.BenchmarkFloat64},
+
+	{"BenchmarkPerm3", _test.BenchmarkPerm3},
+
+	{"BenchmarkPerm30", _test.BenchmarkPerm30},
+
+	{"BenchmarkPerm30ViaShuffle", _test.BenchmarkPerm30ViaShuffle},
+
+	{"BenchmarkShuffleOverhead", _test.BenchmarkShuffleOverhead},
+
+	{"BenchmarkRead3", _test.BenchmarkRead3},
+
+	{"BenchmarkRead64", _test.BenchmarkRead64},
+
+	{"BenchmarkRead1000", _test.BenchmarkRead1000},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"Example", _xtest.Example, "Magic 8-Ball says: As I see it yes\n", false},
+
+	{"Example_rand", _xtest.Example_rand, "Float32     0.2635776           0.6358173           0.6718283\nFloat64     0.628605430454327   0.4504798828572669  0.9562755949377957\nExpFloat64  0.3362240648200941  1.4256072328483647  0.24354758816173044\nNormFloat64 0.17233959114940064 1.577014951434847   0.04259129641113857\nInt31       1501292890          1486668269          182840835\nInt63       3546343826724305832 5724354148158589552 5239846799706671610\nUint32      2760229429          296659907           1922395059\nIntn(10)    1                   2                   5\nInt31n(10)  4                   7                   8\nInt63n(10)  7                   6                   3\nPerm        [1 4 2 3 0]         [4 2 1 3 0]         [1 2 4 0 3]\n", false},
+
+	{"ExamplePerm", _xtest.ExamplePerm, "1\n2\n0\n", true},
+
+	{"ExampleShuffle", _xtest.ExampleShuffle, "[mouth my the of runs corners from ink]\n", false},
+
+	{"ExampleShuffle_slicesInUnison", _xtest.ExampleShuffle_slicesInUnison, "C: 3\nD: 4\nA: 1\nE: 5\nB: 2\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "math/rand"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

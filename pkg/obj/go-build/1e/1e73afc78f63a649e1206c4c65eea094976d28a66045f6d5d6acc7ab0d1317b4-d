@@ -1,0 +1,1508 @@
+# command-line-arguments
+"".approx STEXT size=828 args=0x8 locals=0x30
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	TEXT	"".approx(SB), $48-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	BLS	776
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	MOVW.W	R14, -52(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:17)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:17)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:17)	MOVD	"".x(FP), F0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:17)	MOVD	F0, 4(R13)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:17)	CALL	math.Ceil(SB)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:17)	MOVD	12(R13), F0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:17)	MOVD	F0, "".sink64(SB)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:22)	MOVD	"".x(FP), F0
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:22)	MOVD	F0, 4(R13)
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:22)	CALL	math.Floor(SB)
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:22)	MOVD	12(R13), F0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:22)	MOVD	F0, "".sink64+8(SB)
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVD	"".x(FP), F0
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVD	F0, math.f-24(SP)
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	math.f-20(SP), R0
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SRL	$20, R0, R1
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	AND	$2047, R1, R1
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	math.f-24(SP), R2
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$1023, R1
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	BHS	596
+	0x0068 00104 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SRL	$31, R0, R0
+	0x006c 00108 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SLL	$31, R0, R0
+	0x0070 00112 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$1022, R1
+	0x0078 00120 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	BNE	132
+	0x007c 00124 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ORR	$1072693248, R0, R0
+	0x0084 00132 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	$0, R1
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	R1, math.b-8(SP)
+	0x008c 00140 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	R0, math.b-4(SP)
+	0x0090 00144 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVD	math.b-8(SP), F1
+	0x0094 00148 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVD	F1, "".sink64+16(SB)
+	0x009c 00156 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:32)	MOVD	F0, 4(R13)
+	0x00a0 00160 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:32)	CALL	math.Trunc(SB)
+	0x00a4 00164 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:32)	MOVD	12(R13), F0
+	0x00a8 00168 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:32)	MOVD	F0, "".sink64+24(SB)
+	0x00b0 00176 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVD	"".x(FP), F0
+	0x00b4 00180 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVD	F0, math.f-32(SP)
+	0x00b8 00184 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	math.f-28(SP), R0
+	0x00bc 00188 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	$20, R0, R1
+	0x00c0 00192 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	AND	$2047, R1, R1
+	0x00c8 00200 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	math.f-32(SP), R2
+	0x00cc 00204 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$1023, R1
+	0x00d4 00212 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	BLO	492
+	0x00d8 00216 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	RSB	$1075, R1, R3
+	0x00e0 00224 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	R3, R2, R4
+	0x00e4 00228 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R3
+	0x00e8 00232 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R4
+	0x00ec 00236 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ADD	$-1043, R1, R3
+	0x00f4 00244 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SLL	R3, R0, R5
+	0x00f8 00248 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R3
+	0x00fc 00252 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R5
+	0x0100 00256 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R4, R5, R3
+	0x0104 00260 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	RSB	$1043, R1, R4
+	0x010c 00268 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	R4, R0, R5
+	0x0110 00272 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R4
+	0x0114 00276 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R5
+	0x0118 00280 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R3, R5, R3
+	0x011c 00284 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	AND	$1, R3, R3
+	0x0120 00288 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ADD.S	$-1, R3, R3
+	0x0128 00296 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ADD	$-1023, R1, R4
+	0x0130 00304 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	$0, R5
+	0x0134 00308 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ADC	$524287, R5, R5
+	0x013c 00316 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	R4, R3, R3
+	0x0140 00320 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R4
+	0x0144 00324 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R3
+	0x0148 00328 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	RSB	$1055, R1, R6
+	0x0150 00336 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SLL	R6, R5, R7
+	0x0154 00340 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R6
+	0x0158 00344 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R7
+	0x015c 00348 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R3, R7, R3
+	0x0160 00352 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ADD	$-1055, R1, R1
+	0x0168 00360 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	R1, R5, R7
+	0x016c 00364 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R1
+	0x0170 00368 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R7
+	0x0174 00372 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R3, R7, R3
+	0x0178 00376 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ADD.S	R2, R3, R7
+	0x017c 00380 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	R4, R5, R5
+	0x0180 00384 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R4
+	0x0184 00388 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R5
+	0x0188 00392 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ADD.S	R2, R3, R2
+	0x018c 00396 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ADC	R5, R0, R0
+	0x0190 00400 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	$1048575, R2
+	0x0194 00404 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	R4, R2, R3
+	0x0198 00408 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R4
+	0x019c 00412 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R3
+	0x01a0 00416 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	BIC	R3, R0, R0
+	0x01a4 00420 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	$-1, R3
+	0x01a8 00424 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	R4, R3, R3
+	0x01ac 00428 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SLL	R6, R2, R4
+	0x01b0 00432 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R3
+	0x01b4 00436 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R6
+	0x01b8 00440 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R4
+	0x01bc 00444 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R3, R4, R3
+	0x01c0 00448 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	R1, R2, R2
+	0x01c4 00452 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$256, R1
+	0x01c8 00456 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.CS	$0, R2
+	0x01cc 00460 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R3, R2, R1
+	0x01d0 00464 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	BIC	R1, R7, R1
+	0x01d4 00468 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	R1, math.b-16(SP)
+	0x01d8 00472 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	R0, math.b-12(SP)
+	0x01dc 00476 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVD	math.b-16(SP), F0
+	0x01e0 00480 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVD	F0, "".sink64+32(SB)
+	0x01e8 00488 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:36)	MOVW.P	52(R13), R15
+	0x01ec 00492 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$1022, R1
+	0x01f4 00500 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	BNE	584
+	0x01f8 00504 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	$20, R2, R1
+	0x01fc 00508 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R0<<12, R1, R1
+	0x0200 00512 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	BFXU	$20, R2, $0, R2
+	0x0204 00516 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R1<<20, R2, R2
+	0x0208 00520 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	$12, R1, R1
+	0x020c 00524 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$0, R1
+	0x0210 00528 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	$0, R1
+	0x0214 00532 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.NE	$1, R1
+	0x0218 00536 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$0, R2
+	0x021c 00540 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	$0, R2
+	0x0220 00544 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW.NE	$1, R2
+	0x0224 00548 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	R2, R1, R1
+	0x0228 00552 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	CMP	$0, R1
+	0x022c 00556 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	BEQ	584
+	0x0230 00560 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	$31, R0, R0
+	0x0234 00564 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SLL	$31, R0, R0
+	0x0238 00568 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	ORR	$1072693248, R0, R0
+	0x0240 00576 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	MOVW	$0, R1
+	0x0244 00580 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	JMP	468
+	0x0248 00584 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SRL	$31, R0, R1
+	0x024c 00588 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	SLL	$31, R1, R0
+	0x0250 00592 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:35)	JMP	576
+	0x0254 00596 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$1075, R1
+	0x025c 00604 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	BHS	760
+	0x0260 00608 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	RSB	$1055, R1, R3
+	0x0268 00616 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	$524288, R4
+	0x026c 00620 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SLL	R3, R4, R5
+	0x0270 00624 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$256, R3
+	0x0274 00628 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW.CS	$0, R5
+	0x0278 00632 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ADD	$-1055, R1, R6
+	0x0280 00640 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SRL	R6, R4, R7
+	0x0284 00644 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$256, R6
+	0x0288 00648 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW.CS	$0, R7
+	0x028c 00652 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ORR	R5, R7, R5
+	0x0290 00656 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ADD.S	R2, R5, R7
+	0x0294 00660 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ADD	$-1023, R1, R1
+	0x029c 00668 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SRL	R1, R4, R4
+	0x02a0 00672 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$256, R1
+	0x02a4 00676 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW.CS	$0, R4
+	0x02a8 00680 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ADD.S	R2, R5, R2
+	0x02ac 00684 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ADC	R4, R0, R0
+	0x02b0 00688 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	$1048575, R2
+	0x02b4 00692 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SRL	R1, R2, R4
+	0x02b8 00696 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$256, R1
+	0x02bc 00700 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW.CS	$0, R4
+	0x02c0 00704 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	BIC	R4, R0, R0
+	0x02c4 00708 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SLL	R3, R2, R4
+	0x02c8 00712 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	$-1, R5
+	0x02cc 00716 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SRL	R1, R5, R1
+	0x02d0 00720 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW.CS	$0, R1
+	0x02d4 00724 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$256, R3
+	0x02d8 00728 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW.CS	$0, R4
+	0x02dc 00732 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ORR	R1, R4, R1
+	0x02e0 00736 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	SRL	R6, R2, R3
+	0x02e4 00740 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	CMP	$256, R6
+	0x02e8 00744 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW.CS	$0, R3
+	0x02ec 00748 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	ORR	R1, R3, R1
+	0x02f0 00752 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	BIC	R1, R7, R1
+	0x02f4 00756 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	JMP	136
+	0x02f8 00760 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	$-1, R5
+	0x02fc 00764 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	R2, R1
+	0x0300 00768 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	MOVW	$1048575, R2
+	0x0304 00772 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	JMP	136
+	0x0308 00776 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:27)	NOP
+	0x0308 00776 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	PCDATA	$0, $-1
+	0x0308 00776 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	PCDATA	$2, $-1
+	0x0308 00776 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	MOVW	R14, R3
+	0x030c 00780 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	CALL	runtime.morestack_noctxt(SB)
+	0x0310 00784 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	JMP	0
+	0x0314 00788 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	JMP	0(PC)
+	0x0318 00792 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	"".sink64(SB)
+	0x031c 00796 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	"".sink64+8(SB)
+	0x0320 00800 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	"".sink64+16(SB)
+	0x0324 00804 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	"".sink64+24(SB)
+	0x0328 00808 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	$-1043
+	0x032c 00812 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	$-1023
+	0x0330 00816 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	$-1055
+	0x0334 00820 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	$1048575
+	0x0338 00824 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:13)	WORD	"".sink64+32(SB)
+	0x0000 08 10 9a e5 01 00 5d e1 be 00 00 9a 34 e0 2d e5  ......].....4.-.
+	0x0010 0e 0b 9d ed 01 0b 8d ed 00 00 00 eb 03 0b 9d ed  ................
+	0x0020 f0 b2 9f e5 00 0b 8b ed 0e 0b 9d ed 01 0b 8d ed  ................
+	0x0030 00 00 00 eb 03 0b 9d ed dc b2 9f e5 00 0b 8b ed  ................
+	0x0040 0e 0b 9d ed 07 0b 8d ed 20 00 9d e5 20 1a a0 e1  ........ ... ...
+	0x0050 ff b7 00 e3 0b 10 01 e0 1c 20 9d e5 ff b3 00 e3  ......... ......
+	0x0060 0b 00 51 e1 7a 00 00 2a a0 0f a0 e1 80 0f a0 e1  ..Q.z..*........
+	0x0070 fe b3 00 e3 0b 00 51 e1 01 00 00 1a 03 06 80 e3  ......Q.........
+	0x0080 ff 05 80 e3 00 10 a0 e3 2c 10 8d e5 30 00 8d e5  ........,...0...
+	0x0090 0b 1b 9d ed 84 b2 9f e5 00 1b 8b ed 01 0b 8d ed  ................
+	0x00a0 00 00 00 eb 03 0b 9d ed 74 b2 9f e5 00 0b 8b ed  ........t.......
+	0x00b0 0e 0b 9d ed 05 0b 8d ed 18 00 9d e5 20 1a a0 e1  ............ ...
+	0x00c0 ff b7 00 e3 0b 10 01 e0 14 20 9d e5 ff b3 00 e3  ......... ......
+	0x00d0 0b 00 51 e1 44 00 00 3a 33 b4 00 e3 0b 30 61 e0  ..Q.D..:3....0a.
+	0x00e0 32 43 a0 e1 01 0c 53 e3 00 40 a0 23 34 b2 9f e5  2C....S..@.#4...
+	0x00f0 0b 30 81 e0 10 53 a0 e1 01 0c 53 e3 00 50 a0 23  .0...S....S..P.#
+	0x0100 04 30 85 e1 13 b4 00 e3 0b 40 61 e0 30 54 a0 e1  .0.......@a.0T..
+	0x0110 01 0c 54 e3 00 50 a0 23 03 30 85 e1 01 30 03 e2  ..T..P.#.0...0..
+	0x0120 00 b0 e0 e3 0b 30 93 e0 fc b1 9f e5 0b 40 81 e0  .....0.......@..
+	0x0130 00 50 a0 e3 02 57 a5 e2 01 50 45 e2 33 34 a0 e1  .P...W...PE.34..
+	0x0140 01 0c 54 e3 00 30 a0 23 1f b4 00 e3 0b 60 61 e0  ..T..0.#.....`a.
+	0x0150 15 76 a0 e1 01 0c 56 e3 00 70 a0 23 03 30 87 e1  .v....V..p.#.0..
+	0x0160 c8 b1 9f e5 0b 10 81 e0 35 71 a0 e1 01 0c 51 e3  ........5q....Q.
+	0x0170 00 70 a0 23 03 30 87 e1 02 70 93 e0 35 54 a0 e1  .p.#.0...p..5T..
+	0x0180 01 0c 54 e3 00 50 a0 23 02 20 93 e0 05 00 a0 e0  ..T..P.#. ......
+	0x0190 9c 21 9f e5 32 34 a0 e1 01 0c 54 e3 00 30 a0 23  .!..24....T..0.#
+	0x01a0 03 00 c0 e1 00 30 e0 e3 33 34 a0 e1 12 46 a0 e1  .....0..34...F..
+	0x01b0 00 30 a0 23 01 0c 56 e3 00 40 a0 23 03 30 84 e1  .0.#..V..@.#.0..
+	0x01c0 32 21 a0 e1 01 0c 51 e3 00 20 a0 23 03 10 82 e1  2!....Q.. .#....
+	0x01d0 01 10 c7 e1 24 10 8d e5 28 00 8d e5 09 0b 9d ed  ....$...(.......
+	0x01e0 50 b1 9f e5 00 0b 8b ed 34 f0 9d e4 fe b3 00 e3  P.......4.......
+	0x01f0 0b 00 51 e1 13 00 00 1a 22 1a a0 e1 00 16 81 e1  ..Q.....".......
+	0x0200 52 20 f3 e7 01 2a 82 e1 21 16 a0 e1 00 00 51 e3  R ...*..!.....Q.
+	0x0210 00 10 a0 e3 01 10 a0 13 00 00 52 e3 00 20 a0 e3  ..........R.. ..
+	0x0220 01 20 a0 13 02 10 81 e1 00 00 51 e3 05 00 00 0a  . ........Q.....
+	0x0230 a0 0f a0 e1 80 0f a0 e1 03 06 80 e3 ff 05 80 e3  ................
+	0x0240 00 10 a0 e3 e2 ff ff ea a0 1f a0 e1 81 0f a0 e1  ................
+	0x0250 fa ff ff ea 33 b4 00 e3 0b 00 51 e1 25 00 00 2a  ....3.....Q.%..*
+	0x0260 1f b4 00 e3 0b 30 61 e0 02 47 a0 e3 14 53 a0 e1  .....0a..G...S..
+	0x0270 01 0c 53 e3 00 50 a0 23 b0 b0 9f e5 0b 60 81 e0  ..S..P.#.....`..
+	0x0280 34 76 a0 e1 01 0c 56 e3 00 70 a0 23 05 50 87 e1  4v....V..p.#.P..
+	0x0290 02 70 95 e0 90 b0 9f e5 0b 10 81 e0 34 41 a0 e1  .p..........4A..
+	0x02a0 01 0c 51 e3 00 40 a0 23 02 20 95 e0 04 00 a0 e0  ..Q..@.#. ......
+	0x02b0 7c 20 9f e5 32 41 a0 e1 01 0c 51 e3 00 40 a0 23  | ..2A....Q..@.#
+	0x02c0 04 00 c0 e1 12 43 a0 e1 00 50 e0 e3 35 11 a0 e1  .....C...P..5...
+	0x02d0 00 10 a0 23 01 0c 53 e3 00 40 a0 23 01 10 84 e1  ...#..S..@.#....
+	0x02e0 32 36 a0 e1 01 0c 56 e3 00 30 a0 23 01 10 83 e1  26....V..0.#....
+	0x02f0 01 10 c7 e1 63 ff ff ea 00 50 e0 e3 02 10 a0 e1  ....c....P......
+	0x0300 2c 20 9f e5 5f ff ff ea 0e 30 a0 e1 00 00 00 eb  , .._....0......
+	0x0310 3a ff ff ea fe ff ff ea 00 00 00 00 00 00 00 00  :...............
+	0x0320 00 00 00 00 00 00 00 00 ed fb ff ff 01 fc ff ff  ................
+	0x0330 e1 fb ff ff ff ff 0f 00 00 00 00 00              ............
+	rel 24+4 t=9 math.Ceil+ebfffffe
+	rel 48+4 t=9 math.Floor+ebfffffe
+	rel 160+4 t=9 math.Trunc+ebfffffe
+	rel 780+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 792+4 t=1 "".sink64+0
+	rel 796+4 t=1 "".sink64+8
+	rel 800+4 t=1 "".sink64+10
+	rel 804+4 t=1 "".sink64+18
+	rel 824+4 t=1 "".sink64+20
+"".sqrt STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:38)	TEXT	"".sqrt(SB), LEAF|NOFRAME, $-4-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:38)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:38)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:38)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:45)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:45)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:45)	MOVD	"".x(FP), F0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:45)	SQRTD	F0, F0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:45)	MOVD	F0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:45)	JMP	(R14)
+	0x0000 01 0b 9d ed c0 0b b1 ee 03 0b 8d ed 00 f0 8e e2  ................
+"".abs STEXT size=160 args=0x10 locals=0x20 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	TEXT	"".abs(SB), LEAF, $32-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	BLS	136
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	MOVW.W	R14, -36(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	MOVD	"".x(FP), F0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	MOVD	F0, math.f-24(SP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	MOVW	math.f-20(SP), R0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	MOVW	math.f-24(SP), R1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	SRL	$31, R1, R2
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	ORR	R0<<1, R2, R0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	BFXU	$31, R1, $0, R1
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	ORR	R0<<31, R1, R1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	MOVW	R1, math.b-8(SP)
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	SRL	$1, R0, R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	MOVW	R0, math.b-4(SP)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	MOVD	math.b-8(SP), F0
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:53)	MOVD	F0, "".sink64(SB)
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	MOVD	"".y+8(FP), F0
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	MOVD	F0, math.f-32(SP)
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	MOVW	math.f-28(SP), R0
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	MOVW	math.f-32(SP), R1
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	SRL	$31, R1, R2
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	ORR	R0<<1, R2, R0
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	BFXU	$31, R1, $0, R1
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	ORR	R0<<31, R1, R1
+	0x0068 00104 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	MOVW	R1, math.b-16(SP)
+	0x006c 00108 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	SRL	$1, R0, R0
+	0x0070 00112 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	MOVW	R0, math.b-12(SP)
+	0x0074 00116 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	MOVD	math.b-16(SP), F0
+	0x0078 00120 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	NEGD	F0, F0
+	0x007c 00124 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:58)	MOVD	F0, "".sink64+8(SB)
+	0x0084 00132 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:59)	MOVW.P	36(R13), R15
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:59)	NOP
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	PCDATA	$0, $-1
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	PCDATA	$2, $-1
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	MOVW	R14, R3
+	0x008c 00140 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	CALL	runtime.morestack_noctxt(SB)
+	0x0090 00144 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	JMP	0
+	0x0094 00148 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	JMP	0(PC)
+	0x0098 00152 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	WORD	"".sink64(SB)
+	0x009c 00156 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:49)	WORD	"".sink64+8(SB)
+	0x0000 08 10 9a e5 01 00 5d e1 1e 00 00 9a 24 e0 2d e5  ......].....$.-.
+	0x0010 0a 0b 9d ed 03 0b 8d ed 10 00 9d e5 0c 10 9d e5  ................
+	0x0020 a1 2f a0 e1 80 00 82 e1 51 10 fe e7 80 1f 81 e1  ./......Q.......
+	0x0030 1c 10 8d e5 a0 00 a0 e1 20 00 8d e5 07 0b 9d ed  ........ .......
+	0x0040 50 b0 9f e5 00 0b 8b ed 0c 0b 9d ed 01 0b 8d ed  P...............
+	0x0050 08 00 9d e5 04 10 9d e5 a1 2f a0 e1 80 00 82 e1  ........./......
+	0x0060 51 10 fe e7 80 1f 81 e1 14 10 8d e5 a0 00 a0 e1  Q...............
+	0x0070 18 00 8d e5 05 0b 9d ed 40 0b b1 ee 18 b0 9f e5  ........@.......
+	0x0080 00 0b 8b ed 24 f0 9d e4 0e 30 a0 e1 00 00 00 eb  ....$....0......
+	0x0090 da ff ff ea fe ff ff ea 00 00 00 00 00 00 00 00  ................
+	rel 140+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 152+4 t=1 "".sink64+0
+	rel 156+4 t=1 "".sink64+8
+"".abs32 STEXT size=92 args=0x8 locals=0x10 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	TEXT	"".abs32(SB), LEAF, $16-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	BLS	80
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	MOVW.W	R14, -20(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVF	"".x(FP), F0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVFD	F0, F0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVD	F0, math.f-16(SP)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVW	math.f-12(SP), R0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVW	math.f-16(SP), R1
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	SRL	$31, R1, R2
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	ORR	R0<<1, R2, R0
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	BFXU	$31, R1, $0, R1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	ORR	R0<<31, R1, R1
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVW	R1, math.b-8(SP)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	SRL	$1, R0, R0
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVW	R0, math.b-4(SP)
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVD	math.b-8(SP), F0
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVDF	F0, F0
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVF	F0, "".~r1+4(FP)
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	MOVW.P	20(R13), R15
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:64)	NOP
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	PCDATA	$0, $-1
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	PCDATA	$2, $-1
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	MOVW	R14, R3
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	CALL	runtime.morestack_noctxt(SB)
+	0x0058 00088 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:62)	JMP	0
+	0x0000 08 10 9a e5 01 00 5d e1 10 00 00 9a 14 e0 2d e5  ......].......-.
+	0x0010 06 0a 9d ed c0 0a b7 ee 01 0b 8d ed 08 00 9d e5  ................
+	0x0020 04 10 9d e5 a1 2f a0 e1 80 00 82 e1 51 10 fe e7  ...../......Q...
+	0x0030 80 1f 81 e1 0c 10 8d e5 a0 00 a0 e1 10 00 8d e5  ................
+	0x0040 03 0b 9d ed c0 0b b7 ee 07 0a 8d ed 14 f0 9d e4  ................
+	0x0050 0e 30 a0 e1 00 00 00 eb e8 ff ff ea              .0..........
+	rel 84+4 t=9 runtime.morestack_noctxt+ebfffffe
+"".copysign STEXT size=272 args=0x18 locals=0x48 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	TEXT	"".copysign(SB), LEAF, $72-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	BLS	240
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	MOVW.W	R14, -76(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVD	"".a(FP), F0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVD	F0, math.f-48(SP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVW	math.f-48(SP), R0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVW	math.f-44(SP), R1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVD	"".b+8(FP), F1
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVD	F1, math.f-56(SP)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVW	math.f-52(SP), R2
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	SRL	$31, R0, R3
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	ORR	R1<<1, R3, R1
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	BFXU	$31, R0, $0, R0
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	ORR	R1<<31, R0, R0
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVW	R0, math.b-32(SP)
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	SRL	$31, R2, R0
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	SRL	$1, R1, R1
+	0x0048 00072 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	ORR	R0<<31, R1, R0
+	0x004c 00076 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVW	R0, math.b-28(SP)
+	0x0050 00080 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVD	math.b-32(SP), F1
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:72)	MOVD	F1, "".sink64(SB)
+	0x005c 00092 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	MOVD	"".c+16(FP), F1
+	0x0060 00096 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	MOVD	F1, math.f-40(SP)
+	0x0064 00100 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	MOVW	math.f-40(SP), R0
+	0x0068 00104 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	MOVW	math.f-36(SP), R1
+	0x006c 00108 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	SRL	$31, R0, R2
+	0x0070 00112 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	ORR	R1<<1, R2, R1
+	0x0074 00116 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	BFXU	$31, R0, $0, R0
+	0x0078 00120 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	ORR	R1<<31, R0, R0
+	0x007c 00124 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	MOVW	R0, math.b-16(SP)
+	0x0080 00128 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	SRL	$1, R1, R0
+	0x0084 00132 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	ORR	$-2147483648, R0, R0
+	0x0088 00136 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	MOVW	R0, math.b-12(SP)
+	0x008c 00140 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	MOVD	math.b-16(SP), F2
+	0x0090 00144 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:77)	MOVD	F2, "".sink64+8(SB)
+	0x0098 00152 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:82)	MOVD	F0, math.f-72(SP)
+	0x009c 00156 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:82)	MOVW	math.f-72(SP), R0
+	0x00a0 00160 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:82)	MOVW	math.f-68(SP), R1
+	0x00a4 00164 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:82)	MOVW	R0, math.b-24(SP)
+	0x00a8 00168 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:82)	ORR	$-2147483648, R1, R0
+	0x00ac 00172 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:82)	MOVW	R0, math.b-20(SP)
+	0x00b0 00176 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:82)	MOVD	math.b-24(SP), F0
+	0x00b4 00180 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:82)	MOVD	F0, "".sink64+16(SB)
+	0x00bc 00188 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	MOVD	F1, math.f-64(SP)
+	0x00c0 00192 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	MOVW	math.f-60(SP), R0
+	0x00c4 00196 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	MOVW	$0, R1
+	0x00c8 00200 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	MOVW	R1, math.b-8(SP)
+	0x00cc 00204 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	SRL	$31, R0, R0
+	0x00d0 00208 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	SLL	$31, R0, R0
+	0x00d4 00212 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	ORR	$1072693248, R0, R0
+	0x00dc 00220 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	MOVW	R0, math.b-4(SP)
+	0x00e0 00224 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	MOVD	math.b-8(SP), F0
+	0x00e4 00228 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:87)	MOVD	F0, "".sink64+24(SB)
+	0x00ec 00236 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:88)	MOVW.P	76(R13), R15
+	0x00f0 00240 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:88)	NOP
+	0x00f0 00240 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	PCDATA	$0, $-1
+	0x00f0 00240 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	PCDATA	$2, $-1
+	0x00f0 00240 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	MOVW	R14, R3
+	0x00f4 00244 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	CALL	runtime.morestack_noctxt(SB)
+	0x00f8 00248 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	JMP	0
+	0x00fc 00252 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	JMP	0(PC)
+	0x0100 00256 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	WORD	"".sink64(SB)
+	0x0104 00260 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	WORD	"".sink64+8(SB)
+	0x0108 00264 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	WORD	"".sink64+16(SB)
+	0x010c 00268 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:68)	WORD	"".sink64+24(SB)
+	0x0000 08 10 9a e5 01 00 5d e1 38 00 00 9a 4c e0 2d e5  ......].8...L.-.
+	0x0010 14 0b 9d ed 07 0b 8d ed 1c 00 9d e5 20 10 9d e5  ............ ...
+	0x0020 16 1b 9d ed 05 1b 8d ed 18 20 9d e5 a0 3f a0 e1  ......... ...?..
+	0x0030 81 10 83 e1 50 00 fe e7 81 0f 80 e1 2c 00 8d e5  ....P.......,...
+	0x0040 a2 0f a0 e1 a1 10 a0 e1 80 0f 81 e1 30 00 8d e5  ............0...
+	0x0050 0b 1b 9d ed a4 b0 9f e5 00 1b 8b ed 18 1b 9d ed  ................
+	0x0060 09 1b 8d ed 24 00 9d e5 28 10 9d e5 a0 2f a0 e1  ....$...(..../..
+	0x0070 81 10 82 e1 50 00 fe e7 81 0f 80 e1 3c 00 8d e5  ....P.......<...
+	0x0080 a1 00 a0 e1 02 01 80 e3 40 00 8d e5 0f 2b 9d ed  ........@....+..
+	0x0090 6c b0 9f e5 00 2b 8b ed 01 0b 8d ed 04 00 9d e5  l....+..........
+	0x00a0 08 10 9d e5 34 00 8d e5 02 01 81 e3 38 00 8d e5  ....4.......8...
+	0x00b0 0d 0b 9d ed 4c b0 9f e5 00 0b 8b ed 03 1b 8d ed  ....L...........
+	0x00c0 10 00 9d e5 00 10 a0 e3 44 10 8d e5 a0 0f a0 e1  ........D.......
+	0x00d0 80 0f a0 e1 03 06 80 e3 ff 05 80 e3 48 00 8d e5  ............H...
+	0x00e0 11 0b 9d ed 20 b0 9f e5 00 0b 8b ed 4c f0 9d e4  .... .......L...
+	0x00f0 0e 30 a0 e1 00 00 00 eb c0 ff ff ea fe ff ff ea  .0..............
+	0x0100 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 244+4 t=9 runtime.morestack_noctxt+ebfffffe
+	rel 256+4 t=1 "".sink64+0
+	rel 260+4 t=1 "".sink64+8
+	rel 264+4 t=1 "".sink64+10
+	rel 268+4 t=1 "".sink64+18
+"".fromFloat64 STEXT size=72 args=0x10 locals=0x8 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	TEXT	"".fromFloat64(SB), LEAF, $8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	BLS	60
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	MOVW.W	R14, -12(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	MOVD	"".f64(FP), F0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	MOVD	$(1.0), F1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	ADDD	F1, F0, F0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	MOVD	F0, math.f-8(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	MOVW	math.f-8(SP), R0
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	ADD.S	$1, R0, R0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	MOVW	math.f-4(SP), R1
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	MOVW	R0, "".~r1+8(FP)
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	ADC	$0, R1, R0
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	MOVW	R0, "".~r1+12(FP)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	MOVW.P	12(R13), R15
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:92)	NOP
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	PCDATA	$0, $-1
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	PCDATA	$2, $-1
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	MOVW	R14, R3
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	CALL	runtime.morestack_noctxt(SB)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:90)	JMP	0
+	0x0000 08 10 9a e5 01 00 5d e1 0b 00 00 9a 0c e0 2d e5  ......].......-.
+	0x0010 04 0b 9d ed 00 1b b7 ee 01 0b 30 ee 01 0b 8d ed  ..........0.....
+	0x0020 04 00 9d e5 01 00 90 e2 08 10 9d e5 18 00 8d e5  ................
+	0x0030 00 00 a1 e2 1c 00 8d e5 0c f0 9d e4 0e 30 a0 e1  .............0..
+	0x0040 00 00 00 eb ed ff ff ea                          ........
+	rel 64+4 t=9 runtime.morestack_noctxt+ebfffffe
+"".fromFloat32 STEXT size=60 args=0x8 locals=0x4 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	TEXT	"".fromFloat32(SB), LEAF, $4-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	BLS	48
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	MOVW.W	R14, -8(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	MOVF	"".f32(FP), F0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	MOVF	$(1.0), F1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	ADDF	F1, F0, F0
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	MOVF	F0, math.f-4(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	MOVW	math.f-4(SP), R0
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	ADD	$1, R0, R0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	MOVW	R0, "".~r1+4(FP)
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	MOVW.P	8(R13), R15
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:97)	NOP
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	PCDATA	$0, $-1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	PCDATA	$2, $-1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	MOVW	R14, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	CALL	runtime.morestack_noctxt(SB)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:95)	JMP	0
+	0x0000 08 10 9a e5 01 00 5d e1 08 00 00 9a 08 e0 2d e5  ......].......-.
+	0x0010 03 0a 9d ed 00 1a b7 ee 01 0a 30 ee 01 0a 8d ed  ..........0.....
+	0x0020 04 00 9d e5 01 00 80 e2 10 00 8d e5 08 f0 9d e4  ................
+	0x0030 0e 30 a0 e1 00 00 00 eb f0 ff ff ea              .0..........
+	rel 52+4 t=9 runtime.morestack_noctxt+ebfffffe
+"".toFloat64 STEXT size=72 args=0x10 locals=0x8 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	TEXT	"".toFloat64(SB), LEAF, $8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	BLS	60
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	MOVW.W	R14, -12(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	MOVW	"".u64(FP), R0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	ADD.S	$1, R0, R0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	MOVW	R0, math.b-8(SP)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	MOVW	"".u64+4(FP), R0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	ADC	$0, R0, R0
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	MOVW	R0, math.b-4(SP)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	MOVD	math.b-8(SP), F0
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	MOVD	$(1.0), F1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	ADDD	F1, F0, F0
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	MOVD	F0, "".~r1+8(FP)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	MOVW.P	12(R13), R15
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:102)	NOP
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	PCDATA	$0, $-1
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	PCDATA	$2, $-1
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	MOVW	R14, R3
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	CALL	runtime.morestack_noctxt(SB)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:100)	JMP	0
+	0x0000 08 10 9a e5 01 00 5d e1 0b 00 00 9a 0c e0 2d e5  ......].......-.
+	0x0010 10 00 9d e5 01 00 90 e2 04 00 8d e5 14 00 9d e5  ................
+	0x0020 00 00 a0 e2 08 00 8d e5 01 0b 9d ed 00 1b b7 ee  ................
+	0x0030 01 0b 30 ee 06 0b 8d ed 0c f0 9d e4 0e 30 a0 e1  ..0..........0..
+	0x0040 00 00 00 eb ed ff ff ea                          ........
+	rel 64+4 t=9 runtime.morestack_noctxt+ebfffffe
+"".toFloat32 STEXT size=60 args=0x8 locals=0x4 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	TEXT	"".toFloat32(SB), LEAF, $4-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	MOVW	8(g), R1
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	CMP	R1, R13
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	BLS	48
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	MOVW.W	R14, -8(R13)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	PCDATA	$2, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	PCDATA	$0, $0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	MOVW	"".u32(FP), R0
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	ADD	$1, R0, R0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	MOVW	R0, math.b-4(SP)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	MOVF	math.b-4(SP), F0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	MOVF	$(1.0), F1
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	ADDF	F1, F0, F0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	MOVF	F0, "".~r1+4(FP)
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	MOVW.P	8(R13), R15
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:107)	NOP
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	PCDATA	$0, $-1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	PCDATA	$2, $-1
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	MOVW	R14, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	CALL	runtime.morestack_noctxt(SB)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:105)	JMP	0
+	0x0000 08 10 9a e5 01 00 5d e1 08 00 00 9a 08 e0 2d e5  ......].......-.
+	0x0010 0c 00 9d e5 01 00 80 e2 04 00 8d e5 01 0a 9d ed  ................
+	0x0020 00 1a b7 ee 01 0a 30 ee 04 0a 8d ed 08 f0 9d e4  ......0.........
+	0x0030 0e 30 a0 e1 00 00 00 eb f0 ff ff ea              .0..........
+	rel 52+4 t=9 runtime.morestack_noctxt+ebfffffe
+"".constantCheck64 STEXT size=12 args=0x4 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:113)	TEXT	"".constantCheck64(SB), LEAF|NOFRAME, $-4-4
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:113)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:113)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:113)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:116)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:116)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:116)	MOVW	$0, R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:116)	MOVB	R0, "".~r0(FP)
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:116)	JMP	(R14)
+	0x0000 00 00 a0 e3 04 00 cd e5 00 f0 8e e2              ............
+"".constantCheck32 STEXT size=12 args=0x4 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:119)	TEXT	"".constantCheck32(SB), LEAF|NOFRAME, $-4-4
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:119)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:119)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:119)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:122)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:122)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:122)	MOVW	$1, R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:122)	MOVB	R0, "".~r0(FP)
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:122)	JMP	(R14)
+	0x0000 01 00 a0 e3 04 00 cd e5 00 f0 8e e2              ............
+"".constantConvert32 STEXT size=40 args=0x8 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:128)	TEXT	"".constantConvert32(SB), LEAF|NOFRAME, $-4-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:128)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:128)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:128)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:132)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:132)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:132)	MOVF	"".x(FP), F0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:132)	MOVF	$(1.0), F1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:132)	CMPF	F1, F0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:132)	BLE	32
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:133)	NEGF	F0, F0
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:133)	MOVF	F0, "".~r1+4(FP)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:133)	JMP	(R14)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:135)	MOVF	F0, "".~r1+4(FP)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:135)	JMP	(R14)
+	0x0000 01 0a 9d ed 00 1a b7 ee c1 0a b4 ee 10 fa f1 ee  ................
+	0x0010 02 00 00 da 40 0a b1 ee 02 0a 8d ed 00 f0 8e e2  ....@...........
+	0x0020 02 0a 8d ed 00 f0 8e e2                          ........
+"".constantConvertInt32 STEXT size=32 args=0x8 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:138)	TEXT	"".constantConvertInt32(SB), LEAF|NOFRAME, $-4-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:138)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:138)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:138)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:142)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:142)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:142)	MOVW	"".x(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:142)	CMP	$1065353216, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:142)	BLS	24
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:143)	RSB	$0, R0, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:143)	MOVW	R0, "".~r1+4(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:143)	JMP	(R14)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:145)	MOVW	R0, "".~r1+4(FP)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/math.go:145)	JMP	(R14)
+	0x0000 04 00 9d e5 fe 05 50 e3 02 00 00 9a 00 00 60 e2  ......P.......`.
+	0x0010 08 00 8d e5 00 f0 8e e2 08 00 8d e5 00 f0 8e e2  ................
+type..hash.[8]float64 STEXT dupok size=92 args=0xc locals=0x10
+	0x0000 00000 (<autogenerated>:1)	TEXT	type..hash.[8]float64(SB), DUPOK, $16-12
+	0x0000 00000 (<autogenerated>:1)	MOVW	8(g), R1
+	0x0004 00004 (<autogenerated>:1)	CMP	R1, R13
+	0x0008 00008 (<autogenerated>:1)	BLS	80
+	0x000c 00012 (<autogenerated>:1)	MOVW.W	R14, -20(R13)
+	0x0010 00016 (<autogenerated>:1)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0010 00016 (<autogenerated>:1)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0010 00016 (<autogenerated>:1)	FUNCDATA	$3, gclocals·4d457046703f2a3ff3cf87c94cff859b(SB)
+	0x0010 00016 (<autogenerated>:1)	PCDATA	$2, $0
+	0x0010 00016 (<autogenerated>:1)	PCDATA	$0, $0
+	0x0010 00016 (<autogenerated>:1)	MOVW	$0, R0
+	0x0014 00020 (<autogenerated>:1)	MOVW	"".h+4(FP), R1
+	0x0018 00024 (<autogenerated>:1)	JMP	64
+	0x001c 00028 (<autogenerated>:1)	MOVW	R0, "".i-4(SP)
+	0x0020 00032 (<autogenerated>:1)	PCDATA	$2, $1
+	0x0020 00032 (<autogenerated>:1)	MOVW	"".p(FP), R2
+	0x0024 00036 (<autogenerated>:1)	PCDATA	$2, $2
+	0x0024 00036 (<autogenerated>:1)	ADD	R0<<3, R2, R3
+	0x0028 00040 (<autogenerated>:1)	PCDATA	$2, $0
+	0x0028 00040 (<autogenerated>:1)	MOVW	R3, 4(R13)
+	0x002c 00044 (<autogenerated>:1)	MOVW	R1, 8(R13)
+	0x0030 00048 (<autogenerated>:1)	CALL	runtime.f64hash(SB)
+	0x0034 00052 (<autogenerated>:1)	MOVW	12(R13), R1
+	0x0038 00056 (<autogenerated>:1)	MOVW	"".i-4(SP), R0
+	0x003c 00060 (<autogenerated>:1)	ADD	$1, R0, R0
+	0x0040 00064 (<autogenerated>:1)	CMP	$8, R0
+	0x0044 00068 (<autogenerated>:1)	BLT	28
+	0x0048 00072 (<autogenerated>:1)	PCDATA	$0, $1
+	0x0048 00072 (<autogenerated>:1)	MOVW	R1, "".~r2+8(FP)
+	0x004c 00076 (<autogenerated>:1)	MOVW.P	20(R13), R15
+	0x0050 00080 (<autogenerated>:1)	NOP
+	0x0050 00080 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x0050 00080 (<autogenerated>:1)	PCDATA	$2, $-1
+	0x0050 00080 (<autogenerated>:1)	MOVW	R14, R3
+	0x0054 00084 (<autogenerated>:1)	CALL	runtime.morestack_noctxt(SB)
+	0x0058 00088 (<autogenerated>:1)	JMP	0
+	0x0000 08 10 9a e5 01 00 5d e1 10 00 00 9a 14 e0 2d e5  ......].......-.
+	0x0010 00 00 a0 e3 1c 10 9d e5 08 00 00 ea 10 00 8d e5  ................
+	0x0020 18 20 9d e5 80 31 82 e0 04 30 8d e5 08 10 8d e5  . ...1...0......
+	0x0030 00 00 00 eb 0c 10 9d e5 10 00 9d e5 01 00 80 e2  ................
+	0x0040 08 00 50 e3 f4 ff ff ba 20 10 8d e5 14 f0 9d e4  ..P..... .......
+	0x0050 0e 30 a0 e1 00 00 00 eb e8 ff ff ea              .0..........
+	rel 48+4 t=9 runtime.f64hash+ebfffffe
+	rel 84+4 t=9 runtime.morestack_noctxt+ebfffffe
+type..eq.[8]float64 STEXT dupok size=80 args=0xc locals=0x0 leaf
+	0x0000 00000 (<autogenerated>:1)	TEXT	type..eq.[8]float64(SB), DUPOK|LEAF|NOFRAME, $-4-12
+	0x0000 00000 (<autogenerated>:1)	FUNCDATA	$0, gclocals·fdbf1f5761f6d17e8ae3f0aaecb6a3c5(SB)
+	0x0000 00000 (<autogenerated>:1)	FUNCDATA	$1, gclocals·7d2d5fca80364273fb07d5820a76fef4(SB)
+	0x0000 00000 (<autogenerated>:1)	FUNCDATA	$3, gclocals·03ef5de9c709db4bfb7ab6a7b5c668aa(SB)
+	0x0000 00000 (<autogenerated>:1)	PCDATA	$2, $1
+	0x0000 00000 (<autogenerated>:1)	PCDATA	$0, $1
+	0x0000 00000 (<autogenerated>:1)	MOVW	"".p(FP), R0
+	0x0004 00004 (<autogenerated>:1)	PCDATA	$2, $2
+	0x0004 00004 (<autogenerated>:1)	PCDATA	$0, $2
+	0x0004 00004 (<autogenerated>:1)	MOVW	"".q+4(FP), R1
+	0x0008 00008 (<autogenerated>:1)	MOVW	$0, R2
+	0x000c 00012 (<autogenerated>:1)	JMP	20
+	0x0010 00016 (<autogenerated>:1)	ADD	$1, R2, R2
+	0x0014 00020 (<autogenerated>:1)	CMP	$8, R2
+	0x0018 00024 (<autogenerated>:1)	BGE	68
+	0x001c 00028 (<autogenerated>:1)	PCDATA	$2, $3
+	0x001c 00028 (<autogenerated>:1)	ADD	R2<<3, R0, R3
+	0x0020 00032 (<autogenerated>:1)	PCDATA	$2, $2
+	0x0020 00032 (<autogenerated>:1)	MOVD	(R3), F0
+	0x0024 00036 (<autogenerated>:1)	PCDATA	$2, $3
+	0x0024 00036 (<autogenerated>:1)	ADD	R2<<3, R1, R3
+	0x0028 00040 (<autogenerated>:1)	PCDATA	$2, $2
+	0x0028 00040 (<autogenerated>:1)	MOVD	(R3), F1
+	0x002c 00044 (<autogenerated>:1)	CMPD	F1, F0
+	0x0034 00052 (<autogenerated>:1)	BEQ	16
+	0x0038 00056 (<autogenerated>:1)	PCDATA	$2, $0
+	0x0038 00056 (<autogenerated>:1)	MOVW	$0, R0
+	0x003c 00060 (<autogenerated>:1)	MOVB	R0, "".~r2+8(FP)
+	0x0040 00064 (<autogenerated>:1)	JMP	(R14)
+	0x0044 00068 (<autogenerated>:1)	MOVW	$1, R0
+	0x0048 00072 (<autogenerated>:1)	MOVB	R0, "".~r2+8(FP)
+	0x004c 00076 (<autogenerated>:1)	JMP	(R14)
+	0x0000 04 00 9d e5 08 10 9d e5 00 20 a0 e3 00 00 00 ea  ......... ......
+	0x0010 01 20 82 e2 08 00 52 e3 09 00 00 aa 82 31 80 e0  . ....R......1..
+	0x0020 00 0b 93 ed 82 31 81 e0 00 1b 93 ed c1 0b b4 ee  .....1..........
+	0x0030 10 fa f1 ee f5 ff ff 0a 00 00 a0 e3 0c 00 cd e5  ................
+	0x0040 00 f0 8e e2 01 00 a0 e3 0c 00 cd e5 00 f0 8e e2  ................
+go.info.math.Round$abstract SDWARFINFO dupok size=42
+	0x0000 03 6d 61 74 68 2e 52 6f 75 6e 64 00 01 01 0b 62  .math.Round....b
+	0x0010 69 74 73 00 4a 00 00 00 00 0b 65 00 4b 00 00 00  its.J.....e.K...
+	0x0020 00 10 78 00 00 00 00 00 00 00                    ..x.......
+	rel 21+4 t=28 go.info.uint64+0
+	rel 29+4 t=28 go.info.uint+0
+	rel 37+4 t=28 go.info.float64+0
+go.info.math.Float64bits$abstract SDWARFINFO dupok size=29
+	0x0000 03 6d 61 74 68 2e 46 6c 6f 61 74 36 34 62 69 74  .math.Float64bit
+	0x0010 73 00 01 01 10 66 00 00 00 00 00 00 00           s....f.......
+	rel 24+4 t=28 go.info.float64+0
+go.info.math.Float64frombits$abstract SDWARFINFO dupok size=33
+	0x0000 03 6d 61 74 68 2e 46 6c 6f 61 74 36 34 66 72 6f  .math.Float64fro
+	0x0010 6d 62 69 74 73 00 01 01 10 62 00 00 00 00 00 00  mbits....b......
+	0x0020 00                                               .
+	rel 28+4 t=28 go.info.uint64+0
+go.info.math.RoundToEven$abstract SDWARFINFO dupok size=48
+	0x0000 03 6d 61 74 68 2e 52 6f 75 6e 64 54 6f 45 76 65  .math.RoundToEve
+	0x0010 6e 00 01 01 0b 62 69 74 73 00 70 00 00 00 00 0b  n....bits.p.....
+	0x0020 65 00 71 00 00 00 00 10 78 00 00 00 00 00 00 00  e.q.....x.......
+	rel 27+4 t=28 go.info.uint64+0
+	rel 35+4 t=28 go.info.uint+0
+	rel 43+4 t=28 go.info.float64+0
+go.info.math.Abs$abstract SDWARFINFO dupok size=21
+	0x0000 03 6d 61 74 68 2e 41 62 73 00 01 01 10 78 00 00  .math.Abs....x..
+	0x0010 00 00 00 00 00                                   .....
+	rel 16+4 t=28 go.info.float64+0
+go.info.math.Copysign$abstract SDWARFINFO dupok size=34
+	0x0000 03 6d 61 74 68 2e 43 6f 70 79 73 69 67 6e 00 01  .math.Copysign..
+	0x0010 01 10 78 00 00 00 00 00 00 10 79 00 00 00 00 00  ..x.......y.....
+	0x0020 00 00                                            ..
+	rel 21+4 t=28 go.info.float64+0
+	rel 29+4 t=28 go.info.float64+0
+go.info.math.Float32bits$abstract SDWARFINFO dupok size=29
+	0x0000 03 6d 61 74 68 2e 46 6c 6f 61 74 33 32 62 69 74  .math.Float32bit
+	0x0010 73 00 01 01 10 66 00 00 00 00 00 00 00           s....f.......
+	rel 24+4 t=28 go.info.float32+0
+go.info.math.Float32frombits$abstract SDWARFINFO dupok size=33
+	0x0000 03 6d 61 74 68 2e 46 6c 6f 61 74 33 32 66 72 6f  .math.Float32fro
+	0x0010 6d 62 69 74 73 00 01 01 10 62 00 00 00 00 00 00  mbits....b......
+	0x0020 00                                               .
+	rel 28+4 t=28 go.info.uint32+0
+go.info.math.NaN$abstract SDWARFINFO dupok size=13
+	0x0000 03 6d 61 74 68 2e 4e 61 4e 00 01 01 00           .math.NaN....
+go.loc."".approx SDWARFLOC size=538
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 3c 03 00 00  ............<...
+	0x0010 02 00 91 04 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x0020 00 00 00 00 4c 00 00 00 5c 00 00 00 05 00 93 04  ....L...\.......
+	0x0030 50 93 04 5c 00 00 00 6c 00 00 00 06 00 52 93 04  P..\...l.....R..
+	0x0040 50 93 04 6c 00 00 00 84 00 00 00 05 00 52 93 04  P..l.........R..
+	0x0050 93 04 84 00 00 00 8c 00 00 00 06 00 52 93 04 50  ............R..P
+	0x0060 93 04 8c 00 00 00 a4 00 00 00 06 00 51 93 04 50  ............Q..P
+	0x0070 93 04 9c 02 00 00 b4 02 00 00 06 00 52 93 04 50  ............R..P
+	0x0080 93 04 b4 02 00 00 f4 02 00 00 06 00 57 93 04 50  ............W..P
+	0x0090 93 04 f4 02 00 00 04 03 00 00 06 00 51 93 04 50  ............Q..P
+	0x00a0 93 04 04 03 00 00 3c 03 00 00 05 00 93 04 50 93  ......<.......P.
+	0x00b0 04 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00  ................
+	0x00c0 00 58 00 00 00 88 00 00 00 01 00 51 9c 02 00 00  .X.........Q....
+	0x00d0 d0 02 00 00 01 00 51 00 00 00 00 00 00 00 00 ff  ......Q.........
+	0x00e0 ff ff ff 00 00 00 00 14 00 00 00 3c 03 00 00 02  ...........<....
+	0x00f0 00 91 04 00 00 00 00 00 00 00 00 ff ff ff ff 00  ................
+	0x0100 00 00 00 44 00 00 00 3c 03 00 00 02 00 91 68 00  ...D...<......h.
+	0x0110 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00 8c  ................
+	0x0120 00 00 00 3c 03 00 00 02 00 91 78 00 00 00 00 00  ...<......x.....
+	0x0130 00 00 00 ff ff ff ff 00 00 00 00 bc 00 00 00 cc  ................
+	0x0140 00 00 00 05 00 93 04 50 93 04 cc 00 00 00 94 01  .......P........
+	0x0150 00 00 06 00 52 93 04 50 93 04 94 01 00 00 d4 01  ....R..P........
+	0x0160 00 00 06 00 57 93 04 50 93 04 d4 01 00 00 04 02  ....W..P........
+	0x0170 00 00 06 00 51 93 04 50 93 04 04 02 00 00 34 02  ....Q..P......4.
+	0x0180 00 00 05 00 93 04 50 93 04 40 02 00 00 50 02 00  ......P..@...P..
+	0x0190 00 05 00 93 04 50 93 04 00 00 00 00 00 00 00 00  .....P..........
+	0x01a0 ff ff ff ff 00 00 00 00 c8 00 00 00 68 01 00 00  ............h...
+	0x01b0 01 00 51 68 01 00 00 b0 01 00 00 01 00 54 00 00  ..Qh.........T..
+	0x01c0 00 00 00 00 00 00 ff ff ff ff 00 00 00 00 14 00  ................
+	0x01d0 00 00 3c 03 00 00 02 00 91 04 00 00 00 00 00 00  ..<.............
+	0x01e0 00 00 ff ff ff ff 00 00 00 00 b4 00 00 00 3c 03  ..............<.
+	0x01f0 00 00 02 00 91 60 00 00 00 00 00 00 00 00 ff ff  .....`..........
+	0x0200 ff ff 00 00 00 00 d8 01 00 00 3c 03 00 00 02 00  ..........<.....
+	0x0210 91 70 00 00 00 00 00 00 00 00                    .p........
+	rel 4+4 t=1 "".approx+0
+	rel 32+4 t=1 "".approx+0
+	rel 189+4 t=1 "".approx+0
+	rel 227+4 t=1 "".approx+0
+	rel 255+4 t=1 "".approx+0
+	rel 283+4 t=1 "".approx+0
+	rel 311+4 t=1 "".approx+0
+	rel 420+4 t=1 "".approx+0
+	rel 458+4 t=1 "".approx+0
+	rel 486+4 t=1 "".approx+0
+	rel 514+4 t=1 "".approx+0
+go.info."".approx SDWARFINFO size=229
+	0x0000 02 22 22 2e 61 70 70 72 6f 78 00 00 00 00 00 00  ."".approx......
+	0x0010 00 00 00 01 9c 00 00 00 00 01 0f 78 00 00 0d 00  ...........x....
+	0x0020 00 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 1b 0d 00 00 00 00 00 00 00 00 0d 00  ................
+	0x0040 00 00 00 00 00 00 00 12 00 00 00 00 00 00 00 00  ................
+	0x0050 06 00 00 00 00 00 00 00 00 00 00 00 00 4a 12 00  .............J..
+	0x0060 00 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00 00 5c 12 00 00 00 00 00  .........\......
+	0x0080 00 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00  ................
+	0x0090 00 00 23 0d 00 00 00 00 00 00 00 00 0d 00 00 00  ..#.............
+	0x00a0 00 00 00 00 00 12 00 00 00 00 00 00 00 00 06 00  ................
+	0x00b0 00 00 00 00 00 00 00 00 00 00 00 70 12 00 00 00  ...........p....
+	0x00c0 00 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00  ................
+	0x00d0 00 00 00 00 00 00 00 82 01 12 00 00 00 00 00 00  ................
+	0x00e0 00 00 00 00 00                                   .....
+	rel 11+4 t=1 "".approx+0
+	rel 15+4 t=1 "".approx+33c
+	rel 21+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 31+4 t=28 go.info.float64+0
+	rel 35+4 t=28 go.loc."".approx+0
+	rel 40+4 t=28 go.info.math.Round$abstract+0
+	rel 44+4 t=28 go.range."".approx+0
+	rel 48+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 54+4 t=28 go.info.math.Round$abstract+e
+	rel 58+4 t=28 go.loc."".approx+1c
+	rel 63+4 t=28 go.info.math.Round$abstract+19
+	rel 67+4 t=28 go.loc."".approx+b9
+	rel 72+4 t=28 go.info.math.Round$abstract+21
+	rel 76+4 t=28 go.loc."".approx+df
+	rel 81+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 85+4 t=28 go.range."".approx+30
+	rel 89+4 t=29 gofile..$GOROOT/src/math/floor.go+0
+	rel 95+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 99+4 t=28 go.loc."".approx+fb
+	rel 105+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 109+4 t=1 "".approx+90
+	rel 113+4 t=1 "".approx+94
+	rel 117+4 t=29 gofile..$GOROOT/src/math/floor.go+0
+	rel 123+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 127+4 t=28 go.loc."".approx+117
+	rel 134+4 t=28 go.info.math.RoundToEven$abstract+0
+	rel 138+4 t=28 go.range."".approx+50
+	rel 142+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 148+4 t=28 go.info.math.RoundToEven$abstract+14
+	rel 152+4 t=28 go.loc."".approx+133
+	rel 157+4 t=28 go.info.math.RoundToEven$abstract+1f
+	rel 161+4 t=28 go.loc."".approx+1a0
+	rel 166+4 t=28 go.info.math.RoundToEven$abstract+27
+	rel 170+4 t=28 go.loc."".approx+1c6
+	rel 175+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 179+4 t=28 go.range."".approx+80
+	rel 183+4 t=29 gofile..$GOROOT/src/math/floor.go+0
+	rel 189+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 193+4 t=28 go.loc."".approx+1e2
+	rel 199+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 203+4 t=1 "".approx+1dc
+	rel 207+4 t=1 "".approx+1e0
+	rel 211+4 t=29 gofile..$GOROOT/src/math/floor.go+0
+	rel 218+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 222+4 t=28 go.loc."".approx+1fe
+go.range."".approx SDWARFRANGE size=160
+	0x0000 ff ff ff ff 00 00 00 00 40 00 00 00 48 00 00 00  ........@...H...
+	0x0010 4c 00 00 00 58 00 00 00 5c 00 00 00 90 00 00 00  L...X...\.......
+	0x0020 54 02 00 00 08 03 00 00 00 00 00 00 00 00 00 00  T...............
+	0x0030 ff ff ff ff 00 00 00 00 48 00 00 00 4c 00 00 00  ........H...L...
+	0x0040 58 00 00 00 5c 00 00 00 00 00 00 00 00 00 00 00  X...\...........
+	0x0050 ff ff ff ff 00 00 00 00 b0 00 00 00 b8 00 00 00  ................
+	0x0060 bc 00 00 00 c8 00 00 00 cc 00 00 00 dc 01 00 00  ................
+	0x0070 ec 01 00 00 54 02 00 00 00 00 00 00 00 00 00 00  ....T...........
+	0x0080 ff ff ff ff 00 00 00 00 b8 00 00 00 bc 00 00 00  ................
+	0x0090 c8 00 00 00 cc 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 4+4 t=1 "".approx+0
+	rel 52+4 t=1 "".approx+0
+	rel 84+4 t=1 "".approx+0
+	rel 132+4 t=1 "".approx+0
+go.isstmt."".approx SDWARFMISC size=0
+	0x0000 04 05 01 05 02 01 01 05 02 01 01 02 02 01 01 03  ................
+	0x0010 02 04 01 01 02 02 01 01 02 02 01 01 02 01 01 02  ................
+	0x0020 02 03 01 04 02 01 01 02 02 01 01 02 02 06 01 12  ................
+	0x0030 02 02 01 04 02 01 01 04 02 01 01 05 02 01 01 08  ................
+	0x0040 02 01 01 10 02 01 01 01 02 06 01 0f 02 01 01 05  ................
+	0x0050 02 01 01 01 02 03 01 01 02 02 01 0b 02 05 01 02  ................
+	0x0060 02 01 01 09 02 01 01 03 02 01 01 02 02 01 01 04  ................
+	0x0070 02 0d 00                                         ...
+go.loc."".sqrt SDWARFLOC size=0
+go.info."".sqrt SDWARFINFO size=47
+	0x0000 02 22 22 2e 73 71 72 74 00 00 00 00 00 00 00 00  ."".sqrt........
+	0x0010 00 01 9c 00 00 00 00 01 0e 78 00 00 26 00 00 00  .........x..&...
+	0x0020 00 00 0e 7e 72 31 00 01 26 00 00 00 00 00 00     ...~r1..&......
+	rel 9+4 t=1 "".sqrt+0
+	rel 13+4 t=1 "".sqrt+10
+	rel 19+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 29+4 t=28 go.info.float64+0
+	rel 41+4 t=28 go.info.float64+0
+go.range."".sqrt SDWARFRANGE size=0
+go.isstmt."".sqrt SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".abs SDWARFLOC size=196
+	0x0000 ff ff ff ff 00 00 00 00 4c 00 00 00 a0 00 00 00  ........L.......
+	0x0010 02 00 91 0c 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x0020 00 00 00 00 14 00 00 00 a0 00 00 00 02 00 91 04  ................
+	0x0030 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00  ................
+	0x0040 14 00 00 00 a0 00 00 00 02 00 91 68 00 00 00 00  ...........h....
+	0x0050 00 00 00 00 ff ff ff ff 00 00 00 00 24 00 00 00  ............$...
+	0x0060 a0 00 00 00 02 00 91 78 00 00 00 00 00 00 00 00  .......x........
+	0x0070 ff ff ff ff 00 00 00 00 4c 00 00 00 a0 00 00 00  ........L.......
+	0x0080 02 00 91 0c 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x0090 00 00 00 00 4c 00 00 00 a0 00 00 00 02 00 91 60  ....L..........`
+	0x00a0 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00  ................
+	0x00b0 5c 00 00 00 a0 00 00 00 02 00 91 70 00 00 00 00  \..........p....
+	0x00c0 00 00 00 00                                      ....
+	rel 4+4 t=1 "".abs+0
+	rel 32+4 t=1 "".abs+0
+	rel 60+4 t=1 "".abs+0
+	rel 88+4 t=1 "".abs+0
+	rel 116+4 t=1 "".abs+0
+	rel 144+4 t=1 "".abs+0
+	rel 172+4 t=1 "".abs+0
+go.info."".abs SDWARFINFO size=207
+	0x0000 02 22 22 2e 61 62 73 00 00 00 00 00 00 00 00 00  ."".abs.........
+	0x0010 01 9c 00 00 00 00 01 0e 78 00 00 31 00 00 00 00  ........x..1....
+	0x0020 00 0f 79 00 00 31 00 00 00 00 00 00 00 00 06 00  ..y..1..........
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 35 12 00 00 00  ...........5....
+	0x0040 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 0d 12 00 00 00 00 00 00 00 00  ................
+	0x0060 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 0d 12 00 00 00 00 00 00 00 00 00 00 06 00  ................
+	0x0080 00 00 00 00 00 00 00 00 00 00 00 3a 12 00 00 00  ...........:....
+	0x0090 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 00 00 00 00 00 00 0d 12 00 00 00 00 00 00 00 00  ................
+	0x00b0 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00c0 00 00 0d 12 00 00 00 00 00 00 00 00 00 00 00     ...............
+	rel 8+4 t=1 "".abs+0
+	rel 12+4 t=1 "".abs+a0
+	rel 18+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 28+4 t=28 go.info.float64+0
+	rel 38+4 t=28 go.info.float64+0
+	rel 42+4 t=28 go.loc."".abs+0
+	rel 47+4 t=28 go.info.math.Abs$abstract+0
+	rel 51+4 t=28 go.range."".abs+0
+	rel 55+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 61+4 t=28 go.info.math.Abs$abstract+c
+	rel 65+4 t=28 go.loc."".abs+1c
+	rel 70+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 74+4 t=1 "".abs+18
+	rel 78+4 t=1 "".abs+20
+	rel 82+4 t=29 gofile..$GOROOT/src/math/abs.go+0
+	rel 88+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 92+4 t=28 go.loc."".abs+38
+	rel 98+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 102+4 t=1 "".abs+3c
+	rel 106+4 t=1 "".abs+40
+	rel 110+4 t=29 gofile..$GOROOT/src/math/abs.go+0
+	rel 116+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 120+4 t=28 go.loc."".abs+54
+	rel 127+4 t=28 go.info.math.Abs$abstract+0
+	rel 131+4 t=28 go.range."".abs+20
+	rel 135+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 141+4 t=28 go.info.math.Abs$abstract+c
+	rel 145+4 t=28 go.loc."".abs+70
+	rel 150+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 154+4 t=1 "".abs+50
+	rel 158+4 t=1 "".abs+58
+	rel 162+4 t=29 gofile..$GOROOT/src/math/abs.go+0
+	rel 168+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 172+4 t=28 go.loc."".abs+8c
+	rel 178+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 182+4 t=1 "".abs+74
+	rel 186+4 t=1 "".abs+78
+	rel 190+4 t=29 gofile..$GOROOT/src/math/abs.go+0
+	rel 196+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 200+4 t=28 go.loc."".abs+a8
+go.range."".abs SDWARFRANGE size=64
+	0x0000 ff ff ff ff 00 00 00 00 10 00 00 00 18 00 00 00  ................
+	0x0010 20 00 00 00 3c 00 00 00 00 00 00 00 00 00 00 00   ...<...........
+	0x0020 ff ff ff ff 00 00 00 00 48 00 00 00 50 00 00 00  ........H...P...
+	0x0030 58 00 00 00 74 00 00 00 00 00 00 00 00 00 00 00  X...t...........
+	rel 4+4 t=1 "".abs+0
+	rel 36+4 t=1 "".abs+0
+go.isstmt."".abs SDWARFMISC size=0
+	0x0000 04 05 01 03 02 01 01 07 02 03 01 01 02 01 01 01  ................
+	0x0010 02 01 01 06 02 02 01 02 02 07 00                 ...........
+go.loc."".abs32 SDWARFLOC size=84
+	0x0000 ff ff ff ff 00 00 00 00 18 00 00 00 44 00 00 00  ............D...
+	0x0010 02 00 90 40 00 00 00 00 00 00 00 00 ff ff ff ff  ...@............
+	0x0020 00 00 00 00 14 00 00 00 5c 00 00 00 02 00 91 70  ........\......p
+	0x0030 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00  ................
+	0x0040 28 00 00 00 5c 00 00 00 02 00 91 78 00 00 00 00  (...\......x....
+	0x0050 00 00 00 00                                      ....
+	rel 4+4 t=1 "".abs32+0
+	rel 32+4 t=1 "".abs32+0
+	rel 60+4 t=1 "".abs32+0
+go.info."".abs32 SDWARFINFO size=128
+	0x0000 02 22 22 2e 61 62 73 33 32 00 00 00 00 00 00 00  ."".abs32.......
+	0x0010 00 00 01 9c 00 00 00 00 01 0e 78 00 00 3e 00 00  ..........x..>..
+	0x0020 00 00 00 0e 7e 72 31 00 01 3e 00 00 00 00 00 06  ....~r1..>......
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 40 12 00 00  ............@...
+	0x0040 00 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 0d 12 00 00 00 00 00 00 00  ................
+	0x0060 00 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 0d 12 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 10+4 t=1 "".abs32+0
+	rel 14+4 t=1 "".abs32+5c
+	rel 20+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 30+4 t=28 go.info.float32+0
+	rel 42+4 t=28 go.info.float32+0
+	rel 48+4 t=28 go.info.math.Abs$abstract+0
+	rel 52+4 t=28 go.range."".abs32+0
+	rel 56+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 62+4 t=28 go.info.math.Abs$abstract+c
+	rel 66+4 t=28 go.loc."".abs32+0
+	rel 71+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 75+4 t=1 "".abs32+1c
+	rel 79+4 t=1 "".abs32+24
+	rel 83+4 t=29 gofile..$GOROOT/src/math/abs.go+0
+	rel 89+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 93+4 t=28 go.loc."".abs32+1c
+	rel 99+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 103+4 t=1 "".abs32+40
+	rel 107+4 t=1 "".abs32+44
+	rel 111+4 t=29 gofile..$GOROOT/src/math/abs.go+0
+	rel 117+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 121+4 t=28 go.loc."".abs32+38
+go.range."".abs32 SDWARFRANGE size=32
+	0x0000 ff ff ff ff 00 00 00 00 18 00 00 00 1c 00 00 00  ................
+	0x0010 24 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00  $...@...........
+	rel 4+4 t=1 "".abs32+0
+go.isstmt."".abs32 SDWARFMISC size=0
+	0x0000 04 05 01 01 02 02 01 01 02 01 01 06 02 02 01 02  ................
+	0x0010 02 03 00                                         ...
+go.loc."".copysign SDWARFLOC size=421
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 10 01 00 00  ................
+	0x0010 02 00 91 04 00 00 00 00 00 00 00 00 ff ff ff ff  ................
+	0x0020 00 00 00 00 60 00 00 00 10 01 00 00 02 00 91 14  ....`...........
+	0x0030 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00  ................
+	0x0040 14 00 00 00 10 01 00 00 02 00 91 04 00 00 00 00  ................
+	0x0050 00 00 00 00 ff ff ff ff 00 00 00 00 24 00 00 00  ............$...
+	0x0060 10 01 00 00 02 00 91 0c 00 00 00 00 00 00 00 00  ................
+	0x0070 ff ff ff ff 00 00 00 00 14 00 00 00 10 01 00 00  ................
+	0x0080 02 00 91 50 00 00 00 00 00 00 00 00 ff ff ff ff  ...P............
+	0x0090 00 00 00 00 24 00 00 00 10 01 00 00 02 00 91 48  ....$..........H
+	0x00a0 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00  ................
+	0x00b0 30 00 00 00 10 01 00 00 02 00 91 60 00 00 00 00  0..........`....
+	0x00c0 00 00 00 00 ff ff ff ff 00 00 00 00 60 00 00 00  ............`...
+	0x00d0 10 01 00 00 02 00 91 14 00 00 00 00 00 00 00 00  ................
+	0x00e0 ff ff ff ff 00 00 00 00 60 00 00 00 10 01 00 00  ........`.......
+	0x00f0 02 00 91 58 00 00 00 00 00 00 00 00 ff ff ff ff  ...X............
+	0x0100 00 00 00 00 70 00 00 00 10 01 00 00 02 00 91 70  ....p..........p
+	0x0110 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00  ................
+	0x0120 9c 00 00 00 10 01 00 00 03 00 91 b8 7f 00 00 00  ................
+	0x0130 00 00 00 00 00 ff ff ff ff 00 00 00 00 a8 00 00  ................
+	0x0140 00 10 01 00 00 02 00 91 68 00 00 00 00 00 00 00  ........h.......
+	0x0150 00 ff ff ff ff 00 00 00 00 60 00 00 00 10 01 00  .........`......
+	0x0160 00 02 00 91 14 00 00 00 00 00 00 00 00 ff ff ff  ................
+	0x0170 ff 00 00 00 00 c0 00 00 00 10 01 00 00 02 00 91  ................
+	0x0180 40 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00  @...............
+	0x0190 00 c8 00 00 00 10 01 00 00 02 00 91 78 00 00 00  ............x...
+	0x01a0 00 00 00 00 00                                   .....
+	rel 4+4 t=1 "".copysign+0
+	rel 32+4 t=1 "".copysign+0
+	rel 60+4 t=1 "".copysign+0
+	rel 88+4 t=1 "".copysign+0
+	rel 116+4 t=1 "".copysign+0
+	rel 144+4 t=1 "".copysign+0
+	rel 172+4 t=1 "".copysign+0
+	rel 200+4 t=1 "".copysign+0
+	rel 228+4 t=1 "".copysign+0
+	rel 256+4 t=1 "".copysign+0
+	rel 284+4 t=1 "".copysign+0
+	rel 313+4 t=1 "".copysign+0
+	rel 341+4 t=1 "".copysign+0
+	rel 369+4 t=1 "".copysign+0
+	rel 397+4 t=1 "".copysign+0
+go.info."".copysign SDWARFINFO size=398
+	0x0000 02 22 22 2e 63 6f 70 79 73 69 67 6e 00 00 00 00  ."".copysign....
+	0x0010 00 00 00 00 00 01 9c 00 00 00 00 01 0f 61 00 00  .............a..
+	0x0020 44 00 00 00 00 00 00 00 00 0e 62 00 00 44 00 00  D.........b..D..
+	0x0030 00 00 00 0f 63 00 00 44 00 00 00 00 00 00 00 00  ....c..D........
+	0x0040 06 00 00 00 00 00 00 00 00 00 00 00 00 48 12 00  .............H..
+	0x0050 00 00 00 00 00 00 00 12 00 00 00 00 00 00 00 00  ................
+	0x0060 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 0b 12 00 00 00 00 00 00 00 00 00 05 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00 00 00 00 00 00 0b 12 00  ................
+	0x0090 00 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00  ................
+	0x00a0 00 00 00 00 00 00 00 00 00 0b 12 00 00 00 00 00  ................
+	0x00b0 00 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00  ................
+	0x00c0 00 00 4d 12 00 00 00 00 00 00 00 00 05 00 00 00  ..M.............
+	0x00d0 00 00 00 00 00 00 00 00 00 00 00 00 00 0b 12 00  ................
+	0x00e0 00 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00  ................
+	0x00f0 00 00 00 00 00 00 00 00 00 0b 12 00 00 00 00 00  ................
+	0x0100 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00 00  ................
+	0x0110 00 00 00 00 00 00 52 12 00 00 00 00 00 00 00 00  ......R.........
+	0x0120 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0130 00 00 52 12 00 00 00 00 00 00 00 00 00 06 00 00  ..R.............
+	0x0140 00 00 00 00 00 00 00 00 00 00 57 12 00 00 00 00  ..........W.....
+	0x0150 00 00 00 00 05 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0160 00 00 00 00 00 0b 12 00 00 00 00 00 00 00 00 00  ................
+	0x0170 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0180 00 0b 12 00 00 00 00 00 00 00 00 00 00 00        ..............
+	rel 13+4 t=1 "".copysign+0
+	rel 17+4 t=1 "".copysign+110
+	rel 23+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 33+4 t=28 go.info.float64+0
+	rel 37+4 t=28 go.loc."".copysign+0
+	rel 46+4 t=28 go.info.float64+0
+	rel 56+4 t=28 go.info.float64+0
+	rel 60+4 t=28 go.loc."".copysign+1c
+	rel 65+4 t=28 go.info.math.Copysign$abstract+0
+	rel 69+4 t=28 go.range."".copysign+0
+	rel 73+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 79+4 t=28 go.info.math.Copysign$abstract+11
+	rel 83+4 t=28 go.loc."".copysign+38
+	rel 88+4 t=28 go.info.math.Copysign$abstract+19
+	rel 92+4 t=28 go.loc."".copysign+54
+	rel 97+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 101+4 t=1 "".copysign+18
+	rel 105+4 t=1 "".copysign+20
+	rel 109+4 t=29 gofile..$GOROOT/src/math/copysign.go+0
+	rel 115+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 119+4 t=28 go.loc."".copysign+70
+	rel 125+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 129+4 t=1 "".copysign+28
+	rel 133+4 t=1 "".copysign+2c
+	rel 137+4 t=29 gofile..$GOROOT/src/math/copysign.go+0
+	rel 143+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 147+4 t=28 go.loc."".copysign+8c
+	rel 153+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 157+4 t=1 "".copysign+50
+	rel 161+4 t=1 "".copysign+54
+	rel 165+4 t=29 gofile..$GOROOT/src/math/copysign.go+0
+	rel 171+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 175+4 t=28 go.loc."".copysign+a8
+	rel 182+4 t=28 go.info.math.Copysign$abstract+0
+	rel 186+4 t=28 go.range."".copysign+28
+	rel 190+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 196+4 t=28 go.info.math.Copysign$abstract+11
+	rel 200+4 t=28 go.loc."".copysign+c4
+	rel 205+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 209+4 t=1 "".copysign+64
+	rel 213+4 t=1 "".copysign+6c
+	rel 217+4 t=29 gofile..$GOROOT/src/math/copysign.go+0
+	rel 223+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 227+4 t=28 go.loc."".copysign+e0
+	rel 233+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 237+4 t=1 "".copysign+8c
+	rel 241+4 t=1 "".copysign+90
+	rel 245+4 t=29 gofile..$GOROOT/src/math/copysign.go+0
+	rel 251+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 255+4 t=28 go.loc."".copysign+fc
+	rel 262+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 266+4 t=1 "".copysign+9c
+	rel 270+4 t=1 "".copysign+a4
+	rel 274+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 280+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 284+4 t=28 go.loc."".copysign+118
+	rel 290+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 294+4 t=1 "".copysign+b0
+	rel 298+4 t=1 "".copysign+b4
+	rel 302+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 308+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 312+4 t=28 go.loc."".copysign+135
+	rel 318+4 t=28 go.info.math.Copysign$abstract+0
+	rel 322+4 t=28 go.range."".copysign+48
+	rel 326+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 332+4 t=28 go.info.math.Copysign$abstract+19
+	rel 336+4 t=28 go.loc."".copysign+151
+	rel 341+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 345+4 t=1 "".copysign+c0
+	rel 349+4 t=1 "".copysign+c4
+	rel 353+4 t=29 gofile..$GOROOT/src/math/copysign.go+0
+	rel 359+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 363+4 t=28 go.loc."".copysign+16d
+	rel 369+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 373+4 t=1 "".copysign+e0
+	rel 377+4 t=1 "".copysign+e4
+	rel 381+4 t=29 gofile..$GOROOT/src/math/copysign.go+0
+	rel 387+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 391+4 t=28 go.loc."".copysign+189
+go.range."".copysign SDWARFRANGE size=104
+	0x0000 ff ff ff ff 00 00 00 00 10 00 00 00 18 00 00 00  ................
+	0x0010 20 00 00 00 28 00 00 00 2c 00 00 00 50 00 00 00   ...(...,...P...
+	0x0020 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00  ................
+	0x0030 5c 00 00 00 64 00 00 00 6c 00 00 00 8c 00 00 00  \...d...l.......
+	0x0040 00 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00  ................
+	0x0050 bc 00 00 00 c0 00 00 00 c4 00 00 00 e0 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00                          ........
+	rel 4+4 t=1 "".copysign+0
+	rel 44+4 t=1 "".copysign+0
+	rel 76+4 t=1 "".copysign+0
+go.isstmt."".copysign SDWARFMISC size=0
+	0x0000 04 05 01 03 02 01 01 02 02 01 01 08 02 04 01 03  ................
+	0x0010 02 01 01 08 02 03 01 02 02 01 01 03 02 05 01 07  ................
+	0x0020 02 0b 00                                         ...
+go.loc."".fromFloat64 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 48 00 00 00  ............H...
+	0x0010 02 00 91 78 00 00 00 00 00 00 00 00              ...x........
+	rel 4+4 t=1 "".fromFloat64+0
+go.info."".fromFloat64 SDWARFINFO size=80
+	0x0000 02 22 22 2e 66 72 6f 6d 46 6c 6f 61 74 36 34 00  ."".fromFloat64.
+	0x0010 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e  ................
+	0x0020 66 36 34 00 00 5a 00 00 00 00 00 0e 7e 72 31 00  f64..Z......~r1.
+	0x0030 01 5a 00 00 00 00 00 06 00 00 00 00 00 00 00 00  .Z..............
+	0x0040 00 00 00 00 5c 12 00 00 00 00 00 00 00 00 00 00  ....\...........
+	rel 16+4 t=1 "".fromFloat64+0
+	rel 20+4 t=1 "".fromFloat64+48
+	rel 26+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 38+4 t=28 go.info.float64+0
+	rel 50+4 t=28 go.info.uint64+0
+	rel 56+4 t=28 go.info.math.Float64bits$abstract+0
+	rel 60+4 t=28 go.range."".fromFloat64+0
+	rel 64+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 70+4 t=28 go.info.math.Float64bits$abstract+14
+	rel 74+4 t=28 go.loc."".fromFloat64+0
+go.range."".fromFloat64 SDWARFRANGE size=32
+	0x0000 ff ff ff ff 00 00 00 00 20 00 00 00 24 00 00 00  ........ ...$...
+	0x0010 28 00 00 00 2c 00 00 00 00 00 00 00 00 00 00 00  (...,...........
+	rel 4+4 t=1 "".fromFloat64+0
+go.isstmt."".fromFloat64 SDWARFMISC size=0
+	0x0000 04 05 01 04 02 03 01 03 02 03 00                 ...........
+go.loc."".fromFloat32 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 3c 00 00 00  ............<...
+	0x0010 02 00 91 7c 00 00 00 00 00 00 00 00              ...|........
+	rel 4+4 t=1 "".fromFloat32+0
+go.info."".fromFloat32 SDWARFINFO size=84
+	0x0000 02 22 22 2e 66 72 6f 6d 46 6c 6f 61 74 33 32 00  ."".fromFloat32.
+	0x0010 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e  ................
+	0x0020 66 33 32 00 00 5f 00 00 00 00 00 0e 7e 72 31 00  f32.._......~r1.
+	0x0030 01 5f 00 00 00 00 00 05 00 00 00 00 00 00 00 00  ._..............
+	0x0040 00 00 00 00 00 00 00 00 61 12 00 00 00 00 00 00  ........a.......
+	0x0050 00 00 00 00                                      ....
+	rel 16+4 t=1 "".fromFloat32+0
+	rel 20+4 t=1 "".fromFloat32+3c
+	rel 26+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 38+4 t=28 go.info.float32+0
+	rel 50+4 t=28 go.info.uint32+0
+	rel 56+4 t=28 go.info.math.Float32bits$abstract+0
+	rel 60+4 t=1 "".fromFloat32+20
+	rel 64+4 t=1 "".fromFloat32+24
+	rel 68+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 74+4 t=28 go.info.math.Float32bits$abstract+14
+	rel 78+4 t=28 go.loc."".fromFloat32+0
+go.range."".fromFloat32 SDWARFRANGE size=0
+go.isstmt."".fromFloat32 SDWARFMISC size=0
+	0x0000 04 05 01 03 02 02 01 02 02 03 00                 ...........
+go.loc."".toFloat64 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 1c 00 00 00 48 00 00 00  ............H...
+	0x0010 02 00 91 78 00 00 00 00 00 00 00 00              ...x........
+	rel 4+4 t=1 "".toFloat64+0
+go.info."".toFloat64 SDWARFINFO size=82
+	0x0000 02 22 22 2e 74 6f 46 6c 6f 61 74 36 34 00 00 00  ."".toFloat64...
+	0x0010 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e 75 36  ..............u6
+	0x0020 34 00 00 64 00 00 00 00 00 0e 7e 72 31 00 01 64  4..d......~r1..d
+	0x0030 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 66 12 00 00 00 00 00 00 00 00  ......f.........
+	0x0050 00 00                                            ..
+	rel 14+4 t=1 "".toFloat64+0
+	rel 18+4 t=1 "".toFloat64+48
+	rel 24+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 36+4 t=28 go.info.uint64+0
+	rel 48+4 t=28 go.info.float64+0
+	rel 54+4 t=28 go.info.math.Float64frombits$abstract+0
+	rel 58+4 t=1 "".toFloat64+28
+	rel 62+4 t=1 "".toFloat64+2c
+	rel 66+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 72+4 t=28 go.info.math.Float64frombits$abstract+18
+	rel 76+4 t=28 go.loc."".toFloat64+0
+go.range."".toFloat64 SDWARFRANGE size=0
+go.isstmt."".toFloat64 SDWARFMISC size=0
+	0x0000 04 05 01 05 02 02 01 03 02 03 00                 ...........
+go.loc."".toFloat32 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 14 00 00 00 3c 00 00 00  ............<...
+	0x0010 02 00 91 7c 00 00 00 00 00 00 00 00              ...|........
+	rel 4+4 t=1 "".toFloat32+0
+go.info."".toFloat32 SDWARFINFO size=82
+	0x0000 02 22 22 2e 74 6f 46 6c 6f 61 74 33 32 00 00 00  ."".toFloat32...
+	0x0010 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e 75 33  ..............u3
+	0x0020 32 00 00 69 00 00 00 00 00 0e 7e 72 31 00 01 69  2..i......~r1..i
+	0x0030 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 6b 12 00 00 00 00 00 00 00 00  ......k.........
+	0x0050 00 00                                            ..
+	rel 14+4 t=1 "".toFloat32+0
+	rel 18+4 t=1 "".toFloat32+3c
+	rel 24+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 36+4 t=28 go.info.uint32+0
+	rel 48+4 t=28 go.info.float32+0
+	rel 54+4 t=28 go.info.math.Float32frombits$abstract+0
+	rel 58+4 t=1 "".toFloat32+1c
+	rel 62+4 t=1 "".toFloat32+20
+	rel 66+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 72+4 t=28 go.info.math.Float32frombits$abstract+18
+	rel 76+4 t=28 go.loc."".toFloat32+0
+go.range."".toFloat32 SDWARFRANGE size=0
+go.isstmt."".toFloat32 SDWARFMISC size=0
+	0x0000 04 05 01 02 02 02 01 03 02 03 00                 ...........
+go.loc."".constantCheck64 SDWARFLOC size=0
+go.info."".constantCheck64 SDWARFINFO size=48
+	0x0000 02 22 22 2e 63 6f 6e 73 74 61 6e 74 43 68 65 63  ."".constantChec
+	0x0010 6b 36 34 00 00 00 00 00 00 00 00 00 01 9c 00 00  k64.............
+	0x0020 00 00 01 0e 7e 72 30 00 01 71 00 00 00 00 00 00  ....~r0..q......
+	rel 20+4 t=1 "".constantCheck64+0
+	rel 24+4 t=1 "".constantCheck64+c
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 42+4 t=28 go.info.bool+0
+go.range."".constantCheck64 SDWARFRANGE size=0
+go.isstmt."".constantCheck64 SDWARFMISC size=0
+	0x0000 04 01 01 02 00                                   .....
+go.loc."".constantCheck32 SDWARFLOC size=0
+go.info."".constantCheck32 SDWARFINFO size=48
+	0x0000 02 22 22 2e 63 6f 6e 73 74 61 6e 74 43 68 65 63  ."".constantChec
+	0x0010 6b 33 32 00 00 00 00 00 00 00 00 00 01 9c 00 00  k32.............
+	0x0020 00 00 01 0e 7e 72 30 00 01 77 00 00 00 00 00 00  ....~r0..w......
+	rel 20+4 t=1 "".constantCheck32+0
+	rel 24+4 t=1 "".constantCheck32+c
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 42+4 t=28 go.info.bool+0
+go.range."".constantCheck32 SDWARFRANGE size=0
+go.isstmt."".constantCheck32 SDWARFMISC size=0
+	0x0000 04 01 01 02 00                                   .....
+go.loc."".constantConvert32 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 04 00 00 00 28 00 00 00  ............(...
+	0x0010 02 00 91 04 00 00 00 00 00 00 00 00              ............
+	rel 4+4 t=1 "".constantConvert32+0
+go.info."".constantConvert32 SDWARFINFO size=65
+	0x0000 02 22 22 2e 63 6f 6e 73 74 61 6e 74 43 6f 6e 76  ."".constantConv
+	0x0010 65 72 74 33 32 00 00 00 00 00 00 00 00 00 01 9c  ert32...........
+	0x0020 00 00 00 00 01 0f 78 00 00 80 01 00 00 00 00 00  ......x.........
+	0x0030 00 00 00 0e 7e 72 31 00 01 80 01 00 00 00 00 00  ....~r1.........
+	0x0040 00                                               .
+	rel 22+4 t=1 "".constantConvert32+0
+	rel 26+4 t=1 "".constantConvert32+28
+	rel 32+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 43+4 t=28 go.info.float32+0
+	rel 47+4 t=28 go.loc."".constantConvert32+0
+	rel 59+4 t=28 go.info.float32+0
+go.range."".constantConvert32 SDWARFRANGE size=0
+go.isstmt."".constantConvert32 SDWARFMISC size=0
+	0x0000 04 01 01 04 02 01 01 02 02 01 01 01 00           .............
+go.loc."".constantConvertInt32 SDWARFLOC size=28
+	0x0000 ff ff ff ff 00 00 00 00 04 00 00 00 20 00 00 00  ............ ...
+	0x0010 02 00 91 04 00 00 00 00 00 00 00 00              ............
+	rel 4+4 t=1 "".constantConvertInt32+0
+go.info."".constantConvertInt32 SDWARFINFO size=68
+	0x0000 02 22 22 2e 63 6f 6e 73 74 61 6e 74 43 6f 6e 76  ."".constantConv
+	0x0010 65 72 74 49 6e 74 33 32 00 00 00 00 00 00 00 00  ertInt32........
+	0x0020 00 01 9c 00 00 00 00 01 0f 78 00 00 8a 01 00 00  .........x......
+	0x0030 00 00 00 00 00 00 0e 7e 72 31 00 01 8a 01 00 00  .......~r1......
+	0x0040 00 00 00 00                                      ....
+	rel 25+4 t=1 "".constantConvertInt32+0
+	rel 29+4 t=1 "".constantConvertInt32+20
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/math.go+0
+	rel 46+4 t=28 go.info.uint32+0
+	rel 50+4 t=28 go.loc."".constantConvertInt32+0
+	rel 62+4 t=28 go.info.uint32+0
+go.range."".constantConvertInt32 SDWARFRANGE size=0
+go.isstmt."".constantConvertInt32 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 02 02 01 01 01 00           .............
+"".sink64 SNOPTRBSS size=64
+runtime.gcbits.01 SRODATA dupok size=1
+	0x0000 01                                               .
+type..namedata.*[]float64- SRODATA dupok size=13
+	0x0000 00 00 0a 2a 5b 5d 66 6c 6f 61 74 36 34           ...*[]float64
+type.*[]float64 SRODATA dupok size=36
+	0x0000 04 00 00 00 04 00 00 00 f4 91 61 4f 00 04 04 36  ..........aO...6
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+20
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[]float64-+0
+	rel 32+4 t=1 type.[]float64+0
+type.[]float64 SRODATA dupok size=36
+	0x0000 0c 00 00 00 04 00 00 00 30 33 37 9c 02 04 04 17  ........037.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+0
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[]float64-+0
+	rel 28+4 t=6 type.*[]float64+0
+	rel 32+4 t=1 type.float64+0
+go.loc.type..hash.[8]float64 SDWARFLOC dupok size=94
+	0x0000 ff ff ff ff 00 00 00 00 20 00 00 00 44 00 00 00  ........ ...D...
+	0x0010 02 00 91 7c 44 00 00 00 5c 00 00 00 01 00 50 00  ...|D...\.....P.
+	0x0020 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00 14  ................
+	0x0030 00 00 00 5c 00 00 00 02 00 91 04 00 00 00 00 00  ...\............
+	0x0040 00 00 00 ff ff ff ff 00 00 00 00 38 00 00 00 5c  ...........8...\
+	0x0050 00 00 00 01 00 51 00 00 00 00 00 00 00 00        .....Q........
+	rel 4+4 t=1 type..hash.[8]float64+0
+	rel 43+4 t=1 type..hash.[8]float64+0
+	rel 71+4 t=1 type..hash.[8]float64+0
+go.info.type..hash.[8]float64 SDWARFINFO dupok size=89
+	0x0000 02 74 79 70 65 2e 2e 68 61 73 68 2e 5b 38 5d 66  .type..hash.[8]f
+	0x0010 6c 6f 61 74 36 34 00 00 00 00 00 00 00 00 00 01  loat64..........
+	0x0020 9c 00 00 00 00 01 0a 69 00 01 00 00 00 00 00 00  .......i........
+	0x0030 00 00 0f 70 00 00 01 00 00 00 00 00 00 00 00 0f  ...p............
+	0x0040 68 00 00 01 00 00 00 00 00 00 00 00 0e 7e 72 32  h............~r2
+	0x0050 00 01 01 00 00 00 00 00 00                       .........
+	rel 23+4 t=1 type..hash.[8]float64+0
+	rel 27+4 t=1 type..hash.[8]float64+5c
+	rel 33+4 t=29 gofile..<autogenerated>+0
+	rel 42+4 t=28 go.info.int+0
+	rel 46+4 t=28 go.loc.type..hash.[8]float64+0
+	rel 55+4 t=28 go.info.*[8]float64+0
+	rel 59+4 t=28 go.loc.type..hash.[8]float64+27
+	rel 68+4 t=28 go.info.uintptr+0
+	rel 72+4 t=28 go.loc.type..hash.[8]float64+43
+	rel 83+4 t=28 go.info.uintptr+0
+go.range.type..hash.[8]float64 SDWARFRANGE dupok size=0
+go.isstmt.type..hash.[8]float64 SDWARFMISC dupok size=0
+	0x0000 04 05 01 0b 02 01 01 01 02 01 01 01 02 03 00     ...............
+go.loc.type..eq.[8]float64 SDWARFLOC dupok size=83
+	0x0000 ff ff ff ff 00 00 00 00 18 00 00 00 50 00 00 00  ............P...
+	0x0010 01 00 52 00 00 00 00 00 00 00 00 ff ff ff ff 00  ..R.............
+	0x0020 00 00 00 04 00 00 00 50 00 00 00 02 00 91 04 00  .......P........
+	0x0030 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00 04  ................
+	0x0040 00 00 00 50 00 00 00 02 00 91 08 00 00 00 00 00  ...P............
+	0x0050 00 00 00                                         ...
+	rel 4+4 t=1 type..eq.[8]float64+0
+	rel 31+4 t=1 type..eq.[8]float64+0
+	rel 59+4 t=1 type..eq.[8]float64+0
+go.info.type..eq.[8]float64 SDWARFINFO dupok size=87
+	0x0000 02 74 79 70 65 2e 2e 65 71 2e 5b 38 5d 66 6c 6f  .type..eq.[8]flo
+	0x0010 61 74 36 34 00 00 00 00 00 00 00 00 00 01 9c 00  at64............
+	0x0020 00 00 00 01 0a 69 00 01 00 00 00 00 00 00 00 00  .....i..........
+	0x0030 0f 70 00 00 01 00 00 00 00 00 00 00 00 0f 71 00  .p............q.
+	0x0040 00 01 00 00 00 00 00 00 00 00 0e 7e 72 32 00 01  ...........~r2..
+	0x0050 01 00 00 00 00 00 00                             .......
+	rel 21+4 t=1 type..eq.[8]float64+0
+	rel 25+4 t=1 type..eq.[8]float64+50
+	rel 31+4 t=29 gofile..<autogenerated>+0
+	rel 40+4 t=28 go.info.int+0
+	rel 44+4 t=28 go.loc.type..eq.[8]float64+0
+	rel 53+4 t=28 go.info.*[8]float64+0
+	rel 57+4 t=28 go.loc.type..eq.[8]float64+1b
+	rel 66+4 t=28 go.info.*[8]float64+0
+	rel 70+4 t=28 go.loc.type..eq.[8]float64+37
+	rel 81+4 t=28 go.info.bool+0
+go.range.type..eq.[8]float64 SDWARFRANGE dupok size=0
+go.isstmt.type..eq.[8]float64 SDWARFMISC dupok size=0
+	0x0000 04 01 01 04 02 01 01 08 02 01 01 02 02 01 01 02  ................
+	0x0010 00                                               .
+type..hashfunc.[8]float64 SRODATA dupok size=4
+	0x0000 00 00 00 00                                      ....
+	rel 0+4 t=1 type..hash.[8]float64+0
+type..eqfunc.[8]float64 SRODATA dupok size=4
+	0x0000 00 00 00 00                                      ....
+	rel 0+4 t=1 type..eq.[8]float64+0
+type..alg.[8]float64 SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+4 t=1 type..hashfunc.[8]float64+0
+	rel 4+4 t=1 type..eqfunc.[8]float64+0
+type..namedata.*[8]float64- SRODATA dupok size=14
+	0x0000 00 00 0b 2a 5b 38 5d 66 6c 6f 61 74 36 34        ...*[8]float64
+type.*[8]float64 SRODATA dupok size=36
+	0x0000 04 00 00 00 04 00 00 00 5e 31 96 0a 00 04 04 36  ........^1.....6
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+20
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[8]float64-+0
+	rel 32+4 t=1 type.[8]float64+0
+runtime.gcbits. SRODATA dupok size=0
+type.[8]float64 SRODATA dupok size=44
+	0x0000 40 00 00 00 00 00 00 00 9d 41 3c d7 02 04 04 91  @........A<.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 08 00 00 00              ............
+	rel 16+4 t=1 type..alg.[8]float64+0
+	rel 20+4 t=1 runtime.gcbits.+0
+	rel 24+4 t=5 type..namedata.*[8]float64-+0
+	rel 28+4 t=6 type.*[8]float64+0
+	rel 32+4 t=1 type.float64+0
+	rel 36+4 t=1 type.[]float64+0
+type..importpath.math. SRODATA dupok size=7
+	0x0000 00 00 04 6d 61 74 68                             ...math
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+gclocals·1a65e721a2ccc325b382662e7ffee780 SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·69c1753bd5f81501d95132d08af04464 SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+gclocals·4d457046703f2a3ff3cf87c94cff859b SRODATA dupok size=11
+	0x0000 03 00 00 00 04 00 00 00 00 04 08                 ...........
+gclocals·fdbf1f5761f6d17e8ae3f0aaecb6a3c5 SRODATA dupok size=11
+	0x0000 03 00 00 00 02 00 00 00 03 02 00                 ...........
+gclocals·7d2d5fca80364273fb07d5820a76fef4 SRODATA dupok size=8
+	0x0000 03 00 00 00 00 00 00 00                          ........
+gclocals·03ef5de9c709db4bfb7ab6a7b5c668aa SRODATA dupok size=12
+	0x0000 04 00 00 00 04 00 00 00 00 01 03 0b              ............

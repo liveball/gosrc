@@ -1,0 +1,14 @@
+//line /Users/fpf/Downloads/go1.11.1/src/cmd/go/testdata/src/empty/pkg/pkg.go:1
+package p; import _cover_atomic_ "sync/atomic"
+
+var GoCover_0_366633386339303734383334 = struct {
+	Count     [0]uint32
+	Pos       [3 * 0]uint32
+	NumStmt   [0]uint16
+} {
+	Pos: [3 * 0]uint32{
+	},
+	NumStmt: [0]uint16{
+	},
+}
+var _ = _cover_atomic_.LoadUint32

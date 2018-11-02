@@ -1,0 +1,55 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "net/http/internal"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestChunk", _test.TestChunk},
+
+	{"TestChunkReadMultiple", _test.TestChunkReadMultiple},
+
+	{"TestChunkReaderAllocs", _test.TestChunkReaderAllocs},
+
+	{"TestParseHexUint", _test.TestParseHexUint},
+
+	{"TestChunkReadingIgnoresExtensions", _test.TestChunkReadingIgnoresExtensions},
+
+	{"TestChunkReadPartial", _test.TestChunkReadPartial},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "net/http/internal"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

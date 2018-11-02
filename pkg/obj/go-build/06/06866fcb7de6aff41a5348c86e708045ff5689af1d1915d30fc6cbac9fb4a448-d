@@ -1,0 +1,11 @@
+./allocs.go
+./benchmark.go
+./cover.go
+./example.go
+./match.go
+./testing.go
+./export_test.go
+./helper_test.go
+./helperfuncs_test.go
+./match_test.go
+./sub_test.go

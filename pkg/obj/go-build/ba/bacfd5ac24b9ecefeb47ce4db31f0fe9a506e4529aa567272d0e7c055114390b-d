@@ -1,0 +1,81 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "go/parser"
+
+
+	_xtest "go/parser_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestErrors", _test.TestErrors},
+
+	{"TestParse", _test.TestParse},
+
+	{"TestParseDir", _test.TestParseDir},
+
+	{"TestParseExpr", _test.TestParseExpr},
+
+	{"TestColonEqualsScope", _test.TestColonEqualsScope},
+
+	{"TestVarScope", _test.TestVarScope},
+
+	{"TestObjects", _test.TestObjects},
+
+	{"TestUnresolved", _test.TestUnresolved},
+
+	{"TestImports", _test.TestImports},
+
+	{"TestCommentGroups", _test.TestCommentGroups},
+
+	{"TestLeadAndLineComments", _test.TestLeadAndLineComments},
+
+	{"TestIssue9979", _test.TestIssue9979},
+
+	{"TestIncompleteSelection", _test.TestIncompleteSelection},
+
+	{"TestLastLineComment", _test.TestLastLineComment},
+
+	{"TestValid", _test.TestValid},
+
+	{"TestInvalid", _test.TestInvalid},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkParse", _test.BenchmarkParse},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleParseFile", _xtest.ExampleParseFile, "\n\"fmt\"\n\"time\"\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "go/parser"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

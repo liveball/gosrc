@@ -1,0 +1,5 @@
+package issue23555
+//go:cgo_import_dynamic free free ""
+//go:cgo_import_dynamic malloc malloc ""
+//go:cgo_import_dynamic dyld_stub_binder dyld_stub_binder ""
+//go:cgo_import_dynamic _ _ "/usr/lib/libSystem.B.dylib"

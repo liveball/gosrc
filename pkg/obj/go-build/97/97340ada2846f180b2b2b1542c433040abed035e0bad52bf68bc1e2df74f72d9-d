@@ -1,0 +1,59 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "runtime/debug"
+
+
+	_xtest "runtime/debug_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestReadGCStats", _xtest.TestReadGCStats},
+
+	{"TestFreeOSMemory", _xtest.TestFreeOSMemory},
+
+	{"TestSetGCPercent", _xtest.TestSetGCPercent},
+
+	{"TestSetMaxThreadsOvf", _xtest.TestSetMaxThreadsOvf},
+
+	{"TestWriteHeapDumpNonempty", _xtest.TestWriteHeapDumpNonempty},
+
+	{"TestWriteHeapDumpFinalizers", _xtest.TestWriteHeapDumpFinalizers},
+
+	{"TestStack", _xtest.TestStack},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "runtime/debug"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

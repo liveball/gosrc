@@ -1,0 +1,53 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "go/format"
+
+
+	_xtest "go/format_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestNode", _test.TestNode},
+
+	{"TestSource", _test.TestSource},
+
+	{"TestPartial", _test.TestPartial},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleNode", _xtest.ExampleNode, "(6 + 2*3) / 4\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "go/format"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

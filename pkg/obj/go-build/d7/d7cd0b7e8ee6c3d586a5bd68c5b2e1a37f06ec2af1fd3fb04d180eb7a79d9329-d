@@ -1,0 +1,1326 @@
+# command-line-arguments
+"".LeadingZeros STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:15)	TEXT	"".LeadingZeros(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:15)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:15)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:15)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:20)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:20)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:20)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:20)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:20)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:20)	RET	(R30)
+	0x0000 e0 07 40 f9 00 10 c0 da e0 0b 00 f9 c0 03 5f d6  ..@..........._.
+	rel 12+0 t=11 +0
+"".LeadingZeros64 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:23)	TEXT	"".LeadingZeros64(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:23)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:23)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:23)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:28)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:28)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:28)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:28)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:28)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:28)	RET	(R30)
+	0x0000 e0 07 40 f9 00 10 c0 da e0 0b 00 f9 c0 03 5f d6  ..@..........._.
+	rel 12+0 t=11 +0
+"".LeadingZeros32 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:31)	TEXT	"".LeadingZeros32(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:31)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:31)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:31)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:36)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:36)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:36)	MOVWU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:36)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:36)	SUB	$32, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:36)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:36)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 10 c0 da 00 80 00 d1 e0 0b 00 f9  ..@.............
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".LeadingZeros16 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:39)	TEXT	"".LeadingZeros16(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:39)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:39)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:39)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:44)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:44)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:44)	MOVHU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:44)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:44)	SUB	$48, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:44)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:44)	RET	(R30)
+	0x0000 e0 13 40 79 00 10 c0 da 00 c0 00 d1 e0 0b 00 f9  ..@y............
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".LeadingZeros8 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:47)	TEXT	"".LeadingZeros8(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:47)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:47)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:47)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:52)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:52)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:52)	MOVBU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:52)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:52)	SUB	$56, R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:52)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:52)	RET	(R30)
+	0x0000 e0 23 40 39 00 10 c0 da 00 e0 00 d1 e0 0b 00 f9  .#@9............
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".Len STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:59)	TEXT	"".Len(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:59)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:59)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:59)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:64)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:64)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:64)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:64)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:64)	MOVD	$64, R1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:64)	SUB	R0, R1, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:64)	MOVD	R0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:64)	RET	(R30)
+	0x0000 e0 07 40 f9 00 10 c0 da e1 03 7a b2 20 00 00 cb  ..@.......z. ...
+	0x0010 e0 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".Len64 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:67)	TEXT	"".Len64(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:67)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:67)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:67)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:72)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:72)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:72)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:72)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:72)	MOVD	$64, R1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:72)	SUB	R0, R1, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:72)	MOVD	R0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:72)	RET	(R30)
+	0x0000 e0 07 40 f9 00 10 c0 da e1 03 7a b2 20 00 00 cb  ..@.......z. ...
+	0x0010 e0 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".Len32 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:75)	TEXT	"".Len32(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:75)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:75)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:75)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:80)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:80)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:80)	MOVWU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:80)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:80)	MOVD	$64, R1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:80)	SUB	R0, R1, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:80)	MOVD	R0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:80)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 10 c0 da e1 03 7a b2 20 00 00 cb  ..@.......z. ...
+	0x0010 e0 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".Len16 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:83)	TEXT	"".Len16(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:83)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:83)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:83)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:88)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:88)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:88)	MOVHU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:88)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:88)	MOVD	$64, R1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:88)	SUB	R0, R1, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:88)	MOVD	R0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:88)	RET	(R30)
+	0x0000 e0 13 40 79 00 10 c0 da e1 03 7a b2 20 00 00 cb  ..@y......z. ...
+	0x0010 e0 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".Len8 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:91)	TEXT	"".Len8(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:91)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:91)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:91)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:96)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:96)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:96)	MOVBU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:96)	CLZ	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:96)	MOVD	$64, R1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:96)	SUB	R0, R1, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:96)	MOVD	R0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:96)	RET	(R30)
+	0x0000 e0 23 40 39 00 10 c0 da e1 03 7a b2 20 00 00 cb  .#@9......z. ...
+	0x0010 e0 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".OnesCount STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:103)	TEXT	"".OnesCount(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:103)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:103)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:103)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:106)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:106)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:106)	FMOVD	"".n(FP), F0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:106)	VCNT	V0.B8, V0.B8
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:106)	VUADDLV	V0.B8, V0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:106)	FMOVD	F0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:106)	RET	(R30)
+	0x0000 e0 07 40 fd 00 58 20 0e 00 38 30 2e e0 0b 00 fd  ..@..X ..80.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".OnesCount64 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:109)	TEXT	"".OnesCount64(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:109)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:109)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:109)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:112)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:112)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:112)	FMOVD	"".n(FP), F0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:112)	VCNT	V0.B8, V0.B8
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:112)	VUADDLV	V0.B8, V0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:112)	FMOVD	F0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:112)	RET	(R30)
+	0x0000 e0 07 40 fd 00 58 20 0e 00 38 30 2e e0 0b 00 fd  ..@..X ..80.....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".OnesCount32 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:115)	TEXT	"".OnesCount32(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:115)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:115)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:115)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:118)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:118)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:118)	MOVWU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:118)	FMOVD	R0, F0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:118)	VCNT	V0.B8, V0.B8
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:118)	VUADDLV	V0.B8, V0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:118)	FMOVD	F0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:118)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 00 67 9e 00 58 20 0e 00 38 30 2e  ..@...g..X ..80.
+	0x0010 e0 0b 00 fd c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".OnesCount16 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:121)	TEXT	"".OnesCount16(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:121)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:121)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:121)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:124)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:124)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:124)	MOVHU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:124)	FMOVD	R0, F0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:124)	VCNT	V0.B8, V0.B8
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:124)	VUADDLV	V0.B8, V0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:124)	FMOVD	F0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:124)	RET	(R30)
+	0x0000 e0 13 40 79 00 00 67 9e 00 58 20 0e 00 38 30 2e  ..@y..g..X ..80.
+	0x0010 e0 0b 00 fd c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".ReverseBytes STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:131)	TEXT	"".ReverseBytes(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:131)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:131)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:131)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:135)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:135)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:135)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:135)	REV	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:135)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:135)	RET	(R30)
+	0x0000 e0 07 40 f9 00 0c c0 da e0 0b 00 f9 c0 03 5f d6  ..@..........._.
+	rel 12+0 t=11 +0
+"".ReverseBytes64 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:138)	TEXT	"".ReverseBytes64(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:138)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:138)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:138)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:142)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:142)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:142)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:142)	REV	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:142)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:142)	RET	(R30)
+	0x0000 e0 07 40 f9 00 0c c0 da e0 0b 00 f9 c0 03 5f d6  ..@..........._.
+	rel 12+0 t=11 +0
+"".ReverseBytes32 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:145)	TEXT	"".ReverseBytes32(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:145)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:145)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:145)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:149)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:149)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:149)	MOVWU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:149)	REVW	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:149)	MOVW	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:149)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 08 c0 5a e0 13 00 b9 c0 03 5f d6  ..@....Z......_.
+	rel 12+0 t=11 +0
+"".ReverseBytes16 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:152)	TEXT	"".ReverseBytes16(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:152)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:152)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:152)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:154)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:154)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:154)	MOVHU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:154)	UBFX	$8, R0, $8, R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:154)	ORR	R0<<8, R1, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:154)	MOVH	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:154)	RET	(R30)
+	0x0000 e0 13 40 79 01 3c 48 d3 20 20 00 aa e0 23 00 79  ..@y.<H.  ...#.y
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".RotateLeft64 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:161)	TEXT	"".RotateLeft64(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:161)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:161)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:161)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:165)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:165)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:165)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:165)	ROR	$27, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:165)	MOVD	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:165)	RET	(R30)
+	0x0000 e0 07 40 f9 00 6c c0 93 e0 0b 00 f9 c0 03 5f d6  ..@..l........_.
+	rel 12+0 t=11 +0
+"".RotateLeft32 STEXT size=16 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:168)	TEXT	"".RotateLeft32(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:168)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:168)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:168)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:172)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:172)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:172)	MOVWU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:172)	RORW	$23, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:172)	MOVW	R0, "".~r1+8(FP)
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:172)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 5c 80 13 e0 13 00 b9 c0 03 5f d6  ..@..\........_.
+	rel 12+0 t=11 +0
+"".RotateLeft16 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:175)	TEXT	"".RotateLeft16(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:175)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:175)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:175)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:177)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:177)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:177)	MOVHU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:177)	UBFX	$11, R0, $5, R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:177)	ORR	R0<<5, R1, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:177)	MOVH	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:177)	RET	(R30)
+	0x0000 e0 13 40 79 01 3c 4b d3 20 14 00 aa e0 23 00 79  ..@y.<K. ....#.y
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".RotateLeft8 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:180)	TEXT	"".RotateLeft8(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:180)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:180)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:180)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:182)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:182)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:182)	MOVBU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:182)	UBFX	$3, R0, $5, R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:182)	ORR	R0<<5, R1, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:182)	MOVB	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:182)	RET	(R30)
+	0x0000 e0 23 40 39 01 1c 43 d3 20 14 00 aa e0 43 00 39  .#@9..C. ....C.9
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".TrailingZeros STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:189)	TEXT	"".TrailingZeros(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:189)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:189)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:189)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:192)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:192)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:192)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:192)	RBIT	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:192)	CLZ	R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:192)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:192)	RET	(R30)
+	0x0000 e0 07 40 f9 00 00 c0 da 00 10 c0 da e0 0b 00 f9  ..@.............
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".TrailingZeros64 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:195)	TEXT	"".TrailingZeros64(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:195)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:195)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:195)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:198)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:198)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:198)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:198)	RBIT	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:198)	CLZ	R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:198)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:198)	RET	(R30)
+	0x0000 e0 07 40 f9 00 00 c0 da 00 10 c0 da e0 0b 00 f9  ..@.............
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".TrailingZeros32 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:201)	TEXT	"".TrailingZeros32(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:201)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:201)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:201)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:204)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:204)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:204)	MOVWU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:204)	RBITW	R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:204)	CLZW	R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:204)	MOVD	R0, "".~r1+8(FP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:204)	RET	(R30)
+	0x0000 e0 0b 40 b9 00 00 c0 5a 00 10 c0 5a e0 0b 00 f9  ..@....Z...Z....
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+0 t=11 +0
+"".TrailingZeros16 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:207)	TEXT	"".TrailingZeros16(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:207)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:207)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:207)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:210)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:210)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:210)	MOVHU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:210)	ORR	$65536, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:210)	RBIT	R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:210)	CLZ	R0, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:210)	MOVD	R0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:210)	RET	(R30)
+	0x0000 e0 13 40 79 00 00 70 b2 00 00 c0 da 00 10 c0 da  ..@y..p.........
+	0x0010 e0 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".TrailingZeros8 STEXT size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:213)	TEXT	"".TrailingZeros8(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:213)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:213)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:213)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:216)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:216)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:216)	MOVBU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:216)	ORR	$256, R0, R0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:216)	RBIT	R0, R0
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:216)	CLZ	R0, R0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:216)	MOVD	R0, "".~r1+8(FP)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:216)	RET	(R30)
+	0x0000 e0 23 40 39 00 00 78 b2 00 00 c0 da 00 10 c0 da  .#@9..x.........
+	0x0010 e0 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 20+0 t=11 +0
+"".IterateBits STEXT size=48 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:221)	TEXT	"".IterateBits(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:221)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:221)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:221)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:223)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:223)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:223)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:223)	MOVD	ZR, R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:223)	JMP	32
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:225)	RBIT	R0, R2
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:225)	CLZ	R2, R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:225)	ADD	R2, R1, R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:226)	SUB	$1, R0, R2
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:226)	AND	R2, R0, R0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:223)	PCDATA	$2, $-2
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:223)	PCDATA	ZR, $-2
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:223)	CBNZ	R0, 12
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:228)	PCDATA	$2, ZR
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:228)	PCDATA	ZR, ZR
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:228)	MOVD	R1, "".~r1+8(FP)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:228)	RET	(R30)
+	0x0000 e0 07 40 f9 01 00 80 d2 06 00 00 14 02 00 c0 da  ..@.............
+	0x0010 42 10 c0 da 21 00 02 8b 02 04 00 d1 00 00 02 8a  B...!...........
+	0x0020 60 ff ff b5 e1 0b 00 f9 c0 03 5f d6 00 00 00 00  `........._.....
+	rel 40+0 t=11 +0
+"".IterateBits64 STEXT size=48 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:231)	TEXT	"".IterateBits64(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:231)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:231)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:231)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:233)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:233)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:233)	MOVD	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:233)	MOVD	ZR, R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:233)	JMP	32
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:235)	RBIT	R0, R2
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:235)	CLZ	R2, R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:235)	ADD	R2, R1, R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:236)	SUB	$1, R0, R2
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:236)	AND	R2, R0, R0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:233)	PCDATA	$2, $-2
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:233)	PCDATA	ZR, $-2
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:233)	CBNZ	R0, 12
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:238)	PCDATA	$2, ZR
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:238)	PCDATA	ZR, ZR
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:238)	MOVD	R1, "".~r1+8(FP)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:238)	RET	(R30)
+	0x0000 e0 07 40 f9 01 00 80 d2 06 00 00 14 02 00 c0 da  ..@.............
+	0x0010 42 10 c0 da 21 00 02 8b 02 04 00 d1 00 00 02 8a  B...!...........
+	0x0020 60 ff ff b5 e1 0b 00 f9 c0 03 5f d6 00 00 00 00  `........._.....
+	rel 40+0 t=11 +0
+"".IterateBits32 STEXT size=48 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:241)	TEXT	"".IterateBits32(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:241)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:241)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:241)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:243)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:243)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:243)	MOVWU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:243)	MOVD	ZR, R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:243)	JMP	32
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:245)	RBITW	R0, R2
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:245)	CLZW	R2, R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:245)	ADD	R2, R1, R1
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:246)	SUB	$1, R0, R2
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:246)	AND	R2, R0, R0
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:243)	PCDATA	$2, $-2
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:243)	PCDATA	ZR, $-2
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:243)	CBNZW	R0, 12
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:248)	PCDATA	$2, ZR
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:248)	PCDATA	ZR, ZR
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:248)	MOVD	R1, "".~r1+8(FP)
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:248)	RET	(R30)
+	0x0000 e0 0b 40 b9 01 00 80 d2 06 00 00 14 02 00 c0 5a  ..@............Z
+	0x0010 42 10 c0 5a 21 00 02 8b 02 04 00 d1 00 00 02 8a  B..Z!...........
+	0x0020 60 ff ff 35 e1 0b 00 f9 c0 03 5f d6 00 00 00 00  `..5......_.....
+	rel 40+0 t=11 +0
+"".IterateBits16 STEXT size=64 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:251)	TEXT	"".IterateBits16(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:251)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:251)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:251)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:253)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:253)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:253)	MOVHU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:253)	MOVD	ZR, R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:253)	JMP	40
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:255)	MOVHU	R0, R2
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:255)	ORR	$65536, R2, R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:255)	RBIT	R2, R2
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:255)	CLZ	R2, R2
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:255)	ADD	R2, R1, R1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:256)	SUB	$1, R0, R2
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:256)	AND	R2, R0, R0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:253)	MOVHU	R0, R2
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:253)	CBNZW	R2, 12
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:258)	MOVD	R1, "".~r1+8(FP)
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:258)	RET	(R30)
+	0x0000 e0 13 40 79 01 00 80 d2 08 00 00 14 02 3c 40 d3  ..@y.........<@.
+	0x0010 42 00 70 b2 42 00 c0 da 42 10 c0 da 21 00 02 8b  B.p.B...B...!...
+	0x0020 02 04 00 d1 00 00 02 8a 02 3c 40 d3 02 ff ff 35  .........<@....5
+	0x0030 e1 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 52+0 t=11 +0
+"".IterateBits8 STEXT size=64 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:261)	TEXT	"".IterateBits8(SB), LEAF|NOFRAME, $-8-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:261)	FUNCDATA	ZR, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:261)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:261)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:263)	PCDATA	$2, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:263)	PCDATA	ZR, ZR
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:263)	MOVBU	"".n(FP), R0
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:263)	MOVD	ZR, R1
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:263)	JMP	40
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:265)	MOVBU	R0, R2
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:265)	ORR	$256, R2, R2
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:265)	RBIT	R2, R2
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:265)	CLZ	R2, R2
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:265)	ADD	R2, R1, R1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:266)	SUB	$1, R0, R2
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:266)	AND	R2, R0, R0
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:263)	MOVBU	R0, R2
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:263)	CBNZW	R2, 12
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:268)	MOVD	R1, "".~r1+8(FP)
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/mathbits.go:268)	RET	(R30)
+	0x0000 e0 23 40 39 01 00 80 d2 08 00 00 14 02 1c 40 d3  .#@9..........@.
+	0x0010 42 00 78 b2 42 00 c0 da 42 10 c0 da 21 00 02 8b  B.x.B...B...!...
+	0x0020 02 04 00 d1 00 00 02 8a 02 1c 40 d3 02 ff ff 35  ..........@....5
+	0x0030 e1 0b 00 f9 c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+	rel 52+0 t=11 +0
+go.info.math/bits.LeadingZeros$abstract SDWARFINFO dupok size=35
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 4c 65 61 64 69  .math/bits.Leadi
+	0x0010 6e 67 5a 65 72 6f 73 00 01 01 10 78 00 00 00 00  ngZeros....x....
+	0x0020 00 00 00                                         ...
+	rel 30+4 t=28 go.info.uint+0
+go.info.math/bits.LeadingZeros64$abstract SDWARFINFO dupok size=37
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 4c 65 61 64 69  .math/bits.Leadi
+	0x0010 6e 67 5a 65 72 6f 73 36 34 00 01 01 10 78 00 00  ngZeros64....x..
+	0x0020 00 00 00 00 00                                   .....
+	rel 32+4 t=28 go.info.uint64+0
+go.info.math/bits.LeadingZeros32$abstract SDWARFINFO dupok size=37
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 4c 65 61 64 69  .math/bits.Leadi
+	0x0010 6e 67 5a 65 72 6f 73 33 32 00 01 01 10 78 00 00  ngZeros32....x..
+	0x0020 00 00 00 00 00                                   .....
+	rel 32+4 t=28 go.info.uint32+0
+go.info.math/bits.LeadingZeros16$abstract SDWARFINFO dupok size=37
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 4c 65 61 64 69  .math/bits.Leadi
+	0x0010 6e 67 5a 65 72 6f 73 31 36 00 01 01 10 78 00 00  ngZeros16....x..
+	0x0020 00 00 00 00 00                                   .....
+	rel 32+4 t=28 go.info.uint16+0
+go.info.math/bits.LeadingZeros8$abstract SDWARFINFO dupok size=36
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 4c 65 61 64 69  .math/bits.Leadi
+	0x0010 6e 67 5a 65 72 6f 73 38 00 01 01 10 78 00 00 00  ngZeros8....x...
+	0x0020 00 00 00 00                                      ....
+	rel 31+4 t=28 go.info.uint8+0
+go.info.math/bits.OnesCount$abstract SDWARFINFO dupok size=32
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 4f 6e 65 73 43  .math/bits.OnesC
+	0x0010 6f 75 6e 74 00 01 01 10 78 00 00 00 00 00 00 00  ount....x.......
+	rel 27+4 t=28 go.info.uint+0
+go.info.math/bits.ReverseBytes$abstract SDWARFINFO dupok size=35
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 52 65 76 65 72  .math/bits.Rever
+	0x0010 73 65 42 79 74 65 73 00 01 01 10 78 00 00 00 00  seBytes....x....
+	0x0020 00 00 00                                         ...
+	rel 30+4 t=28 go.info.uint+0
+go.info.math/bits.ReverseBytes16$abstract SDWARFINFO dupok size=37
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 52 65 76 65 72  .math/bits.Rever
+	0x0010 73 65 42 79 74 65 73 31 36 00 01 01 10 78 00 00  seBytes16....x..
+	0x0020 00 00 00 00 00                                   .....
+	rel 32+4 t=28 go.info.uint16+0
+go.info.math/bits.RotateLeft64$abstract SDWARFINFO dupok size=52
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 52 6f 74 61 74  .math/bits.Rotat
+	0x0010 65 4c 65 66 74 36 34 00 01 01 10 6b 00 00 00 00  eLeft64....k....
+	0x0020 00 00 0b 73 00 cb 01 00 00 00 00 10 78 00 00 00  ...s........x...
+	0x0030 00 00 00 00                                      ....
+	rel 30+4 t=28 go.info.int+0
+	rel 39+4 t=28 go.info.uint+0
+	rel 47+4 t=28 go.info.uint64+0
+go.info.math/bits.RotateLeft32$abstract SDWARFINFO dupok size=52
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 52 6f 74 61 74  .math/bits.Rotat
+	0x0010 65 4c 65 66 74 33 32 00 01 01 10 6b 00 00 00 00  eLeft32....k....
+	0x0020 00 00 0b 73 00 c3 01 00 00 00 00 10 78 00 00 00  ...s........x...
+	0x0030 00 00 00 00                                      ....
+	rel 30+4 t=28 go.info.int+0
+	rel 39+4 t=28 go.info.uint+0
+	rel 47+4 t=28 go.info.uint32+0
+go.info.math/bits.RotateLeft16$abstract SDWARFINFO dupok size=52
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 52 6f 74 61 74  .math/bits.Rotat
+	0x0010 65 4c 65 66 74 31 36 00 01 01 10 6b 00 00 00 00  eLeft16....k....
+	0x0020 00 00 0b 73 00 bb 01 00 00 00 00 10 78 00 00 00  ...s........x...
+	0x0030 00 00 00 00                                      ....
+	rel 30+4 t=28 go.info.int+0
+	rel 39+4 t=28 go.info.uint+0
+	rel 47+4 t=28 go.info.uint16+0
+go.info.math/bits.RotateLeft8$abstract SDWARFINFO dupok size=51
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 52 6f 74 61 74  .math/bits.Rotat
+	0x0010 65 4c 65 66 74 38 00 01 01 10 6b 00 00 00 00 00  eLeft8....k.....
+	0x0020 00 0b 73 00 b3 01 00 00 00 00 10 78 00 00 00 00  ..s........x....
+	0x0030 00 00 00                                         ...
+	rel 29+4 t=28 go.info.int+0
+	rel 38+4 t=28 go.info.uint+0
+	rel 46+4 t=28 go.info.uint8+0
+go.info.math/bits.TrailingZeros$abstract SDWARFINFO dupok size=36
+	0x0000 03 6d 61 74 68 2f 62 69 74 73 2e 54 72 61 69 6c  .math/bits.Trail
+	0x0010 69 6e 67 5a 65 72 6f 73 00 01 01 10 78 00 00 00  ingZeros....x...
+	0x0020 00 00 00 00                                      ....
+	rel 31+4 t=28 go.info.uint+0
+go.loc."".LeadingZeros SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".LeadingZeros+0
+go.info."".LeadingZeros SDWARFINFO size=99
+	0x0000 02 22 22 2e 4c 65 61 64 69 6e 67 5a 65 72 6f 73  ."".LeadingZeros
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 6e 00 00 0f 00 00 00  .........n......
+	0x0030 00 00 0e 7e 72 31 00 01 0f 00 00 00 00 00 05 00  ...~r1..........
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 14 12 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00                                         ...
+	rel 17+8 t=1 "".LeadingZeros+0
+	rel 25+8 t=1 "".LeadingZeros+16
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 45+4 t=28 go.info.uint+0
+	rel 57+4 t=28 go.info.int+0
+	rel 63+4 t=28 go.info.math/bits.LeadingZeros$abstract+0
+	rel 67+8 t=1 "".LeadingZeros+0
+	rel 75+8 t=1 "".LeadingZeros+8
+	rel 83+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 89+4 t=28 go.info.math/bits.LeadingZeros$abstract+26
+	rel 93+4 t=28 go.loc."".LeadingZeros+0
+go.range."".LeadingZeros SDWARFRANGE size=0
+go.isstmt."".LeadingZeros SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 01 00                       .........
+go.loc."".LeadingZeros64 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".LeadingZeros64+0
+go.info."".LeadingZeros64 SDWARFINFO size=101
+	0x0000 02 22 22 2e 4c 65 61 64 69 6e 67 5a 65 72 6f 73  ."".LeadingZeros
+	0x0010 36 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00  64..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 17 00  ...........n....
+	0x0030 00 00 00 00 0e 7e 72 31 00 01 17 00 00 00 00 00  .....~r1........
+	0x0040 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 1c 12 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00                                   .....
+	rel 19+8 t=1 "".LeadingZeros64+0
+	rel 27+8 t=1 "".LeadingZeros64+16
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 47+4 t=28 go.info.uint64+0
+	rel 59+4 t=28 go.info.int+0
+	rel 65+4 t=28 go.info.math/bits.LeadingZeros64$abstract+0
+	rel 69+8 t=1 "".LeadingZeros64+0
+	rel 77+8 t=1 "".LeadingZeros64+8
+	rel 85+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 91+4 t=28 go.info.math/bits.LeadingZeros64$abstract+28
+	rel 95+4 t=28 go.loc."".LeadingZeros64+0
+go.range."".LeadingZeros64 SDWARFRANGE size=0
+go.isstmt."".LeadingZeros64 SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 01 00                       .........
+go.loc."".LeadingZeros32 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".LeadingZeros32+0
+go.info."".LeadingZeros32 SDWARFINFO size=101
+	0x0000 02 22 22 2e 4c 65 61 64 69 6e 67 5a 65 72 6f 73  ."".LeadingZeros
+	0x0010 33 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00  32..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 1f 00  ...........n....
+	0x0030 00 00 00 00 0e 7e 72 31 00 01 1f 00 00 00 00 00  .....~r1........
+	0x0040 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 24 12 00 00 00 00 00  .........$......
+	0x0060 00 00 00 00 00                                   .....
+	rel 19+8 t=1 "".LeadingZeros32+0
+	rel 27+8 t=1 "".LeadingZeros32+32
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 47+4 t=28 go.info.uint32+0
+	rel 59+4 t=28 go.info.int+0
+	rel 65+4 t=28 go.info.math/bits.LeadingZeros32$abstract+0
+	rel 69+8 t=1 "".LeadingZeros32+0
+	rel 77+8 t=1 "".LeadingZeros32+12
+	rel 85+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 91+4 t=28 go.info.math/bits.LeadingZeros32$abstract+28
+	rel 95+4 t=28 go.loc."".LeadingZeros32+0
+go.range."".LeadingZeros32 SDWARFRANGE size=0
+go.isstmt."".LeadingZeros32 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 00                       .........
+go.loc."".LeadingZeros16 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".LeadingZeros16+0
+go.info."".LeadingZeros16 SDWARFINFO size=101
+	0x0000 02 22 22 2e 4c 65 61 64 69 6e 67 5a 65 72 6f 73  ."".LeadingZeros
+	0x0010 31 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00  16..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 27 00  ...........n..'.
+	0x0030 00 00 00 00 0e 7e 72 31 00 01 27 00 00 00 00 00  .....~r1..'.....
+	0x0040 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 2c 12 00 00 00 00 00  .........,......
+	0x0060 00 00 00 00 00                                   .....
+	rel 19+8 t=1 "".LeadingZeros16+0
+	rel 27+8 t=1 "".LeadingZeros16+32
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 47+4 t=28 go.info.uint16+0
+	rel 59+4 t=28 go.info.int+0
+	rel 65+4 t=28 go.info.math/bits.LeadingZeros16$abstract+0
+	rel 69+8 t=1 "".LeadingZeros16+0
+	rel 77+8 t=1 "".LeadingZeros16+12
+	rel 85+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 91+4 t=28 go.info.math/bits.LeadingZeros16$abstract+28
+	rel 95+4 t=28 go.loc."".LeadingZeros16+0
+go.range."".LeadingZeros16 SDWARFRANGE size=0
+go.isstmt."".LeadingZeros16 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 00                       .........
+go.loc."".LeadingZeros8 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".LeadingZeros8+0
+go.info."".LeadingZeros8 SDWARFINFO size=100
+	0x0000 02 22 22 2e 4c 65 61 64 69 6e 67 5a 65 72 6f 73  ."".LeadingZeros
+	0x0010 38 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  8...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 2f 00 00  ..........n../..
+	0x0030 00 00 00 0e 7e 72 31 00 01 2f 00 00 00 00 00 05  ....~r1../......
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 34 12 00 00 00 00 00 00  ........4.......
+	0x0060 00 00 00 00                                      ....
+	rel 18+8 t=1 "".LeadingZeros8+0
+	rel 26+8 t=1 "".LeadingZeros8+32
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 46+4 t=28 go.info.uint8+0
+	rel 58+4 t=28 go.info.int+0
+	rel 64+4 t=28 go.info.math/bits.LeadingZeros8$abstract+0
+	rel 68+8 t=1 "".LeadingZeros8+0
+	rel 76+8 t=1 "".LeadingZeros8+12
+	rel 84+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 90+4 t=28 go.info.math/bits.LeadingZeros8$abstract+27
+	rel 94+4 t=28 go.loc."".LeadingZeros8+0
+go.range."".LeadingZeros8 SDWARFRANGE size=0
+go.isstmt."".LeadingZeros8 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 00                       .........
+go.loc."".Len SDWARFLOC size=0
+go.info."".Len SDWARFINFO size=54
+	0x0000 02 22 22 2e 4c 65 6e 00 00 00 00 00 00 00 00 00  ."".Len.........
+	0x0010 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e  ................
+	0x0020 6e 00 00 3b 00 00 00 00 00 0e 7e 72 31 00 01 3b  n..;......~r1..;
+	0x0030 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".Len+0
+	rel 16+8 t=1 "".Len+32
+	rel 26+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 36+4 t=28 go.info.uint+0
+	rel 48+4 t=28 go.info.int+0
+go.range."".Len SDWARFRANGE size=0
+go.isstmt."".Len SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".Len64 SDWARFLOC size=0
+go.info."".Len64 SDWARFINFO size=56
+	0x0000 02 22 22 2e 4c 65 6e 36 34 00 00 00 00 00 00 00  ."".Len64.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 6e 00 00 43 00 00 00 00 00 0e 7e 72 31 00  ..n..C......~r1.
+	0x0030 01 43 00 00 00 00 00 00                          .C......
+	rel 10+8 t=1 "".Len64+0
+	rel 18+8 t=1 "".Len64+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 38+4 t=28 go.info.uint64+0
+	rel 50+4 t=28 go.info.int+0
+go.range."".Len64 SDWARFRANGE size=0
+go.isstmt."".Len64 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".Len32 SDWARFLOC size=0
+go.info."".Len32 SDWARFINFO size=56
+	0x0000 02 22 22 2e 4c 65 6e 33 32 00 00 00 00 00 00 00  ."".Len32.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 6e 00 00 4b 00 00 00 00 00 0e 7e 72 31 00  ..n..K......~r1.
+	0x0030 01 4b 00 00 00 00 00 00                          .K......
+	rel 10+8 t=1 "".Len32+0
+	rel 18+8 t=1 "".Len32+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 38+4 t=28 go.info.uint32+0
+	rel 50+4 t=28 go.info.int+0
+go.range."".Len32 SDWARFRANGE size=0
+go.isstmt."".Len32 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".Len16 SDWARFLOC size=0
+go.info."".Len16 SDWARFINFO size=56
+	0x0000 02 22 22 2e 4c 65 6e 31 36 00 00 00 00 00 00 00  ."".Len16.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0e 6e 00 00 53 00 00 00 00 00 0e 7e 72 31 00  ..n..S......~r1.
+	0x0030 01 53 00 00 00 00 00 00                          .S......
+	rel 10+8 t=1 "".Len16+0
+	rel 18+8 t=1 "".Len16+32
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 38+4 t=28 go.info.uint16+0
+	rel 50+4 t=28 go.info.int+0
+go.range."".Len16 SDWARFRANGE size=0
+go.isstmt."".Len16 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".Len8 SDWARFLOC size=0
+go.info."".Len8 SDWARFINFO size=55
+	0x0000 02 22 22 2e 4c 65 6e 38 00 00 00 00 00 00 00 00  ."".Len8........
+	0x0010 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01  ................
+	0x0020 0e 6e 00 00 5b 00 00 00 00 00 0e 7e 72 31 00 01  .n..[......~r1..
+	0x0030 5b 00 00 00 00 00 00                             [......
+	rel 9+8 t=1 "".Len8+0
+	rel 17+8 t=1 "".Len8+32
+	rel 27+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 37+4 t=28 go.info.uint8+0
+	rel 49+4 t=28 go.info.int+0
+go.range."".Len8 SDWARFRANGE size=0
+go.isstmt."".Len8 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".OnesCount SDWARFLOC size=0
+go.info."".OnesCount SDWARFINFO size=87
+	0x0000 02 22 22 2e 4f 6e 65 73 43 6f 75 6e 74 00 00 00  ."".OnesCount...
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c  ................
+	0x0020 00 00 00 00 01 0e 6e 00 00 67 00 00 00 00 00 0e  ......n..g......
+	0x0030 7e 72 31 00 01 67 00 00 00 00 00 05 00 00 00 00  ~r1..g..........
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 6a 00 00                             ....j..
+	rel 14+8 t=1 "".OnesCount+0
+	rel 22+8 t=1 "".OnesCount+32
+	rel 32+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 42+4 t=28 go.info.uint+0
+	rel 54+4 t=28 go.info.int+0
+	rel 60+4 t=28 go.info.math/bits.OnesCount$abstract+0
+	rel 64+8 t=1 "".OnesCount+0
+	rel 72+8 t=1 "".OnesCount+12
+	rel 80+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+go.range."".OnesCount SDWARFRANGE size=0
+go.isstmt."".OnesCount SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 00                       .........
+go.loc."".OnesCount64 SDWARFLOC size=0
+go.info."".OnesCount64 SDWARFINFO size=62
+	0x0000 02 22 22 2e 4f 6e 65 73 43 6f 75 6e 74 36 34 00  ."".OnesCount64.
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 01 9c 00 00 00 00 01 0e 6e 00 00 6d 00 00 00 00  ........n..m....
+	0x0030 00 0e 7e 72 31 00 01 6d 00 00 00 00 00 00        ..~r1..m......
+	rel 16+8 t=1 "".OnesCount64+0
+	rel 24+8 t=1 "".OnesCount64+32
+	rel 34+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 44+4 t=28 go.info.uint64+0
+	rel 56+4 t=28 go.info.int+0
+go.range."".OnesCount64 SDWARFRANGE size=0
+go.isstmt."".OnesCount64 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".OnesCount32 SDWARFLOC size=0
+go.info."".OnesCount32 SDWARFINFO size=62
+	0x0000 02 22 22 2e 4f 6e 65 73 43 6f 75 6e 74 33 32 00  ."".OnesCount32.
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 01 9c 00 00 00 00 01 0e 6e 00 00 73 00 00 00 00  ........n..s....
+	0x0030 00 0e 7e 72 31 00 01 73 00 00 00 00 00 00        ..~r1..s......
+	rel 16+8 t=1 "".OnesCount32+0
+	rel 24+8 t=1 "".OnesCount32+32
+	rel 34+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 44+4 t=28 go.info.uint32+0
+	rel 56+4 t=28 go.info.int+0
+go.range."".OnesCount32 SDWARFRANGE size=0
+go.isstmt."".OnesCount32 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".OnesCount16 SDWARFLOC size=0
+go.info."".OnesCount16 SDWARFINFO size=62
+	0x0000 02 22 22 2e 4f 6e 65 73 43 6f 75 6e 74 31 36 00  ."".OnesCount16.
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 01 9c 00 00 00 00 01 0e 6e 00 00 79 00 00 00 00  ........n..y....
+	0x0030 00 0e 7e 72 31 00 01 79 00 00 00 00 00 00        ..~r1..y......
+	rel 16+8 t=1 "".OnesCount16+0
+	rel 24+8 t=1 "".OnesCount16+32
+	rel 34+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 44+4 t=28 go.info.uint16+0
+	rel 56+4 t=28 go.info.int+0
+go.range."".OnesCount16 SDWARFRANGE size=0
+go.isstmt."".OnesCount16 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".ReverseBytes SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".ReverseBytes+0
+go.info."".ReverseBytes SDWARFINFO size=102
+	0x0000 02 22 22 2e 52 65 76 65 72 73 65 42 79 74 65 73  ."".ReverseBytes
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 6e 00 00 83 01 00 00  .........n......
+	0x0030 00 00 00 0e 7e 72 31 00 01 83 01 00 00 00 00 00  ....~r1.........
+	0x0040 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 87 01 12 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00                                ......
+	rel 17+8 t=1 "".ReverseBytes+0
+	rel 25+8 t=1 "".ReverseBytes+16
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 46+4 t=28 go.info.uint+0
+	rel 59+4 t=28 go.info.uint+0
+	rel 65+4 t=28 go.info.math/bits.ReverseBytes$abstract+0
+	rel 69+8 t=1 "".ReverseBytes+0
+	rel 77+8 t=1 "".ReverseBytes+8
+	rel 85+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 92+4 t=28 go.info.math/bits.ReverseBytes$abstract+26
+	rel 96+4 t=28 go.loc."".ReverseBytes+0
+go.range."".ReverseBytes SDWARFRANGE size=0
+go.isstmt."".ReverseBytes SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 01 00                       .........
+go.loc."".ReverseBytes64 SDWARFLOC size=0
+go.info."".ReverseBytes64 SDWARFINFO size=67
+	0x0000 02 22 22 2e 52 65 76 65 72 73 65 42 79 74 65 73  ."".ReverseBytes
+	0x0010 36 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00  64..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 8a 01  ...........n....
+	0x0030 00 00 00 00 00 0e 7e 72 31 00 01 8a 01 00 00 00  ......~r1.......
+	0x0040 00 00 00                                         ...
+	rel 19+8 t=1 "".ReverseBytes64+0
+	rel 27+8 t=1 "".ReverseBytes64+16
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 48+4 t=28 go.info.uint64+0
+	rel 61+4 t=28 go.info.uint64+0
+go.range."".ReverseBytes64 SDWARFRANGE size=0
+go.isstmt."".ReverseBytes64 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ReverseBytes32 SDWARFLOC size=0
+go.info."".ReverseBytes32 SDWARFINFO size=67
+	0x0000 02 22 22 2e 52 65 76 65 72 73 65 42 79 74 65 73  ."".ReverseBytes
+	0x0010 33 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00  32..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 91 01  ...........n....
+	0x0030 00 00 00 00 00 0e 7e 72 31 00 01 91 01 00 00 00  ......~r1.......
+	0x0040 00 00 00                                         ...
+	rel 19+8 t=1 "".ReverseBytes32+0
+	rel 27+8 t=1 "".ReverseBytes32+16
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 48+4 t=28 go.info.uint32+0
+	rel 61+4 t=28 go.info.uint32+0
+go.range."".ReverseBytes32 SDWARFRANGE size=0
+go.isstmt."".ReverseBytes32 SDWARFMISC size=0
+	0x0000 04 01 01 03 00                                   .....
+go.loc."".ReverseBytes16 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".ReverseBytes16+0
+go.info."".ReverseBytes16 SDWARFINFO size=104
+	0x0000 02 22 22 2e 52 65 76 65 72 73 65 42 79 74 65 73  ."".ReverseBytes
+	0x0010 31 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00  16..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 98 01  ...........n....
+	0x0030 00 00 00 00 00 0e 7e 72 31 00 01 98 01 00 00 00  ......~r1.......
+	0x0040 00 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 00 00 9a 01 12 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00                          ........
+	rel 19+8 t=1 "".ReverseBytes16+0
+	rel 27+8 t=1 "".ReverseBytes16+32
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 48+4 t=28 go.info.uint16+0
+	rel 61+4 t=28 go.info.uint16+0
+	rel 67+4 t=28 go.info.math/bits.ReverseBytes16$abstract+0
+	rel 71+8 t=1 "".ReverseBytes16+0
+	rel 79+8 t=1 "".ReverseBytes16+12
+	rel 87+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 94+4 t=28 go.info.math/bits.ReverseBytes16$abstract+28
+	rel 98+4 t=28 go.loc."".ReverseBytes16+0
+go.range."".ReverseBytes16 SDWARFRANGE size=0
+go.isstmt."".ReverseBytes16 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 00                       .........
+go.loc."".RotateLeft64 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".RotateLeft64+0
+go.info."".RotateLeft64 SDWARFINFO size=102
+	0x0000 02 22 22 2e 52 6f 74 61 74 65 4c 65 66 74 36 34  ."".RotateLeft64
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 6e 00 00 a1 01 00 00  .........n......
+	0x0030 00 00 00 0e 7e 72 31 00 01 a1 01 00 00 00 00 00  ....~r1.........
+	0x0040 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 a5 01 12 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00                                ......
+	rel 17+8 t=1 "".RotateLeft64+0
+	rel 25+8 t=1 "".RotateLeft64+16
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 46+4 t=28 go.info.uint64+0
+	rel 59+4 t=28 go.info.uint64+0
+	rel 65+4 t=28 go.info.math/bits.RotateLeft64$abstract+0
+	rel 69+8 t=1 "".RotateLeft64+0
+	rel 77+8 t=1 "".RotateLeft64+8
+	rel 85+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 92+4 t=28 go.info.math/bits.RotateLeft64$abstract+43
+	rel 96+4 t=28 go.loc."".RotateLeft64+0
+go.range."".RotateLeft64 SDWARFRANGE size=0
+go.isstmt."".RotateLeft64 SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 01 00                       .........
+go.loc."".RotateLeft32 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".RotateLeft32+0
+go.info."".RotateLeft32 SDWARFINFO size=102
+	0x0000 02 22 22 2e 52 6f 74 61 74 65 4c 65 66 74 33 32  ."".RotateLeft32
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 6e 00 00 a8 01 00 00  .........n......
+	0x0030 00 00 00 0e 7e 72 31 00 01 a8 01 00 00 00 00 00  ....~r1.........
+	0x0040 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 ac 01 12 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00                                ......
+	rel 17+8 t=1 "".RotateLeft32+0
+	rel 25+8 t=1 "".RotateLeft32+16
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 46+4 t=28 go.info.uint32+0
+	rel 59+4 t=28 go.info.uint32+0
+	rel 65+4 t=28 go.info.math/bits.RotateLeft32$abstract+0
+	rel 69+8 t=1 "".RotateLeft32+0
+	rel 77+8 t=1 "".RotateLeft32+8
+	rel 85+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 92+4 t=28 go.info.math/bits.RotateLeft32$abstract+43
+	rel 96+4 t=28 go.loc."".RotateLeft32+0
+go.range."".RotateLeft32 SDWARFRANGE size=0
+go.isstmt."".RotateLeft32 SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 01 00                       .........
+go.loc."".RotateLeft16 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".RotateLeft16+0
+go.info."".RotateLeft16 SDWARFINFO size=102
+	0x0000 02 22 22 2e 52 6f 74 61 74 65 4c 65 66 74 31 36  ."".RotateLeft16
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0e 6e 00 00 af 01 00 00  .........n......
+	0x0030 00 00 00 0e 7e 72 31 00 01 af 01 00 00 00 00 00  ....~r1.........
+	0x0040 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 b1 01 12 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00                                ......
+	rel 17+8 t=1 "".RotateLeft16+0
+	rel 25+8 t=1 "".RotateLeft16+32
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 46+4 t=28 go.info.uint16+0
+	rel 59+4 t=28 go.info.uint16+0
+	rel 65+4 t=28 go.info.math/bits.RotateLeft16$abstract+0
+	rel 69+8 t=1 "".RotateLeft16+0
+	rel 77+8 t=1 "".RotateLeft16+12
+	rel 85+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 92+4 t=28 go.info.math/bits.RotateLeft16$abstract+43
+	rel 96+4 t=28 go.loc."".RotateLeft16+0
+go.range."".RotateLeft16 SDWARFRANGE size=0
+go.isstmt."".RotateLeft16 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 00                       .........
+go.loc."".RotateLeft8 SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".RotateLeft8+0
+go.info."".RotateLeft8 SDWARFINFO size=101
+	0x0000 02 22 22 2e 52 6f 74 61 74 65 4c 65 66 74 38 00  ."".RotateLeft8.
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 01 9c 00 00 00 00 01 0e 6e 00 00 b4 01 00 00 00  ........n.......
+	0x0030 00 00 0e 7e 72 31 00 01 b4 01 00 00 00 00 00 05  ...~r1..........
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 b6 01 12 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00                                   .....
+	rel 16+8 t=1 "".RotateLeft8+0
+	rel 24+8 t=1 "".RotateLeft8+32
+	rel 34+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 45+4 t=28 go.info.uint8+0
+	rel 58+4 t=28 go.info.uint8+0
+	rel 64+4 t=28 go.info.math/bits.RotateLeft8$abstract+0
+	rel 68+8 t=1 "".RotateLeft8+0
+	rel 76+8 t=1 "".RotateLeft8+12
+	rel 84+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 91+4 t=28 go.info.math/bits.RotateLeft8$abstract+42
+	rel 95+4 t=28 go.loc."".RotateLeft8+0
+go.range."".RotateLeft8 SDWARFRANGE size=0
+go.isstmt."".RotateLeft8 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 00                       .........
+go.loc."".TrailingZeros SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 04 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	0x0020 02 00 91 08 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".TrailingZeros+0
+go.info."".TrailingZeros SDWARFINFO size=103
+	0x0000 02 22 22 2e 54 72 61 69 6c 69 6e 67 5a 65 72 6f  ."".TrailingZero
+	0x0010 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  s...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 bd 01 00  ..........n.....
+	0x0030 00 00 00 00 0e 7e 72 31 00 01 bd 01 00 00 00 00  .....~r1........
+	0x0040 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 00 c0 01 12 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00                             .......
+	rel 18+8 t=1 "".TrailingZeros+0
+	rel 26+8 t=1 "".TrailingZeros+32
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 47+4 t=28 go.info.uint+0
+	rel 60+4 t=28 go.info.int+0
+	rel 66+4 t=28 go.info.math/bits.TrailingZeros$abstract+0
+	rel 70+8 t=1 "".TrailingZeros+0
+	rel 78+8 t=1 "".TrailingZeros+12
+	rel 86+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 93+4 t=28 go.info.math/bits.TrailingZeros$abstract+27
+	rel 97+4 t=28 go.loc."".TrailingZeros+0
+go.range."".TrailingZeros SDWARFRANGE size=0
+go.isstmt."".TrailingZeros SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 00                       .........
+go.loc."".TrailingZeros64 SDWARFLOC size=0
+go.info."".TrailingZeros64 SDWARFINFO size=68
+	0x0000 02 22 22 2e 54 72 61 69 6c 69 6e 67 5a 65 72 6f  ."".TrailingZero
+	0x0010 73 36 34 00 00 00 00 00 00 00 00 00 00 00 00 00  s64.............
+	0x0020 00 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 c3  ............n...
+	0x0030 01 00 00 00 00 00 0e 7e 72 31 00 01 c3 01 00 00  .......~r1......
+	0x0040 00 00 00 00                                      ....
+	rel 20+8 t=1 "".TrailingZeros64+0
+	rel 28+8 t=1 "".TrailingZeros64+32
+	rel 38+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 49+4 t=28 go.info.uint64+0
+	rel 62+4 t=28 go.info.int+0
+go.range."".TrailingZeros64 SDWARFRANGE size=0
+go.isstmt."".TrailingZeros64 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".TrailingZeros32 SDWARFLOC size=0
+go.info."".TrailingZeros32 SDWARFINFO size=68
+	0x0000 02 22 22 2e 54 72 61 69 6c 69 6e 67 5a 65 72 6f  ."".TrailingZero
+	0x0010 73 33 32 00 00 00 00 00 00 00 00 00 00 00 00 00  s32.............
+	0x0020 00 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 c9  ............n...
+	0x0030 01 00 00 00 00 00 0e 7e 72 31 00 01 c9 01 00 00  .......~r1......
+	0x0040 00 00 00 00                                      ....
+	rel 20+8 t=1 "".TrailingZeros32+0
+	rel 28+8 t=1 "".TrailingZeros32+32
+	rel 38+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 49+4 t=28 go.info.uint32+0
+	rel 62+4 t=28 go.info.int+0
+go.range."".TrailingZeros32 SDWARFRANGE size=0
+go.isstmt."".TrailingZeros32 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".TrailingZeros16 SDWARFLOC size=0
+go.info."".TrailingZeros16 SDWARFINFO size=68
+	0x0000 02 22 22 2e 54 72 61 69 6c 69 6e 67 5a 65 72 6f  ."".TrailingZero
+	0x0010 73 31 36 00 00 00 00 00 00 00 00 00 00 00 00 00  s16.............
+	0x0020 00 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 cf  ............n...
+	0x0030 01 00 00 00 00 00 0e 7e 72 31 00 01 cf 01 00 00  .......~r1......
+	0x0040 00 00 00 00                                      ....
+	rel 20+8 t=1 "".TrailingZeros16+0
+	rel 28+8 t=1 "".TrailingZeros16+32
+	rel 38+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 49+4 t=28 go.info.uint16+0
+	rel 62+4 t=28 go.info.int+0
+go.range."".TrailingZeros16 SDWARFRANGE size=0
+go.isstmt."".TrailingZeros16 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".TrailingZeros8 SDWARFLOC size=0
+go.info."".TrailingZeros8 SDWARFINFO size=67
+	0x0000 02 22 22 2e 54 72 61 69 6c 69 6e 67 5a 65 72 6f  ."".TrailingZero
+	0x0010 73 38 00 00 00 00 00 00 00 00 00 00 00 00 00 00  s8..............
+	0x0020 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 d5 01  ...........n....
+	0x0030 00 00 00 00 00 0e 7e 72 31 00 01 d5 01 00 00 00  ......~r1.......
+	0x0040 00 00 00                                         ...
+	rel 19+8 t=1 "".TrailingZeros8+0
+	rel 27+8 t=1 "".TrailingZeros8+32
+	rel 37+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 48+4 t=28 go.info.uint8+0
+	rel 61+4 t=28 go.info.int+0
+go.range."".TrailingZeros8 SDWARFRANGE size=0
+go.isstmt."".TrailingZeros8 SDWARFMISC size=0
+	0x0000 04 01 01 07 00                                   .....
+go.loc."".IterateBits SDWARFLOC size=153
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 18 00 00 00 00 00 00 00 30 00 00 00 00 00 00 00  ........0.......
+	0x0020 01 00 51 00 00 00 00 00 00 00 00 00 00 00 00 00  ..Q.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 18 00 00 00 00 00 00 00 30 00 00 00 00  ...........0....
+	0x0050 00 00 00 01 00 50 00 00 00 00 00 00 00 00 00 00  .....P..........
+	0x0060 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0070 00 00 00 00 00 00 18 00 00 00 00 00 00 00 20 00  .............. .
+	0x0080 00 00 00 00 00 00 01 00 50 00 00 00 00 00 00 00  ........P.......
+	0x0090 00 00 00 00 00 00 00 00 00                       .........
+	rel 8+8 t=1 "".IterateBits+0
+	rel 59+8 t=1 "".IterateBits+0
+	rel 110+8 t=1 "".IterateBits+0
+go.info."".IterateBits SDWARFINFO size=117
+	0x0000 02 22 22 2e 49 74 65 72 61 74 65 42 69 74 73 00  ."".IterateBits.
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 01 9c 00 00 00 00 01 0a 69 00 de 01 00 00 00 00  ........i.......
+	0x0030 00 00 00 00 0f 6e 00 00 dd 01 00 00 00 00 00 00  .....n..........
+	0x0040 00 00 0e 7e 72 31 00 01 dd 01 00 00 00 00 00 05  ...~r1..........
+	0x0050 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00 e1 01 12 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00                                   .....
+	rel 16+8 t=1 "".IterateBits+0
+	rel 24+8 t=1 "".IterateBits+48
+	rel 34+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 44+4 t=28 go.info.int+0
+	rel 48+4 t=28 go.loc."".IterateBits+0
+	rel 58+4 t=28 go.info.uint+0
+	rel 62+4 t=28 go.loc."".IterateBits+51
+	rel 74+4 t=28 go.info.int+0
+	rel 80+4 t=28 go.info.math/bits.TrailingZeros$abstract+0
+	rel 84+8 t=1 "".IterateBits+12
+	rel 92+8 t=1 "".IterateBits+20
+	rel 100+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 107+4 t=28 go.info.math/bits.TrailingZeros$abstract+27
+	rel 111+4 t=28 go.loc."".IterateBits+102
+go.range."".IterateBits SDWARFRANGE size=0
+go.isstmt."".IterateBits SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 01 02 02 01 01 02 02 01 02  ................
+	0x0010 00                                               .
+go.loc."".IterateBits64 SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 18 00 00 00 00 00 00 00 30 00 00 00 00 00 00 00  ........0.......
+	0x0020 01 00 51 00 00 00 00 00 00 00 00 00 00 00 00 00  ..Q.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 18 00 00 00 00 00 00 00 30 00 00 00 00  ...........0....
+	0x0050 00 00 00 01 00 50 00 00 00 00 00 00 00 00 00 00  .....P..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".IterateBits64+0
+	rel 59+8 t=1 "".IterateBits64+0
+go.info."".IterateBits64 SDWARFINFO size=82
+	0x0000 02 22 22 2e 49 74 65 72 61 74 65 42 69 74 73 36  ."".IterateBits6
+	0x0010 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  4...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0a 69 00 e8 01 00 00  ..........i.....
+	0x0030 00 00 00 00 00 00 0f 6e 00 00 e7 01 00 00 00 00  .......n........
+	0x0040 00 00 00 00 0e 7e 72 31 00 01 e7 01 00 00 00 00  .....~r1........
+	0x0050 00 00                                            ..
+	rel 18+8 t=1 "".IterateBits64+0
+	rel 26+8 t=1 "".IterateBits64+48
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 46+4 t=28 go.info.int+0
+	rel 50+4 t=28 go.loc."".IterateBits64+0
+	rel 60+4 t=28 go.info.uint64+0
+	rel 64+4 t=28 go.loc."".IterateBits64+51
+	rel 76+4 t=28 go.info.int+0
+go.range."".IterateBits64 SDWARFRANGE size=0
+go.isstmt."".IterateBits64 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 02 02 01 01 01 02 02 01 02  ................
+	0x0010 00                                               .
+go.loc."".IterateBits32 SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 18 00 00 00 00 00 00 00 30 00 00 00 00 00 00 00  ........0.......
+	0x0020 01 00 51 00 00 00 00 00 00 00 00 00 00 00 00 00  ..Q.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 18 00 00 00 00 00 00 00 30 00 00 00 00  ...........0....
+	0x0050 00 00 00 01 00 50 00 00 00 00 00 00 00 00 00 00  .....P..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".IterateBits32+0
+	rel 59+8 t=1 "".IterateBits32+0
+go.info."".IterateBits32 SDWARFINFO size=82
+	0x0000 02 22 22 2e 49 74 65 72 61 74 65 42 69 74 73 33  ."".IterateBits3
+	0x0010 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  2...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0a 69 00 f2 01 00 00  ..........i.....
+	0x0030 00 00 00 00 00 00 0f 6e 00 00 f1 01 00 00 00 00  .......n........
+	0x0040 00 00 00 00 0e 7e 72 31 00 01 f1 01 00 00 00 00  .....~r1........
+	0x0050 00 00                                            ..
+	rel 18+8 t=1 "".IterateBits32+0
+	rel 26+8 t=1 "".IterateBits32+48
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 46+4 t=28 go.info.int+0
+	rel 50+4 t=28 go.loc."".IterateBits32+0
+	rel 60+4 t=28 go.info.uint32+0
+	rel 64+4 t=28 go.loc."".IterateBits32+51
+	rel 76+4 t=28 go.info.int+0
+go.range."".IterateBits32 SDWARFRANGE size=0
+go.isstmt."".IterateBits32 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 02 02 01 01 01 02 02 01 02  ................
+	0x0010 00                                               .
+go.loc."".IterateBits16 SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 20 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00   .......@.......
+	0x0020 01 00 51 00 00 00 00 00 00 00 00 00 00 00 00 00  ..Q.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 20 00 00 00 00 00 00 00 40 00 00 00 00  ... .......@....
+	0x0050 00 00 00 01 00 50 00 00 00 00 00 00 00 00 00 00  .....P..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".IterateBits16+0
+	rel 59+8 t=1 "".IterateBits16+0
+go.info."".IterateBits16 SDWARFINFO size=82
+	0x0000 02 22 22 2e 49 74 65 72 61 74 65 42 69 74 73 31  ."".IterateBits1
+	0x0010 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  6...............
+	0x0020 00 00 01 9c 00 00 00 00 01 0a 69 00 fc 01 00 00  ..........i.....
+	0x0030 00 00 00 00 00 00 0f 6e 00 00 fb 01 00 00 00 00  .......n........
+	0x0040 00 00 00 00 0e 7e 72 31 00 01 fb 01 00 00 00 00  .....~r1........
+	0x0050 00 00                                            ..
+	rel 18+8 t=1 "".IterateBits16+0
+	rel 26+8 t=1 "".IterateBits16+64
+	rel 36+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 46+4 t=28 go.info.int+0
+	rel 50+4 t=28 go.loc."".IterateBits16+0
+	rel 60+4 t=28 go.info.uint16+0
+	rel 64+4 t=28 go.loc."".IterateBits16+51
+	rel 76+4 t=28 go.info.int+0
+go.range."".IterateBits16 SDWARFRANGE size=0
+go.isstmt."".IterateBits16 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 02 01 01 01 02 01 01 01  ................
+	0x0010 02 01 01 03 00                                   .....
+go.loc."".IterateBits8 SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 20 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00   .......@.......
+	0x0020 01 00 51 00 00 00 00 00 00 00 00 00 00 00 00 00  ..Q.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 20 00 00 00 00 00 00 00 40 00 00 00 00  ... .......@....
+	0x0050 00 00 00 01 00 50 00 00 00 00 00 00 00 00 00 00  .....P..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".IterateBits8+0
+	rel 59+8 t=1 "".IterateBits8+0
+go.info."".IterateBits8 SDWARFINFO size=81
+	0x0000 02 22 22 2e 49 74 65 72 61 74 65 42 69 74 73 38  ."".IterateBits8
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 01 9c 00 00 00 00 01 0a 69 00 86 02 00 00 00  .........i......
+	0x0030 00 00 00 00 00 0f 6e 00 00 85 02 00 00 00 00 00  ......n.........
+	0x0040 00 00 00 0e 7e 72 31 00 01 85 02 00 00 00 00 00  ....~r1.........
+	0x0050 00                                               .
+	rel 17+8 t=1 "".IterateBits8+0
+	rel 25+8 t=1 "".IterateBits8+64
+	rel 35+4 t=29 gofile..$GOROOT/test/codegen/mathbits.go+0
+	rel 45+4 t=28 go.info.int+0
+	rel 49+4 t=28 go.loc."".IterateBits8+0
+	rel 59+4 t=28 go.info.uint8+0
+	rel 63+4 t=28 go.loc."".IterateBits8+51
+	rel 75+4 t=28 go.info.int+0
+go.range."".IterateBits8 SDWARFRANGE size=0
+go.isstmt."".IterateBits8 SDWARFMISC size=0
+	0x0000 04 01 01 02 02 01 01 04 02 01 01 01 02 01 01 01  ................
+	0x0010 02 01 01 03 00                                   .....
+type..importpath.math/bits. SRODATA dupok size=12
+	0x0000 00 00 09 6d 61 74 68 2f 62 69 74 73              ...math/bits
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........

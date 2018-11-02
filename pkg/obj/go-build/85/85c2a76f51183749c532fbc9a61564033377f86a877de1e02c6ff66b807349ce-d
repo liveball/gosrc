@@ -1,0 +1,1045 @@
+
+package main
+
+import (
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "net/http"
+
+
+	_xtest "net/http_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestWriteSetCookies", _test.TestWriteSetCookies},
+
+	{"TestSetCookie", _test.TestSetCookie},
+
+	{"TestAddCookie", _test.TestAddCookie},
+
+	{"TestReadSetCookies", _test.TestReadSetCookies},
+
+	{"TestReadCookies", _test.TestReadCookies},
+
+	{"TestSetCookieDoubleQuotes", _test.TestSetCookieDoubleQuotes},
+
+	{"TestCookieSanitizeValue", _test.TestCookieSanitizeValue},
+
+	{"TestCookieSanitizePath", _test.TestCookieSanitizePath},
+
+	{"TestFileTransport", _test.TestFileTransport},
+
+	{"TestHeaderWrite", _test.TestHeaderWrite},
+
+	{"TestParseTime", _test.TestParseTime},
+
+	{"TestHasToken", _test.TestHasToken},
+
+	{"TestHeaderWriteSubsetAllocs", _test.TestHeaderWriteSubsetAllocs},
+
+	{"TestForeachHeaderElement", _test.TestForeachHeaderElement},
+
+	{"TestCleanHost", _test.TestCleanHost},
+
+	{"TestCmdGoNoHTTPServer", _test.TestCmdGoNoHTTPServer},
+
+	{"TestCacheKeys", _test.TestCacheKeys},
+
+	{"TestParseRange", _test.TestParseRange},
+
+	{"TestReadRequest", _test.TestReadRequest},
+
+	{"TestReadRequest_Bad", _test.TestReadRequest_Bad},
+
+	{"TestRequestWrite", _test.TestRequestWrite},
+
+	{"TestRequestWriteTransport", _test.TestRequestWriteTransport},
+
+	{"TestRequestWriteClosesBody", _test.TestRequestWriteClosesBody},
+
+	{"TestRequestWriteError", _test.TestRequestWriteError},
+
+	{"TestReadResponse", _test.TestReadResponse},
+
+	{"TestWriteResponse", _test.TestWriteResponse},
+
+	{"TestReadResponseCloseInMiddle", _test.TestReadResponseCloseInMiddle},
+
+	{"TestLocationResponse", _test.TestLocationResponse},
+
+	{"TestResponseStatusStutter", _test.TestResponseStatusStutter},
+
+	{"TestResponseContentLengthShortBody", _test.TestResponseContentLengthShortBody},
+
+	{"TestReadResponseErrors", _test.TestReadResponseErrors},
+
+	{"TestNeedsSniff", _test.TestNeedsSniff},
+
+	{"TestResponseWritesOnlySingleConnectionClose", _test.TestResponseWritesOnlySingleConnectionClose},
+
+	{"TestResponseWrite", _test.TestResponseWrite},
+
+	{"TestBodyReadBadTrailer", _test.TestBodyReadBadTrailer},
+
+	{"TestFinalChunkedBodyReadEOF", _test.TestFinalChunkedBodyReadEOF},
+
+	{"TestDetectInMemoryReaders", _test.TestDetectInMemoryReaders},
+
+	{"TestTransportPersistConnReadLoopEOF", _test.TestTransportPersistConnReadLoopEOF},
+
+	{"TestTransportShouldRetryRequest", _test.TestTransportShouldRetryRequest},
+
+	{"TestClient", _xtest.TestClient},
+
+	{"TestClientHead_h1", _xtest.TestClientHead_h1},
+
+	{"TestClientHead_h2", _xtest.TestClientHead_h2},
+
+	{"TestGetRequestFormat", _xtest.TestGetRequestFormat},
+
+	{"TestPostRequestFormat", _xtest.TestPostRequestFormat},
+
+	{"TestPostFormRequestFormat", _xtest.TestPostFormRequestFormat},
+
+	{"TestClientRedirects", _xtest.TestClientRedirects},
+
+	{"TestClientRedirectContext", _xtest.TestClientRedirectContext},
+
+	{"TestPostRedirects", _xtest.TestPostRedirects},
+
+	{"TestDeleteRedirects", _xtest.TestDeleteRedirects},
+
+	{"TestClientRedirectUseResponse", _xtest.TestClientRedirectUseResponse},
+
+	{"TestClientRedirect308NoLocation", _xtest.TestClientRedirect308NoLocation},
+
+	{"TestClientRedirect308NoGetBody", _xtest.TestClientRedirect308NoGetBody},
+
+	{"TestClientSendsCookieFromJar", _xtest.TestClientSendsCookieFromJar},
+
+	{"TestRedirectCookiesJar", _xtest.TestRedirectCookiesJar},
+
+	{"TestJarCalls", _xtest.TestJarCalls},
+
+	{"TestStreamingGet_h1", _xtest.TestStreamingGet_h1},
+
+	{"TestStreamingGet_h2", _xtest.TestStreamingGet_h2},
+
+	{"TestClientWrites", _xtest.TestClientWrites},
+
+	{"TestClientInsecureTransport", _xtest.TestClientInsecureTransport},
+
+	{"TestClientErrorWithRequestURI", _xtest.TestClientErrorWithRequestURI},
+
+	{"TestClientWithCorrectTLSServerName", _xtest.TestClientWithCorrectTLSServerName},
+
+	{"TestClientWithIncorrectTLSServerName", _xtest.TestClientWithIncorrectTLSServerName},
+
+	{"TestTransportUsesTLSConfigServerName", _xtest.TestTransportUsesTLSConfigServerName},
+
+	{"TestResponseSetsTLSConnectionState", _xtest.TestResponseSetsTLSConnectionState},
+
+	{"TestHTTPSClientDetectsHTTPServer", _xtest.TestHTTPSClientDetectsHTTPServer},
+
+	{"TestClientHeadContentLength_h1", _xtest.TestClientHeadContentLength_h1},
+
+	{"TestClientHeadContentLength_h2", _xtest.TestClientHeadContentLength_h2},
+
+	{"TestEmptyPasswordAuth", _xtest.TestEmptyPasswordAuth},
+
+	{"TestBasicAuth", _xtest.TestBasicAuth},
+
+	{"TestBasicAuthHeadersPreserved", _xtest.TestBasicAuthHeadersPreserved},
+
+	{"TestStripPasswordFromError", _xtest.TestStripPasswordFromError},
+
+	{"TestClientTimeout_h1", _xtest.TestClientTimeout_h1},
+
+	{"TestClientTimeout_h2", _xtest.TestClientTimeout_h2},
+
+	{"TestClientTimeout_Headers_h1", _xtest.TestClientTimeout_Headers_h1},
+
+	{"TestClientTimeout_Headers_h2", _xtest.TestClientTimeout_Headers_h2},
+
+	{"TestClientTimeoutCancel", _xtest.TestClientTimeoutCancel},
+
+	{"TestClientRedirectEatsBody_h1", _xtest.TestClientRedirectEatsBody_h1},
+
+	{"TestClientRedirectEatsBody_h2", _xtest.TestClientRedirectEatsBody_h2},
+
+	{"TestReferer", _xtest.TestReferer},
+
+	{"TestClientRedirectResponseWithoutRequest", _xtest.TestClientRedirectResponseWithoutRequest},
+
+	{"TestClientCopyHeadersOnRedirect", _xtest.TestClientCopyHeadersOnRedirect},
+
+	{"TestClientCopyHostOnRedirect", _xtest.TestClientCopyHostOnRedirect},
+
+	{"TestClientAltersCookiesOnRedirect", _xtest.TestClientAltersCookiesOnRedirect},
+
+	{"TestShouldCopyHeaderOnRedirect", _xtest.TestShouldCopyHeaderOnRedirect},
+
+	{"TestClientRedirectTypes", _xtest.TestClientRedirectTypes},
+
+	{"TestTransportBodyReadError", _xtest.TestTransportBodyReadError},
+
+	{"TestNewClientServerTest", _xtest.TestNewClientServerTest},
+
+	{"TestChunkedResponseHeaders_h1", _xtest.TestChunkedResponseHeaders_h1},
+
+	{"TestChunkedResponseHeaders_h2", _xtest.TestChunkedResponseHeaders_h2},
+
+	{"TestH12_HeadContentLengthNoBody", _xtest.TestH12_HeadContentLengthNoBody},
+
+	{"TestH12_HeadContentLengthSmallBody", _xtest.TestH12_HeadContentLengthSmallBody},
+
+	{"TestH12_HeadContentLengthLargeBody", _xtest.TestH12_HeadContentLengthLargeBody},
+
+	{"TestH12_200NoBody", _xtest.TestH12_200NoBody},
+
+	{"TestH2_204NoBody", _xtest.TestH2_204NoBody},
+
+	{"TestH2_304NoBody", _xtest.TestH2_304NoBody},
+
+	{"TestH2_404NoBody", _xtest.TestH2_404NoBody},
+
+	{"TestH12_SmallBody", _xtest.TestH12_SmallBody},
+
+	{"TestH12_ExplicitContentLength", _xtest.TestH12_ExplicitContentLength},
+
+	{"TestH12_FlushBeforeBody", _xtest.TestH12_FlushBeforeBody},
+
+	{"TestH12_FlushMidBody", _xtest.TestH12_FlushMidBody},
+
+	{"TestH12_Head_ExplicitLen", _xtest.TestH12_Head_ExplicitLen},
+
+	{"TestH12_Head_ImplicitLen", _xtest.TestH12_Head_ImplicitLen},
+
+	{"TestH12_HandlerWritesTooLittle", _xtest.TestH12_HandlerWritesTooLittle},
+
+	{"TestH12_HandlerWritesTooMuch", _xtest.TestH12_HandlerWritesTooMuch},
+
+	{"TestH12_AutoGzip", _xtest.TestH12_AutoGzip},
+
+	{"TestH12_AutoGzip_Disabled", _xtest.TestH12_AutoGzip_Disabled},
+
+	{"Test304Responses_h1", _xtest.Test304Responses_h1},
+
+	{"Test304Responses_h2", _xtest.Test304Responses_h2},
+
+	{"TestH12_ServerEmptyContentLength", _xtest.TestH12_ServerEmptyContentLength},
+
+	{"TestH12_RequestContentLength_Known_NonZero", _xtest.TestH12_RequestContentLength_Known_NonZero},
+
+	{"TestH12_RequestContentLength_Known_Zero", _xtest.TestH12_RequestContentLength_Known_Zero},
+
+	{"TestH12_RequestContentLength_Unknown", _xtest.TestH12_RequestContentLength_Unknown},
+
+	{"TestCancelRequestMidBody_h1", _xtest.TestCancelRequestMidBody_h1},
+
+	{"TestCancelRequestMidBody_h2", _xtest.TestCancelRequestMidBody_h2},
+
+	{"TestTrailersClientToServer_h1", _xtest.TestTrailersClientToServer_h1},
+
+	{"TestTrailersClientToServer_h2", _xtest.TestTrailersClientToServer_h2},
+
+	{"TestTrailersServerToClient_h1", _xtest.TestTrailersServerToClient_h1},
+
+	{"TestTrailersServerToClient_h2", _xtest.TestTrailersServerToClient_h2},
+
+	{"TestTrailersServerToClient_Flush_h1", _xtest.TestTrailersServerToClient_Flush_h1},
+
+	{"TestTrailersServerToClient_Flush_h2", _xtest.TestTrailersServerToClient_Flush_h2},
+
+	{"TestResponseBodyReadAfterClose_h1", _xtest.TestResponseBodyReadAfterClose_h1},
+
+	{"TestResponseBodyReadAfterClose_h2", _xtest.TestResponseBodyReadAfterClose_h2},
+
+	{"TestConcurrentReadWriteReqBody_h1", _xtest.TestConcurrentReadWriteReqBody_h1},
+
+	{"TestConcurrentReadWriteReqBody_h2", _xtest.TestConcurrentReadWriteReqBody_h2},
+
+	{"TestConnectRequest_h1", _xtest.TestConnectRequest_h1},
+
+	{"TestConnectRequest_h2", _xtest.TestConnectRequest_h2},
+
+	{"TestTransportUserAgent_h1", _xtest.TestTransportUserAgent_h1},
+
+	{"TestTransportUserAgent_h2", _xtest.TestTransportUserAgent_h2},
+
+	{"TestStarRequestFoo_h1", _xtest.TestStarRequestFoo_h1},
+
+	{"TestStarRequestFoo_h2", _xtest.TestStarRequestFoo_h2},
+
+	{"TestStarRequestOptions_h1", _xtest.TestStarRequestOptions_h1},
+
+	{"TestStarRequestOptions_h2", _xtest.TestStarRequestOptions_h2},
+
+	{"TestTransportDiscardsUnneededConns", _xtest.TestTransportDiscardsUnneededConns},
+
+	{"TestTransportGCRequest_Body_h1", _xtest.TestTransportGCRequest_Body_h1},
+
+	{"TestTransportGCRequest_Body_h2", _xtest.TestTransportGCRequest_Body_h2},
+
+	{"TestTransportGCRequest_NoBody_h1", _xtest.TestTransportGCRequest_NoBody_h1},
+
+	{"TestTransportGCRequest_NoBody_h2", _xtest.TestTransportGCRequest_NoBody_h2},
+
+	{"TestTransportRejectsInvalidHeaders_h1", _xtest.TestTransportRejectsInvalidHeaders_h1},
+
+	{"TestTransportRejectsInvalidHeaders_h2", _xtest.TestTransportRejectsInvalidHeaders_h2},
+
+	{"TestInterruptWithPanic_h1", _xtest.TestInterruptWithPanic_h1},
+
+	{"TestInterruptWithPanic_h2", _xtest.TestInterruptWithPanic_h2},
+
+	{"TestInterruptWithPanic_nil_h1", _xtest.TestInterruptWithPanic_nil_h1},
+
+	{"TestInterruptWithPanic_nil_h2", _xtest.TestInterruptWithPanic_nil_h2},
+
+	{"TestInterruptWithPanic_ErrAbortHandler_h1", _xtest.TestInterruptWithPanic_ErrAbortHandler_h1},
+
+	{"TestInterruptWithPanic_ErrAbortHandler_h2", _xtest.TestInterruptWithPanic_ErrAbortHandler_h2},
+
+	{"TestH12_AutoGzipWithDumpResponse", _xtest.TestH12_AutoGzipWithDumpResponse},
+
+	{"TestCloseIdleConnections_h1", _xtest.TestCloseIdleConnections_h1},
+
+	{"TestCloseIdleConnections_h2", _xtest.TestCloseIdleConnections_h2},
+
+	{"TestNoSniffExpectRequestBody_h1", _xtest.TestNoSniffExpectRequestBody_h1},
+
+	{"TestNoSniffExpectRequestBody_h2", _xtest.TestNoSniffExpectRequestBody_h2},
+
+	{"TestServerUndeclaredTrailers_h1", _xtest.TestServerUndeclaredTrailers_h1},
+
+	{"TestServerUndeclaredTrailers_h2", _xtest.TestServerUndeclaredTrailers_h2},
+
+	{"TestBadResponseAfterReadingBody", _xtest.TestBadResponseAfterReadingBody},
+
+	{"TestWriteHeader0_h1", _xtest.TestWriteHeader0_h1},
+
+	{"TestWriteHeader0_h2", _xtest.TestWriteHeader0_h2},
+
+	{"TestWriteHeaderNoCodeCheck_h1", _xtest.TestWriteHeaderNoCodeCheck_h1},
+
+	{"TestWriteHeaderNoCodeCheck_h1hijack", _xtest.TestWriteHeaderNoCodeCheck_h1hijack},
+
+	{"TestWriteHeaderNoCodeCheck_h2", _xtest.TestWriteHeaderNoCodeCheck_h2},
+
+	{"TestServeFile", _xtest.TestServeFile},
+
+	{"TestServeFile_DotDot", _xtest.TestServeFile_DotDot},
+
+	{"TestFSRedirect", _xtest.TestFSRedirect},
+
+	{"TestFileServerCleans", _xtest.TestFileServerCleans},
+
+	{"TestFileServerEscapesNames", _xtest.TestFileServerEscapesNames},
+
+	{"TestFileServerSortsNames", _xtest.TestFileServerSortsNames},
+
+	{"TestFileServerImplicitLeadingSlash", _xtest.TestFileServerImplicitLeadingSlash},
+
+	{"TestDirJoin", _xtest.TestDirJoin},
+
+	{"TestEmptyDirOpenCWD", _xtest.TestEmptyDirOpenCWD},
+
+	{"TestServeFileContentType", _xtest.TestServeFileContentType},
+
+	{"TestServeFileMimeType", _xtest.TestServeFileMimeType},
+
+	{"TestServeFileFromCWD", _xtest.TestServeFileFromCWD},
+
+	{"TestServeDirWithoutTrailingSlash", _xtest.TestServeDirWithoutTrailingSlash},
+
+	{"TestServeFileWithContentEncoding_h1", _xtest.TestServeFileWithContentEncoding_h1},
+
+	{"TestServeFileWithContentEncoding_h2", _xtest.TestServeFileWithContentEncoding_h2},
+
+	{"TestServeIndexHtml", _xtest.TestServeIndexHtml},
+
+	{"TestFileServerZeroByte", _xtest.TestFileServerZeroByte},
+
+	{"TestDirectoryIfNotModified", _xtest.TestDirectoryIfNotModified},
+
+	{"TestServeContent", _xtest.TestServeContent},
+
+	{"TestServerFileStatError", _xtest.TestServerFileStatError},
+
+	{"TestServeContentErrorMessages", _xtest.TestServeContentErrorMessages},
+
+	{"TestLinuxSendfile", _xtest.TestLinuxSendfile},
+
+	{"TestLinuxSendfileChild", _xtest.TestLinuxSendfileChild},
+
+	{"TestFileServerNotDirError", _xtest.TestFileServerNotDirError},
+
+	{"TestFileServerCleanPath", _xtest.TestFileServerCleanPath},
+
+	{"Test_scanETag", _xtest.Test_scanETag},
+
+	{"TestNextProtoUpgrade", _xtest.TestNextProtoUpgrade},
+
+	{"TestQuery", _xtest.TestQuery},
+
+	{"TestParseFormQuery", _xtest.TestParseFormQuery},
+
+	{"TestParseFormQueryMethods", _xtest.TestParseFormQueryMethods},
+
+	{"TestParseFormUnknownContentType", _xtest.TestParseFormUnknownContentType},
+
+	{"TestParseFormInitializeOnError", _xtest.TestParseFormInitializeOnError},
+
+	{"TestMultipartReader", _xtest.TestMultipartReader},
+
+	{"TestParseMultipartFormPopulatesPostForm", _xtest.TestParseMultipartFormPopulatesPostForm},
+
+	{"TestParseMultipartForm", _xtest.TestParseMultipartForm},
+
+	{"TestRedirect_h1", _xtest.TestRedirect_h1},
+
+	{"TestRedirect_h2", _xtest.TestRedirect_h2},
+
+	{"TestSetBasicAuth", _xtest.TestSetBasicAuth},
+
+	{"TestMultipartRequest", _xtest.TestMultipartRequest},
+
+	{"TestMultipartRequestAuto", _xtest.TestMultipartRequestAuto},
+
+	{"TestMissingFileMultipartRequest", _xtest.TestMissingFileMultipartRequest},
+
+	{"TestFormValueCallsParseMultipartForm", _xtest.TestFormValueCallsParseMultipartForm},
+
+	{"TestFormFileCallsParseMultipartForm", _xtest.TestFormFileCallsParseMultipartForm},
+
+	{"TestParseMultipartFormOrder", _xtest.TestParseMultipartFormOrder},
+
+	{"TestMultipartReaderOrder", _xtest.TestMultipartReaderOrder},
+
+	{"TestFormFileOrder", _xtest.TestFormFileOrder},
+
+	{"TestReadRequestErrors", _xtest.TestReadRequestErrors},
+
+	{"TestNewRequestHost", _xtest.TestNewRequestHost},
+
+	{"TestRequestInvalidMethod", _xtest.TestRequestInvalidMethod},
+
+	{"TestNewRequestContentLength", _xtest.TestNewRequestContentLength},
+
+	{"TestParseHTTPVersion", _xtest.TestParseHTTPVersion},
+
+	{"TestGetBasicAuth", _xtest.TestGetBasicAuth},
+
+	{"TestParseBasicAuth", _xtest.TestParseBasicAuth},
+
+	{"TestRequestWriteBufferedWriter", _xtest.TestRequestWriteBufferedWriter},
+
+	{"TestRequestBadHost", _xtest.TestRequestBadHost},
+
+	{"TestStarRequest", _xtest.TestStarRequest},
+
+	{"TestIssue10884_MaxBytesEOF", _xtest.TestIssue10884_MaxBytesEOF},
+
+	{"TestMaxBytesReaderStickyError", _xtest.TestMaxBytesReaderStickyError},
+
+	{"TestWithContextDeepCopiesURL", _xtest.TestWithContextDeepCopiesURL},
+
+	{"TestNewRequestGetBody", _xtest.TestNewRequestGetBody},
+
+	{"TestConsumingBodyOnNextConn", _xtest.TestConsumingBodyOnNextConn},
+
+	{"TestHostHandlers", _xtest.TestHostHandlers},
+
+	{"TestServeMuxHandler", _xtest.TestServeMuxHandler},
+
+	{"TestServeMuxHandleFuncWithNilHandler", _xtest.TestServeMuxHandleFuncWithNilHandler},
+
+	{"TestServeMuxHandlerRedirects", _xtest.TestServeMuxHandlerRedirects},
+
+	{"TestMuxRedirectLeadingSlashes", _xtest.TestMuxRedirectLeadingSlashes},
+
+	{"TestServeWithSlashRedirectKeepsQueryString", _xtest.TestServeWithSlashRedirectKeepsQueryString},
+
+	{"TestServeWithSlashRedirectForHostPatterns", _xtest.TestServeWithSlashRedirectForHostPatterns},
+
+	{"TestShouldRedirectConcurrency", _xtest.TestShouldRedirectConcurrency},
+
+	{"TestServerTimeouts", _xtest.TestServerTimeouts},
+
+	{"TestHTTP2WriteDeadlineExtendedOnNewRequest", _xtest.TestHTTP2WriteDeadlineExtendedOnNewRequest},
+
+	{"TestHTTP2WriteDeadlineEnforcedPerStream", _xtest.TestHTTP2WriteDeadlineEnforcedPerStream},
+
+	{"TestHTTP2NoWriteDeadline", _xtest.TestHTTP2NoWriteDeadline},
+
+	{"TestOnlyWriteTimeout", _xtest.TestOnlyWriteTimeout},
+
+	{"TestIdentityResponse", _xtest.TestIdentityResponse},
+
+	{"TestServeHTTP10Close", _xtest.TestServeHTTP10Close},
+
+	{"TestClientCanClose", _xtest.TestClientCanClose},
+
+	{"TestHandlersCanSetConnectionClose11", _xtest.TestHandlersCanSetConnectionClose11},
+
+	{"TestHandlersCanSetConnectionClose10", _xtest.TestHandlersCanSetConnectionClose10},
+
+	{"TestHTTP2UpgradeClosesConnection", _xtest.TestHTTP2UpgradeClosesConnection},
+
+	{"TestHTTP10KeepAlive204Response", _xtest.TestHTTP10KeepAlive204Response},
+
+	{"TestHTTP11KeepAlive204Response", _xtest.TestHTTP11KeepAlive204Response},
+
+	{"TestHTTP10KeepAlive304Response", _xtest.TestHTTP10KeepAlive304Response},
+
+	{"TestKeepAliveFinalChunkWithEOF", _xtest.TestKeepAliveFinalChunkWithEOF},
+
+	{"TestSetsRemoteAddr_h1", _xtest.TestSetsRemoteAddr_h1},
+
+	{"TestSetsRemoteAddr_h2", _xtest.TestSetsRemoteAddr_h2},
+
+	{"TestServerAllowsBlockingRemoteAddr", _xtest.TestServerAllowsBlockingRemoteAddr},
+
+	{"TestIdentityResponseHeaders", _xtest.TestIdentityResponseHeaders},
+
+	{"TestHeadResponses_h1", _xtest.TestHeadResponses_h1},
+
+	{"TestHeadResponses_h2", _xtest.TestHeadResponses_h2},
+
+	{"TestTLSHandshakeTimeout", _xtest.TestTLSHandshakeTimeout},
+
+	{"TestTLSServer", _xtest.TestTLSServer},
+
+	{"TestServeTLS", _xtest.TestServeTLS},
+
+	{"TestAutomaticHTTP2_Serve_NoTLSConfig", _xtest.TestAutomaticHTTP2_Serve_NoTLSConfig},
+
+	{"TestAutomaticHTTP2_Serve_NonH2TLSConfig", _xtest.TestAutomaticHTTP2_Serve_NonH2TLSConfig},
+
+	{"TestAutomaticHTTP2_Serve_H2TLSConfig", _xtest.TestAutomaticHTTP2_Serve_H2TLSConfig},
+
+	{"TestAutomaticHTTP2_Serve_WithTLSConfig", _xtest.TestAutomaticHTTP2_Serve_WithTLSConfig},
+
+	{"TestAutomaticHTTP2_ListenAndServe", _xtest.TestAutomaticHTTP2_ListenAndServe},
+
+	{"TestAutomaticHTTP2_ListenAndServe_GetCertificate", _xtest.TestAutomaticHTTP2_ListenAndServe_GetCertificate},
+
+	{"TestServerExpect", _xtest.TestServerExpect},
+
+	{"TestServerUnreadRequestBodyLittle", _xtest.TestServerUnreadRequestBodyLittle},
+
+	{"TestServerUnreadRequestBodyLarge", _xtest.TestServerUnreadRequestBodyLarge},
+
+	{"TestHandlerBodyClose", _xtest.TestHandlerBodyClose},
+
+	{"TestRequestBodyReadErrorClosesConnection", _xtest.TestRequestBodyReadErrorClosesConnection},
+
+	{"TestInvalidTrailerClosesConnection", _xtest.TestInvalidTrailerClosesConnection},
+
+	{"TestRequestBodyTimeoutClosesConnection", _xtest.TestRequestBodyTimeoutClosesConnection},
+
+	{"TestTimeoutHandler_h1", _xtest.TestTimeoutHandler_h1},
+
+	{"TestTimeoutHandler_h2", _xtest.TestTimeoutHandler_h2},
+
+	{"TestTimeoutHandlerRace", _xtest.TestTimeoutHandlerRace},
+
+	{"TestTimeoutHandlerRaceHeader", _xtest.TestTimeoutHandlerRaceHeader},
+
+	{"TestTimeoutHandlerRaceHeaderTimeout", _xtest.TestTimeoutHandlerRaceHeaderTimeout},
+
+	{"TestTimeoutHandlerStartTimerWhenServing", _xtest.TestTimeoutHandlerStartTimerWhenServing},
+
+	{"TestTimeoutHandlerEmptyResponse", _xtest.TestTimeoutHandlerEmptyResponse},
+
+	{"TestTimeoutHandlerPanicRecovery", _xtest.TestTimeoutHandlerPanicRecovery},
+
+	{"TestRedirectBadPath", _xtest.TestRedirectBadPath},
+
+	{"TestRedirect", _xtest.TestRedirect},
+
+	{"TestRedirect_contentTypeAndBody", _xtest.TestRedirect_contentTypeAndBody},
+
+	{"TestZeroLengthPostAndResponse_h1", _xtest.TestZeroLengthPostAndResponse_h1},
+
+	{"TestZeroLengthPostAndResponse_h2", _xtest.TestZeroLengthPostAndResponse_h2},
+
+	{"TestHandlerPanicNil_h1", _xtest.TestHandlerPanicNil_h1},
+
+	{"TestHandlerPanicNil_h2", _xtest.TestHandlerPanicNil_h2},
+
+	{"TestHandlerPanic_h1", _xtest.TestHandlerPanic_h1},
+
+	{"TestHandlerPanic_h2", _xtest.TestHandlerPanic_h2},
+
+	{"TestHandlerPanicWithHijack", _xtest.TestHandlerPanicWithHijack},
+
+	{"TestServerWriteHijackZeroBytes", _xtest.TestServerWriteHijackZeroBytes},
+
+	{"TestServerNoDate_h1", _xtest.TestServerNoDate_h1},
+
+	{"TestServerNoDate_h2", _xtest.TestServerNoDate_h2},
+
+	{"TestServerNoContentType_h1", _xtest.TestServerNoContentType_h1},
+
+	{"TestServerNoContentType_h2", _xtest.TestServerNoContentType_h2},
+
+	{"TestStripPrefix", _xtest.TestStripPrefix},
+
+	{"TestStripPrefix_notModifyRequest", _xtest.TestStripPrefix_notModifyRequest},
+
+	{"TestRequestLimit_h1", _xtest.TestRequestLimit_h1},
+
+	{"TestRequestLimit_h2", _xtest.TestRequestLimit_h2},
+
+	{"TestRequestBodyLimit_h1", _xtest.TestRequestBodyLimit_h1},
+
+	{"TestRequestBodyLimit_h2", _xtest.TestRequestBodyLimit_h2},
+
+	{"TestClientWriteShutdown", _xtest.TestClientWriteShutdown},
+
+	{"TestServerBufferedChunking", _xtest.TestServerBufferedChunking},
+
+	{"TestServerGracefulClose", _xtest.TestServerGracefulClose},
+
+	{"TestCaseSensitiveMethod_h1", _xtest.TestCaseSensitiveMethod_h1},
+
+	{"TestCaseSensitiveMethod_h2", _xtest.TestCaseSensitiveMethod_h2},
+
+	{"TestContentLengthZero", _xtest.TestContentLengthZero},
+
+	{"TestCloseNotifier", _xtest.TestCloseNotifier},
+
+	{"TestCloseNotifierPipelined", _xtest.TestCloseNotifierPipelined},
+
+	{"TestCloseNotifierChanLeak", _xtest.TestCloseNotifierChanLeak},
+
+	{"TestHijackAfterCloseNotifier", _xtest.TestHijackAfterCloseNotifier},
+
+	{"TestHijackBeforeRequestBodyRead", _xtest.TestHijackBeforeRequestBodyRead},
+
+	{"TestOptions", _xtest.TestOptions},
+
+	{"TestHeaderToWire", _xtest.TestHeaderToWire},
+
+	{"TestAcceptMaxFds", _xtest.TestAcceptMaxFds},
+
+	{"TestWriteAfterHijack", _xtest.TestWriteAfterHijack},
+
+	{"TestDoubleHijack", _xtest.TestDoubleHijack},
+
+	{"TestHTTP10ConnectionHeader", _xtest.TestHTTP10ConnectionHeader},
+
+	{"TestServerReaderFromOrder_h1", _xtest.TestServerReaderFromOrder_h1},
+
+	{"TestServerReaderFromOrder_h2", _xtest.TestServerReaderFromOrder_h2},
+
+	{"TestCodesPreventingContentTypeAndBody", _xtest.TestCodesPreventingContentTypeAndBody},
+
+	{"TestContentTypeOkayOn204", _xtest.TestContentTypeOkayOn204},
+
+	{"TestTransportAndServerSharedBodyRace_h1", _xtest.TestTransportAndServerSharedBodyRace_h1},
+
+	{"TestTransportAndServerSharedBodyRace_h2", _xtest.TestTransportAndServerSharedBodyRace_h2},
+
+	{"TestRequestBodyCloseDoesntBlock", _xtest.TestRequestBodyCloseDoesntBlock},
+
+	{"TestResponseWriterWriteString", _xtest.TestResponseWriterWriteString},
+
+	{"TestAppendTime", _xtest.TestAppendTime},
+
+	{"TestServerConnState", _xtest.TestServerConnState},
+
+	{"TestServerKeepAlivesEnabled", _xtest.TestServerKeepAlivesEnabled},
+
+	{"TestServerEmptyBodyRace_h1", _xtest.TestServerEmptyBodyRace_h1},
+
+	{"TestServerEmptyBodyRace_h2", _xtest.TestServerEmptyBodyRace_h2},
+
+	{"TestServerConnStateNew", _xtest.TestServerConnStateNew},
+
+	{"TestCloseWrite", _xtest.TestCloseWrite},
+
+	{"TestServerFlushAndHijack", _xtest.TestServerFlushAndHijack},
+
+	{"TestServerKeepAliveAfterWriteError", _xtest.TestServerKeepAliveAfterWriteError},
+
+	{"TestNoContentLengthIfTransferEncoding", _xtest.TestNoContentLengthIfTransferEncoding},
+
+	{"TestTolerateCRLFBeforeRequestLine", _xtest.TestTolerateCRLFBeforeRequestLine},
+
+	{"TestIssue13893_Expect100", _xtest.TestIssue13893_Expect100},
+
+	{"TestIssue11549_Expect100", _xtest.TestIssue11549_Expect100},
+
+	{"TestHandlerFinishSkipBigContentLengthRead", _xtest.TestHandlerFinishSkipBigContentLengthRead},
+
+	{"TestHandlerSetsBodyNil_h1", _xtest.TestHandlerSetsBodyNil_h1},
+
+	{"TestHandlerSetsBodyNil_h2", _xtest.TestHandlerSetsBodyNil_h2},
+
+	{"TestServerValidatesHostHeader", _xtest.TestServerValidatesHostHeader},
+
+	{"TestServerHandlersCanHandleH2PRI", _xtest.TestServerHandlersCanHandleH2PRI},
+
+	{"TestServerValidatesHeaders", _xtest.TestServerValidatesHeaders},
+
+	{"TestServerRequestContextCancel_ServeHTTPDone_h1", _xtest.TestServerRequestContextCancel_ServeHTTPDone_h1},
+
+	{"TestServerRequestContextCancel_ServeHTTPDone_h2", _xtest.TestServerRequestContextCancel_ServeHTTPDone_h2},
+
+	{"TestServerRequestContextCancel_ConnClose", _xtest.TestServerRequestContextCancel_ConnClose},
+
+	{"TestServerContext_ServerContextKey_h1", _xtest.TestServerContext_ServerContextKey_h1},
+
+	{"TestServerContext_ServerContextKey_h2", _xtest.TestServerContext_ServerContextKey_h2},
+
+	{"TestServerContext_LocalAddrContextKey_h1", _xtest.TestServerContext_LocalAddrContextKey_h1},
+
+	{"TestServerContext_LocalAddrContextKey_h2", _xtest.TestServerContext_LocalAddrContextKey_h2},
+
+	{"TestHandlerSetTransferEncodingChunked", _xtest.TestHandlerSetTransferEncodingChunked},
+
+	{"TestHandlerSetTransferEncodingGzip", _xtest.TestHandlerSetTransferEncodingGzip},
+
+	{"TestConcurrentServerServe", _xtest.TestConcurrentServerServe},
+
+	{"TestServerIdleTimeout", _xtest.TestServerIdleTimeout},
+
+	{"TestServerSetKeepAlivesEnabledClosesConns", _xtest.TestServerSetKeepAlivesEnabledClosesConns},
+
+	{"TestServerShutdown_h1", _xtest.TestServerShutdown_h1},
+
+	{"TestServerShutdown_h2", _xtest.TestServerShutdown_h2},
+
+	{"TestServerShutdownStateNew", _xtest.TestServerShutdownStateNew},
+
+	{"TestServerCloseDeadlock", _xtest.TestServerCloseDeadlock},
+
+	{"TestServerKeepAlivesEnabled_h1", _xtest.TestServerKeepAlivesEnabled_h1},
+
+	{"TestServerKeepAlivesEnabled_h2", _xtest.TestServerKeepAlivesEnabled_h2},
+
+	{"TestServerCancelsReadTimeoutWhenIdle", _xtest.TestServerCancelsReadTimeoutWhenIdle},
+
+	{"TestServerDuplicateBackgroundRead", _xtest.TestServerDuplicateBackgroundRead},
+
+	{"TestServerHijackGetsBackgroundByte", _xtest.TestServerHijackGetsBackgroundByte},
+
+	{"TestServerHijackGetsBackgroundByte_big", _xtest.TestServerHijackGetsBackgroundByte_big},
+
+	{"TestServerValidatesMethod", _xtest.TestServerValidatesMethod},
+
+	{"TestServerListenNotComparableListener", _xtest.TestServerListenNotComparableListener},
+
+	{"TestServerCloseListenerOnce", _xtest.TestServerCloseListenerOnce},
+
+	{"TestServerShutdownThenServe", _xtest.TestServerShutdownThenServe},
+
+	{"TestStripPortFromHost", _xtest.TestStripPortFromHost},
+
+	{"TestDetectContentType", _xtest.TestDetectContentType},
+
+	{"TestServerContentType_h1", _xtest.TestServerContentType_h1},
+
+	{"TestServerContentType_h2", _xtest.TestServerContentType_h2},
+
+	{"TestServerIssue5953_h1", _xtest.TestServerIssue5953_h1},
+
+	{"TestServerIssue5953_h2", _xtest.TestServerIssue5953_h2},
+
+	{"TestContentTypeWithCopy_h1", _xtest.TestContentTypeWithCopy_h1},
+
+	{"TestContentTypeWithCopy_h2", _xtest.TestContentTypeWithCopy_h2},
+
+	{"TestSniffWriteSize_h1", _xtest.TestSniffWriteSize_h1},
+
+	{"TestSniffWriteSize_h2", _xtest.TestSniffWriteSize_h2},
+
+	{"TestReuseRequest", _xtest.TestReuseRequest},
+
+	{"TestTransportKeepAlives", _xtest.TestTransportKeepAlives},
+
+	{"TestTransportConnectionCloseOnResponse", _xtest.TestTransportConnectionCloseOnResponse},
+
+	{"TestTransportConnectionCloseOnRequest", _xtest.TestTransportConnectionCloseOnRequest},
+
+	{"TestTransportConnectionCloseOnRequestDisableKeepAlive", _xtest.TestTransportConnectionCloseOnRequestDisableKeepAlive},
+
+	{"TestTransportIdleCacheKeys", _xtest.TestTransportIdleCacheKeys},
+
+	{"TestTransportReadToEndReusesConn", _xtest.TestTransportReadToEndReusesConn},
+
+	{"TestTransportMaxPerHostIdleConns", _xtest.TestTransportMaxPerHostIdleConns},
+
+	{"TestTransportMaxConnsPerHostIncludeDialInProgress", _xtest.TestTransportMaxConnsPerHostIncludeDialInProgress},
+
+	{"TestTransportRemovesDeadIdleConnections", _xtest.TestTransportRemovesDeadIdleConnections},
+
+	{"TestTransportServerClosingUnexpectedly", _xtest.TestTransportServerClosingUnexpectedly},
+
+	{"TestStressSurpriseServerCloses", _xtest.TestStressSurpriseServerCloses},
+
+	{"TestTransportHeadResponses", _xtest.TestTransportHeadResponses},
+
+	{"TestTransportHeadChunkedResponse", _xtest.TestTransportHeadChunkedResponse},
+
+	{"TestRoundTripGzip", _xtest.TestRoundTripGzip},
+
+	{"TestTransportGzip", _xtest.TestTransportGzip},
+
+	{"TestTransportExpect100Continue", _xtest.TestTransportExpect100Continue},
+
+	{"TestSOCKS5Proxy", _xtest.TestSOCKS5Proxy},
+
+	{"TestTransportProxy", _xtest.TestTransportProxy},
+
+	{"TestTransportDialPreservesNetOpProxyError", _xtest.TestTransportDialPreservesNetOpProxyError},
+
+	{"TestTransportGzipRecursive", _xtest.TestTransportGzipRecursive},
+
+	{"TestTransportGzipShort", _xtest.TestTransportGzipShort},
+
+	{"TestTransportPersistConnLeak", _xtest.TestTransportPersistConnLeak},
+
+	{"TestTransportPersistConnLeakShortBody", _xtest.TestTransportPersistConnLeakShortBody},
+
+	{"TestTransportIdleConnCrash", _xtest.TestTransportIdleConnCrash},
+
+	{"TestIssue3644", _xtest.TestIssue3644},
+
+	{"TestIssue3595", _xtest.TestIssue3595},
+
+	{"TestChunkedNoContent", _xtest.TestChunkedNoContent},
+
+	{"TestTransportConcurrency", _xtest.TestTransportConcurrency},
+
+	{"TestIssue4191_InfiniteGetTimeout", _xtest.TestIssue4191_InfiniteGetTimeout},
+
+	{"TestIssue4191_InfiniteGetToPutTimeout", _xtest.TestIssue4191_InfiniteGetToPutTimeout},
+
+	{"TestTransportResponseHeaderTimeout", _xtest.TestTransportResponseHeaderTimeout},
+
+	{"TestTransportCancelRequest", _xtest.TestTransportCancelRequest},
+
+	{"TestTransportCancelRequestInDial", _xtest.TestTransportCancelRequestInDial},
+
+	{"TestCancelRequestWithChannel", _xtest.TestCancelRequestWithChannel},
+
+	{"TestCancelRequestWithChannelBeforeDo_Cancel", _xtest.TestCancelRequestWithChannelBeforeDo_Cancel},
+
+	{"TestCancelRequestWithChannelBeforeDo_Context", _xtest.TestCancelRequestWithChannelBeforeDo_Context},
+
+	{"TestTransportCancelBeforeResponseHeaders", _xtest.TestTransportCancelBeforeResponseHeaders},
+
+	{"TestTransportCloseResponseBody", _xtest.TestTransportCloseResponseBody},
+
+	{"TestTransportAltProto", _xtest.TestTransportAltProto},
+
+	{"TestTransportNoHost", _xtest.TestTransportNoHost},
+
+	{"TestTransportEmptyMethod", _xtest.TestTransportEmptyMethod},
+
+	{"TestTransportSocketLateBinding", _xtest.TestTransportSocketLateBinding},
+
+	{"TestTransportReading100Continue", _xtest.TestTransportReading100Continue},
+
+	{"TestTransportIgnore1xxResponses", _xtest.TestTransportIgnore1xxResponses},
+
+	{"TestTransportLimits1xxResponses", _xtest.TestTransportLimits1xxResponses},
+
+	{"TestTransportTreat101Terminal", _xtest.TestTransportTreat101Terminal},
+
+	{"TestProxyFromEnvironment", _xtest.TestProxyFromEnvironment},
+
+	{"TestProxyFromEnvironmentLowerCase", _xtest.TestProxyFromEnvironmentLowerCase},
+
+	{"TestIdleConnChannelLeak", _xtest.TestIdleConnChannelLeak},
+
+	{"TestTransportClosesRequestBody", _xtest.TestTransportClosesRequestBody},
+
+	{"TestTransportTLSHandshakeTimeout", _xtest.TestTransportTLSHandshakeTimeout},
+
+	{"TestTLSServerClosesConnection", _xtest.TestTLSServerClosesConnection},
+
+	{"TestTransportNoReuseAfterEarlyResponse", _xtest.TestTransportNoReuseAfterEarlyResponse},
+
+	{"TestTransportIssue10457", _xtest.TestTransportIssue10457},
+
+	{"TestRetryRequestsOnError", _xtest.TestRetryRequestsOnError},
+
+	{"TestTransportClosesBodyOnError", _xtest.TestTransportClosesBodyOnError},
+
+	{"TestTransportDialTLS", _xtest.TestTransportDialTLS},
+
+	{"TestRoundTripReturnsProxyError", _xtest.TestRoundTripReturnsProxyError},
+
+	{"TestTransportCloseIdleConnsThenReturn", _xtest.TestTransportCloseIdleConnsThenReturn},
+
+	{"TestTransportRangeAndGzip", _xtest.TestTransportRangeAndGzip},
+
+	{"TestTransportResponseCancelRace", _xtest.TestTransportResponseCancelRace},
+
+	{"TestTransportContentEncodingCaseInsensitive", _xtest.TestTransportContentEncodingCaseInsensitive},
+
+	{"TestTransportDialCancelRace", _xtest.TestTransportDialCancelRace},
+
+	{"TestTransportFlushesBodyChunks", _xtest.TestTransportFlushesBodyChunks},
+
+	{"TestTransportFlushesRequestHeader", _xtest.TestTransportFlushesRequestHeader},
+
+	{"TestTransportPrefersResponseOverWriteError", _xtest.TestTransportPrefersResponseOverWriteError},
+
+	{"TestTransportAutomaticHTTP2", _xtest.TestTransportAutomaticHTTP2},
+
+	{"TestTransportAutomaticHTTP2_DefaultTransport", _xtest.TestTransportAutomaticHTTP2_DefaultTransport},
+
+	{"TestTransportAutomaticHTTP2_TLSNextProto", _xtest.TestTransportAutomaticHTTP2_TLSNextProto},
+
+	{"TestTransportAutomaticHTTP2_TLSConfig", _xtest.TestTransportAutomaticHTTP2_TLSConfig},
+
+	{"TestTransportAutomaticHTTP2_ExpectContinueTimeout", _xtest.TestTransportAutomaticHTTP2_ExpectContinueTimeout},
+
+	{"TestTransportAutomaticHTTP2_Dial", _xtest.TestTransportAutomaticHTTP2_Dial},
+
+	{"TestTransportAutomaticHTTP2_DialTLS", _xtest.TestTransportAutomaticHTTP2_DialTLS},
+
+	{"TestTransportReuseConnEmptyResponseBody", _xtest.TestTransportReuseConnEmptyResponseBody},
+
+	{"TestNoCrashReturningTransportAltConn", _xtest.TestNoCrashReturningTransportAltConn},
+
+	{"TestTransportReuseConnection_Gzip_Chunked", _xtest.TestTransportReuseConnection_Gzip_Chunked},
+
+	{"TestTransportReuseConnection_Gzip_ContentLength", _xtest.TestTransportReuseConnection_Gzip_ContentLength},
+
+	{"TestTransportResponseHeaderLength", _xtest.TestTransportResponseHeaderLength},
+
+	{"TestTransportEventTrace", _xtest.TestTransportEventTrace},
+
+	{"TestTransportEventTrace_h2", _xtest.TestTransportEventTrace_h2},
+
+	{"TestTransportEventTrace_NoHooks", _xtest.TestTransportEventTrace_NoHooks},
+
+	{"TestTransportEventTrace_NoHooks_h2", _xtest.TestTransportEventTrace_NoHooks_h2},
+
+	{"TestTransportEventTraceTLSVerify", _xtest.TestTransportEventTraceTLSVerify},
+
+	{"TestTransportEventTraceRealDNS", _xtest.TestTransportEventTraceRealDNS},
+
+	{"TestTransportRejectsAlphaPort", _xtest.TestTransportRejectsAlphaPort},
+
+	{"TestTLSHandshakeTrace", _xtest.TestTLSHandshakeTrace},
+
+	{"TestTransportMaxIdleConns", _xtest.TestTransportMaxIdleConns},
+
+	{"TestTransportIdleConnTimeout_h1", _xtest.TestTransportIdleConnTimeout_h1},
+
+	{"TestTransportIdleConnTimeout_h2", _xtest.TestTransportIdleConnTimeout_h2},
+
+	{"TestIdleConnH2Crash", _xtest.TestIdleConnH2Crash},
+
+	{"TestTransportReturnsPeekError", _xtest.TestTransportReturnsPeekError},
+
+	{"TestTransportIDNA_h1", _xtest.TestTransportIDNA_h1},
+
+	{"TestTransportIDNA_h2", _xtest.TestTransportIDNA_h2},
+
+	{"TestTransportProxyConnectHeader", _xtest.TestTransportProxyConnectHeader},
+
+	{"TestMissingStatusNoPanic", _xtest.TestMissingStatusNoPanic},
+
+	{"TestNoBodyOnChunked304Response", _xtest.TestNoBodyOnChunked304Response},
+
+	{"TestTransportCheckContextDoneEarly", _xtest.TestTransportCheckContextDoneEarly},
+
+	{"TestClientTimeoutKillsConn_BeforeHeaders", _xtest.TestClientTimeoutKillsConn_BeforeHeaders},
+
+	{"TestClientTimeoutKillsConn_AfterHeaders", _xtest.TestClientTimeoutKillsConn_AfterHeaders},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkCookieString", _test.BenchmarkCookieString},
+
+	{"BenchmarkReadSetCookies", _test.BenchmarkReadSetCookies},
+
+	{"BenchmarkReadCookies", _test.BenchmarkReadCookies},
+
+	{"BenchmarkHeaderWriteSubset", _test.BenchmarkHeaderWriteSubset},
+
+	{"BenchmarkReadRequestChrome", _xtest.BenchmarkReadRequestChrome},
+
+	{"BenchmarkReadRequestCurl", _xtest.BenchmarkReadRequestCurl},
+
+	{"BenchmarkReadRequestApachebench", _xtest.BenchmarkReadRequestApachebench},
+
+	{"BenchmarkReadRequestSiege", _xtest.BenchmarkReadRequestSiege},
+
+	{"BenchmarkReadRequestWrk", _xtest.BenchmarkReadRequestWrk},
+
+	{"BenchmarkServeMux", _xtest.BenchmarkServeMux},
+
+	{"BenchmarkServeMux_SkipServe", _xtest.BenchmarkServeMux_SkipServe},
+
+	{"BenchmarkClientServer", _xtest.BenchmarkClientServer},
+
+	{"BenchmarkClientServerParallel4", _xtest.BenchmarkClientServerParallel4},
+
+	{"BenchmarkClientServerParallel64", _xtest.BenchmarkClientServerParallel64},
+
+	{"BenchmarkClientServerParallelTLS4", _xtest.BenchmarkClientServerParallelTLS4},
+
+	{"BenchmarkClientServerParallelTLS64", _xtest.BenchmarkClientServerParallelTLS64},
+
+	{"BenchmarkServer", _xtest.BenchmarkServer},
+
+	{"BenchmarkClient", _xtest.BenchmarkClient},
+
+	{"BenchmarkServerFakeConnNoKeepAlive", _xtest.BenchmarkServerFakeConnNoKeepAlive},
+
+	{"BenchmarkServerFakeConnWithKeepAlive", _xtest.BenchmarkServerFakeConnWithKeepAlive},
+
+	{"BenchmarkServerFakeConnWithKeepAliveLite", _xtest.BenchmarkServerFakeConnWithKeepAliveLite},
+
+	{"BenchmarkServerHandlerTypeLen", _xtest.BenchmarkServerHandlerTypeLen},
+
+	{"BenchmarkServerHandlerNoLen", _xtest.BenchmarkServerHandlerNoLen},
+
+	{"BenchmarkServerHandlerNoType", _xtest.BenchmarkServerHandlerNoType},
+
+	{"BenchmarkServerHandlerNoHeader", _xtest.BenchmarkServerHandlerNoHeader},
+
+	{"BenchmarkServerHijack", _xtest.BenchmarkServerHijack},
+
+	{"BenchmarkCloseNotifier", _xtest.BenchmarkCloseNotifier},
+
+	{"BenchmarkResponseStatusLine", _xtest.BenchmarkResponseStatusLine},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "net/http"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	_xtest.TestMain(m)
+
+}
+

@@ -1,0 +1,77 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "flag"
+
+
+	_xtest "flag_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestEverything", _xtest.TestEverything},
+
+	{"TestGet", _xtest.TestGet},
+
+	{"TestUsage", _xtest.TestUsage},
+
+	{"TestParse", _xtest.TestParse},
+
+	{"TestFlagSetParse", _xtest.TestFlagSetParse},
+
+	{"TestUserDefined", _xtest.TestUserDefined},
+
+	{"TestUserDefinedForCommandLine", _xtest.TestUserDefinedForCommandLine},
+
+	{"TestUserDefinedBool", _xtest.TestUserDefinedBool},
+
+	{"TestSetOutput", _xtest.TestSetOutput},
+
+	{"TestChangingArgs", _xtest.TestChangingArgs},
+
+	{"TestHelp", _xtest.TestHelp},
+
+	{"TestPrintDefaults", _xtest.TestPrintDefaults},
+
+	{"TestIntFlagOverflow", _xtest.TestIntFlagOverflow},
+
+	{"TestUsageOutput", _xtest.TestUsageOutput},
+
+	{"TestGetters", _xtest.TestGetters},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleValue", _xtest.ExampleValue, "{scheme: \"https\", host: \"golang.org\", path: \"/pkg/flag/\"}\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "flag"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

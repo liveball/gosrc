@@ -1,0 +1,8 @@
+./example_test.go
+./mmap_unix_test.go
+./syscall_bsd_test.go
+./syscall_darwin_test.go
+./syscall_test.go
+./syscall_unix_test.go
+./timestruct_test.go
+./xattr_test.go

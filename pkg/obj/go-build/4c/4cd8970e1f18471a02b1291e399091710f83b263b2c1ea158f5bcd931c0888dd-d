@@ -1,0 +1,24 @@
+# test log
+open testdata/pngsuite/basn0g01.png
+open testdata/pngsuite/basn0g01.sng
+open testdata/pngsuite/basn0g04-31.png
+open testdata/pngsuite/basn0g04-31.sng
+open testdata/pngsuite/basn6a16.png
+open testdata/pngsuite/basn6a16.sng
+open testdata/invalid-zlib.png
+open testdata/invalid-crc32.png
+open testdata/invalid-noend.png
+open testdata/invalid-trunc.png
+open testdata/pngsuite/basn3p01.png
+open testdata/pngsuite/basn3p02.png
+open testdata/pngsuite/basn3p04.png
+open testdata/pngsuite/basn3p08.png
+open testdata/pngsuite/basn3p08-trns.png
+open testdata/gray-gradient.png
+open testdata/gray-gradient.interlaced.png
+open testdata/pngsuite/basn0g01.png
+open testdata/pngsuite/basn0g01.png
+open testdata/pngsuite/basn0g04-31.png
+open testdata/pngsuite/basn0g04-31.png
+open testdata/pngsuite/basn6a16.png
+open testdata/pngsuite/basn6a16.png

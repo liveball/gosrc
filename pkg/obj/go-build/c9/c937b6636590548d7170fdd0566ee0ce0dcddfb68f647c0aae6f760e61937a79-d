@@ -1,0 +1,51 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "rsc.io/quote"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestHello", _test.TestHello},
+
+	{"TestGlass", _test.TestGlass},
+
+	{"TestGo", _test.TestGo},
+
+	{"TestOpt", _test.TestOpt},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "rsc.io/quote"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

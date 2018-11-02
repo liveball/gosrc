@@ -1,0 +1,7 @@
+./reader.go
+./register.go
+./struct.go
+./writer.go
+./reader_test.go
+./writer_test.go
+./zip_test.go

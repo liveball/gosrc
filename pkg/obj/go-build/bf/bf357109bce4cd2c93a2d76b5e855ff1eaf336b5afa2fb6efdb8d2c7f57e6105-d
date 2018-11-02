@@ -1,0 +1,19 @@
+//line /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/gotest854416893/src/a/a.go:1
+package a
+
+func F(i int) int {GoCover_0_636139373831313263613162.Count[0] = 1;
+	return i * i
+}
+
+var GoCover_0_636139373831313263613162 = struct {
+	Count     [1]uint32
+	Pos       [3 * 1]uint32
+	NumStmt   [1]uint16
+} {
+	Pos: [3 * 1]uint32{
+		3, 5, 0x20013, // [0]
+	},
+	NumStmt: [1]uint16{
+		1, // 0
+	},
+}

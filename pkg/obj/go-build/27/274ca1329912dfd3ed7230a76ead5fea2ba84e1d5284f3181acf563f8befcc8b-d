@@ -1,0 +1,15 @@
+# test log
+open testdata/gnucases.txt
+open testdata/plan9cases.txt
+open testdata/gnucases.txt
+open /dev/null
+open /usr/bin/objdump
+open testdata/plan9cases.txt
+open /dev/null
+open /usr/bin/objdump
+open /dev/null
+open /usr/bin/objdump
+open /dev/null
+open /usr/bin/objdump
+open /dev/null
+open /usr/bin/objdump

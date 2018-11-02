@@ -1,0 +1,11 @@
+./cache.go
+./coderepo.go
+./fetch.go
+./proxy.go
+./pseudo.go
+./repo.go
+./unzip.go
+./web.go
+./cache_test.go
+./coderepo_test.go
+./pseudo_test.go

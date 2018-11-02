@@ -1,0 +1,187 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "fmt"
+
+
+	_xtest "fmt_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestFmtInterface", _xtest.TestFmtInterface},
+
+	{"TestSprintf", _xtest.TestSprintf},
+
+	{"TestComplexFormatting", _xtest.TestComplexFormatting},
+
+	{"TestReorder", _xtest.TestReorder},
+
+	{"TestCountMallocs", _xtest.TestCountMallocs},
+
+	{"TestFlagParser", _xtest.TestFlagParser},
+
+	{"TestStructPrinter", _xtest.TestStructPrinter},
+
+	{"TestSlicePrinter", _xtest.TestSlicePrinter},
+
+	{"TestMapPrinter", _xtest.TestMapPrinter},
+
+	{"TestEmptyMap", _xtest.TestEmptyMap},
+
+	{"TestBlank", _xtest.TestBlank},
+
+	{"TestBlankln", _xtest.TestBlankln},
+
+	{"TestFormatterPrintln", _xtest.TestFormatterPrintln},
+
+	{"TestWidthAndPrecision", _xtest.TestWidthAndPrecision},
+
+	{"TestPanics", _xtest.TestPanics},
+
+	{"TestBadVerbRecursion", _xtest.TestBadVerbRecursion},
+
+	{"TestIsSpace", _xtest.TestIsSpace},
+
+	{"TestNilDoesNotBecomeTyped", _xtest.TestNilDoesNotBecomeTyped},
+
+	{"TestFormatterFlags", _xtest.TestFormatterFlags},
+
+	{"TestParsenum", _xtest.TestParsenum},
+
+	{"TestScan", _xtest.TestScan},
+
+	{"TestScanln", _xtest.TestScanln},
+
+	{"TestScanf", _xtest.TestScanf},
+
+	{"TestScanOverflow", _xtest.TestScanOverflow},
+
+	{"TestNaN", _xtest.TestNaN},
+
+	{"TestInf", _xtest.TestInf},
+
+	{"TestScanfMulti", _xtest.TestScanfMulti},
+
+	{"TestScanMultiple", _xtest.TestScanMultiple},
+
+	{"TestScanEmpty", _xtest.TestScanEmpty},
+
+	{"TestScanNotPointer", _xtest.TestScanNotPointer},
+
+	{"TestScanlnNoNewline", _xtest.TestScanlnNoNewline},
+
+	{"TestScanlnWithMiddleNewline", _xtest.TestScanlnWithMiddleNewline},
+
+	{"TestEOF", _xtest.TestEOF},
+
+	{"TestEOFAtEndOfInput", _xtest.TestEOFAtEndOfInput},
+
+	{"TestEOFAllTypes", _xtest.TestEOFAllTypes},
+
+	{"TestUnreadRuneWithBufio", _xtest.TestUnreadRuneWithBufio},
+
+	{"TestMultiLine", _xtest.TestMultiLine},
+
+	{"TestLineByLineFscanf", _xtest.TestLineByLineFscanf},
+
+	{"TestScanStateCount", _xtest.TestScanStateCount},
+
+	{"TestScanInts", _xtest.TestScanInts},
+
+	{"TestHexBytes", _xtest.TestHexBytes},
+
+	{"TestScanNewlinesAreSpaces", _xtest.TestScanNewlinesAreSpaces},
+
+	{"TestScanlnNewlinesTerminate", _xtest.TestScanlnNewlinesTerminate},
+
+	{"TestScanfNewlineMatchFormat", _xtest.TestScanfNewlineMatchFormat},
+
+	{"TestHexByte", _xtest.TestHexByte},
+
+	{"TestStringer", _xtest.TestStringer},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkSprintfPadding", _xtest.BenchmarkSprintfPadding},
+
+	{"BenchmarkSprintfEmpty", _xtest.BenchmarkSprintfEmpty},
+
+	{"BenchmarkSprintfString", _xtest.BenchmarkSprintfString},
+
+	{"BenchmarkSprintfTruncateString", _xtest.BenchmarkSprintfTruncateString},
+
+	{"BenchmarkSprintfSlowParsingPath", _xtest.BenchmarkSprintfSlowParsingPath},
+
+	{"BenchmarkSprintfQuoteString", _xtest.BenchmarkSprintfQuoteString},
+
+	{"BenchmarkSprintfInt", _xtest.BenchmarkSprintfInt},
+
+	{"BenchmarkSprintfIntInt", _xtest.BenchmarkSprintfIntInt},
+
+	{"BenchmarkSprintfPrefixedInt", _xtest.BenchmarkSprintfPrefixedInt},
+
+	{"BenchmarkSprintfFloat", _xtest.BenchmarkSprintfFloat},
+
+	{"BenchmarkSprintfComplex", _xtest.BenchmarkSprintfComplex},
+
+	{"BenchmarkSprintfBoolean", _xtest.BenchmarkSprintfBoolean},
+
+	{"BenchmarkSprintfHexString", _xtest.BenchmarkSprintfHexString},
+
+	{"BenchmarkSprintfHexBytes", _xtest.BenchmarkSprintfHexBytes},
+
+	{"BenchmarkSprintfBytes", _xtest.BenchmarkSprintfBytes},
+
+	{"BenchmarkSprintfStringer", _xtest.BenchmarkSprintfStringer},
+
+	{"BenchmarkSprintfStructure", _xtest.BenchmarkSprintfStructure},
+
+	{"BenchmarkManyArgs", _xtest.BenchmarkManyArgs},
+
+	{"BenchmarkFprintInt", _xtest.BenchmarkFprintInt},
+
+	{"BenchmarkFprintfBytes", _xtest.BenchmarkFprintfBytes},
+
+	{"BenchmarkFprintIntNoAlloc", _xtest.BenchmarkFprintIntNoAlloc},
+
+	{"BenchmarkScanInts", _xtest.BenchmarkScanInts},
+
+	{"BenchmarkScanRecursiveInt", _xtest.BenchmarkScanRecursiveInt},
+
+	{"BenchmarkScanRecursiveIntReaderWrapper", _xtest.BenchmarkScanRecursiveIntReaderWrapper},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleStringer", _xtest.ExampleStringer, "Gopher (2)\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "fmt"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

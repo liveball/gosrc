@@ -1,0 +1,173 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "math/bits"
+
+
+	_xtest "math/bits_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestUintSize", _xtest.TestUintSize},
+
+	{"TestLeadingZeros", _xtest.TestLeadingZeros},
+
+	{"TestTrailingZeros", _xtest.TestTrailingZeros},
+
+	{"TestOnesCount", _xtest.TestOnesCount},
+
+	{"TestRotateLeft", _xtest.TestRotateLeft},
+
+	{"TestReverse", _xtest.TestReverse},
+
+	{"TestReverseBytes", _xtest.TestReverseBytes},
+
+	{"TestLen", _xtest.TestLen},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkLeadingZeros", _xtest.BenchmarkLeadingZeros},
+
+	{"BenchmarkLeadingZeros8", _xtest.BenchmarkLeadingZeros8},
+
+	{"BenchmarkLeadingZeros16", _xtest.BenchmarkLeadingZeros16},
+
+	{"BenchmarkLeadingZeros32", _xtest.BenchmarkLeadingZeros32},
+
+	{"BenchmarkLeadingZeros64", _xtest.BenchmarkLeadingZeros64},
+
+	{"BenchmarkTrailingZeros", _xtest.BenchmarkTrailingZeros},
+
+	{"BenchmarkTrailingZeros8", _xtest.BenchmarkTrailingZeros8},
+
+	{"BenchmarkTrailingZeros16", _xtest.BenchmarkTrailingZeros16},
+
+	{"BenchmarkTrailingZeros32", _xtest.BenchmarkTrailingZeros32},
+
+	{"BenchmarkTrailingZeros64", _xtest.BenchmarkTrailingZeros64},
+
+	{"BenchmarkOnesCount", _xtest.BenchmarkOnesCount},
+
+	{"BenchmarkOnesCount8", _xtest.BenchmarkOnesCount8},
+
+	{"BenchmarkOnesCount16", _xtest.BenchmarkOnesCount16},
+
+	{"BenchmarkOnesCount32", _xtest.BenchmarkOnesCount32},
+
+	{"BenchmarkOnesCount64", _xtest.BenchmarkOnesCount64},
+
+	{"BenchmarkRotateLeft", _xtest.BenchmarkRotateLeft},
+
+	{"BenchmarkRotateLeft8", _xtest.BenchmarkRotateLeft8},
+
+	{"BenchmarkRotateLeft16", _xtest.BenchmarkRotateLeft16},
+
+	{"BenchmarkRotateLeft32", _xtest.BenchmarkRotateLeft32},
+
+	{"BenchmarkRotateLeft64", _xtest.BenchmarkRotateLeft64},
+
+	{"BenchmarkReverse", _xtest.BenchmarkReverse},
+
+	{"BenchmarkReverse8", _xtest.BenchmarkReverse8},
+
+	{"BenchmarkReverse16", _xtest.BenchmarkReverse16},
+
+	{"BenchmarkReverse32", _xtest.BenchmarkReverse32},
+
+	{"BenchmarkReverse64", _xtest.BenchmarkReverse64},
+
+	{"BenchmarkReverseBytes", _xtest.BenchmarkReverseBytes},
+
+	{"BenchmarkReverseBytes16", _xtest.BenchmarkReverseBytes16},
+
+	{"BenchmarkReverseBytes32", _xtest.BenchmarkReverseBytes32},
+
+	{"BenchmarkReverseBytes64", _xtest.BenchmarkReverseBytes64},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleLeadingZeros8", _xtest.ExampleLeadingZeros8, "LeadingZeros8(00000001) = 7\n", false},
+
+	{"ExampleLeadingZeros16", _xtest.ExampleLeadingZeros16, "LeadingZeros16(0000000000000001) = 15\n", false},
+
+	{"ExampleLeadingZeros32", _xtest.ExampleLeadingZeros32, "LeadingZeros32(00000000000000000000000000000001) = 31\n", false},
+
+	{"ExampleLeadingZeros64", _xtest.ExampleLeadingZeros64, "LeadingZeros64(0000000000000000000000000000000000000000000000000000000000000001) = 63\n", false},
+
+	{"ExampleTrailingZeros8", _xtest.ExampleTrailingZeros8, "TrailingZeros8(00001110) = 1\n", false},
+
+	{"ExampleTrailingZeros16", _xtest.ExampleTrailingZeros16, "TrailingZeros16(0000000000001110) = 1\n", false},
+
+	{"ExampleTrailingZeros32", _xtest.ExampleTrailingZeros32, "TrailingZeros32(00000000000000000000000000001110) = 1\n", false},
+
+	{"ExampleTrailingZeros64", _xtest.ExampleTrailingZeros64, "TrailingZeros64(0000000000000000000000000000000000000000000000000000000000001110) = 1\n", false},
+
+	{"ExampleOnesCount8", _xtest.ExampleOnesCount8, "OnesCount8(00001110) = 3\n", false},
+
+	{"ExampleOnesCount16", _xtest.ExampleOnesCount16, "OnesCount16(0000000000001110) = 3\n", false},
+
+	{"ExampleOnesCount32", _xtest.ExampleOnesCount32, "OnesCount32(00000000000000000000000000001110) = 3\n", false},
+
+	{"ExampleOnesCount64", _xtest.ExampleOnesCount64, "OnesCount64(0000000000000000000000000000000000000000000000000000000000001110) = 3\n", false},
+
+	{"ExampleRotateLeft8", _xtest.ExampleRotateLeft8, "00001111\n00111100\n11000011\n", false},
+
+	{"ExampleRotateLeft16", _xtest.ExampleRotateLeft16, "0000000000001111\n0000000000111100\n1100000000000011\n", false},
+
+	{"ExampleRotateLeft32", _xtest.ExampleRotateLeft32, "00000000000000000000000000001111\n00000000000000000000000000111100\n11000000000000000000000000000011\n", false},
+
+	{"ExampleRotateLeft64", _xtest.ExampleRotateLeft64, "0000000000000000000000000000000000000000000000000000000000001111\n0000000000000000000000000000000000000000000000000000000000111100\n1100000000000000000000000000000000000000000000000000000000000011\n", false},
+
+	{"ExampleReverse8", _xtest.ExampleReverse8, "00010011\n11001000\n", false},
+
+	{"ExampleReverse16", _xtest.ExampleReverse16, "0000000000010011\n1100100000000000\n", false},
+
+	{"ExampleReverse32", _xtest.ExampleReverse32, "00000000000000000000000000010011\n11001000000000000000000000000000\n", false},
+
+	{"ExampleReverse64", _xtest.ExampleReverse64, "0000000000000000000000000000000000000000000000000000000000010011\n1100100000000000000000000000000000000000000000000000000000000000\n", false},
+
+	{"ExampleReverseBytes16", _xtest.ExampleReverseBytes16, "0000000000001111\n0000111100000000\n", false},
+
+	{"ExampleReverseBytes32", _xtest.ExampleReverseBytes32, "00000000000000000000000000001111\n00001111000000000000000000000000\n", false},
+
+	{"ExampleReverseBytes64", _xtest.ExampleReverseBytes64, "0000000000000000000000000000000000000000000000000000000000001111\n0000111100000000000000000000000000000000000000000000000000000000\n", false},
+
+	{"ExampleLen8", _xtest.ExampleLen8, "Len8(00001000) = 4\n", false},
+
+	{"ExampleLen16", _xtest.ExampleLen16, "Len16(0000000000001000) = 4\n", false},
+
+	{"ExampleLen32", _xtest.ExampleLen32, "Len32(00000000000000000000000000001000) = 4\n", false},
+
+	{"ExampleLen64", _xtest.ExampleLen64, "Len64(0000000000000000000000000000000000000000000000000000000000001000) = 4\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "math/bits"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

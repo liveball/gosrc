@@ -1,0 +1,461 @@
+# command-line-arguments
+"".rot64 STEXT nosplit size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:13)	TEXT	"".rot64(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:13)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:13)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:13)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:20)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:20)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:20)	MOVD	"".x(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:20)	ROTL	$7, R3, R4
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:26)	ROTL	$8, R3, R5
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:26)	ADD	R4, R5, R4
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:32)	ROTL	$9, R3, R3
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:32)	ADD	R4, R3, R3
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:34)	MOVD	R3, "".~r1+8(R1)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:34)	JMP	LR
+	0x0000 20 00 61 e8 00 38 64 78 00 40 65 78 14 22 85 7c   .a..8dx.@ex.".|
+	0x0010 00 48 63 78 14 22 63 7c 28 00 61 f8 20 00 80 4e  .Hcx."c|(.a. ..N
+"".rot32 STEXT nosplit size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:37)	TEXT	"".rot32(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:37)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:37)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:37)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:45)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:45)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:45)	MOVWZ	"".x(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:45)	ROTLW	$7, R3, R4
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:52)	ROTLW	$8, R3, R5
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:52)	ADD	R4, R5, R4
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:59)	ROTLW	$9, R3, R3
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:59)	ADD	R4, R3, R3
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:61)	MOVW	R3, "".~r1+8(R1)
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:61)	JMP	LR
+	0x0000 20 00 61 80 3e 38 64 54 3e 40 65 54 14 22 85 7c   .a.>8dT>@eT.".|
+	0x0010 3e 48 63 54 14 22 63 7c 28 00 61 90 20 00 80 4e  >HcT."c|(.a. ..N
+"".rot16 STEXT nosplit size=64 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:64)	TEXT	"".rot16(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:64)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:64)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:64)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:68)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:68)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:68)	MOVHZ	"".x(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:68)	SLW	$7, R3, R4
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:74)	MOVHZ	R3, R5
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:68)	SRW	$9, R5, R6
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:68)	OR	R6, R4, R4
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:71)	SLW	$8, R3, R6
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:71)	SRW	$8, R5, R7
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:71)	ADD	R6, R7, R6
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:71)	ADD	R6, R4, R4
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:74)	SLW	$9, R3, R3
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:74)	SRW	$7, R5, R5
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:74)	XOR	R5, R3, R3
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:74)	ADD	R4, R3, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:76)	MOVH	R3, "".~r1+8(R1)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:76)	JMP	LR
+	0x0000 20 00 61 a0 30 38 64 54 3e 04 65 54 7e ba a6 54   .a.08dT>.eT~..T
+	0x0010 78 33 84 7c 2e 40 66 54 3e c2 a7 54 14 32 c7 7c  x3.|.@fT>..T.2.|
+	0x0020 14 32 84 7c 2c 48 63 54 fe c9 a5 54 78 2a 63 7c  .2.|,HcT...Tx*c|
+	0x0030 14 22 63 7c 28 00 61 b0 20 00 80 4e 00 00 00 00  ."c|(.a. ..N....
+"".rot8 STEXT nosplit size=64 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:79)	TEXT	"".rot8(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:79)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:79)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:79)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:83)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:83)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:83)	MOVBZ	"".x(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:83)	SLW	$5, R3, R4
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:89)	MOVBZ	R3, R5
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:83)	SRW	$3, R5, R6
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:83)	OR	R6, R4, R4
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:86)	SLW	$6, R3, R6
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:86)	SRW	$2, R5, R7
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:86)	ADD	R6, R7, R6
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:86)	ADD	R6, R4, R4
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:89)	SLW	$7, R3, R3
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:89)	SRW	$1, R5, R5
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:89)	XOR	R5, R3, R3
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:89)	ADD	R4, R3, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:91)	MOVB	R3, "".~r1+8(R1)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:91)	JMP	LR
+	0x0000 20 00 61 88 34 28 64 54 3e 06 65 54 fe e8 a6 54   .a.4(dT>.eT...T
+	0x0010 78 33 84 7c 32 30 66 54 be f0 a7 54 14 32 c7 7c  x3.|20fT...T.2.|
+	0x0020 14 32 84 7c 30 38 63 54 7e f8 a5 54 78 2a 63 7c  .2.|08cT~..Tx*c|
+	0x0030 14 22 63 7c 28 00 61 98 20 00 80 4e 00 00 00 00  ."c|(.a. ..N....
+"".rot64nc STEXT nosplit size=64 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:98)	TEXT	"".rot64nc(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:98)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:98)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:98)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:105)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:105)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:105)	MOVD	"".x(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:105)	MOVD	"".z+8(R1), R4
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:105)	ROTL	R4, R3, R5
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:105)	ANDCC	$63, R4, R6
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:105)	MOVD	$64, R7
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:105)	SUB	R6, R7, R6
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:108)	ANDCC	$63, R4, R4
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:108)	SRD	R4, R3, R4
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:108)	ADDC	$-64, R6, R31
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:108)	ADDME	R0, R7
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:108)	ORN	R7, R6, R6
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:108)	SLD	R6, R3, R3
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:108)	OR	R4, R3, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:108)	ADD	R3, R5, R3
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:110)	MOVD	R3, "".~r2+16(R1)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:110)	JMP	LR
+	0x0000 20 00 61 e8 28 00 81 e8 10 20 65 78 3f 00 86 70   .a.(.... ex?..p
+	0x0010 40 00 e0 38 50 38 c6 7c 3f 00 84 70 36 24 64 7c  @..8P8.|?..p6$d|
+	0x0020 c0 ff e6 33 d4 01 e0 7c 38 3b c6 7c 36 30 63 7c  ...3...|8;.|60c|
+	0x0030 78 23 63 7c 14 1a 65 7c 30 00 61 f8 20 00 80 4e  x#c|..e|0.a. ..N
+"".rot32nc STEXT nosplit size=64 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:113)	TEXT	"".rot32nc(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:113)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:113)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:113)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:120)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:120)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:120)	MOVWZ	"".x(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:120)	MOVD	"".z+8(R1), R4
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:120)	ROTLW	R4, R3, R5
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:120)	ANDCC	$31, R4, R6
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:120)	MOVD	$32, R7
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:120)	SUB	R6, R7, R6
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:123)	ANDCC	$31, R4, R4
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:123)	SRW	R4, R3, R4
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:123)	ADDC	$-32, R6, R31
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:123)	ADDME	R0, R7
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:123)	ORN	R7, R6, R6
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:123)	SLW	R6, R3, R3
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:123)	OR	R4, R3, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:123)	ADD	R3, R5, R3
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:125)	MOVW	R3, "".~r2+16(R1)
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:125)	JMP	LR
+	0x0000 20 00 61 80 28 00 81 e8 3e 20 65 5c 1f 00 86 70   .a.(...> e\...p
+	0x0010 20 00 e0 38 50 38 c6 7c 1f 00 84 70 30 24 64 7c   ..8P8.|...p0$d|
+	0x0020 e0 ff e6 33 d4 01 e0 7c 38 3b c6 7c 30 30 63 7c  ...3...|8;.|00c|
+	0x0030 78 23 63 7c 14 1a 65 7c 30 00 61 90 20 00 80 4e  x#c|..e|0.a. ..N
+"".rot16nc STEXT nosplit size=80 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:128)	TEXT	"".rot16nc(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:128)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:128)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:128)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:131)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:131)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:131)	MOVD	"".z+8(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:131)	ANDCC	$15, R3, R3
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	MOVHZ	"".x(R1), R4
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	SLW	R3, R4, R5
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	MOVD	$16, R6
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	SUB	R3, R6, R6
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	ADDC	$-16, R6, R31
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	ADDME	R0, R7
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	ORN	R7, R6, R6
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	MOVHZ	R4, R7
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	SRW	R6, R7, R8
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:134)	OR	R5, R8, R5
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:137)	SRW	R3, R7, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:137)	SLW	R6, R4, R4
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:137)	OR	R3, R4, R3
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:137)	ADD	R3, R5, R3
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:139)	MOVH	R3, "".~r2+16(R1)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:139)	JMP	LR
+	0x0000 28 00 61 e8 0f 00 63 70 20 00 81 a0 30 18 85 7c  (.a...cp ...0..|
+	0x0010 10 00 c0 38 50 30 c3 7c f0 ff e6 33 d4 01 e0 7c  ...8P0.|...3...|
+	0x0020 38 3b c6 7c 3e 04 87 54 30 34 e8 7c 78 2b 05 7d  8;.|>..T04.|x+.}
+	0x0030 30 1c e3 7c 30 30 84 7c 78 1b 83 7c 14 1a 65 7c  0..|00.|x..|..e|
+	0x0040 30 00 61 b0 20 00 80 4e 00 00 00 00 00 00 00 00  0.a. ..N........
+"".rot8nc STEXT nosplit size=80 args=0x18 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:142)	TEXT	"".rot8nc(SB), NOSPLIT|LEAF|NOFRAME, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:142)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:142)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:142)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:145)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:145)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:145)	MOVD	"".z+8(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:145)	ANDCC	$7, R3, R3
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	MOVBZ	"".x(R1), R4
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	SLW	R3, R4, R5
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	MOVD	$8, R6
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	SUB	R3, R6, R6
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	ADDC	$-8, R6, R31
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	ADDME	R0, R7
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	ORN	R7, R6, R6
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	MOVBZ	R4, R7
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	SRW	R6, R7, R8
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:148)	OR	R5, R8, R5
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:151)	SRW	R3, R7, R3
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:151)	SLW	R6, R4, R4
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:151)	OR	R3, R4, R3
+	0x003c 00060 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:151)	ADD	R3, R5, R3
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:153)	MOVB	R3, "".~r2+16(R1)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:153)	JMP	LR
+	0x0000 28 00 61 e8 07 00 63 70 20 00 81 88 30 18 85 7c  (.a...cp ...0..|
+	0x0010 08 00 c0 38 50 30 c3 7c f8 ff e6 33 d4 01 e0 7c  ...8P0.|...3...|
+	0x0020 38 3b c6 7c 3e 06 87 54 30 34 e8 7c 78 2b 05 7d  8;.|>..T04.|x+.}
+	0x0030 30 1c e3 7c 30 30 84 7c 78 1b 83 7c 14 1a 65 7c  0..|00.|x..|..e|
+	0x0040 30 00 61 98 20 00 80 4e 00 00 00 00 00 00 00 00  0.a. ..N........
+"".f32 STEXT nosplit size=32 args=0x10 locals=0x0 leaf
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:157)	TEXT	"".f32(SB), NOSPLIT|LEAF|NOFRAME, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:157)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:157)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:157)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:159)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:159)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:159)	MOVWZ	"".x(R1), R3
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:159)	ROTLW	$7, R3, R4
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:159)	ROTLW	$25, R3, R3
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:159)	ADD	R3, R4, R3
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:159)	MOVW	R3, "".~r1+8(R1)
+	0x0014 00020 (/Users/fpf/Downloads/go1.11.1/test/codegen/rotate.go:159)	JMP	LR
+	0x0000 20 00 61 80 3e 38 64 54 3e c8 63 54 14 1a 64 7c   .a.>8dT>.cT..d|
+	0x0010 28 00 61 90 20 00 80 4e 00 00 00 00 00 00 00 00  (.a. ..N........
+go.info."".rot32nc$abstract SDWARFINFO dupok size=59
+	0x0000 03 63 6f 6d 6d 61 6e 64 2d 6c 69 6e 65 2d 61 72  .command-line-ar
+	0x0010 67 75 6d 65 6e 74 73 2e 72 6f 74 33 32 6e 63 00  guments.rot32nc.
+	0x0020 01 01 0b 61 00 72 00 00 00 00 10 78 00 00 00 00  ...a.r.....x....
+	0x0030 00 00 10 7a 00 00 00 00 00 00 00                 ...z.......
+	rel 38+4 t=28 go.info.uint32+0
+	rel 46+4 t=28 go.info.uint32+0
+	rel 54+4 t=28 go.info.uint+0
+go.loc."".rot64 SDWARFLOC size=70
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 10 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00  ................
+	0x0020 01 00 54 18 00 00 00 00 00 00 00 20 00 00 00 00  ..T........ ....
+	0x0030 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0040 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".rot64+0
+go.info."".rot64 SDWARFINFO size=68
+	0x0000 02 22 22 2e 72 6f 74 36 34 00 00 00 00 00 00 00  ."".rot64.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0a 61 00 0e 00 00 00 00 00 00 00 00 0e 78 00  ..a...........x.
+	0x0030 00 0d 00 00 00 00 00 0e 7e 72 31 00 01 0d 00 00  ........~r1.....
+	0x0040 00 00 00 00                                      ....
+	rel 10+8 t=1 "".rot64+0
+	rel 18+8 t=1 "".rot64+20
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 37+4 t=28 go.info.uint64+0
+	rel 41+4 t=28 go.loc."".rot64+0
+	rel 50+4 t=28 go.info.uint64+0
+	rel 62+4 t=28 go.info.uint64+0
+go.range."".rot64 SDWARFRANGE size=0
+go.isstmt."".rot64 SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 01 02 01 01 01 02 01 01 01  ................
+	0x0010 00                                               .
+go.loc."".rot32 SDWARFLOC size=70
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 10 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00  ................
+	0x0020 01 00 54 18 00 00 00 00 00 00 00 20 00 00 00 00  ..T........ ....
+	0x0030 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0040 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".rot32+0
+go.info."".rot32 SDWARFINFO size=68
+	0x0000 02 22 22 2e 72 6f 74 33 32 00 00 00 00 00 00 00  ."".rot32.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0a 61 00 26 00 00 00 00 00 00 00 00 0e 78 00  ..a.&.........x.
+	0x0030 00 25 00 00 00 00 00 0e 7e 72 31 00 01 25 00 00  .%......~r1..%..
+	0x0040 00 00 00 00                                      ....
+	rel 10+8 t=1 "".rot32+0
+	rel 18+8 t=1 "".rot32+20
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 37+4 t=28 go.info.uint32+0
+	rel 41+4 t=28 go.loc."".rot32+0
+	rel 50+4 t=28 go.info.uint32+0
+	rel 62+4 t=28 go.info.uint32+0
+go.range."".rot32 SDWARFRANGE size=0
+go.isstmt."".rot32 SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 01 02 01 01 01 02 01 01 01  ................
+	0x0010 00                                               .
+go.loc."".rot16 SDWARFLOC size=70
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 24 00 00 00 00 00 00 00 34 00 00 00 00 00 00 00  $.......4.......
+	0x0020 01 00 54 34 00 00 00 00 00 00 00 40 00 00 00 00  ..T4.......@....
+	0x0030 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0040 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".rot16+0
+go.info."".rot16 SDWARFINFO size=68
+	0x0000 02 22 22 2e 72 6f 74 31 36 00 00 00 00 00 00 00  ."".rot16.......
+	0x0010 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00  ................
+	0x0020 01 0a 61 00 41 00 00 00 00 00 00 00 00 0e 78 00  ..a.A.........x.
+	0x0030 00 40 00 00 00 00 00 0e 7e 72 31 00 01 40 00 00  .@......~r1..@..
+	0x0040 00 00 00 00                                      ....
+	rel 10+8 t=1 "".rot16+0
+	rel 18+8 t=1 "".rot16+40
+	rel 28+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 37+4 t=28 go.info.uint16+0
+	rel 41+4 t=28 go.loc."".rot16+0
+	rel 50+4 t=28 go.info.uint16+0
+	rel 62+4 t=28 go.info.uint16+0
+go.range."".rot16 SDWARFRANGE size=0
+go.isstmt."".rot16 SDWARFMISC size=0
+	0x0000 04 01 01 04 02 01 01 03 02 01 01 03 02 01 01 02  ................
+	0x0010 00                                               .
+go.loc."".rot8 SDWARFLOC size=70
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 24 00 00 00 00 00 00 00 34 00 00 00 00 00 00 00  $.......4.......
+	0x0020 01 00 54 34 00 00 00 00 00 00 00 40 00 00 00 00  ..T4.......@....
+	0x0030 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0040 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".rot8+0
+go.info."".rot8 SDWARFINFO size=67
+	0x0000 02 22 22 2e 72 6f 74 38 00 00 00 00 00 00 00 00  ."".rot8........
+	0x0010 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01  ................
+	0x0020 0a 61 00 50 00 00 00 00 00 00 00 00 0e 78 00 00  .a.P.........x..
+	0x0030 4f 00 00 00 00 00 0e 7e 72 31 00 01 4f 00 00 00  O......~r1..O...
+	0x0040 00 00 00                                         ...
+	rel 9+8 t=1 "".rot8+0
+	rel 17+8 t=1 "".rot8+40
+	rel 27+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 36+4 t=28 go.info.uint8+0
+	rel 40+4 t=28 go.loc."".rot8+0
+	rel 49+4 t=28 go.info.uint8+0
+	rel 61+4 t=28 go.info.uint8+0
+go.range."".rot8 SDWARFRANGE size=0
+go.isstmt."".rot8 SDWARFMISC size=0
+	0x0000 04 01 01 04 02 01 01 03 02 01 01 03 02 01 01 02  ................
+	0x0010 00                                               .
+go.loc."".rot64nc SDWARFLOC size=51
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 38 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  8.......@.......
+	0x0020 01 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0030 00 00 00                                         ...
+	rel 8+8 t=1 "".rot64nc+0
+go.info."".rot64nc SDWARFINFO size=80
+	0x0000 02 22 22 2e 72 6f 74 36 34 6e 63 00 00 00 00 00  ."".rot64nc.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0a 61 00 63 00 00 00 00 00 00 00 00 0e  ....a.c.........
+	0x0030 78 00 00 62 00 00 00 00 00 0e 7a 00 00 62 00 00  x..b......z..b..
+	0x0040 00 00 00 0e 7e 72 32 00 01 62 00 00 00 00 00 00  ....~r2..b......
+	rel 12+8 t=1 "".rot64nc+0
+	rel 20+8 t=1 "".rot64nc+40
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 39+4 t=28 go.info.uint64+0
+	rel 43+4 t=28 go.loc."".rot64nc+0
+	rel 52+4 t=28 go.info.uint64+0
+	rel 62+4 t=28 go.info.uint+0
+	rel 74+4 t=28 go.info.uint64+0
+go.range."".rot64nc SDWARFRANGE size=0
+go.isstmt."".rot64nc SDWARFMISC size=0
+	0x0000 04 01 01 05 02 01 01 07 02 01 01 01 00           .............
+go.loc."".rot32nc SDWARFLOC size=51
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 38 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  8.......@.......
+	0x0020 01 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0030 00 00 00                                         ...
+	rel 8+8 t=1 "".rot32nc+0
+go.info."".rot32nc SDWARFINFO size=57
+	0x0000 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 01 9c 0d 00 00 00 00 00 00 00 00  ................
+	0x0020 11 00 00 00 00 00 11 00 00 00 00 00 0e 7e 72 32  .............~r2
+	0x0030 00 01 71 00 00 00 00 00 00                       ..q......
+	rel 1+4 t=28 go.info."".rot32nc$abstract+0
+	rel 5+8 t=1 "".rot32nc+0
+	rel 13+8 t=1 "".rot32nc+40
+	rel 24+4 t=28 go.info."".rot32nc$abstract+22
+	rel 28+4 t=28 go.loc."".rot32nc+0
+	rel 33+4 t=28 go.info."".rot32nc$abstract+2a
+	rel 39+4 t=28 go.info."".rot32nc$abstract+32
+	rel 51+4 t=28 go.info.uint32+0
+go.range."".rot32nc SDWARFRANGE size=0
+go.isstmt."".rot32nc SDWARFMISC size=0
+	0x0000 04 01 01 05 02 01 01 07 02 01 01 01 00           .............
+go.loc."".rot16nc SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 40 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00  @.......P.......
+	0x0020 01 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 08 00 00 00 00 00 00 00 34 00 00 00 00  ...........4....
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".rot16nc+0
+	rel 59+8 t=1 "".rot16nc+0
+go.info."".rot16nc SDWARFINFO size=87
+	0x0000 02 22 22 2e 72 6f 74 31 36 6e 63 00 00 00 00 00  ."".rot16nc.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0a 61 00 81 01 00 00 00 00 00 00 00 00  ....a...........
+	0x0030 0e 78 00 00 80 01 00 00 00 00 00 0f 7a 00 00 80  .x..........z...
+	0x0040 01 00 00 00 00 00 00 00 00 0e 7e 72 32 00 01 80  ..........~r2...
+	0x0050 01 00 00 00 00 00 00                             .......
+	rel 12+8 t=1 "".rot16nc+0
+	rel 20+8 t=1 "".rot16nc+50
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 40+4 t=28 go.info.uint16+0
+	rel 44+4 t=28 go.loc."".rot16nc+0
+	rel 54+4 t=28 go.info.uint16+0
+	rel 65+4 t=28 go.info.uint+0
+	rel 69+4 t=28 go.loc."".rot16nc+33
+	rel 81+4 t=28 go.info.uint16+0
+go.range."".rot16nc SDWARFRANGE size=0
+go.isstmt."".rot16nc SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 09 02 01 01 03 02 01 01 03  ................
+	0x0010 00                                               .
+go.loc."".rot8nc SDWARFLOC size=102
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 40 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00  @.......P.......
+	0x0020 01 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 08 00 00 00 00 00 00 00 34 00 00 00 00  ...........4....
+	0x0050 00 00 00 01 00 53 00 00 00 00 00 00 00 00 00 00  .....S..........
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".rot8nc+0
+	rel 59+8 t=1 "".rot8nc+0
+go.info."".rot8nc SDWARFINFO size=86
+	0x0000 02 22 22 2e 72 6f 74 38 6e 63 00 00 00 00 00 00  ."".rot8nc......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00 00  ................
+	0x0020 00 01 0a 61 00 8f 01 00 00 00 00 00 00 00 00 0e  ...a............
+	0x0030 78 00 00 8e 01 00 00 00 00 00 0f 7a 00 00 8e 01  x..........z....
+	0x0040 00 00 00 00 00 00 00 00 0e 7e 72 32 00 01 8e 01  .........~r2....
+	0x0050 00 00 00 00 00 00                                ......
+	rel 11+8 t=1 "".rot8nc+0
+	rel 19+8 t=1 "".rot8nc+50
+	rel 29+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 39+4 t=28 go.info.uint8+0
+	rel 43+4 t=28 go.loc."".rot8nc+0
+	rel 53+4 t=28 go.info.uint8+0
+	rel 64+4 t=28 go.info.uint+0
+	rel 68+4 t=28 go.loc."".rot8nc+33
+	rel 80+4 t=28 go.info.uint8+0
+go.range."".rot8nc SDWARFRANGE size=0
+go.isstmt."".rot8nc SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 09 02 01 01 03 02 01 01 03  ................
+	0x0010 00                                               .
+go.loc."".f32 SDWARFLOC size=103
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 10 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00  ........ .......
+	0x0020 01 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00  ..S.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 04 00 00 00 00 00 00 00 20 00 00 00 00  ........... ....
+	0x0050 00 00 00 02 00 91 20 00 00 00 00 00 00 00 00 00  ...... .........
+	0x0060 00 00 00 00 00 00 00                             .......
+	rel 8+8 t=1 "".f32+0
+	rel 59+8 t=1 "".f32+0
+go.info."".f32 SDWARFINFO size=102
+	0x0000 02 22 22 2e 66 33 32 00 00 00 00 00 00 00 00 00  ."".f32.........
+	0x0010 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e  ................
+	0x0020 78 00 00 9d 01 00 00 00 00 00 0e 7e 72 31 00 01  x..........~r1..
+	0x0030 9d 01 00 00 00 00 00 05 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 9f 01 0d 00 00 00 00 00 00 00 00 12 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00                                ......
+	rel 8+8 t=1 "".f32+0
+	rel 16+8 t=1 "".f32+20
+	rel 26+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 37+4 t=28 go.info.uint32+0
+	rel 50+4 t=28 go.info.uint32+0
+	rel 56+4 t=28 go.info."".rot32nc$abstract+0
+	rel 60+8 t=1 "".f32+0
+	rel 68+8 t=1 "".f32+10
+	rel 76+4 t=29 gofile..$GOROOT/test/codegen/rotate.go+0
+	rel 83+4 t=28 go.info."".rot32nc$abstract+22
+	rel 87+4 t=28 go.loc."".f32+0
+	rel 92+4 t=28 go.info."".rot32nc$abstract+2a
+	rel 96+4 t=28 go.loc."".f32+33
+go.range."".f32 SDWARFRANGE size=0
+go.isstmt."".f32 SDWARFMISC size=0
+	0x0000 04 01 01 01 02 01 01 01 02 01 01 03 00           .............
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........

@@ -1,0 +1,11 @@
+# test log
+getenv TMPDIR
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/testnoret546017321/x.s
+getenv GO_GCFLAGS
+getenv GO_GCFLAGS
+getenv GO_GCFLAGS
+stat /Users/fpf/Downloads/go1.11.1/bin/go
+open /dev/null
+open /Users/fpf/Downloads/go1.11.1/bin/go
+stat /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/testnoret546017321
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/testnoret546017321

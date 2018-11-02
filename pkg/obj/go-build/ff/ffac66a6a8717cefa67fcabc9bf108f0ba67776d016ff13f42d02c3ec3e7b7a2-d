@@ -1,0 +1,8 @@
+./encodedword.go
+./grammar.go
+./mediatype.go
+./type.go
+./type_unix.go
+./encodedword_test.go
+./mediatype_test.go
+./type_test.go

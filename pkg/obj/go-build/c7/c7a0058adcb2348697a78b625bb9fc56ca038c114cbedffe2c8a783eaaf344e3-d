@@ -1,0 +1,943 @@
+# command-line-arguments
+"".SubMem STEXT size=77 args=0x14 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	TEXT	"".SubMem(SB), $0-20
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	JLS	70
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	FUNCDATA	$3, gclocals·ebb0e8ce1793da18f0378b883cb3e122(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	MOVL	"".arr+8(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	CMPL	AX, $2
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	JLS	63
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	MOVL	"".b+16(SP), CX
+	0x001f 00031 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	PCDATA	$2, $1
+	0x001f 00031 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	PCDATA	$0, $1
+	0x001f 00031 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	MOVL	"".arr+4(SP), DX
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	SUBL	CX, 8(DX)
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:21)	CMPL	AX, $3
+	0x0029 00041 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:21)	JLS	56
+	0x002b 00043 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:21)	SUBL	CX, 12(DX)
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:24)	MOVL	(DX), AX
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:24)	PCDATA	$2, $0
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:24)	SUBL	4(DX), AX
+	0x0033 00051 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:24)	MOVL	AX, "".~r2+20(SP)
+	0x0037 00055 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:24)	RET
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:21)	CALL	runtime.panicindex(SB)
+	0x003d 00061 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:21)	UNDEF
+	0x003f 00063 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	CALL	runtime.panicindex(SB)
+	0x0044 00068 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	UNDEF
+	0x0046 00070 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:19)	NOP
+	0x0046 00070 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	PCDATA	$0, $-1
+	0x0046 00070 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	PCDATA	$2, $-1
+	0x0046 00070 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	CALL	runtime.morestack_noctxt(SB)
+	0x004b 00075 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:17)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 34 8b 44 24 08 83 f8 02 76 24 8b 4c 24 10 8b  v4.D$....v$.L$..
+	0x0020 54 24 04 29 4a 08 83 f8 03 76 0d 29 4a 0c 8b 02  T$.)J....v.)J...
+	0x0030 2b 42 04 89 44 24 14 c3 e8 00 00 00 00 0f 0b e8  +B..D$..........
+	0x0040 00 00 00 00 0f 0b e8 00 00 00 00 eb b3           .............
+	rel 9+4 t=16 TLS+0
+	rel 57+4 t=8 runtime.panicindex+0
+	rel 64+4 t=8 runtime.panicindex+0
+	rel 71+4 t=8 runtime.morestack_noctxt+0
+"".Pow2Muls STEXT size=50 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	TEXT	"".Pow2Muls(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	JLS	43
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:36)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:36)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:36)	MOVL	"".n1+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:36)	SHLL	$5, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:44)	MOVL	AX, "".~r2+12(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:42)	MOVL	"".n2+8(SP), AX
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:42)	SHLL	$6, AX
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:42)	NEGL	AX
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:44)	MOVL	AX, "".~r3+16(SP)
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:44)	RET
+	0x002b 00043 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:44)	NOP
+	0x002b 00043 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	PCDATA	$0, $-1
+	0x002b 00043 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	PCDATA	$2, $-1
+	0x002b 00043 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	CALL	runtime.morestack_noctxt(SB)
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:31)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 19 8b 44 24 04 c1 e0 05 89 44 24 0c 8b 44 24  v..D$.....D$..D$
+	0x0020 08 c1 e0 06 f7 d8 89 44 24 10 c3 e8 00 00 00 00  .......D$.......
+	0x0030 eb ce                                            ..
+	rel 9+4 t=16 TLS+0
+	rel 44+4 t=8 runtime.morestack_noctxt+0
+"".Mul_96 STEXT size=40 args=0x8 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	TEXT	"".Mul_96(SB), $0-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	JLS	33
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:49)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:49)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:49)	MOVL	"".n+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:49)	LEAL	(AX)(AX*2), AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:49)	SHLL	$5, AX
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:49)	MOVL	AX, "".~r1+8(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:49)	RET
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:49)	NOP
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	PCDATA	$0, $-1
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	PCDATA	$2, $-1
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	CALL	runtime.morestack_noctxt(SB)
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:47)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0f 8b 44 24 04 8d 04 40 c1 e0 05 89 44 24 08  v..D$...@....D$.
+	0x0020 c3 e8 00 00 00 00 eb d8                          ........
+	rel 9+4 t=16 TLS+0
+	rel 34+4 t=8 runtime.morestack_noctxt+0
+"".MergeMuls1 STEXT size=37 args=0x8 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	TEXT	"".MergeMuls1(SB), $0-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	JLS	30
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:57)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:57)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:57)	MOVL	"".n+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:57)	IMUL3L	$46, AX, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:57)	MOVL	AX, "".~r1+8(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:57)	RET
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:57)	NOP
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	PCDATA	$0, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	PCDATA	$2, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	CALL	runtime.morestack_noctxt(SB)
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:54)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0c 8b 44 24 04 6b c0 2e 89 44 24 08 c3 e8 00  v..D$.k...D$....
+	0x0020 00 00 00 eb db                                   .....
+	rel 9+4 t=16 TLS+0
+	rel 31+4 t=8 runtime.morestack_noctxt+0
+"".MergeMuls2 STEXT size=40 args=0x8 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	TEXT	"".MergeMuls2(SB), $0-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	JLS	33
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:63)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:63)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:63)	MOVL	"".n+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:63)	IMUL3L	$23, AX, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:63)	ADDL	$29, AX
+	0x001c 00028 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:63)	MOVL	AX, "".~r1+8(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:63)	RET
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:63)	NOP
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	PCDATA	$0, $-1
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	PCDATA	$2, $-1
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	CALL	runtime.morestack_noctxt(SB)
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:60)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0f 8b 44 24 04 6b c0 17 83 c0 1d 89 44 24 08  v..D$.k......D$.
+	0x0020 c3 e8 00 00 00 00 eb d8                          ........
+	rel 9+4 t=16 TLS+0
+	rel 34+4 t=8 runtime.morestack_noctxt+0
+"".MergeMuls3 STEXT size=44 args=0xc locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	TEXT	"".MergeMuls3(SB), $0-12
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	JLS	37
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	MOVL	"".a+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	ADDL	$19, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	MOVL	"".n+8(SP), CX
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	IMULL	AX, CX
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	MOVL	CX, "".~r2+12(SP)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	RET
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:69)	NOP
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	PCDATA	$0, $-1
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	PCDATA	$2, $-1
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	CALL	runtime.morestack_noctxt(SB)
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:66)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 13 8b 44 24 04 83 c0 13 8b 4c 24 08 0f af c8  v..D$.....L$....
+	0x0020 89 4c 24 0c c3 e8 00 00 00 00 eb d4              .L$.........
+	rel 9+4 t=16 TLS+0
+	rel 38+4 t=8 runtime.morestack_noctxt+0
+"".MergeMuls4 STEXT size=37 args=0x8 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	TEXT	"".MergeMuls4(SB), $0-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	JLS	30
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:75)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:75)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:75)	MOVL	"".n+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:75)	IMUL3L	$14, AX, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:75)	MOVL	AX, "".~r1+8(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:75)	RET
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:75)	NOP
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	PCDATA	$0, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	PCDATA	$2, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	CALL	runtime.morestack_noctxt(SB)
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:72)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0c 8b 44 24 04 6b c0 0e 89 44 24 08 c3 e8 00  v..D$.k...D$....
+	0x0020 00 00 00 eb db                                   .....
+	rel 9+4 t=16 TLS+0
+	rel 31+4 t=8 runtime.morestack_noctxt+0
+"".MergeMuls5 STEXT size=44 args=0xc locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	TEXT	"".MergeMuls5(SB), $0-12
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	JLS	37
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	MOVL	"".a+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	ADDL	$-19, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	MOVL	"".n+8(SP), CX
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	IMULL	AX, CX
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	MOVL	CX, "".~r2+12(SP)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	RET
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:81)	NOP
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	PCDATA	$0, $-1
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	PCDATA	$2, $-1
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	CALL	runtime.morestack_noctxt(SB)
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:78)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 13 8b 44 24 04 83 c0 ed 8b 4c 24 08 0f af c8  v..D$.....L$....
+	0x0020 89 4c 24 0c c3 e8 00 00 00 00 eb d4              .L$.........
+	rel 9+4 t=16 TLS+0
+	rel 38+4 t=8 runtime.morestack_noctxt+0
+"".Pow2Divs STEXT size=58 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	TEXT	"".Pow2Divs(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	JLS	51
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:93)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:93)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:93)	MOVL	"".n1+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:93)	SHRL	$5, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:101)	MOVL	AX, "".~r2+12(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:99)	MOVL	"".n2+8(SP), AX
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:99)	MOVL	AX, CX
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:99)	SARL	$31, AX
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:99)	SHRL	$26, AX
+	0x0029 00041 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:99)	ADDL	CX, AX
+	0x002b 00043 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:99)	SARL	$6, AX
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:101)	MOVL	AX, "".~r3+16(SP)
+	0x0032 00050 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:101)	RET
+	0x0033 00051 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:101)	NOP
+	0x0033 00051 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	PCDATA	$0, $-1
+	0x0033 00051 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	PCDATA	$2, $-1
+	0x0033 00051 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	CALL	runtime.morestack_noctxt(SB)
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:88)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 21 8b 44 24 04 c1 e8 05 89 44 24 0c 8b 44 24  v!.D$.....D$..D$
+	0x0020 08 89 c1 c1 f8 1f c1 e8 1a 01 c8 c1 f8 06 89 44  ...............D
+	0x0030 24 10 c3 e8 00 00 00 00 eb c6                    $.........
+	rel 9+4 t=16 TLS+0
+	rel 52+4 t=8 runtime.morestack_noctxt+0
+"".ConstDivs STEXT size=69 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	TEXT	"".ConstDivs(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	JLS	62
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:107)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:107)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:107)	MOVL	$-252645135, AX
+	0x0017 00023 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:107)	MOVL	"".n1+4(SP), CX
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:107)	MULL	CX
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:107)	SHRL	$4, DX
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:112)	MOVL	DX, "".~r2+12(SP)
+	0x0024 00036 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:110)	MOVL	$-252645135, AX
+	0x0029 00041 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:110)	MOVL	"".n2+8(SP), CX
+	0x002d 00045 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:110)	IMULL	CX
+	0x002f 00047 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:110)	ADDL	CX, DX
+	0x0031 00049 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:110)	SARL	$4, DX
+	0x0034 00052 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:110)	SARL	$31, CX
+	0x0037 00055 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:110)	SUBL	CX, DX
+	0x0039 00057 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:112)	MOVL	DX, "".~r3+16(SP)
+	0x003d 00061 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:112)	RET
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:112)	NOP
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	PCDATA	$0, $-1
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	PCDATA	$2, $-1
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	CALL	runtime.morestack_noctxt(SB)
+	0x0043 00067 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:105)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 2c b8 f1 f0 f0 f0 8b 4c 24 04 f7 e1 c1 ea 04  v,......L$......
+	0x0020 89 54 24 0c b8 f1 f0 f0 f0 8b 4c 24 08 f7 e9 01  .T$.......L$....
+	0x0030 ca c1 fa 04 c1 f9 1f 29 ca 89 54 24 10 c3 e8 00  .......)..T$....
+	0x0040 00 00 00 eb bb                                   .....
+	rel 9+4 t=16 TLS+0
+	rel 63+4 t=8 runtime.morestack_noctxt+0
+"".Pow2Mods STEXT size=63 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	TEXT	"".Pow2Mods(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	JLS	56
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:120)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:120)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:120)	MOVL	"".n1+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:120)	ANDL	$31, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:128)	MOVL	AX, "".~r2+12(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:126)	MOVL	"".n2+8(SP), AX
+	0x0021 00033 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:126)	MOVL	AX, CX
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:126)	SARL	$31, AX
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:126)	SHRL	$26, AX
+	0x0029 00041 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:126)	ADDL	CX, AX
+	0x002b 00043 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:126)	SARL	$6, AX
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:126)	SHLL	$6, AX
+	0x0031 00049 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:126)	SUBL	AX, CX
+	0x0033 00051 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:128)	MOVL	CX, "".~r3+16(SP)
+	0x0037 00055 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:128)	RET
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:128)	NOP
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	PCDATA	$0, $-1
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	PCDATA	$2, $-1
+	0x0038 00056 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	CALL	runtime.morestack_noctxt(SB)
+	0x003d 00061 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:115)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 26 8b 44 24 04 83 e0 1f 89 44 24 0c 8b 44 24  v&.D$.....D$..D$
+	0x0020 08 89 c1 c1 f8 1f c1 e8 1a 01 c8 c1 f8 06 c1 e0  ................
+	0x0030 06 29 c1 89 4c 24 10 c3 e8 00 00 00 00 eb c1     .)..L$.........
+	rel 9+4 t=16 TLS+0
+	rel 57+4 t=8 runtime.morestack_noctxt+0
+"".ConstMods STEXT size=91 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	TEXT	"".ConstMods(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	JLS	84
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	MOVL	$-252645135, AX
+	0x0017 00023 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	MOVL	"".n1+4(SP), CX
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	MULL	CX
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	SHRL	$4, DX
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	MOVL	DX, BX
+	0x0022 00034 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	SHLL	$4, DX
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	LEAL	(DX)(BX*1), DX
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:134)	SUBL	DX, CX
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:139)	MOVL	CX, "".~r2+12(SP)
+	0x002e 00046 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	MOVL	$-252645135, AX
+	0x0033 00051 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	MOVL	"".n2+8(SP), CX
+	0x0037 00055 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	IMULL	CX
+	0x0039 00057 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	ADDL	CX, DX
+	0x003b 00059 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	SARL	$4, DX
+	0x003e 00062 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	MOVL	CX, BX
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	SARL	$31, CX
+	0x0043 00067 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	SUBL	CX, DX
+	0x0045 00069 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	MOVL	DX, CX
+	0x0047 00071 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	SHLL	$4, DX
+	0x004a 00074 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	LEAL	(DX)(CX*1), CX
+	0x004d 00077 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:137)	SUBL	CX, BX
+	0x004f 00079 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:139)	MOVL	BX, "".~r3+16(SP)
+	0x0053 00083 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:139)	RET
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:139)	NOP
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	PCDATA	$0, $-1
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	PCDATA	$2, $-1
+	0x0054 00084 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	CALL	runtime.morestack_noctxt(SB)
+	0x0059 00089 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:132)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 42 b8 f1 f0 f0 f0 8b 4c 24 04 f7 e1 c1 ea 04  vB......L$......
+	0x0020 89 d3 c1 e2 04 8d 14 1a 29 d1 89 4c 24 0c b8 f1  ........)..L$...
+	0x0030 f0 f0 f0 8b 4c 24 08 f7 e9 01 ca c1 fa 04 89 cb  ....L$..........
+	0x0040 c1 f9 1f 29 ca 89 d1 c1 e2 04 8d 0c 0a 29 cb 89  ...).........)..
+	0x0050 5c 24 10 c3 e8 00 00 00 00 eb a5                 \$.........
+	rel 9+4 t=16 TLS+0
+	rel 85+4 t=8 runtime.morestack_noctxt+0
+"".LenDiv1 STEXT size=37 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	TEXT	"".LenDiv1(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	JLS	30
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:148)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:148)	PCDATA	$0, $1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:148)	MOVL	"".a+8(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:148)	SHRL	$10, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:148)	MOVL	AX, "".~r1+16(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:148)	RET
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:148)	NOP
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	PCDATA	$0, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	PCDATA	$2, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	CALL	runtime.morestack_noctxt(SB)
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:145)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0c 8b 44 24 08 c1 e8 0a 89 44 24 10 c3 e8 00  v..D$.....D$....
+	0x0020 00 00 00 eb db                                   .....
+	rel 9+4 t=16 TLS+0
+	rel 31+4 t=8 runtime.morestack_noctxt+0
+"".LenDiv2 STEXT size=37 args=0xc locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	TEXT	"".LenDiv2(SB), $0-12
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	JLS	30
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:154)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:154)	PCDATA	$0, $1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:154)	MOVL	"".s+8(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:154)	SHRL	$11, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:154)	MOVL	AX, "".~r1+12(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:154)	RET
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:154)	NOP
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	PCDATA	$0, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	PCDATA	$2, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	CALL	runtime.morestack_noctxt(SB)
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:151)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0c 8b 44 24 08 c1 e8 0b 89 44 24 0c c3 e8 00  v..D$.....D$....
+	0x0020 00 00 00 eb db                                   .....
+	rel 9+4 t=16 TLS+0
+	rel 31+4 t=8 runtime.morestack_noctxt+0
+"".LenMod1 STEXT size=39 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	TEXT	"".LenMod1(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	JLS	32
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:160)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:160)	PCDATA	$0, $1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:160)	MOVL	"".a+8(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:160)	ANDL	$1023, AX
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:160)	MOVL	AX, "".~r1+16(SP)
+	0x001f 00031 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:160)	RET
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:160)	NOP
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	PCDATA	$0, $-1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	PCDATA	$2, $-1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	CALL	runtime.morestack_noctxt(SB)
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:157)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0e 8b 44 24 08 25 ff 03 00 00 89 44 24 10 c3  v..D$.%.....D$..
+	0x0020 e8 00 00 00 00 eb d9                             .......
+	rel 9+4 t=16 TLS+0
+	rel 33+4 t=8 runtime.morestack_noctxt+0
+"".LenMod2 STEXT size=39 args=0xc locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	TEXT	"".LenMod2(SB), $0-12
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	JLS	32
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:166)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:166)	PCDATA	$0, $1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:166)	MOVL	"".s+8(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:166)	ANDL	$2047, AX
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:166)	MOVL	AX, "".~r1+12(SP)
+	0x001f 00031 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:166)	RET
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:166)	NOP
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	PCDATA	$0, $-1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	PCDATA	$2, $-1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	CALL	runtime.morestack_noctxt(SB)
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:163)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0e 8b 44 24 08 25 ff 07 00 00 89 44 24 0c c3  v..D$.%.....D$..
+	0x0020 e8 00 00 00 00 eb d9                             .......
+	rel 9+4 t=16 TLS+0
+	rel 33+4 t=8 runtime.morestack_noctxt+0
+"".CapDiv STEXT size=37 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	TEXT	"".CapDiv(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	JLS	30
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:172)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:172)	PCDATA	$0, $1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:172)	MOVL	"".a+12(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:172)	SHRL	$12, AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:172)	MOVL	AX, "".~r1+16(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:172)	RET
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:172)	NOP
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	PCDATA	$0, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	PCDATA	$2, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	CALL	runtime.morestack_noctxt(SB)
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:169)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0c 8b 44 24 0c c1 e8 0c 89 44 24 10 c3 e8 00  v..D$.....D$....
+	0x0020 00 00 00 eb db                                   .....
+	rel 9+4 t=16 TLS+0
+	rel 31+4 t=8 runtime.morestack_noctxt+0
+"".CapMod STEXT size=39 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	TEXT	"".CapMod(SB), $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	JLS	32
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:178)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:178)	PCDATA	$0, $1
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:178)	MOVL	"".a+12(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:178)	ANDL	$4095, AX
+	0x001b 00027 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:178)	MOVL	AX, "".~r1+16(SP)
+	0x001f 00031 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:178)	RET
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:178)	NOP
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	PCDATA	$0, $-1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	PCDATA	$2, $-1
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	CALL	runtime.morestack_noctxt(SB)
+	0x0025 00037 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:175)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0e 8b 44 24 0c 25 ff 0f 00 00 89 44 24 10 c3  v..D$.%.....D$..
+	0x0020 e8 00 00 00 00 eb d9                             .......
+	rel 9+4 t=16 TLS+0
+	rel 33+4 t=8 runtime.morestack_noctxt+0
+"".AddMul STEXT size=37 args=0x8 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	TEXT	"".AddMul(SB), $0-8
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	MOVL	TLS, CX
+	0x0007 00007 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	MOVL	(CX)(TLS*2), CX
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	CMPL	SP, 8(CX)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	JLS	30
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:183)	PCDATA	$2, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:183)	PCDATA	$0, $0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:183)	MOVL	"".x+4(SP), AX
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:183)	SHLL	$1, AX
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:183)	INCL	AX
+	0x0019 00025 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:183)	MOVL	AX, "".~r1+8(SP)
+	0x001d 00029 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:183)	RET
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:183)	NOP
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	PCDATA	$0, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	PCDATA	$2, $-1
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	CALL	runtime.morestack_noctxt(SB)
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/arithmetic.go:181)	JMP	0
+	0x0000 65 8b 0d 00 00 00 00 8b 89 00 00 00 00 3b 61 08  e............;a.
+	0x0010 76 0c 8b 44 24 04 d1 e0 40 89 44 24 08 c3 e8 00  v..D$...@.D$....
+	0x0020 00 00 00 eb db                                   .....
+	rel 9+4 t=16 TLS+0
+	rel 31+4 t=8 runtime.morestack_noctxt+0
+go.loc."".SubMem SDWARFLOC size=61
+	0x0000 ff ff ff ff 00 00 00 00 16 00 00 00 4d 00 00 00  ............M...
+	0x0010 07 00 9c 93 04 91 04 93 04 00 00 00 00 00 00 00  ................
+	0x0020 00 ff ff ff ff 00 00 00 00 16 00 00 00 4d 00 00  .............M..
+	0x0030 00 02 00 91 0c 00 00 00 00 00 00 00 00           .............
+	rel 4+4 t=1 "".SubMem+0
+	rel 37+4 t=1 "".SubMem+0
+go.info."".SubMem SDWARFINFO size=67
+	0x0000 02 22 22 2e 53 75 62 4d 65 6d 00 00 00 00 00 00  ."".SubMem......
+	0x0010 00 00 00 01 9c 00 00 00 00 01 0f 61 72 72 00 00  ...........arr..
+	0x0020 11 00 00 00 00 00 00 00 00 0f 62 00 00 11 00 00  ..........b.....
+	0x0030 00 00 00 00 00 00 0e 7e 72 32 00 01 11 00 00 00  .......~r2......
+	0x0040 00 00 00                                         ...
+	rel 11+4 t=1 "".SubMem+0
+	rel 15+4 t=1 "".SubMem+77
+	rel 21+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 33+4 t=28 go.info.[]int+0
+	rel 37+4 t=28 go.loc."".SubMem+0
+	rel 46+4 t=28 go.info.int+0
+	rel 50+4 t=28 go.loc."".SubMem+33
+	rel 61+4 t=28 go.info.int+0
+go.range."".SubMem SDWARFRANGE size=0
+go.isstmt."".SubMem SDWARFMISC size=0
+	0x0000 04 16 01 05 02 04 01 07 02 03 01 02 02 05 01 0d  ................
+	0x0010 02 02 01 05 02 09 00                             .......
+go.loc."".Pow2Muls SDWARFLOC size=54
+	0x0000 ff ff ff ff 00 00 00 00 19 00 00 00 21 00 00 00  ............!...
+	0x0010 01 00 50 00 00 00 00 00 00 00 00 ff ff ff ff 00  ..P.............
+	0x0020 00 00 00 26 00 00 00 32 00 00 00 01 00 50 00 00  ...&...2.....P..
+	0x0030 00 00 00 00 00 00                                ......
+	rel 4+4 t=1 "".Pow2Muls+0
+	rel 31+4 t=1 "".Pow2Muls+0
+go.info."".Pow2Muls SDWARFINFO size=99
+	0x0000 02 22 22 2e 50 6f 77 32 4d 75 6c 73 00 00 00 00  ."".Pow2Muls....
+	0x0010 00 00 00 00 00 01 9c 00 00 00 00 01 0a 61 00 24  .............a.$
+	0x0020 00 00 00 00 00 00 00 00 0a 62 00 2a 00 00 00 00  .........b.*....
+	0x0030 00 00 00 00 0e 6e 31 00 00 1f 00 00 00 00 00 0e  .....n1.........
+	0x0040 6e 32 00 00 1f 00 00 00 00 00 0e 7e 72 32 00 01  n2.........~r2..
+	0x0050 1f 00 00 00 00 00 0e 7e 72 33 00 01 1f 00 00 00  .......~r3......
+	0x0060 00 00 00                                         ...
+	rel 13+4 t=1 "".Pow2Muls+0
+	rel 17+4 t=1 "".Pow2Muls+50
+	rel 23+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 32+4 t=28 go.info.int+0
+	rel 36+4 t=28 go.loc."".Pow2Muls+0
+	rel 44+4 t=28 go.info.int+0
+	rel 48+4 t=28 go.loc."".Pow2Muls+27
+	rel 58+4 t=28 go.info.int+0
+	rel 69+4 t=28 go.info.int+0
+	rel 81+4 t=28 go.info.int+0
+	rel 93+4 t=28 go.info.int+0
+go.range."".Pow2Muls SDWARFRANGE size=0
+go.isstmt."".Pow2Muls SDWARFMISC size=0
+	0x0000 04 16 01 03 02 08 01 05 02 04 01 01 02 07 00     ...............
+go.loc."".Mul_96 SDWARFLOC size=0
+go.info."".Mul_96 SDWARFINFO size=49
+	0x0000 02 22 22 2e 4d 75 6c 5f 39 36 00 00 00 00 00 00  ."".Mul_96......
+	0x0010 00 00 00 01 9c 00 00 00 00 01 0e 6e 00 00 2f 00  ...........n../.
+	0x0020 00 00 00 00 0e 7e 72 31 00 01 2f 00 00 00 00 00  .....~r1../.....
+	0x0030 00                                               .
+	rel 11+4 t=1 "".Mul_96+0
+	rel 15+4 t=1 "".Mul_96+40
+	rel 21+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 31+4 t=28 go.info.int+0
+	rel 43+4 t=28 go.info.int+0
+go.range."".Mul_96 SDWARFRANGE size=0
+go.isstmt."".Mul_96 SDWARFMISC size=0
+	0x0000 04 16 01 0b 02 07 00                             .......
+go.loc."".MergeMuls1 SDWARFLOC size=0
+go.info."".MergeMuls1 SDWARFINFO size=53
+	0x0000 02 22 22 2e 4d 65 72 67 65 4d 75 6c 73 31 00 00  ."".MergeMuls1..
+	0x0010 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e 6e  ...............n
+	0x0020 00 00 36 00 00 00 00 00 0e 7e 72 31 00 01 36 00  ..6......~r1..6.
+	0x0030 00 00 00 00 00                                   .....
+	rel 15+4 t=1 "".MergeMuls1+0
+	rel 19+4 t=1 "".MergeMuls1+37
+	rel 25+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 35+4 t=28 go.info.int+0
+	rel 47+4 t=28 go.info.int+0
+go.range."".MergeMuls1 SDWARFRANGE size=0
+go.isstmt."".MergeMuls1 SDWARFMISC size=0
+	0x0000 04 16 01 08 02 07 00                             .......
+go.loc."".MergeMuls2 SDWARFLOC size=0
+go.info."".MergeMuls2 SDWARFINFO size=53
+	0x0000 02 22 22 2e 4d 65 72 67 65 4d 75 6c 73 32 00 00  ."".MergeMuls2..
+	0x0010 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e 6e  ...............n
+	0x0020 00 00 3c 00 00 00 00 00 0e 7e 72 31 00 01 3c 00  ..<......~r1..<.
+	0x0030 00 00 00 00 00                                   .....
+	rel 15+4 t=1 "".MergeMuls2+0
+	rel 19+4 t=1 "".MergeMuls2+40
+	rel 25+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 35+4 t=28 go.info.int+0
+	rel 47+4 t=28 go.info.int+0
+go.range."".MergeMuls2 SDWARFRANGE size=0
+go.isstmt."".MergeMuls2 SDWARFMISC size=0
+	0x0000 04 16 01 0b 02 07 00                             .......
+go.loc."".MergeMuls3 SDWARFLOC size=0
+go.info."".MergeMuls3 SDWARFINFO size=63
+	0x0000 02 22 22 2e 4d 65 72 67 65 4d 75 6c 73 33 00 00  ."".MergeMuls3..
+	0x0010 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e 61  ...............a
+	0x0020 00 00 42 00 00 00 00 00 0e 6e 00 00 42 00 00 00  ..B......n..B...
+	0x0030 00 00 0e 7e 72 32 00 01 42 00 00 00 00 00 00     ...~r2..B......
+	rel 15+4 t=1 "".MergeMuls3+0
+	rel 19+4 t=1 "".MergeMuls3+44
+	rel 25+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 35+4 t=28 go.info.int+0
+	rel 45+4 t=28 go.info.int+0
+	rel 57+4 t=28 go.info.int+0
+go.range."".MergeMuls3 SDWARFRANGE size=0
+go.isstmt."".MergeMuls3 SDWARFMISC size=0
+	0x0000 04 16 01 0f 02 07 00                             .......
+go.loc."".MergeMuls4 SDWARFLOC size=0
+go.info."".MergeMuls4 SDWARFINFO size=53
+	0x0000 02 22 22 2e 4d 65 72 67 65 4d 75 6c 73 34 00 00  ."".MergeMuls4..
+	0x0010 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e 6e  ...............n
+	0x0020 00 00 48 00 00 00 00 00 0e 7e 72 31 00 01 48 00  ..H......~r1..H.
+	0x0030 00 00 00 00 00                                   .....
+	rel 15+4 t=1 "".MergeMuls4+0
+	rel 19+4 t=1 "".MergeMuls4+37
+	rel 25+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 35+4 t=28 go.info.int+0
+	rel 47+4 t=28 go.info.int+0
+go.range."".MergeMuls4 SDWARFRANGE size=0
+go.isstmt."".MergeMuls4 SDWARFMISC size=0
+	0x0000 04 16 01 08 02 07 00                             .......
+go.loc."".MergeMuls5 SDWARFLOC size=0
+go.info."".MergeMuls5 SDWARFINFO size=63
+	0x0000 02 22 22 2e 4d 65 72 67 65 4d 75 6c 73 35 00 00  ."".MergeMuls5..
+	0x0010 00 00 00 00 00 00 00 01 9c 00 00 00 00 01 0e 61  ...............a
+	0x0020 00 00 4e 00 00 00 00 00 0e 6e 00 00 4e 00 00 00  ..N......n..N...
+	0x0030 00 00 0e 7e 72 32 00 01 4e 00 00 00 00 00 00     ...~r2..N......
+	rel 15+4 t=1 "".MergeMuls5+0
+	rel 19+4 t=1 "".MergeMuls5+44
+	rel 25+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 35+4 t=28 go.info.int+0
+	rel 45+4 t=28 go.info.int+0
+	rel 57+4 t=28 go.info.int+0
+go.range."".MergeMuls5 SDWARFRANGE size=0
+go.isstmt."".MergeMuls5 SDWARFMISC size=0
+	0x0000 04 16 01 0f 02 07 00                             .......
+go.loc."".Pow2Divs SDWARFLOC size=54
+	0x0000 ff ff ff ff 00 00 00 00 19 00 00 00 21 00 00 00  ............!...
+	0x0010 01 00 50 00 00 00 00 00 00 00 00 ff ff ff ff 00  ..P.............
+	0x0020 00 00 00 2e 00 00 00 3a 00 00 00 01 00 50 00 00  .......:.....P..
+	0x0030 00 00 00 00 00 00                                ......
+	rel 4+4 t=1 "".Pow2Divs+0
+	rel 31+4 t=1 "".Pow2Divs+0
+go.info."".Pow2Divs SDWARFINFO size=99
+	0x0000 02 22 22 2e 50 6f 77 32 44 69 76 73 00 00 00 00  ."".Pow2Divs....
+	0x0010 00 00 00 00 00 01 9c 00 00 00 00 01 0a 61 00 5d  .............a.]
+	0x0020 00 00 00 00 00 00 00 00 0a 62 00 63 00 00 00 00  .........b.c....
+	0x0030 00 00 00 00 0e 6e 31 00 00 58 00 00 00 00 00 0e  .....n1..X......
+	0x0040 6e 32 00 00 58 00 00 00 00 00 0e 7e 72 32 00 01  n2..X......~r2..
+	0x0050 58 00 00 00 00 00 0e 7e 72 33 00 01 58 00 00 00  X......~r3..X...
+	0x0060 00 00 00                                         ...
+	rel 13+4 t=1 "".Pow2Divs+0
+	rel 17+4 t=1 "".Pow2Divs+58
+	rel 23+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 32+4 t=28 go.info.uint+0
+	rel 36+4 t=28 go.loc."".Pow2Divs+0
+	rel 44+4 t=28 go.info.int+0
+	rel 48+4 t=28 go.loc."".Pow2Divs+27
+	rel 58+4 t=28 go.info.uint+0
+	rel 69+4 t=28 go.info.int+0
+	rel 81+4 t=28 go.info.uint+0
+	rel 93+4 t=28 go.info.int+0
+go.range."".Pow2Divs SDWARFRANGE size=0
+go.isstmt."".Pow2Divs SDWARFMISC size=0
+	0x0000 04 16 01 03 02 08 01 0d 02 04 01 01 02 07 00     ...............
+go.loc."".ConstDivs SDWARFLOC size=54
+	0x0000 ff ff ff ff 00 00 00 00 20 00 00 00 2f 00 00 00  ........ .../...
+	0x0010 01 00 52 00 00 00 00 00 00 00 00 ff ff ff ff 00  ..R.............
+	0x0020 00 00 00 39 00 00 00 45 00 00 00 01 00 52 00 00  ...9...E.....R..
+	0x0030 00 00 00 00 00 00                                ......
+	rel 4+4 t=1 "".ConstDivs+0
+	rel 31+4 t=1 "".ConstDivs+0
+go.info."".ConstDivs SDWARFINFO size=100
+	0x0000 02 22 22 2e 43 6f 6e 73 74 44 69 76 73 00 00 00  ."".ConstDivs...
+	0x0010 00 00 00 00 00 00 01 9c 00 00 00 00 01 0a 61 00  ..............a.
+	0x0020 6b 00 00 00 00 00 00 00 00 0a 62 00 6e 00 00 00  k.........b.n...
+	0x0030 00 00 00 00 00 0e 6e 31 00 00 69 00 00 00 00 00  ......n1..i.....
+	0x0040 0e 6e 32 00 00 69 00 00 00 00 00 0e 7e 72 32 00  .n2..i......~r2.
+	0x0050 01 69 00 00 00 00 00 0e 7e 72 33 00 01 69 00 00  .i......~r3..i..
+	0x0060 00 00 00 00                                      ....
+	rel 14+4 t=1 "".ConstDivs+0
+	rel 18+4 t=1 "".ConstDivs+69
+	rel 24+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 33+4 t=28 go.info.uint+0
+	rel 37+4 t=28 go.loc."".ConstDivs+0
+	rel 45+4 t=28 go.info.int+0
+	rel 49+4 t=28 go.loc."".ConstDivs+27
+	rel 59+4 t=28 go.info.uint+0
+	rel 70+4 t=28 go.info.int+0
+	rel 82+4 t=28 go.info.uint+0
+	rel 94+4 t=28 go.info.int+0
+go.range."".ConstDivs SDWARFRANGE size=0
+go.isstmt."".ConstDivs SDWARFMISC size=0
+	0x0000 04 17 01 09 02 09 01 10 02 04 01 01 02 07 00     ...............
+go.loc."".Pow2Mods SDWARFLOC size=54
+	0x0000 ff ff ff ff 00 00 00 00 19 00 00 00 21 00 00 00  ............!...
+	0x0010 01 00 50 00 00 00 00 00 00 00 00 ff ff ff ff 00  ..P.............
+	0x0020 00 00 00 33 00 00 00 3f 00 00 00 01 00 51 00 00  ...3...?.....Q..
+	0x0030 00 00 00 00 00 00                                ......
+	rel 4+4 t=1 "".Pow2Mods+0
+	rel 31+4 t=1 "".Pow2Mods+0
+go.info."".Pow2Mods SDWARFINFO size=99
+	0x0000 02 22 22 2e 50 6f 77 32 4d 6f 64 73 00 00 00 00  ."".Pow2Mods....
+	0x0010 00 00 00 00 00 01 9c 00 00 00 00 01 0a 61 00 78  .............a.x
+	0x0020 00 00 00 00 00 00 00 00 0a 62 00 7e 00 00 00 00  .........b.~....
+	0x0030 00 00 00 00 0e 6e 31 00 00 73 00 00 00 00 00 0e  .....n1..s......
+	0x0040 6e 32 00 00 73 00 00 00 00 00 0e 7e 72 32 00 01  n2..s......~r2..
+	0x0050 73 00 00 00 00 00 0e 7e 72 33 00 01 73 00 00 00  s......~r3..s...
+	0x0060 00 00 00                                         ...
+	rel 13+4 t=1 "".Pow2Mods+0
+	rel 17+4 t=1 "".Pow2Mods+63
+	rel 23+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 32+4 t=28 go.info.uint+0
+	rel 36+4 t=28 go.loc."".Pow2Mods+0
+	rel 44+4 t=28 go.info.int+0
+	rel 48+4 t=28 go.loc."".Pow2Mods+27
+	rel 58+4 t=28 go.info.uint+0
+	rel 69+4 t=28 go.info.int+0
+	rel 81+4 t=28 go.info.uint+0
+	rel 93+4 t=28 go.info.int+0
+go.range."".Pow2Mods SDWARFRANGE size=0
+go.isstmt."".Pow2Mods SDWARFMISC size=0
+	0x0000 04 16 01 03 02 08 01 12 02 04 01 01 02 07 00     ...............
+go.loc."".ConstMods SDWARFLOC size=54
+	0x0000 ff ff ff ff 00 00 00 00 2a 00 00 00 37 00 00 00  ........*...7...
+	0x0010 01 00 51 00 00 00 00 00 00 00 00 ff ff ff ff 00  ..Q.............
+	0x0020 00 00 00 4f 00 00 00 5b 00 00 00 01 00 53 00 00  ...O...[.....S..
+	0x0030 00 00 00 00 00 00                                ......
+	rel 4+4 t=1 "".ConstMods+0
+	rel 31+4 t=1 "".ConstMods+0
+go.info."".ConstMods SDWARFINFO size=106
+	0x0000 02 22 22 2e 43 6f 6e 73 74 4d 6f 64 73 00 00 00  ."".ConstMods...
+	0x0010 00 00 00 00 00 00 01 9c 00 00 00 00 01 0a 61 00  ..............a.
+	0x0020 86 01 00 00 00 00 00 00 00 00 0a 62 00 89 01 00  ...........b....
+	0x0030 00 00 00 00 00 00 00 0e 6e 31 00 00 84 01 00 00  ........n1......
+	0x0040 00 00 00 0e 6e 32 00 00 84 01 00 00 00 00 00 0e  ....n2..........
+	0x0050 7e 72 32 00 01 84 01 00 00 00 00 00 0e 7e 72 33  ~r2..........~r3
+	0x0060 00 01 84 01 00 00 00 00 00 00                    ..........
+	rel 14+4 t=1 "".ConstMods+0
+	rel 18+4 t=1 "".ConstMods+91
+	rel 24+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 34+4 t=28 go.info.uint+0
+	rel 38+4 t=28 go.loc."".ConstMods+0
+	rel 47+4 t=28 go.info.int+0
+	rel 51+4 t=28 go.loc."".ConstMods+27
+	rel 62+4 t=28 go.info.uint+0
+	rel 74+4 t=28 go.info.int+0
+	rel 87+4 t=28 go.info.uint+0
+	rel 100+4 t=28 go.info.int+0
+go.range."".ConstMods SDWARFRANGE size=0
+go.isstmt."".ConstMods SDWARFMISC size=0
+	0x0000 04 17 01 13 02 09 01 1c 02 04 01 01 02 07 00     ...............
+go.loc."".LenDiv1 SDWARFLOC size=0
+go.info."".LenDiv1 SDWARFINFO size=52
+	0x0000 02 22 22 2e 4c 65 6e 44 69 76 31 00 00 00 00 00  ."".LenDiv1.....
+	0x0010 00 00 00 00 01 9c 00 00 00 00 01 0e 61 00 00 91  ............a...
+	0x0020 01 00 00 00 00 00 0e 7e 72 31 00 01 91 01 00 00  .......~r1......
+	0x0030 00 00 00 00                                      ....
+	rel 12+4 t=1 "".LenDiv1+0
+	rel 16+4 t=1 "".LenDiv1+37
+	rel 22+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 33+4 t=28 go.info.[]int+0
+	rel 46+4 t=28 go.info.int+0
+go.range."".LenDiv1 SDWARFRANGE size=0
+go.isstmt."".LenDiv1 SDWARFMISC size=0
+	0x0000 04 16 01 08 02 07 00                             .......
+go.loc."".LenDiv2 SDWARFLOC size=0
+go.info."".LenDiv2 SDWARFINFO size=52
+	0x0000 02 22 22 2e 4c 65 6e 44 69 76 32 00 00 00 00 00  ."".LenDiv2.....
+	0x0010 00 00 00 00 01 9c 00 00 00 00 01 0e 73 00 00 97  ............s...
+	0x0020 01 00 00 00 00 00 0e 7e 72 31 00 01 97 01 00 00  .......~r1......
+	0x0030 00 00 00 00                                      ....
+	rel 12+4 t=1 "".LenDiv2+0
+	rel 16+4 t=1 "".LenDiv2+37
+	rel 22+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 33+4 t=28 go.info.string+0
+	rel 46+4 t=28 go.info.int+0
+go.range."".LenDiv2 SDWARFRANGE size=0
+go.isstmt."".LenDiv2 SDWARFMISC size=0
+	0x0000 04 16 01 08 02 07 00                             .......
+go.loc."".LenMod1 SDWARFLOC size=0
+go.info."".LenMod1 SDWARFINFO size=52
+	0x0000 02 22 22 2e 4c 65 6e 4d 6f 64 31 00 00 00 00 00  ."".LenMod1.....
+	0x0010 00 00 00 00 01 9c 00 00 00 00 01 0e 61 00 00 9d  ............a...
+	0x0020 01 00 00 00 00 00 0e 7e 72 31 00 01 9d 01 00 00  .......~r1......
+	0x0030 00 00 00 00                                      ....
+	rel 12+4 t=1 "".LenMod1+0
+	rel 16+4 t=1 "".LenMod1+39
+	rel 22+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 33+4 t=28 go.info.[]int+0
+	rel 46+4 t=28 go.info.int+0
+go.range."".LenMod1 SDWARFRANGE size=0
+go.isstmt."".LenMod1 SDWARFMISC size=0
+	0x0000 04 16 01 0a 02 07 00                             .......
+go.loc."".LenMod2 SDWARFLOC size=0
+go.info."".LenMod2 SDWARFINFO size=52
+	0x0000 02 22 22 2e 4c 65 6e 4d 6f 64 32 00 00 00 00 00  ."".LenMod2.....
+	0x0010 00 00 00 00 01 9c 00 00 00 00 01 0e 73 00 00 a3  ............s...
+	0x0020 01 00 00 00 00 00 0e 7e 72 31 00 01 a3 01 00 00  .......~r1......
+	0x0030 00 00 00 00                                      ....
+	rel 12+4 t=1 "".LenMod2+0
+	rel 16+4 t=1 "".LenMod2+39
+	rel 22+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 33+4 t=28 go.info.string+0
+	rel 46+4 t=28 go.info.int+0
+go.range."".LenMod2 SDWARFRANGE size=0
+go.isstmt."".LenMod2 SDWARFMISC size=0
+	0x0000 04 16 01 0a 02 07 00                             .......
+go.loc."".CapDiv SDWARFLOC size=0
+go.info."".CapDiv SDWARFINFO size=51
+	0x0000 02 22 22 2e 43 61 70 44 69 76 00 00 00 00 00 00  ."".CapDiv......
+	0x0010 00 00 00 01 9c 00 00 00 00 01 0e 61 00 00 a9 01  ...........a....
+	0x0020 00 00 00 00 00 0e 7e 72 31 00 01 a9 01 00 00 00  ......~r1.......
+	0x0030 00 00 00                                         ...
+	rel 11+4 t=1 "".CapDiv+0
+	rel 15+4 t=1 "".CapDiv+37
+	rel 21+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 32+4 t=28 go.info.[]int+0
+	rel 45+4 t=28 go.info.int+0
+go.range."".CapDiv SDWARFRANGE size=0
+go.isstmt."".CapDiv SDWARFMISC size=0
+	0x0000 04 16 01 08 02 07 00                             .......
+go.loc."".CapMod SDWARFLOC size=0
+go.info."".CapMod SDWARFINFO size=51
+	0x0000 02 22 22 2e 43 61 70 4d 6f 64 00 00 00 00 00 00  ."".CapMod......
+	0x0010 00 00 00 01 9c 00 00 00 00 01 0e 61 00 00 af 01  ...........a....
+	0x0020 00 00 00 00 00 0e 7e 72 31 00 01 af 01 00 00 00  ......~r1.......
+	0x0030 00 00 00                                         ...
+	rel 11+4 t=1 "".CapMod+0
+	rel 15+4 t=1 "".CapMod+39
+	rel 21+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 32+4 t=28 go.info.[]int+0
+	rel 45+4 t=28 go.info.int+0
+go.range."".CapMod SDWARFRANGE size=0
+go.isstmt."".CapMod SDWARFMISC size=0
+	0x0000 04 16 01 0a 02 07 00                             .......
+go.loc."".AddMul SDWARFLOC size=0
+go.info."".AddMul SDWARFINFO size=51
+	0x0000 02 22 22 2e 41 64 64 4d 75 6c 00 00 00 00 00 00  ."".AddMul......
+	0x0010 00 00 00 01 9c 00 00 00 00 01 0e 78 00 00 b5 01  ...........x....
+	0x0020 00 00 00 00 00 0e 7e 72 31 00 01 b5 01 00 00 00  ......~r1.......
+	0x0030 00 00 00                                         ...
+	rel 11+4 t=1 "".AddMul+0
+	rel 15+4 t=1 "".AddMul+37
+	rel 21+4 t=29 gofile..$GOROOT/test/codegen/arithmetic.go+0
+	rel 32+4 t=28 go.info.int+0
+	rel 45+4 t=28 go.info.int+0
+go.range."".AddMul SDWARFRANGE size=0
+go.isstmt."".AddMul SDWARFMISC size=0
+	0x0000 04 16 01 08 02 07 00                             .......
+runtime.gcbits.01 SRODATA dupok size=1
+	0x0000 01                                               .
+type..namedata.*[]int- SRODATA dupok size=9
+	0x0000 00 00 06 2a 5b 5d 69 6e 74                       ...*[]int
+type.*[]int SRODATA dupok size=36
+	0x0000 04 00 00 00 04 00 00 00 1b 31 52 88 00 04 04 36  .........1R....6
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+32
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[]int-+0
+	rel 32+4 t=1 type.[]int+0
+type.[]int SRODATA dupok size=36
+	0x0000 0c 00 00 00 04 00 00 00 8e 66 f9 1b 02 04 04 17  .........f......
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00                                      ....
+	rel 16+4 t=1 runtime.algarray+0
+	rel 20+4 t=1 runtime.gcbits.01+0
+	rel 24+4 t=5 type..namedata.*[]int-+0
+	rel 28+4 t=6 type.*[]int+0
+	rel 32+4 t=1 type.int+0
+gclocals·1a65e721a2ccc325b382662e7ffee780 SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·69c1753bd5f81501d95132d08af04464 SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+gclocals·ebb0e8ce1793da18f0378b883cb3e122 SRODATA dupok size=10
+	0x0000 02 00 00 00 03 00 00 00 00 04                    ..........
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........

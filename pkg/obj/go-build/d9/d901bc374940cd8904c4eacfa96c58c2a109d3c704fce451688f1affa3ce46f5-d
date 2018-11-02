@@ -1,0 +1,4 @@
+./dotgraph.go
+./graph.go
+./dotgraph_test.go
+./graph_test.go

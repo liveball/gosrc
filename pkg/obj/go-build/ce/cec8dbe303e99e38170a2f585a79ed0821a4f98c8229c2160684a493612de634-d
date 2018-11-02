@@ -1,0 +1,47 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "crypto/internal/subtle"
+
+
+	_xtest "crypto/internal/subtle_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestAliasing", _xtest.TestAliasing},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "crypto/internal/subtle"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

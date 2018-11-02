@@ -1,0 +1,57 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "internal/cpu"
+
+
+	_xtest "internal/cpu_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestDisableAllCapabilities", _xtest.TestDisableAllCapabilities},
+
+	{"TestAllCapabilitiesDisabled", _xtest.TestAllCapabilitiesDisabled},
+
+	{"TestAMD64minimalFeatures", _xtest.TestAMD64minimalFeatures},
+
+	{"TestX86ifAVX2hasAVX", _xtest.TestX86ifAVX2hasAVX},
+
+	{"TestDisableSSE2", _xtest.TestDisableSSE2},
+
+	{"TestSSE2DebugOption", _xtest.TestSSE2DebugOption},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "internal/cpu"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

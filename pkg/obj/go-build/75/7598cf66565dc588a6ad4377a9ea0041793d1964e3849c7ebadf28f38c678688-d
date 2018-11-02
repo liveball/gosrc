@@ -1,0 +1,361 @@
+# command-line-arguments
+"".Mul2 STEXT nosplit size=17 args=0x10 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:17)	TEXT	"".Mul2(SB), NOSPLIT, $0-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:17)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:17)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:17)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:23)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:23)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:23)	MOVSD	"".f+8(SP), X0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:23)	ADDSD	X0, X0
+	0x000a 00010 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:23)	MOVSD	X0, "".~r1+16(SP)
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:23)	RET
+	0x0000 f2 0f 10 44 24 08 f2 0f 58 c0 f2 0f 11 44 24 10  ...D$...X....D$.
+	0x0010 c3                                               .
+"".DivPow2 STEXT nosplit size=65 args=0x30 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:26)	TEXT	"".DivPow2(SB), NOSPLIT, $0-48
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:26)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:26)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:26)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:32)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:32)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:32)	MOVSD	$f64.3fb0000000000000(SB), X0
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:32)	MOVSD	"".f1+8(SP), X1
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:32)	MULSD	X1, X0
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:48)	MOVSD	X0, "".~r3+32(SP)
+	0x0018 00024 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:39)	MOVSD	"".f2+16(SP), X0
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:39)	MOVSD	$f64.4020000000000000(SB), X1
+	0x0026 00038 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:39)	MULSD	X1, X0
+	0x002a 00042 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:48)	MOVSD	X0, "".~r4+40(SP)
+	0x0030 00048 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:46)	MOVSD	"".f3+24(SP), X0
+	0x0036 00054 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:46)	ADDSD	X0, X0
+	0x003a 00058 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:48)	MOVSD	X0, "".~r5+48(SP)
+	0x0040 00064 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:48)	RET
+	0x0000 f2 0f 10 05 00 00 00 00 f2 0f 10 4c 24 08 f2 0f  ...........L$...
+	0x0010 59 c1 f2 0f 11 44 24 20 f2 0f 10 44 24 10 f2 0f  Y....D$ ...D$...
+	0x0020 10 0d 00 00 00 00 f2 0f 59 c1 f2 0f 11 44 24 28  ........Y....D$(
+	0x0030 f2 0f 10 44 24 18 f2 0f 58 c0 f2 0f 11 44 24 30  ...D$...X....D$0
+	0x0040 c3                                               .
+	rel 4+4 t=15 $f64.3fb0000000000000+0
+	rel 34+4 t=15 $f64.4020000000000000+0
+"".FusedAdd32 STEXT nosplit size=33 args=0x18 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:55)	TEXT	"".FusedAdd32(SB), NOSPLIT, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:55)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:55)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:55)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	MOVSS	"".x+8(SP), X0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	MOVSS	"".y+12(SP), X1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	MULSS	X1, X0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	MOVSS	"".z+16(SP), X1
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	ADDSS	X1, X0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	MOVSS	X0, "".~r3+24(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:58)	RET
+	0x0000 f3 0f 10 44 24 08 f3 0f 10 4c 24 0c f3 0f 59 c1  ...D$....L$...Y.
+	0x0010 f3 0f 10 4c 24 10 f3 0f 58 c1 f3 0f 11 44 24 18  ...L$...X....D$.
+	0x0020 c3                                               .
+"".FusedSub32 STEXT nosplit size=33 args=0x18 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:61)	TEXT	"".FusedSub32(SB), NOSPLIT, $0-24
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:61)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:61)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:61)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	MOVSS	"".x+8(SP), X0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	MOVSS	"".y+12(SP), X1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	MULSS	X1, X0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	MOVSS	"".z+16(SP), X1
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	SUBSS	X1, X0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	MOVSS	X0, "".~r3+24(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:64)	RET
+	0x0000 f3 0f 10 44 24 08 f3 0f 10 4c 24 0c f3 0f 59 c1  ...D$....L$...Y.
+	0x0010 f3 0f 10 4c 24 10 f3 0f 5c c1 f3 0f 11 44 24 18  ...L$...\....D$.
+	0x0020 c3                                               .
+"".FusedAdd64 STEXT nosplit size=33 args=0x20 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:67)	TEXT	"".FusedAdd64(SB), NOSPLIT, $0-32
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:67)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:67)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:67)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	MOVSD	"".x+8(SP), X0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	MOVSD	"".y+16(SP), X1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	MULSD	X1, X0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	MOVSD	"".z+24(SP), X1
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	ADDSD	X1, X0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	MOVSD	X0, "".~r3+32(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:70)	RET
+	0x0000 f2 0f 10 44 24 08 f2 0f 10 4c 24 10 f2 0f 59 c1  ...D$....L$...Y.
+	0x0010 f2 0f 10 4c 24 18 f2 0f 58 c1 f2 0f 11 44 24 20  ...L$...X....D$ 
+	0x0020 c3                                               .
+"".FusedSub64 STEXT nosplit size=33 args=0x20 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:73)	TEXT	"".FusedSub64(SB), NOSPLIT, $0-32
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:73)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:73)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:73)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	MOVSD	"".x+8(SP), X0
+	0x0006 00006 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	MOVSD	"".y+16(SP), X1
+	0x000c 00012 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	MULSD	X1, X0
+	0x0010 00016 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	MOVSD	"".z+24(SP), X1
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	SUBSD	X1, X0
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	MOVSD	X0, "".~r3+32(SP)
+	0x0020 00032 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:76)	RET
+	0x0000 f2 0f 10 44 24 08 f2 0f 10 4c 24 10 f2 0f 59 c1  ...D$....L$...Y.
+	0x0010 f2 0f 10 4c 24 18 f2 0f 5c c1 f2 0f 11 44 24 20  ...L$...\....D$ 
+	0x0020 c3                                               .
+"".ArrayZero STEXT nosplit size=45 args=0x10 locals=0x18
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	TEXT	"".ArrayZero(SB), NOSPLIT, $24-16
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	SUBQ	$24, SP
+	0x0004 00004 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	MOVQ	BP, 16(SP)
+	0x0009 00009 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	LEAQ	16(SP), BP
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	PCDATA	$2, $0
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	PCDATA	$0, $0
+	0x000e 00014 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	XORPS	X0, X0
+	0x0011 00017 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:87)	MOVUPS	X0, "".~r0+32(SP)
+	0x0016 00022 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:90)	MOVUPS	X0, "".a(SP)
+	0x001a 00026 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:91)	MOVUPS	"".a(SP), X0
+	0x001e 00030 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:91)	MOVUPS	X0, "".~r0+32(SP)
+	0x0023 00035 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:91)	MOVQ	16(SP), BP
+	0x0028 00040 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:91)	ADDQ	$24, SP
+	0x002c 00044 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:91)	RET
+	0x0000 48 83 ec 18 48 89 6c 24 10 48 8d 6c 24 10 0f 57  H...H.l$.H.l$..W
+	0x0010 c0 0f 11 44 24 20 0f 11 04 24 0f 10 04 24 0f 11  ...D$ ...$...$..
+	0x0020 44 24 20 48 8b 6c 24 10 48 83 c4 18 c3           D$ H.l$.H....
+"".ArrayCopy STEXT nosplit size=19 args=0x20 locals=0x0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:94)	TEXT	"".ArrayCopy(SB), NOSPLIT, $0-32
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:94)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:94)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:94)	FUNCDATA	$3, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:94)	PCDATA	$2, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:94)	PCDATA	$0, $0
+	0x0000 00000 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:94)	XORPS	X0, X0
+	0x0003 00003 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:94)	MOVUPS	X0, "".b+24(SP)
+	0x0008 00008 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:97)	MOVUPS	"".a+8(SP), X0
+	0x000d 00013 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:97)	MOVUPS	X0, "".b+24(SP)
+	0x0012 00018 (/Users/fpf/Downloads/go1.11.1/test/codegen/floats.go:98)	RET
+	0x0000 0f 57 c0 0f 11 44 24 18 0f 10 44 24 08 0f 11 44  .W...D$...D$...D
+	0x0010 24 18 c3                                         $..
+go.loc."".Mul2 SDWARFLOC size=0
+go.info."".Mul2 SDWARFINFO size=55
+	0x0000 02 22 22 2e 4d 75 6c 32 00 00 00 00 00 00 00 00  ."".Mul2........
+	0x0010 00 00 00 00 00 00 00 00 00 01 9c 00 00 00 00 01  ................
+	0x0020 0e 66 00 00 11 00 00 00 00 00 0e 7e 72 31 00 01  .f.........~r1..
+	0x0030 11 00 00 00 00 00 00                             .......
+	rel 9+8 t=1 "".Mul2+0
+	rel 17+8 t=1 "".Mul2+17
+	rel 27+4 t=29 gofile..$GOROOT/test/codegen/floats.go+0
+	rel 37+4 t=28 go.info.float64+0
+	rel 49+4 t=28 go.info.float64+0
+go.range."".Mul2 SDWARFRANGE size=0
+go.isstmt."".Mul2 SDWARFMISC size=0
+	0x0000 04 06 01 0b 00                                   .....
+go.loc."".DivPow2 SDWARFLOC size=153
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 12 00 00 00 00 00 00 00 1e 00 00 00 00 00 00 00  ................
+	0x0020 01 00 61 00 00 00 00 00 00 00 00 00 00 00 00 00  ..a.............
+	0x0030 00 00 00 ff ff ff ff ff ff ff ff 00 00 00 00 00  ................
+	0x0040 00 00 00 2a 00 00 00 00 00 00 00 36 00 00 00 00  ...*.......6....
+	0x0050 00 00 00 01 00 61 00 00 00 00 00 00 00 00 00 00  .....a..........
+	0x0060 00 00 00 00 00 00 ff ff ff ff ff ff ff ff 00 00  ................
+	0x0070 00 00 00 00 00 00 3a 00 00 00 00 00 00 00 41 00  ......:.......A.
+	0x0080 00 00 00 00 00 00 01 00 61 00 00 00 00 00 00 00  ........a.......
+	0x0090 00 00 00 00 00 00 00 00 00                       .........
+	rel 8+8 t=1 "".DivPow2+0
+	rel 59+8 t=1 "".DivPow2+0
+	rel 110+8 t=1 "".DivPow2+0
+go.info."".DivPow2 SDWARFINFO size=141
+	0x0000 02 22 22 2e 44 69 76 50 6f 77 32 00 00 00 00 00  ."".DivPow2.....
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 01 9c 00 00  ................
+	0x0020 00 00 01 0e 66 31 00 00 1a 00 00 00 00 00 0e 66  ....f1.........f
+	0x0030 32 00 00 1a 00 00 00 00 00 0e 66 33 00 00 1a 00  2.........f3....
+	0x0040 00 00 00 00 0a 78 00 20 00 00 00 00 00 00 00 00  .....x. ........
+	0x0050 0a 79 00 27 00 00 00 00 00 00 00 00 0a 7a 00 2e  .y.'.........z..
+	0x0060 00 00 00 00 00 00 00 00 0e 7e 72 33 00 01 1a 00  .........~r3....
+	0x0070 00 00 00 00 0e 7e 72 34 00 01 1a 00 00 00 00 00  .....~r4........
+	0x0080 0e 7e 72 35 00 01 1a 00 00 00 00 00 00           .~r5.........
+	rel 12+8 t=1 "".DivPow2+0
+	rel 20+8 t=1 "".DivPow2+65
+	rel 30+4 t=29 gofile..$GOROOT/test/codegen/floats.go+0
+	rel 41+4 t=28 go.info.float64+0
+	rel 52+4 t=28 go.info.float64+0
+	rel 63+4 t=28 go.info.float64+0
+	rel 72+4 t=28 go.info.float64+0
+	rel 76+4 t=28 go.loc."".DivPow2+0
+	rel 84+4 t=28 go.info.float64+0
+	rel 88+4 t=28 go.loc."".DivPow2+51
+	rel 96+4 t=28 go.info.float64+0
+	rel 100+4 t=28 go.loc."".DivPow2+102
+	rel 111+4 t=28 go.info.float64+0
+	rel 123+4 t=28 go.info.float64+0
+	rel 135+4 t=28 go.info.float64+0
+go.range."".DivPow2 SDWARFRANGE size=0
+go.isstmt."".DivPow2 SDWARFMISC size=0
+	0x0000 04 08 01 0a 02 0c 01 12 02 06 01 04 02 06 01 01  ................
+	0x0010 00                                               .
+go.loc."".FusedAdd32 SDWARFLOC size=0
+go.info."".FusedAdd32 SDWARFINFO size=81
+	0x0000 02 22 22 2e 46 75 73 65 64 41 64 64 33 32 00 00  ."".FusedAdd32..
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01  ................
+	0x0020 9c 00 00 00 00 01 0e 78 00 00 37 00 00 00 00 00  .......x..7.....
+	0x0030 0e 79 00 00 37 00 00 00 00 00 0e 7a 00 00 37 00  .y..7......z..7.
+	0x0040 00 00 00 00 0e 7e 72 33 00 01 37 00 00 00 00 00  .....~r3..7.....
+	0x0050 00                                               .
+	rel 15+8 t=1 "".FusedAdd32+0
+	rel 23+8 t=1 "".FusedAdd32+33
+	rel 33+4 t=29 gofile..$GOROOT/test/codegen/floats.go+0
+	rel 43+4 t=28 go.info.float32+0
+	rel 53+4 t=28 go.info.float32+0
+	rel 63+4 t=28 go.info.float32+0
+	rel 75+4 t=28 go.info.float32+0
+go.range."".FusedAdd32 SDWARFRANGE size=0
+go.isstmt."".FusedAdd32 SDWARFMISC size=0
+	0x0000 04 06 01 1b 00                                   .....
+go.loc."".FusedSub32 SDWARFLOC size=0
+go.info."".FusedSub32 SDWARFINFO size=81
+	0x0000 02 22 22 2e 46 75 73 65 64 53 75 62 33 32 00 00  ."".FusedSub32..
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01  ................
+	0x0020 9c 00 00 00 00 01 0e 78 00 00 3d 00 00 00 00 00  .......x..=.....
+	0x0030 0e 79 00 00 3d 00 00 00 00 00 0e 7a 00 00 3d 00  .y..=......z..=.
+	0x0040 00 00 00 00 0e 7e 72 33 00 01 3d 00 00 00 00 00  .....~r3..=.....
+	0x0050 00                                               .
+	rel 15+8 t=1 "".FusedSub32+0
+	rel 23+8 t=1 "".FusedSub32+33
+	rel 33+4 t=29 gofile..$GOROOT/test/codegen/floats.go+0
+	rel 43+4 t=28 go.info.float32+0
+	rel 53+4 t=28 go.info.float32+0
+	rel 63+4 t=28 go.info.float32+0
+	rel 75+4 t=28 go.info.float32+0
+go.range."".FusedSub32 SDWARFRANGE size=0
+go.isstmt."".FusedSub32 SDWARFMISC size=0
+	0x0000 04 06 01 1b 00                                   .....
+go.loc."".FusedAdd64 SDWARFLOC size=0
+go.info."".FusedAdd64 SDWARFINFO size=81
+	0x0000 02 22 22 2e 46 75 73 65 64 41 64 64 36 34 00 00  ."".FusedAdd64..
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01  ................
+	0x0020 9c 00 00 00 00 01 0e 78 00 00 43 00 00 00 00 00  .......x..C.....
+	0x0030 0e 79 00 00 43 00 00 00 00 00 0e 7a 00 00 43 00  .y..C......z..C.
+	0x0040 00 00 00 00 0e 7e 72 33 00 01 43 00 00 00 00 00  .....~r3..C.....
+	0x0050 00                                               .
+	rel 15+8 t=1 "".FusedAdd64+0
+	rel 23+8 t=1 "".FusedAdd64+33
+	rel 33+4 t=29 gofile..$GOROOT/test/codegen/floats.go+0
+	rel 43+4 t=28 go.info.float64+0
+	rel 53+4 t=28 go.info.float64+0
+	rel 63+4 t=28 go.info.float64+0
+	rel 75+4 t=28 go.info.float64+0
+go.range."".FusedAdd64 SDWARFRANGE size=0
+go.isstmt."".FusedAdd64 SDWARFMISC size=0
+	0x0000 04 06 01 1b 00                                   .....
+go.loc."".FusedSub64 SDWARFLOC size=0
+go.info."".FusedSub64 SDWARFINFO size=81
+	0x0000 02 22 22 2e 46 75 73 65 64 53 75 62 36 34 00 00  ."".FusedSub64..
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01  ................
+	0x0020 9c 00 00 00 00 01 0e 78 00 00 49 00 00 00 00 00  .......x..I.....
+	0x0030 0e 79 00 00 49 00 00 00 00 00 0e 7a 00 00 49 00  .y..I......z..I.
+	0x0040 00 00 00 00 0e 7e 72 33 00 01 49 00 00 00 00 00  .....~r3..I.....
+	0x0050 00                                               .
+	rel 15+8 t=1 "".FusedSub64+0
+	rel 23+8 t=1 "".FusedSub64+33
+	rel 33+4 t=29 gofile..$GOROOT/test/codegen/floats.go+0
+	rel 43+4 t=28 go.info.float64+0
+	rel 53+4 t=28 go.info.float64+0
+	rel 63+4 t=28 go.info.float64+0
+	rel 75+4 t=28 go.info.float64+0
+go.range."".FusedSub64 SDWARFRANGE size=0
+go.isstmt."".FusedSub64 SDWARFMISC size=0
+	0x0000 04 06 01 1b 00                                   .....
+go.loc."".ArrayZero SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 1a 00 00 00 00 00 00 00 2d 00 00 00 00 00 00 00  ........-.......
+	0x0020 02 00 91 60 00 00 00 00 00 00 00 00 00 00 00 00  ...`............
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".ArrayZero+0
+go.info."".ArrayZero SDWARFINFO size=62
+	0x0000 02 22 22 2e 41 72 72 61 79 5a 65 72 6f 00 00 00  ."".ArrayZero...
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c  ................
+	0x0020 00 00 00 00 01 0a 61 00 5a 00 00 00 00 00 00 00  ......a.Z.......
+	0x0030 00 0e 7e 72 30 00 01 57 00 00 00 00 00 00        ..~r0..W......
+	rel 14+8 t=1 "".ArrayZero+0
+	rel 22+8 t=1 "".ArrayZero+45
+	rel 32+4 t=29 gofile..$GOROOT/test/codegen/floats.go+0
+	rel 41+4 t=28 go.info.[16]uint8+0
+	rel 45+4 t=28 go.loc."".ArrayZero+0
+	rel 56+4 t=28 go.info.[16]uint8+0
+go.range."".ArrayZero SDWARFRANGE size=0
+go.isstmt."".ArrayZero SDWARFMISC size=0
+	0x0000 08 0e 03 03 01 05 02 08 01 0f 00                 ...........
+go.loc."".ArrayCopy SDWARFLOC size=52
+	0x0000 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+	0x0010 03 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00  ................
+	0x0020 02 00 91 10 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00                                      ....
+	rel 8+8 t=1 "".ArrayCopy+0
+go.info."".ArrayCopy SDWARFINFO size=61
+	0x0000 02 22 22 2e 41 72 72 61 79 43 6f 70 79 00 00 00  ."".ArrayCopy...
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 9c  ................
+	0x0020 00 00 00 00 01 0e 61 00 00 5e 00 00 00 00 00 0f  ......a..^......
+	0x0030 62 00 01 5e 00 00 00 00 00 00 00 00 00           b..^.........
+	rel 14+8 t=1 "".ArrayCopy+0
+	rel 22+8 t=1 "".ArrayCopy+19
+	rel 32+4 t=29 gofile..$GOROOT/test/codegen/floats.go+0
+	rel 42+4 t=28 go.info.[16]uint8+0
+	rel 52+4 t=28 go.info.[16]uint8+0
+	rel 56+4 t=28 go.loc."".ArrayCopy+0
+go.range."".ArrayCopy SDWARFRANGE size=0
+go.isstmt."".ArrayCopy SDWARFMISC size=0
+	0x0000 04 03 01 05 02 05 01 05 02 01 00                 ...........
+runtime.gcbits.01 SRODATA dupok size=1
+	0x0000 01                                               .
+type..namedata.*[]uint8- SRODATA dupok size=11
+	0x0000 00 00 08 2a 5b 5d 75 69 6e 74 38                 ...*[]uint8
+type.*[]uint8 SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 a5 8e d0 69 00 08 08 36 00 00 00 00 00 00 00 00  ...i...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]uint8-+0
+	rel 48+8 t=1 type.[]uint8+0
+type.[]uint8 SRODATA dupok size=56
+	0x0000 18 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 df 7e 2e 38 02 08 08 17 00 00 00 00 00 00 00 00  .~.8............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+0
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[]uint8-+0
+	rel 44+4 t=6 type.*[]uint8+0
+	rel 48+8 t=1 type.uint8+0
+type..namedata.*[16]uint8- SRODATA dupok size=13
+	0x0000 00 00 0a 2a 5b 31 36 5d 75 69 6e 74 38           ...*[16]uint8
+type.*[16]uint8 SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 b4 2f 0d 51 00 08 08 36 00 00 00 00 00 00 00 00  ./.Q...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+80
+	rel 32+8 t=1 runtime.gcbits.01+0
+	rel 40+4 t=5 type..namedata.*[16]uint8-+0
+	rel 48+8 t=1 type.[16]uint8+0
+runtime.gcbits. SRODATA dupok size=0
+type.[16]uint8 SRODATA dupok size=72
+	0x0000 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 b7 7d 35 47 02 01 01 91 00 00 00 00 00 00 00 00  .}5G............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 10 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=1 runtime.algarray+96
+	rel 32+8 t=1 runtime.gcbits.+0
+	rel 40+4 t=5 type..namedata.*[16]uint8-+0
+	rel 44+4 t=6 type.*[16]uint8+0
+	rel 48+8 t=1 type.uint8+0
+	rel 56+8 t=1 type.[]uint8+0
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........

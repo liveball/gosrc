@@ -1,0 +1,177 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "encoding/xml"
+
+
+	_xtest "encoding/xml_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestMarshal", _test.TestMarshal},
+
+	{"TestMarshalErrors", _test.TestMarshalErrors},
+
+	{"TestUnmarshal", _test.TestUnmarshal},
+
+	{"TestMarshalIndent", _test.TestMarshalIndent},
+
+	{"TestMarshalWriteErrors", _test.TestMarshalWriteErrors},
+
+	{"TestMarshalWriteIOErrors", _test.TestMarshalWriteIOErrors},
+
+	{"TestMarshalFlush", _test.TestMarshalFlush},
+
+	{"TestStructPointerMarshal", _test.TestStructPointerMarshal},
+
+	{"TestEncodeToken", _test.TestEncodeToken},
+
+	{"TestProcInstEncodeToken", _test.TestProcInstEncodeToken},
+
+	{"TestDecodeEncode", _test.TestDecodeEncode},
+
+	{"TestRace9796", _test.TestRace9796},
+
+	{"TestIsValidDirective", _test.TestIsValidDirective},
+
+	{"TestSimpleUseOfEncodeToken", _test.TestSimpleUseOfEncodeToken},
+
+	{"TestIssue16158", _test.TestIssue16158},
+
+	{"TestInvalidXMLName", _test.TestInvalidXMLName},
+
+	{"TestUnmarshalFeed", _test.TestUnmarshalFeed},
+
+	{"TestUnmarshalPaths", _test.TestUnmarshalPaths},
+
+	{"TestUnmarshalBadPaths", _test.TestUnmarshalBadPaths},
+
+	{"TestUnmarshalWithoutNameType", _test.TestUnmarshalWithoutNameType},
+
+	{"TestUnmarshalAttr", _test.TestUnmarshalAttr},
+
+	{"TestUnmarshalNS", _test.TestUnmarshalNS},
+
+	{"TestMarshalNS", _test.TestMarshalNS},
+
+	{"TestUnmarshalNSAttr", _test.TestUnmarshalNSAttr},
+
+	{"TestMarshalNSAttr", _test.TestMarshalNSAttr},
+
+	{"TestUnmarshaler", _test.TestUnmarshaler},
+
+	{"TestUnmarshalIntoInterface", _test.TestUnmarshalIntoInterface},
+
+	{"TestMalformedComment", _test.TestMalformedComment},
+
+	{"TestInvalidInnerXMLType", _test.TestInvalidInnerXMLType},
+
+	{"TestUnmarshalEmptyValues", _test.TestUnmarshalEmptyValues},
+
+	{"TestUnmarshalWhitespaceValues", _test.TestUnmarshalWhitespaceValues},
+
+	{"TestUnmarshalWhitespaceAttrs", _test.TestUnmarshalWhitespaceAttrs},
+
+	{"TestRawToken", _test.TestRawToken},
+
+	{"TestNonStrictRawToken", _test.TestNonStrictRawToken},
+
+	{"TestRawTokenAltEncoding", _test.TestRawTokenAltEncoding},
+
+	{"TestRawTokenAltEncodingNoConverter", _test.TestRawTokenAltEncodingNoConverter},
+
+	{"TestNestedDirectives", _test.TestNestedDirectives},
+
+	{"TestToken", _test.TestToken},
+
+	{"TestSyntax", _test.TestSyntax},
+
+	{"TestAllScalars", _test.TestAllScalars},
+
+	{"TestIssue569", _test.TestIssue569},
+
+	{"TestUnquotedAttrs", _test.TestUnquotedAttrs},
+
+	{"TestValuelessAttrs", _test.TestValuelessAttrs},
+
+	{"TestCopyTokenCharData", _test.TestCopyTokenCharData},
+
+	{"TestCopyTokenStartElement", _test.TestCopyTokenStartElement},
+
+	{"TestSyntaxErrorLineNum", _test.TestSyntaxErrorLineNum},
+
+	{"TestTrailingRawToken", _test.TestTrailingRawToken},
+
+	{"TestTrailingToken", _test.TestTrailingToken},
+
+	{"TestEntityInsideCDATA", _test.TestEntityInsideCDATA},
+
+	{"TestDisallowedCharacters", _test.TestDisallowedCharacters},
+
+	{"TestIsInCharacterRange", _test.TestIsInCharacterRange},
+
+	{"TestProcInstEncoding", _test.TestProcInstEncoding},
+
+	{"TestDirectivesWithComments", _test.TestDirectivesWithComments},
+
+	{"TestEscapeTextIOErrors", _test.TestEscapeTextIOErrors},
+
+	{"TestEscapeTextInvalidChar", _test.TestEscapeTextInvalidChar},
+
+	{"TestIssue5880", _test.TestIssue5880},
+
+	{"TestIssue11405", _test.TestIssue11405},
+
+	{"TestIssue12417", _test.TestIssue12417},
+
+	{"TestNewTokenDecoderIdempotent", _test.TestNewTokenDecoderIdempotent},
+
+	{"TestWrapDecoder", _test.TestWrapDecoder},
+
+	{"TestTokenUnmarshaler", _test.TestTokenUnmarshaler},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkMarshal", _test.BenchmarkMarshal},
+
+	{"BenchmarkUnmarshal", _test.BenchmarkUnmarshal},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleMarshalIndent", _xtest.ExampleMarshalIndent, "  <person id=\"13\">\n      <name>\n          <first>John</first>\n          <last>Doe</last>\n      </name>\n      <age>42</age>\n      <Married>false</Married>\n      <City>Hanga Roa</City>\n      <State>Easter Island</State>\n      <!-- Need more details. -->\n  </person>\n", false},
+
+	{"ExampleEncoder", _xtest.ExampleEncoder, "  <person id=\"13\">\n      <name>\n          <first>John</first>\n          <last>Doe</last>\n      </name>\n      <age>42</age>\n      <Married>false</Married>\n      <City>Hanga Roa</City>\n      <State>Easter Island</State>\n      <!-- Need more details. -->\n  </person>\n", false},
+
+	{"ExampleUnmarshal", _xtest.ExampleUnmarshal, "XMLName: xml.Name{Space:\"\", Local:\"Person\"}\nName: \"Grace R. Emlin\"\nPhone: \"none\"\nEmail: [{home gre@example.com} {work gre@work.com}]\nGroups: [Friends Squash]\nAddress: {Hanga Roa Easter Island}\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "encoding/xml"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

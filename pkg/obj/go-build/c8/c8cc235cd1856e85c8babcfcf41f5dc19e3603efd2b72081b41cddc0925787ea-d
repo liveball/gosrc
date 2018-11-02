@@ -1,0 +1,7 @@
+# test log
+open testdata/compose1.dot
+open testdata/compose2.dot
+open testdata/compose3.dot
+open testdata/compose5.dot
+open testdata/compose4.dot
+open testdata/compose6.dot

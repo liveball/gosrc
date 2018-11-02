@@ -1,0 +1,59 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "golang_org/x/crypto/chacha20poly1305"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestVectors", _test.TestVectors},
+
+	{"TestRandom", _test.TestRandom},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkChacha20Poly1305Open_64", _test.BenchmarkChacha20Poly1305Open_64},
+
+	{"BenchmarkChacha20Poly1305Seal_64", _test.BenchmarkChacha20Poly1305Seal_64},
+
+	{"BenchmarkChacha20Poly1305Open_1350", _test.BenchmarkChacha20Poly1305Open_1350},
+
+	{"BenchmarkChacha20Poly1305Seal_1350", _test.BenchmarkChacha20Poly1305Seal_1350},
+
+	{"BenchmarkChacha20Poly1305Open_8K", _test.BenchmarkChacha20Poly1305Open_8K},
+
+	{"BenchmarkChacha20Poly1305Seal_8K", _test.BenchmarkChacha20Poly1305Seal_8K},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "golang_org/x/crypto/chacha20poly1305"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

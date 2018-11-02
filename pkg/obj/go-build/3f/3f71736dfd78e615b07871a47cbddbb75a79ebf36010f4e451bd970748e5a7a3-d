@@ -1,0 +1,19 @@
+//line /Users/fpf/Downloads/go1.11.1/src/cmd/go/testdata/src/coverdot2/p.go:1
+package coverdot2
+
+import . "coverdot1"
+
+func G() {GoCover_0_393262313966623666323932.Count[0] = 1; F() }
+
+var GoCover_0_393262313966623666323932 = struct {
+	Count     [1]uint32
+	Pos       [3 * 1]uint32
+	NumStmt   [1]uint16
+} {
+	Pos: [3 * 1]uint32{
+		5, 5, 0x11000a, // [0]
+	},
+	NumStmt: [1]uint16{
+		1, // 0
+	},
+}

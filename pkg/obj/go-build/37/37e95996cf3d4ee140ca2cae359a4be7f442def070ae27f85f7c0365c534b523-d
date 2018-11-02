@@ -1,0 +1,9 @@
+# test log
+getenv TMPDIR
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/syslogtest719553127
+getenv TMPDIR
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/syslogtest422592154
+getenv TMPDIR
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/syslogtest568738609
+getenv TMPDIR
+open /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/syslogtest135534812

@@ -1,0 +1,69 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "go/scanner"
+
+
+	_xtest "go/scanner_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestScan", _test.TestScan},
+
+	{"TestStripCR", _test.TestStripCR},
+
+	{"TestSemis", _test.TestSemis},
+
+	{"TestLineDirectives", _test.TestLineDirectives},
+
+	{"TestInvalidLineDirectives", _test.TestInvalidLineDirectives},
+
+	{"TestInit", _test.TestInit},
+
+	{"TestStdErrorHander", _test.TestStdErrorHander},
+
+	{"TestScanErrors", _test.TestScanErrors},
+
+	{"TestIssue10213", _test.TestIssue10213},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkScan", _test.BenchmarkScan},
+
+	{"BenchmarkScanFile", _test.BenchmarkScanFile},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleScanner_Scan", _xtest.ExampleScanner_Scan, "1:1\tIDENT\t\"cos\"\n1:4\t(\t\"\"\n1:5\tIDENT\t\"x\"\n1:6\t)\t\"\"\n1:8\t+\t\"\"\n1:10\tIMAG\t\"1i\"\n1:12\t*\t\"\"\n1:13\tIDENT\t\"sin\"\n1:16\t(\t\"\"\n1:17\tIDENT\t\"x\"\n1:18\t)\t\"\"\n1:20\t;\t\"\\n\"\n1:20\tCOMMENT\t\"// Euler\"\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "go/scanner"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

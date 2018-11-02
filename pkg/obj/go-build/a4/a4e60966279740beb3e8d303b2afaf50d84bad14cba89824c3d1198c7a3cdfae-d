@@ -1,0 +1,13 @@
+./api_test.go
+./builtins_test.go
+./check_test.go
+./eval_test.go
+./example_test.go
+./exprstring_test.go
+./hilbert_test.go
+./issues_test.go
+./resolver_test.go
+./self_test.go
+./sizes_test.go
+./stdlib_test.go
+./typestring_test.go

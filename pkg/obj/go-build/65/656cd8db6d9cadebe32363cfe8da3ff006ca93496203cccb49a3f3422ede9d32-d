@@ -1,0 +1,10 @@
+# test log
+open ../testdata/gettysburg.txt
+open ../testdata/gettysburg.txt
+open ../testdata/gettysburg.txt
+open ../testdata/gettysburg.txt
+open ../testdata/gettysburg.txt
+open ../testdata/gettysburg.txt
+open ../testdata/gettysburg.txt
+open ../testdata/gettysburg.txt
+getenv GO_BUILDER_NAME

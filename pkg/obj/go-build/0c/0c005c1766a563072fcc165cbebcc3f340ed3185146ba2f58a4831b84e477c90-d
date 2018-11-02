@@ -1,0 +1,8 @@
+./builder.go
+./compare.go
+./reader.go
+./replace.go
+./search.go
+./strings.go
+./strings_decl.go
+./export_test.go

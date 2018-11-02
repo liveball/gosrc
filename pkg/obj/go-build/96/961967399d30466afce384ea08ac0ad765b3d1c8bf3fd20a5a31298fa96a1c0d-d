@@ -1,0 +1,6 @@
+./bytealg.go
+./compare_native.go
+./count_generic.go
+./equal_native.go
+./index_generic.go
+./indexbyte_native.go

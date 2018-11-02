@@ -1,0 +1,111 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "golang_org/x/crypto/cryptobyte"
+
+
+	_xtest "golang_org/x/crypto/cryptobyte_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestReadASN1", _test.TestReadASN1},
+
+	{"TestReadASN1Optional", _test.TestReadASN1Optional},
+
+	{"TestReadASN1OptionalOctetString", _test.TestReadASN1OptionalOctetString},
+
+	{"TestReadASN1OptionalInteger", _test.TestReadASN1OptionalInteger},
+
+	{"TestReadASN1IntegerSigned", _test.TestReadASN1IntegerSigned},
+
+	{"TestReadASN1IntegerUnsigned", _test.TestReadASN1IntegerUnsigned},
+
+	{"TestReadASN1IntegerInvalid", _test.TestReadASN1IntegerInvalid},
+
+	{"TestASN1ObjectIdentifier", _test.TestASN1ObjectIdentifier},
+
+	{"TestReadASN1GeneralizedTime", _test.TestReadASN1GeneralizedTime},
+
+	{"TestReadASN1BitString", _test.TestReadASN1BitString},
+
+	{"TestContinuationError", _test.TestContinuationError},
+
+	{"TestContinuationNonError", _test.TestContinuationNonError},
+
+	{"TestGeneratedPanic", _test.TestGeneratedPanic},
+
+	{"TestBytes", _test.TestBytes},
+
+	{"TestUint8", _test.TestUint8},
+
+	{"TestUint16", _test.TestUint16},
+
+	{"TestUint24", _test.TestUint24},
+
+	{"TestUint24Truncation", _test.TestUint24Truncation},
+
+	{"TestUint32", _test.TestUint32},
+
+	{"TestUMultiple", _test.TestUMultiple},
+
+	{"TestUint8LengthPrefixedSimple", _test.TestUint8LengthPrefixedSimple},
+
+	{"TestUint8LengthPrefixedMulti", _test.TestUint8LengthPrefixedMulti},
+
+	{"TestUint8LengthPrefixedNested", _test.TestUint8LengthPrefixedNested},
+
+	{"TestPreallocatedBuffer", _test.TestPreallocatedBuffer},
+
+	{"TestWriteWithPendingChild", _test.TestWriteWithPendingChild},
+
+	{"TestASN1Int64", _test.TestASN1Int64},
+
+	{"TestASN1Uint64", _test.TestASN1Uint64},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleString_lengthPrefixed", _xtest.ExampleString_lengthPrefixed, "[]string{\"hello\", \"world\"}\n", false},
+
+	{"ExampleString_aSN1", _xtest.ExampleString_aSN1, "haveVersion: true, version: 2, data: hello\n", false},
+
+	{"ExampleBuilder_aSN1", _xtest.ExampleBuilder_aSN1, "300ca603020102040568656c6c6f\n", false},
+
+	{"ExampleBuilder_lengthPrefixed", _xtest.ExampleBuilder_lengthPrefixed, "000c0568656c6c6f05776f726c64\n", false},
+
+	{"ExampleBuilder_lengthPrefixOverflow", _xtest.ExampleBuilder_lengthPrefixOverflow, "len=0 err=cryptobyte: pending child length 256 exceeds 1-byte length prefix\n", false},
+
+	{"ExampleBuilderContinuation_errorHandling", _xtest.ExampleBuilderContinuation_errorHandling, "len=0 err=example error\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "golang_org/x/crypto/cryptobyte"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

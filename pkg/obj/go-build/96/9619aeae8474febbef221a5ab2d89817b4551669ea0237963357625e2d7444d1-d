@@ -1,0 +1,9 @@
+./decode.go
+./gnu.go
+./inst.go
+./plan9x.go
+./tables.go
+./decode_test.go
+./ext_test.go
+./objdump_test.go
+./objdumpext_test.go

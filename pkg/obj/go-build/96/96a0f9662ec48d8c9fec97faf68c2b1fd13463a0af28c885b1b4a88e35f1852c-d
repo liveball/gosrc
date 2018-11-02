@@ -1,0 +1,8 @@
+package issue24161e1
+//go:cgo_import_dynamic CFErrorCopyDescription CFErrorCopyDescription ""
+//go:cgo_import_dynamic SecKeyCreateSignature SecKeyCreateSignature ""
+//go:cgo_import_dynamic kSecKeyAlgorithmECDSASignatureDigestX962SHA1 kSecKeyAlgorithmECDSASignatureDigestX962SHA1 ""
+//go:cgo_import_dynamic dyld_stub_binder dyld_stub_binder ""
+//go:cgo_import_dynamic _ _ "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+//go:cgo_import_dynamic _ _ "/System/Library/Frameworks/Security.framework/Versions/A/Security"
+//go:cgo_import_dynamic _ _ "/usr/lib/libSystem.B.dylib"

@@ -1,0 +1,49 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "hash/adler32"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestGolden", _test.TestGolden},
+
+	{"TestGoldenMarshal", _test.TestGoldenMarshal},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkAdler32KB", _test.BenchmarkAdler32KB},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "hash/adler32"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

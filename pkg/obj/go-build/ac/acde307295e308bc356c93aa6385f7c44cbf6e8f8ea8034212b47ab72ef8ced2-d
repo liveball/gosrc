@@ -1,0 +1,51 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "crypto/hmac"
+
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestHMAC", _test.TestHMAC},
+
+	{"TestEqual", _test.TestEqual},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkHMACSHA256_1K", _test.BenchmarkHMACSHA256_1K},
+
+	{"BenchmarkHMACSHA256_32", _test.BenchmarkHMACSHA256_32},
+
+}
+
+var examples = []testing.InternalExample{
+
+}
+
+func init() {
+	testdeps.ImportPath = "crypto/hmac"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

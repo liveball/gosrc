@@ -1,0 +1,115 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_ "path/filepath"
+
+
+	_xtest "path/filepath_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestMatch", _xtest.TestMatch},
+
+	{"TestGlob", _xtest.TestGlob},
+
+	{"TestGlobError", _xtest.TestGlobError},
+
+	{"TestGlobUNC", _xtest.TestGlobUNC},
+
+	{"TestGlobSymlink", _xtest.TestGlobSymlink},
+
+	{"TestWindowsGlob", _xtest.TestWindowsGlob},
+
+	{"TestNonWindowsGlobEscape", _xtest.TestNonWindowsGlobEscape},
+
+	{"TestClean", _xtest.TestClean},
+
+	{"TestFromAndToSlash", _xtest.TestFromAndToSlash},
+
+	{"TestSplitList", _xtest.TestSplitList},
+
+	{"TestSplit", _xtest.TestSplit},
+
+	{"TestJoin", _xtest.TestJoin},
+
+	{"TestExt", _xtest.TestExt},
+
+	{"TestWalk", _xtest.TestWalk},
+
+	{"TestWalkSkipDirOnFile", _xtest.TestWalkSkipDirOnFile},
+
+	{"TestWalkFileError", _xtest.TestWalkFileError},
+
+	{"TestBase", _xtest.TestBase},
+
+	{"TestDir", _xtest.TestDir},
+
+	{"TestIsAbs", _xtest.TestIsAbs},
+
+	{"TestEvalSymlinks", _xtest.TestEvalSymlinks},
+
+	{"TestEvalSymlinksIsNotExist", _xtest.TestEvalSymlinksIsNotExist},
+
+	{"TestIssue13582", _xtest.TestIssue13582},
+
+	{"TestAbs", _xtest.TestAbs},
+
+	{"TestAbsEmptyString", _xtest.TestAbsEmptyString},
+
+	{"TestRel", _xtest.TestRel},
+
+	{"TestVolumeName", _xtest.TestVolumeName},
+
+	{"TestDriveLetterInEvalSymlinks", _xtest.TestDriveLetterInEvalSymlinks},
+
+	{"TestBug3486", _xtest.TestBug3486},
+
+	{"TestWalkSymlink", _xtest.TestWalkSymlink},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleExt", _xtest.ExampleExt, "No dots: \"\"\nOne dot: \".js\"\nTwo dots: \".js\"\n", false},
+
+	{"ExampleSplitList", _xtest.ExampleSplitList, "On Unix: [/a/b/c /usr/bin]\n", false},
+
+	{"ExampleRel", _xtest.ExampleRel, "On Unix:\n\"/a/b/c\": \"b/c\" <nil>\n\"/b/c\": \"../b/c\" <nil>\n\"./b/c\": \"\" Rel: can't make ./b/c relative to /a\n", false},
+
+	{"ExampleSplit", _xtest.ExampleSplit, "On Unix:\ninput: \"/home/arnie/amelia.jpg\"\n\tdir: \"/home/arnie/\"\n\tfile: \"amelia.jpg\"\ninput: \"/mnt/photos/\"\n\tdir: \"/mnt/photos/\"\n\tfile: \"\"\ninput: \"rabbit.jpg\"\n\tdir: \"\"\n\tfile: \"rabbit.jpg\"\ninput: \"/usr/local//go\"\n\tdir: \"/usr/local//\"\n\tfile: \"go\"\n", false},
+
+	{"ExampleJoin", _xtest.ExampleJoin, "On Unix:\na/b/c\na/b/c\na/b/c\na/b/c\n", false},
+
+	{"ExampleWalk", _xtest.ExampleWalk, "On Unix:\nvisited file or dir: \".\"\nvisited file or dir: \"dir\"\nvisited file or dir: \"dir/to\"\nvisited file or dir: \"dir/to/walk\"\nskipping a dir without errors: skip\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "path/filepath"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+

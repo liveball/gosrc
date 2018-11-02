@@ -1,0 +1,123 @@
+
+package main
+
+import (
+
+	"os"
+
+	"testing"
+	"testing/internal/testdeps"
+
+
+	_test "net/url"
+
+
+	_xtest "net/url_test"
+
+
+)
+
+var tests = []testing.InternalTest{
+
+	{"TestParse", _test.TestParse},
+
+	{"TestParseRequestURI", _test.TestParseRequestURI},
+
+	{"TestURLString", _test.TestURLString},
+
+	{"TestUnescape", _test.TestUnescape},
+
+	{"TestQueryEscape", _test.TestQueryEscape},
+
+	{"TestPathEscape", _test.TestPathEscape},
+
+	{"TestEncodeQuery", _test.TestEncodeQuery},
+
+	{"TestResolvePath", _test.TestResolvePath},
+
+	{"TestResolveReference", _test.TestResolveReference},
+
+	{"TestQueryValues", _test.TestQueryValues},
+
+	{"TestParseQuery", _test.TestParseQuery},
+
+	{"TestRequestURI", _test.TestRequestURI},
+
+	{"TestParseFailure", _test.TestParseFailure},
+
+	{"TestParseErrors", _test.TestParseErrors},
+
+	{"TestStarRequest", _test.TestStarRequest},
+
+	{"TestShouldEscape", _test.TestShouldEscape},
+
+	{"TestURLErrorImplementsNetError", _test.TestURLErrorImplementsNetError},
+
+	{"TestURLHostname", _test.TestURLHostname},
+
+	{"TestURLPort", _test.TestURLPort},
+
+	{"TestJSON", _test.TestJSON},
+
+	{"TestGob", _test.TestGob},
+
+	{"TestNilUser", _test.TestNilUser},
+
+	{"TestInvalidUserPassword", _test.TestInvalidUserPassword},
+
+}
+
+var benchmarks = []testing.InternalBenchmark{
+
+	{"BenchmarkString", _test.BenchmarkString},
+
+}
+
+var examples = []testing.InternalExample{
+
+	{"ExampleValues", _xtest.ExampleValues, "Ava\nJess\n[Jess Sarah Zoe]\n", false},
+
+	{"ExampleURL", _xtest.ExampleURL, "https://google.com/search?q=golang\n", false},
+
+	{"ExampleURL_roundtrip", _xtest.ExampleURL_roundtrip, "/foo/bar\n/foo%2fbar\nhttps://example.com/foo%2fbar\n", false},
+
+	{"ExampleURL_ResolveReference", _xtest.ExampleURL_ResolveReference, "http://example.com/search?q=dotnet\n", false},
+
+	{"ExampleParseQuery", _xtest.ExampleParseQuery, "{\"x\":[\"1\"], \"y\":[\"2\", \"3\"], \"z\":[\"\"]}\n", false},
+
+	{"ExampleURL_EscapedPath", _xtest.ExampleURL_EscapedPath, "/path%20with%20spaces\n", false},
+
+	{"ExampleURL_Hostname", _xtest.ExampleURL_Hostname, "example.org\n2001:0db8:85a3:0000:0000:8a2e:0370:7334\n", false},
+
+	{"ExampleURL_IsAbs", _xtest.ExampleURL_IsAbs, "false\ntrue\n", false},
+
+	{"ExampleURL_MarshalBinary", _xtest.ExampleURL_MarshalBinary, "https://example.org\n", false},
+
+	{"ExampleURL_Parse", _xtest.ExampleURL_Parse, "https://example.org/foo\n", false},
+
+	{"ExampleURL_Port", _xtest.ExampleURL_Port, "\n8080\n", false},
+
+	{"ExampleURL_Query", _xtest.ExampleURL_Query, "[1 2]\n\n3\n", false},
+
+	{"ExampleURL_String", _xtest.ExampleURL_String, "https://me:pass@example.com/foo/bar?x=1&y=2#anchor\nhttps:opaque?x=1&y=2#anchor\n", false},
+
+	{"ExampleURL_UnmarshalBinary", _xtest.ExampleURL_UnmarshalBinary, "https://example.org/foo\n", false},
+
+	{"ExampleURL_RequestURI", _xtest.ExampleURL_RequestURI, "/path?foo=bar\n", false},
+
+}
+
+func init() {
+	testdeps.ImportPath = "net/url"
+}
+
+
+
+func main() {
+
+	m := testing.MainStart(testdeps.TestDeps{}, tests, benchmarks, examples)
+
+	os.Exit(m.Run())
+
+}
+
