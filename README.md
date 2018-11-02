@@ -1,44 +1,63 @@
-# The Go Programming Language
+## 深入go1.10.3 源码学习
 
-Go is an open source programming language that makes it easy to build simple,
-reliable, and efficient software.
+### 使用GODEV 跑标准库的test
 
-![Gopher image](doc/gopher/fiveyears.jpg)
-*Gopher image by [Renee French][rf], licensed under [Creative Commons 3.0 Attributions license][cc3-by].*
+>1、设置GODEV 为自己的源码目录
 
-Our canonical Git repository is located at https://go.googlesource.com/go.
-There is a mirror of the repository at https://github.com/golang/go.
+` $  GODEV= go1.11.1 的绝对路径 `
 
-Unless otherwise noted, the Go source files are distributed under the
-BSD-style license found in the LICENSE file.
+>2、进入源码目录
+` $  cd $GODEV/src `
 
-### Download and Install
+>3、设置引导安装到当前安装目录
+` $ GOROOT_BOOTSTRAP=/ ./all.bash ` //use ./
 
-#### Binary Distributions
+` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash ` //use GOROOT
 
-Official binary distributions are available at https://golang.org/dl/.
 
-After downloading a binary release, visit https://golang.org/doc/install
-or load [doc/install.html](./doc/install.html) in your web browser for installation
-instructions.
+```
 
-#### Install From Source
+Building Go cmd/dist using /usr/local/go.
+Building Go toolchain1 using /usr/local/go.
+Building Go bootstrap cmd/go (go_bootstrap) using Go toolchain1.
+Building Go toolchain2 using go_bootstrap and Go toolchain1.
+Building Go toolchain3 using go_bootstrap and Go toolchain2.
+Building packages and commands for darwin/amd64.
+---
+Installed Go for darwin/amd64 in /data/app/go/src/readgo/go
+Installed commands in /data/app/go/src/readgo/go/bin
 
-If a binary distribution is not available for your combination of
-operating system and architecture, visit
-https://golang.org/doc/install/source or load [doc/install-source.html](./doc/install-source.html)
-in your web browser for source installation instructions.
+```
 
-### Contributing
+>4、使用新编译的工具链运行所有测试
+`$GODEV/bin/go test -v go/types `
 
-Go is the work of thousands of contributors. We appreciate your help!
+>5、进入某个标准包下面运行单个测试
 
-To contribute, please read the contribution guidelines:
-	https://golang.org/doc/contribute.html
+```
 
-Note that the Go project uses the issue tracker for bug reports and
-proposals only. See https://golang.org/wiki/Questions for a list of
-places to ask questions about the Go language.
+ $ GODEV/bin/go test -v -test.run="TestCloseRead"
+=== RUN   TestCloseRead
+--- PASS: TestCloseRead (0.00s)
+    net_test.go:26: skipping unixpacket test
+PASS
+Socket statistical information:
+(inet4, stream, default): opened=2 connected=1 listened=1 accepted=0 closed=2 openfailed=0 connectfailed=1 listenfailed=0 acceptfailed=0 closefailed=0
+(local, stream, default): opened=2 connected=1 listened=1 accepted=0 closed=2 openfailed=0 connectfailed=0 listenfailed=0 acceptfailed=0 closefailed=0
 
-[rf]: https://reneefrench.blogspot.com/
-[cc3-by]: https://creativecommons.org/licenses/by/3.0/
+ok      net    0.007s
+
+```
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("hello go")
+}
+
+```
