@@ -2,17 +2,19 @@
 
 ### 使用GODEV 跑标准库的test
 
->1、设置GODEV 为自己的源码目录
+>1、设置GODEV 为自己的源码目录  
 
-` $  GODEV= go1.11.1 的绝对路径 `
+` $  GODEV= go1.11.1 的绝对路径 `  
 
 >2、进入源码目录
-` $  cd $GODEV/src `
+
+` $  cd $GODEV/src `  
 
 >3、设置引导安装到当前安装目录
-` $ GOROOT_BOOTSTRAP=/ ./all.bash ` //use ./
 
-` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash ` //use GOROOT
+` $ GOROOT_BOOTSTRAP=/ ./all.bash ` //use ./  
+
+` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash ` //use GOROOT  
 
 
 ```
