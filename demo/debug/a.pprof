@@ -1,0 +1,173 @@
+PeriodType: cpu nanoseconds
+Period: 10000000
+Time: 2018-10-30 15:51:29.604027326 +0800 CST
+Duration: 20.0
+Samples:
+samples/count cpu/nanoseconds
+          1   10000000: 1 2 3 4 5 6 7 8 9 10 11 
+          1   10000000: 12 13 14 15 16 17 18 19 6 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 
+          5   50000000: 39 40 41 42 
+          1   10000000: 43 44 45 46 47 48 49 41 42 
+          1   10000000: 50 51 52 53 54 55 56 57 58 59 60 61 
+          1   10000000: 12 13 14 15 16 17 18 19 6 20 62 63 64 
+          2   20000000: 65 66 67 68 69 70 71 72 73 74 
+          1   10000000: 75 76 77 78 79 
+          1   10000000: 12 13 14 15 16 17 80 81 73 74 
+          1   10000000: 50 51 52 53 54 55 82 83 84 85 86 87 88 89 35 36 37 38 
+          1   10000000: 12 13 14 15 16 17 18 19 6 20 90 79 
+          1   10000000: 50 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 
+          1   10000000: 50 51 52 53 54 55 106 107 108 
+          1   10000000: 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 
+          1   10000000: 125 126 127 72 73 74 
+          1   10000000: 128 129 130 131 94 95 96 97 98 99 100 101 102 103 104 105 
+          1   10000000: 43 44 45 132 133 134 49 41 42 
+          1   10000000: 43 44 45 132 135 49 41 42 
+          1   10000000: 136 137 138 139 140 141 111 112 142 143 124 
+Locations
+     1: 0x101f2a3 M=1 runtime.greyobject /usr/local/go/src/runtime/mgcmark.go:1241 s=0
+     2: 0x101f0fd M=1 runtime.scanobject /usr/local/go/src/runtime/mgcmark.go:1210 s=0
+     3: 0x101ebb6 M=1 runtime.gcDrainN /usr/local/go/src/runtime/mgcmark.go:1057 s=0
+     4: 0x101d470 M=1 runtime.gcAssistAlloc1 /usr/local/go/src/runtime/mgcmark.go:557 s=0
+     5: 0x10560c2 M=1 runtime.gcAssistAlloc.func1 /usr/local/go/src/runtime/mgcmark.go:468 s=0
+     6: 0x10584b8 M=1 runtime.systemstack /usr/local/go/src/runtime/asm_amd64.s:409 s=0
+     7: 0x101d23d M=1 runtime.gcAssistAlloc /usr/local/go/src/runtime/mgcmark.go:467 s=0
+     8: 0x10127b4 M=1 runtime.mallocgc /usr/local/go/src/runtime/malloc.go:614 s=0
+     9: 0x10129e7 M=1 runtime.newobject /usr/local/go/src/runtime/malloc.go:839 s=0
+    10: 0x1441b38 M=1 database/sql.(*Rows).close /usr/local/go/src/database/sql/sql.go:2906 s=0
+    11: 0x1440637 M=1 database/sql.(*Rows).awaitDone /usr/local/go/src/database/sql/sql.go:2588 s=0
+    12: 0x105c5bb M=1 runtime.mach_semaphore_signal /usr/local/go/src/runtime/sys_darwin_amd64.s:558 s=0
+    13: 0x102ade9 M=1 runtime.mach_semrelease /usr/local/go/src/runtime/os_darwin.go:465 s=0
+    14: 0x102a160 M=1 runtime.semawakeup /usr/local/go/src/runtime/os_darwin.go:36 s=0
+    15: 0x1010f88 M=1 runtime.notewakeup /usr/local/go/src/runtime/lock_sema.go:147 s=0
+    16: 0x1032859 M=1 runtime.startm /usr/local/go/src/runtime/proc.go:2017 s=0
+    17: 0x1032cf7 M=1 runtime.wakep /usr/local/go/src/runtime/proc.go:2083 s=0
+    18: 0x102f859 M=1 runtime.ready /usr/local/go/src/runtime/proc.go:608 s=0
+    19: 0x10570b7 M=1 runtime.goready.func1 /usr/local/go/src/runtime/proc.go:302 s=0
+    20: 0x102e82a M=1 runtime.goready /usr/local/go/src/runtime/proc.go:301 s=0
+    21: 0x1005a0b M=1 runtime.send /usr/local/go/src/runtime/chan.go:292 s=0
+    22: 0x1005856 M=1 runtime.chansend /usr/local/go/src/runtime/chan.go:191 s=0
+    23: 0x1005334 M=1 runtime.chansend1 /usr/local/go/src/runtime/chan.go:125 s=0
+    24: 0x14494b8 M=1 go-common/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).watchCancel /data/app/go/src/go-common/vendor/github.com/go-sql-driver/mysql/connection_go18.go:176 s=0
+    25: 0x14489ea M=1 go-common/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).QueryContext /data/app/go/src/go-common/vendor/github.com/go-sql-driver/mysql/connection_go18.go:75 s=0
+    26: 0x1434664 M=1 database/sql.ctxDriverQuery /usr/local/go/src/database/sql/ctxutil.go:48 s=0
+    27: 0x1442cef M=1 database/sql.(*DB).queryDC.func1 /usr/local/go/src/database/sql/sql.go:1464 s=0
+    28: 0x1442192 M=1 database/sql.withLock /usr/local/go/src/database/sql/sql.go:3032 s=0
+    29: 0x143b51e M=1 database/sql.(*DB).queryDC /usr/local/go/src/database/sql/sql.go:1459 s=0
+    30: 0x143ae8a M=1 database/sql.(*DB).query /usr/local/go/src/database/sql/sql.go:1442 s=0
+    31: 0x143aaf1 M=1 database/sql.(*DB).QueryContext /usr/local/go/src/database/sql/sql.go:1419 s=0
+    32: 0x146248f M=1 go-common/library/database/sql.(*conn).query /data/app/go/src/go-common/library/database/sql/sql.go:381 s=0
+    33: 0x14600dc M=1 go-common/library/database/sql.(*DB).Query /data/app/go/src/go-common/library/database/sql/sql.go:197 s=0
+    34: 0x16885cd M=1 go-common/app/job/main/creative/dao/newcomer.(*Dao).UserTasks /data/app/go/src/go-common/app/job/main/creative/dao/newcomer/dao.go:58 s=0
+    35: 0x168c451 M=1 go-common/app/job/main/creative/service.(*Service).dispatchData /data/app/go/src/go-common/app/job/main/creative/service/task.go:58 s=0
+    36: 0x168bf43 M=1 go-common/app/job/main/creative/service.task /data/app/go/src/go-common/app/job/main/creative/service/task.go:27 s=0
+    37: 0x168cf97 M=1 go-common/app/job/main/creative/service.Worker.Start /data/app/go/src/go-common/app/job/main/creative/service/worker.go:41 s=0
+    38: 0x168d608 M=1 go-common/app/job/main/creative/service.(*Dispatcher).Run.func1 /data/app/go/src/go-common/app/job/main/creative/service/worker.go:69 s=0
+    39: 0x105c435 M=1 runtime.usleep /usr/local/go/src/runtime/sys_darwin_amd64.s:418 s=0
+    40: 0x10384d2 M=1 runtime.sysmon /usr/local/go/src/runtime/proc.go:4221 s=0
+    41: 0x1031206 M=1 runtime.mstart1 /usr/local/go/src/runtime/proc.go:1227 s=0
+    42: 0x1031105 M=1 runtime.mstart /usr/local/go/src/runtime/proc.go:1193 s=0
+    43: 0x105bfd5 M=1 runtime.write /usr/local/go/src/runtime/sys_darwin_amd64.s:85 s=0
+    44: 0x1055251 M=1 runtime.writeErr /usr/local/go/src/runtime/write_err.go:12 s=0
+    45: 0x102d507 M=1 runtime.gwrite /usr/local/go/src/runtime/print.go:93 s=0
+    46: 0x102da4e M=1 runtime.printuint /usr/local/go/src/runtime/print.go:203 s=0
+    47: 0x102daaf M=1 runtime.printint /usr/local/go/src/runtime/print.go:211 s=0
+    48: 0x10392c5 M=1 runtime.schedtrace /usr/local/go/src/runtime/proc.go:4494 s=0
+    49: 0x10386df M=1 runtime.sysmon /usr/local/go/src/runtime/proc.go:4302 s=0
+    50: 0x107b356 M=1 syscall.Syscall /usr/local/go/src/syscall/asm_darwin_amd64.s:26 s=0
+    51: 0x107af2e M=1 syscall.write /usr/local/go/src/syscall/zsyscall_darwin_amd64.go:1321 s=0
+    52: 0x1077938 M=1 syscall.Write /usr/local/go/src/syscall/syscall_unix.go:181 s=0
+    53: 0x1091b41 M=1 internal/poll.(*FD).Write /usr/local/go/src/internal/poll/fd_unix.go:256 s=0
+    54: 0x1136eae M=1 net.(*netFD).Write /usr/local/go/src/net/fd_unix.go:220 s=0
+    55: 0x1147d39 M=1 net.(*conn).Write /usr/local/go/src/net/net.go:188 s=0
+    56: 0x10e951d M=1 bufio.(*Writer).Flush /usr/local/go/src/bufio/bufio.go:573 s=0
+    57: 0x153d35e M=1 go-common/library/net/rpc.(*clientCodec).WriteRequest /data/app/go/src/go-common/library/net/rpc/client.go:255 s=0
+    58: 0x153c29f M=1 go-common/library/net/rpc.(*client).send /data/app/go/src/go-common/library/net/rpc/client.go:116 s=0
+    59: 0x153d783 M=1 go-common/library/net/rpc.(*client).do /data/app/go/src/go-common/library/net/rpc/client.go:306 s=0
+    60: 0x153d8c6 M=1 go-common/library/net/rpc.(*client).Go /data/app/go/src/go-common/library/net/rpc/client.go:319 s=0
+    61: 0x153ef18 M=1 go-common/library/net/rpc.(*Client).ping /data/app/go/src/go-common/library/net/rpc/client.go:486 s=0
+    62: 0x1006666 M=1 runtime.recv /usr/local/go/src/runtime/chan.go:588 s=0
+    63: 0x103db71 M=1 runtime.selectgo /usr/local/go/src/runtime/select.go:531 s=0
+    64: 0x145dbd7 M=1 go-common/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).startWatcher.func1 /data/app/go/src/go-common/vendor/github.com/go-sql-driver/mysql/connection_go18.go:195 s=0
+    65: 0x105c58b M=1 runtime.mach_semaphore_wait /usr/local/go/src/runtime/sys_darwin_amd64.s:540 s=0
+    66: 0x102ac81 M=1 runtime.semasleep1 /usr/local/go/src/runtime/os_darwin.go:438 s=0
+    67: 0x1056942 M=1 runtime.semasleep.func1 /usr/local/go/src/runtime/os_darwin.go:457 s=0
+    68: 0x102adb3 M=1 runtime.semasleep /usr/local/go/src/runtime/os_darwin.go:456 s=0
+    69: 0x1011098 M=1 runtime.notesleep /usr/local/go/src/runtime/lock_sema.go:167 s=0
+    70: 0x10326a4 M=1 runtime.stopm /usr/local/go/src/runtime/proc.go:1952 s=0
+    71: 0x103386b M=1 runtime.findrunnable /usr/local/go/src/runtime/proc.go:2415 s=0
+    72: 0x103437a M=1 runtime.schedule /usr/local/go/src/runtime/proc.go:2541 s=0
+    73: 0x10346a5 M=1 runtime.park_m /usr/local/go/src/runtime/proc.go:2604 s=0
+    74: 0x105841a M=1 runtime.mcall /usr/local/go/src/runtime/asm_amd64.s:351 s=0
+    75: 0x1006aab M=1 runtime.(*waitq).dequeue /usr/local/go/src/runtime/chan.go:711 s=0
+    76: 0x1005404 M=1 runtime.chansend /usr/local/go/src/runtime/chan.go:188 s=0
+    77: 0x10067b3 M=1 runtime.selectnbsend /usr/local/go/src/runtime/chan.go:609 s=0
+    78: 0x1084c0b M=1 time.sendTime /usr/local/go/src/time/sleep.go:141 s=0
+    79: 0x104b09f M=1 runtime.timerproc /usr/local/go/src/runtime/time.go:247 s=0
+    80: 0x1034060 M=1 runtime.resetspinning /usr/local/go/src/runtime/proc.go:2454 s=0
+    81: 0x1034364 M=1 runtime.schedule /usr/local/go/src/runtime/proc.go:2548 s=0
+    82: 0x145143d M=1 go-common/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).writePacket /data/app/go/src/go-common/vendor/github.com/go-sql-driver/mysql/packets.go:121 s=0
+    83: 0x145326c M=1 go-common/vendor/github.com/go-sql-driver/mysql.(*mysqlConn).writeCommandPacketUint32 /data/app/go/src/go-common/vendor/github.com/go-sql-driver/mysql/packets.go:477 s=0
+    84: 0x145922a M=1 go-common/vendor/github.com/go-sql-driver/mysql.(*mysqlStmt).Close /data/app/go/src/go-common/vendor/github.com/go-sql-driver/mysql/statement.go:34 s=0
+    85: 0x1435cd1 M=1 database/sql.(*driverStmt).Close /usr/local/go/src/database/sql/sql.go:515 s=0
+    86: 0x1441c80 M=1 database/sql.(*Rows).close /usr/local/go/src/database/sql/sql.go:2930 s=0
+    87: 0x1441ad2 M=1 database/sql.(*Rows).Close /usr/local/go/src/database/sql/sql.go:2903 s=0
+    88: 0x1440723 M=1 database/sql.(*Rows).Next /usr/local/go/src/database/sql/sql.go:2603 s=0
+    89: 0x16886ea M=1 go-common/app/job/main/creative/dao/newcomer.(*Dao).UserTasks /data/app/go/src/go-common/app/job/main/creative/dao/newcomer/dao.go:65 s=0
+    90: 0x104ab64 M=1 runtime.goroutineReady /usr/local/go/src/runtime/time.go:125 s=0
+    91: 0x107a5ae M=1 syscall.read /usr/local/go/src/syscall/zsyscall_darwin_amd64.go:947 s=0
+    92: 0x10778b8 M=1 syscall.Read /usr/local/go/src/syscall/syscall_unix.go:162 s=0
+    93: 0x1091075 M=1 internal/poll.(*FD).Read /usr/local/go/src/internal/poll/fd_unix.go:153 s=0
+    94: 0x11369ee M=1 net.(*netFD).Read /usr/local/go/src/net/fd_unix.go:202 s=0
+    95: 0x1147ab9 M=1 net.(*conn).Read /usr/local/go/src/net/net.go:176 s=0
+    96: 0x10e8067 M=1 bufio.(*Reader).Read /usr/local/go/src/bufio/bufio.go:216 s=0
+    97: 0x1071a05 M=1 io.ReadAtLeast /usr/local/go/src/io/io.go:309 s=0
+    98: 0x1071b77 M=1 io.ReadFull /usr/local/go/src/io/io.go:327 s=0
+    99: 0x1514922 M=1 encoding/gob.decodeUintReader /usr/local/go/src/encoding/gob/decode.go:120 s=0
+   100: 0x151d6e6 M=1 encoding/gob.(*Decoder).recvMessage /usr/local/go/src/encoding/gob/decoder.go:80 s=0
+   101: 0x151dc85 M=1 encoding/gob.(*Decoder).decodeTypeSequence /usr/local/go/src/encoding/gob/decoder.go:142 s=0
+   102: 0x151df4b M=1 encoding/gob.(*Decoder).DecodeValue /usr/local/go/src/encoding/gob/decoder.go:210 s=0
+   103: 0x151ddfe M=1 encoding/gob.(*Decoder).Decode /usr/local/go/src/encoding/gob/decoder.go:187 s=0
+   104: 0x153d414 M=1 go-common/library/net/rpc.(*clientCodec).ReadResponseHeader /data/app/go/src/go-common/library/net/rpc/client.go:259 s=0
+   105: 0x153c525 M=1 go-common/library/net/rpc.(*client).input /data/app/go/src/go-common/library/net/rpc/client.go:135 s=0
+   106: 0x15ae77e M=1 go-common/vendor/google.golang.org/grpc/internal/transport.(*bufWriter).Flush /data/app/go/src/go-common/vendor/google.golang.org/grpc/internal/transport/http_util.go:584 s=0
+   107: 0x1592920 M=1 go-common/vendor/google.golang.org/grpc/internal/transport.(*loopyWriter).run /data/app/go/src/go-common/vendor/google.golang.org/grpc/internal/transport/controlbuf.go:479 s=0
+   108: 0x15b1fbf M=1 go-common/vendor/google.golang.org/grpc/internal/transport.newHTTP2Client.func3 /data/app/go/src/go-common/vendor/google.golang.org/grpc/internal/transport/http2_client.go:312 s=0
+   109: 0x100d82c M=1 runtime.mapassign_faststr /usr/local/go/src/runtime/hashmap_fast.go:774 s=0
+   110: 0x14068c4 M=1 go-common/library/log.(*FileHandler).Log /data/app/go/src/go-common/library/log/file.go:63 s=0
+   111: 0x1406f8c M=1 go-common/library/log.Handlers.Log /data/app/go/src/go-common/library/log/handler.go:66 s=0
+   112: 0x140dd97 M=1 go-common/library/log.(*Handlers).Log <autogenerated>:1 s=0
+   113: 0x140929f M=1 go-common/library/log.Infov /data/app/go/src/go-common/library/log/log.go:245 s=0
+   114: 0x1600073 M=1 go-common/library/net/rpc/warden.logging /data/app/go/src/go-common/library/net/rpc/warden/warden.go:211 s=0
+   115: 0x160158b M=1 go-common/library/net/rpc/warden.(*Client).handle.func1 /data/app/go/src/go-common/library/net/rpc/warden/warden.go:186 s=0
+   116: 0x160058b M=1 go-common/library/net/rpc/warden.(*Client).chainUnaryClient.func2.1 /data/app/go/src/go-common/library/net/rpc/warden/client.go:212 s=0
+   117: 0x1600cf4 M=1 go-common/library/net/rpc/warden.(*Client).recovery.func1 /data/app/go/src/go-common/library/net/rpc/warden/recovery.go:58 s=0
+   118: 0x1600850 M=1 go-common/library/net/rpc/warden.(*Client).chainUnaryClient.func2 /data/app/go/src/go-common/library/net/rpc/warden/client.go:215 s=0
+   119: 0x15bab58 M=1 go-common/vendor/google.golang.org/grpc.(*ClientConn).Invoke /data/app/go/src/go-common/vendor/google.golang.org/grpc/call.go:35 s=0
+   120: 0x15bae70 M=1 go-common/vendor/google.golang.org/grpc.Invoke /data/app/go/src/go-common/vendor/google.golang.org/grpc/call.go:60 s=0
+   121: 0x1685fa1 M=1 go-common/app/interface/main/creative/api/grpc/v1.(*newcomerClient).CheckTaskState /data/app/go/src/go-common/app/interface/main/creative/api/grpc/v1/api.pb.go:125 s=0
+   122: 0x168828a M=1 go-common/app/job/main/creative/dao/newcomer.(*Dao).CheckTaskState /data/app/go/src/go-common/app/job/main/creative/dao/newcomer/dao.go:39 s=0
+   123: 0x168ca81 M=1 go-common/app/job/main/creative/service.(*Service).Consume /data/app/go/src/go-common/app/job/main/creative/service/task.go:98 s=0
+   124: 0x168d534 M=1 go-common/app/job/main/creative/service.(*Service).initDataQueue.func1 /data/app/go/src/go-common/app/job/main/creative/service/task.go:85 s=0
+   125: 0x105c683 M=1 runtime.kevent /usr/local/go/src/runtime/sys_darwin_amd64.s:621 s=0
+   126: 0x102a03b M=1 runtime.netpoll /usr/local/go/src/runtime/netpoll_kqueue.go:79 s=0
+   127: 0x1033cda M=1 runtime.findrunnable /usr/local/go/src/runtime/proc.go:2251 s=0
+   128: 0x10903b4 M=1 internal/poll.convertErr /usr/local/go/src/internal/poll/fd_poll_runtime.go:111 s=0
+   129: 0x1090211 M=1 internal/poll.(*pollDesc).wait /usr/local/go/src/internal/poll/fd_poll_runtime.go:86 s=0
+   130: 0x109027c M=1 internal/poll.(*pollDesc).waitRead /usr/local/go/src/internal/poll/fd_poll_runtime.go:90 s=0
+   131: 0x109113b M=1 internal/poll.(*FD).Read /usr/local/go/src/internal/poll/fd_unix.go:157 s=0
+   132: 0x102dcbc M=1 runtime.printstring /usr/local/go/src/runtime/print.go:237 s=0
+   133: 0x102d5c5 M=1 runtime.printnl /usr/local/go/src/runtime/print.go:106 s=0
+   134: 0x1039513 M=1 runtime.schedtrace /usr/local/go/src/runtime/proc.go:4510 s=0
+   135: 0x1039450 M=1 runtime.schedtrace /usr/local/go/src/runtime/proc.go:4510 s=0
+   136: 0x10859d5 M=1 time.(*Time).sec /usr/local/go/src/time/time.go:158 s=0
+             time.(*Time).unixSec /usr/local/go/src/time/time.go:165 s=0
+             time.Time.locabs /usr/local/go/src/time/time.go:463 s=0
+   137: 0x107daaf M=1 time.Time.AppendFormat /usr/local/go/src/time/format.go:501 s=0
+   138: 0x107d9a6 M=1 time.Time.Format /usr/local/go/src/time/format.go:493 s=0
+   139: 0x140ad1b M=1 go-common/library/log.longDate /data/app/go/src/go-common/library/log/pattern.go:137 s=0
+   140: 0x140a729 M=1 go-common/library/log.(*pattern).RenderString /data/app/go/src/go-common/library/log/pattern.go:91 s=0
+   141: 0x1406c47 M=1 go-common/library/log.(*FileHandler).Log /data/app/go/src/go-common/library/log/file.go:74 s=0
+   142: 0x1408ef2 M=1 go-common/library/log.Info /data/app/go/src/go-common/library/log/log.go:230 s=0
+   143: 0x168ca40 M=1 go-common/app/job/main/creative/service.(*Service).Consume /data/app/go/src/go-common/app/job/main/creative/service/task.go:97 s=0
+Mappings
+1: 0x0/0x0/0x0   [FN]
