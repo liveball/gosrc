@@ -7,6 +7,7 @@
 package runtime
 
 import (
+	"fmt"
 	"runtime/internal/atomic"
 	"runtime/internal/sys"
 	"unsafe"
@@ -57,7 +58,7 @@ func GCMask(x interface{}) (ret []byte) {
 func RunSchedLocalQueueTest() {
 	_p_ := new(p)
 	gs := make([]g, len(_p_.runq))
-	println(gs)
+	fmt.Println(len(_p_.runq))
 	for i := 0; i < len(_p_.runq); i++ {
 		if g, _ := runqget(_p_); g != nil {
 			throw("runq is not empty initially")
