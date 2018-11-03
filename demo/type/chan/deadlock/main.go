@@ -2,7 +2,10 @@ package main
 
 import (
 	"fmt"
+	"reflect"
+	"runtime"
 	"time"
+	"unsafe"
 )
 
 var ch = make(chan int)
@@ -31,17 +34,6 @@ func foo2(id int) {
 	quit <- id // ok, finished
 }
 
-func main() {
-	// test1()
-	// test2()
-	// test3()
-	// test4()
-	// test5()
-	// test6()
-	// test7()
-	test8()
-}
-
 func test1() {
 	loop()
 	// go loop()
@@ -49,11 +41,59 @@ func test1() {
 }
 
 func test2() {
-	msg := make(chan string)
-	go func(m string) {
-		msg <- m //存消息
-	}("ping")
-	fmt.Println(<-msg)
+	msg := make(chan int, 10)
+
+	statGroutine := func() {
+		for {
+			time.Sleep(time.Second)
+			total := runtime.NumGoroutine()
+			fmt.Printf("goroutine num(%d)\n", total)
+		}
+	}
+	go statGroutine()
+
+	for i := 0; i < 10; i++ {
+		go func(i int) {
+			msg <- i
+		}(i)
+	}
+
+	ticker := time.NewTicker(time.Millisecond * 100)
+	q := make([]int, 0)
+	f := func() {
+		for {
+			select {
+			case id := <-msg:
+				q = append(q, id)
+				fmt.Printf("q 扩容：%+v\n", (*reflect.SliceHeader)(unsafe.Pointer(&q)))
+
+				fmt.Println(q)
+				fmt.Println("------------------")
+			case <-ticker.C:
+				// go func() {//会引起 data race
+				if len(q) == 0 {
+					return
+				}
+				q = q[1:]
+				fmt.Printf("q...:(%d)\n", q)
+				fmt.Printf("q 缩容：%+v\n", (*reflect.SliceHeader)(unsafe.Pointer(&q)))
+
+				time.Sleep(time.Second * 1) //模拟 api
+				// }()
+				// default:
+				// 	time.Sleep(time.Second * 1)
+				// 	fmt.Println("defautl")
+			}
+		}
+	}
+
+	// for i := 0; i < 5; i++ {//模拟并发
+	go f()
+	// }
+
+	// fmt.Println(<-msg)
+
+	time.Sleep(time.Second * 60)
 }
 
 func test3() { //如果不用信道来阻塞主线的话，主线就会过早跑完，loop线都没有机会执行
@@ -125,4 +165,15 @@ func test8() {
 	println(<-quit2)
 	println(<-quit2)
 	println(<-quit2)
+}
+
+func main() {
+	// test1()
+	test2()
+	// test3()
+	// test4()
+	// test5()
+	// test6()
+	// test7()
+	// test8()
 }
