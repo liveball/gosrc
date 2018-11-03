@@ -26,8 +26,14 @@ Building Go toolchain2 using go_bootstrap and Go toolchain1.
 Building Go toolchain3 using go_bootstrap and Go toolchain2.
 Building packages and commands for darwin/amd64.
 ---
-Installed Go for darwin/amd64 in /data/app/go/src/readgo/go
-Installed commands in /data/app/go/src/readgo/go/bin
+##### API check
+Go version is "go1.11.1", ignoring -next /data/app/go/src/go1.11.1/api/next.txt
+
+ALL TESTS PASSED
+---
+Installed Go for darwin/amd64 in /data/app/go/src/go1.11.1
+Installed commands in /data/app/go/src/go1.11.1/bin
+*** You need to add /data/app/go/src/go1.11.1/bin to your PATH.
 
 ```
 
