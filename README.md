@@ -12,9 +12,9 @@
 
 >3、设置引导安装到当前安装目录
 
-` $ GOROOT_BOOTSTRAP=/ ./all.bash ` //use ./  
+` $ GOROOT_BOOTSTRAP=/ ./all.bash ` use /  
 
-` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash ` //use GOROOT  
+` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash ` use GOROOT  
 
 
 ```
@@ -42,7 +42,7 @@ Installed commands in /data/app/go/src/go1.11.1/bin
  >4.1 使用mod作为包管理工具  
    `export GO111MODULE=on`
 
- >4.2 默认使用当前目录名作为当前包名的mod  
+ >4.2 默认使用当前目录名作为当前包名的mod，如果需要重命名则删除存在的mod，重新生成  
    `$GODEV/bin/go mod init runtime`
 
 >4.3、进入某个标准包下面运行单个测试  
@@ -55,14 +55,6 @@ Installed commands in /data/app/go/src/go1.11.1/bin
 	PASS
 	ok  	runtime	0.031s
 
-```
-
-
-
-
-
-```
-
 ```go
 package main
 
@@ -71,7 +63,7 @@ import (
 )
 
 func main() {
-	fmt.Println("hello go")
+	fmt.Println("read go")
 }
 
 ```
