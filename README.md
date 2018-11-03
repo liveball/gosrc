@@ -37,23 +37,29 @@ Installed commands in /data/app/go/src/go1.11.1/bin
 
 ```
 
->4、使用新编译的工具链运行所有测试
-`$GODEV/bin/go test -v go/types `
+>4、使用新编译的工具链运行所有测试  
 
->5、进入某个标准包下面运行单个测试
+ >4.1 使用mod作为包管理工具  
+   `export GO111MODULE=on`
+
+ >4.2 默认使用当前目录名作为当前包名的mod  
+   `$GODEV/bin/go mod init runtime`
+
+>4.3、进入某个标准包下面运行单个测试  
+   `$GODEV/bin/go test -v -run=TestYieldLocked`
+
+    === RUN   TestYieldLockedProgress
+	--- PASS: TestYieldLockedProgress (0.01s)
+	=== RUN   TestYieldLocked
+	--- PASS: TestYieldLocked (0.01s)
+	PASS
+	ok  	runtime	0.031s
 
 ```
 
- $ GODEV/bin/go test -v -test.run="TestCloseRead"
-=== RUN   TestCloseRead
---- PASS: TestCloseRead (0.00s)
-    net_test.go:26: skipping unixpacket test
-PASS
-Socket statistical information:
-(inet4, stream, default): opened=2 connected=1 listened=1 accepted=0 closed=2 openfailed=0 connectfailed=1 listenfailed=0 acceptfailed=0 closefailed=0
-(local, stream, default): opened=2 connected=1 listened=1 accepted=0 closed=2 openfailed=0 connectfailed=0 listenfailed=0 acceptfailed=0 closefailed=0
 
-ok      net    0.007s
+
+
 
 ```
 
