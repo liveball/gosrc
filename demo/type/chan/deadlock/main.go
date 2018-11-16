@@ -167,13 +167,64 @@ func test8() {
 	println(<-quit2)
 }
 
+func test9() {
+	// Send 1000 integers in 4 goroutines,
+	// ensure that we receive what we send.
+	chanCap := 100
+	c := make(chan int, chanCap)
+
+	const P = 4
+	const L = 3
+	for p := 0; p < P; p++ {
+		go func() {
+			for i := 0; i < L; i++ {
+				c <- i
+			}
+		}()
+	}
+
+	done := make(chan map[int]int)
+	for p := 0; p < P; p++ {
+		go func() {
+			recv := make(map[int]int)
+			for i := 0; i < L; i++ {
+				v := <-c
+				fmt.Println(v)
+				fmt.Println("-------------")
+
+				recv[v] = recv[v] + 1
+			}
+			done <- recv
+			// fmt.Println(recv)
+		}()
+	}
+
+	recv := make(map[int]int)
+	for p := 0; p < P; p++ {
+		for k, v := range <-done {
+			recv[k] = recv[k] + v
+		}
+	}
+
+	// spew.Dump(recv)
+	if len(recv) != L {
+		fmt.Printf("chan[%d]: received %v values, expected %v", chanCap, len(recv), L)
+	}
+	for _, v := range recv {
+		if v != P {
+			fmt.Printf("chan[%d]: received %v values, expected %v", chanCap, v, P)
+		}
+	}
+}
 func main() {
 	// test1()
-	test2()
+	// test2()
 	// test3()
 	// test4()
 	// test5()
 	// test6()
 	// test7()
 	// test8()
+
+	test9()
 }

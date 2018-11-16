@@ -956,11 +956,13 @@ func benchmarkChanProdCons(b *testing.B, chanSize, localWork int) {
 	const CallsPerSched = 1000
 	procs := runtime.GOMAXPROCS(-1)
 	N := int32(b.N / CallsPerSched)
+	println(b.N, N)
 	c := make(chan bool, 2*procs)
 	myc := make(chan int, chanSize)
 	for p := 0; p < procs; p++ {
 		go func() {
 			foo := 0
+			println(atomic.AddInt32(&N, -1))
 			for atomic.AddInt32(&N, -1) >= 0 {
 				for g := 0; g < CallsPerSched; g++ {
 					for i := 0; i < localWork; i++ {

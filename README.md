@@ -46,6 +46,7 @@ Installed commands in /data/app/go/src/go1.11.1/bin
    `$GODEV/bin/go mod init runtime`
 
 >4.3、进入某个标准包下面运行单个测试  
+
    `$GODEV/bin/go test -v -run=TestYieldLocked`
 
     === RUN   TestYieldLockedProgress
@@ -54,6 +55,24 @@ Installed commands in /data/app/go/src/go1.11.1/bin
 	--- PASS: TestYieldLocked (0.01s)
 	PASS
 	ok  	runtime	0.031s
+
+   `$GODEV/bin/go test -run=NONE -v -bench=ChanProdCons0`
+	goos: darwin
+	goarch: amd64
+	pkg: runtime
+	BenchmarkChanProdCons0-4         3000000               471 ns/op
+	PASS
+	ok      runtime 1.919s
+
+    `$GODEV/bin/go test -v -bench=. -run=Benchmark`
+	goos: darwin
+	goarch: amd64
+	pkg: runtime
+	BenchmarkMakeChan/Byte-4                        30000000                47.3 ns/op
+	BenchmarkMakeChan/Int-4                         20000000                54.2 ns/op
+	BenchmarkMakeChan/Ptr-4                         10000000               130 ns/op
+	BenchmarkMakeChan/Struct/0-4                    30000000                41.3 ns/op
+   
 
 ```go
 package main
