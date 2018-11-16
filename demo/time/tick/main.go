@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
-
-	"github.com/davecgh/go-spew/spew"
 )
 
 var (
@@ -27,18 +25,75 @@ func main() {
 	// 	fmt.Println(v)
 	// }
 
-	a := []int{11, 12, 13, 14, 15}
-	randomStartTimer(a, testRandomSlice)
+	// a := []int{11, 12, 13, 14, 15}
+	// randomStartTimer(a, testRandomSlice)
 
-	// u := &user{}
-	// setStartTimer(u)
-	// go func() {
-	// 	for u := range uchan {
-	// 		println("get age:", u.age)
-	// 	}
-	// }()
+	u := &user{}
+	setStartTimer(u)
+	go func() {
+		for u := range uchan {
+			// now := time.Now()
+			// if int(now.Weekday()) != 4 || now.Hour() != 23 || now.Minute() != 38 {
+			// 	time.Sleep(1 * time.Second)
+			// 	// println("每周星期4 23点30分运行一次")
+			// 	continue
+			// }
 
-	time.Sleep(10 * time.Second)
+			// fmt.Println("get now...", now.Format("2006-01-02 15:04:05"))
+			// <-getTimer(now, 0, 0, 10).C
+			println("get age:", u.age)
+		}
+	}()
+
+	// time.Sleep(1000 * time.Second)
+	select {}
+}
+
+func setStartTimer(u *user) {
+	go func() {
+		for {
+			now := time.Now()
+
+			if int(now.Weekday()) != 5 || now.Hour() != 00 || now.Minute() != 21 {
+				time.Sleep(1 * time.Second)
+				// println("每周星期4 23点15分运行一次")
+				continue
+			}
+
+			<-getTimer(now, 0, 0, 10).C
+
+			fmt.Println("start now", now.Format("2006-01-02 15:04:05"))
+
+			time.Sleep(20 * time.Second)
+
+			fmt.Println("set now", now.Format("2006-01-02 15:04:05"))
+
+			rand.Seed(now.UnixNano())
+			age := rand.Intn(100)
+			println("set age:", age)
+			u.age = age
+			uchan <- u
+		}
+	}()
+}
+
+func getTimer(now time.Time, hour, minute, second int) (t *time.Timer) {
+	next := now.Add(time.Hour * time.Duration(hour)).Add(time.Minute * time.Duration(minute)).Add(time.Second * time.Duration(second))
+	// next = time.Date(next.Year(), next.Month(), next.Day(), next.Hour(), next.Hour(), 0, 0, next.Location())
+	fmt.Println("next", next.Format("2006-01-02 15:04:05"))
+	t = time.NewTimer(next.Sub(now))
+	t.Stop()
+	return
+}
+
+func randomStartTimer(a []int, f func([]int)) {
+	go func() {
+		for {
+			f(a)
+			<-getTimer(time.Now(), 0, 0, 5).C
+			time.Sleep(1 * time.Second)
+		}
+	}()
 }
 
 func generateToken(duration time.Duration) {
@@ -76,48 +131,11 @@ func randomSlice(start int, end int, count int) []int {
 
 func testRandomSlice(a []int) {
 	keys := randomSlice(0, len(a), len(a))
-	// spew.Dump(keys)
 
 	ns := make([]int, 0, len(a))
 	for _, k := range keys {
 		ns = append(ns, a[k])
 	}
-	spew.Dump(ns)
-}
-
-func randomStartTimer(a []int, f func([]int)) {
-	go func() {
-		for {
-			f(a)
-			<-getTimer().C
-		}
-	}()
-}
-
-func setStartTimer(u *user) {
-	go func() {
-		for {
-			rand.Seed(time.Now().UnixNano())
-			age := rand.Intn(100)
-			println("set age:", age)
-
-			u.age = age
-			uchan <- u
-			<-getTimer().C
-		}
-	}()
-}
-
-func getTimer() (t *time.Timer) {
-	now := time.Now()
-	next := now.Add(time.Hour * 24)
-
-	next = time.Date(next.Year(), next.Month(), next.Day(), 0, 0, 0, 0, next.Location())
-
-	fmt.Println("next", next.Format("2006-01-02 15:04:05"))
-	t = time.NewTimer(next.Sub(now))
-	// t = time.NewTimer(1 * time.Second)
-	return
 }
 
 type user struct {
