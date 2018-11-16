@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	batchSize := 0
+	batchSize := 5
 	batcher := tsdb.NewPointBatcher(batchSize, 0, time.Hour)
 	if batcher == nil {
 		fmt.Printf("failed to create batcher for size test")
@@ -37,5 +37,6 @@ func main() {
 		}
 		wg.Done()
 	}()
+
 	wg.Wait()
 }
