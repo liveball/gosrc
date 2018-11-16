@@ -1,11 +1,10 @@
-package tsdb_test
+package main
 
 import (
 	"testing"
 	"time"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/tsdb"
+	"go1.11.1/demo/type/chan/batcher/tsdb"
 )
 
 // TestBatch_Size ensures that a batcher generates a batch when the size threshold is reached.
@@ -18,7 +17,7 @@ func TestBatch_Size(t *testing.T) {
 
 	batcher.Start()
 
-	var p models.Point
+	var p int
 	go func() {
 		for i := 0; i < batchSize; i++ {
 			batcher.In() <- p
@@ -41,7 +40,7 @@ func TestBatch_SizeBuffered(t *testing.T) {
 
 	batcher.Start()
 
-	var p models.Point
+	var p int
 	go func() {
 		for i := 0; i < batchSize; i++ {
 			batcher.In() <- p
@@ -64,7 +63,7 @@ func TestBatch_Timeout(t *testing.T) {
 
 	batcher.Start()
 
-	var p models.Point
+	var p int
 	go func() {
 		for i := 0; i < batchSize; i++ {
 			batcher.In() <- p
@@ -87,7 +86,7 @@ func TestBatch_Flush(t *testing.T) {
 
 	batcher.Start()
 
-	var p models.Point
+	var p int
 	go func() {
 		batcher.In() <- p
 		batcher.Flush()
@@ -109,8 +108,8 @@ func TestBatch_MultipleBatches(t *testing.T) {
 
 	batcher.Start()
 
-	var p models.Point
-	var b []models.Point
+	var p int
+	var b []int
 
 	batcher.In() <- p
 	batcher.In() <- p

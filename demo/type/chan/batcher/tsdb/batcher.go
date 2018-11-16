@@ -4,8 +4,6 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
-
-	"github.com/influxdata/influxdb/models"
 )
 
 // PointBatcher accepts Points and will emit a batch of those points when either
@@ -17,8 +15,8 @@ type PointBatcher struct {
 	duration time.Duration
 
 	stop  chan struct{}
-	in    chan models.Point
-	out   chan []models.Point
+	in    chan int
+	out   chan []int
 	flush chan struct{}
 
 	wg *sync.WaitGroup
@@ -33,8 +31,8 @@ func NewPointBatcher(sz int, bp int, d time.Duration) *PointBatcher {
 		size:     sz,
 		duration: d,
 		stop:     make(chan struct{}),
-		in:       make(chan models.Point, bp*sz),
-		out:      make(chan []models.Point),
+		in:       make(chan int, bp*sz),
+		out:      make(chan []int),
 		flush:    make(chan struct{}),
 	}
 }
@@ -58,7 +56,7 @@ func (b *PointBatcher) Start() {
 	// initialize the timer variable
 	timer := time.NewTimer(time.Hour)
 	timer.Stop()
-	var batch []models.Point
+	var batch []int
 
 	emit := func() {
 
@@ -92,7 +90,7 @@ func (b *PointBatcher) Start() {
 				atomic.AddUint64(&b.stats.PointTotal, 1)
 				if batch == nil {
 					if b.size > 0 {
-						batch = make([]models.Point, 0, b.size)
+						batch = make([]int, 0, b.size)
 					}
 
 					if b.duration > 0 {
@@ -130,12 +128,12 @@ func (b *PointBatcher) Stop() {
 }
 
 // In returns the channel to which points should be written.
-func (b *PointBatcher) In() chan<- models.Point {
+func (b *PointBatcher) In() chan<- int {
 	return b.in
 }
 
 // Out returns the channel from which batches should be read.
-func (b *PointBatcher) Out() <-chan []models.Point {
+func (b *PointBatcher) Out() <-chan []int {
 	return b.out
 }
 

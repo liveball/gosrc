@@ -18,47 +18,40 @@ func main() {
 	select {}
 }
 
+func day() {
+	year, month, day := time.Now().Date()
+	stoday := time.Date(year, month, day, 0, 0, 0, 0, time.Local)
+	etoday := time.Date(year, month, day, 23, 59, 59, 999, time.Local)
+	syesday := stoday.AddDate(0, 0, -1)
+	eyesday := etoday.AddDate(0, 0, -1)
+	println(eyesday.Unix() - syesday.Unix())
+}
+
 func exec() {
 	for {
-		t := time.Now()
-		weekday := t.Weekday()
-		if int(weekday) != 4 {
+		now := time.Now()
+		if int(now.Weekday()) != 5 || now.Hour() != 10 { //|| now.Minute() != 21
+			time.Sleep(1 * time.Second)
+			println("每周星期4 23点15分运行一次")
 			continue
 		}
 
-		// todayZero := t.Truncate(time.Hour).Add(time.Duration(-t.Hour()) * time.Hour)
-		// fmt.Printf("todayZero %+v\n", todayZero)
+		fmt.Printf("now %+v\n", now)
+		last := now.AddDate(0, 0, -7).Add(time.Minute * time.Duration(1))
+		fmt.Printf("last %+v\n", last)
 
-		startMtime := t.AddDate(0, 0, -7).Add(time.Hour * time.Duration(0)).Add(time.Minute * time.Duration(0)).Add(time.Second * time.Duration(10))
-		endMtime := t.Add(time.Hour * time.Duration(0)).Add(time.Minute * time.Duration(0)).Add(time.Second * time.Duration(10))
-		// sendMtime := t.Add(time.Hour * time.Duration(0))
-
-		println(t.Hour(), t.Minute(), t.Second())
-		sendMtime := (t.Unix() - int64(3600*t.Hour()) - int64(60*t.Minute()) - int64(t.Second())) + int64(20*3600) + int64(24*60)
-
-		fmt.Printf("startMtime %+v\n", startMtime)
-		fmt.Printf("endMtime %+v\n", endMtime)
-		fmt.Printf("sendMtime %+v\n", sendMtime)
+		<-intervalTimer(now, 0, 0, 10).C
 		println("----------------------")
-
-		println(t.Unix(), sendMtime)
-		if t.Unix() == sendMtime {
-			println("aaaa")
-		}
 
 		time.Sleep(10 * time.Second)
 	}
 }
 
-func intervalTimer(start time.Time, hour, minute, second int) <-chan time.Time {
-	fmt.Printf("start %+v\n", start)
-	next := start.Add(time.Hour * time.Duration(hour)).Add(time.Minute * time.Duration(minute)).Add(time.Second * time.Duration(second))
-	fmt.Printf("next %+v\n", next)
-	next = time.Date(next.Year(), next.Month(), next.Day(), next.Hour(), next.Minute(), next.Second(), 0, next.Location())
-	fmt.Printf("next.Sub(now) %+v\n", next.Sub(start))
-
-	t := time.NewTimer(next.Sub(start)) //获取超时定时器
-	return t.C
+func intervalTimer(now time.Time, hour, minute, second int) *time.Timer {
+	next := now.Add(time.Hour * time.Duration(hour)).Add(time.Minute * time.Duration(minute)).Add(time.Second * time.Duration(second))
+	// next = time.Date(next.Year(), next.Month(), next.Day(), next.Hour(), next.Hour(), 0, 0, next.Location())
+	fmt.Println("next", next.Format("2006-01-02 15:04:05"))
+	return time.NewTimer(next.Sub(now))
 }
 
 func getWeekdaysBetween(start, end time.Time) int {
