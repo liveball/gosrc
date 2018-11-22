@@ -10,7 +10,7 @@ import (
 )
 
 func TestType(t *testing.T) {
-	// testIsAlias()
+	testIsAlias()
 }
 
 func testIsAlias() {
@@ -23,6 +23,7 @@ func testIsAlias() {
 	check(types.Unsafe.Scope().Lookup("Pointer").(*types.TypeName), false)
 
 	for _, name := range types.Universe.Names() {
+		println(name)
 		if obj, _ := types.Universe.Lookup(name).(*types.TypeName); obj != nil {
 			// fmt.Printf("obj(%#v) \n", reflect.ValueOf(obj))
 			check(obj, name == "byte" || name == "rune")
@@ -31,7 +32,7 @@ func testIsAlias() {
 	}
 
 	// various other types
-	pkg := types.NewPackage("p", "p")
+	pkg := types.NewPackage("/data/app/go/src/go1.11.1/demo/type/define", "p")
 	t1 := types.NewTypeName(0, pkg, "t1", nil)
 	n1 := types.NewNamed(t1, new(types.Struct), nil)
 	for _, test := range []struct {
@@ -51,6 +52,8 @@ func testIsAlias() {
 		// log.Printf("name (%v): alias(%v)", test.name, test.alias)
 		check(test.name, test.alias)
 	}
+
+	// println(pkg.Scope().Lookup("T").Type().Underlying())
 }
 
 var fset = token.NewFileSet()

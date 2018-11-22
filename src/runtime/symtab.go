@@ -451,7 +451,6 @@ var pinnedTypemaps []map[typeOff]*_type
 
 var firstmoduledata moduledata  // linker symbol
 var lastmoduledatap *moduledata // linker symbol
-var modulesSlice *[]*moduledata // see activeModules
 
 // activeModules returns a slice of active modules.
 //
