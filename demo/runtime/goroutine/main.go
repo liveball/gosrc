@@ -7,6 +7,8 @@ import (
 	"time"
 )
 
+// https://my.oschina.net/u/2336761/blog/2221970
+
 //GOMAXPROCS=1
 //$GODEV/bin/go build -o main main.go && GODEBUG=schedtrace=10000,scheddetail=1 ./main
 
