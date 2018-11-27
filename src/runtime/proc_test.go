@@ -578,7 +578,7 @@ func nonleaf(stop chan int) bool {
 	}
 }
 
-func TestSchedLocalQueue1(t *testing.T) {
+func TestSchedLocalQueue(t *testing.T) {
 	runtime.RunSchedLocalQueueTest()
 }
 

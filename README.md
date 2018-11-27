@@ -16,6 +16,8 @@
 
 ` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash ` use GOROOT  
 
+` $ GOOS=darwin GOARCH=amd64 ./bootstrap.bash`
+
 
 ```
 
