@@ -34,7 +34,7 @@ func createWorker(id int) chan<- int {
 
 func main() {
 	var c1, c2 = gen(), gen()
-	var worker = createWorker(0)
+	var worker = createWorker(1)
 
 	var values []int
 	n := 0
@@ -47,14 +47,14 @@ func main() {
 			activeWorker = worker
 			activeValue = values[0]
 		}
-		select { //非阻塞获取chan数据
+		select {
 		case n = <-c1:
 			values = append(values, n)
 		case n = <-c2:
 			values = append(values, n)
 		case activeWorker <- activeValue:
 			values = values[1:]
-		case <-time.After(800 * time.Millisecond):
+		case <-time.After(100 * time.Millisecond):
 			fmt.Println("timeout")
 		case <-tick:
 			fmt.Println("queue len=", len(values))
