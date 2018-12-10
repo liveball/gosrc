@@ -307,13 +307,15 @@ func runfinq() {
 // If a finalizer must run for a long time, it should do so by starting
 // a new goroutine.
 func SetFinalizer(obj interface{}, finalizer interface{}) {
+	// printany(obj) //(*os.file) (0x1145fa0,0xc000088000)
 	if debug.sbrk != 0 {
 		// debug.sbrk never frees memory, so no finalizers run
 		// (and we don't have the data structures to record them).
 		return
 	}
-	e := efaceOf(&obj)
+	e := efaceOf(&obj) //(*runtime.eface) (0x1133b80,0xc00006ce40)
 	etyp := e._type
+	// printany(etyp) //(*runtime._type) (0x1159660,0x1145fa0)
 	if etyp == nil {
 		throw("runtime.SetFinalizer: first argument is nil")
 	}

@@ -377,6 +377,9 @@ func (c *Cmd) Start() error {
 		}
 		c.childFiles = append(c.childFiles, fd)
 	}
+	// for _, v := range c.childFiles {
+	// 	fmt.Printf("v(%+v)\n", v)
+	// }
 	c.childFiles = append(c.childFiles, c.ExtraFiles...)
 
 	var err error
@@ -386,6 +389,9 @@ func (c *Cmd) Start() error {
 		Env:   dedupEnv(c.envv()),
 		Sys:   c.SysProcAttr,
 	})
+	// &{42170 0 0 {{0 0} 0 0 0 0}} [/data/app/go/src/go1.11.1/bin/go build -o /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/19518535925324/output]
+	// &{42180 0 0 {{0 0} 0 0 0 0}} [/data/app/go/src/go1.11.1/bin/go tool objdump -s testASM /var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/19518535925324/output]
+	// fmt.Println(c.Process, c.argv())
 	if err != nil {
 		c.closeDescriptors(c.closeAfterStart)
 		c.closeDescriptors(c.closeAfterWait)

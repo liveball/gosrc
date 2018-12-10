@@ -362,7 +362,8 @@ func heapBitsForAddr(addr uintptr) (h heapBits) {
 // in which the pointer p was found and the byte offset at which it
 // was found. These are used for error reporting.
 func findObject(p, refBase, refOff uintptr) (base uintptr, s *mspan, objIndex uintptr) {
-	s = spanOf(p)
+	s = spanOf(p) //(*runtime.mspan) (0x1162620,0x134bc78)
+	// printany(*s)  //(runtime.mspan) (0x116e280,0xc00007ccb0)
 	// If p is a bad pointer, it may not be in s's bounds.
 	if s == nil || p < s.base() || p >= s.limit || s.state != mSpanInUse {
 		if s == nil || s.state == _MSpanManual {
@@ -402,6 +403,8 @@ func findObject(p, refBase, refOff uintptr) (base uintptr, s *mspan, objIndex ui
 	}
 	// If this span holds object of a power of 2 size, just mask off the bits to
 	// the interior of the object. Otherwise use the size to get the base.
+
+	// printany(s.baseMask) //0000000000000000000000
 	if s.baseMask != 0 {
 		// optimize for power of 2 sized objects.
 		base = s.base()
@@ -412,10 +415,30 @@ func findObject(p, refBase, refOff uintptr) (base uintptr, s *mspan, objIndex ui
 		// Overall, it's faster to use the more general computation above.
 	} else {
 		base = s.base()
+
+		// 0xc00004e300 0xc00004e000 768 96
+		// 0xc00004e360 0xc00004e000 864 96
+		// 0xc00004e3c0 0xc00004e000 960 96
+		// 0xc00004e420 0xc00004e000 1056 96
+		// 0xc00004e480 0xc00004e000 1152 96
+		// println(hex(p), hex(base), p-base, s.elemsize)
 		if p-base >= s.elemsize {
 			// n := (p - base) / s.elemsize, using division by multiplication
 			objIndex = uintptr(p-base) >> s.divShift * uintptr(s.divMul) >> s.divShift2
 			base += objIndex * s.elemsize
+
+			// 5 171 9
+			// 5 171 9
+			// 5 171 9
+			// println(s.divShift, s.divMul, s.divShift2)
+
+			// 0xc00004e300 0x8 96
+			// 0xc00004e360 0x9 96
+			// 0xc00004e3c0 0xa 96
+			// 0xc00004e420 0xb 96
+			// 0xc00004e480 0xc 96
+			// 0xc0000142d0 0xf 48
+			// println(hex(base), hex(objIndex), s.elemsize)
 		}
 	}
 	return

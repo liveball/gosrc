@@ -99,6 +99,7 @@ func GoTool() (string, error) {
 	if runtime.GOOS == "windows" {
 		exeSuffix = ".exe"
 	}
+	// fmt.Println(runtime.GOROOT())///data/app/go/src/go1.11.1
 	path := filepath.Join(runtime.GOROOT(), "bin", "go"+exeSuffix)
 	if _, err := os.Stat(path); err == nil {
 		return path, nil
@@ -107,6 +108,7 @@ func GoTool() (string, error) {
 	if err != nil {
 		return "", errors.New("cannot find go tool: " + err.Error())
 	}
+	// fmt.Println(goBin)
 	return goBin, nil
 }
 
