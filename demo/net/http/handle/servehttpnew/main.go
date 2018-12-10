@@ -20,6 +20,7 @@ func (u users) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	switch r.URL.Path {
 	case "/list":
 		for id, name := range u {
+			fmt.Printf("ID(%d),Name(%s)\n", id, name)
 			fmt.Fprintf(w, "ID(%d),Name(%s)\n", id, name)
 		}
 	case "/user":
