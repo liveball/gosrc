@@ -51,7 +51,6 @@ func TempFile(dir, pattern string) (f *os.File, err error) {
 	if dir == "" {
 		dir = os.TempDir()
 	}
-
 	var prefix, suffix string
 	if pos := strings.LastIndex(pattern, "*"); pos != -1 {
 		prefix, suffix = pattern[:pos], pattern[pos+1:]

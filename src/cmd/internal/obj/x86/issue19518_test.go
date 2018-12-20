@@ -34,6 +34,7 @@ func main() {
 
 func objdumpOutput(t *testing.T) []byte {
 	cwd, err := os.Getwd()
+	// println(cwd)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -43,6 +44,7 @@ func objdumpOutput(t *testing.T) []byte {
 	}
 	defer os.RemoveAll(tmpdir)
 	tmpfile, err := os.Create(filepath.Join(tmpdir, "input.s"))
+	// fmt.Println(filepath.Join(tmpdir, "input.s"))
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -51,6 +53,7 @@ func objdumpOutput(t *testing.T) []byte {
 	if err != nil {
 		t.Fatal(err)
 	}
+	// fmt.Println(filepath.Join(tmpdir, "input.go"))
 	tmpfile2, err := os.Create(filepath.Join(tmpdir, "input.go"))
 	if err != nil {
 		t.Fatal(err)
@@ -64,17 +67,22 @@ func objdumpOutput(t *testing.T) []byte {
 	if err != nil {
 		t.Fatal(err)
 	}
+	// fmt.Println(testenv.GoToolPath(t)) ///data/app/go/src/go1.11.1/bin/go
+	// fmt.Println(filepath.Join(tmpdir, "output")) ///var/folders/m8/mtcq8mfj39g4d4khm_kd8hw80000gn/T/19518202800580/output
 	cmd := exec.Command(
 		testenv.GoToolPath(t), "build", "-o",
 		filepath.Join(tmpdir, "output"))
 
+	// spew.Dump(cmd)
 	var env []string
+	// spew.Dump(os.Environ())
 	for _, v := range os.Environ() {
 		if !strings.HasPrefix(v, "GOARCH=") {
+			// fmt.Println(v)
 			env = append(env, v)
 		}
 	}
-	cmd.Env = append(env, "GOARCH=amd64")
+	cmd.Env = append(env, "GOARCH=amd64") //追加环境变量
 	out, err := cmd.CombinedOutput()
 	if err != nil {
 		t.Fatalf("error %s output %s", err, out)
@@ -97,12 +105,15 @@ func objdumpOutput(t *testing.T) []byte {
 func TestVexPCrelative(t *testing.T) {
 	testenv.MustHaveGoBuild(t)
 	objout := objdumpOutput(t)
+
+	// fmt.Println(string(objout))
 	data := bytes.Split(objout, []byte("\n"))
 	for idx := len(data) - 1; idx >= 0; idx-- {
 		// OBJDUMP doesn't know about VMOVDQU,
 		// so instead of checking that it was assembled correctly,
 		// check that RET wasn't overwritten.
 		if bytes.Index(data[idx], []byte("RET")) != -1 {
+			// println(string(data[idx]))
 			return
 		}
 	}
