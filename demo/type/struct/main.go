@@ -17,12 +17,31 @@ type Person struct {
 	Age  int
 }
 
+type demo struct {
+	age int
+}
+
+// func (d *demo) String() string {
+// 	fmt.Println("1")
+// 	return fmt.Sprintf("%v", d.age)
+// }
+
+func (d demo) String() string {
+	fmt.Println("1")
+	return fmt.Sprintf("%v", d.age)
+}
+
 func main() {
 	// p := Person{}
 	// modify(p)
 	// fmt.Printf("person(%+v)\n", p)
 
-	mynew()
+	// mynew()
+
+	// d := demo{5}
+	d := &demo{5}
+	n, _ := fmt.Println(d)
+	println(n)
 }
 
 func mynew() {

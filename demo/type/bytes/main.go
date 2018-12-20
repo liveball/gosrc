@@ -47,3 +47,20 @@ func BytesToInt(b []byte) int {
 
 	return int(x)
 }
+
+func byteOrder() {
+	type test struct {
+		value      int16
+		unionBytes []byte
+	}
+	// t := test{}
+	// test.Value = 0x0102
+	// test.unionBytes = unsafe.Sizeof(test.Value)
+
+	// for index := 0; index < unsafe.Sizeof(test.Value); index++ {
+
+	// }
+	// if test.unionBytes[0] == 1 && test.unionBytes[0] == 2 {
+
+	// }
+}

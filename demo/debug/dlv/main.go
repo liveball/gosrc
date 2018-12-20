@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"gowhole/exercise/basictests/dlv/lib"
+	"go1.11.1/demo/debug/dlv/lib"
 )
 
 func main() {
