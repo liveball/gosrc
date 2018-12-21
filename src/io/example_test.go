@@ -98,6 +98,7 @@ func ExampleReadFull() {
 	if _, err := io.ReadFull(r, longBuf); err != nil {
 		fmt.Println("error:", err)
 	}
+	// fmt.Println(longBuf)
 
 	// Output:
 	// some
