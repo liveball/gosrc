@@ -19,7 +19,6 @@ func main() {
 
 	for _, importSpec := range f.Imports {
 		var importName string
-
 		if importSpec.Name == nil {
 			importName = ""
 		} else {
@@ -27,6 +26,7 @@ func main() {
 		}
 
 		importPath := importSpec.Path.Value[1 : len(importSpec.Path.Value)-1]
+		// fmt.Println(importPath, len(importSpec.Path.Value)-1)
 		pkg, err := build.Import(importPath, "", 0)
 
 		if err != nil {
@@ -37,14 +37,12 @@ func main() {
 		if importName == "" {
 			importName = pkg.Name
 		}
-
-		fmt.Printf("importName(%+v)\n", importName)
-
+		// spew.Dump(pkg)
 	}
 
 	for _, decl := range f.Decls {
+		// spew.Dump(decl)
 		genDecl, ok := decl.(*ast.GenDecl)
-
 		if !ok {
 			continue
 		}
@@ -64,7 +62,7 @@ func main() {
 			continue
 		}
 
-		fmt.Printf("typeSpec(%+v) \n", interfaceType)
+		fmt.Printf("interfaceType(%+v) \n", interfaceType)
 
 		for _, method := range interfaceType.Methods.List {
 			fmt.Printf("method(%+v)\n", method.Names)
