@@ -9,7 +9,7 @@ import (
 
 const (
 	family  = syscall.AF_INET
-	sotype  = syscall.SOCK_STREAM
+	sotype  = syscall.O_NONBLOCK | syscall.SOCK_STREAM
 	proto   = 0
 	backlog = 128
 
@@ -22,7 +22,8 @@ func main() {
 		err error
 		fd  int
 	)
-	fd, err = syscall.Socket(family, sotype, proto)
+	fd, err = syscall.Socket(syscall.AF_INET, syscall.O_NONBLOCK|syscall.SOCK_STREAM, 0)
+	// fd, err = syscall.Socket(family, sotype, proto)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
@@ -46,7 +47,7 @@ func main() {
 	}
 
 	addr := syscall.SockaddrInet4{Port: 9000}
-	copy(addr.Addr[:], net.ParseIP("0.0.0.0").To4())
+	copy(addr.Addr[:], net.ParseIP("127.0.0.1").To4())
 	err = syscall.Bind(fd, &addr)
 	if err != nil {
 		fmt.Printf("syscall.Bind error(%v)\n", err)
@@ -78,12 +79,15 @@ func poller(fd int) {
 
 	var event syscall.EpollEvent
 	var events [MaxEpollEvents]syscall.EpollEvent
-	event.Events = syscall.EPOLLIN | EPOLLET
+
+	event.Fd = int32(fd)
+	event.Events = syscall.EPOLLIN
 
 	if err = syscall.EpollCtl(epfd, syscall.EPOLL_CTL_ADD, fd, &event); err != nil {
 		fmt.Println("syscall.EpollCtl: ", err)
 		os.Exit(1)
 	}
+
 	for {
 		n, err := syscall.EpollWait(epfd, events[:], -1)
 		if err != nil {
@@ -99,11 +103,10 @@ func poller(fd int) {
 			}
 
 			if int(ev.Fd) == fd { //accept
-				go accept(epfd, ev)
+				accept(epfd, ev)
 				continue
 			} else {
-				go readWrite(int(ev.Fd))
-
+				readWrite(int(ev.Fd))
 			}
 		}
 	}
@@ -112,6 +115,7 @@ func poller(fd int) {
 func accept(epfd int, event syscall.EpollEvent) {
 	fd := int(event.Fd)
 	defer syscall.Close(fd)
+
 	for {
 		connFd, _, err := syscall.Accept(fd)
 		if connFd == -1 {
@@ -130,8 +134,7 @@ func accept(epfd int, event syscall.EpollEvent) {
 			break
 		}
 
-		sn, _ := syscall.Getsockname(fd)
-		fmt.Printf("accept new conn(%v)\n", sn)
+		fmt.Printf("accept new conn(%v)\n", connFd)
 
 		event.Fd = int32(connFd)
 		event.Events = syscall.EPOLLIN | EPOLLET
@@ -144,20 +147,26 @@ func accept(epfd int, event syscall.EpollEvent) {
 
 func readWrite(fd int) {
 	defer syscall.Close(fd)
-	for {
-		buf := make([]byte, 0, 1024)
-		n, err := syscall.Read(fd, buf)
 
-		println("server readWrite...")
+	for {
+		buf := make([]byte, 1024)
+		n, err := syscall.Read(fd, buf[:])
+		if n <= 0 {
+			if err == syscall.EAGAIN || err == syscall.EWOULDBLOCK {
+				fmt.Println("we have read all")
+				break
+			} else {
+				fmt.Println("syscall.Read: ", err)
+				break
+			}
+		}
+
 		if err != nil {
 			fmt.Printf("read syscall.Read error(%v)\n", err)
 			break
 		}
-		if n == 0 {
-			break
-		}
 
-		fmt.Printf("read buf(%s)", buf)
+		fmt.Printf("read buf %s\n", buf)
 		// syscall.Write(fd, buf)
 		// time.Sleep(1 * time.Second)
 	}
