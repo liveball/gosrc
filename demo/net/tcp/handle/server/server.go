@@ -1,9 +1,7 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"io"
 	"net"
 	"time"
 )
@@ -26,28 +24,15 @@ func main() {
 }
 
 func handleConn(conn net.Conn) {
-
 	defer conn.Close()
-	var buf *bufio.Reader
-	buf = bufio.NewReader(conn)
 	for {
-		//read
-		bs, err := buf.ReadBytes('\n') //log agent
-
-		if err != nil {
-			if err == io.EOF {
-				fmt.Printf("conn error(%v)", err)
-			}
-			return
-		}
-
-		if len(bs) > 0 {
-			fmt.Print("read from client:", string(bs))
-		}
-
-		// write
-		// conn.Write([]byte(time.Now().Format("15:04:05\n")))
-
+		// message, err := bufio.NewReader(conn).ReadString('\n')
+		// if err != nil {
+		// 	fmt.Printf("server buf.ReadString error(%v)\n", err)
+		// 	return
+		// }
+		// fmt.Println("from client: " + message)
+		conn.Write([]byte(time.Now().Format("15:04:05\n")))
 		time.Sleep(1 * time.Second)
 	}
 }

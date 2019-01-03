@@ -3,8 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"io"
-	"log"
 	"net"
 	"time"
 )
@@ -28,25 +26,14 @@ func dial() {
 	defer conn.Close()
 
 	for {
-		//read
+		// conn.Write([]byte(time.Now().Format("hello")))
+		// conn.SetReadDeadline(time.Now().Add(time.Second * 3)) //每次读设置超时
 		message, err := bufio.NewReader(conn).ReadString('\n')
 		if err != nil {
-			fmt.Printf("conn error(%v)\n", err)
-			// conn.Close()
+			fmt.Printf("client buf.ReadString error(%v)\n", err)
 			return
 		}
-		fmt.Print("Message from server: " + message)
-
-		// write
-		conn.Write([]byte("hello\n"))
-
+		fmt.Println("from server: " + message)
 		time.Sleep(1 * time.Second)
-	}
-}
-
-// mustCopy(os.Stdout, conn)
-func mustCopy(dst io.Writer, src io.Reader) {
-	if _, err := io.Copy(dst, src); err != nil {
-		log.Fatal(err)
 	}
 }

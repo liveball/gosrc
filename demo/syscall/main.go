@@ -23,23 +23,31 @@ func main() {
 		n     int
 		_zero uintptr //Single-word zero for use when we need a valid pointer to 0 bytes.
 	)
+
+	p = make([]byte, 100)
 	if len(p) > 0 {
 		_p0 = unsafe.Pointer(&p[0])
 	} else {
 		_p0 = unsafe.Pointer(&_zero)
 	}
 
-	fd, err := syscall.Open("./t.txt", syscall.O_RDWR, 0666)
+	fd, err := syscall.Open("./t.txt", syscall.O_CREAT|syscall.O_RDWR|syscall.O_CLOEXEC, 0666)
 	if err != nil {
 		fmt.Printf("syscall.Open error(%v)", err)
 		return
 	}
-
 	r0, _, e1 := syscall.Syscall(syscall.SYS_READ, uintptr(fd), uintptr(_p0), uintptr(len(p)))
 	n = int(r0)
 	if e1 != 0 {
 		println(e1.Error())
+		return
 	}
+
+	// n, err = syscall.Read(fd, p)
+	// if err != nil {
+	// 	println(err.Error())
+	// 	return
+	// }
 
 	println(n, _zero, _p0, string(p[:]))
 
