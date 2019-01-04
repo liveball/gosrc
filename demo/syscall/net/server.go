@@ -5,6 +5,7 @@ import (
 	"net"
 	"os"
 	"syscall"
+	"time"
 )
 
 const (
@@ -134,8 +135,13 @@ func accept(epfd int, event syscall.EpollEvent) {
 			break
 		}
 
-		fmt.Printf("accept new conn(%v)\n", connFd)
+		err = syscall.SetNonblock(connFd, true)
+		if err != nil {
+			fmt.Printf("syscall.SetNonblock error(%v)\n", err)
+			break
+		}
 
+		fmt.Printf("accept new conn(%v)\n", connFd)
 		event.Fd = int32(connFd)
 		event.Events = syscall.EPOLLIN | EPOLLET
 		if err := syscall.EpollCtl(epfd, syscall.EPOLL_CTL_ADD, connFd, &event); err != nil {
@@ -166,8 +172,9 @@ func readWrite(fd int) {
 			break
 		}
 
+		time.Sleep(1 * time.Second)
+
 		fmt.Printf("read buf %s\n", buf)
-		// syscall.Write(fd, buf)
-		// time.Sleep(1 * time.Second)
+		syscall.Write(fd, buf)
 	}
 }

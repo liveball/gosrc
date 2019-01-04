@@ -10,7 +10,7 @@ import (
 
 const (
 	family  = syscall.AF_INET
-	sotype  = syscall.SOCK_STREAM
+	sotype  = syscall.SOCK_STREAM | syscall.SOCK_STREAM
 	proto   = 0
 	backlog = 128
 
@@ -52,18 +52,19 @@ func send(fd int) {
 	for {
 		syscall.Write(fd, []byte(time.Now().Format("15:04:05")))
 
-		// buf := make([]byte, 1024)
-		// n, err := syscall.Read(fd, buf)
-		// if n <= 0 {
-		// 	if err == syscall.EAGAIN || err == syscall.EWOULDBLOCK {
-		// 		fmt.Println("we have read all")
-		// 		break
-		// 	} else {
-		// 		fmt.Println("syscall.Read: ", err)
-		// 		break
-		// 	}
-		// }
-
 		time.Sleep(1 * time.Second)
+
+		buf := make([]byte, 1024)
+		n, err := syscall.Read(fd, buf)
+		if n <= 0 {
+			if err == syscall.EAGAIN || err == syscall.EWOULDBLOCK {
+				fmt.Println("we have read all")
+				break
+			} else {
+				fmt.Println("syscall.Read: ", err)
+				break
+			}
+		}
+
 	}
 }
