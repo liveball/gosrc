@@ -64,6 +64,7 @@ func main() {
 	fmt.Println("listen:", lsa)
 
 	poller(fd)
+	syscall.Close(fd) //close listen fd
 }
 
 func poller(fd int) {
@@ -115,8 +116,6 @@ func poller(fd int) {
 
 func accept(epfd int, event syscall.EpollEvent) {
 	fd := int(event.Fd)
-	defer syscall.Close(fd)
-
 	for {
 		connFd, _, err := syscall.Accept(fd)
 		if connFd == -1 {
@@ -135,11 +134,11 @@ func accept(epfd int, event syscall.EpollEvent) {
 			break
 		}
 
-		err = syscall.SetNonblock(connFd, true)
-		if err != nil {
-			fmt.Printf("syscall.SetNonblock error(%v)\n", err)
-			break
-		}
+		// err = syscall.SetNonblock(connFd, true)
+		// if err != nil {
+		// 	fmt.Printf("syscall.SetNonblock error(%v)\n", err)
+		// 	break
+		// }
 
 		fmt.Printf("accept new conn(%v)\n", connFd)
 		event.Fd = int32(connFd)
