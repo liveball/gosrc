@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net"
 	"os"
+	"sync"
 	"syscall"
 	"time"
 )
@@ -44,27 +45,51 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Println("connect")
-	send(fd)
+
+	var wg sync.WaitGroup
+	wg.Add(1)
+	recv(fd, &wg)
+	// send(fd, &wg)
+	wg.Wait()
 	syscall.Close(fd)
 }
 
-func send(fd int) {
+func recv(fd int, wg *sync.WaitGroup) {
+	defer wg.Done()
+	buf := make([]byte, 10)
 	for {
-		syscall.Write(fd, []byte(time.Now().Format("15:04:05")))
-
-		time.Sleep(1 * time.Second)
-
-		buf := make([]byte, 1024)
 		n, err := syscall.Read(fd, buf)
-		if n <= 0 {
-			if err == syscall.EAGAIN || err == syscall.EWOULDBLOCK {
-				fmt.Println("we have read all")
-				break
-			} else {
-				fmt.Println("syscall.Read: ", err)
-				break
-			}
+		if err == syscall.EAGAIN || err == syscall.EWOULDBLOCK {
+			fmt.Println("we have read all")
+			return
+		} else {
+			fmt.Println("syscall.Read: ", err)
+			return
 		}
 
+		if n == 0 {
+			fmt.Println("syscall.Read  n==0")
+			return
+		}
+
+		fmt.Printf("syscall.Read buf(%v)\n", buf[:n])
+		time.Sleep(1 * time.Second)
+	}
+}
+
+func send(fd int, wg *sync.WaitGroup) {
+	defer wg.Done()
+	for {
+		n, err := syscall.Write(fd, []byte(time.Now().Format("15:04:05")))
+		if err != nil {
+			fmt.Printf("write syscall.Write: fd(%d) error(%v)\n", fd, err)
+			return
+		}
+
+		if n <= 0 {
+			return
+		}
+		fmt.Printf("write syscall.Write: n(%d)\n", n)
+		time.Sleep(1 * time.Second)
 	}
 }
