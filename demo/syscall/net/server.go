@@ -102,12 +102,12 @@ func poller(fd int) {
 				continue
 			}
 
-			// if (ev.Events&syscall.EPOLLERR) != 0 ||
-			// 	(ev.Events&syscall.EPOLLHUP) != 0 {
-			// 	fmt.Printf("epoll error ev.Events(%v)\n", ev.Events)
-			// 	syscall.Close(int(ev.Fd))
-			// 	continue
-			// }
+			if (ev.Events&syscall.EPOLLERR) != 0 ||
+				(ev.Events&syscall.EPOLLHUP) != 0 {
+				fmt.Printf("epoll error ev.Events(%v)\n", ev.Events)
+				syscall.Close(int(ev.Fd))
+				continue
+			}
 
 			// fmt.Println("read:", ev.Events, syscall.EPOLLIN, ev.Events&(syscall.EPOLLIN))
 			// fmt.Println("write:", ev.Events, syscall.EPOLLOUT, ev.Events&(syscall.EPOLLOUT))
