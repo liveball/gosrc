@@ -6,8 +6,6 @@ import (
 	"os"
 	"syscall"
 	"time"
-
-	"github.com/davecgh/go-spew/spew"
 )
 
 const (
@@ -92,7 +90,7 @@ func poller(fd int) {
 	}
 
 	for {
-		n, err := syscall.EpollWait(epfd, events[:], 0)
+		n, err := syscall.EpollWait(epfd, events[:], -1)
 		if err != nil {
 			fmt.Println("syscall.EpollWait: ", err)
 			break
@@ -111,24 +109,17 @@ func poller(fd int) {
 			// 	continue
 			// }
 
-			spew.Dump(ev)
-
 			// fmt.Println("read:", ev.Events, syscall.EPOLLIN, ev.Events&(syscall.EPOLLIN))
-
 			// fmt.Println("write:", ev.Events, syscall.EPOLLOUT, ev.Events&(syscall.EPOLLOUT))
 
 			if int(ev.Fd) == fd { //accept
-				accept(epfd, ev)
-				continue
+				go accept(epfd, ev)
 			} else if ev.Events&(syscall.EPOLLIN) != 0 { //read
-				read(epfd, ev)
-				continue
+				go read(epfd, ev)
 			} else if ev.Events&(syscall.EPOLLOUT) != 0 { //write
-				write(epfd, ev)
-				continue
+				go write(epfd, ev)
 			} else {
 				fmt.Printf("poller continue ev(%v)\n", ev)
-				continue
 			}
 		}
 	}
@@ -169,8 +160,8 @@ func read(epfd int, event syscall.EpollEvent) {
 	fd := int(event.Fd)
 	defer syscall.Close(fd)
 
-	buf := make([]byte, 1024)
 	for {
+		buf := make([]byte, 32)
 		n, err := syscall.Read(fd, buf)
 
 		if err != nil {
@@ -212,11 +203,12 @@ func write(epfd int, event syscall.EpollEvent) {
 		// 	os.Exit(1)
 		// }
 
-		n, err := syscall.Write(fd, data)
+		_, err := syscall.Write(fd, data)
 		if err != nil {
 			fmt.Printf("write syscall.Write: fd(%d) error(%v)\n", fd, err)
+			return
 		}
-		fmt.Printf("write syscall.Write: n(%d)\n", n)
+		// fmt.Printf("write syscall.Write: n(%d)\n", n)
 
 		event.Fd = int32(fd)
 		event.Events = syscall.EPOLLIN | EPOLLET

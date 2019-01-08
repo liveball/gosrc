@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"net"
 	"os"
@@ -24,6 +25,9 @@ func main() {
 		err error
 		fd  int
 	)
+	client := flag.String("client", "client1", "which client?")
+	flag.Parse() //解析输入的参数
+
 	fd, err = syscall.Socket(family, sotype, proto)
 	if err != nil {
 		fmt.Println(err)
@@ -47,49 +51,46 @@ func main() {
 	fmt.Println("connect")
 
 	var wg sync.WaitGroup
-	wg.Add(1)
-	recv(fd, &wg)
-	// send(fd, &wg)
+	wg.Add(2)
+	go recv(fd, &wg)
+	go send(fd, &wg, *client)
 	wg.Wait()
 	syscall.Close(fd)
 }
 
 func recv(fd int, wg *sync.WaitGroup) {
 	defer wg.Done()
-	buf := make([]byte, 10)
 	for {
+		buf := make([]byte, 5)
 		n, err := syscall.Read(fd, buf)
-		if err == syscall.EAGAIN || err == syscall.EWOULDBLOCK {
-			fmt.Println("we have read all")
-			return
-		} else {
-			fmt.Println("syscall.Read: ", err)
+		if err != nil {
+			if err == syscall.EAGAIN {
+				fmt.Println("we have read all")
+				return
+			} else {
+				fmt.Println("syscall.Read: ", err)
+				return
+			}
+		}
+		if n <= 0 {
+			fmt.Println("syscall.Read n==0 ")
 			return
 		}
 
-		if n == 0 {
-			fmt.Println("syscall.Read  n==0")
-			return
-		}
-
-		fmt.Printf("syscall.Read buf(%v)\n", buf[:n])
+		fmt.Printf("syscall.Read recv n(%d) buf(%v)\n", n, buf[:n])
 		time.Sleep(1 * time.Second)
 	}
 }
 
-func send(fd int, wg *sync.WaitGroup) {
+func send(fd int, wg *sync.WaitGroup, client string) {
 	defer wg.Done()
 	for {
-		n, err := syscall.Write(fd, []byte(time.Now().Format("15:04:05")))
+		_, err := syscall.Write(fd, []byte(client+"=>"+time.Now().Format("15:04:05")))
 		if err != nil {
 			fmt.Printf("write syscall.Write: fd(%d) error(%v)\n", fd, err)
 			return
 		}
-
-		if n <= 0 {
-			return
-		}
-		fmt.Printf("write syscall.Write: n(%d)\n", n)
+		// fmt.Printf("write syscall.Write: n(%d)\n", n)
 		time.Sleep(1 * time.Second)
 	}
 }
