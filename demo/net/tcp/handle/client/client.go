@@ -14,7 +14,6 @@ func main() {
 	// }
 
 	dial()
-	// select {}
 }
 
 func dial() {
@@ -26,14 +25,19 @@ func dial() {
 	defer conn.Close()
 
 	for {
-		// conn.Write([]byte(time.Now().Format("hello")))
+		conn.Write([]byte(time.Now().Format("hello"))) // 如果不加 \n,服务端采用bufio.NewReader(conn).ReadString('\n') 将读不到，会阻塞
 		// conn.SetReadDeadline(time.Now().Add(time.Second * 3)) //每次读设置超时
-		message, err := bufio.NewReader(conn).ReadString('\n')
+
+		// message, err := bufio.NewReader(conn).ReadString('\n')
+		buf := make([]byte, 32)
+		n, err := bufio.NewReader(conn).Read(buf)
+		// n, err := conn.Read(buf)
+
 		if err != nil {
 			fmt.Printf("client buf.ReadString error(%v)\n", err)
 			return
 		}
-		fmt.Println("from server: " + message)
+		fmt.Println("from server: " + string(buf[:n]))
 		time.Sleep(1 * time.Second)
 	}
 }
