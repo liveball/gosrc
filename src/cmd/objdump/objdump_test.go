@@ -16,6 +16,8 @@ import (
 	"runtime"
 	"strings"
 	"testing"
+
+	"github.com/davecgh/go-spew/spew"
 )
 
 var tmp, exe string // populated by buildObjdump
@@ -234,6 +236,8 @@ func TestDisasmGoobj(t *testing.T) {
 	}
 
 	text := string(out)
+	spew.Dump(exe, args)
+	fmt.Println(hello, text)
 	ok := true
 	for _, s := range need {
 		if !strings.Contains(text, s) {
