@@ -18,6 +18,12 @@
 
 ` $ GOOS=darwin GOARCH=amd64 ./bootstrap.bash`
 
+>4、解决use of internal package cmd/internal/obj not allowed
+
+`GOROOT=/data/app/go/src/go1.11.1`
+`export PATH=$GOROOT/bin:$PATH`
+`go test -v -run=Dynlink`
+
 
 ```
 
