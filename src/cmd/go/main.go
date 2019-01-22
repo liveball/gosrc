@@ -28,7 +28,6 @@ import (
 	"cmd/go/internal/help"
 	"cmd/go/internal/list"
 	"cmd/go/internal/modcmd"
-	"cmd/go/internal/modfetch"
 	"cmd/go/internal/modget"
 	"cmd/go/internal/modload"
 	"cmd/go/internal/run"
@@ -59,25 +58,26 @@ func init() {
 		version.CmdVersion,
 		vet.CmdVet,
 
-		help.HelpBuildmode,
-		help.HelpC,
-		help.HelpCache,
-		help.HelpEnvironment,
-		help.HelpFileType,
-		modload.HelpGoMod,
-		help.HelpGopath,
-		get.HelpGopathGet,
-		modfetch.HelpGoproxy,
-		help.HelpImportPath,
-		modload.HelpModules,
-		modget.HelpModuleGet,
-		help.HelpPackages,
-		test.HelpTestflag,
-		test.HelpTestfunc,
+		// help.HelpBuildmode,
+		// help.HelpC,
+		// help.HelpCache,
+		// help.HelpEnvironment,
+		// help.HelpFileType,
+		// modload.HelpGoMod,
+		// help.HelpGopath,
+		// get.HelpGopathGet,
+		// modfetch.HelpGoproxy,
+		// help.HelpImportPath,
+		// modload.HelpModules,
+		// modget.HelpModuleGet,
+		// help.HelpPackages,
+		// test.HelpTestflag,
+		// test.HelpTestfunc,
 	}
 }
 
 func main() {
+	go11tag := true
 	_ = go11tag
 	flag.Usage = base.Usage
 	flag.Parse()
@@ -189,6 +189,7 @@ BigCmdLoop:
 			if cmd.Name() != args[0] {
 				continue
 			}
+			// fmt.Println("build", cmd.Name(), cmd)
 			if len(cmd.Commands) > 0 {
 				bigCmd = cmd
 				args = args[1:]
@@ -208,6 +209,8 @@ BigCmdLoop:
 			if !cmd.Runnable() {
 				continue
 			}
+
+			// fmt.Println("build", cmd.Runnable())
 			cmd.Flag.Usage = func() { cmd.Usage() }
 			if cmd.CustomFlags {
 				args = args[1:]
@@ -216,7 +219,8 @@ BigCmdLoop:
 				cmd.Flag.Parse(args[1:])
 				args = cmd.Flag.Args()
 			}
-			cmd.Run(cmd, args)
+			// fmt.Println("cmd.Run", cmd)
+			cmd.Run(cmd, args) //CmdBuild.Run = runBuild
 			base.Exit()
 			return
 		}

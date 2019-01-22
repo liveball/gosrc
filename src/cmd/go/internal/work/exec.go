@@ -46,14 +46,17 @@ func actionList(root *Action) []*Action {
 		for _, a1 := range a.Deps {
 			walk(a1)
 		}
+		// fmt.Println("actionList", a)
 		all = append(all, a)
 	}
 	walk(root)
+	// fmt.Println("actionList", all)
 	return all
 }
 
 // do runs the action graph rooted at root.
 func (b *Builder) Do(root *Action) {
+	// fmt.Println("Builder Do", root)
 	if c := cache.Default(); c != nil && !b.IsCmdList {
 		// If we're doing real work, take time at the end to trim the cache.
 		defer c.Trim()
@@ -356,6 +359,7 @@ const (
 func (b *Builder) build(a *Action) (err error) {
 	p := a.Package
 
+	// fmt.Println(p)
 	bit := func(x uint32, b bool) uint32 {
 		if b {
 			return x

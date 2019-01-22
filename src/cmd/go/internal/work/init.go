@@ -21,7 +21,6 @@ func BuildInit() {
 	load.ModInit()
 	instrumentInit()
 	buildModeInit()
-
 	// Make sure -pkgdir is absolute, because we run commands
 	// in different directories.
 	if cfg.BuildPkgdir != "" && !filepath.IsAbs(cfg.BuildPkgdir) {

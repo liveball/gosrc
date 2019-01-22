@@ -57,6 +57,7 @@ func printStderr(args ...interface{}) (int, error) {
 }
 
 func runRun(cmd *base.Command, args []string) {
+	fmt.Println("runRun", args)
 	work.BuildInit()
 	var b work.Builder
 	b.Init()

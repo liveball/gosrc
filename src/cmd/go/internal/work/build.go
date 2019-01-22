@@ -157,7 +157,6 @@ func init() {
 	CmdBuild.Flag.StringVar(&cfg.BuildO, "o", "", "output file")
 
 	CmdInstall.Flag.BoolVar(&cfg.BuildI, "i", false, "")
-
 	AddBuildFlags(CmdBuild)
 	AddBuildFlags(CmdInstall)
 }
@@ -326,6 +325,7 @@ func runBuild(cmd *base.Command, args []string) {
 		p.Target = cfg.BuildO
 		p.Stale = true // must build - not up to date
 		p.StaleReason = "build -o flag in use"
+
 		a := b.AutoAction(ModeInstall, depMode, p)
 		b.Do(a)
 		return
