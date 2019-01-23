@@ -1465,6 +1465,7 @@ func (t *rtype) ConvertibleTo(u Type) bool {
 }
 
 func (t *rtype) Comparable() bool {
+	println(t.alg, t.alg.equal != nil)
 	return t.alg != nil && t.alg.equal != nil
 }
 

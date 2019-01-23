@@ -96,7 +96,6 @@ Key "pctab" supports values:
 
 func usage() {
 	fmt.Fprintf(os.Stderr, "usage: compile [options] file.go...\n")
-	objabi.Flagprint(os.Stderr)
 	Exit(2)
 }
 

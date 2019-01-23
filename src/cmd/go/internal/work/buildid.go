@@ -187,6 +187,8 @@ func (b *Builder) toolID(name string) string {
 	cmdline := str.StringList(cfg.BuildToolexec, path, "-V=full")
 	cmd := exec.Command(cmdline[0], cmdline[1:]...)
 	cmd.Env = base.EnvForDir(cmd.Dir, os.Environ())
+
+	fmt.Println("toolID", name, path)
 	var stdout, stderr bytes.Buffer
 	cmd.Stdout = &stdout
 	cmd.Stderr = &stderr
@@ -195,6 +197,7 @@ func (b *Builder) toolID(name string) string {
 	}
 
 	line := stdout.String()
+	// fmt.Println("toolID", line)
 	f := strings.Fields(line)
 	if len(f) < 3 || f[0] != name && path != VetTool || f[1] != "version" || f[2] == "devel" && !strings.HasPrefix(f[len(f)-1], "buildID=") {
 		base.Fatalf("%s -V=full: unexpected output:\n\t%s", desc, line)

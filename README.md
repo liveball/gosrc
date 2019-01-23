@@ -24,6 +24,9 @@
 `export PATH=$GOROOT/bin:$PATH`
 `go test -v -run=Dynlink`
 
+>5、go build go
+`go run main.go build -debug-actiongraph="json"`
+
 
 ```
 

@@ -139,5 +139,6 @@ func Expstring() string {
 	if buf == "X" {
 		buf += ",none"
 	}
+	fmt.Println("objabi Expstring", buf[2:])
 	return "X:" + buf[2:]
 }

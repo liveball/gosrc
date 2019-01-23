@@ -188,6 +188,7 @@ func (b *Builder) buildActionID(a *Action) cache.ActionID {
 	// same compiler settings and can reuse each other's results.
 	// If not, the reason is already recorded in buildGcflags.
 	fmt.Fprintf(h, "compile\n")
+	// fmt.Println("buildActionID", h)
 	// The compiler hides the exact value of $GOROOT
 	// when building things in GOROOT,
 	// but it does not hide the exact value of $GOPATH.
@@ -359,7 +360,6 @@ const (
 func (b *Builder) build(a *Action) (err error) {
 	p := a.Package
 
-	// fmt.Println(p)
 	bit := func(x uint32, b bool) uint32 {
 		if b {
 			return x
