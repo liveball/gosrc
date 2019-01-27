@@ -188,7 +188,7 @@ func (b *Builder) toolID(name string) string {
 	cmd := exec.Command(cmdline[0], cmdline[1:]...)
 	cmd.Env = base.EnvForDir(cmd.Dir, os.Environ())
 
-	fmt.Println("toolID", name, path)
+	// fmt.Println("toolID", name, path)
 	var stdout, stderr bytes.Buffer
 	cmd.Stdout = &stdout
 	cmd.Stderr = &stderr

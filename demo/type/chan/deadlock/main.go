@@ -176,8 +176,8 @@ func test9() {
 	const P = 4
 	const L = 3
 	for p := 0; p < P; p++ {
-		go func() {
-			for i := 0; i < L; i++ {
+		go func() { 
+			for i := 0; i < L;i++ {
 				c <- i
 			}
 		}()
