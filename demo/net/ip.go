@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"fmt"
 	"net"
 	"os"
 	"syscall"
@@ -13,6 +14,12 @@ import (
 func main() {
 	spew.Dump(interfaceAddrTable(nil))
 	spew.Dump(net.InterfaceAddrs())
+
+	addrs, _ := net.InterfaceAddrs()
+
+	for _, addr := range addrs {
+		fmt.Println(addr.String())
+	}
 }
 
 func interfaceByIndex(ift []net.Interface, index int) (*net.Interface, error) {
