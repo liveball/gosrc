@@ -4,7 +4,11 @@
 
 package types
 
-import "testing"
+import (
+	"fmt"
+	"reflect"
+	"testing"
+)
 
 func TestIsAlias(t *testing.T) {
 	check := func(obj *TypeName, want bool) {
@@ -25,13 +29,14 @@ func TestIsAlias(t *testing.T) {
 	pkg := NewPackage("p", "p")
 	t1 := NewTypeName(0, pkg, "t1", nil)
 	n1 := NewNamed(t1, new(Struct), nil)
+	fmt.Println(reflect.TypeOf(t1), reflect.TypeOf(n1))
 	for _, test := range []struct {
 		name  *TypeName
 		alias bool
 	}{
-		{NewTypeName(0, nil, "t0", nil), false},            // no type yet
-		{NewTypeName(0, pkg, "t0", nil), false},            // no type yet
-		{t1, false},                                        // type name refers to named type and vice versa
+		{NewTypeName(0, nil, "t0", nil), false}, // no type yet
+		{NewTypeName(0, pkg, "t0", nil), false}, // no type yet
+		{t1, false},                             // type name refers to named type and vice versa
 		{NewTypeName(0, nil, "t2", &emptyInterface), true}, // type name refers to unnamed type
 		{NewTypeName(0, pkg, "t3", n1), true},              // type name refers to named type with different type name
 		{NewTypeName(0, nil, "t4", Typ[Int32]), true},      // type name refers to basic type with different name
