@@ -12,9 +12,11 @@
 
 >3、设置引导安装到当前安装目录
 
-` $ GOROOT_BOOTSTRAP=/ ./all.bash ` use /  
+### use / 
+` $ GOROOT_BOOTSTRAP=/ ./all.bash `  
 
-` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash ` use GOROOT  
+###  use GOROOT  
+` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash `
 
 ` $ GOOS=darwin GOARCH=amd64 ./bootstrap.bash`
 

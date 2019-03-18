@@ -3,10 +3,10 @@ https://studygolang.com/articles/17961
 
 https://blog.gopheracademy.com/advent-2018/postmortem-debugging-delve/
 
-# 编译
+# 用户库和标准库 全量编译
 go build -o server -gcflags "all=-N -l"
 
-# 编译
+# 用户库编译
 go build -o server -gcflags "-N -l"
 
 # 启动
