@@ -20,6 +20,8 @@ func main() {
 
 	println(compare("1.2.3a", "1.2.4b"))
 	println(compare("1.2.3a", "1.2.4b"))
+
+	println(compare("1.12.3", "1.1.3"))
 }
 
 // v1=1.2.3a v2=1.2.4b

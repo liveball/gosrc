@@ -67,3 +67,7 @@
 
 /go/*.out
 /go/*.gdb_history
+
+/main
+/*.o
+/*.s
