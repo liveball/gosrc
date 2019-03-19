@@ -1,10 +1,10 @@
-## 深入go1.11.1 源码学习
+## 深入go 源码学习
 
 ### 使用GODEV 跑标准库的test
 
 >1、设置GODEV 为自己的源码目录  
 
-` $  GODEV= go1.11.1 的绝对路径 `  
+` $  GODEV= go 的绝对路径 `  
 
 >2、进入源码目录
 
@@ -12,15 +12,17 @@
 
 >3、设置引导安装到当前安装目录
 
-` $ GOROOT_BOOTSTRAP=/ ./all.bash ` use /  
+### use / 
+` $ GOROOT_BOOTSTRAP=./ GO_GCFLAGS="-N -l" ./all.bash `  
 
-` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash ` use GOROOT  
+###  use GOROOT  
+` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash `
 
 ` $ GOOS=darwin GOARCH=amd64 ./bootstrap.bash`
 
 >4、解决use of internal package cmd/internal/obj not allowed
 
-`GOROOT=/data/app/go/src/go1.11.1`
+`GOROOT=/data/app/go/src/go`
 `export PATH=$GOROOT/bin:$PATH`
 `go test -v -run=Dynlink`
 
@@ -38,13 +40,13 @@ Building Go toolchain3 using go_bootstrap and Go toolchain2.
 Building packages and commands for darwin/amd64.
 ---
 ##### API check
-Go version is "go1.11.1", ignoring -next /data/app/go/src/go1.11.1/api/next.txt
+Go version is "go", ignoring -next /data/app/go/src/go/api/next.txt
 
 ALL TESTS PASSED
 ---
-Installed Go for darwin/amd64 in /data/app/go/src/go1.11.1
-Installed commands in /data/app/go/src/go1.11.1/bin
-*** You need to add /data/app/go/src/go1.11.1/bin to your PATH.
+Installed Go for darwin/amd64 in /data/app/go/src/go
+Installed commands in /data/app/go/src/go/bin
+*** You need to add /data/app/go/src/go/bin to your PATH.
 
 ```
 
@@ -68,6 +70,7 @@ Installed commands in /data/app/go/src/go1.11.1/bin
 	ok  	runtime	0.031s
 
    `$GODEV/bin/go test -run=NONE -v -bench=ChanProdCons0`
+
 	goos: darwin
 	goarch: amd64
 	pkg: runtime
@@ -76,13 +79,18 @@ Installed commands in /data/app/go/src/go1.11.1/bin
 	ok      runtime 1.919s
 
     `$GODEV/bin/go test -v -bench=. -run=Benchmark`
-	goos: darwin
-	goarch: amd64
-	pkg: runtime
-	BenchmarkMakeChan/Byte-4                        30000000                47.3 ns/op
-	BenchmarkMakeChan/Int-4                         20000000                54.2 ns/op
-	BenchmarkMakeChan/Ptr-4                         10000000               130 ns/op
-	BenchmarkMakeChan/Struct/0-4                    30000000                41.3 ns/op
+
+		```
+
+		goos: darwin
+		goarch: amd64
+		pkg: runtime
+		BenchmarkMakeChan/Byte-4                        30000000                47.3 ns/op
+		BenchmarkMakeChan/Int-4                         20000000                54.2 ns/op
+		BenchmarkMakeChan/Ptr-4                         10000000               130 ns/op
+		BenchmarkMakeChan/Struct/0-4                    30000000                41.3 ns/op
+
+	 ```
    
 
 ```go

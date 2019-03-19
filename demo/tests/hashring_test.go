@@ -1,10 +1,9 @@
 package tests
 
+
 import (
 	"fmt"
 	"testing"
-
-	"github.com/g4zhuj/hashring"
 )
 
 func Test_hash(t *testing.T) {
@@ -24,5 +23,4 @@ func Test_hash(t *testing.T) {
 	//get key's node
 	node := hash.GetNode("key")
 	fmt.Println(node)
-
 }

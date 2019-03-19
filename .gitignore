@@ -1,69 +1,69 @@
-.DS_Store
-*.[56789ao]
-*.a[56789o]
-*.so
-*.pyc
-._*
-.nfs.*
-[56789a].out
-*~
-*.orig
-*.rej
-*.exe
-.*.swp
-core
-*.cgo*.go
-*.cgo*.c
-_cgo_*
-_obj
-_test
-_testmain.go
+/go/.DS_Store
+/go/*.[56789ao]
+/go/*.a[56789o]
+/go/*.so
+/go/*.pyc
+/go/._*
+/go/.nfs.*
+/go/[56789a].out
+/go/*~
+/go/*.orig
+/go/*.rej
+/go/*.exe
+/go/.*.swp
+/go/core
+/go/*.cgo*.go
+/go/*.cgo*.c
+/go/_cgo_*
+/go/_obj
+/go/_test
+/go/_testmain.go
 
-/VERSION.cache
-/bin/
-/build.out
-/doc/articles/wiki/*.bin
-/goinstall.log
-/last-change
-/misc/cgo/life/run.out
-/misc/cgo/stdio/run.out
-/misc/cgo/testso/main
-/pkg/
-/src/*.*/
-/src/cmd/cgo/zdefaultcc.go
-/src/cmd/dist/dist
-/src/cmd/go/internal/cfg/zdefaultcc.go
-/src/cmd/go/internal/cfg/zosarch.go
-/src/cmd/internal/objabi/zbootstrap.go
-/src/go/build/zcgo.go
-/src/go/doc/headscan
-/src/runtime/internal/sys/zversion.go
-/src/unicode/maketables
-/test.out
-/test/garbage/*.out
-/test/pass.out
-/test/run.out
-/test/times.out
+/go/VERSION.cache
+/go/bin/
+/go/build.out
+/go/doc/articles/wiki/*.bin
+/go/goinstall.log
+/go/last-change
+/go/misc/cgo/life/run.out
+/go/misc/cgo/stdio/run.out
+/go/misc/cgo/testso/main
+/go/pkg/
+/go/src/*.*/
+/go/src/cmd/cgo/zdefaultcc.go
+/go/src/cmd/dist/dist
+/go/src/cmd/go/internal/cfg/zdefaultcc.go
+/go/src/cmd/go/internal/cfg/zosarch.go
+/go/src/cmd/internal/objabi/zbootstrap.go
+/go/src/go/build/zcgo.go
+/go/src/go/doc/headscan
+/go/src/runtime/internal/sys/zversion.go
+/go/src/unicode/maketables
+/go/test.out
+/go/test/garbage/*.out
+/go/test/pass.out
+/go/test/run.out
+/go/test/times.out
 
-/src/*.mod/
+/go/src/*.mod/
 
 # This file includes artifacts of Go build that should not be checked in.
 # For files created by specific development environment (e.g. editor),
 # use alternative ways to exclude files from git.
 # For example, set up .git/info/exclude or use a global .gitignore.
 # Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+/go/*.exe
+/go/*.exe~
+/go/*.dll
+/go/*.so
+/go/*.dylib
 
 # Test binary, build with `go test -c`
-*.test
+/go/*.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-.vscode
+/go/*.out
+/go/.vscode
 
-*.out
-*.gdb_history
+/go/*.out
+/go/*.gdb_history
