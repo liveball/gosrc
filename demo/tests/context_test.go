@@ -1,6 +1,7 @@
 package tests
 
 import (
+	"context"
 	"fmt"
 	"math/rand"
 	"runtime"
@@ -8,8 +9,6 @@ import (
 	"sync"
 	"testing"
 	"time"
-
-	"gowhole/src/go1.10.1/context"
 )
 
 func Test_cancel(t *testing.T) {
