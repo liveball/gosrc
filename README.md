@@ -14,6 +14,7 @@
 
 ### use / 
 ` $ GOROOT_BOOTSTRAP=./ GO_GCFLAGS="-N -l" ./all.bash `  
+### 不能 -+  compile: cannot disable optimizations while compiling runtime
 
 ###  use GOROOT  
 ` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash `
@@ -22,8 +23,8 @@
 
 >4、解决use of internal package cmd/internal/obj not allowed
 
-`GOROOT=/data/app/go/src/go`
-`export PATH=$GOROOT/bin:$PATH`
+`GOROOT=/data/app/go/src/gosrc/go && export PATH=$GOROOT/bin:$PATH`
+
 `go test -v -run=Dynlink`
 
 >5、go build go
