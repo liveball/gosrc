@@ -15,6 +15,8 @@
 
 ### go tool compile -N -l -S main.go > main.s
 
+### go build -gcflags -S main.go  more asm
+
 ## gctrace
 ### go build -o main -gcflags "-N -l" && GODEBUG=gctrace=1   ./main 
 
