@@ -466,6 +466,7 @@ func (check *Checker) collectObjects() {
 				// base is a potential base type name; determine
 				// "underlying" defined type and associate f with it
 				if tname := check.resolveBaseTypeName(base); tname != nil {
+					println("type:", tname.Name(), "collect methods=>", f.Name())
 					check.methods[tname] = append(check.methods[tname], f)
 				}
 			}
@@ -557,6 +558,7 @@ func (check *Checker) packageObjects() {
 	}
 	// phase 2
 	for _, obj := range aliasList {
+		println("type alias", obj.Name())
 		check.objDecl(obj, nil, typePath)
 	}
 

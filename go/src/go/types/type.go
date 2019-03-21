@@ -482,9 +482,17 @@ func (m *Map) Underlying() Type       { return m }
 func (c *Chan) Underlying() Type      { return c }
 func (t *Named) Underlying() Type     { return t.underlying }
 
-func (b *Basic) String() string     { return TypeString(b, nil) }
-func (a *Array) String() string     { return TypeString(a, nil) }
-func (s *Slice) String() string     { return TypeString(s, nil) }
+func (b *Basic) String() string {
+	ty := TypeString(b, nil)
+	println("basic", b.name)
+	return ty
+}
+func (a *Array) String() string { return TypeString(a, nil) }
+func (s *Slice) String() string {
+	ty := TypeString(s, nil)
+	println("slice", ty)
+	return ty
+}
 func (s *Struct) String() string    { return TypeString(s, nil) }
 func (p *Pointer) String() string   { return TypeString(p, nil) }
 func (t *Tuple) String() string     { return TypeString(t, nil) }

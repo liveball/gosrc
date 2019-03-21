@@ -115,6 +115,7 @@ func (check *Checker) objDecl(obj Object, def *Named, path []*TypeName) {
 		return
 	}
 
+	println("type", obj.Name(), "=>", obj.color().String())
 	switch obj.color() {
 	case white:
 		assert(obj.Type() == nil)

@@ -14,6 +14,6 @@ func (p Person) GetUID() int64 {
 
 func main() {
 	var p P
-	p = Person{111} //成功实现USB接口
+	p = Person{111} //成功实现P接口
 	println(p.GetUID())
 }
