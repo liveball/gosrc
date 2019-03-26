@@ -620,7 +620,6 @@ func (p *parser) parseType() ast.Expr {
 	}
 
 	typ := p.tryType()
-
 	if typ == nil {
 		pos := p.pos
 		p.errorExpected(pos, "type")
@@ -957,7 +956,6 @@ func (p *parser) parseInterfaceType() *ast.InterfaceType {
 	if p.trace {
 		defer un(trace(p, "InterfaceType"))
 	}
-
 	pos := p.expect(token.INTERFACE)
 	lbrace := p.expect(token.LBRACE)
 	scope := ast.NewScope(nil) // interface scope

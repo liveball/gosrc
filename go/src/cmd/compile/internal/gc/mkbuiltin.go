@@ -38,6 +38,7 @@ func main() {
 	fmt.Fprintln(&b, `import "cmd/compile/internal/types"`)
 
 	mkbuiltin(&b, "runtime")
+	fmt.Println("mkbuiltin", b.String())
 
 	out, err := format.Source(b.Bytes())
 	if err != nil {
