@@ -42,6 +42,7 @@ func (s *Scope) Lookup(name string) *Object {
 //
 func (s *Scope) Insert(obj *Object) (alt *Object) {
 	if alt = s.Objects[obj.Name]; alt == nil {
+		// println("Insert obj", obj.Name)
 		s.Objects[obj.Name] = obj
 	}
 	return

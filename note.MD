@@ -116,6 +116,49 @@ varDecl()
 typExpr()
 typExprInternal()
 selector()
+
 ```
 
-parseTypeDefinition
+``` go
+
+// parse
+func ParseFile(fset *token.FileSet, filename string, src interface{}, mode Mode) (f *ast.File, err error) 
+
+func (p *parser) parseFile() *ast.File
+
+func (p *parser) parseDecl(sync map[token.Token]bool) ast.Decl 
+
+func (p *parser) parseFuncDecl() *ast.FuncDecl
+
+func (p *parser) parseParameters(scope *ast.Scope, ellipsisOk bool) *ast.FieldList 
+
+func (p *parser) parseParameterList(scope *ast.Scope, ellipsisOk bool) (params []*ast.Field)
+
+func (p *parser) resolve(x ast.Expr)
+
+func (p *parser) tryResolve(x ast.Expr, collectUnresolved bool)
+
+panic.go
+func gopanic(e interface{}) {
+     reflectcall(nil, unsafe.Pointer(d.fn), deferArgs(d), uint32(d.siz), uint32(d.siz))
+}
+
+parseTypeDefinition()
+
+// parse 
+parseUnaryExpr()
+parsePrimaryExpr()
+parseOperand()
+parseFuncTypeOrLit()
+parseBody()
+parseCaseClause()
+parseStmtList()
+parseStmt()
+parseForStmt()
+parseSimpleStmt()
+parseLhsList()
+parseExprList()
+parseExpr()
+parseBinaryExpr()
+
+```

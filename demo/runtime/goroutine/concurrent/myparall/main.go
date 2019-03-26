@@ -2,12 +2,16 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"runtime"
+	"runtime/trace"
 	"sync"
 	"sync/atomic"
 )
 
 func main() {
+	trace.Start(os.Stdout)
+	defer trace.Stop()
 	// parallel starts parallel image processing based on the current GOMAXPROCS value.
 	// If GOMAXPROCS = 1 it uses no parallelization.
 	// If GOMAXPROCS > 1 it spawns N=GOMAXPROCS workers in separate goroutines.
