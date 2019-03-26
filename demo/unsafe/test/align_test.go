@@ -47,10 +47,15 @@ type user6 struct {
 // 在分析之前，我们先看下内存对齐的规则：
 //   1、计算一个的字段的对齐，就是将当前字段的内存大小填充为对齐值的大小
 
-//   2、struct在每个字段都内存对齐之后，其本身也要进行对齐。
+//   2、struct在每个字段都对齐之后，其本身也要进行对齐。
 
 //  以上这两条规则要好好理解，理解明白了才可以分析下面的struct结构体。
 //  在这里再次提醒，对齐值也叫对齐系数、对齐倍数，对齐模数。这就是说，每个字段在内存中的偏移量是对齐值的倍数即可。
+
+// 结构体的成员变量，第一个成员变量的偏移量为 0。
+// 往后的每个成员变量的对齐值必须为编译器默认对齐长度（#pragma pack(n)）或当前成员变量类型的长度（unsafe.Sizeof），取最小值作为当前类型的对齐值。其偏移量必须为对齐值的整数倍
+// 结构体本身，对齐值必须为编译器默认对齐长度（#pragma pack(n)）或结构体的所有成员变量类型中的最大长度，取最大数的最小整数倍作为对齐值
+// 结合以上两点，可得知若编译器默认对齐长度（#pragma pack(n)）超过结构体内成员变量的类型最大长度时，默认对齐长度是没有任何意义的
 
 func Test_align(t *testing.T) {
 	var u1 user1
@@ -59,6 +64,20 @@ func Test_align(t *testing.T) {
 	var u4 user4
 	var u5 user5
 	var u6 user6
+
+	// type user1 struct {
+	// 	b byte
+	// 	i int32
+	// 	j int64
+	// }
+
+	// 例： map[int64]int8
+	// k/v/k/v/k/v/k/v
+	// xxxx|xxxx|vaaa|aaaa|  ... xxxx|xxxx|vaaa|aaaa|
+
+	// k/k/k/k/v/v/v/v
+	// xxxx|xxxx|xxxx|xxxx|  ... vvvv|vvvv|vvvv|vvvv|
+
 	showAlign(u1) //bxxx|iiii|jjjj|jjjj
 	showAlign(u2) //bxxx|xxxx|jjjj|jjjj|iiii|xxxx
 	showAlign(u3) //iiii|bxxx|jjjj|jjjj
