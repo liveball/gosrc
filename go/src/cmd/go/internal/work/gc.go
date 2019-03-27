@@ -45,6 +45,7 @@ func (gcToolchain) gc(b *Builder, a *Action, archive string, importcfg []byte, a
 		out := "_go_.o"
 		ofile = objdir + out
 	}
+	println("gc", ofile)
 
 	pkgpath := p.ImportPath
 	if cfg.BuildBuildmode == "plugin" {

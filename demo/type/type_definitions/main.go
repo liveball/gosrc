@@ -91,7 +91,7 @@ func newBuiltin(id builtinId) *Builtin {
 }
 
 func def(b *Builtin) {
-	println(b.id, b.name)
+	// println(b.id, b.name)
 }
 
 func main() {

@@ -78,6 +78,8 @@ func init() {
 }
 
 func main() {
+	println("main start")
+	go11tag := true //debug
 	_ = go11tag
 	flag.Usage = base.Usage
 	flag.Parse()

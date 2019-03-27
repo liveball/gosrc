@@ -268,7 +268,7 @@ func Main(archInit func(*Arch)) {
 		genDwarfInline = 0
 		Ctxt.Flag_locationlists = false
 	}
-	println(flag.NArg())
+	println(flag.NArg(), 11111)
 
 	if flag.NArg() < 1 && debugstr != "help" && debugstr != "ssa/help" {
 		usage()
