@@ -29,6 +29,8 @@
 
 ### go build -o main -gcflags "all=-N -l" demo/type/interface/struct/main.go && go tool objdump -S -s "main\.main" main > main.s
 
-
+### list release tag
+### go list  -f '{{context.ReleaseTags}}' runtime | grep go1.10
+ [go1.1 go1.2 go1.3 go1.4 go1.5 go1.6 go1.7 go1.8 go1.9 go1.10 go1.11]
 
 go build -o main -gcflags "all=-N -l -m" demo/runtime/memory/closure/main.go

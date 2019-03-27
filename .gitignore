@@ -71,6 +71,8 @@
 /main
 /*.o
 /*.s
+/*.asm
+/*.a
 /*.out
 /*.gdb_history
 /.vscode

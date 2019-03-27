@@ -40,5 +40,6 @@ func Tool(toolName string) string {
 		SetExitStatus(2)
 		Exit()
 	}
+	// println("Tool", toolPath)
 	return toolPath
 }

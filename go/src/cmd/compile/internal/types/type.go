@@ -459,6 +459,7 @@ func New(et EType) *Type {
 		t.Extra = new(Func)
 	case TSTRUCT:
 		t.Extra = new(Struct)
+		fmt.Println(t.Extra)
 	case TINTER:
 		t.Extra = new(Interface)
 	case TPTR32, TPTR64:
@@ -757,6 +758,7 @@ func (t *Type) IsVariadic() bool {
 // Recv returns the receiver of function type t, if any.
 func (t *Type) Recv() *Field {
 	s := t.Recvs()
+	// println(s.String())
 	if s.NumFields() == 0 {
 		return nil
 	}

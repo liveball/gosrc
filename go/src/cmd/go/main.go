@@ -78,7 +78,7 @@ func init() {
 }
 
 func main() {
-	println("main start")
+	// println("main start")
 	go11tag := true //debug
 	_ = go11tag
 	flag.Usage = base.Usage
@@ -218,6 +218,7 @@ BigCmdLoop:
 				cmd.Flag.Parse(args[1:])
 				args = cmd.Flag.Args()
 			}
+			// fmt.Println(cmd, args)
 			cmd.Run(cmd, args)
 			base.Exit()
 			return

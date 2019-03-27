@@ -28,7 +28,13 @@
 `go test -v -run=Dynlink`
 
 >5、go build go
-`go run main.go build -debug-actiongraph="json"`
+`$GODEV/bin/go run main.go build -debug-actiongraph="json"`
+
+### 调试 cmd/go 进程启动
+`$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/go/main.go run  /data/app/go/src/gosrc/demo/runtime/gc/gctodo/main.go`
+
+### 调试 cmd/compile 编译器
+`$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/compile/main.go -o t.a /data/app/go/src/gosrc/demo/type/type_definitions/method_set/main.go`
 
 
 ```

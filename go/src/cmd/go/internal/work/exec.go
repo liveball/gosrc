@@ -1823,6 +1823,7 @@ func (b *Builder) runOut(dir string, env []string, cmdargs ...interface{}) ([]by
 	cmdline := str.StringList(cmdargs...)
 
 	for _, arg := range cmdline {
+		// fmt.Println(arg)
 		// GNU binutils commands, including gcc and gccgo, interpret an argument
 		// @foo anywhere in the command line (even following --) as meaning
 		// "read and insert arguments from the file named foo."

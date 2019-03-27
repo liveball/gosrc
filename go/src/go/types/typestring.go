@@ -236,7 +236,7 @@ func writeType(buf *bytes.Buffer, typ Type, qf Qualifier, visited []Type) {
 			// differently from named types at package level to avoid
 			// ambiguity.
 			s = obj.name
-			println(2222, obj.pkg, obj.name, obj.typ.Underlying().String(), obj.color_)
+			// println(2222, obj.pkg, obj.name, obj.typ.Underlying().String(), obj.color_)
 		}
 		buf.WriteString(s)
 

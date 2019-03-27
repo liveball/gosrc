@@ -379,6 +379,7 @@ func (c *Cmd) Start() error {
 	}
 	c.childFiles = append(c.childFiles, c.ExtraFiles...)
 
+	// fmt.Println("cmd os.StartProcess", c.argv(), c.Dir)
 	var err error
 	c.Process, err = os.StartProcess(c.Path, c.argv(), &os.ProcAttr{
 		Dir:   c.Dir,

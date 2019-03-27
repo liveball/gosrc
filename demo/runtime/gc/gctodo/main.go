@@ -9,14 +9,15 @@ import (
 )
 
 var arches = []string{
-	"amd64",
-	"arm",
-	"arm64",
-	"mips",
-	"mips64",
-	"ppc64",
-	"s390x",
-	"x86",
+	// "amd64",
+	// "arm",
+	// "arm64",
+	// "mips",
+	// "mips64",
+	// "ppc64",
+	// "s390x",
+	// "x86",
+	"gc",
 }
 
 func main() {
@@ -32,12 +33,20 @@ func main() {
 
 	m := make(map[types.Object]int)
 	note := func(obj types.Object) {
-		if pkg := obj.Pkg(); pkg == nil || pkg.Path() != "cmd/compile/internal/gc" {
+		pkg := obj.Pkg()
+		if pkg == nil {
+			return
+		}
+		// println(pkg.Path())
+		if pkg.Path() != "cmd/compile/internal/gc" {
 			return
 		}
 
 		switch obj := obj.(type) {
 		case *types.Func:
+			if obj.Name() == "Main" {
+				println(obj.Name())
+			}
 			if obj.Type().(*types.Signature).Recv() != nil {
 				return
 			}
@@ -58,6 +67,7 @@ func main() {
 			}
 		}
 		for _, obj := range pkg.Uses {
+			// println(obj.Name())
 			note(obj)
 		}
 	}
@@ -67,7 +77,7 @@ func main() {
 		out = append(out, fmt.Sprintln(obj.Name(), count))
 	}
 	sort.Strings(out)
-	for _, s := range out {
-		fmt.Print(s)
-	}
+	// for _, s := range out {
+	// 	fmt.Print(s)
+	// }
 }
