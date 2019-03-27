@@ -9,6 +9,9 @@
 ##  build
 ### go build -o main -gcflags "all=-N -l"
 
+### 打印编译信息
+  `go tool compile -d=slice,append,gcprog,closure,export,wb -o t.a main.go`
+
 ## print asm
 
 ### go tool objdump -S -s "main\.main" main
