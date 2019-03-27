@@ -57,6 +57,22 @@ type user6 struct {
 // 结构体本身，对齐值必须为编译器默认对齐长度（#pragma pack(n)）或结构体的所有成员变量类型中的最大长度，取最大数的最小整数倍作为对齐值
 // 结合以上两点，可得知若编译器默认对齐长度（#pragma pack(n)）超过结构体内成员变量的类型最大长度时，默认对齐长度是没有任何意义的
 
+type Part1 struct {
+	a bool //axxx|bbbb|cxxx|xxxx|dddd|dddd|exxx|xxxx
+	b int32
+	c int8
+	d int64
+	e byte
+}
+
+type Part2 struct {
+	e byte // ecax|bbbb|dddd|dddd
+	c int8
+	a bool
+	b int32
+	d int64
+}
+
 func Test_align(t *testing.T) {
 	var u1 user1
 	var u2 user2
@@ -64,6 +80,8 @@ func Test_align(t *testing.T) {
 	var u4 user4
 	var u5 user5
 	var u6 user6
+	part1 := Part1{}
+	part2 := Part2{}
 
 	// type user1 struct {
 	// 	b byte
@@ -78,12 +96,14 @@ func Test_align(t *testing.T) {
 	// k/k/k/k/v/v/v/v
 	// xxxx|xxxx|xxxx|xxxx|  ... vvvv|vvvv|vvvv|vvvv|
 
-	showAlign(u1) //bxxx|iiii|jjjj|jjjj
-	showAlign(u2) //bxxx|xxxx|jjjj|jjjj|iiii|xxxx
-	showAlign(u3) //iiii|bxxx|jjjj|jjjj
-	showAlign(u4) //iiii|xxxx|jjjj|jjjj|bxxx|xxxx
-	showAlign(u5) //jjjj|jjjj|bxxx|iiii
-	showAlign(u6) //jjjj|jjjj|iiii|bxxx
+	showAlign(u1)    //bxxx|iiii|jjjj|jjjj
+	showAlign(u2)    //bxxx|xxxx|jjjj|jjjj|iiii|xxxx
+	showAlign(u3)    //iiii|bxxx|jjjj|jjjj
+	showAlign(u4)    //iiii|xxxx|jjjj|jjjj|bxxx|xxxx
+	showAlign(u5)    //jjjj|jjjj|bxxx|iiii
+	showAlign(u6)    //jjjj|jjjj|iiii|bxxx
+	showAlign(part1) // axxx|bbbb|cxxx|xxxx|dddd|dddd|exxx|xxxx
+	showAlign(part2) // ecax|bbbb|dddd|dddd
 
 	// 字段      uint8，大小： 1，对齐： 1，字段对齐： 1，偏移： 0
 	// 字段      int32，大小： 4，对齐： 4，字段对齐： 4，偏移： 4
