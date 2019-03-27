@@ -7,11 +7,34 @@ import (
 
 func Test_paging(t *testing.T) {
 	var data = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
-	arr, err := paging(3, 5, data)
+	arr, err := cursor(2, 5, data)
 	fmt.Println("arr:", arr, "err:", err)
+
+	fmt.Println(paging(2, 5, data))
 }
 
-func paging(start int, ps int, data []int) ([]int, string) {
+func paging(pn int, ps int, data []int) (res []int) {
+	var start, end int
+	if pn > 1 {
+		start = (pn - 1) * ps
+	}
+	end = pn * ps
+	total := len(data)
+	if total == 0 {
+		return
+	}
+	switch {
+	case total <= start:
+		res = make([]int, 0)
+	case total <= end:
+		res = data[start:total]
+	default:
+		res = data[start:end]
+	}
+	return
+}
+
+func cursor(start int, ps int, data []int) ([]int, string) {
 	var arr []int
 	end := ps + start - 1
 	switch {

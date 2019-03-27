@@ -6,7 +6,7 @@ import (
 	"unsafe"
 )
 
-func main() {
+func rangeTest() {
 	println("=====array=========")
 	a := [3]int{0, 1, 2}
 	println(&a, &a[0])

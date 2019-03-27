@@ -6,7 +6,7 @@ import (
 	"unsafe"
 )
 
-func main() {
+func appendTest() {
 	// a := []byte{1, 2, 3, 3}
 	// b := append(a[:2], 4, 4)
 	// fmt.Printf("a(%+v) len(%d) cap(%d) %#v\n",
@@ -28,4 +28,11 @@ func main() {
 		d, len(d), cap(d),
 		(*reflect.SliceHeader)(unsafe.Pointer(&d)),
 	)
+}
+
+func comparable() {
+	var a interface{}
+	a = [...]string{"1", "2"}
+
+	fmt.Println(reflect.TypeOf(a).Comparable())
 }
