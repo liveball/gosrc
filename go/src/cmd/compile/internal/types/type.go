@@ -459,7 +459,7 @@ func New(et EType) *Type {
 		t.Extra = new(Func)
 	case TSTRUCT:
 		t.Extra = new(Struct)
-		fmt.Println(t.Extra)
+		// fmt.Println(t.Extra)
 	case TINTER:
 		t.Extra = new(Interface)
 	case TPTR32, TPTR64:

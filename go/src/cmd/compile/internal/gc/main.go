@@ -82,14 +82,11 @@ var debugtab = []struct {
 }
 
 const debugHelpHeader = `usage: -d arg[,arg]* and arg is <key>[=<value>]
-
 <key> is one of:
-
 `
 
 const debugHelpFooter = `
 <value> is key-specific.
-
 Key "pctab" supports values:
 	"pctospadj", "pctofile", "pctoline", "pctoinline", "pctopcdata"
 `
@@ -268,7 +265,7 @@ func Main(archInit func(*Arch)) {
 		genDwarfInline = 0
 		Ctxt.Flag_locationlists = false
 	}
-	println(flag.NArg(), 11111)
+	// println(flag.NArg(), 11111)
 
 	if flag.NArg() < 1 && debugstr != "help" && debugstr != "ssa/help" {
 		usage()

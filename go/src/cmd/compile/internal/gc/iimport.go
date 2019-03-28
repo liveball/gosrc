@@ -282,11 +282,13 @@ func (r *importReader) doDecl(n *Node) {
 
 	case 'C':
 		typ, val := r.value()
+		// println("underlying...", typ)
 
 		importconst(r.p.ipkg, pos, n.Sym, typ, val)
 
 	case 'F':
 		typ := r.signature(nil)
+		// println("underlying...", typ)
 
 		importfunc(r.p.ipkg, pos, n.Sym, typ)
 		r.funcExt(n)
@@ -309,6 +311,7 @@ func (r *importReader) doDecl(n *Node) {
 			defercheckwidth()
 		}
 		underlying := r.typ()
+		// println("underlying...", underlying)
 		copytype(typenod(t), underlying)
 		if !deferring {
 			resumecheckwidth()
