@@ -26,6 +26,7 @@
 ##  goroutine schedtrace
 ### go build -o main demo/runtime/goroutine/main.go && GODEBUG=schedtrace=10000,scheddetail=1 ./main
 
+sudo go tool dist test -v -run=^go_test:runtime$
 
 ## test
 ### go tool compile -N -l -S demo/type/interface/struct/main.go > main.s
