@@ -171,6 +171,7 @@ func walkrange(n *Node) *Node {
 	t := n.Type
 
 	a := n.Right
+
 	lno := setlineno(a)
 	n.Right = nil
 
@@ -218,6 +219,7 @@ func walkrange(n *Node) *Node {
 
 		// orderstmt arranged for a copy of the array/slice variable if needed.
 		ha := a
+		// println(ha)
 
 		hv1 := temp(types.Types[TINT])
 		hn := temp(types.Types[TINT])

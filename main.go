@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	println("hello")
+	fmt.Printf("aa")
 
 	a := make([]int, 0)
 	a = append(a, 1)

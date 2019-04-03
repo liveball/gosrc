@@ -4,7 +4,7 @@
 
 >1、设置GODEV 为自己的源码目录  
 
-` $  GODEV= go 的绝对路径 `  
+` $  GODEV= go 的绝对路径 eg: /data/app/go/src/gosrc/go`  
 
 >2、进入源码目录
 
@@ -37,7 +37,9 @@
 `$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/compile/main.go -o t.a /data/app/go/src/gosrc/demo/type/type_definitions/method_set/main.go`
 
 
-```
+`$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/compile/main.go -o t.a /data/app/go/src/gosrc/demo/base_learn/slice/perform/main.go`
+
+```sh
 
 Building Go cmd/dist using /usr/local/go.
 Building Go toolchain1 using /usr/local/go.

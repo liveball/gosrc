@@ -6,6 +6,8 @@ import (
 	"unsafe"
 )
 
+func main() {}
+
 func appendTest() {
 	// a := []byte{1, 2, 3, 3}
 	// b := append(a[:2], 4, 4)

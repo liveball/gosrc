@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"testing"
 	"unsafe"
 )
 
-func rangeTest() {
+func TestRange(t *testing.T) {
 	println("=====array=========")
 	a := [3]int{0, 1, 2}
 	println(&a, &a[0])
