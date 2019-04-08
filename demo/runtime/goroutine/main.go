@@ -11,6 +11,7 @@ import (
 
 //export GOMAXPROCS=1
 //$GODEV/bin/go build -o main main.go && GODEBUG=schedtrace=10000,scheddetail=1 ./main
+// !export GOMAXPROCS=1 && go build -o main ./demo/runtime/goroutine/dead/main.go && GODEBUG=schedtrace=10000,scheddetail=1 ./main
 
 //一个p执行的时候，会把当前g放入全局队列
 func main() {
