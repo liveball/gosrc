@@ -25,7 +25,8 @@ func test() {
 	ptrs = append(ptrs, uintptr(unsafe.Pointer(&d))) //每次创建100MB的对象，然后将其指针保存到全局对象ptrs
 }
 
-// go build -o main -gcflags "-N -l" && GODEBUG=gctrace=1   ./main
+// go build -o main -gcflags "-N -l" /data/app/go/src/gosrc/demo/runtime/gc/obj_by_uintptr/main.go && GODEBUG=gctrace=1,gccheckmark=1  ./main
+// GODEBUG=gctrace=1 ./main -index -http=:6060 2>&1 | gcvis
 
 // gc 1 @0.001s 0%: 0.004+93+0.032 ms clock, 0.016+0/0.006/93+0.12 ms cpu, 100->100->0 MB, 101 MB goal, 4 P (forced)
 // gc 2 @0.095s 0%: 0.004+0.098+0.014 ms clock, 0.018+0/0.086/0+0.059 ms cpu, 0->0->0 MB, 8 MB goal, 4 P (forced)
