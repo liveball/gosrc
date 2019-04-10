@@ -1,4 +1,8 @@
 
+### Go 程序的性能调试问题
+https://studygolang.com/articles/2498 
+### Debugging performance issues in Go programs
+https://software.intel.com/zh-cn/blogs/2014/05/10/debugging-performance-issues-in-go-programs
 
 // $GODEV/bin/go 使用开发模式
 // Gosched 让出cpu
