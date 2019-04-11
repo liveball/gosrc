@@ -1,5 +1,13 @@
 ## gorouine 调度
 
+## 并发、goroutines 和 GOMAXPROCS
+
+http://www.goinggo.net/2014/01/concurrency-goroutines-and-gomaxprocs.html
+
+## 调度器
+http://morsmachine.dk/go-scheduler
+
+
 ### Modifying the Runtime Scheduler
 https://groups.google.com/forum/#!topic/golang-nuts/QAsJqiV7ty0
 

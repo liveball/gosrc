@@ -15,15 +15,16 @@ import (
 	"time"
 )
 
-func HammerMutex(m *sync.Mutex, loops int, cdone chan bool) {
-	for i := 0; i < loops; i++ {
-		m.Lock()
-		m.Unlock()
-	}
-	cdone <- true
-}
+const (
+	mutexLocked = 1 << iota // mutex is locked
+	mutexWoken
+	mutexStarving
+	mutexWaiterShift = iota
+)
 
 func TestMutex(t *testing.T) {
+	println(mutexLocked, mutexWoken, mutexStarving, mutexWaiterShift)
+
 	if n := runtime.SetMutexProfileFraction(1); n != 0 {
 		t.Logf("got mutexrate %d expected 0", n)
 	}
@@ -36,6 +37,14 @@ func TestMutex(t *testing.T) {
 	for i := 0; i < 10; i++ {
 		<-c
 	}
+}
+
+func HammerMutex(m *sync.Mutex, loops int, cdone chan bool) {
+	for i := 0; i < loops; i++ {
+		m.Lock()
+		m.Unlock()
+	}
+	cdone <- true
 }
 
 var misuseTests = []struct {

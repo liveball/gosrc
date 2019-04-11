@@ -13,7 +13,7 @@ import (
 
 func deadloop() {
 	for {
-		runtime.Gosched() //
+		runtime.Gosched() //在gcwait导致的stw，让出p使得其他goroutine可以运行
 	}
 }
 func main() {
