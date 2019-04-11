@@ -13,6 +13,7 @@ import (
 
 func deadloop() {
 	for {
+		runtime.Gosched() //
 	}
 }
 func main() {
