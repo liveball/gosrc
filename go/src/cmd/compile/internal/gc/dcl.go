@@ -390,6 +390,7 @@ func funchdr(n *Node) {
 	Curfn = n
 
 	if n.Func.Nname != nil {
+		// fmt.Println("receivers n.Func.Nname:", n.Func.Nname)
 		funcargs(n.Func.Nname.Name.Param.Ntype)
 	} else if n.Func.Ntype != nil {
 		funcargs(n.Func.Ntype)
@@ -876,6 +877,7 @@ func addmethod(msym *types.Sym, t *types.Type, local, nointerface bool) *types.F
 		return nil
 	}
 
+	// fmt.Println("receivers addmethod:", rf)
 	mt := methtype(rf.Type)
 	if mt == nil || mt.Sym == nil {
 		pa := rf.Type
@@ -941,6 +943,7 @@ func addmethod(msym *types.Sym, t *types.Type, local, nointerface bool) *types.F
 	f.Type = t
 	f.SetNointerface(nointerface)
 
+	// fmt.Println("receivers method append:", f)
 	mt.Methods().Append(f)
 	return f
 }
