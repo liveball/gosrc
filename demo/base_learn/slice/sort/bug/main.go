@@ -2,41 +2,47 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 	"sort"
+	"unsafe"
 )
 
 type person struct {
-	age int
+	Age int `json:"age"`
 }
 
 func main() {
-	ps := make([]*person, 0, 3)
-	ps = append(ps, &person{
-		age: 3,
-	})
+	psMap := make(map[int][]*person)
 
-	ps = append(ps, &person{
-		age: 2,
-	})
+	for i := 6; i >= 0; i-- {
+		psMap[1] = append(psMap[1],
+			&person{
+				Age: i,
+			},
+		)
+	}
 
-	ps = append(ps, &person{
-		age: 1,
-	})
+	fmt.Println(psMap)
+	psNew, ok := psMap[1]
+	if !ok || len(psNew) == 0 {
+		return
+	}
+
+	fmt.Printf("psNew %#v\n",
+		(*reflect.SliceHeader)(unsafe.Pointer(&psNew)),
+	)
 
 	println("排序前:")
-	for _, v := range ps {
+	for _, v := range psNew {
 		fmt.Println(v)
 	}
 
-	sort.Slice(ps, func(i, j int) bool {
-		if ps[i] == nil {
-			return false
-		}
-		return ps[i].age < ps[j].age
+	sort.Slice(psNew, func(i, j int) bool {
+		return psNew[i].Age < psNew[j].Age
 	})
 
 	println("排序后:")
-	for _, v := range ps {
+	for _, v := range psNew {
 		fmt.Println(v)
 	}
 }

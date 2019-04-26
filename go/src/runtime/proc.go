@@ -1968,6 +1968,7 @@ func startTemplateThread() {
 //
 //go:nowritebarrierrec
 func templateThread() {
+	// println("templateThread")
 	lock(&sched.lock)
 	sched.nmsys++
 	checkdead()
@@ -4211,6 +4212,7 @@ func releasep() *p {
 func incidlelocked(v int32) {
 	lock(&sched.lock)
 	sched.nmidlelocked += v
+	println("incidlelocked", v)
 	if v > 0 {
 		checkdead()
 	}
@@ -4280,6 +4282,7 @@ func checkdead() {
 
 	// Maybe jump time forward for playground.
 	gp := timejump()
+	println("checkdead:", gp)
 	if gp != nil {
 		casgstatus(gp, _Gwaiting, _Grunnable)
 		globrunqput(gp)
