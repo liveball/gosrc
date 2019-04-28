@@ -3521,6 +3521,7 @@ func typecheckfunc(n *Node) {
 		}
 
 		n.Func.Nname.Sym = methodSym(rcvr.Type, n.Func.Shortname)
+		// fmt.Println("receivers method:", n.Func.Nname.Sym)
 		declare(n.Func.Nname, PFUNC)
 	}
 

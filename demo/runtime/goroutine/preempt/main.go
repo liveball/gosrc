@@ -13,8 +13,8 @@ func main() {
 	// goroutine 1
 	go func() {
 		for {
-			fmt.Println("1")
-			time.Sleep(1 * time.Second)
+			// fmt.Println("1")
+			// time.Sleep(1 * time.Second)
 		}
 	}()
 
@@ -26,5 +26,9 @@ func main() {
 		}
 	}()
 
-	time.Sleep(20 * time.Second)
+	// time.Sleep(20 * time.Second)
+	select {}
 }
+
+// export GOMAXPROCS=1
+// go build -o main -gcflags "-N  -l" /data/app/go/src/gosrc/demo/runtime/goroutine/preempt/main.go && GODEBUG="schedtrace=1000,scheddetail=1" ./main
