@@ -328,7 +328,6 @@ func closechan(c *hchan) {
 	if c == nil {
 		panic(plainError("close of nil channel"))
 	}
-
 	lock(&c.lock)
 	if c.closed != 0 {
 		unlock(&c.lock)
@@ -387,6 +386,7 @@ func closechan(c *hchan) {
 	}
 	unlock(&c.lock)
 
+	// println("closechan", glist)
 	// Ready all Gs now that we've dropped the channel lock.
 	for glist != nil {
 		gp := glist
@@ -704,9 +704,12 @@ func (q *waitq) enqueue(sgp *sudog) {
 func (q *waitq) dequeue() *sudog {
 	for {
 		sgp := q.first
+	    // println("dequeue", sgp)
+
 		if sgp == nil {
 			return nil
 		}
+
 		y := sgp.next
 		if y == nil {
 			q.first = nil

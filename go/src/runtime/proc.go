@@ -4274,6 +4274,7 @@ func checkdead() {
 			print("runtime: checkdead: find g ", gp.goid, " in status ", s, "\n")
 			throw("checkdead: runnable g")
 		}
+		println("checkdead readgstatus:", gp.paniconfault, grunning)
 	}
 	unlock(&allglock)
 	if grunning == 0 { // possible if main goroutine calls runtime·Goexit()
@@ -4282,7 +4283,7 @@ func checkdead() {
 
 	// Maybe jump time forward for playground.
 	gp := timejump()
-	println("checkdead:", gp)
+	println("checkdead:", gp, gp != nil)
 	if gp != nil {
 		casgstatus(gp, _Gwaiting, _Grunnable)
 		globrunqput(gp)

@@ -110,6 +110,7 @@ func (wg *WaitGroup) Wait() {
 		state := atomic.LoadUint64(statep)
 		v := int32(state >> 32)
 		w := uint32(state)
+		println("WaitGroup need to wait counter:", v)
 		if v == 0 {
 			// Counter is 0, no need to wait.
 			if race.Enabled {
@@ -127,6 +128,7 @@ func (wg *WaitGroup) Wait() {
 				// otherwise concurrent Waits will race with each other.
 				race.Write(unsafe.Pointer(semap))
 			}
+			println("WaitGroup runtime_Semacquire:", semap)
 			runtime_Semacquire(semap)
 			if *statep != 0 {
 				panic("sync: WaitGroup is reused before previous Wait has returned")
