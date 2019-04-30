@@ -22,7 +22,7 @@ type achTarget struct {
 
 var (
 	chanSize          = 1024
-	batchSize         = 10
+	batchSize         = 100
 	viewTargetChan    = make(chan *achTarget, chanSize)
 	likeTargetChan    = make(chan *achTarget, chanSize)
 	fanTargetChan     = make(chan *achTarget, chanSize)
@@ -75,7 +75,7 @@ func mergeMsg() {
 			if len(res) > 0 {
 				log.Println(len(res), res)
 				res = make(map[int64]map[int32]int64)
-				time.Sleep(100 * time.Millisecond)
+				time.Sleep(10 * time.Millisecond)
 			}
 		}
 
@@ -135,7 +135,6 @@ func mock() {
 				Value: i1,
 				Type:  int32(10),
 			}
-			time.Sleep(time.Second * 1)
 		}
 	}()
 
@@ -147,7 +146,6 @@ func mock() {
 				Value: i2,
 				Type:  int32(20),
 			}
-			time.Sleep(time.Second * 1)
 		}
 	}()
 
@@ -159,7 +157,6 @@ func mock() {
 				Value: i3,
 				Type:  int32(30),
 			}
-			time.Sleep(time.Second * 1)
 		}
 	}()
 
@@ -171,7 +168,6 @@ func mock() {
 				Value: i4,
 				Type:  int32(40),
 			}
-			time.Sleep(time.Second * 1)
 		}
 	}()
 
@@ -183,7 +179,6 @@ func mock() {
 				Value: i5,
 				Type:  int32(50),
 			}
-			time.Sleep(time.Second * 1)
 		}
 	}()
 }
