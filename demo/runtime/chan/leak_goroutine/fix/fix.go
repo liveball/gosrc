@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
 	"runtime"
 	"sync"
 	"time"
 
+	"net/http"
 	_ "net/http/pprof"
 )
 
@@ -47,13 +47,15 @@ func main() {
 }
 
 func mergeMsg() {
+	//处理方式1  for { select{}}
 	go func() {
 		ticker := time.NewTicker(time.Second * 60)
 		defer ticker.Stop()
 		res := make(map[int64]map[int32]int64)
+		out := mergeTarget(viewTargetChan, likeTargetChan, fanTargetChan, starTargetChan, finTaskTargetChan)
 		for {
 			select {
-			case v, ok := <-mergeTarget(viewTargetChan, likeTargetChan, fanTargetChan, starTargetChan, finTaskTargetChan):
+			case v, ok := <-out:
 				if !ok {
 					return
 				}
@@ -78,6 +80,27 @@ func mergeMsg() {
 		}
 
 	}()
+
+	//处理方式2
+	// go func() {
+	// for v := range mergeTarget(viewTargetChan, likeTargetChan, fanTargetChan, starTargetChan, finTaskTargetChan) {
+
+	// 	tgMap := make(map[int32]int64)
+	// 	tgMap[v.Type] = v.Value
+	// 	res[v.MID] = tgMap
+
+	// 	println(111, v, len(res))
+	// 	if len(res) < batchSize {
+	// 		continue
+	// 	}
+
+	// 	if len(res) > 0 {
+	// 		log.Println(res)
+	// 		res = make(map[int64]map[int32]int64)
+	// 		time.Sleep(100 * time.Millisecond)
+	// 	}
+	// }
+	// }()
 }
 
 func mergeTarget(ats ...<-chan *achTarget) <-chan *achTarget {
