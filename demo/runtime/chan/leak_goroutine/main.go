@@ -39,7 +39,7 @@ func main() {
 	go stasticGroutine()
 
 	var i1, i2, i3, i4, i5 int64
-	go func() { //播放
+	go func() {
 		for {
 			i1 += 1000
 			viewTargetChan <- &achTarget{
@@ -51,7 +51,7 @@ func main() {
 		}
 	}()
 
-	go func() { //点赞
+	go func() {
 		for {
 			i2 += 2000
 			likeTargetChan <- &achTarget{
@@ -63,7 +63,7 @@ func main() {
 		}
 	}()
 
-	go func() { //粉丝
+	go func() {
 		for {
 			i3 += 3000
 			fanTargetChan <- &achTarget{
@@ -75,7 +75,7 @@ func main() {
 		}
 	}()
 
-	go func() { //新星计划
+	go func() {
 		for {
 			i4 += 4000
 			starTargetChan <- &achTarget{
@@ -87,7 +87,7 @@ func main() {
 		}
 	}()
 
-	go func() { //完成新手任务
+	go func() {
 		for {
 			i5 += 5000
 			finTaskTargetChan <- &achTarget{
@@ -102,7 +102,7 @@ func main() {
 
 	select {}
 }
-func mergeMsg() { //合并所有databus消息进行业务逻辑处理
+func mergeMsg() {
 	go func() {
 		ticker := time.NewTicker(time.Second * 60)
 		defer ticker.Stop()
@@ -126,7 +126,7 @@ func mergeMsg() { //合并所有databus消息进行业务逻辑处理
 				}
 
 			case <-ticker.C:
-				log.Println("mergeMsg s.mergeTarget wait chan data more than 60s")
+				log.Println("wait chan data more than 60s")
 			}
 
 			if len(res) > 0 {
