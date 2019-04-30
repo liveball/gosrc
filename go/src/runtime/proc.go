@@ -4212,7 +4212,7 @@ func releasep() *p {
 func incidlelocked(v int32) {
 	lock(&sched.lock)
 	sched.nmidlelocked += v
-	println("incidlelocked", v)
+	// println("incidlelocked", v)
 	if v > 0 {
 		checkdead()
 	}
