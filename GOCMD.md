@@ -20,9 +20,12 @@ https://software.intel.com/zh-cn/blogs/2014/05/10/debugging-performance-issues-i
 
 `go tool objdump -S -s "main\.main" main`
 
-` go tool compile -N -l -S main.go > main.s`
+`go tool compile -N -l -S main.go > main.s`
 
 `go build -gcflags -S main.go  more asm`
+
+### 打印所有ssa生成阶段代码，并且生成交互式ssa.html
+`GOSSAFUNC=main GOOS=linux GOARCH=amd64 go build -gcflags -S main.go` 
 
 ## gctrace
 `go build -o main -gcflags "-N -l" && GODEBUG=gctrace=1   ./main `
