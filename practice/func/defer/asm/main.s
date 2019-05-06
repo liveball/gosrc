@@ -1,11 +1,14 @@
-"".foo STEXT size=126 args=0x8 locals=0x28
-	0x0000 00000 (main.go:3)	TEXT	"".foo(SB), $40-8 //40 是栈帧大小（局部变量+可能需要的额外调用函数的参数空间的总大小），8是参数及返回值大小(可选的)
-	0x0000 00000 (main.go:3)	MOVQ	(TLS), CX //调度相关指令
+"".foo STEXT size=126 args=0x8 locals=0x28                //伪寄存器SB指的是程序的地址空间的开始。因此，对全局数据和过程的引用被写为SB的偏移量.
+    //40 是栈帧大小（局部变量+可能需要的额外调用函数的参数空间的总大小），8是参数及返回值大小(可选的)，
+	//如果栈大小为0，则会出现NOSPLIT，它会告诉编译器不要插入分裂栈检查点
+	0x0000 00000 (main.go:3)	TEXT	"".foo(SB), $40-8 
+	0x0000 00000 (main.go:3)	MOVQ	(TLS), CX //起始调度相关指令，这三行代码检查是否需要扩展栈
 	0x0009 00009 (main.go:3)	CMPQ	SP, 16(CX)
-	0x000d 00013 (main.go:3)	JLS	119
-	0x000f 00015 (main.go:3)	SUBQ	$40, SP //将SP栈顶指针下移40字节，对SP做减法，即分配函数栈帧
-	0x0013 00019 (main.go:3)	MOVQ	BP, 32(SP)//将BP寄存器的值入栈
-	0x0018 00024 (main.go:3)	LEAQ	32(SP), BP//将新的栈顶地址保存到BP寄存器
+	0x000d 00013 (main.go:3)	JLS	119 //需要的话，跳到119行
+	0x000f 00015 (main.go:3)	SUBQ	$40, SP  //将SP栈顶指针下移40字节，对SP做减法，即分配函数栈帧
+	//BP是真实的寄存器，用来引用参数和本地变量
+	0x0013 00019 (main.go:3)	MOVQ	BP, 32(SP) //保存老的BP   将BP寄存器的值入栈，BP可以理解为保存了当前函数栈帧栈底的地址
+	0x0018 00024 (main.go:3)	LEAQ	32(SP), BP //设置新的BP   将新的栈底地址保存到BP寄存器 
 	0x001d 00029 (main.go:3)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB) //gc 相关
 	0x001d 00029 (main.go:3)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
 	0x001d 00029 (main.go:3)	FUNCDATA	$3, gclocals·9fb7f0986f647f17cb53dda1484e0f7a(SB)
@@ -14,30 +17,30 @@
 	0x001d 00029 (main.go:3)	MOVQ	$0, "".r+48(SP)//r=0
 	0x0026 00038 (main.go:4)	MOVQ	$5, "".t+24(SP)//t=5
 	0x002f 00047 (main.go:7)	PCDATA	$2, $1
-	0x002f 00047 (main.go:7)	LEAQ	"".t+24(SP), AX//获取t的地址并搬移到AX
+	0x002f 00047 (main.go:7)	LEAQ	"".t+24(SP), AX//获取t的地址并搬移到AX。 lea指令为地址运算符，英文原文为Load Effective Address， amd64平台地址都是8字节，所以直接用LEAQ
 	0x0034 00052 (main.go:7)	PCDATA	$2, $0
-	0x0034 00052 (main.go:7)	MOVQ	AX, 16(SP)//将AX寄存器的值搬移到栈顶16位移处
-	0x0039 00057 (main.go:5)	MOVL	$8, (SP)
+	0x0034 00052 (main.go:7)	MOVQ	AX, 16(SP)//将AX寄存器的值搬移到栈顶16字节处
+	0x0039 00057 (main.go:5)	MOVL	$8, (SP)//使用MOVL将一个小常量移动到寄存器中,当常量为正且适合32位时。
 	0x0040 00064 (main.go:5)	PCDATA	$2, $1
-	0x0040 00064 (main.go:5)	LEAQ	"".foo.func1·f(SB), AX
+	0x0040 00064 (main.go:5)	LEAQ	"".foo.func1·f(SB), AX //获取匿名函数的地址并搬移到AX
 	0x0047 00071 (main.go:5)	PCDATA	$2, $0
-	0x0047 00071 (main.go:5)	MOVQ	AX, 8(SP)
-	0x004c 00076 (main.go:5)	CALL	runtime.deferproc(SB)
-	0x0051 00081 (main.go:5)	TESTL	AX, AX
-	0x0053 00083 (main.go:5)	JNE	103
-	0x0055 00085 (main.go:5)	JMP	87
-	0x0057 00087 (main.go:8)	XCHGL	AX, AX
+	0x0047 00071 (main.go:5)	MOVQ	AX, 8(SP)//将AX寄存器的值搬移到栈顶8字节处
+	0x004c 00076 (main.go:5)	CALL	runtime.deferproc(SB)//调用运行时函数deferproc
+	0x0051 00081 (main.go:5)	TESTL	AX, AX //判断AX寄存器里面的值是否相等
+	0x0053 00083 (main.go:5)	JNE	103 //如果不相等则跳转到103行
+	0x0055 00085 (main.go:5)	JMP	87  //相等则跳转87行，另外jmp addr 表示跳转到指定地址
+	0x0057 00087 (main.go:8)	XCHGL	AX, AX //AX寄存器进行原子交换
 	0x0058 00088 (main.go:8)	CALL	runtime.deferreturn(SB)
 	0x005d 00093 (main.go:8)	MOVQ	32(SP), BP
 	0x0062 00098 (main.go:8)	ADDQ	$40, SP
 	0x0066 00102 (main.go:8)	RET
 	0x0067 00103 (main.go:5)	XCHGL	AX, AX
 	0x0068 00104 (main.go:5)	CALL	runtime.deferreturn(SB)
-	0x006d 00109 (main.go:5)	MOVQ	32(SP), BP
-	0x0072 00114 (main.go:5)	ADDQ	$40, SP //对sp做加法，清除函数栈帧
-	0x0076 00118 (main.go:5)	RET
-	0x0077 00119 (main.go:5)	NOP
-	0x0077 00119 (main.go:3)	PCDATA	$0, $-1
+	0x006d 00109 (main.go:5)	MOVQ	32(SP), BP //恢复BP寄存器
+	0x0072 00114 (main.go:5)	ADDQ	$40, SP //对SP做加法，清除函数栈帧
+	0x0076 00118 (main.go:5)	RET    //RET指令加载返回地址，跳到返回地址
+	0x0077 00119 (main.go:5)	NOP //结束调度相关指令，扩展栈, 扩展完了后跳到最开始
+	0x0077 00119 (main.go:3)	PCDATA	$0, $-1 
 	0x0077 00119 (main.go:3)	PCDATA	$2, $-1
 	0x0077 00119 (main.go:3)	CALL	runtime.morestack_noctxt(SB)
 	0x007c 00124 (main.go:3)	JMP	0
