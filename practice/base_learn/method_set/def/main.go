@@ -1,10 +1,12 @@
 package main
 
-type foo struct{}
+type foo struct{ a int }
 
 func (f *foo) add() {}
 
-func (f foo) sub() {}
+func (f foo) sub() {
+	print(f.a)
+}
 
 func main() {
 	//结构体值类型，只能调用值接受者方法

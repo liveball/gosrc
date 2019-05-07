@@ -62,8 +62,3 @@ func main() {
 	//	// equivalent to e := unsafe.Pointer(&x[i])
 	//	e := unsafe.Pointer(uintptr(unsafe.Pointer(&x[0])) + i*unsafe.Sizeof(x[0]))
 }
-
-//Float64bits from *T1 to *T2
-func Float64bits(f float64) uint64 {
-	return *(*uint64)(unsafe.Pointer(&f))
-}

@@ -89,7 +89,10 @@ func Test_modify(t *testing.T) {
 	// 它有三个私有字段：s string、i int64、prevRune int
 	sr := strings.NewReader("abcdef")
 	// 此时 sr 中的成员是无法修改的
-	fmt.Println(sr)
+	fmt.Println("sr:", sr)
+	b0, err := sr.ReadByte()
+	fmt.Printf("sr.ReadByte():%c, %v\n", b0, err)
+	println("修改前============")
 	// 但是我们可以通过 unsafe 来进行修改
 	// 先将其转换为通用指针
 	p := unsafe.Pointer(sr)
@@ -107,10 +110,11 @@ func Test_modify(t *testing.T) {
 		*pi = 3 // 修改索引
 	}
 	// 看看修改结果
-	fmt.Println(sr)
+	fmt.Println("sr:", sr)
+
 	// 看看读出的是什么
 	b, err := sr.ReadByte()
-	fmt.Printf("%c, %v\n", b, err)
+	fmt.Printf("sr.ReadByte():%c, %v\n", b, err)
 }
 
 // ------------------------------
@@ -164,4 +168,9 @@ func Test_ptr(t *testing.T) {
 	pb2 := (*int16)(unsafe.Pointer(tmp))
 	*pb2 = 43
 	fmt.Println(x.b) // "43
+}
+
+//Float64bits from *T1 to *T2
+func Float64bits(f float64) uint64 {
+	return *(*uint64)(unsafe.Pointer(&f))
 }
