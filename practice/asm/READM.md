@@ -27,6 +27,7 @@ https://www.doxsey.net/blog/go-and-assembly
 https://blog.hackercat.ninja/post/quick_intro_to_go_assembly/
 
 
+export DYLD_LIBRARY_PATH=/usr/local/opt/keystone/lib/:$DYLD_LIBRARY_PATH
 
 ### *源代码-golang 汇编
 https://lrita.github.io/2017/12/12/golang-asm/
