@@ -1,6 +1,9 @@
 ### 打印所有ssa生成阶段代码，并且生成交互式ssa.html
 `sudo GOSSAFUNC=foo GOOS=linux GOARCH=amd64 go build -gcflags -S main.go` 
 
+在线编译，支持指令提示和选择展示功能
+https://godbolt.org/
+
 参考：
 ### 软件开发语言Go的代码是怎么样编译成机器码的之三：机器码生成阶段
 https://www.yiqishare.com/news/13.html

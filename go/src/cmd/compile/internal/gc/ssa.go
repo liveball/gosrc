@@ -3583,6 +3583,7 @@ func (s *state) call(n *Node, k callKind) *ssa.Value {
 		addr := s.constOffPtrSP(s.f.Config.Types.UInt32Ptr, argStart)
 		s.store(types.Types[TUINT32], addr, argsize)
 		addr = s.constOffPtrSP(s.f.Config.Types.UintptrPtr, argStart+int64(Widthptr))
+		// fmt.Println("ssa-call", *addr, closure)
 		s.store(types.Types[TUINTPTR], addr, closure)
 		stksize += 2 * int64(Widthptr)
 	}
