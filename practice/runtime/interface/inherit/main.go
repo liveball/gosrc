@@ -5,6 +5,25 @@ import (
 	"reflect"
 )
 
+func main() {
+	underlying()
+	fmt.Println("-------------------")
+
+	var m myMap = make(map[int]string)
+	m.add(1, "a")
+	fmt.Println(m) //map[1:a]
+	fmt.Println("-------------------")
+
+	inherit()
+	fmt.Println("-------------------")
+
+	inheritByInterface()
+	fmt.Println("-------------------")
+
+	embedding()
+	fmt.Println("-------------------")
+}
+
 // underlying type （基础类型）
 
 // named type  （命名类型）

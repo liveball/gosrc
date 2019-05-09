@@ -13,6 +13,7 @@ type I struct {
 
 //Decompost 分解
 func (i *I) Decompost(a, b int) int {
+	//i 需要被实例化
 	return i.Forward(a, b)
 }
 

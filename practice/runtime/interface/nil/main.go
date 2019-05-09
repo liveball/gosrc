@@ -12,11 +12,16 @@ import (
 //go build -gcflags "-N -l" -o main main.go
 
 func main() {
-	var a interface{} = nil
+	var a interface{}
 	var b interface{} = (*interface{})(nil)
 
 	println(a, a == nil)
 	println(b, b == nil)
+
+	fmt.Printf("a type: %#v\tvalue: %#v \n",
+		reflect.TypeOf(a),
+		reflect.ValueOf(a),
+	)
 
 	var (
 		v  interface{}
@@ -25,22 +30,21 @@ func main() {
 		fn os.File
 	)
 
-	fmt.Println(v == nil)
-	fmt.Println(r == nil)
-	fmt.Println(f == nil)
-	v = r
-	fmt.Println(v == nil)
-	v = fn
-	fmt.Println(v == nil)
-	v = f
-	fmt.Println(v == nil)
-	r = f
-	fmt.Println(r == nil)
+	fmt.Println("interface{}", v == nil)
+	fmt.Println("io.Reader", r == nil)
+	fmt.Println("*os.File", f == nil)
 
-	// fmt.Printf("a type: %#v \n\n value:  %#v \n",
-	// 	reflect.TypeOf(a),
-	// 	reflect.ValueOf(a),
-	// )
+	v = r
+	fmt.Println("v interface{}=r io.Reader", v == nil)
+
+	v = f
+	fmt.Println("v interface{}=f *os.File", v == nil)
+	r = f
+	fmt.Println("r io.Reader=f *os.File", r == nil)
+
+	v = fn
+	fmt.Println("v interface{}=fn os.File", v == nil)
+
 }
 
 func dumpObj() {

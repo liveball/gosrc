@@ -20,6 +20,9 @@ https://golang.org/doc/asm#amd64
 ### A Manual for the Plan 9 assembler --Rob Pike
 https://9p.io/sys/doc/asm.html
 
+### ***[译]go 和 plan9 汇编
+http://xargin.com/go-and-plan9-asm/?from=singlemessage
+
 ### *源代码-Go functions in assembly language
 https://lrita.github.io/images/posts/go/GoFunctionsInAssembly.pdf
 

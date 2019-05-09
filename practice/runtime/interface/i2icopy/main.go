@@ -12,7 +12,6 @@ import (
 
 func main() {
 	a := 4
-
 	spew.Dump(a, copy(a))
 }
 

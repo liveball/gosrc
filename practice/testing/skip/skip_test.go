@@ -10,6 +10,7 @@ func Test_testingLimit(t *testing.T) {
 	if os.Getenv("SOME_ACCESS_TOKEN") != "123" {
 		t.Skip("skipping test, $SOME_ACCESS_TOKEN not set")
 	}
+
 	if testing.Short() {
 		t.Skip("skipping malloc count in short mode")
 	}

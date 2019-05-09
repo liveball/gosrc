@@ -7,6 +7,9 @@ http://www.sizeofvoid.net/goroutine-under-the-hood/
 https://talks.golang.org/2012/waza.slide#19
 https://vimeo.com/49718712
 
+### **Go 调度模型
+http://wudaijun.com/2018/01/go-scheduler/?from=singlemessage
+
 ### 调度器
 http://morsmachine.dk/go-scheduler
 
