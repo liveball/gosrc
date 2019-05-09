@@ -16,7 +16,7 @@ func main() {
 	f := new(foo)
 	*(*int)(unsafe.Pointer(f)) = 100
 	fmt.Println(111, f)
-	*(*string)(unsafe.Pointer(uintptr(unsafe.Pointer(f)) + unsafe.Offsetof(f.b))) = "hello"
+	*(*string)(unsafe.Pointer(uintptr(unsafe.Pointer(f)) + unsafe.Sizeof(f.b))) = "hello"
 	fmt.Println(222, f)
 
 	f.b = "world"
