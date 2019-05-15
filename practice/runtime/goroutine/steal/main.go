@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 	"time"
 )
 
@@ -23,14 +24,14 @@ func main() {
 		}(i)
 	}
 
-	// statGroutine := func() {
-	// 	for {
-	// 		time.Sleep(time.Second)
-	// 		total := runtime.NumGoroutine()
-	// 		fmt.Printf("goroutine num(%d)\n", total)
-	// 	}
-	// }
-	// go statGroutine()
+	statGroutine := func() {
+		for {
+			time.Sleep(time.Second)
+			total := runtime.NumGoroutine()
+			fmt.Printf("goroutine num(%d)\n", total)
+		}
+	}
+	go statGroutine()
 
 	fmt.Println("Result: ", <-ch)
 	close(done)
