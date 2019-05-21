@@ -48,6 +48,10 @@ https://software.intel.com/zh-cn/blogs/2014/05/10/debugging-performance-issues-i
 
 `go build -o main -gcflags "all=-N -l -m" demo/runtime/memory/closure/main.go`
 
+### go doc 
+`go doc -all -u runtime.slice`
+`go doc -all -u reflect.SliceHeader`
+
 ### Visualise Go program GC trace data in real time 
 https://github.com/davecheney/gcvis
 
