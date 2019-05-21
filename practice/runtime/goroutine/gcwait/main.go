@@ -7,13 +7,12 @@ import (
 	_ "net/http/pprof"
 	"runtime"
 
-	// "runtime"
 	"time"
 )
 
 func deadloop() {
 	for {
-		runtime.Gosched() //在gcwait导致的stw，让出p使得其他goroutine可以运行
+		// runtime.Gosched() //在gcwait导致的stw，让出p使得其他goroutine可以运行
 	}
 }
 func main() {

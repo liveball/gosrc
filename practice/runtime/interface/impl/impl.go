@@ -1,9 +1,10 @@
-package main
+package impl
 
 import "fmt"
 
 type Vehicle interface {
 	Run()
+	Stop()
 }
 
 type Car struct{}
