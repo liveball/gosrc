@@ -1,6 +1,10 @@
 package main
 
 import (
+	"fmt"
+	"reflect"
+	"unsafe"
+
 	"github.com/davecgh/go-spew/spew"
 )
 
@@ -35,9 +39,9 @@ func modifyPerson(p *person) { //p 是形参
 
 	spew.Dump(222, p)
 
-	// fmt.Printf("%#v\n",
-	// 	(*reflect.StructField)(unsafe.Pointer(&p)),
-	// )
+	fmt.Printf("%#v\n",
+		(*reflect.StructField)(unsafe.Pointer(&p)),
+	)
 
 	//结论：
 	//修改了形参的值，即指针变量的值，函数调用完成，这个临时赋值的地址被释放，实参指针指向的内容并没有发生改变

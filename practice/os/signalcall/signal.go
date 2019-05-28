@@ -17,7 +17,6 @@ func Handle() {
 		case syscall.SIGQUIT, syscall.SIGTERM, syscall.SIGSTOP, syscall.SIGINT:
 			return
 		case syscall.SIGHUP:
-		// TODO reload
 		default:
 			return
 		}

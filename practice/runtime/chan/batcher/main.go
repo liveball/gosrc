@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"go1.11.1/demo/type/chan/batcher/tsdb"
+	"gosrc/practice/runtime/chan/batcher/tsdb"
 )
 
 func main() {
