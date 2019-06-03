@@ -1,6 +1,7 @@
 package main
 
 import (
+	"gosrc/practice/runtime/pointer/g_uintptr/runtime/internal/atomicx"
 	"unsafe"
 )
 
@@ -29,11 +30,11 @@ func (gp *guintptr) set(g *g) { *gp = guintptr(unsafe.Pointer(g)) }
 
 //go:nosplit
 // func (gp *guintptr) cas(old, new guintptr) bool {
-// 	return atomic.Casuintptr((*uintptr)(unsafe.Pointer(gp)), uintptr(old), uintptr(new))
+// 	return atomicx.Casuintptr2((*uintptr)(unsafe.Pointer(gp)), uintptr(old), uintptr(new))
 // }
 
 func main() {
-	var i int
+	// var i int
 	n := int32(100)
 
 	var data [8]byte // to match amd64
@@ -99,7 +100,7 @@ func netpollunblock(pd *pollDesc, mode int32, ioready bool) *g {
 		if ioready {
 			new = pdReady
 		}
-		if atomic.Casuintptr(gpp, old, new) {
+		if atomicx.Casuintptr(gpp, old, new) {
 			if old == pdReady || old == pdWait {
 				old = 0
 			}
