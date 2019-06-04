@@ -8,15 +8,16 @@ func main() {
 
 	var wg sync.WaitGroup
 	wg.Add(cnt)
-	for i := 0; i < cnt; i++ {
+	for i := 1; i <= cnt; i++ {
 		j := i
 		go func() {
 			defer wg.Done()
+			println(j)
 			ch <- j
 		}()
 	}
-	close(ch)
 	wg.Wait()
+	close(ch)
 
 	for v := range ch {
 		println(v)

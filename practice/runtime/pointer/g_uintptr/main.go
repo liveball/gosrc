@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gosrc/practice/runtime/pointer/g_uintptr/runtime/internal/atomicx"
+	"sync/atomic"
 	"unsafe"
 )
 
@@ -29,19 +29,19 @@ func (gp guintptr) ptr() *g { return (*g)(unsafe.Pointer(gp)) }
 func (gp *guintptr) set(g *g) { *gp = guintptr(unsafe.Pointer(g)) }
 
 //go:nosplit
-// func (gp *guintptr) cas(old, new guintptr) bool {
-// 	return atomicx.Casuintptr2((*uintptr)(unsafe.Pointer(gp)), uintptr(old), uintptr(new))
-// }
+func (gp *guintptr) cas(old, new guintptr) bool {
+	return atomic.CompareAndSwapPointer((*unsafe.Pointer)(unsafe.Pointer(*gp)), unsafe.Pointer(old), unsafe.Pointer(new))
+}
 
 func main() {
 	// var i int
 	n := int32(100)
 
 	var data [8]byte // to match amd64
+	data = [8]byte{'1', '2', '3', '4', '5', '6', '7', '8'}
 
 	var gp guintptr
 	for i := int32(0); i < n; i++ {
-
 		var mode int32
 		if i%5 == 0 {
 			mode += 'r'
@@ -100,7 +100,7 @@ func netpollunblock(pd *pollDesc, mode int32, ioready bool) *g {
 		if ioready {
 			new = pdReady
 		}
-		if atomicx.Casuintptr(gpp, old, new) {
+		if atomic.CompareAndSwapPointer((*unsafe.Pointer)(unsafe.Pointer(*gpp)), unsafe.Pointer(old), unsafe.Pointer(new)) { //Casuintptr(gpp, old, new)
 			if old == pdReady || old == pdWait {
 				old = 0
 			}

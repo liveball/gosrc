@@ -4,6 +4,9 @@ https://studygolang.com/articles/2498
 ### Debugging performance issues in Go programs
 https://software.intel.com/zh-cn/blogs/2014/05/10/debugging-performance-issues-in-go-programs
 
+### Go, the unwritten parts
+https://rakyll.org/
+
 // $GODEV/bin/go 使用开发模式
 // Gosched 让出cpu
 // Goexit 退出当前goroutine(但是defer语句会照常执行)

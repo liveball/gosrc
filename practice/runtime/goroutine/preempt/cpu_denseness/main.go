@@ -31,4 +31,4 @@ func main() {
 }
 
 // export GOMAXPROCS=1
-// go build -o main -gcflags "-N  -l" /data/app/go/src/gosrc/demo/runtime/goroutine/preempt/main.go && GODEBUG="schedtrace=1000,scheddetail=1" ./main
+// go build -o main -gcflags "-N  -l" /data/app/go/src/gosrc/practice/runtime/goroutine/preempt/cpu_denseness/main.go && GODEBUG="schedtrace=1000,scheddetail=1" ./main
