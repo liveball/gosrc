@@ -1823,13 +1823,23 @@ func (ctxt *Link) dostkcheck() {
 		}
 
 		if s.Attr.NoSplit() {
+			//test
+			if s.Name == "main.f2" {
+				println(s.Name, "s.Attr.NoSplit()")
+			}
 			ch.sym = s
+
 			stkcheck(ctxt, &ch, 0)
 		}
 	}
 
 	for _, s := range ctxt.Textp {
 		if !s.Attr.NoSplit() {
+			//test
+			if s.Name == "main.f2" {
+				println(s.Name, "!s.Attr.NoSplit()")
+			}
+
 			ch.sym = s
 			stkcheck(ctxt, &ch, 0)
 		}
@@ -1848,6 +1858,13 @@ func stkcheck(ctxt *Link, up *chain, depth int) int {
 			return 0
 		}
 		s.Attr |= sym.AttrStackCheck
+	}
+
+	if s.Name == "main.f2" {
+		println("StackGuard=", objabi.StackGuard, "StackSystem=", objabi.StackSystem, "StackSmall=", objabi.StackSmall)
+		println("StackLimit = StackGuard - StackSystem - StackSmall=", objabi.StackLimit)
+
+		println(s.Name, "top(function at top of safe zone once)", top, callsize(ctxt), "objabi.StackLimit-callsize(ctxt)=", limit)
 	}
 
 	if depth > 100 {

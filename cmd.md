@@ -23,6 +23,8 @@ https://rakyll.org/
 
 `go tool objdump -S -s "main\.main" main`
 
+`go tool compile -S -N -l main.go | grep "main.go:3"`
+
 `go tool compile -N -l -S main.go > main.s`
 
 `go build -gcflags -S main.go  more asm`

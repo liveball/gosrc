@@ -34,10 +34,14 @@
 `$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/go/main.go run  /data/app/go/src/gosrc/demo/runtime/gc/gctodo/main.go`
 
 ### 调试 cmd/compile 编译器
-`$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/compile/main.go -o t.a /data/app/go/src/gosrc/demo/type/type_definitions/method_set/main.go`
+`$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/compile/main.go -o main.o /data/app/go/src/gosrc/demo/type/type_definitions/method_set/main.go`
 
 
-`$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/compile/main.go -o t.a /data/app/go/src/gosrc/demo/base_learn/slice/perform/main.go`
+`$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/compile/main.go -o main.o /data/app/go/src/gosrc/demo/base_learn/slice/perform/main.go`
+
+#### 调试 cmd/link 链接器
+`GOROOT=/data/app/go/src/gosrc/go && export PATH=$GOROOT/bin:$PATH`
+`go run /data/app/go/src/gosrc/go/src/cmd/link/main.go -o main main.o`
 
 ```sh
 
