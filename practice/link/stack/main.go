@@ -20,10 +20,11 @@ func f(a, b int) (int, int) {
 	return sum, a + b
 }
 
-func f2(a, b int) (int, int) { //go:nosplit   //禁止堆栈溢出检查 标记
+// 根据调试需要设置 //go:nosplit (禁止堆栈溢出检查 标记)
+func f2(a, b int) (int, int) {
 	sum := 0
 
-	elems := make([]int, 10)
+	elems := make([]int, 100)
 	for _, v := range elems {
 		sum += v
 	}

@@ -1,5 +1,14 @@
 ### go 链接器
 
+### 测试程序(https://github.com/liveball/gosrc/tree/master/practice/link/stack)
+``
+>1.开启godev命令模式(https://github.com/liveball/gosrc/blob/master/README.md)
+>2.编译 .o 文件
+`go tool compile -o main.o /data/app/go/src/gosrc/practice/link/stack/main.go`
+>3.链接 .o 文件
+`go run /data/app/go/src/gosrc/go/src/cmd/link/main.go -o main main.o`
+
+
 ###分裂栈检查
 go/src/cmd/link/internal/ld/lib.go
 
