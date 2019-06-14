@@ -1901,7 +1901,7 @@ func stkcheck(ctxt *Link, up *chain, depth int) int {
 	var ch chain
 	ch.up = up
 
-	if !s.Attr.NoSplit() {
+	if !s.Attr.NoSplit() { //进行堆栈溢出检查
 		// Ensure we have enough stack to call morestack.
 		ch.limit = limit - callsize(ctxt)
 		ch.sym = morestack
