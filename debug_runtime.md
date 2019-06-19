@@ -1,35 +1,38 @@
 ### runtime/debug
 
->1.强制进行垃圾回收
+>1.强制进行垃圾回收[practice/runtime/debug/free_os_memory](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/free_os_memory)  
 ```text
 FreeOSMemory强制进行一次垃圾收集，以释放尽量多的内存回操作系统。（即使没有调用，运行时环境也会在后台任务里逐渐将内存释放给系统）
 ```
->2.设置垃圾回收的目标百分比  
+>2.设置垃圾回收的目标百分比[practice/runtime/debug/set_gc_percent](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/set_gc_percent)   
 ```text
 SetGCPercent设定垃圾收集的目标百分比：当新申请的内存大小占前次垃圾收集剩余可用内存大小的比率达到设定值时，就会触发垃圾收集。SetGCPercent返回之前的设定。初始值设定为环境变量GOGC的值；如果没有设置该环境变量，初始值为100。percent参数如果是负数值，
 会关闭垃圾收集
 ```
->3.设置被单个go协程调用栈可使用的内存最大值  
+>3.设置被单个go协程调用栈可使用的内存最大值[practice/runtime/debug/set_max_stack](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/set_max_stack)   
 ```text
 fmt.Println(debug.SetMaxStack(1)) //查看到默认系统为1000 000 000 字节
 默认的设置32位系统是250MB,64位为1GB
 ``` 
->4.设置go程序可以使用的最大操作系统线程数  
+>4.设置go程序可以使用的最大操作系统线程数[practice/runtime/debug/set_max_threads](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/set_max_threads)   
 ```text
 我们把程序的组大可使用的线程（不是协程）数设置为1，如果程序试图超过这个限制,程序就会崩溃，初始设置为10000个线程
 什么时候会创建新的线程呢?
 现有的线程阻塞，cgo或者runtime.LockOSThread函数阻塞其他go协程
 ```
 
->5.设置程序请求运行是只触发panic,而不崩溃  
+>5.设置程序请求运行是只触发panic,而不崩溃[practice/runtime/debug/set_panic_onFault](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/set_panic_onFault)   
 ```text
 SetPanicOnFault控制程序在不期望（非nil）的地址出错时的运行时行为。这些错误一般是因为运行时内存破坏的bug引起的，因此默认反应是使程序崩溃。使用内存映射的文件或进行内存的不安全操作的程序可能会在非nil的地址出现错误；SetPanicOnFault允许这些程序请求运行时只触发一个panic，而不是崩溃。SetPanicOnFault只用于当前的go程，我们发现指针为nil 发生了panic 但是我们进行了恢复,程序继续执行
 ``` 
 
->6.垃圾收集信息的写入stats中  
->7.将内存分配堆和其中对象的描述写入文件中  
->8.获取go协程调用栈踪迹  
->9.将堆栈踪迹打印到标准错误   
+>6.垃圾收集信息的写入stats中[practice/runtime/debug/read_gc_stats](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/read_gc_stats)   
+
+>7.将内存分配堆和其中对象的描述写入文件中[practice/runtime/debug/write_heap_dump](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/write_heap_dump) 
+
+>8.获取go协程调用栈踪迹[practice/runtime/debug/stack](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/stack)   
+
+>9.将堆栈踪迹打印到标准错误[practice/runtime/debug/print_stack](https://github.com/liveball/gosrc/tree/master/practice/runtime/debug/print_stack)   
 
 ```go
 // ReadGCStats reads statistics about garbage collection into stats.
