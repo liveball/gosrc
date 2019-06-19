@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	fmt.Println(debug.SetGCPercent(1))
+	fmt.Println(debug.SetGCPercent(1), 4<<20)
 
 	// 1
 	var dic = make([]byte, 100, 100)
