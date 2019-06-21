@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"runtime"
 	"sync"
 )
@@ -26,13 +27,14 @@ func main() {
 	var wg sync.WaitGroup
 	wg.Add(ncpus)
 	for i := 0; i < ncpus; i++ {
-		go func(id int) {
+		j := i
+		go func() {
 			defer wg.Done()
 			for {
-				// fmt.Printf("worker: %d, CPU: %d\n", id)
+				fmt.Printf("worker: %d\n", j)
 				// fmt.Printf("worker: %d, CPU: %d\n", id, C.sched_getcpu())
 			}
-		}(i)
+		}()
 	}
 	wg.Wait()
 }

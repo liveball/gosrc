@@ -18,3 +18,5 @@ func main() {
 	}
 	wg.Wait()
 }
+
+// go tool compile -m -m /data/app/go/src/gosrc/practice/runtime/goroutine/go_func_param/main.go
