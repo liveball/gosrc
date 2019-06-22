@@ -1,8 +1,8 @@
 package main
 
-// import (
-// 	_ "net/http"
-// )
+import (
+	_ "net/http"
+)
 
 func main() {
 	println(1)

@@ -2,24 +2,28 @@ package main
 
 import "sync"
 
+var cnt = 3
+
 func main() {
-	cnt := 3
-	ch := make(chan int)
+	c := make(chan int)
 
 	var wg sync.WaitGroup
 	wg.Add(cnt)
+
 	for i := 1; i <= cnt; i++ {
 		j := i
 		go func() {
-			defer wg.Done()
-			println(j)
-			ch <- j
+			c <- j
+			wg.Done()
 		}()
 	}
-	wg.Wait()
-	close(ch)
 
-	for v := range ch {
+	go func() {//fix: fatal error: all goroutines are asleep - deadlock!
+		wg.Wait()
+		close(c)
+	}()
+
+	for v := range c {
 		println(v)
 	}
 }
