@@ -1,0 +1,28 @@
+p c.recvq
+runtime.waitq {
+        first: *runtime.sudog {
+                g: *(*runtime.g)(0xc000000300),
+                isSelect: false,
+                next: *runtime.sudog nil,
+                prev: *runtime.sudog nil,
+                elem: unsafe.Pointer(0x0),
+                acquiretime: 0,
+                releasetime: 0,
+                ticket: 0,
+                parent: *runtime.sudog nil,
+                waitlink: *runtime.sudog nil,
+                waittail: *runtime.sudog nil,
+                c: *(*runtime.hchan)(0xc00006c060),},
+        last: *runtime.sudog {
+                g: *(*runtime.g)(0xc000000300),
+                isSelect: false,
+                next: *runtime.sudog nil,
+                prev: *runtime.sudog nil,
+                elem: unsafe.Pointer(0x0),
+                acquiretime: 0,
+                releasetime: 0,
+                ticket: 0,
+                parent: *runtime.sudog nil,
+                waitlink: *runtime.sudog nil,
+                waittail: *runtime.sudog nil,
+                c: *(*runtime.hchan)(0xc00006c060),},}

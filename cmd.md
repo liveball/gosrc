@@ -16,8 +16,47 @@ https://rakyll.org/
 ##  build
 `go build -o main -gcflags "all=-N -l"`
 
-### 打印编译信息
+### 查看go tool 命令详细信息
+`go tool compile -d help`
+usage: -d arg[,arg]* and arg is <key>[=<value>]
+
+<key> is one of:
+
+	append       	print information about append compilation
+	closure      	print information about closure compilation
+	compilelater 	compile functions as late as possible
+	disablenil   	disable nil checks
+	dclstack     	run internal dclstack check
+	gcprog       	print dump of GC programs
+	nil          	print information about nil checks
+	panic        	do not hide any compiler panic
+	slice        	print information about slice compilation
+	typeassert   	print information about type assertion inlining
+	wb           	print information about write barriers
+	export       	print export data
+	pctab        	print named pc-value table
+	locationlists	print information about DWARF location list creation
+	typecheckinl 	eager typechecking of inline function bodies
+	dwarfinl     	print information about DWARF inlined function creation
+	softfloat    	force compiler to emit soft-float code
+	ssa/help     	print help about SSA debugging
+
+<value> is key-specific.
+
+Key "pctab" supports values:
+	"pctospadj", "pctofile", "pctoline", "pctoinline", "pctopcdata"
+
+### 打印ssa编译 相关信息
+  `go tool compile -d=ssa/help`
+  `go tool compile -d=ssa/<phase>/<flag>[=<value>|<function_name>]`
+
   `go tool compile -d=slice,append,gcprog,closure,export,wb -o t.a main.go`
+
+  `go tool compile -d=ssa/stackframe/on,ssa/stackframe/dump main.go`
+  `go tool compile -d=ssa/check/on,ssa/all/time main.go`
+
+### 打印所有ssa生成阶段代码，并且生成交互式ssa.html
+  `GOSSAFUNC=main GOOS=linux GOARCH=amd64 go build -gcflags -S main.go > ssa.html` 
 
 ## print asm
 
@@ -29,8 +68,10 @@ https://rakyll.org/
 
 `go build -gcflags -S main.go  more asm`
 
-### 打印所有ssa生成阶段代码，并且生成交互式ssa.html
-`GOSSAFUNC=main GOOS=linux GOARCH=amd64 go build -gcflags -S main.go` 
+prints the disassembly only for package fmt
+`go build -gcflags=-S fmt`
+prints the disassembly for fmt and all its dependencies
+`go build -gcflags=all=-S fmt`
 
 ## gctrace
 `go build -o main -gcflags "-N -l" && GODEBUG=gctrace=1   ./main `

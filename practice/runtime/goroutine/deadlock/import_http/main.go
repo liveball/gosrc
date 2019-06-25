@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "net/http"
+	_ "net"
 )
 
 func main() {

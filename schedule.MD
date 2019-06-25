@@ -7,6 +7,22 @@
 收回因syscall长时间阻塞的P；
 ```
 
+追踪：
+all goroutines are asleep - deadlock! 
+runtime.checkdead() ./go/src/runtime/proc.go:4225 (PC: 0x10370d3)
+
+0  0x0000000001038949 in runtime.mput
+   at ./go/src/runtime/proc.go:4654
+1  0x00000000010314b8 in runtime.stopm
+   at ./go/src/runtime/proc.go:2015
+2  0x000000000103265c in runtime.findrunnable
+   at ./go/src/runtime/proc.go:2488
+3  0x000000000103316a in runtime.schedule
+   at ./go/src/runtime/proc.go:2614
+4  0x000000000103348e in runtime.park_m
+   at ./go/src/runtime/proc.go:2677
+5  0x000000000105594b in runtime.mcall
+   at ./go/src/runtime/asm_amd64.s:299
 
 ### 参考文章
 
