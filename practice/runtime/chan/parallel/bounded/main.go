@@ -1,4 +1,4 @@
-package channel
+package main
 
 import (
 	"crypto/md5"
@@ -9,7 +9,6 @@ import (
 	"path/filepath"
 	"sort"
 	"sync"
-	"testing"
 )
 
 type result struct {
@@ -18,7 +17,7 @@ type result struct {
 	err  error
 }
 
-func Test_paralleBoundlDir(t *testing.T) {
+func main() {
 	// 计算指定目录下所有文件的MD5值，之后按照目录名排序并打印结果
 	m, err := MD5All3(os.Args[1])
 	if err != nil {
@@ -30,8 +29,9 @@ func Test_paralleBoundlDir(t *testing.T) {
 		paths = append(paths, path)
 	}
 	sort.Strings(paths)
+	// fmt.Println(m)
 	for _, path := range paths {
-		fmt.Printf("%x  %s\n", m[path], path)
+		fmt.Printf("path:%s md5:%x\n",  path, m[path])
 	}
 }
 
@@ -97,6 +97,7 @@ func MD5All3(root string) (m map[string][md5.Size]byte, err error) {
 		if r.err != nil {
 			return nil, r.err
 		}
+		// fmt.Println(r.sum)//byte array
 		m[r.path] = r.sum
 	}
 	// 检查Walk是否失败
