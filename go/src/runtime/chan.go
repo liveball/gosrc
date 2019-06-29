@@ -704,7 +704,7 @@ func (q *waitq) enqueue(sgp *sudog) {
 func (q *waitq) dequeue() *sudog {
 	for {
 		sgp := q.first
-	    // println("dequeue", sgp)
+		// println("dequeue", sgp)
 
 		if sgp == nil {
 			return nil
