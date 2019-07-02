@@ -10,7 +10,7 @@ import (
 func main() {
 	if err := agent.Listen(agent.Options{
 		Addr:      "127.0.0.1:8888",
-		ConfigDir: "/data/app/go/src/gowhole/exercise/gops",
+		ConfigDir: "./module/gops",
 	}); err != nil {
 		log.Fatal(err)
 	}
