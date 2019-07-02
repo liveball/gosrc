@@ -27,6 +27,7 @@ runtime.checkdead() ./go/src/runtime/proc.go:4225 (PC: 0x10370d3)
 ### 参考文章
 
 - [Go 调度模型](https://wudaijun.com/2018/01/go-scheduler)
+- [深入Golang调度器之GMP模型](https://www.jianshu.com/p/abe79d86ff27)
 - [go语言调度器源代码情景分析](https://mp.weixin.qq.com/mp/homepage?__biz=MzU1OTg5NDkzOA==&hid=1&sn=8fc2b63f53559bc0cee292ce629c4788&scene=25#wechat_redirect)
 
 - [Debugging performance issues in Go programs](https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs)

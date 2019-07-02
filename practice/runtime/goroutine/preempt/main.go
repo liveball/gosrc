@@ -3,8 +3,12 @@ package main
 import (
 	"runtime"
 	"sync/atomic"
-	"testing"
 )
+
+func main() {
+	// preemption()
+	preemptionGC()
+}
 
 // The function is used to test preemption at split stack checks.
 // Declaring a var avoids inlining at the call site.
@@ -17,18 +21,31 @@ var preempt = func() int {
 	return sum
 }
 
-func TestPreemptionGC(t *testing.T) {
-	if runtime.GOARCH == "wasm" {
-		t.Skip("no preemption on wasm yet")
+func preemption() {
+	// Test that goroutines are preempted at function calls.
+	N := 5
+	c := make(chan bool)
+	var x uint32
+	for g := 0; g < 2; g++ {
+		go func(g int) {
+			for i := 0; i < N; i++ {
+				for atomic.LoadUint32(&x) != uint32(g) {
+					preempt()
+				}
+				// println("x", x)
+				atomic.StoreUint32(&x, uint32(1-g))
+			}
+			c <- true
+		}(g)
 	}
+	<-c
+	<-c
+}
 
+func preemptionGC() {
 	// Test that pending GC preempts running goroutines.
 	P := 5
 	N := 10
-	if testing.Short() {
-		P = 3
-		N = 2
-	}
 	defer runtime.GOMAXPROCS(runtime.GOMAXPROCS(P + 1))
 	var stop uint32
 	for i := 0; i < P; i++ {
