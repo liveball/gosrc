@@ -1,4 +1,4 @@
-package channel
+package main
 
 import (
 	"crypto/md5"
@@ -9,10 +9,15 @@ import (
 	"path/filepath"
 	"sort"
 	"sync"
-	"testing"
 )
 
-func Test_parallelDir(t *testing.T) {
+type result struct {
+	path string
+	sum  [md5.Size]byte
+	err  error
+}
+
+func main(){
 	// 计算指定目录下所有文件的MD5值，之后按照目录名排序并打印结果
 	m, err := MD5All2(os.Args[1])
 	if err != nil {

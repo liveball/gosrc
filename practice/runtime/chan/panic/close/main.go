@@ -1,6 +1,9 @@
 package main
 
-import "sync"
+import (
+	"sync"
+	// "time"
+)
 
 var cnt = 3
 
@@ -26,4 +29,6 @@ func main() {
 	for v := range c {
 		println(v)
 	}
+
+	// time.Sleep(time.Second)
 }
