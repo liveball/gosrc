@@ -6,22 +6,23 @@ import (
 )
 
 func TestGetInstance(t *testing.T) {
-	counter1 := GetInstance()
+	counter1 := GetInstance() //创建第一个实例
 
 	if counter1 == nil {
 		t.Error("expected pointer to Singleton after calling GetInstance(), not nil")
 	}
-	expectedCounter := counter1
+	expectedCounter := counter1 //保存第一个实例
 
-	counter1.AddOne()
+	counter1.AddOne() //第一个实例调用方法
 	currentCount := counter1.GetCount()
 	if currentCount != 1 {
 		t.Errorf("After calling for the first time to count, the count must be 1 but it is %d\n", currentCount)
 	}
 
-	counter2 := GetInstance()
+	counter2 := GetInstance() //创建第二个实例
 
-	if counter2 != expectedCounter {
+	println(expectedCounter, counter2)
+	if counter2 != expectedCounter { //比较第一个和第二个实例
 		t.Error("expected same instance int counter2 but it got a different instance")
 	}
 

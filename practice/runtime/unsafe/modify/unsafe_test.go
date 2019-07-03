@@ -135,6 +135,10 @@ func Test_Reader(t *testing.T) {
 	sr := strings.NewReader("abcdef")
 	// 此时 sr 中的成员是无法修改的
 	fmt.Println(sr)
+	// 看看第一次读出的是什么
+	b0, err := sr.ReadByte()
+	fmt.Printf("%c, %v\n", b0, err)
+
 	// 我们可以通过 unsafe 来进行修改
 	// 先将其转换为通用指针
 	p := unsafe.Pointer(sr)
@@ -144,7 +148,7 @@ func Test_Reader(t *testing.T) {
 	(*pR).i = 3 // 修改索引
 	// 看看修改结果
 	fmt.Println(sr)
-	// 看看读出的是什么
+	// 看看修改之后读出的是什么
 	b, err := sr.ReadByte()
 	fmt.Printf("%c, %v\n", b, err)
 }

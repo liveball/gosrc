@@ -879,6 +879,7 @@ func mallocgc(size uintptr, typ *_type, needzero bool) unsafe.Pointer {
 				v, _, shouldhelpgc = c.nextFree(tinySpanClass)
 			}
 			x = unsafe.Pointer(v)
+			// println("v-x", v, x)
 			(*[2]uint64)(x)[0] = 0
 			(*[2]uint64)(x)[1] = 0
 			// See if we need to replace the existing tiny block with the new one
