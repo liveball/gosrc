@@ -30,6 +30,13 @@
 >5、go build go
 `$GODEV/bin/go run main.go build -debug-actiongraph="json"`
 
+### 展示整个编译链接的运行过程
+
+`go build -v -x -work -o main main.go`
+ > -v 会打印所编译过的包名字  
+ > -x 打印编译期间所执行的命令  
+ > -work 打印编译期间生成的临时文件路径，并且编译完成之后不会被删除  
+
 ### 调试 cmd/go 进程启动
 `$GODEV/bin/go run /data/app/go/src/gosrc/go/src/cmd/go/main.go run  /data/app/go/src/gosrc/demo/runtime/gc/gctodo/main.go`
 
