@@ -1,19 +1,15 @@
 package main
 
-var (
-	m = make(map[int]int)
-)
 
 func main() {
 	defer func() { <-make(chan bool) }()
+
+	m := make(map[int]int)
 	go func() {
-		for {
 			m[1] = 1
-		}
 	}()
-	go func() {
-		for {
-			_ = m[1]
-		}
-	}()
+
+	for _, v := range m {
+		println(v)
+	}
 }

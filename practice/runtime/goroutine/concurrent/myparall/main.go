@@ -10,8 +10,21 @@ import (
 )
 
 func main() {
-	trace.Start(os.Stdout)
+	f, err := os.Create("trace.out")	
+    if err != nil {		
+       panic(err)
+    }	
+    defer f.Close()
+
+    err = trace.Start(f)
+    if err != nil {
+ 	   panic(err)
+    }	
 	defer trace.Stop()
+	
+	// trace.Start(os.Stdout)
+	// defer trace.Stop()
+
 	// parallel starts parallel image processing based on the current GOMAXPROCS value.
 	// If GOMAXPROCS = 1 it uses no parallelization.
 	// If GOMAXPROCS > 1 it spawns N=GOMAXPROCS workers in separate goroutines.
