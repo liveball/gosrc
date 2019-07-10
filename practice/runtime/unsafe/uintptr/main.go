@@ -5,7 +5,7 @@ import "unsafe"
 const ptrSize = 4 << (^uintptr(0) >> 63)
 
 func main() {
-	println(uintptr(0), ^uintptr(0), ^uintptr(0)>>63, 4<<(^uintptr(0)>>63))
+	println(uintptr(0), ^uintptr(0), ^uintptr(0)>>63, 4<<(^uintptr(0)>>63), ^uint(0), 4<<(^uint(0)>>63))
 	println(funcPC(test), funcPC(hello))
 }
 
