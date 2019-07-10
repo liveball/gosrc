@@ -81,6 +81,12 @@ Key "pctab" supports values:
 
 ## print asm
 
+### 查看xxx包所有生成的init函数
+`go tool objdump -s "runtime\.init\b" main`
+`go tool objdump -s "main\.init\b" main`
+`go tool objdump -s "http\.init\b" main | grep "init"`
+
+### 查看源代码及其对应的汇编
 `go tool objdump -S -s "main\.main" main`
 
 `go tool compile -S -N -l main.go | grep "main.go:3"`
