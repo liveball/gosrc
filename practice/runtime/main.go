@@ -4,25 +4,20 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	_ "net/http/pprof"
 	"time"
 
-	"gosrc/demo/runtime/sched"
+	"gosrc/practice/runtime/sched"
 )
 
 // go tool compile -N -l -S main.go > main.s
 
 //GODEBUG=schedtrace=10000,scheddetail=1 ./main
+
+// curl http://127.0.0.1:8000/debug/pprof/trace?seconds=20 > trace.out
+// go tool trace trace.out
+
 func main() {
-	// println(1)
-
-	// var wg sync.WaitGroup
-	// wg.Add(1)
-	// go func() {
-	// 	println(2)
-	// 	wg.Done()
-	// }()
-
-	// wg.Wait()
 	// Set this threshold low for demonstration purposes.
 	sched.OversleepThreshold = time.Microsecond
 	http.HandleFunc("/", handler)
