@@ -1,16 +1,37 @@
 package main
 
+import(
+	"fmt"
+	"reflect"
+	"unsafe"
+)
+
 type oper struct {
 	rank int
 }
 
-func main() {
-	opers := make([]*oper, 0, 3)
+var (
+	opers []*oper
+)
+
+func init() {
+	opers = make([]*oper, 0, 3)
 	for i := 0; i < 3; i++ {
 		opers = append(opers, &oper{rank: i})
 	}
+}
 
+func main() {
 	opers2 := make([]*oper, 0, 3)
+
+	//for _, v := range opers {
+	//	if v.rank == 1 {
+	//		v.rank = 100
+	//	}
+	//	opers2 = append(opers2, v)
+	//}
+
+
 	for _, v := range opers {
 		vv := new(oper)
 		*vv = *v
@@ -19,24 +40,34 @@ func main() {
 		}
 		opers2 = append(opers2, vv)
 	}
+
+
+
+	for _, v := range opers {
+		fmt.Printf("opers rank(%d), ptr(%p)\n", v.rank, &v)
+	}
+
+	println("------------------")
+	for _, v := range opers2 {
+		fmt.Printf("opers2 rank(%d), ptr(%p)\n", v.rank, &v)
+	}
+
+	fmt.Printf("\n opers:%#v, opers2:%#v\n",
+		(*reflect.SliceHeader)(unsafe.Pointer(&opers)),
+		(*reflect.SliceHeader)(unsafe.Pointer(&opers2)),
+	)
 }
 
-// go tool compile -N -l -S  demo/type/pointer/slice_ptr/main.go | grep 'demo/type/pointer/slice_ptr/main.go:15'
-// 	0x023e 00574 (demo/type/pointer/slice_ptr/main.go:15)	PCDATA	$2, $1
-// 	0x023e 00574 (demo/type/pointer/slice_ptr/main.go:15)	LEAQ	type."".oper(SB), AX
-// 	0x0245 00581 (demo/type/pointer/slice_ptr/main.go:15)	PCDATA	$2, $0
-// 	0x0245 00581 (demo/type/pointer/slice_ptr/main.go:15)	MOVQ	AX, (SP)
-// 	0x0249 00585 (demo/type/pointer/slice_ptr/main.go:15)	CALL	runtime.newobject(SB)
-// 	0x024e 00590 (demo/type/pointer/slice_ptr/main.go:15)	PCDATA	$2, $1
-// 	0x024e 00590 (demo/type/pointer/slice_ptr/main.go:15)	MOVQ	8(SP), AX
-// 	0x0253 00595 (demo/type/pointer/slice_ptr/main.go:15)	PCDATA	$0, $11
-// 	0x0253 00595 (demo/type/pointer/slice_ptr/main.go:15)	MOVQ	AX, "".vv+96(SP)
+//go tool compile -N -l -S main.go | grep "main.go:29"
+//0x0131 00305 (main.go:29)       TESTB   AL, (CX)
+//0x0133 00307 (main.go:29)       PCDATA  $2, $0
+//0x0133 00307 (main.go:29)       MOVQ    $100, (CX)
+//0x013a 00314 (main.go:29)       JMP     316
 
-// go tool compile -N -l -S  demo/type/pointer/slice_ptr/main.go | grep 'demo/type/pointer/slice_ptr/main.go:16'
-// 	0x0258 00600 (demo/type/pointer/slice_ptr/main.go:16)	PCDATA	$2, $6
-// 	0x0258 00600 (demo/type/pointer/slice_ptr/main.go:16)	MOVQ	"".v+104(SP), CX
-// 	0x025d 00605 (demo/type/pointer/slice_ptr/main.go:16)	TESTB	AL, (CX)
-// 	0x025f 00607 (demo/type/pointer/slice_ptr/main.go:16)	PCDATA	$2, $1
-// 	0x025f 00607 (demo/type/pointer/slice_ptr/main.go:16)	MOVQ	(CX), CX
-// 	0x0262 00610 (demo/type/pointer/slice_ptr/main.go:16)	PCDATA	$2, $0
-// 	0x0262 00610 (demo/type/pointer/slice_ptr/main.go:16)	MOVQ	CX, (AX)
+//go tool compile -N -l -S main.go | grep "main.go:39"
+//0x0166 00358 (main.go:39)       PCDATA  $2, $4
+//0x0166 00358 (main.go:39)       MOVQ    "".vv+136(SP), CX
+//0x016e 00366 (main.go:39)       TESTB   AL, (CX)
+//0x0170 00368 (main.go:39)       PCDATA  $2, $0
+//0x0170 00368 (main.go:39)       MOVQ    $100, (CX)
+//0x0177 00375 (main.go:39)       JMP     377

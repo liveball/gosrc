@@ -73,7 +73,7 @@ func mergeMsg() {
 			}
 
 			if len(res) > 0 {
-				log.Println(len(res), res)
+				//log.Println(len(res), res)
 				res = make(map[int64]map[int32]int64)
 				time.Sleep(10 * time.Millisecond)
 			}
