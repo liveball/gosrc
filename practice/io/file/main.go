@@ -35,7 +35,7 @@ func main() {
 		panic(err)
 	}
 	defer f.Close()
-	// f.Write(resp.Body)
+	//f.Write(resp.Body)
 	io.Copy(f, resp.Body) //写文件
 
 	_, err = Contents(filename) //读取文件

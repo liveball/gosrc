@@ -13,6 +13,8 @@ type data struct {
 }
 
 func main() {
+	println(100 << 20/1000/1000, 1 << 20/1000)
+
 	for i := 0; i < 100; i++ {
 		test()
 		runtime.GC()
@@ -25,7 +27,7 @@ func test() {
 	ptrs = append(ptrs, uintptr(unsafe.Pointer(&d))) //每次创建100MB的对象，然后将其指针保存到全局对象ptrs
 }
 
-// go build -o main -gcflags "-N -l" /data/app/go/src/gosrc/demo/runtime/gc/obj_by_uintptr/main.go && GODEBUG=gctrace=1,gccheckmark=1  ./main
+// go build -o main -gcflags "-N -l" /data/app/go/src/gosrc/practice/runtime/gc/obj_by_uintptr/main.go && GODEBUG=gctrace=1,gccheckmark=1  ./main
 // GODEBUG=gctrace=1 ./main -index -http=:6060 2>&1 | gcvis
 
 // gc 1 @0.001s 0%: 0.004+93+0.032 ms clock, 0.016+0/0.006/93+0.12 ms cpu, 100->100->0 MB, 101 MB goal, 4 P (forced)
