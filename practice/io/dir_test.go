@@ -1,4 +1,4 @@
-package channel
+package main
 
 import (
 	"crypto/md5"

@@ -12,7 +12,10 @@ import (
 	"os"
 	"path"
 	"strings"
+	"sync"
 )
+
+//从网络上获取多张图片并打包下载
 var (
 	urls=[]string{
 		"https://ucc.alicdn.com/avatar/img_4220ff7b945d6632ab338ab84f37bfd1.png",
@@ -20,83 +23,134 @@ var (
 		"https://img.alicdn.com/tfs/TB1DZMGRpXXXXXHaFXXXXXXXXXX-32-32.png",
 	}
 )
-type zeros struct{}
 
-func (zeros) Read(b []byte) (int, error) {
-	for i := range b {
-		b[i] = 0
-	}
-	return len(b), nil
-}
+var (
+	filename="test"
+)
+
+//直接下载附件 http://localhost:8080/dd
+
+//文件列表  http://localhost:8080/files
+
+//返回下载链接  http://localhost:8080/download
 
 func main() {
-	//bigZip := makeZip("big.file", io.LimitReader(zeros{}, 1<<32-1))
-	//if err := ioutil.WriteFile("/tmp/big.zip", bigZip, 0666); err != nil {
-	//	log.Fatal(err)
-	//}
 
-	//biggestZip := makeZip("bigger.zip", bytes.NewReader(biggerZip))
-	//if err := ioutil.WriteFile("/tmp/biggest.zip", biggestZip, 0666); err != nil {
-	//	log.Fatal(err)
-	//}
+	//直接下载可能包含的附件 direct download => dd
+	http.HandleFunc("/dd", func(w http.ResponseWriter, r *http.Request) {
+		var err error
+		w.Header().Set("Content-Type", "application/zip")
+		w.Header().Set("Content-Disposition", fmt.Sprintf("attachment; filename=%s.zip", filename))
 
-
-
-	// Create a buffer to write our archive to.
-	buf := new(bytes.Buffer)
-
-	// Create a new zip archive.
-	w := zip.NewWriter(buf)
-
-	// Add some files to the archive.
-	//var files = []struct {
-	//	Name, Body string
-	//}{
-	//	{"readme.txt", "This archive contains some text files."},
-	//	{"gopher.txt", "Gopher names:\nGeorge\nGeoffrey\nGonzo"},
-	//	{"todo.txt", "Get animal handling licence.\nWrite more examples."},
-	//}
-	//for _, file := range files {
-	//	f, err := w.Create(file.Name)
-	//	if err != nil {
-	//		log.Fatal(err)it
-	//	}
-	//	_, err = f.Write([]byte(file.Body))
-	//	if err != nil {
-	//		log.Fatal(err)
-	//	}
-	//}
-
-	for _,v:= range urls{
-		resp,err:=http.DefaultClient.Get(v)
-		if err!=nil{
-			log.Fatalln(err)
+		zipW := zip.NewWriter(w)
+		defer zipW.Close()
+		if err = attachmentDownload(zipW, urls); err != nil {
+			fmt.Fprint(w,err)
+			return
 		}
-		defer resp.Body.Close()
+	})
 
 
-		body,err:=ioutil.ReadAll(resp.Body)
-		if err!=nil{
-			log.Fatalln(err)
-		}
-		fileName:= url.PathEscape(path.Base(v))
-		println(fileName)
+	fileHandle()//文件服务
 
-		f, err := w.Create(fileName)
-		if err != nil {
-			log.Fatal(err)
-		}
-		_, err = f.Write(body)
-		if err != nil {
-			log.Fatal(err)
-		}
+	log.Println("server start:")
+	log.Fatal(http.ListenAndServe(":8080", nil))
+}
+
+//attachmentDownload download urls
+func attachmentDownload(w *zip.Writer, urls []string) (err error){
+	var (
+		wg    sync.WaitGroup
+		mux sync.Mutex
+	)
+
+	wg.Add(len(urls))
+	for _, v := range urls {
+		vv := v
+		go func() {
+			mux.Lock()
+			packCompress(w, vv)
+			mux.Unlock()
+			wg.Done()
+		}()
 	}
+	wg.Wait()
 
-	// Make sure to check the error on Close.
-	err := w.Close()
+	if err = w.Close();err != nil {
+		log.Fatalf("AttachmentDownload w.Close() urls(%+v) error(%v)", urls, err)
+		return
+	}
+	return
+}
+
+
+func packCompress(w *zip.Writer, addr string) {
+	resp, err := http.DefaultClient.Get(addr)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("packCompress http.DefaultClient.Get addr(%+v) error(%v)", addr, err)
+		return
 	}
+	defer resp.Body.Close()
+
+	base := url.QueryEscape(path.Base(addr))
+	if len(base) > 50 {
+		base = base[:50] + "..."
+	}
+
+	fileName := base
+	n := 0
+	for {
+		_, err := os.Stat(fileName)
+		if err != nil {
+			break
+		}
+		fileName = fmt.Sprintf("%s-%d", base, n)
+		n++
+	}
+
+	body,err:=ioutil.ReadAll(resp.Body)
+	if err!=nil{
+		log.Fatalf("packCompress ioutil.ReadAll addr(%+v) error(%v)", addr, err)
+		return
+	}
+
+	f, err := w.Create(fileName)
+	if err != nil {
+		log.Fatalf("packCompress w.Create addr(%+v) error(%v)", addr, err)
+		return
+	}
+
+	_, err = f.Write(body)
+	if err != nil {
+		log.Fatalf("packCompress f.Write addr(%+v) error(%v)", addr, err)
+		return
+	}
+}
+
+
+
+//1、服务器保存zip文件
+//2、可查询文件列表
+//3、返回下载链家
+func fileHandle(){
+	var (
+		wg    sync.WaitGroup
+		mux sync.Mutex
+	)
+
+	buf := new(bytes.Buffer)
+	w := zip.NewWriter(buf)
+	wg.Add(len(urls))
+	for _, v := range urls {
+		vv := v
+		go func() {
+			mux.Lock()
+			packCompress(w, vv)
+			mux.Unlock()
+			wg.Done()
+		}()
+	}
+	wg.Wait()
 
 
 	zipFile:="file.zip"
@@ -108,6 +162,7 @@ func main() {
 	if _,err=buf.WriteTo(f);err != nil {
 		log.Fatalf("save os.OpenFile urls(%+v) error(%v)", urls, err)
 	}
+
 
 	uploadPath := "./"
 	fs := http.FileServer(http.Dir(uploadPath))
@@ -134,9 +189,6 @@ func main() {
 		fmt.Println(dw)
 		fmt.Fprintln(w, dw)
 	})
-
-
-	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func makeZip(name string, r io.Reader) []byte {
