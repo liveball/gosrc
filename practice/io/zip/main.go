@@ -17,7 +17,7 @@ import (
 
 //从网络上获取多张图片并打包下载
 var (
-	urls=[]string{
+	urls = []string{
 		"https://ucc.alicdn.com/avatar/img_4220ff7b945d6632ab338ab84f37bfd1.png",
 		"https://img.alicdn.com/tfs/TB1t4w5RpXXXXcsXVXXXXXXXXXX-32-32.png",
 		"https://img.alicdn.com/tfs/TB1DZMGRpXXXXXHaFXXXXXXXXXX-32-32.png",
@@ -25,7 +25,7 @@ var (
 )
 
 var (
-	filename="test"
+	filename = "test"
 )
 
 //直接下载附件 http://localhost:8080/dd
@@ -45,22 +45,21 @@ func main() {
 		zipW := zip.NewWriter(w)
 		defer zipW.Close()
 		if err = attachmentDownload(zipW, urls); err != nil {
-			fmt.Fprint(w,err)
+			fmt.Fprint(w, err)
 			return
 		}
 	})
 
-
-	fileHandle()//文件服务
+	fileHandle() //文件服务
 
 	log.Println("server start:")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 //attachmentDownload download urls
-func attachmentDownload(w *zip.Writer, urls []string) (err error){
+func attachmentDownload(w *zip.Writer, urls []string) (err error) {
 	var (
-		wg    sync.WaitGroup
+		wg  sync.WaitGroup
 		mux sync.Mutex
 	)
 
@@ -76,13 +75,12 @@ func attachmentDownload(w *zip.Writer, urls []string) (err error){
 	}
 	wg.Wait()
 
-	if err = w.Close();err != nil {
+	if err = w.Close(); err != nil {
 		log.Fatalf("AttachmentDownload w.Close() urls(%+v) error(%v)", urls, err)
 		return
 	}
 	return
 }
-
 
 func packCompress(w *zip.Writer, addr string) {
 	resp, err := http.DefaultClient.Get(addr)
@@ -108,8 +106,8 @@ func packCompress(w *zip.Writer, addr string) {
 		n++
 	}
 
-	body,err:=ioutil.ReadAll(resp.Body)
-	if err!=nil{
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
 		log.Fatalf("packCompress ioutil.ReadAll addr(%+v) error(%v)", addr, err)
 		return
 	}
@@ -127,14 +125,12 @@ func packCompress(w *zip.Writer, addr string) {
 	}
 }
 
-
-
 //1、服务器保存zip文件
 //2、可查询文件列表
 //3、返回下载链家
-func fileHandle(){
+func fileHandle() {
 	var (
-		wg    sync.WaitGroup
+		wg  sync.WaitGroup
 		mux sync.Mutex
 	)
 
@@ -152,17 +148,15 @@ func fileHandle(){
 	}
 	wg.Wait()
 
-
-	zipFile:="file.zip"
+	zipFile := "file.zip"
 	f, err := os.OpenFile(zipFile, os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		log.Fatalf("save os.OpenFile urls(%+v) error(%v)", urls, err)
 		return
 	}
-	if _,err=buf.WriteTo(f);err != nil {
+	if _, err = buf.WriteTo(f); err != nil {
 		log.Fatalf("save os.OpenFile urls(%+v) error(%v)", urls, err)
 	}
-
 
 	uploadPath := "./"
 	fs := http.FileServer(http.Dir(uploadPath))
@@ -183,9 +177,9 @@ func fileHandle(){
 			scheme = "https://"
 		}
 
-		host:=strings.Join([]string{scheme, r.Host, "/files"}, "")
+		host := strings.Join([]string{scheme, r.Host, "/files"}, "")
 
-		dw:="<a href=" + host+"/"+zipFile+">下载</a>"
+		dw := "<a href=" + host + "/" + zipFile + ">下载</a>"
 		fmt.Println(dw)
 		fmt.Fprintln(w, dw)
 	})
