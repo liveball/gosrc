@@ -112,6 +112,24 @@ func packCompress(w *zip.Writer, addr string) {
 		return
 	}
 
+	//filetype := http.DetectContentType(body)
+	//switch filetype {
+	//case
+	//	"image/jpeg",
+	//	"image/jpg",
+	//	"image/png",
+	//	"application/pdf":
+	//case "application/octet-stream", "application/zip":
+	//case "application/msword":
+	//	filetype = "application/doc"
+	//case "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
+	//	filetype = "application/docx"
+	//case "application/vnd.ms-word.document.macroEnabled.12":
+	//	filetype = "application/docm"
+	//default:
+	//	return
+	//}
+
 	f, err := w.Create(fileName)
 	if err != nil {
 		log.Fatalf("packCompress w.Create addr(%+v) error(%v)", addr, err)
