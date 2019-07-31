@@ -1,6 +1,9 @@
 ### Go 大杀器之跟踪剖析 trace
 https://juejin.im/post/5d27400151882530af139a85
 
+### pprof 定位oom
+https://yq.aliyun.com/articles/573743
+
 ### Go 程序的性能调试问题
 https://studygolang.com/articles/2498 
 ### Debugging performance issues in Go programs
