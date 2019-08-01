@@ -3,9 +3,9 @@
 
 go tool pprof http://127.0.0.1:2333
 
-go tool pprof -seconds=10 --pdf  http://127.0.0.1:2333/debug/pprof/profile > profile.pdf
+go tool pprof -seconds=10 -pdf  http://127.0.0.1:2333/debug/pprof/profile > profile.pdf
 
-go tool pprof -seconds=10 --pdf  http://127.0.0.1:2333/debug/pprof/heap > heap.pdf
+go tool pprof -seconds=10 -pdf  http://127.0.0.1:2333/debug/pprof/heap > heap.pdf
 
 
 ### 生成火焰图
