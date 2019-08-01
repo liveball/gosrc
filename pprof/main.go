@@ -13,6 +13,8 @@ import (
 )
 
 //应用程序用法
+//go tool pprof -inuse_space http://localhost:9000/debug/pprof/heap
+
 //go run main.go --cpuprofile=cpu.prof --memprofile=mem.prof
 //go tool pprof cpu.prof / mem.prof
 
