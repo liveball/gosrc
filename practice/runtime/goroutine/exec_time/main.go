@@ -2,18 +2,20 @@ package main
 
 import (
 	"fmt"
+	"net/http"
 	"sync"
 	"time"
+
+	_ "net/http/pprof"
 )
 
 var wg sync.WaitGroup
-
 
 func print1(str chan string) {
 	fmt.Println("print1")
 	time.Sleep(1 * time.Second)
 	str <- "print1"
-    wg.Done()
+	wg.Done()
 }
 
 func print2(str chan string) {
@@ -30,14 +32,16 @@ func main() {
 
 	wg.Add(2)
 	go print1(print1Channel)
-	print1 := <- print1Channel
+	print1 := <-print1Channel
 	fmt.Println("main", print1)
 
 	go print2(print2Channel)
-	print2 := <- print2Channel
-	fmt.Println("main",print2)
+	print2 := <-print2Channel
+	fmt.Println("main", print2)
 
 	wg.Wait()
 	since := time.Since(now)
 	fmt.Println("耗时--->", since)
+
+	http.ListenAndServe(":9000",nil )
 }
