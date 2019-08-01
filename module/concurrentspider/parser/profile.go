@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"gowhole/demo/concurrentspider/model"
+	"gosrc/module/concurrentspider/model"
 )
 
 var (

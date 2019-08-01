@@ -3,7 +3,7 @@ package engine
 import (
 	"log"
 
-	"gowhole/exercise/actualdemo/concurrentspider/model"
+	"gosrc/module/concurrentspider/model"
 )
 
 type ConcurrentEngine struct {

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"gowhole/exercise/actualdemo/concurrentspider/engine"
-	"gowhole/exercise/actualdemo/concurrentspider/model"
-	"gowhole/exercise/actualdemo/concurrentspider/parser"
-	"gowhole/exercise/actualdemo/concurrentspider/scheduler"
+	"gosrc/module/concurrentspider/engine"
+	"gosrc/module/concurrentspider/model"
+	"gosrc/module/concurrentspider/parser"
+	"gosrc/module/concurrentspider/scheduler"
 )
 
 const (

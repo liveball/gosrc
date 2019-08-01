@@ -1,6 +1,6 @@
 package scheduler
 
-import "gowhole/exercise/actualdemo/concurrentspider/model"
+import "gosrc/module/concurrentspider/model"
 
 type SimpleScheduler struct {
 	workerChan chan model.Request

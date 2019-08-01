@@ -3,8 +3,9 @@ package engine
 import (
 	"log"
 
-	"gowhole/exercise/actualdemo/concurrentspider/fetcher"
-	"gowhole/exercise/actualdemo/concurrentspider/model"
+
+	"gosrc/module/concurrentspider/fetcher"
+	"gosrc/module/concurrentspider/model"
 )
 
 type SimpleEngine struct{}
