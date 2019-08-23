@@ -20,16 +20,16 @@ import (
 //从网络上获取多张图片并打包下载
 var (
 	urls = []string{
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
-		"http://i0.hdslb.com/bfs/creative-up-right/fd082df5ce6e224ced4ac21c941a4332b9214119.jpg?token=rofi0hwfbig2eqs2%3A8PNRSNlLgpYPpuXU2daQCLlJz38%3D%3A1566470979",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
+		"https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64",
 	}
 )
 

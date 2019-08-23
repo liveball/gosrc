@@ -17,7 +17,7 @@ var (
 
 	cxtTimeout = time.Duration(200 * time.Millisecond)
 
-	link = "http://i0.hdslb.com/bfs/creative-up-right/fd09db76a26f47af7a9453e1d48c0ae5a647dbf6.jpg"
+	link = "https://avatar-static.segmentfault.com/339/518/3395183340-2968_big64"
 )
 
 func main() {
