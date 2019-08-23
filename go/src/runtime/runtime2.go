@@ -46,7 +46,7 @@ const (
 	// queue) so it can be ready()d when necessary. The stack is
 	// not owned *except* that a channel operation may read or
 	// write parts of the stack under the appropriate channel
-	// lock. Otherwise, it is not safe to access the stack after a
+	// lock. Otherwise, it is not safe to access the stack aft a
 	// goroutine enters _Gwaiting (e.g., it may get moved).
 	_Gwaiting // 4
 

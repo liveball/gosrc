@@ -7,6 +7,7 @@ require (
 	github.com/aws/aws-sdk-go v1.20.18
 	github.com/davecgh/go-spew v1.1.1
 	github.com/go-sql-driver/mysql v1.4.1
+	github.com/gogo/protobuf v1.2.1 // indirect
 	github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6
 	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/google/gopacket v1.1.17

@@ -1,0 +1,60 @@
+
+
+
+
+
+2019-08-21 12:32:42 stdout:
+
+goroutine 18 [running]:
+main.dumpStacks()
+	/data/app/go/src/gosrc/practice/runtime/goroutine/stack/main.go:45 +0x6d
+main.SetupStackTrap.func1(0xc0000900c0)
+	/data/app/go/src/gosrc/practice/runtime/goroutine/stack/main.go:38 +0x34
+created by main.SetupStackTrap
+	/data/app/go/src/gosrc/practice/runtime/goroutine/stack/main.go:36 +0xdc
+
+goroutine 1 [sleep]:
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:307
+time.Sleep(0x174876e800)
+	/usr/local/go/src/runtime/time.go:105 +0x159
+main.main()
+	/data/app/go/src/gosrc/practice/runtime/goroutine/stack/main.go:14 +0x68
+
+goroutine 33 [syscall]:
+os/signal.signal_recv(0x10a2400)
+	/usr/local/go/src/runtime/sigqueue.go:139 +0x9f
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x22
+created by os/signal.init.0
+	/usr/local/go/src/os/signal/signal_unix.go:29 +0x41
+
+
+
+
+
+2019-08-21 12:33:45 stdout:
+
+goroutine 18 [running]:
+main.dumpStacks()
+	/data/app/go/src/gosrc/practice/runtime/goroutine/stack/main.go:45 +0x6d
+main.SetupStackTrap.func1(0xc0000900c0)
+	/data/app/go/src/gosrc/practice/runtime/goroutine/stack/main.go:38 +0x34
+created by main.SetupStackTrap
+	/data/app/go/src/gosrc/practice/runtime/goroutine/stack/main.go:36 +0xdc
+
+goroutine 1 [sleep]:
+runtime.goparkunlock(...)
+	/usr/local/go/src/runtime/proc.go:307
+time.Sleep(0x174876e800)
+	/usr/local/go/src/runtime/time.go:105 +0x159
+main.main()
+	/data/app/go/src/gosrc/practice/runtime/goroutine/stack/main.go:14 +0x68
+
+goroutine 33 [syscall]:
+os/signal.signal_recv(0x10a2400)
+	/usr/local/go/src/runtime/sigqueue.go:139 +0x9f
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:23 +0x22
+created by os/signal.init.0
+	/usr/local/go/src/os/signal/signal_unix.go:29 +0x41

@@ -29,6 +29,8 @@ func (g *G) Wait() {
 }
 
 func main() {
+	//*(*int)(nil) = 0
+
 	g := new(G)
 	println(111)
 	// ctx, cancel := context.WithCancel(context.Background())
