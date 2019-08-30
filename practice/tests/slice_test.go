@@ -63,7 +63,7 @@ func Test_AppendByTime(t *testing.T) {
 		dt := time.Now().AddDate(0, 0, -1-i).Add(-12 * time.Hour).Format("20060102")
 		tm, err := time.Parse("20060102", dt)
 		if err != nil {
-			log.Error("time.Parse error(%v)", err)
+			log.Errorf("time.Parse error(%v)", err)
 			return
 		}
 		t := tm.Unix()

@@ -1,22 +1,15 @@
 package main
 
-import "fmt"
+func main() { // breakpoint 1
+	ch := make(chan int)
+	go func() {
+		for i := range ch {
+			println(i) // breakpoint 2
+		}
+	}()
 
-func main() {
-	println("hello")
-	fmt.Printf("aa")
+	ch <- 1
 
-	a := make([]int, 0)
-	a = append(a, 1)
-	fmt.Println(a)
-}
-
-func adder() func(int) int {
-	sum := 0
-	return func(x int) int {
-		// println(x)
-		sum += x
-		println(sum)
-		return sum
-	}
+	wait := make(chan int) // breakpoint 3
+	<-wait
 }

@@ -140,7 +140,7 @@ func Test_split(t *testing.T) {
 	for _, v := range tidSlice {
 		tid, err := strconv.ParseInt(v, 10, 64)
 		if err != nil {
-			log.Error("strconv.ParseInt(%s) error(%v)", v, err)
+			log.Errorf("strconv.ParseInt(%s) error(%v)", v, err)
 			return
 		}
 		tids = append(tids, tid)
