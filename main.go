@@ -3,8 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	println("hello")
-	fmt.Printf("aa")
+
+	var c chan int
+	c = make(chan int)
+	go func() {
+		c <- 1
+	}()
+
+	print(<-c)
 
 	a := make([]int, 0)
 	a = append(a, 1)
