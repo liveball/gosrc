@@ -3,6 +3,8 @@ github.com/alangpierce/go-forceexport v0.0.0-20160317203124-8f1d6941cd75 h1:3ILj
 github.com/alangpierce/go-forceexport v0.0.0-20160317203124-8f1d6941cd75/go.mod h1:uAXEEpARkRhCZfEvy/y0Jcc888f9tHCc1W7/UeEtreE=
 github.com/aws/aws-sdk-go v1.20.18 h1:k8y5kuh6w8Jw8AOoXAZBygCTDmGNMqfkZK5/OffOB0E=
 github.com/aws/aws-sdk-go v1.20.18/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN924inxo=
+github.com/cch123/goroutineid v0.0.0-20190716053026-49ef8fcd040d h1:YM+6kxNOpq6NFheAV6E0m62oPGWOzXWnA6vQIcqTXmU=
+github.com/cch123/goroutineid v0.0.0-20190716053026-49ef8fcd040d/go.mod h1:kGVRa3guR6LuiKJ8Xv8Z3s4XI/Jr51TmXWAdmDi0Fes=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

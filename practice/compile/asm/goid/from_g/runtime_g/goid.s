@@ -1,6 +1,6 @@
 #include "textflag.h"
 
-// func getg() interface{}
+//func getg() interface{}
 TEXT ·getg(SB), NOSPLIT, $32-16
     // get runtime.g
     MOVQ (TLS), AX

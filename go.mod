@@ -5,6 +5,7 @@ go 1.12
 require (
 	github.com/alangpierce/go-forceexport v0.0.0-20160317203124-8f1d6941cd75
 	github.com/aws/aws-sdk-go v1.20.18
+	github.com/cch123/goroutineid v0.0.0-20190716053026-49ef8fcd040d // indirect
 	github.com/davecgh/go-spew v1.1.1
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gogo/protobuf v1.2.1 // indirect
@@ -25,6 +26,7 @@ require (
 	golang.org/x/arch v0.0.0-20190329052859-788fe5ffcd8c
 	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
 	golang.org/x/net v0.0.0-20190628185345-da137c7871d7
+	golang.org/x/sys v0.0.0-20190606165138-5da285871e9c
 	golang.org/x/text v0.3.2
 	golang.org/x/tools v0.0.0-20190711191110-9a621aea19f8
 	google.golang.org/appengine v1.6.1 // indirect

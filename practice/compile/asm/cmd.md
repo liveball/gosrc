@@ -1,4 +1,10 @@
 
+### Go 语言汇编快速入门
+https://studygolang.com/articles/12828?fr=sidebar
+
+### plan9  汇编
+https://9p.io/sys/doc/asm.pdf
+
 #编译汇编
 
 nasm -f elf64 -o hello.o hello.asm
@@ -6,7 +12,6 @@ nasm -f elf64 -o hello.o hello.asm
 nasm -f elf32 -o hello.o hello.asm
 
 ld -o hello hello.o
-
 
 ### 编译
 `nasm -g -F dwarf -f elf64 -o hello.o hello.s`
