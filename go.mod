@@ -14,6 +14,7 @@ require (
 	github.com/google/gops v0.3.6
 	github.com/google/pprof v0.0.0-20190515194954-54271f7e092f
 	github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6 // indirect
+	github.com/intel-go/cpuid v0.0.0-20181003105527-1a4a6f06a1c6 // indirect
 	github.com/kavu/go_reuseport v1.4.0 // indirect
 	github.com/kisielk/gotool v1.0.0
 	github.com/let-z-go/aspector v0.0.0-20190616101030-29d718fdc336

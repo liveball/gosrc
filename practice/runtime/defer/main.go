@@ -1,6 +1,6 @@
 package main
 
-type Test struct {}
+type Test struct{}
 
 func (p *Test) Stop() {
 	println("defer1 stop")
@@ -25,7 +25,6 @@ func Start1() interface{ Stop() } {
 func Start2() {
 	println("defer2")
 }
-
 
 func main() {
 	//1.调用start 生成I的实例，再实现I的stop方法
