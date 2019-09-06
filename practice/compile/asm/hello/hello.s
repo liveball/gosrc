@@ -6,6 +6,7 @@ DATA world<>+8(SB)/4, $"rld "
 GLOBL world<>+0(SB), RODATA, $12
 
 // 需要 stack空间 88字节，没有参数和返回值
+//func hello()
 TEXT ·hello(SB),$88-0
     SUBQ    $88, SP
     MOVQ    BP, 80(SP)

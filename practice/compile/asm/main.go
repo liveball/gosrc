@@ -1,4 +1,4 @@
-package main
+package asm
 
 //go:noinline
 func add(a, b int32) (int32, bool) {
