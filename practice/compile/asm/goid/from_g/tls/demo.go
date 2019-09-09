@@ -15,3 +15,5 @@ func NewStudentPtr(s *Student) *Student
 
 
 func UpStudentPtr(s *Student, name string, age int)
+
+
