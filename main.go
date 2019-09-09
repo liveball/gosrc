@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import "log"
 
 func main() {
 
@@ -10,11 +10,11 @@ func main() {
 		c <- 1
 	}()
 
-	print(<-c)
+	println(<-c)
 
 	a := make([]int, 0)
 	a = append(a, 1)
-	fmt.Println(a)
+	log.Println(a)
 }
 
 func adder() func(int) int {
