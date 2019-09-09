@@ -10,13 +10,18 @@ import (
 
 func getg() unsafe.Pointer
 
-func GetGoid() (id int64) {
-	println(runtime.Version())
+func setg(gg *g)
+
+func Setg(g *g) {
+	//if g == nil {
+	//	setg(nil)
+	//} else {
+	setg(getG().m.gsignal)
+	//}
+}
+
+func getG() *g {
 	gPtr := getg()
-
-	idPtr := (*int64)(unsafe.Pointer(uintptr(gPtr) + uintptr(offset)))
-	id = *idPtr
-
 	gStruct := (*g)(gPtr)
 	fmt.Println("gStruct:", gStruct)
 	val := reflect.ValueOf(gStruct)
@@ -32,6 +37,15 @@ func GetGoid() (id int64) {
 		println("goid offset:", f.Offset)
 	}
 
+	return gStruct
+}
+
+func GetGoid() (id int64) {
+	fmt.Println("go version", runtime.Version())
+	gPtr := getg()
+
+	idPtr := (*int64)(unsafe.Pointer(uintptr(gPtr) + uintptr(offset)))
+	id = *idPtr
 	return
 }
 

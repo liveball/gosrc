@@ -1,8 +1,10 @@
 package main
 
-import "github.com/fengpf/goroutineid"
-
 func main() {
-	id := goroutineid.GetGoID()
-	println(id) // 1
+	a := "aa"
+	_ = aa(a)
+}
+
+func aa(a string) string {
+	return a
 }
