@@ -1,5 +1,8 @@
 package objptr
 
+import "unsafe"
+
+
 type Student struct {
 	Name string
 	Age  int
@@ -21,5 +24,9 @@ func NewStudent(s Student) Student
 func NewStudentPtr(s *Student) *Student
 
 func UpStudentPtr(s *Student, name string, age int)
+
+func StudentPtr(s *Student) unsafe.Pointer
+
+func StudentAge(s *Student) int
 
 func StudentName(s *Student) string

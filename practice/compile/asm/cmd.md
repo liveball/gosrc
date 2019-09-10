@@ -1,9 +1,13 @@
 
+### Quick intro to go assembly
+https://blog.hackercat.ninja/post/quick_intro_to_go_assembly/
+
 ### Go 语言汇编快速入门
 https://studygolang.com/articles/12828?fr=sidebar
 
 ### plan9  汇编
 https://9p.io/sys/doc/asm.pdf
+
 
 #编译汇编
 

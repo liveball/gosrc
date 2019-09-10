@@ -15,14 +15,16 @@ TEXT ·String(SB), NOSPLIT, $0-32
     RET
 
 //func NewStudent(s Student) Student
-TEXT ·NewStudent(SB), NOSPLIT, $0-48
+TEXT ·NewStudent(SB), NOSPLIT, $0-64
 	MOVQ  s_Name_str+0(FP), AX
 	MOVQ  s_Name_len+8(FP), BX
 	MOVQ  s_Age+16(FP), CX
+	MOVQ  s_Card+24(FP), DX
 
-	MOVQ  AX, ret_Name_str+24(FP)
-	MOVQ BX, ret_Name_len+32(FP)
-	MOVQ CX, ret_Age+40(FP)
+	MOVQ  AX, ret_Name_str+32(FP)
+	MOVQ  BX, ret_Name_len+40(FP)
+	MOVQ  CX, ret_Age+48(FP)
+	MOVQ  DX, ret_Card+56(FP)
 	RET
 
 //func NewStudentPtr(s *Student) *Student
@@ -53,9 +55,31 @@ TEXT ·UpStudentPtr(SB), NOSPLIT, $0-0
 	RET
 
 
-// func StudentName(s *Student) string
-TEXT ·StudentName(SB), NOSPLIT, $0-16
+// func StudentPtr(s *Student) unsafe.Pointer
+TEXT ·StudentPtr(SB), NOSPLIT, $0-16
 	MOVQ	s+0(FP), BX
-	MOVQ	s_Name(BX), AX
+   	MOVQ    BX, ret+8(FP)
 	RET
+
+// func StudentAge(s *Student) int
+TEXT ·StudentAge(SB), NOSPLIT, $0-16
+     MOVQ s+0(FP), BX
+
+     MOVQ 16(BX), AX
+
+     MOVQ  AX, ret+8(FP)
+
+     RET
+
+// func StudentName(s *Student) string
+TEXT ·StudentName(SB), NOSPLIT, $0-24
+     MOVQ s+0(FP), BX
+
+     MOVQ (BX), AX  // string 第一个字段地址
+     MOVQ 8(BX), CX // string 第二个字段地址
+
+     MOVQ AX, ret+8(FP)  //返回到栈帧 8字节处
+     MOVQ CX, ret+16(FP) //返回到栈帧 16字节处
+
+     RET
 
