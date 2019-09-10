@@ -86,3 +86,11 @@ TEXT ·UpStudentPtr(SB), NOSPLIT, $0-0
     LEAQ   (CX), DX //DX = &AX 将AX的地址，放入DX
     MOVQ   DX, 16(BX) //*(BX+16) = DX 将DX寄存器中的值， 放入BX指向的内存区域8byte
 	RET
+
+
+// func StudentName(s *Student) string
+TEXT ·StudentName(SB), NOSPLIT, $0-16
+	MOVQ	s+0(FP), BX
+	MOVQ	s_Name(BX), AX
+	RET
+

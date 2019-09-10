@@ -30,6 +30,7 @@ func main() {
 	tls.UpStudentPtr(nStu, "小王", 40)
 	fmt.Println("nStu up:", nStu)
 
+	fmt.Println(tls.StudentName(nStu))
 	atomicTest()
 }
 
