@@ -4,7 +4,7 @@
 
 // Time-related runtime and pieces of package time.
 
-package tls
+package runtime2
 
 // Package time knows the layout of this structure.
 // If this struct changes, adjust ../time/sleep.go:/runtimeTimer.

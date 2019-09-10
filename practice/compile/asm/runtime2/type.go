@@ -4,7 +4,7 @@
 
 // Runtime type representation.
 
-package tls
+package runtime2
 
 import "unsafe"
 

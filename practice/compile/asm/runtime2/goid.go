@@ -1,4 +1,4 @@
-package tls
+package runtime2
 
 import (
 	"fmt"
@@ -8,9 +8,6 @@ import (
 	"unsafe"
 )
 
-func getg() unsafe.Pointer
-
-func setg(gg *g)
 
 func Setg(g *g) {
 	//if g == nil {

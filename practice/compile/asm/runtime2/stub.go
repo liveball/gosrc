@@ -1,6 +1,10 @@
-package tls
+package runtime2
 
 import "unsafe"
+
+func getg() unsafe.Pointer
+
+func setg(gg *g)
 
 // StorepNoWB performs *ptr = val atomically and without a write
 // barrier.
