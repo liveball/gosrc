@@ -1,7 +1,15 @@
 package main
 
-const a = 0x02
-
 func main() {
-	_ = a
+	_ = add(1, 2)
+}
+
+func add(a, b int) int {
+	foo()
+	return a + b
+}
+
+
+func foo() int{
+	return 100
 }
