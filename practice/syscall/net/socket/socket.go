@@ -5,7 +5,7 @@ import (
 	"net"
 	"syscall"
 
-	"go1.11.1/demo/syscall/net/epoll"
+	"gosrc/practice/syscall/net/epoll"
 )
 
 type Lisenter struct {
@@ -90,6 +90,12 @@ func (c *Lisenter) Write(buf []byte) {
 		}
 		c.Poller.Modify(c.FD)
 	}
+}
+
+
+//func Sendfile(outfd int, infd int, offset *int64, count int) (written int, err error)
+func (c *Lisenter) Sendfile(outfd int, infd int, offset *int64, count int) (written int, err error) {
+	return syscall.Sendfile(outfd, infd, offset, count)
 }
 
 func (c *Lisenter) Close() {
