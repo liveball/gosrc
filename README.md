@@ -25,6 +25,10 @@
 
 `GOROOT=/data/app/go/src/gosrc/go && export PATH=$GOROOT/bin:$PATH`
 
+ 4.1 default goroot
+
+`GOROOT=/usr/local/go && export PATH=$GOROOT/bin:$PATH`
+
 `go test -v -run=Dynlink`
 
 >5、go build go

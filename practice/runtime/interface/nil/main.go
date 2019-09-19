@@ -11,17 +11,67 @@ import (
 //使用 -gcflags "-N -l" 参数关闭编译器代码优化
 //go build -gcflags "-N -l" -o main main.go
 
+type foo struct{}
+
 func main() {
 	var a interface{}
 	var b interface{} = (*interface{})(nil)
 
-	println(a, a == nil)
-	println(b, b == nil)
+	fmt.Println(a, a == nil)
+	fmt.Println(b, b == nil)
 
-	fmt.Printf("a type: %#v\tvalue: %#v \n",
+	fmt.Printf("a type: %#v\t value: %#v \n",
 		reflect.TypeOf(a),
-		reflect.ValueOf(a),
+		reflect.ValueOf(a).String(),
 	)
+
+	fmt.Printf("b type: %#v\t value: %#v \n",
+		reflect.TypeOf(b).String(),
+		reflect.ValueOf(b).String(), //*(*[2]uintptr)(unsafe.Pointer(&b))
+	)
+
+	fmt.Println("=======================")
+
+	var f foo
+	var f2 *foo
+	a = f
+	b1 := f2
+
+	fmt.Println(a, a == nil)
+	fmt.Println(b1, b1 == nil)
+
+	fmt.Printf("a1 type: %#v\t value: %#v \n",
+		reflect.TypeOf(a).String(),
+		reflect.ValueOf(a).String(),
+	)
+
+	fmt.Printf("b1 type: %#v\t value: %#v \n",
+		reflect.TypeOf(b1).String(),
+		reflect.ValueOf(b1).String(),
+	)
+
+	fmt.Println(IsNilPtr(a), IsNilPtr(b1))
+
+	fmt.Println("=======================")
+	//test()
+}
+
+func IsNilPtr(x interface{}) bool {
+	v := reflect.ValueOf(x)
+	return v.Kind() == reflect.Ptr && v.IsNil()
+}
+
+func dumpObj() {
+	for _, name := range types.Universe.Names() {
+		// println(name)
+		if obj, _ := types.Universe.Lookup(name).(*types.TypeName); obj != nil {
+			fmt.Printf("obj(%#v) \n", reflect.ValueOf(obj))
+			println()
+		}
+	}
+}
+
+func test() {
 
 	var (
 		v  interface{}
@@ -45,14 +95,4 @@ func main() {
 	v = fn
 	fmt.Println("v interface{}=fn os.File", v == nil)
 
-}
-
-func dumpObj() {
-	for _, name := range types.Universe.Names() {
-		// println(name)
-		if obj, _ := types.Universe.Lookup(name).(*types.TypeName); obj != nil {
-			fmt.Printf("obj(%#v) \n", reflect.ValueOf(obj))
-			println()
-		}
-	}
 }
