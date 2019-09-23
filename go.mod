@@ -20,6 +20,7 @@ require (
 	github.com/mmcloughlin/avo v0.0.0-20190731014047-bb615f61ce85
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
 	github.com/qiniu/log v0.0.0-20140728010919-a304a74568d6
+	github.com/randall77/hprof v0.0.0-20150224201534-15dcd12150c1 // indirect
 	github.com/stretchr/testify v1.3.0 // indirect
 	github.com/tidwall/evio v1.0.2
 	golang.org/x/arch v0.0.0-20190329052859-788fe5ffcd8c

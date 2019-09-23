@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"runtime"
 	"runtime/debug"
@@ -16,6 +17,6 @@ func main() {
 	debug.WriteHeapDump(f.Fd())
 
 	data := make([]byte, 10, 10)
-	println(data)
+	fmt.Println(data)
 	runtime.GC()
 }
