@@ -11,9 +11,9 @@ https://9p.io/sys/doc/asm.pdf
 
 #编译汇编
 
-nasm -f elf64 -o hello.o hello.asm
+nasm -f elf64 -o hello.o hello.s
 
-nasm -f elf32 -o hello.o hello.asm
+nasm -f elf32 -o hello.o hello.s
 
 ld -o hello hello.o
 
@@ -21,19 +21,19 @@ ld -o hello hello.o
 `nasm -g -F dwarf -f elf64 -o hello.o hello.s`
 
 ### 链接
-`ld -o hel hello.o`
+`ld -o hello hello.o`
 
 ### nm命令主要是用来列出某些文件中的符号（说白了就是一些函数和全局变量等）
-`nm hel`
+`nm hello`
 
 ### 删除标签
-`strip hel`
+`strip hello`
 
 ### 反汇编
 
-`objdump -d -M intel hel`
+`objdump -d -M intel hello`
 
-```asm hel：     文件格式 elf64-x86-64
+```asm hello：     文件格式 elf64-x86-64
 
 
 Disassembly of section .text:
@@ -73,7 +73,7 @@ Symbol table '.symtab' contains 11 entries:
      9: 0000000000000000     0 SECTION LOCAL  DEFAULT   13 
     10: 0000000000000027     0 NOTYPE  GLOBAL DEFAULT    2 _start
     
-`readelf -l hel`
+`readelf -l hello`
 
 Elf 文件类型为 EXEC (可执行文件)
 Entry point 0x4000d7

@@ -53,6 +53,10 @@ func main() {
 	fmt.Println(IsNilPtr(a), IsNilPtr(b1))
 
 	fmt.Println("=======================")
+
+	var sl []string
+	yes := sl == nil
+	fmt.Println(yes)
 	//test()
 }
 
