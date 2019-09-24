@@ -5,6 +5,7 @@ go 1.12
 require (
 	github.com/alangpierce/go-forceexport v0.0.0-20160317203124-8f1d6941cd75
 	github.com/aws/aws-sdk-go v1.20.18
+	github.com/cavaliercoder/grab v2.0.0+incompatible
 	github.com/davecgh/go-spew v1.1.1
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6
@@ -12,6 +13,7 @@ require (
 	github.com/google/gopacket v1.1.17
 	github.com/google/gops v0.3.6
 	github.com/google/pprof v0.0.0-20190515194954-54271f7e092f
+	github.com/gorilla/mux v1.7.3 // indirect
 	github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6 // indirect
 	github.com/intel-go/cpuid v0.0.0-20181003105527-1a4a6f06a1c6
 	github.com/kavu/go_reuseport v1.4.0 // indirect
@@ -20,7 +22,7 @@ require (
 	github.com/mmcloughlin/avo v0.0.0-20190731014047-bb615f61ce85
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
 	github.com/qiniu/log v0.0.0-20140728010919-a304a74568d6
-	github.com/randall77/hprof v0.0.0-20150224201534-15dcd12150c1 // indirect
+	github.com/rs/xid v1.2.1 // indirect
 	github.com/stretchr/testify v1.3.0 // indirect
 	github.com/tidwall/evio v1.0.2
 	golang.org/x/arch v0.0.0-20190329052859-788fe5ffcd8c
