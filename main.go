@@ -3,6 +3,8 @@ package main
 import "log"
 
 func main() {
+	i := 1 << 10
+	println(i)
 
 	var c chan int
 	c = make(chan int)

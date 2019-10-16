@@ -1,6 +1,10 @@
 package main
 
-import "testing"
+import (
+	"bytes"
+	"fmt"
+	"testing"
+)
 
 func BenchmarkCopy(b *testing.B) {
 	for i := 0; i < b.N; i++ {
@@ -9,6 +13,15 @@ func BenchmarkCopy(b *testing.B) {
 		copyWriteTo()
 		// copyBuffer()
 	}
+}
+
+func Test_WriteInterface(t *testing.T) {
+	var i interface{}
+	var buf bytes.Buffer
+	i = 1
+	buf.WriteString(string(i.(int)))
+	fmt.Println(1, buf.String())
+	fmt.Println(2, buf.Bytes())
 }
 
 // copy()

@@ -10,6 +10,23 @@ import (
 	"sync"
 )
 
+func main() {
+	// copy()
+
+	copyReadFrom()
+
+	// copyWriteTo()
+
+	copyBuffer()
+
+	//换行输入并打印
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Split(bufio.ScanLines)
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
+}
+
 type Buffer struct {
 	bytes.Buffer
 	io.ReaderFrom // conflicts with and hides bytes.Buffer's ReaderFrom.
@@ -69,21 +86,4 @@ func copyBuffer() {
 	}
 
 	bufPool.Put(buf)
-}
-
-func main() {
-	// copy()
-
-	copyReadFrom()
-
-	// copyWriteTo()
-
-	// copyBuffer()
-
-	//换行输入并打印
-	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Split(bufio.ScanLines)
-	for scanner.Scan() {
-		fmt.Println(scanner.Text())
-	}
 }
