@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231e588f-a154-4372-8994-14548708cc93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practice/io/buffer/write_interface/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/goroutine/closure/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/interface/error/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/memory/model/incorrect_sync/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/memory/model/locks/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/memory/model/once/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/memory/model/once2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/memory/model/subtler_variants/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/memory/slice/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/runtime/memory/wrong_address/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/cmd/compile/internal/gc/range.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/cmd/compile/internal/gc/range.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/bytes/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/base_learn/bytes/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/io/buffer/buffer.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/io/buffer/buffer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/io/buffer/buffer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/io/buffer/buffer_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/net/http/async/download/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/net/http/async/download/up_down.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/runtime/goroutine/limit/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/runtime/goroutine/limit/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="247">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/go/src/runtime/proc.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
+            <state relative-caret-position="4142">
               <caret line="223" column="4" selection-start-line="223" selection-start-column="4" selection-end-line="226" selection-end-column="5" />
               <folding>
                 <element signature="e#177#264#0" expanded="true" />
@@ -61,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practice/runtime/goroutine/limit/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
+            <state relative-caret-position="589">
               <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding>
                 <element signature="e#14#50#0" expanded="true" />
@@ -70,14 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practice/runtime/goroutine/closure/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
+            <state relative-caret-position="279">
               <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-              <folding>
-                <element signature="e#14#65#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -119,8 +104,8 @@
         <option value="$PROJECT_DIR$/practice/runtime/memory/model/once/main.go" />
         <option value="$PROJECT_DIR$/practice/runtime/memory/model/once2/main.go" />
         <option value="$PROJECT_DIR$/practice/runtime/memory/model/subtler_variants/main.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/practice/runtime/goroutine/closure/main.go" />
+        <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
   </component>
@@ -143,63 +128,6 @@
               <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
               <item name="gosrc" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-              <item name="compile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-              <item name="compile" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="goroutine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -208,6 +136,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -231,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (2)">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gosrc" />
       <working_directory value="$PROJECT_DIR$" />
@@ -279,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build main.go (5)" />
         <item itemvalue="Go Build.go build main.go (4)" />
@@ -291,19 +220,19 @@
     <frame x="169" y="23" width="1095" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27445394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3598184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3598184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.1906924" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5164586" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -379,10 +308,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file://$PROJECT_DIR$/go/src/runtime/sys_linux_amd64.s">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="650">
+          <caret line="545" column="26" selection-start-line="545" selection-start-column="26" selection-end-line="545" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -393,16 +322,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/runtime/sys_linux_amd64.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="545" column="26" selection-start-line="545" selection-start-column="26" selection-end-line="545" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/go/src/runtime/proc.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
+        <state relative-caret-position="4142">
           <caret line="223" column="4" selection-start-line="223" selection-start-column="4" selection-end-line="226" selection-end-column="5" />
           <folding>
             <element signature="e#177#264#0" expanded="true" />
@@ -412,7 +334,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practice/runtime/goroutine/limit/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
+        <state relative-caret-position="589">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding>
             <element signature="e#14#50#0" expanded="true" />
@@ -422,10 +344,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practice/runtime/goroutine/closure/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="279">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding>
-            <element signature="e#14#65#0" expanded="true" />
+            <element signature="e#14#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
