@@ -7,6 +7,11 @@ import (
 )
 
 func main() {
+	//a := 10
+	//b := "10"
+	//println(a+b)
+
+
 	i := 1 << 10
 	fmt.Println(i)
 

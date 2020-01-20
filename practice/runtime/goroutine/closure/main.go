@@ -2,7 +2,15 @@ package main
 
 import (
 	"fmt"
+	"gosrc/go/src/encoding/json"
+	"gosrc/go/src/log"
 	"time"
+)
+
+var (
+	//ct = make(map[string]interface{})
+
+	ct map[string]interface{}
 )
 
 func main() {
@@ -15,8 +23,17 @@ func main() {
 		}
 	}()
 
-	time.Sleep(time.Second*1)
+	time.Sleep(time.Second * 1)
 	fmt.Println(a)
+
+	//ct["a"] = 1
+	str, err := json.Marshal(ct)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+
+	log.Println("json", string(str))
 }
 
 //1、逃逸分析

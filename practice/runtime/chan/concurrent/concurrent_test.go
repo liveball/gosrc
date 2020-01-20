@@ -10,6 +10,7 @@ import (
 func Test_slice(t *testing.T) {
 	a := make([]int, 0, 10)
 	aCh := make(chan int, 10)
+
 	var wg sync.WaitGroup
 	for i := 0; i < 10; i++ {
 		wg.Add(1)
