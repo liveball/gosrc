@@ -36,20 +36,20 @@ func addByShareMemory(n int) []int {
 	return ints
 }
 
-func addByShareCommunicate(n int)[]int{
+func addByShareCommunicate(n int) []int {
 	ints := make([]int, 0, n)
-	ch:=make(chan int,n)
+	ch := make(chan int, n)
 
-	for i:=0; i<n;i++  {
-		go func(c chan<-int,order int) {
-			ch<-i
+	for i := 0; i < n; i++ {
+		go func(c chan<- int, order int) {
+			ch <- i
 		}(ch, i)
 	}
 
-	for i:=range ch {
-		ints=append(ints,i)
+	for i := range ch {
+		ints = append(ints, i)
 
-		if len(ints)==n{
+		if len(ints) == n {
 			break
 		}
 	}

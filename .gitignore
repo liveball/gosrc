@@ -82,3 +82,6 @@
 /.tar
 /.gzip
 /.txt
+
+/.idea
+/.vscode
