@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gosrc/go/src/fmt"
+	"fmt"
 	"log"
 	"sort"
 )

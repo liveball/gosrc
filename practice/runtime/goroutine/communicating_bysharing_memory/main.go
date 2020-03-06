@@ -12,8 +12,11 @@ func init() {
 
 func main() {
 	foo := addByShareMemory(10)
+	//foo := addByShareCommunicate(10)
+
 	fmt.Println(len(foo))
 	fmt.Println(foo)
+
 }
 
 func addByShareMemory(n int) []int {
@@ -24,10 +27,11 @@ func addByShareMemory(n int) []int {
 	wg.Add(n)
 	for i := 0; i < n; i++ {
 		go func(i int) {
-			defer wg.Done()
 			mux.Lock()
 			ints = append(ints, i)
 			mux.Unlock()
+
+			wg.Done()
 		}(i)
 	}
 
@@ -42,7 +46,7 @@ func addByShareCommunicate(n int) []int {
 
 	for i := 0; i < n; i++ {
 		go func(c chan<- int, order int) {
-			ch <- i
+			c <- order
 		}(ch, i)
 	}
 

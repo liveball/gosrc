@@ -85,3 +85,8 @@
 
 /.idea
 /.vscode
+
+/pprof/performance_optimization/*.prof
+/pprof/performance_optimization/*.out
+/pprof/performance_optimization/*.svg
+/pprof/performance_optimization/main

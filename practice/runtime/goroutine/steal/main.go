@@ -11,7 +11,7 @@ func main() {
 	ch := make(chan int)
 	done := make(chan struct{})
 
-	// runtime.GOMAXPROCS(1)
+	runtime.GOMAXPROCS(1)
 	for i := 0; i < 3; i++ {
 		go func(idx int) {
 			// fmt.Println(idx, "go idx")
