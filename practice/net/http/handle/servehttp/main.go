@@ -28,16 +28,16 @@ type users map[int]string
 var visits = expvar.NewInt("visits")
 
 func (u users) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusInternalServerError)
-	return
-
-	visits.Add(1)
-
-	fmt.Fprintf(w, "hello world!")
-
-	for id, name := range u {
-		fmt.Fprintf(w, "ID(%d),Name(%s)\n", id, name)
-	}
+	//w.WriteHeader(http.StatusInternalServerError)
+	//return
+	//
+	//visits.Add(1)
+	//
+	//fmt.Fprintf(w, "hello world!")
+	//
+	//for id, name := range u {
+	//	fmt.Fprintf(w, "ID(%d),Name(%s)\n", id, name)
+	//}
 }
 
 func main() {

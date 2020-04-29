@@ -43,6 +43,9 @@ runtime.checkdead() ./go/src/runtime/proc.go:4225 (PC: 0x10370d3)
 - [Work Stealing论文](http://supertech.csail.mit.edu/papers/steal.pdf)
 - [Work Stealing维基百科](https://en.wikipedia.org/wiki/Work_stealing)
 
+- [Go源码：协程栈](https://segmentfault.com/a/1190000019570427?utm_source=tag-newest)
+
+
 
 
 
