@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231e588f-a154-4372-8994-14548708cc93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practice/base_learn/bytes/overflow/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/context/timeout/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/slice/array_slice/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/string/2byte/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/string/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/sync/pool/bench_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/sync/pool/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/binary/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/base_learn/binary/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/append/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/append/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/delelem/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/delelem/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/modify/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/modify/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/nil/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/nil/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/paging/slicePage_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/paging/slicePage_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/perform/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/perform/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/perform/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/perform/main_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/range/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/range/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/range/range_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/range/range_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/sort/bug/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/sort/bug/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/sort/slice_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/sort/slice_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/slice/sort/sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/slice/sort/sort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/string/2byte/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/string/2int/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/string/2int/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/string/builder/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/string/builder/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/string/compare/compare_version.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/string/compare/compare_version.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/string/count/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/string/count/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/string/replace/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/string/replace/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/string/transfer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/string/transfer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/base_learn/struct/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/base_learn/struct/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/net/http/handle/servehttp/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/net/http/handle/servehttp/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/panic/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/panic/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schedule.MD" beforeDir="false" afterPath="$PROJECT_DIR$/schedule.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gc.MD" beforeDir="false" afterPath="$PROJECT_DIR$/gc.MD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,60 +12,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice/base_learn/bytes/overflow/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice/string/2byte/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice/string/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <entry file="file://$PROJECT_DIR$/gc.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="228">
+                <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="32" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practice/base_learn/binary/main.go">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice/base_learn/binary/convert.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1273">
-              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/runtime/string.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2983">
-              <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
-              <folding>
-                <element signature="e#177#217#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="394">
+              <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -212,7 +143,6 @@
         <option value="$PROJECT_DIR$/practice/context/errorgroup_test/errgroup_example_md5all_test.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/pprof/performance_optimization/main.go" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/practice/panic/main.go" />
         <option value="$PROJECT_DIR$/practice/net/http/handle/servehttp/main.go" />
         <option value="$PROJECT_DIR$/schedule.md" />
@@ -226,11 +156,13 @@
         <option value="$PROJECT_DIR$/practice/base_learn/bytes/overflow/main.go" />
         <option value="$PROJECT_DIR$/practice/string/main.go" />
         <option value="$PROJECT_DIR$/practice/base_learn/binary/main.go" />
+        <option value="$PROJECT_DIR$/gc.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="176" />
+    <option name="x" value="282" />
     <option name="y" value="23" />
     <option name="width" value="1638" />
     <option name="height" value="939" />
@@ -240,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,19 +183,6 @@
               <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
               <item name="gosrc" type="462c0819:PsiDirectoryNode" />
               <item name="practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="base_learn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="base_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="binary" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
@@ -292,6 +210,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,22 +339,22 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="176" y="23" width="1638" height="939" extended-state="0" />
+    <frame x="282" y="23" width="1638" height="939" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1716792" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17355889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.28689492" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.364817" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.446281" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2231405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.566706" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37190083" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -489,19 +408,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/schedule.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="200">
-            <caret line="30" column="88" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="88" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stack.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/panicHandler-66247.log" />
     <entry file="file:///usr/local/go/src/cmd/compile/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -795,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/string/2byte/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practice/string/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -828,8 +727,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practice/base_learn/binary/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
+        <state relative-caret-position="428">
           <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/string/2byte/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="228">
+            <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
         </state>
       </provider>
     </entry>
