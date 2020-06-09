@@ -1,17 +1,18 @@
 package main
 
-func main() {
-	b := []int{1}
+import "fmt"
 
-	bb := make([]*int, 0, 1)
+func main() {
+	b := []int{1, 2, 3, 4, 5}
+
+	bb := make(map[int]*int)
 	for k, v := range b {
-		_ = &v
-		_ = &b[k]
-		// bb = append(bb, &v)
-		bb = append(bb, &b[k])
+
+		bb[k] = &v //55555
+		//bb[k] = &b[k]
 	}
 
-	// for _, v := range bb {
-	// 	fmt.Println(*v)
-	// }
+	for _, v := range bb {
+		fmt.Println(*v)
+	}
 }

@@ -31,7 +31,7 @@ func main() {
 type warn struct{}
 
 func (w *warn) Warningf(string, ...interface{}) {
-	fmt.Println("111")
+	fmt.Printf("Recent sample exceeded samples:\n%s", sched.Samples())
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
