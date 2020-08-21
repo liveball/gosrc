@@ -26,30 +26,30 @@ func main() {
 	bitOffset := uint8(2)
 	on := uint8(1)
 	attr := uint32(11)
-	fmt.Printf("attr: %08b\n", attr)
+	fmt.Printf("main attr: %08b\n", attr)
 
 	attr2 := AttrSet(attr, bitOffset, on)
-	fmt.Printf("attr2: %08b\n", attr2)
+	fmt.Printf("main attr2: %08b\n", attr2)
 
 	fmt.Println(AttrVal(attr2, bitOffset))
 }
 
 func AttrSet(dest uint32, bitOffset, on uint8) (res uint32) {
-	fmt.Printf("1 << bitOffset: %08b\n", 1 << bitOffset)
-	fmt.Printf("^(1 << bitOffset): %08b\n", ^(1 << bitOffset))
-	fmt.Printf("dest: %08b\n", dest)
-	fmt.Printf("dest&(^(1 << bitOffset)): %08b\n", dest&(^(1 << bitOffset)))
-	fmt.Printf("uint32((on&0x1)<<bitOffset): %08b\n", uint32((on&0x1)<<bitOffset))
+	//fmt.Printf("1 << bitOffset: %08b\n", 1 << bitOffset)
+	//fmt.Printf("^(1 << bitOffset): %08b\n", ^(1 << bitOffset))
+	//fmt.Printf("dest: %08b\n", dest)
+	//fmt.Printf("dest&(^(1 << bitOffset)): %08b\n", dest&(^(1 << bitOffset)))
+	//fmt.Printf("uint32((on&0x1)<<bitOffset): %08b\n", uint32((on&0x1)<<bitOffset))
 
 	res = dest&(^(1 << bitOffset)) | uint32((on&0x1)<<bitOffset)
 
-	fmt.Printf("res: %08b\n", res)
+	//fmt.Printf("res: %08b\n", res)
 	return
 }
 
 func AttrVal(attr uint32, bitOffset uint8) (v uint8) {
-	fmt.Printf("attr: %08b bit:%d\n", attr, bitOffset)
-	fmt.Printf("attr>>: %08b bit:%d\n", attr>>bitOffset, (attr>>bitOffset)&1)
+	//fmt.Printf("attr: %08b bit:%d\n", attr, bitOffset)
+	//fmt.Printf("attr>>: %08b bit:%d\n", attr>>bitOffset, (attr>>bitOffset)&1)
 	return uint8((attr >> bitOffset) & 1)
 }
 

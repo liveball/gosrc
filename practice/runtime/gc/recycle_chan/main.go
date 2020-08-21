@@ -1,15 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"runtime"
 	"time"
 )
-
-var ptrs []*data
-
-type data struct {
-	x [100 << 20]byte
-}
 
 func main() {
 	for i := 0; i < 100; i++ {
@@ -20,13 +15,29 @@ func main() {
 }
 
 func test() {
-	var d data
-	ptrs = append(ptrs, &d) //每次创建100MB的对象，然后将其指针保存到全局对象ptrs
+	naturals := make(chan int, 100)
+	squares := make(chan int, 100)
+	// Counter
+	go func() {
+		for x := 0; x < 100; x++ {
+			naturals <- x
+		}
+		close(naturals)
+	}()
+	// Squarer
+	go func() {
+		for x := range naturals {
+			squares <- x * x
+		}
+		close(squares)
+	}()
+	// Printer (in main goroutine)
+	for x := range squares {
+		fmt.Println(x)
+	}
 }
 
 // go build -o main -gcflags "-N -l" && GODEBUG=gctrace=1   ./main
-
-//https://www.youtube.com/watch?v=q4HoWwdZUHs
 
 // gc 1 @0.001s 0%: 0.004+48+0.025 ms clock, 0.016+0/0.011/48+0.10 ms cpu, 100->100->100 MB, 101 MB goal, 4 P (forced)
 // gc 2 @0.050s 0%: 0.012+0.045+0.013 ms clock, 0.048+0/0.035/0.047+0.054 ms cpu, 100->100->100 MB, 200 MB goal, 4 P (forced)
@@ -35,4 +46,3 @@ func test() {
 // gc 5 @2.105s 0%: 0.004+67+0.027 ms clock, 0.017+0/0.005/67+0.11 ms cpu, 300->300->300 MB, 400 MB goal, 4 P
 
 //结论：
-//普通指针让每次创建的对象可达，无法被回收，内存膨胀
