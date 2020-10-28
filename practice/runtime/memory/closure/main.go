@@ -1,10 +1,13 @@
 package main
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 func myprint(i int) {
-	// fmt.Println("hello", i)
-	println("hello", i)
+	fmt.Println("hello", i)
+	//println("hello", i)
 }
 
 func main() {
@@ -15,7 +18,7 @@ func main() {
 			defer func() {
 				c <- struct{}{}
 			}()
-			println(&i)
+			fmt.Println(&i)
 			myprint(i)
 		}()
 		time.Sleep(time.Millisecond)
