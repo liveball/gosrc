@@ -13,6 +13,7 @@ require (
 	github.com/google/gopacket v1.1.17
 	github.com/google/gops v0.3.6
 	github.com/google/pprof v0.0.0-20190515194954-54271f7e092f
+	github.com/google/wire v0.4.0
 	github.com/gorilla/mux v1.7.3
 	github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6 // indirect
 	github.com/intel-go/cpuid v0.0.0-20181003105527-1a4a6f06a1c6

@@ -9,10 +9,11 @@ func main() {
 
 	//officialDemo()
 
-	//fmt.Println(foo())
-	fmt.Println(foo2())
-
 	//fmt.Println(deferFuncReturn())
+
+	//fmt.Println(foo())
+
+	fmt.Println(foo2())
 }
 
 func deferFuncParameter() {
@@ -46,6 +47,7 @@ func deferFuncReturn() (res int) {
 
 	defer func() {
 		res++
+		fmt.Println("res:", i)
 	}()
 
 	return i
@@ -61,17 +63,19 @@ func officialDemo() {
 	return
 }
 
-func foo() int {
+func foo() int { //defer 无法操作返回值
 	var i int
+	i = 2
 
 	defer func() {
 		i++
+		fmt.Println("i:", i)
 	}()
 
 	return 1
 }
 
-func foo2() int {
+func foo2() int { //defer 无法操作返回值
 	var i int
 
 	defer func() {
