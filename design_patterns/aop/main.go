@@ -39,7 +39,7 @@ func main() {
 
 	// Add an interceptor
 	greeterWrap.AddMethodInterceptor(func(wrap aspector.Wrap, methodID int, rawArgs interface{}, methodHandler aspector.MethodHandler) interface{} {
-		fmt.Printf("===== Before: %s.%s\n", wrap.GetName(), wrap.GetMethodName(methodID))
+		fmt.Printf("===== Before: %s.%s\n", wrap.GetOriginName(), wrap.GetMethodName(methodID))
 
 		if methodID == Greeter_Hello { // the method `Hello` is called
 			args := rawArgs.(*Greeter_HelloArgs) // fetch the arguments passed
@@ -53,7 +53,7 @@ func main() {
 			results.V1 = false                            // update the result (`V1` is the first result, there is only one result)
 		}
 
-		fmt.Printf("===== After: %s.%s\n", wrap.GetName(), wrap.GetMethodName(methodID))
+		fmt.Printf("===== After: %s.%s\n", wrap.GetOriginName(), wrap.GetMethodName(methodID))
 		return rawResults // pass the results
 	})
 
