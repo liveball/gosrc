@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="231e588f-a154-4372-8994-14548708cc93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practice/runtime/atom/atomic_addint64/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gogogo/chan/chan_ctl_g.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gogogo/waitgroup/wg_ctl_g.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design_patterns/singleton/singleton.go" beforeDir="false" afterPath="$PROJECT_DIR$/design_patterns/singleton/singleton.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gogogo/context/sync_signal.go" beforeDir="false" afterPath="$PROJECT_DIR$/gogogo/context/sync_signal.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,14 +19,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practice/runtime/atom/atomic_addint64/main.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gogogo/chan/chan_ctl_g.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+            <state relative-caret-position="227">
+              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
-                <element signature="e#14#60#0" expanded="true" />
+                <element signature="e#14#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gogogo/waitgroup/wg_ctl_g.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+              <folding>
+                <element signature="e#14#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gogogo/context/sync_signal.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file:///usr/local/go/src/context/context.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="358" column="19" lean-forward="true" selection-start-line="358" selection-start-column="19" selection-end-line="358" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -39,7 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>OCAP</find>
       <find>Method</find>
       <find>Option</find>
       <find>OPTIONS</find>
@@ -69,6 +101,7 @@
       <find>trace</find>
       <find>Start</find>
       <find>go tool trace</find>
+      <find>HandleRequest</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -106,16 +139,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practice/runtime/goroutine/concurrent/communicate_pool/pool.go" />
-        <option value="$PROJECT_DIR$/practice/runtime/goroutine/concurrent/communicate_pool/pool_test.go" />
-        <option value="$PROJECT_DIR$/practice/runtime/gc/gc_chan/main.go" />
-        <option value="$PROJECT_DIR$/practice/runtime/gc/obj_by_common_pointer/main.go" />
-        <option value="$PROJECT_DIR$/practice/runtime/goroutine/recursive/main.go" />
         <option value="$PROJECT_DIR$/practice/runtime/proc/proc_test.go" />
         <option value="$PROJECT_DIR$/practice/runtime/proc/main.go" />
         <option value="$PROJECT_DIR$/practice/io/buffer/buffer_test.go" />
         <option value="$PROJECT_DIR$/gogogo/context/sync_singla.go" />
-        <option value="$PROJECT_DIR$/gogogo/context/sync_signal.go" />
         <option value="$PROJECT_DIR$/interview/slice/main.go" />
         <option value="$PROJECT_DIR$/practice/runtime/memory/mem_stat/main.go" />
         <option value="$PROJECT_DIR$/practice/runtime/memory/closure/main.go" />
@@ -157,12 +184,18 @@
         <option value="$PROJECT_DIR$/practice/net/tcp/tls/stages/5_cryptotls.go" />
         <option value="$PROJECT_DIR$/practice/net/tcp/tls/readme.md" />
         <option value="$PROJECT_DIR$/practice/runtime/atom/atomic_addint64/main.go" />
+        <option value="$PROJECT_DIR$/design_patterns/aop/main.go" />
+        <option value="$PROJECT_DIR$/design_patterns/aop/main.aspector.go" />
+        <option value="$PROJECT_DIR$/design_patterns/singleton/singleton.go" />
+        <option value="$PROJECT_DIR$/gogogo/chan/chan_ctl_g.go" />
+        <option value="$PROJECT_DIR$/gogogo/waitgroup/wg_ctl_g.go" />
+        <option value="$PROJECT_DIR$/gogogo/context/sync_signal.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="280" />
-    <option name="y" value="63" />
+    <option name="x" value="198" />
+    <option name="y" value="23" />
     <option name="width" value="1575" />
     <option name="height" value="967" />
   </component>
@@ -171,6 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,36 +215,24 @@
             <path>
               <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
               <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="design_patterns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
               <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
+              <item name="gogogo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
               <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="atom" type="462c0819:PsiDirectoryNode" />
+              <item name="gogogo" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
               <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="atom" type="462c0819:PsiDirectoryNode" />
-              <item name="atomic_addint64" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gosrc" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="atom" type="462c0819:PsiDirectoryNode" />
-              <item name="bench_atomic_mutex" type="462c0819:PsiDirectoryNode" />
+              <item name="gogogo" type="462c0819:PsiDirectoryNode" />
+              <item name="waitgroup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gosrc" type="b2602c69:ProjectViewProjectNode" />
@@ -246,7 +268,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,69 +311,65 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build sync_signal.go">
+    <configuration name="go build chan_ctl_g.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gosrc" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/design_patterns/wire/full/main.go" />
+      <filePath value="$PROJECT_DIR$/gogogo/chan/chan_ctl_g.go" />
       <package value="gosrc" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gosrc" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/practice/net/tcp/tls/main.go" />
+      <filePath value="$PROJECT_DIR$/design_patterns/aop/main.go" />
       <package value="gosrc" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build sync_signal.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gosrc" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/design_patterns/wire/main.go" />
+      <filePath value="$PROJECT_DIR$/gogogo/context/sync_signal.go" />
       <package value="gosrc" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build wg_ctl_g.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gosrc" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/design_patterns/wire/attr/main.go" />
+      <filePath value="$PROJECT_DIR$/gogogo/waitgroup/wg_ctl_g.go" />
       <package value="gosrc" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetInstance in gosrc/design_patterns/singleton" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gosrc" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/practice/net/evio/main.go" />
-      <package value="gosrc" />
+      <working_directory value="$PROJECT_DIR$/design_patterns/singleton" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gosrc/design_patterns/singleton" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestGetInstance$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build main.go (2)" />
-        <item itemvalue="Go Build.go build main.go (3)" />
-        <item itemvalue="Go Build.go build main.go (5)" />
-        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build sync_signal.go" />
+        <item itemvalue="Go Build.go build wg_ctl_g.go" />
+        <item itemvalue="Go Build.go build chan_ctl_g.go" />
+        <item itemvalue="Go Test.TestGetInstance in gosrc/design_patterns/singleton" />
+        <item itemvalue="Go Build.go build main.go (4)" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSliceBuffer_in_gosrc_practice_io_buffer - 2020.08.03 at 14h 41m 36s.xml">
-      <configuration name="TestSliceBuffer in gosrc/practice/io/buffer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSliceBuffer_in_gosrc_practice_io_buffer - 2020.08.03 at 14h 42m 47s.xml">
-      <configuration name="TestSliceBuffer in gosrc/practice/io/buffer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestSliceBuffer_in_gosrc_practice_io_buffer - 2020.08.03 at 14h 44m 02s.xml">
       <configuration name="TestSliceBuffer in gosrc/practice/io/buffer" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -377,25 +394,31 @@
     <history-entry file="Test_play_in_gosrc_practice_runtime_chan_baseball - 2020.09.28 at 11h 51m 32s.xml">
       <configuration name="Test_play in gosrc/practice/runtime/chan/baseball" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestGetInstance_in_gosrc_design_patterns_singleton - 2020.11.30 at 17h 07m 37s.xml">
+      <configuration name="TestGetInstance in gosrc/design_patterns/singleton" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetInstance_in_gosrc_design_patterns_singleton - 2020.11.30 at 17h 08m 08s.xml">
+      <configuration name="TestGetInstance in gosrc/design_patterns/singleton" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="280" y="63" width="1575" height="967" extended-state="0" />
+    <frame x="198" y="23" width="1575" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13437703" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.28689492" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.059428573" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.22246456" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27657142" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.21714285" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50066847" side_tool="true" weight="0.6404066" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49933156" visible="true" weight="0.4617143" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49933156" weight="0.19314286" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.17666303" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -433,6 +456,16 @@
     <proxy>http://goproxy.bilibili.co</proxy>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/gogogo/context/sync_signal.go</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="GoApplicationRunConfiguration">
         <watch expression="a" language="go" />
@@ -449,67 +482,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practice/runtime/defer/defer_chain_func/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/strings/strings.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17290">
-          <caret line="914" column="15" selection-start-line="914" selection-start-column="5" selection-end-line="914" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/strings/strings_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15770">
-          <caret line="842" column="24" selection-start-line="842" selection-start-column="14" selection-end-line="842" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/string/trim/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/func/defer/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/func/defer/defer_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/func/hook.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/func/defer/asm/main.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/func/colsure/my_closure/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/google/wire@v0.4.0/_tutorial/wire.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/google/wire@v0.4.0/internal/wire/analyze.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2099">
@@ -828,9 +800,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/let-z-go/aspector@v0.0.0-20190616101030-29d718fdc336/sample/main.aspector.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/let-z-go/aspector@v0.0.0-20190616101030-29d718fdc336/defines.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design_patterns/aop/main.aspector.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design_patterns/aop/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
-            <element signature="e#14#60#0" expanded="true" />
+            <element signature="e#14#64#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design_patterns/singleton/singleton_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design_patterns/singleton/singleton.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gogogo/chan/chan_ctl_g.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#14#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gogogo/waitgroup/wg_ctl_g.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="e#14#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gogogo/context/sync_signal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/context/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="358" column="19" lean-forward="true" selection-start-line="358" selection-start-column="19" selection-end-line="358" selection-end-column="19" />
         </state>
       </provider>
     </entry>
