@@ -24,7 +24,7 @@ func main() {
 	fmt.Printf("%08b &^%08b = %08b [A 'AND NOT' B]\n", a, b, a&^b)
 	fmt.Printf("%08b&(^%08b)= %08b [A AND (NOT B)]\n", a, b, a&(^b))
 
-	fmt.Println(IntToBytes(-7))
+	fmt.Println(IntToBytes(1))
 	fmt.Println(BytesToInt([]byte{255, 255, 255, 249}))
 
 }

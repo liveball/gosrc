@@ -19,6 +19,11 @@ func (self *GreeterWrap) AddMethodInterceptor(methodInterceptor aspector.MethodI
 	return self
 }
 
+func (self *GreeterWrap) RemoveMethodInterceptors(methodID int, methodInterceptor aspector.MethodInterceptor) aspector.Wrap {
+	self.methodInterceptors.RemoveMethodInterceptors(methodID, methodInterceptor)
+	return self
+}
+
 func (self *GreeterWrap) ShareMethodInterceptors(other *GreeterWrap) {
 	other.methodInterceptors = self.methodInterceptors
 }

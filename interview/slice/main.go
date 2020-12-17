@@ -29,6 +29,6 @@ func students() {
 	}
 
 	for k, v := range m {
-		println(k, "=>", v.Age)
+		fmt.Println(k, "=>", v.Age)
 	}
 }

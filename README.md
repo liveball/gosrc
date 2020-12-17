@@ -13,8 +13,15 @@
 >3、设置引导安装到当前安装目录
 
 ### use / 
-` $ GOROOT_BOOTSTRAP=./ GO_GCFLAGS="-N -l" ./all.bash `  
+
+ #### 编译所有，包括单元测试
+` $ GOROOT_BOOTSTRAP=./ GO_GCFLAGS="-N -l" ./all.bash`  
+
+ #### 编译
+` $ GOROOT_BOOTSTRAP=./ GO_GCFLAGS="-N -l" ./make.bash`  
+
 ### 不能 -+  compile: cannot disable optimizations while compiling runtime
+
 
 ###  use GOROOT  
 ` $ GOROOT_BOOTSTRAP=$(go env GOROOT) ./make.bash `

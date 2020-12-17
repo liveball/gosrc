@@ -1,9 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"gosrc/go/src/encoding/json"
+)
 
 type my struct {
-	I int
+	I int `json:"i" default:"-1"`
 }
 
 func (m *my) change() {
@@ -18,17 +22,25 @@ func (m my) change2() {
 }
 
 func main() {
+	m0 := my{}
+	fmt.Println(m0)
+	a, err := json.Marshal(m0)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(string(a))
+
 	m1 := my{1}
 	m1.change()
-	println(m1.I) //1
+	fmt.Println(m1.I) //1
 	m1.change2()
-	println(m1.I) //1
+	fmt.Println(m1.I) //1
 
 	m2 := &my{2}
 	m2.change()
-	println(m2.I) //2
+	fmt.Println(m2.I) //2
 	m2.change2()
-	println(m2.I) //2
+	fmt.Println(m2.I) //2
 }
 
 //Person for one people

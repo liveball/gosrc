@@ -24,8 +24,8 @@ func getStackTraceHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/stack", getStackTraceHandler)
 
-	// leak()
-	// noleak()
+	//leak()
+	noleak()
 
 	// leak2()
 	// noleak2()
@@ -40,7 +40,7 @@ func main() {
 func leak() {
 	ch := func() <-chan int {
 		ch := make(chan int)
-		go func() {
+		go func() {//无退出条件，一直阻塞在给chan发送数据上
 			for i := 0; ; i++ {
 				ch <- i
 			}
@@ -64,7 +64,7 @@ func noleak() {
 		go func() {
 			for i := 0; ; i++ {
 				select {
-				case <-ctx.Done():
+				case <-ctx.Done()://消耗完chan的数据退出goroutine
 					return
 				case ch <- i:
 				}

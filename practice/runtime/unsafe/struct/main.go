@@ -5,6 +5,7 @@ import (
 	"log"
 	"reflect"
 	"runtime"
+	"text/template"
 	"time"
 	"unsafe"
 )
@@ -14,7 +15,49 @@ type user struct {
 	age  int
 }
 
+// MyTemplate 定义和 template.Template 只是形似
+type MyTemplate struct {
+	name       string
+	parseTree  *unsafe.Pointer
+	common     *unsafe.Pointer
+	leftDelim  string
+	rightDelim string
+}
+
+// Template is the representation of a parsed template. The *parse.Tree
+// field is exported only for use by html/template and should be treated
+// as unexported by all other clients.
+//type Template struct {
+//	name string
+//	*parse.Tree
+//	*common
+//	leftDelim  string
+//	rightDelim string
+//}
+
+type a struct {
+	foo string
+	bar int
+}
+
+type b struct {
+	foo string
+	bar int
+}
+
 func main() {
+	var aa *a
+	aa = new(a)
+	bb := (*b)(unsafe.Pointer(&aa))
+	_ = bb.foo
+	fmt.Println(111, bb)
+	//fmt.Println(bb.foo)//内存暴增。。。
+
+	t := template.New("Foo")
+	p := (*MyTemplate)(unsafe.Pointer(t))
+	p.name = "Bar" // 关键在这里，突破私有成员
+	fmt.Println(p, t)
+
 	u := new(user)
 	fmt.Println(*u)
 

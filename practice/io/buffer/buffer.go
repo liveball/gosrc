@@ -1,14 +1,28 @@
 package main
 
 import (
-	"bufio"
 	"bytes"
-	"fmt"
 	"io"
 	"log"
-	"os"
 	"sync"
 )
+
+func main() {
+	copy()
+
+	copyReadFrom()
+
+	// copyWriteTo()
+
+	//copyBuffer()
+
+	//换行输入并打印
+	//scanner := bufio.NewScanner(os.Stdin)
+	//scanner.Split(bufio.ScanLines)
+	//for scanner.Scan() {
+	//	fmt.Println(scanner.Text())
+	//}
+}
 
 type Buffer struct {
 	bytes.Buffer
@@ -26,7 +40,7 @@ func copy() {
 		log.Fatalln("Copy did not work properly")
 	}
 
-	// log.Println(wb.String())
+	log.Println("copy:", wb.String())
 }
 
 func copyReadFrom() {
@@ -37,6 +51,8 @@ func copyReadFrom() {
 	if wb.String() != "hello, world." {
 		log.Fatalln("Copy did not work properly")
 	}
+
+	log.Println("copyReadFrom:", wb.String())
 }
 
 func copyWriteTo() {
@@ -69,21 +85,4 @@ func copyBuffer() {
 	}
 
 	bufPool.Put(buf)
-}
-
-func main() {
-	// copy()
-
-	copyReadFrom()
-
-	// copyWriteTo()
-
-	// copyBuffer()
-
-	//换行输入并打印
-	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Split(bufio.ScanLines)
-	for scanner.Scan() {
-		fmt.Println(scanner.Text())
-	}
 }

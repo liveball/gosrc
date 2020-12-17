@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"runtime"
 )
 
 // ResponseWriter： 生成Response的接口
@@ -27,20 +28,26 @@ type users map[int]string
 var visits = expvar.NewInt("visits")
 
 func (u users) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	visits.Add(1)
-	fmt.Fprintf(w, "hello world!")
-	// for id, name := range u {
-	// 	fmt.Fprintf(w, "ID(%d),Name(%s)\n", id, name)
-	// }
+	//w.WriteHeader(http.StatusInternalServerError)
+	//return
+	//
+	//visits.Add(1)
+	//
+	//fmt.Fprintf(w, "hello world!")
+	//
+	//for id, name := range u {
+	//	fmt.Fprintf(w, "ID(%d),Name(%s)\n", id, name)
+	//}
 }
 
 func main() {
-	// us := users{
-	// 	1: "tom",
-	// 	2: "jack",
-	// }
+	fmt.Println("cpu:", runtime.NumCPU(), "goroutine:", runtime.NumGoroutine())
+	us := users{
+		1: "tom",
+		2: "jack",
+	}
 
-	err := http.ListenAndServe(addr, nil)
+	err := http.ListenAndServe(addr, us)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 		return

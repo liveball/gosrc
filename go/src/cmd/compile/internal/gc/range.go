@@ -217,7 +217,7 @@ func walkrange(n *Node) *Node {
 			return n
 		}
 
-		// orderstmt arranged for a copy of the array/slice variable if needed.
+		// √.
 		ha := a
 		// println(ha)
 

@@ -1,8 +1,19 @@
 package main
 
-import "log"
+import (
+	"fmt"
+	"log"
+	"sort"
+)
 
 func main() {
+	//a := 10
+	//b := "10"
+	//println(a+b)
+
+
+	i := 1 << 10
+	fmt.Println(i)
 
 	var c chan int
 	c = make(chan int)
@@ -10,11 +21,17 @@ func main() {
 		c <- 1
 	}()
 
-	println(<-c)
+	fmt.Println(<-c)
 
 	a := make([]int, 0)
 	a = append(a, 1)
 	log.Println(a)
+
+	online := []int{1, 3, 4, 2}
+	sort.Slice(online, func(i, j int) bool {
+		return online[i] > online[j]
+	})
+	fmt.Println(online)
 }
 
 func adder() func(int) int {

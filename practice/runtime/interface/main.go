@@ -10,6 +10,12 @@ func main() {
 	base()
 	arr := []int{1, 2, 3}
 	printArr(arr)
+
+	var a []interface{}
+	a = make([]interface{}, 0, 2)
+	a = append(a, 1)
+	a = append(a, 2)
+	fmt.Println(a)
 }
 
 func base() {

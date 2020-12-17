@@ -19,7 +19,7 @@ func GetInstance() *singleton {
 	if instance == nil {
 		i++
 		instance = new(singleton)
-		println("new instance", i)
+		println("GetInstance new instance", i)
 	}
 	mux.Unlock()
 	return instance

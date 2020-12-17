@@ -11,7 +11,7 @@ import (
 //使用 -gcflags "-N -l" 参数关闭编译器代码优化
 //go build -gcflags "-N -l" -o main main.go
 
-type foo struct{}
+
 
 func main() {
 	var a interface{}
@@ -31,6 +31,8 @@ func main() {
 	)
 
 	fmt.Println("=======================")
+
+	type foo struct{}
 
 	var f foo
 	var f2 *foo
@@ -53,6 +55,15 @@ func main() {
 	fmt.Println(IsNilPtr(a), IsNilPtr(b1))
 
 	fmt.Println("=======================")
+
+	var sl []string
+	yes := sl == nil
+	fmt.Println(yes)
+
+	fmt.Printf("sl type: %#v\t value: %#v \n",
+		reflect.TypeOf(sl).String(),
+		reflect.ValueOf(sl).String(),
+	)
 	//test()
 }
 

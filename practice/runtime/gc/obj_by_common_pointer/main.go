@@ -26,6 +26,8 @@ func test() {
 
 // go build -o main -gcflags "-N -l" && GODEBUG=gctrace=1   ./main
 
+//https://www.youtube.com/watch?v=q4HoWwdZUHs
+
 // gc 1 @0.001s 0%: 0.004+48+0.025 ms clock, 0.016+0/0.011/48+0.10 ms cpu, 100->100->100 MB, 101 MB goal, 4 P (forced)
 // gc 2 @0.050s 0%: 0.012+0.045+0.013 ms clock, 0.048+0/0.035/0.047+0.054 ms cpu, 100->100->100 MB, 200 MB goal, 4 P (forced)
 // gc 3 @1.052s 0%: 0.003+50+0.061 ms clock, 0.014+0/0/50+0.24 ms cpu, 200->200->200 MB, 201 MB goal, 4 P
