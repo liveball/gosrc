@@ -68,25 +68,21 @@
 /go/*.out
 /go/*.gdb_history
 
-/main
-/*.o
-/*.s
-/*.asm
-/*.a
-/*.out
-/*.gdb_history
-/.vscode
-/.html
-/.h
-/.zip
-/.tar
-/.gzip
-/.txt
+.vscode
+.idea
 
-/.idea
-/.vscode
+*.o
+*.s
+*.asm
+*.a
+*.out
+*.gdb_history
+*.html
+*.h
+*.zip
+*.tar
+*.gzip
+*.txt
+main
 
-/pprof/performance_optimization/*.prof
-/pprof/performance_optimization/*.out
-/pprof/performance_optimization/*.svg
-/pprof/performance_optimization/main
+
