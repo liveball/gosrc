@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+	"net"
 	"runtime"
 	"sync"
+	"time"
 )
 
 func init() {
@@ -11,8 +13,10 @@ func init() {
 }
 
 func main() {
-	foo := addByShareMemory(10)
-	//foo := addByShareCommunicate(10)
+	_, _ = net.ResolveTCPAddr("tcp", ":4040")
+
+	// foo := addByShareMemory(10)
+	foo := addByShareCommunicate(2)
 
 	fmt.Println(len(foo))
 	fmt.Println(foo)
@@ -45,12 +49,15 @@ func addByShareCommunicate(n int) []int {
 	ch := make(chan int, n)
 
 	for i := 0; i < n; i++ {
-		go func(c chan<- int, order int) {
+		go func(c chan int, order int) {
+			fmt.Println("input:", order, time.Now())
 			c <- order
 		}(ch, i)
 	}
 
 	for i := range ch {
+		fmt.Println("output:", i, time.Now())
+
 		ints = append(ints, i)
 
 		if len(ints) == n {
