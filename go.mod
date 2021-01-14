@@ -9,6 +9,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6
+	github.com/golang/mock v1.4.4
 	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/google/gopacket v1.1.17
 	github.com/google/gops v0.3.6
@@ -27,11 +28,12 @@ require (
 	github.com/stretchr/testify v1.3.0 // indirect
 	github.com/tidwall/evio v1.0.2
 	golang.org/x/arch v0.0.0-20190329052859-788fe5ffcd8c
-	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
-	golang.org/x/net v0.0.0-20190628185345-da137c7871d7
-	golang.org/x/sync v0.0.0-20190423024810-112230192c58
-	golang.org/x/sys v0.0.0-20190606165138-5da285871e9c
-	golang.org/x/text v0.3.2
-	golang.org/x/tools v0.0.0-20190711191110-9a621aea19f8
+	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
+	golang.org/x/mod v0.4.0 // indirect
+	golang.org/x/net v0.0.0-20201021035429-f5854403a974
+	golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
+	golang.org/x/sys v0.0.0-20200930185726-fdedc70b468f
+	golang.org/x/text v0.3.3
+	golang.org/x/tools v0.0.0-20210114065538-d78b04bdf963
 	google.golang.org/appengine v1.6.1 // indirect
 )
