@@ -22,7 +22,6 @@ require (
 	github.com/let-z-go/aspector v0.0.0-20190616101030-29d718fdc336
 	github.com/mmcloughlin/avo v0.0.0-20190731014047-bb615f61ce85
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
-	github.com/qiniu/log v0.0.0-20140728010919-a304a74568d6
 	github.com/rs/xid v1.2.1
 	github.com/stretchr/testify v1.3.0 // indirect
 	github.com/tidwall/evio v1.0.2

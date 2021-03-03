@@ -12,9 +12,9 @@ func Process(ch chan int) {
 }
 
 func main() {
-	channels := make([]chan int, 10)
+	channels := make([]chan int, 2)
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 2; i++ {
 		channels[i] = make(chan int)
 		go Process(channels[i])
 	}
