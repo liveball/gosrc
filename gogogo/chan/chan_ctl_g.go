@@ -20,7 +20,17 @@ func main() {
 	}
 
 	for i, ch := range channels {
-		<-ch
-		fmt.Println("routine ", i, " quit")
+		// <-ch
+		// fmt.Println("routine ", i, " quit")
+
+		select {
+		case elem, ok := <-ch:
+			if !ok {
+				return
+			}
+
+			fmt.Println("routine ", i, "get elem:", elem)
+		}
 	}
+
 }
