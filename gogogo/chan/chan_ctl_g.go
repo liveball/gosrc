@@ -12,15 +12,25 @@ func Process(ch chan int) {
 }
 
 func main() {
-	channels := make([]chan int, 10)
+	channels := make([]chan int, 2)
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 2; i++ {
 		channels[i] = make(chan int)
 		go Process(channels[i])
 	}
 
 	for i, ch := range channels {
-		<-ch
-		fmt.Println("routine ", i, " quit")
+		// <-ch
+		// fmt.Println("routine ", i, " quit")
+
+		select {
+		case elem, ok := <-ch:
+			if !ok {
+				return
+			}
+
+			fmt.Println("routine ", i, "get elem:", elem)
+		}
 	}
+
 }

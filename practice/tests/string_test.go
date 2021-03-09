@@ -9,8 +9,6 @@ import (
 	"testing"
 	"unicode"
 	"unsafe"
-
-	"github.com/qiniu/log"
 )
 
 // Substr get part of a string.

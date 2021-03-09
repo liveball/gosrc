@@ -22,7 +22,11 @@ func main() {
 
 func test() {
 	var d data
+
 	ptrs = append(ptrs, unsafe.Pointer(&d)) //每次创建100MB的对象，然后将其指针保存到全局对象ptrs
+
+	//ptrs=make([]unsafe.Pointer, 1)
+	//ptrs[0] = unsafe.Pointer(&d)
 }
 
 // go build -gcflags "-N -l"  -o main /data/app/go/src/gosrc/practice/runtime/gc/obj_by_unsafe_pointer/main.go && GODEBUG=gctrace=1   ./main

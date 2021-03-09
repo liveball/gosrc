@@ -11,7 +11,6 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/qiniu/log"
 )
 
 func Test_sliceEqual(t *testing.T) {

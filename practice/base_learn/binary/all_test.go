@@ -13,3 +13,12 @@ func BenchmarkFastXORWords(b *testing.B) {
 		fastXORWords(g, e, f)
 	}
 }
+
+func TestBit(t *testing.T) {
+	a := uint(1)
+	b := uint(1) >> 63
+
+	c := 4 << (^uint(1) >> 63)
+
+	t.Log(a, b, c)
+}
