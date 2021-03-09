@@ -29,7 +29,7 @@ func AsynchFifo() {
 			print("bad receive\n")
 			os.Exit(1)
 		}
-		println(r)
+		fmt.Println(11, r)
 	}
 }
 
@@ -39,7 +39,7 @@ func Chain(ch <-chan int, val int, in <-chan int, out chan<- int) {
 	if r != val {
 		panic(val)
 	}
-	println(r)
+	fmt.Println(r)
 	out <- 1
 }
 
@@ -64,8 +64,8 @@ func SynchFifo() {
 func time_now() (sec int64, nsec int32)
 
 func main() {
-	// AsynchFifo()
-	SynchFifo()
+	AsynchFifo()
+	// SynchFifo()
 
 	sec, nsec := time_now()
 	fmt.Println(sec, nsec)
