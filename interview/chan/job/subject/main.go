@@ -10,32 +10,7 @@ import (
 // 每个channel都一定有一个int返回，不会close。
 // 返回slice长度应当与jobs相同，顺序任意。
 func wait(jobs []<-chan int) []int {
-	//panic("implement me")
-
-	res := []int{}
-	ticker := time.NewTicker(time.Second*5)
-
-	for _, job := range jobs {
-		select {
-		case i := <-job:
-			res = append(res, i)
-			fmt.Println(11, i)
-		case <-ticker.C:
-			remainJobs := jobs[1:]
-			for _, jb := range remainJobs {
-				select {
-				case i := <-jb:
-					fmt.Println(22, i)
-					res = append(res, i)
-				default:
-				}
-			}
-			return res
-		}
-	}
-
-	return res
-
+	panic("implement me")
 }
 
 // 以下代码仅为示例、调试用，不用修改
